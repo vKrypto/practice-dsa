@@ -18,7 +18,6 @@ class Solution:
         invalid solution
         """
         dup_chars = re.findall(r'(.+)(?=.*?\1)', s)
-        print(dup_chars)
         for dup_char in dup_chars:
             s = s.replace(dup_char*2, "")
         return s
