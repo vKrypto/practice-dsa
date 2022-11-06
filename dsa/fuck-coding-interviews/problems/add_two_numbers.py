@@ -2,6 +2,7 @@
 """
 https://leetcode.com/problems/add-two-numbers/
 """
+from typing import Optional
 
 
 class ListNode:  # pragma: no cover
@@ -51,3 +52,27 @@ class Solution:
             result_node.next = ListNode(carry)
 
         return dummy_head_result_node.next
+
+    def addTwoNumbers_1(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Runtime: 60 ms, faster than 99.24% of Python3 online submissions for Add Two Numbers.
+        Memory Usage: 13.9 MB, less than 86.23% of Python3 online submissions for Add Two Numbers.
+        """
+        carry = 0
+        cur_node = None
+        while l1 or l2 or carry:
+            temp = carry
+            if l1:
+                temp += l1.val
+                l1 = l1.next
+            if l2:
+                temp += l2.val
+                l2 = l2.next
+            carry = temp//10
+            temp_node = ListNode(temp%10)
+            if cur_node:
+                cur_node.next = temp_node
+            else:
+                head = temp_node
+            cur_node = temp_node
+        return head
