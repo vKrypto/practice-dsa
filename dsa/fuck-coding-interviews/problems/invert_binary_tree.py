@@ -1,11 +1,10 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/invert-binary-tree/
-"""
-from collections import deque
+# https://leetcode.com/problems/invert-binary-tree/
 
 
-class TreeNode:  # pragma: no cover
+from typing import Optional
+
+# Definition for a binary tree node.
+class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -13,25 +12,24 @@ class TreeNode:  # pragma: no cover
 
 
 class Solution:
-    def invertTree(self, root: TreeNode) -> TreeNode:
-        if not root:
-            return None
+    # Runtime: 64 ms, faster than 26.54% of Python3 online submissions for Invert Binary Tree.
+    # Memory Usage: 13.8 MB, less than 57.66% of Python3 online submissions for Invert Binary Tree.
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        # cond 1: 
+        if root is None:
+            return
+        
+        # cond 2:
+        if not(root.left or root.right):
+            return root
 
-        new_left = self.invertTree(root.right)
-        new_right = self.invertTree(root.left)
-        root.left = new_left
-        root.right = new_right
-
-        return root
-
-
-class Solution2:
-    def invertTree(self, root: TreeNode) -> TreeNode:
-        queue = deque([root, ])
-        while queue:
-            node = queue.popleft()
-            if node:
-                queue.extend((node.left, node.right))
-                node.left, node.right = node.right, node.left
-
+        # invert child for this nodes.
+        root.left , root.right = root.right, root.left
+        
+        # do recursively to their child.
+        if root.left:
+            self.invertTree(root.left)
+        if root.right:
+            self.invertTree(root.right)
+        
         return root

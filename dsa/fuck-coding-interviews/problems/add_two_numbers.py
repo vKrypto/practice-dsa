@@ -1,78 +1,38 @@
-# coding: utf-8
 """
 https://leetcode.com/problems/add-two-numbers/
 """
+# Definition for singly-linked list.
 from typing import Optional
 
 
-class ListNode:  # pragma: no cover
+class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-
 class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        result_node = ListNode()
-        dummy_head_result_node = result_node
-
-        carry = 0
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Runtime: 64 ms, faster than 96.83% of Python3 online submissions for Add Two Numbers.
+        Memory Usage: 13.9 MB, less than 88.18% of Python3 online submissions for Add Two Numbers.
+        """
+        res = head = ListNode()
+        remainder = 0
         while l1 or l2:
-            # the length of `l1` and `l2` might be different
-            if l1:
-                value1 = l1.val
-                next1 = l1.next
-            else:
-                value1 = 0
-                next1 = None
-            if l2:
-                value2 = l2.val
-                next2 = l2.next
-            else:
-                value2 = 0
-                next2 = None
-
-            val = value1 + value2 + carry
-            if val >= 10:
-                val = val - 10
-                carry = 1
-            else:
-                carry = 0
-
-            # in the first loop, `result_node` is currently `dummy_head_result_node`
-            next_result_node = ListNode(val)
-            result_node.next = next_result_node
-
-            # prepare for the next loop
-            result_node = next_result_node
-            l1 = next1
-            l2 = next2
-
-        if carry >= 1:
-            result_node.next = ListNode(carry)
-
-        return dummy_head_result_node.next
-
-    def addTwoNumbers_1(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        """
-        Runtime: 60 ms, faster than 99.24% of Python3 online submissions for Add Two Numbers.
-        Memory Usage: 13.9 MB, less than 86.23% of Python3 online submissions for Add Two Numbers.
-        """
-        carry = 0
-        cur_node = None
-        while l1 or l2 or carry:
-            temp = carry
-            if l1:
-                temp += l1.val
-                l1 = l1.next
-            if l2:
-                temp += l2.val
-                l2 = l2.next
-            carry = temp//10
-            temp_node = ListNode(temp%10)
-            if cur_node:
-                cur_node.next = temp_node
-            else:
-                head = temp_node
-            cur_node = temp_node
-        return head
+            # calculate in-place digit sum
+            node_total = remainder
+            node_total += l1.val if l1 else 0
+            node_total += l2.val if l2 else 0
+            num, remainder = node_total%10, node_total//10
+            
+            # add a digit (temp node) to head
+            temp = ListNode(num)
+            head.next = temp
+            head = temp
+                
+            # move linked list pointer by one step
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        if remainder and head:
+            head.next = ListNode(remainder) 
+        return res.next

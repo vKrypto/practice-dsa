@@ -1,38 +1,55 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/product-of-array-except-self/
-"""
+# https://leetcode.com/problems/product-of-array-except-self/
 from typing import List
 
-
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        output = []
-        for i in range(len(nums)):
-            product = 1
-            for num in nums[0:i] + nums[i + 1:]:
-                product = product * num
-            output.append(product)
+    """
+    time complexity: O(3n)
+    space compelexity: O(3n)
+    Runtime: 589 ms, faster than 18.93% of Python3 online submissions for Product of Array Except Self. 
+    Memory Usage: 22.4 MB, less than 24.11% of Python3 online submissions for Product of Array Except Self.
+    """
 
+    def productExceptSelf_1(self, nums: List[int]) -> List[int]:
+        n= len(nums)
+        
+        from_end = [1] * n
+        curr = 1
+        for i in range(n-1, -1, -1):
+            from_end[i] = curr
+            curr *= nums[i] 
+            
+        
+        from_start = [1] * n
+        curr = 1
+        for i in range(n):
+            from_start[i] = curr
+            curr *= nums[i] 
+            
+        output = []
+        for i in range(n):
+            output.append(from_start[i] * from_end[i])
+        
         return output
 
-
-class Solution2:
+    """
+    time complexity: O(2n)
+    space compelexity: O(n)
+    Runtime: 450 ms, faster than 43.37% of Python3 online submissions for Product of Array Except Self.
+    Memory Usage: 21.2 MB, less than 81.94% of Python3 online submissions for Product of Array Except Self.
+    """
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        length = len(nums)
-        output = []
-
-        left_products = [1, ] * length
-        right_products = [1, ] * length
-
-        for i in range(1, length):
-            # start from the second leftmost index to right
-            left_products[i] = nums[i - 1] * left_products[i - 1]
-
-            # start from the second rightmost index to left
-            right_products[-(i + 1)] = nums[-i] * right_products[-i]
-
-        for i in range(length):
-            output.append(left_products[i] * right_products[i])
-
+        n= len(nums)
+        
+        output = [1] * n
+        curr = 1
+        for i in range(n-1, -1, -1):
+            output[i] = curr
+            curr *= nums[i] 
+            
+        curr = 1
+        for i in range(n):
+            output[i] *= curr
+            curr *= nums[i] 
+            
         return output
+            

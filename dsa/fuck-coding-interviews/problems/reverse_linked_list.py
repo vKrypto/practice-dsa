@@ -1,35 +1,25 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/reverse-linked-list/
-"""
+# https://leetcode.com/problems/reverse-linked-list/# Definition for singly-linked list.
 
+from typing import Optional
 
-class ListNode:  # pragma: no cover
+class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
 
 class Solution:
-    def reverseList(self, head: ListNode) -> ListNode:
-        node = head
-        previous_node = None
-        while node:
-            next_node = node.next
-            node.next = previous_node
-            previous_node = node
-            node = next_node
-
-        return previous_node
-
-
-class Solution2:
-    def reverseList(self, head: ListNode) -> ListNode:
-        def reverse(node, previous_node):
-            if not node:
-                return previous_node
-            next_node = node.next
-            node.next = previous_node
-            return reverse(next_node, node)
-
-        return reverse(head, previous_node=None)
+    """
+    Runtime: 56 ms, faster than 66.01% of Python3 online submissions for Reverse Linked List.
+    Memory Usage: 15.4 MB, less than 55.05% of Python3 online submissions for Reverse Linked List.
+    """
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        new_head = None
+        while head:
+            # deattach cur_elem from head.
+            temp = head
+            head = head.next
+            
+            temp.next = new_head #  add into new list
+            new_head = temp # modifify new header.. of new linked list.
+        return new_head

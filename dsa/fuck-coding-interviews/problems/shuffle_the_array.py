@@ -1,33 +1,14 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/shuffle-the-array/
-"""
+# https://leetcode.com/problems/shuffle-the-array/
+
+
 from typing import List
 
-
 class Solution:
+    # Runtime: 70 ms, faster than 82.00% of Python3 online submissions for Shuffle the Array.
+    # Memory Usage: 14.1 MB, less than 90.23% of Python3 online submissions for Shuffle the Array.    
+    # time complexity: o(n) and space complexity: o(len(nums))
     def shuffle(self, nums: List[int], n: int) -> List[int]:
-        if not n:
-            return nums
-
-        def gen_list():
-            nums1 = nums[:n]
-            nums2 = nums[n:]
-            for i, num in enumerate(nums1):
-                yield num
-                yield nums2[i]
-
-        return list(gen_list())
-
-
-class Solution2:
-    def shuffle(self, nums: List[int], n: int) -> List[int]:
-        if not n:
-            return nums
-
-        def gen_list():
-            for i in range(n):
-                yield nums[i]
-                yield nums[n + i]
-
-        return list(gen_list())
+        result = []
+        for i in range(n):
+            result += [nums[i], nums[i+n]]
+        return result

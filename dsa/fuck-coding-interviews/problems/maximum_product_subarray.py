@@ -1,30 +1,22 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/maximum-product-subarray/
-"""
+# https://leetcode.com/problems/maximum-product-subarray
 from typing import List
 
-
 class Solution:
+    """
+    pattern: maintain g_max, g_min at the same time and reset to 1 when num ==0
+    Runtime: 91 ms, faster than 91.38% of Python3 online submissions for Maximum Product Subarray.
+    Memory Usage: 14.4 MB, less than 38.05% of Python3 online submissions for Maximum Product Subarray.
+    """
     def maxProduct(self, nums: List[int]) -> int:
-        max_product = nums[0]
-
-        current_product = 1
-        for num in nums:
-            current_product = current_product * num
-            max_product = max(max_product, current_product)
-
-            # when we encounter `0`, the product should be reset
-            # however, `0` could still be the maximum product if all other numbers are negative
-            if num == 0:
-                current_product = 1
-
-        current_product = 1
-        for num in reversed(nums):
-            current_product = current_product * num
-            max_product = max(max_product, current_product, num)
-
-            if num == 0:
-                current_product = 1
-
-        return max_product
+        g_max_product = 1
+        g_min_product =  1
+        res = max(nums)
+        
+        for i in nums:
+            if i == 0:
+                g_max_product = 1
+                g_min_product =  1
+                continue
+            g_max_product, g_min_product = max(g_max_product *i,g_min_product * i, i), min(g_max_product *i,g_min_product * i, i)
+            res = max(res, g_max_product)
+        return res

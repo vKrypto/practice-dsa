@@ -1,24 +1,39 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/same-tree/
-"""
+# Definition for a binary tree node.
+from typing import Optional
+from queue import Queue
 
-
-class TreeNode:  # pragma: no cover
+class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-
-class Solution:
-    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
-        def is_same_node(p, q):
-            if not p and not q:
+class Solution(object):
+    """
+    using simple recursion.
+    """
+    def isSameTree(self, p:Optional(TreeNode), q:Optional(TreeNode)) -> bool:
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        # check value if any of is None
+        if (p is None or q is None):
+            if p is None and q is None:
                 return True
-            if p and q:
-                return (p.val == q.val) and is_same_node(p.left, q.left) and is_same_node(p.right, q.right)
-
+            else:
+                return False
+            
+        # check value
+        if p.val != q.val:
             return False
-
-        return is_same_node(p, q)
+        
+        # check - recursion.
+        if not self.isSameTree(p.left, q.left):
+            return False
+        if not self.isSameTree(p.right, q.right):
+            return False
+        
+        # looks good.
+        return True

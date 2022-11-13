@@ -1,47 +1,51 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/container-with-most-water/
-"""
+# https://leetcode.com/problems/container-with-most-water/
 from typing import List
 
-
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
-        max_area = 0
-        for i, h1 in enumerate(height):
-            for w, h2 in enumerate(height[i + 1:], 1):
-                h = min(h1, h2)
-                area = w * h
-                if area > max_area:
-                    max_area = area
+    """
+    time limit exceed
+    """
+    def maxArea_bruteforce(self, height: List[int]) -> int:
+        max_res = 0
+        for i, x in enumerate(height):
+            for j, y in enumerate(height):
+                temp = abs(i-j) * min(x,y)
+                max_res = max(max_res, temp)
+        return max_res
 
-        return max_area
+    """
+    time limit exceed
+    """
+    def maxArea_bruteforce_optimized(self, height: List[int]) -> int:
+        max_res = 0
+        n = len(height)
+        for i, x in enumerate(height):
+            for j, y in enumerate(height[i+1:]):
+                temp = abs(j+1)* min(x,y)
+                max_res = max(max_res, temp)
+        return max_res
 
-
-class Solution2:
-    def maxArea(self, height: List[int]) -> int:
-        max_area = 0
-
-        # We use two cursors, one starts from the left,
-        # another starts from the right
-        left = 0
-        right = len(height) - 1
-
-        while left < right:
-            # The width is fixed in this loop
-            ww = right - left
-
-            # The valid area is (width, the smaller height)
-            # Since we already found the valid area for the smaller height,
-            # the corresponding cursor can move to the next one
-            if height[left] < height[right]:
-                hh = height[left]
-                left = left + 1
+    """
+    patterns:
+        left , right( two-pointer)
+        calcualte area, main_tain max_area
+        if left < right:
+            decrement left pointer
+        else:
+            decrement right pointer
+    time complexity: o(n)
+    space complexity: o(1)
+    Runtime: 1111 ms, faster than 64.03% of Python3 online submissions for Container With Most Water.
+    Memory Usage: 27.4 MB, less than 44.12% of Python3 online submissions for Container With Most Water.
+    """
+    def maxArea_two_pointer(self, height: List[int]) -> int:
+        max_res = 0
+        n = len(height)
+        l, r= 0, n-1
+        while l < r:
+            max_res = max(max_res, (r-l)*min(height[r], height[l]))
+            if height[l] < height[r]:
+                l += 1
             else:
-                hh = height[right]
-                right = right - 1
-
-            area = ww * hh
-            max_area = max(max_area, area)
-
-        return max_area
+                r -= 1
+        return max_res
