@@ -1,22 +1,46 @@
-# https://leetcode.com/problems/maximum-product-subarray
-from typing import List
+'''Leetcode - https://leetcode.com/problems/maximum-product-subarray/'''
 
-class Solution:
-    """
-    pattern: maintain g_max, g_min at the same time and reset to 1 when num ==0
-    Runtime: 91 ms, faster than 91.38% of Python3 online submissions for Maximum Product Subarray.
-    Memory Usage: 14.4 MB, less than 38.05% of Python3 online submissions for Maximum Product Subarray.
-    """
-    def maxProduct(self, nums: List[int]) -> int:
-        g_max_product = 1
-        g_min_product =  1
-        res = max(nums)
-        
-        for i in nums:
-            if i == 0:
-                g_max_product = 1
-                g_min_product =  1
-                continue
-            g_max_product, g_min_product = max(g_max_product *i,g_min_product * i, i), min(g_max_product *i,g_min_product * i, i)
-            res = max(res, g_max_product)
-        return res
+'''
+Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+A subarray is a contiguous subsequence of the array.
+
+Input: nums = [2,3,-2,4]
+Output: 6
+'''
+
+# Solution1
+def maxProduct(nums):
+    if(len(nums)) == 0:
+        return 0
+    maxp = nums[0]
+    for i in range(len(nums)):
+        currp = 1
+        for j in range(i, len(nums)):
+            currp *= nums[j]
+            maxp = max(maxp, currp)
+    return maxp
+
+# T:O(N^2)
+# S:O(1)
+
+# Solution2
+def maxProduct(nums):
+    if(len(nums)) == 0:
+        return 0
+    curr_max = nums[0]
+    curr_min = nums[0]
+    result = curr_max
+
+    for i in range(len(nums)):
+        curr = nums[i]
+        temp_max = max(curr, curr_max*curr_min*curr)
+        curr_min = min(curr, curr_max*curr_min*curr)
+        curr_max = temp_max
+        result = max(curr_max, result)
+    return result
+
+# T:O(N)
+# S:O(1)

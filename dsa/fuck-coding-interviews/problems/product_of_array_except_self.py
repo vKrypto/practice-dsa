@@ -1,55 +1,28 @@
-# https://leetcode.com/problems/product-of-array-except-self/
-from typing import List
+'''Leetcode - https://leetcode.com/problems/product-of-array-except-self/'''
+'''
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
-class Solution:
-    """
-    time complexity: O(3n)
-    space compelexity: O(3n)
-    Runtime: 589 ms, faster than 18.93% of Python3 online submissions for Product of Array Except Self. 
-    Memory Usage: 22.4 MB, less than 24.11% of Python3 online submissions for Product of Array Except Self.
-    """
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 
-    def productExceptSelf_1(self, nums: List[int]) -> List[int]:
-        n= len(nums)
-        
-        from_end = [1] * n
-        curr = 1
-        for i in range(n-1, -1, -1):
-            from_end[i] = curr
-            curr *= nums[i] 
-            
-        
-        from_start = [1] * n
-        curr = 1
-        for i in range(n):
-            from_start[i] = curr
-            curr *= nums[i] 
-            
-        output = []
-        for i in range(n):
-            output.append(from_start[i] * from_end[i])
-        
-        return output
+You must write an algorithm that runs in O(n) time and without using the division operation.
 
-    """
-    time complexity: O(2n)
-    space compelexity: O(n)
-    Runtime: 450 ms, faster than 43.37% of Python3 online submissions for Product of Array Except Self.
-    Memory Usage: 21.2 MB, less than 81.94% of Python3 online submissions for Product of Array Except Self.
-    """
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        n= len(nums)
-        
-        output = [1] * n
-        curr = 1
-        for i in range(n-1, -1, -1):
-            output[i] = curr
-            curr *= nums[i] 
-            
-        curr = 1
-        for i in range(n):
-            output[i] *= curr
-            curr *= nums[i] 
-            
-        return output
-            
+Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+'''
+
+# Solution
+def productExceptSelf(nums):
+    res = [1] * (len(nums))
+
+    prefix = 1
+    for i in range(len(nums)):
+        res[i] = prefix
+        prefix *= nums[i]
+    postfix = 1
+    for i in range(len(nums) - 1, -1, -1):
+        res[i] *= postfix
+        postfix *= nums[i]
+    return res
+
+# T:O(N)
+# S:O(1)

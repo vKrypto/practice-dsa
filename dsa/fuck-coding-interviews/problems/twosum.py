@@ -1,33 +1,32 @@
-"""
-https://leetcode.com/problems/two-sum/
-"""
-from typing import List
+'''Leetcode - https://leetcode.com/problems/two-sum/ '''
+'''
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-class Solution:
-    def twoSumBruteForce(self, nums: List[int], target: int) -> List[int]:
-        """
-        method 1: Bruteforce
-        Runtime: 3755 ms, faster than 27.00% of Python3 online submissions for Two Sum.
-        Memory Usage: 14.8 MB, less than 99.53% of Python3 online submissions for Two Sum.
-        """
-        l = len(nums)
-        for i in range(l):
-            for j in range(i, l):
-                s = nums[i] + nums[j]
-                if s == target and i != j:
-                    return [i,j]
-                
-    def twoSumHashMap(self, nums: List[int], target: int) -> List[int]:
-        """
-        Method 2: Using HashMap
-        Runtime: 59 ms, faster than 94.60% of Python3 online submissions for Two Sum.
-        Memory Usage: 15.2 MB, less than 50.42% of Python3 online submissions for Two Sum.  
-        """
-        dp = {} # val: index
-        for i,v in enumerate(nums):
-            looking_for_index = dp.get(target - v)
-            if looking_for_index is not None:
-                return [looking_for_index, i]
-            else:
-                dp[nums[i]] = i
+You can return the answer in any order.
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+'''
+
+# Solution1
+def twoSum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+# T:O(N^2)
+# S:O(1)
+
+# Solution2 
+def twoSum(nums, target):
+    dict = {}
+    for i in range(len(nums)):
+        diff = target - nums[i]
+        if diff in dict:
+            return [dict[diff], i]
+        dict[nums[i]] = i
+
+# T: O(N)
+# S: O(N)
