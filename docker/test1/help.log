@@ -1,0 +1,6 @@
+docker image ls
+
+docker scan
+
+
+docker run -it hello-docker
