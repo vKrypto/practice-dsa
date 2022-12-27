@@ -1,14 +1,8 @@
 # coding: utf-8
 """
 https://leetcode.com/problems/balanced-binary-tree/
-"""
-
-
-class TreeNode:  # pragma: no cover
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+"""   
+from .utils.leetcode import TreeNode
 
 
 class Solution:

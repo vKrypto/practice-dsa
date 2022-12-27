@@ -29,7 +29,6 @@ class Solution:
         we can do the same thing with following pointers only.
         last_second, last = 0, 0
         total_sum = 0
-
         """
         pass
     
