@@ -6,8 +6,8 @@ https://en.wikipedia.org/wiki/Hash_table#Separate_chaining
 """
 import statistics
 
-from data_structures.hash_maps.base_map import BaseHashMap
-from data_structures.hash_maps.unsorted_table_map import UnsortedTableMap
+from .base_map import BaseHashMap
+from .unsorted_table_map import UnsortedTableMap
 
 
 class ChainHashMap(BaseHashMap):
