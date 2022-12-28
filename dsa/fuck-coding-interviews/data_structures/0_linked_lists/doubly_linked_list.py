@@ -1,5 +1,5 @@
 # coding: utf-8
-from data_structures.linked_lists.singly_linked_list import LinkedList
+from .singly_linked_list import LinkedList
 
 
 class DoublyListNode:
