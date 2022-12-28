@@ -1,5 +1,5 @@
 # coding: utf-8
-from data_structures.hash_maps.base_map import BaseMap
+from .base_map import BaseMap
 
 
 # This implementation only supports keys of the same type in an instance.

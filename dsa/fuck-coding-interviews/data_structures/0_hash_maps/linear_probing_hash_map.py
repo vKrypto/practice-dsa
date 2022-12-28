@@ -4,7 +4,7 @@ LinearProbingHashMap uses Linear Probing (one of Open Addressing methods) as col
 
 https://en.wikipedia.org/wiki/Linear_probing
 """
-from data_structures.hash_maps.base_map import BaseHashMap
+from .base_map import BaseHashMap
 
 
 class LinearProbingHashMap(BaseHashMap):
