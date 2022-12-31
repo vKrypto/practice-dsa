@@ -2,7 +2,7 @@
 import random
 import unittest
 
-from data_structures.hash_maps.chain_hash_map import ChainHashMap
+from ..chain_hash_map import ChainHashMap
 
 
 class TestCase(unittest.TestCase):
@@ -11,6 +11,7 @@ class TestCase(unittest.TestCase):
 
         self.d1 = {'key': 'The phrase on the cover', 'value': "DON'T PANIC"}
         self.d2 = {'key': 'The answer to the ultimate question', 'value': 42}
+        
         self.d3 = {'key': "God's final message", 'value': 'WE APOLOGIZE FOR THE INCONVENIENCE'}
         data = [self.d1, self.d2]
 

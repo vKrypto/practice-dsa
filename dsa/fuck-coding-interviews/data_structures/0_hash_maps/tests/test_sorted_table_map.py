@@ -3,7 +3,7 @@ import random
 import sys
 import unittest
 
-from data_structures.hash_maps.sorted_table_map import SortedTableMap
+from ..sorted_table_map import SortedTableMap
 
 
 class TestCase(unittest.TestCase):

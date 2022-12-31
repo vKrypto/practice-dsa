@@ -40,11 +40,11 @@ class BaseMap(MutableMapping):
 
 
 class BaseHashMap(BaseMap):
-    def __init__(self, capacity=None, lf_threshold=None):
+    def __init__(self, capacity=11, lf_threshold=0.5):
         # Setting capacity to a prime number can slightly reduce collision.
-        self._bucket_array = [None, ] * (capacity if capacity else 11)
+        self._bucket_array = [None, ] * capacity
         self._size = 0
-        self._load_factor_threshold = lf_threshold if lf_threshold else 0.5
+        self._load_factor_threshold = lf_threshold
 
     # O(1)
     def __len__(self):

@@ -2,7 +2,7 @@
 import random
 import unittest
 
-from data_structures.hash_maps.unsorted_table_map import UnsortedTableMap
+from ..unsorted_table_map import UnsortedTableMap
 
 
 class TestCase(unittest.TestCase):

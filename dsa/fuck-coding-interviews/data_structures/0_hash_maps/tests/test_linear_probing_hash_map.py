@@ -2,7 +2,7 @@
 import random
 import unittest
 
-from data_structures.hash_maps.linear_probing_hash_map import LinearProbingHashMap
+from ..linear_probing_hash_map import LinearProbingHashMap
 
 
 class TestCase(unittest.TestCase):
