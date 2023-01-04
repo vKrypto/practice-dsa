@@ -12,8 +12,7 @@ A binary search tree is a special binary tree which satisfies following properti
 from collections import deque
 import sys
 
-from data_structures.trees.base_tree import BaseTree
-from data_structures.trees.base_tree import TreeNode
+from data_structures.trees.base_tree import BaseTree, TreeNode
 
 
 # This implementation cannot properly handle duplicates.
@@ -73,7 +72,7 @@ class BinarySearchTree(BaseTree):
 
         return True
 
-    def is_complate(self):
+    def is_complete(self):
         """
         When we fill out a complete binary tree, we go top to bottom, left to right.
 

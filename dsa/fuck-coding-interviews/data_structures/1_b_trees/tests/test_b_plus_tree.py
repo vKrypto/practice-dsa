@@ -2,7 +2,7 @@
 import random
 import unittest
 
-from data_structures.b_trees.b_plus_tree import BPlusTree
+from .b_plus_tree import BPlusTree
 
 
 class BPlusTreeTest(unittest.TestCase):
