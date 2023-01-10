@@ -52,7 +52,7 @@ class  DoublyLinkedList(object):
         ''' O(n): insert node at last '''
         self.size =+ 1
         new_node = Node(data)
-        last_node = get_last_node(self)
+        last_node = self.get_last_node()
         last_node.next = new_node
 
     def search_data(self,data):
