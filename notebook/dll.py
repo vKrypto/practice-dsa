@@ -60,4 +60,4 @@ class  DoublyLinkedList(object):
         start = self.head
         while  start.data != data or start.next:
             start = start.next
-        return start if start.data == data or -1
+        return start if start.data == data else -1
