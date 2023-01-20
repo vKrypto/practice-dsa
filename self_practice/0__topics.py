@@ -21,7 +21,7 @@ Planning fo rcoding Questions:
 3) draw a basic exmaple/
 4) think about edge cases./ ask question about them.
 5) find a bruteforce algo.
-6) pass test cases.
+6) pass test cases .
 7) optimize algo.
 8) pass test cases.
 9) more optimization techniques.

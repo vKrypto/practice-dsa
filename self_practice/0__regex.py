@@ -1,5 +1,6 @@
 from pprint import pprint
 import re
+from typing import  TypedDict
 
 """
 findall
@@ -48,3 +49,13 @@ import re
 s = "asa"
 x = re.sub(r"(\w)(?:?R|\w?)\1", "", s)
 print(x)
+
+
+class Movie(TypedDict):
+   title: str
+   year: int
+
+m1: Movie = {"title": "Black Panther", "year": 2018}  # OK
+m2: Movie = {"title": "Star Wars"}  # OK (year is not required)
+m3: Movie = {"year": 2022}
+print(type(m1))
