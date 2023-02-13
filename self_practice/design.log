@@ -1,0 +1,23 @@
+// follow this pattern for system Design
+
+Functional Reqs >  non-Functional Reqs > Transitional Reqs > Capacity Plannings > API Structure > Design Architecture(system design) > HLD > LLD
+
+altexsoft.com/blog/business/functional-and-non-functional-requirements-specification-and-types/
+// non-Functional Reqs
+Performance(latency)
+
+Scalability
+Portability
+Usability
+Compatibility
+Integrity
+Reliability
+Localization
+Fault Tolerance & availability(99.999%) 
+consistency
+durability
+Security & Encryption
+
+
+
+// Capacity Plannings:
