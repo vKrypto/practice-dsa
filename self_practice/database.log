@@ -1,0 +1,75 @@
+/// master slave structure
+
+
+1) one master for write, multiple slaves for read structure
+
+
+Replication  Lag,
+Map a users to same replica every time. ( based on User-hash)
+Read Your Own Writes can help to avoid some usecases
+Monotonic Reads
+
+// replicas
+1) Single Leader replicas
+>>> auto Failover handling, if leader is down, assign leader to a follower 
+
+2) multiple Leader replicas
+>>>> need topology for communication between leaders
+>>>> Incorrect Order Prefix Reads can accur.(change 1 propagate after change 2 for any leader)
+
+3) leaderless replication
+>>> example : casandra, dynamodb
+>>> no leaders
+>>> all nodes accepts reads and writes
+>>> Better availability
+>>> decentralized design
+>>> typically use in write intensive apps, where availability more important than consistency.
+
+>>>> we use concept of quorum consensus to get non-stale data.
+>>>> write at least x nodes from n nodes. where x + r > N
+>>>> read from all nodes and resolve confilt and then repair stale data:
+>>>>>>>>>Read Repair  or Background syncing. process
+>>>>> Exmaple: dynamodb
+
+
+:::: Popular Data structure
+
+1) SkipList
+2) B- tree
+3) Hash Index
+4) ss Table
+5) inverted Index
+6) suffix tree
+7) LSM tree
+8) R tree
+
+
+
+::: scaling database
+
+1) sharding
+2) splintering
+3) horizontal partitioning.
+
+
+
+
+::: LSM tree
+Compaction ( merge sort ) required (can be heavy as database grows too much) 
+Compressed better space used.
+exmplae: LevelDB
+not goood for lot of writes. (rate of writes < rate of Compaction)
+
+::: B tree database ( page oriented database)
+segmentations is there so more space used.
+uses Write ahead log.(WAL) to recover from data loss/ failure
+exmplae: My Sql, Innodb
+goood for lot of writes.
+
+
+
+Distributed Database Conses
+>>> 2 PC
+>>> 3 pc
+>>> MVCC
+>>> Saga 

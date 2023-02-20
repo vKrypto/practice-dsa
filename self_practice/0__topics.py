@@ -26,4 +26,10 @@ Planning fo rcoding Questions:
 8) pass test cases.
 9) more optimization techniques.
 
+
+
+
+
+Spinnaker
+Chaos Monkey
 """

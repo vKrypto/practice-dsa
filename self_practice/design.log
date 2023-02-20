@@ -1,6 +1,16 @@
 // follow this pattern for system Design
 
-Functional Reqs >  non-Functional Reqs > Transitional Reqs > Capacity Plannings > API Structure > Design Architecture(system design) > HLD > LLD
+>>> Functional Reqs  
+>>> non-Functional Reqs 
+>>> API Structure 
+>>> Datbase Schema Design
+>>> (optional) Transitional Reqs (migrationfixture)
+>>> Capacity Plannings
+>>> Design Architecture(system design)
+>>> HLD
+>>> LLD
+
+
 
 altexsoft.com/blog/business/functional-and-non-functional-requirements-specification-and-types/
 // non-Functional Reqs
