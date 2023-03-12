@@ -32,4 +32,13 @@ Planning fo rcoding Questions:
 
 Spinnaker
 Chaos Monkey
+
+
+>>>> form bytebytesgo.pdf>>
+
+topic pending:
+    1) A visual guide on how to choose the right Database
+    2) Which cloud provider should be used when building a big data solution?
+
+
 """

@@ -73,3 +73,12 @@ Distributed Database Conses
 >>> 3 pc
 >>> MVCC
 >>> Saga 
+
+
+
+Database ISolation  and violations
+
+violations ( to take care of)>> 
+    Dirty Read
+    Non- Repeatable Read
+    Phantom Read
