@@ -12,7 +12,7 @@ A binary search tree is a special binary tree which satisfies following properti
 from collections import deque
 import sys
 
-from data_structures.trees.base_tree import BaseTree, TreeNode
+from .base_tree import BaseTree, TreeNode
 
 
 # This implementation cannot properly handle duplicates.

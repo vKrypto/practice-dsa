@@ -8,7 +8,7 @@ class A:
         *_gc_next == 8
         *_gc_prev  == 8
     
-        obj_ref_count == 8 
+        obj_refcnt == 8 
         *obj_type == 8
 
         *__dict__ === 8 , stores all the variables, methods
@@ -39,7 +39,7 @@ class B:
         *_gc_next == 8
         *_gc_prev  == 8
     
-        obj_ref_count == 8 
+        obj_refcnt == 8 
         *obj_type == 8
     """
 
@@ -67,7 +67,7 @@ class C:
         *_gc_next == 8
         *_gc_prev  == 8
     
-        obj_ref_count == 8 
+        obj_refcnt == 8 
         *obj_type == 8
 
         *x == 8
@@ -95,7 +95,7 @@ class D(C):
         *_gc_next == 8
         *_gc_prev  == 8
     
-        obj_ref_count == 8 
+        obj_refcnt == 8 
         *obj_type == 8
 
         *__dict__ === 8 , stores all the variables, methods

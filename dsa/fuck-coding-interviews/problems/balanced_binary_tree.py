@@ -1,7 +1,8 @@
 # coding: utf-8
 """
 https://leetcode.com/problems/balanced-binary-tree/
-"""   
+"""  
+ 
 from .utils.leetcode import TreeNode
 
 
