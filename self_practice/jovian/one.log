@@ -1,0 +1,38 @@
+ls = [23, 21, 20, 19, 18, 17]
+
+
+i = 19
+o = 3
+
+i = 10
+o = -1
+
+
+i = 24
+o = -1
+
+i = 22
+o = -1
+
+
+
+loop(ls: i)
+    if i ==target:
+        return index
+    elif i < target:
+        return -1
+
+return -1
+
+
+
+l, r = len(ls)
+while l < r:
+    m = (l+r)//2
+    if ls[m] == target:
+        return m
+    elif ls[m] > target:
+        l = m
+    else:
+        r = m
+
