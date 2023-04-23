@@ -8,6 +8,10 @@ from abc import abstractmethod
 
 
 class BaseNode(ABC):
+    """
+    General implementation of a TreeBaseNode
+    """
+
     @abstractmethod
     def __init__(self):
         ...
@@ -18,6 +22,9 @@ class BaseNode(ABC):
 
 
 class TreeNode(BaseNode):
+    """
+    General implementation of a TreeNode
+    """
     __slots__ = ['value', 'left', 'right']
 
     def __init__(self, value, left=None, right=None):
@@ -42,6 +49,10 @@ class TreeNode(BaseNode):
 
 
 class BaseTree(ABC):
+    """
+    General implementation of a Tree
+    """
+    
     NODE_CLASS = BaseNode
 
     @abstractmethod

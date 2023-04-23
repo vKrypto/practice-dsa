@@ -12,11 +12,14 @@ A binary search tree is a special binary tree which satisfies following properti
 from collections import deque
 import sys
 
-from .base_tree import BaseTree, TreeNode
+from base_tree import BaseTree, TreeNode
 
 
 # This implementation cannot properly handle duplicates.
 class BinarySearchTree(BaseTree):
+    """"
+    Basic implementation fo Binary search tree
+    """
     NODE_CLASS = TreeNode
     DEFAULT_TO_ROOT = object()
 
@@ -25,7 +28,7 @@ class BinarySearchTree(BaseTree):
         self.size = 0
 
     def __eq__(self, other):
-        return self.root == other.root  # It runs self.root's __eq__() resursively
+        return self.root == other.root  # It runs self.root's __eq__() recursively
 
     def __len__(self):
         return self.size
@@ -414,7 +417,7 @@ class BinarySearchTree(BaseTree):
             'levelorder': self.levelorder_traverse,
         }
         try:
-            traverse_func = method_to_func[method]
+            traverse_func = method_to_func[method.lower()]
         except KeyError:
             raise ValueError(f'invalid method {method}')
 
@@ -481,4 +484,27 @@ class BinarySearchTree(BaseTree):
                 parent_node.left = nodes[i]
 
         bst.root = nodes[0]
+        return bst
+
+
+    @classmethod
+    def parse_from_tuple(cls, data) -> TreeNode:
+        """
+        convert [left, head, right] to BinarySearchTree,
+        """
+        bst = cls()
+        if not data:
+            return bst
+        def convert_to_tree_node(data):
+            if isinstance(data, (tuple, list)) and len(data) == 3:
+                head_node = cls.NODE_CLASS(data[1])
+                head_node.left = convert_to_tree_node(data[0])
+                head_node.right = convert_to_tree_node(data[2])
+            elif data is None:
+                head_node = None
+            else:
+                bst.size += 1
+                head_node = cls.parse_from_tuple(data)
+            return head_node
+        bst.root = convert_to_tree_node(data)
         return bst
