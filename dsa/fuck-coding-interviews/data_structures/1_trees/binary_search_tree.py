@@ -12,7 +12,7 @@ A binary search tree is a special binary tree which satisfies following properti
 from collections import deque
 import sys
 
-from base_tree import BaseTree, TreeNode
+from .base_tree import BaseTree, TreeNode
 
 
 # This implementation cannot properly handle duplicates.
@@ -60,6 +60,34 @@ class BinarySearchTree(BaseTree):
             previous_value = value
 
         return True
+    
+    def is_bst(self, node=DEFAULT_TO_ROOT):
+        """
+        all left nodes must be smaller or equal, all right nodes must be bigger or equal
+        return is_bst_node, node_max, node_min 
+        """
+        if node is self.DEFAULT_TO_ROOT:
+            node = self.tree
+        
+        if node is None:
+            return True, None , None
+        
+        # check left sub tree
+        is_bst_left, left_max, left_min = self.is_bst(node.left)
+        # check right bus tree
+        is_bst_right, right_max, right_min = self.is_bst(node.right)
+        
+        is_bst_node = all([
+            is_bst_right,
+            is_bst_left,
+            left_max is None or left_max <= node.value,
+            right_min is None or right_min >= node.value,
+        ])
+
+        node_max = max(left_max or -sys.maxsize, node.value, right_max or -sys.maxsize)
+        node_min = max(left_min or sys.maxsize, node.value, right_min or sys.maxsize)
+
+        return is_bst_node, node_max, node_min
 
     def is_full(self):
         """
@@ -432,79 +460,3 @@ class BinarySearchTree(BaseTree):
                 queue.extend((node.left, node.right))
                 node.left, node.right = node.right, node.left
 
-    def to_array_representation(self):
-        """
-        Return the "Array Representation" of the tree.
-        https://en.wikipedia.org/wiki/Binary_tree#Arrays
-        """
-        array = []
-        current_level = [self.root, ]
-        next_level = []
-        while any(current_level):
-            for node in current_level:
-                # We append values to array for current_level,
-                # and put their child nodes to next_level.
-                if node:
-                    array.append(node.value)
-                    next_level.extend([node.left, node.right])
-                else:
-                    array.append(None)
-                    next_level.extend([None, None])
-
-            current_level = next_level
-            next_level = []
-
-        while array and (array[-1] is None):
-            array.pop()
-
-        return array
-
-    @classmethod
-    def from_array_representation(cls, array):
-        """
-        The index of parent node of array[i] is math.floor((i - 1) / 2).
-        Also, every odd index indicates a left node, and every even index indicates a right node.
-        https://learning.oreilly.com/library/view/data-structures-and/9781118290279/13_chap08.html#ch008-sec022
-        """
-        bst = cls()
-
-        if not array:
-            return bst
-
-        nodes = [value if value is None else cls.NODE_CLASS(value) for value in array]
-        for i in range(1, len(nodes)):
-            node = nodes[i]
-            parent_index = (i - 1) // 2
-            parent_node = nodes[parent_index]
-            if (node is None) and (parent_node is None):
-                continue
-            if i % 2 == 0:
-                parent_node.right = nodes[i]
-            else:
-                parent_node.left = nodes[i]
-
-        bst.root = nodes[0]
-        return bst
-
-
-    @classmethod
-    def parse_from_tuple(cls, data) -> TreeNode:
-        """
-        convert [left, head, right] to BinarySearchTree,
-        """
-        bst = cls()
-        if not data:
-            return bst
-        def convert_to_tree_node(data):
-            if isinstance(data, (tuple, list)) and len(data) == 3:
-                head_node = cls.NODE_CLASS(data[1])
-                head_node.left = convert_to_tree_node(data[0])
-                head_node.right = convert_to_tree_node(data[2])
-            elif data is None:
-                head_node = None
-            else:
-                bst.size += 1
-                head_node = cls.parse_from_tuple(data)
-            return head_node
-        bst.root = convert_to_tree_node(data)
-        return bst
