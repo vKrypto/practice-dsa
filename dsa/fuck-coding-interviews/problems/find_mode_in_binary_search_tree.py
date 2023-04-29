@@ -3,7 +3,7 @@
 https://leetcode.com/problems/find-mode-in-binary-search-tree/
 """
 from collections import Counter
-from typing import List
+from typing import List, Optional
 
 
 class TreeNode:  # pragma: no cover
@@ -36,3 +36,27 @@ class Solution:
                 break
 
         return results
+
+    def findMode_2(self, root: Optional[TreeNode]) -> List[int]:
+        count_map = {}
+
+        # create count map same like Counter() but for tree
+        def travervse(node):
+            if node:
+                count_map[node.val] = count_map.get(node.val,0) +1
+                travervse(node.left)
+                travervse(node.right)
+        
+        travervse(root)
+
+        # find mode  items from count_map
+        max_count = 0
+        mode_items = []
+        for val, count in count_map.items():
+            if count > max_count:
+                mode_items = [val]
+                max_count = count
+            elif count == max_count:
+                mode_items.append(val)
+
+        return mode_items
