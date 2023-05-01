@@ -2,13 +2,8 @@
 """
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 """
+from . import TreeNode, Optional
 
-
-class TreeNode:  # pragma: no cover
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
 
 
 class Solution:
@@ -27,3 +22,21 @@ class Solution:
                 return value
 
             count += 1
+
+    def in_order(self, root):
+        if root is None:
+            return
+        if root.left:
+            yield from self.in_order(root.left)
+        if root.val is not None:
+            yield root.val
+        if root.right:
+            yield from self.in_order(root.right)
+            
+    
+    def kthSmallest_1(self, root: Optional[TreeNode], k: int) -> int:
+        pre_order_list = self.in_order(root)
+        for node_val in pre_order_list:
+            k -= 1
+            if k==0:
+                return node_val
