@@ -4,13 +4,13 @@ import json
 from pprint import pprint
 
 # Read in the invoice data as a dataframe
-df = pd.read_csv("invoice.csv")
+df = pd.read_csv("invoices.csv")
 
 map_invoices = {}
 last_invoice_number = 0
 last_invoice_date = None
 mapping_disorder = []
-d_pattern =  "%m/%d/%Y"
+d_pattern =  "%Y-%m-%d"
 
 # Loop through each row of the dataframe
 for i in range(len(df) - 1):
@@ -28,7 +28,7 @@ for i in range(len(df) - 1):
 
     # if next invoice date is greator than current drop it, and not it.
     if next_date > current_date:
-        mapping_disorder.append([int(current_row["invoice_number"]), next_date.strftime(d_pattern)])
+        mapping_disorder.append([int(current_row["invoice_number"]), current_date.strftime(d_pattern)])
         df.drop(i+1)
 
 
@@ -42,7 +42,7 @@ with open('data.json', 'w', encoding='utf-8') as f:
 
 # dump map_invoices.
 with open("map_invoices.log", 'w',encoding='utf-8') as f:
-    f.write(",".join(["invoice_month", "from", "to", "total", "missing", "missing_invoices"]) + "\n")
+    f.write(",".join(["month", "from", "to", "total", "missing", "missing_numbers"]) + "\n")
     for date_label, obj in map_invoices.items():
         min_in = min(obj)
         max_in = max(obj)

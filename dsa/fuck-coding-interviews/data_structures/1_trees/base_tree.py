@@ -176,8 +176,7 @@ class BaseTree(ABC):
         nodes = [value if value is None else cls.NODE_CLASS(value) for value in array]
         for i in range(1, len(nodes)):
             node = nodes[i]
-            parent_index = (i - 1) // 2
-            parent_node = nodes[parent_index]
+            parent_node = nodes[(i - 1) // 2]
             if (node is None) and (parent_node is None):
                 continue
             if i % 2 == 0:
