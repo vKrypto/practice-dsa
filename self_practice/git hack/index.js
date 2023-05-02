@@ -8,6 +8,8 @@ const file_path = './data.json'
 
 
 const makeCommits = n=>{
+    if(n==0) return;
+
     const x= Math.floor((Math.random() * 54) + 1);
     const y= Math.floor((Math.random() * 6) + 1);
     
@@ -22,4 +24,4 @@ const makeCommits = n=>{
     })
 
 }
-makeCommits(1)
+makeCommits(10)
