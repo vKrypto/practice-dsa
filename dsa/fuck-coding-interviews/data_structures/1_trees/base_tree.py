@@ -187,7 +187,7 @@ class BaseTree(ABC):
         bst.root = nodes[0]
         return bst
 
-    def to_array_representation(self):
+    def to_array_representation(self
         """
         Return the "Array Representation" of the tree.
         https://en.wikipedia.org/wiki/Binary_tree#Arrays
