@@ -4,6 +4,7 @@ https://leetcode.com/problems/intersection-of-two-arrays-ii/
 from collections import Counter
 from typing import List
 
+
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         result = []

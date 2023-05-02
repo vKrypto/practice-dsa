@@ -2,7 +2,7 @@
 """
 https://leetcode.com/problems/path-sum/
 """
-
+from . import *
 
 class TreeNode:  # pragma: no cover
     def __init__(self, val=0, left=None, right=None):
@@ -36,3 +36,13 @@ class Solution:
         except ReturnTrue:
             return True
         return False
+    
+    def hasPathSum_2(self, root: Optional[TreeNode], targetSum: int, rootPathSum:int=0) -> bool:
+        if root:
+            rootPathSum += root.val
+            if self.hasPathSum(root.left, targetSum, rootPathSum):
+                return True
+            if self.hasPathSum(root.right, targetSum, rootPathSum):
+                return True
+            if not(root.right or root.left):
+                return rootPathSum == targetSum
