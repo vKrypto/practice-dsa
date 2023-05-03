@@ -62,6 +62,40 @@ class Codec:
 
         return root
 
+
+
+class Codec_2:
+
+    def serialize(self, root):
+        if root is None:
+            return "N"
+        return f"{root.val},{self.serialize(root.left)},{self.serialize(root.right)}"
+        
+        
+    def deserialize(self, data):
+        if not hasattr(self, "index"):
+            self.index = 0
+
+        if data[self.index] == "N":
+            self.index += 2
+            return None
+
+        node = TreeNode(int(data[self.index]))
+        self.index += 2
+
+        # process left and right nodes recursively
+        node.left = self.deserialize(data)
+        node.right = self.deserialize(data)
+
+        return node
+        
+
+
+
+# Your Codec object will be instantiated and called as such:
+# ser = Codec()
+# deser = Codec()
+# ans = deser.deserialize(ser.serialize(root))
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
 # codec.deserialize(codec.serialize(root))

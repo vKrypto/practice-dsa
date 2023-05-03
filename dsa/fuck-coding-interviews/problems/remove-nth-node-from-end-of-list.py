@@ -2,12 +2,7 @@
 """
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 """
-
-
-class ListNode:  # pragma: no cover
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from . import Optional, ListNode
 
 
 class Solution:
@@ -63,4 +58,43 @@ class Solution2:
             index += 1
             node = node.next
 
+        return head
+
+
+
+class Solution3:
+
+    # @staticmethod
+    # def sll_to_list(sll):
+    #     data = []
+    #     while sll:
+    #         data.append(sll.val)
+    #         sll= sll.next
+    #     return data
+
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        """
+        step 1: two pointers to head, move second to nth node.
+        step 2: move both pointers till second.next is None
+        step 3: delete node pointed by first_pointer
+        """ 
+        # assert self.sll_to_list(head) == [1,2,3,4,5]
+        # step 1:
+        first_pointer = second_pointer = head
+        for _ in range(n):
+            second_pointer = second_pointer.next
+        # assert (self.sll_to_list(first_pointer), self.sll_to_list(second_pointer)) == ([1,2,3,4,5], [3,4,5])
+
+        # write base code: when remove first node
+        if second_pointer is None:
+            return head.next
+
+        # step 2:
+        while second_pointer.next:
+            second_pointer = second_pointer.next
+            first_pointer = first_pointer.next
+        # assert (self.sll_to_list(first_pointer), self.sll_to_list(second_pointer)) == ([3,4,5], [5])
+        
+        # step 3:
+        first_pointer.next = first_pointer.next.next 
         return head
