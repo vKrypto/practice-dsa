@@ -11,7 +11,6 @@ A binary search tree is a special binary tree which satisfies following properti
 """
 from collections import deque
 import sys
-
 from .base_tree import BaseTree, TreeNode
 
 

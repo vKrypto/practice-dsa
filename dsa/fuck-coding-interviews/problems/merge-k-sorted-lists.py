@@ -2,14 +2,8 @@
 """
 https://leetcode.com/problems/merge-k-sorted-lists/
 """
-from typing import List
 import heapq
-
-
-class ListNode:  # pragma: no cover
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from . import Optional, List, ListNode
 
 
 class Solution:
@@ -27,3 +21,36 @@ class Solution:
             last_node = node
 
         return dummy_head.next
+
+
+class Solution_2:
+
+    # space complexity: o(m) and time complexity=o(m*n)
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        merge_list = merge_list_head = ListNode()
+
+        while True:
+            # step 1: find min node val
+            min_val = None
+            for linked_list in lists:
+                if linked_list and (min_val is None or linked_list.val < min_val):
+                    min_val = linked_list.val
+                
+            # step 2: check if head_node.val is equal to min_val and advance head node by 1 node.
+            nodes = []
+            i = 0
+            while i < len(lists):
+                linked_list = lists[i]
+                if linked_list and linked_list.val == min_val:
+                    nodes.append(linked_list)
+                    lists[i] = lists[i].next
+                i += 1
+
+            # step3: add all nodes to merged_lists
+            for node in nodes:
+                merge_list.next = node
+                merge_list = node
+
+            # write base code to exit loop
+            if len(nodes) == 0 or not any(lists):
+                return merge_list_head.next
