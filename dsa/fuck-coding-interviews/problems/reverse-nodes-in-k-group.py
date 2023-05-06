@@ -1,7 +1,7 @@
 from . import ListNode, Optional
 
 class Solution:
-    
+
     def _reverse(self, orig_head):
         head = orig_head
         new_head = None  # this is where we build the reversed list (reusing the existing nodes)
@@ -13,6 +13,7 @@ class Solution:
 
         return [orig_head, new_head]
 
+    # time == O(n), space == o(n/k)
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         cur_head = cur_node = head
         list_group = []
@@ -32,7 +33,6 @@ class Solution:
         # step 2: merge groups:
         merged_list = merged_list_head = ListNode()
         for [tail, head] in list_group:
-            print(self.print_ll(head))
             merged_list.next = head
             merged_list = tail
 
