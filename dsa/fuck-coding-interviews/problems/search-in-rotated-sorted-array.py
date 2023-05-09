@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
 
     # time = o(n), sapce = o(1)
