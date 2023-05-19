@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/longest-repeating-character-replacement/description/
 
-from collections import Counter
+from collections import Counter, defaultdict
 
 class Solution:
     # time: o(n^3), space: o(1)
@@ -22,7 +22,7 @@ class Solution:
                 total_un_common_digit = len(temp) - max_freq
                 if total_un_common_digit <=k:
                     res = max(res, len(temp))
-        return res
+        return min(res, len(s))
 
     # time o(n^2), space: o(n)
     def characterReplacement_counter(self, s: str, k: int) -> int:
@@ -67,7 +67,7 @@ class Solution:
             else:
                 # advance left pointer by 1
                 left += 1
-        return res
+        return min(res, len(s))
 
 
     # time o(26*n), space: o(n)
@@ -95,7 +95,7 @@ class Solution:
                 # advance left pointer by 1
                 char_map[s[left]] -= 1
                 left += 1
-        return res
+        return min(res, len(s))
 
     # time o(n), space: o(n)
     def characterReplacement_two_pointer_optimized(self, s: str, k: int) -> int:
@@ -103,7 +103,8 @@ class Solution:
         left, right = 0, 0
         
         # create a char map
-        char_map = {s[0]:1}
+        char_map = defaultdict(int)
+        char_map[s[0]] += 1
         max_freq = 0
         while left <= right and right < len(s)-1:
             right += 1
@@ -122,7 +123,22 @@ class Solution:
                 # advance left pointer by 1
                 char_map[s[left]] -= 1
                 left += 1
-        return res
+        return min(res, len(s))
 
-
-
+    def characterReplacement(self, s: str, k: int) -> int:
+        if len(s) == 0 or len(s) == 1:
+            return len(s)
+        kk = k
+        i = max_count = 0
+        counts = defaultdict(int)
+        for char in s:
+            counts[char] += 1
+            if counts[char] > max_count:
+                max_count = counts[char]
+            else:
+                kk -= 1
+            if kk < 0:
+                counts[s[i]] -= 1
+                i += 1
+                kk += 1
+        return max_count + k - kk
