@@ -27,7 +27,7 @@ for i in range(len(df) - 1):
     map_invoices[label].append(current_invoice_number)
 
     # if next invoice date is greator than current drop it, and not it.
-    if next_date > current_date:
+    if next_date.year * 12 + next_date.month > current_date.year * 12 + current_date.month:
         mapping_disorder.append([int(current_row["invoice_number"]), current_date.strftime(d_pattern)])
         df.drop(i+1)
 
