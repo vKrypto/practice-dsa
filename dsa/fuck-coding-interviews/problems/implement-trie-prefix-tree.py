@@ -56,7 +56,7 @@ class Trie:
         return True
 
 
-# Solution 2: using set
+# Solution 2: using set slower  time: o(n)
 class Trie:
 
     def __init__(self):
