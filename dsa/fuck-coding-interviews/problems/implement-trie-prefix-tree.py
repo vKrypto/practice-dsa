@@ -2,20 +2,20 @@
 """
 https://leetcode.com/problems/implement-trie-prefix-tree/s
 """
-from typing import Dict
+from typing import Dict, collections
 from bisect import insort, bisect_left
 
 # There is another implementation without the intermediate node class:
 # https://github.com/vinta/fuck-coding-interviews/blob/master/data_structures/trees/trie.py
 
 
-class Node:
 
+# solution 1: using trie ndoe.
+class Node:
     def __init__(self, key=None):
         self.key = key
         self.children = {} # {char: node.}
         self.is_last_word = False
-
 
 class Trie:
 
@@ -56,6 +56,7 @@ class Trie:
         return True
 
 
+# Solution 2: using set
 class Trie:
 
     def __init__(self):
@@ -76,8 +77,7 @@ class Trie:
         return self.sorted_words[index].startswith(prefix)
     
 
-import collections
-
+# Solution 3:using hash-map
 class Trie:
 
     def __init__(self):
