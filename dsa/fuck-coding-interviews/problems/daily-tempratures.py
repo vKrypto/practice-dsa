@@ -4,7 +4,7 @@ from . import List
 
 class Solution:
 
-    # time: o(n**2), space=O(n)
+    # time: o(n**2)
     def dailyTemperatures_1(self, temperatures: List[int]) -> List[int]:
         temp_indexing = []
         len_temps = len(temperatures)
@@ -32,7 +32,7 @@ class Solution:
 
         for i, t in enumerate(temperatures):
             while stack and t > stack[-1][0]:
-                stackT, stackInd = stack.pop()
+                stackInd, _ = stack.pop()
                 res[stackInd] = i - stackInd
-            stack.append((t, i))
+            stack.append((i, t))
         return res
