@@ -1,5 +1,5 @@
 from itertools import product, starmap
-from . import List
+from typing import List
 
 class Solution:
     
@@ -13,7 +13,7 @@ class Solution:
             if board[r][c] != word[i]:
                 return False
             if i == wrdlen - 1:
-                return True
+                return True,
             
             board[r][c] = "#"
             i += 1
@@ -31,6 +31,7 @@ class Solution:
             cnts[ord(board[r][c]) - ord("A")] += 1
         if cnts[ord(word[0]) - ord("A")] > cnts[ord(word[-1]) - ord("A")]:
             word = word[::-1]
+
         return any(starmap(dfs, product(range(n), range(m))))
     
     
