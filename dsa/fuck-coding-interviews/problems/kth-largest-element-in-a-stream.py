@@ -10,7 +10,6 @@ class KthLargest:
         while len(self.min_heap) > self.k:
             heapq.heappop(self.min_heap)
         
-
     def add(self, val: int) -> int:
         heapq.heappush(self.min_heap, val)
         if len(self.min_heap) > self.k:
