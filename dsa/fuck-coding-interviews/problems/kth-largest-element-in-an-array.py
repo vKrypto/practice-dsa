@@ -39,18 +39,19 @@ class Solution:
 #   - Average Case: O(n)
 #   - Worst Case: O(n^2)
 # Extra Space Complexity: O(1)
-class Solution2:
-    def partition(self, nums: List[int], left: int, right: int) -> int:
-        pivot, fill = nums[right], left
+class Solution:
+    def partition(self, nums: List[int], left: int, last: int) -> int:
+        pivot = nums[last]
 
-        for i in range(left, right):
-            if nums[i] <= pivot:
-                nums[fill], nums[i] = nums[i], nums[fill]
-                fill += 1
+        for right in range(left, last):
+            if nums[right] <= pivot:
+                if right != left:
+                    nums[left], nums[right] = nums[right], nums[left]
+                left += 1
 
-        nums[fill], nums[right] = nums[right], nums[fill]
+        nums[left], nums[last] = nums[last], nums[left]
 
-        return fill
+        return left
 
     def findKthLargest(self, nums: List[int], k: int) -> int:
         k = len(nums) - k
