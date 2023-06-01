@@ -1,0 +1,19 @@
+gitlab > aws > kubernetes
+
+integration-testing
+pytest-cov
+pytest
+premethiuses
+
+Fahim sakri
+
+
+>>> kafka: Queuing Service
+>>> zookeeper:Distributed configure mangement, key-value store, being used in hadoop, kafka
+>>> warp10: populer time based Datbase, with analytics
+>>> Distributed Locks:
+>>> Accumulators: 
+>>> GraphDB
+>>> acceces level  in cdn's 
+
+

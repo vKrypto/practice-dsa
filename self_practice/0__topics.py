@@ -21,9 +21,24 @@ Planning fo rcoding Questions:
 3) draw a basic exmaple/
 4) think about edge cases./ ask question about them.
 5) find a bruteforce algo.
-6) pass test cases.
+6) pass test cases .
 7) optimize algo.
 8) pass test cases.
 9) more optimization techniques.
+
+
+
+
+
+Spinnaker
+Chaos Monkey
+
+
+>>>> form bytebytesgo.pdf>>
+
+topic pending:
+    1) A visual guide on how to choose the right Database
+    2) Which cloud provider should be used when building a big data solution?
+
 
 """

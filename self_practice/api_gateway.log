@@ -1,0 +1,14 @@
+/// comman features of API-Gateway
+
+
+configure api-support ( soap, rest, graphql, wbesockets, etc,)
+Security policies
+Routing
+Authorization
+Caching
+Monitoring
+Logging
+Transformation
+Service delivery
+Circuit breaker
+dropping headers ( https --> http etc..)

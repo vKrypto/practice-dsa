@@ -5,7 +5,6 @@ class Solution:
     @return: nothing
     """
     def rotateString(self, str, offset):
-        # write your code here
         if not str:
             return ''
             
