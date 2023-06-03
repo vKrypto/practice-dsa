@@ -2,7 +2,7 @@
 """
 https://leetcode.com/problems/task-scheduler/
 """
-from collections import Counter
+from collections import Counter, deque
 from typing import List
 import heapq
 
@@ -42,3 +42,48 @@ class Solution:
         # print(recorded_tasks)
 
         return len(recorded_tasks)
+
+
+
+class Solution2:
+
+    def leastInterval(self, tasks: List[str], n: int) -> int:
+        task_count_heap = [-i for i in  Counter(tasks).values()] # o(n), o(n)
+        heapq.heapify(task_count_heap)
+
+        time = 0
+        waiting_queue = deque()  #  [-cnt, idleTime]
+        while task_count_heap or waiting_queue:
+            time += 1
+            if task_count_heap:
+                # pick most count task
+                cnt = 1 + heapq.heappop(task_count_heap)
+                # if task not finished, send to waiting_queue
+                if cnt:
+                    waiting_queue.append([cnt, time + n])
+            # check for waiting queue items
+            if waiting_queue and waiting_queue[0][1] == time:
+                heapq.heappush(task_count_heap, waiting_queue.popleft()[0])
+        return time
+
+    def leastInterval_optimized(self, tasks: List[str], n: int) -> int:
+        task_count_heap = [-i for i in  Counter(tasks).values()] # o(n), o(n)
+        heapq.heapify(task_count_heap)
+
+        time = 0
+        waiting_queue = deque()  #  [-cnt, idleTime]
+        while task_count_heap or waiting_queue:
+            time += 1
+            if not task_count_heap:
+                # if task_count_heap does not exist, jump to waiting_queue first task time_stamp
+                time = waiting_queue[0][1]
+            else:
+                # pick most count task
+                cnt = 1 + heapq.heappop(task_count_heap)
+                # if task not finished, send to waiting_queue
+                if cnt:
+                    waiting_queue.append([cnt, time + n])
+            # check for waiting queue items
+            if waiting_queue and waiting_queue[0][1] == time:
+                heapq.heappush(task_count_heap, waiting_queue.popleft()[0])
+        return time
