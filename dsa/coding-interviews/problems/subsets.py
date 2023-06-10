@@ -4,7 +4,6 @@ from typing import List
 
 class Solution:
 
-
     def subsets_1(self, nums: List[int]) -> List[List[int]]:
         # bottom-up approach
         res = []
@@ -38,7 +37,7 @@ class Solution:
             result.append(subset)
 
         return result
-    
+
     """
     Runtime: 60 ms, faster than 49.80% of Python3 online submissions for Subsets.
     Memory Usage: 14 MB, less than 82.42% of Python3 online submissions for Subsets.
