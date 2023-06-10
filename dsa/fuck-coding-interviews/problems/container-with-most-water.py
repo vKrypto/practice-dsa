@@ -27,7 +27,7 @@ class Solution:
     """
     patterns:
         left , right( two-pointer)
-        calcualte area, main_tain max_area
+        calculate area, main_tain max_area
         if left < right:
             decrement left pointer
         else:
