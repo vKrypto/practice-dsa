@@ -18,7 +18,6 @@ class Solution:
     """
     def maxArea_bruteforce_optimized(self, height: List[int]) -> int:
         max_res = 0
-        n = len(height)
         for i, x in enumerate(height):
             for j, y in enumerate(height[i+1:]):
                 temp = abs(j+1)* min(x,y)
@@ -39,13 +38,16 @@ class Solution:
     Memory Usage: 27.4 MB, less than 44.12% of Python3 online submissions for Container With Most Water.
     """
     def maxArea_two_pointer(self, height: List[int]) -> int:
-        max_res = 0
-        n = len(height)
-        l, r= 0, n-1
-        while l < r:
-            max_res = max(max_res, (r-l)*min(height[r], height[l]))
-            if height[l] < height[r]:
-                l += 1
+        left, right = 0, len(height)-1
+        res = 0
+        while left < right:
+            container_height = min(height[left], height[right])
+            container_width = right - left
+            area = container_width * container_height
+            if res < area:
+                res = area
+            if height[left] > height[right]:
+                right -= 1
             else:
-                r -= 1
-        return max_res
+                left += 1
+        return res
