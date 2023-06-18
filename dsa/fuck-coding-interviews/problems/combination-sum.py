@@ -56,7 +56,7 @@ class Solution2:
         dp = [0]* (target + 1)
         dp[target] = 1
         def dfs(sum_yet=0):
-            print(sum_yet)
+            print(sum_yet, )
             res = 0
             for i in nums:
                 steps[0] += 1
