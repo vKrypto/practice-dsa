@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/combination-sum/description/
 from typing import List
 from time import perf_counter
-import timeit
 
 
 

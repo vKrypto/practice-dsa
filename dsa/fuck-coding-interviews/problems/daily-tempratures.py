@@ -6,7 +6,6 @@ class Solution:
 
     # time: o(n**2)
     def dailyTemperatures_1(self, temperatures: List[int]) -> List[int]:
-        temp_indexing = []
         len_temps = len(temperatures)
         res = [None for _ in range(len_temps)]
         temp_stack = []
