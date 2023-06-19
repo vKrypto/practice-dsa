@@ -70,3 +70,29 @@ class BiDirectionalGraph:
                     _visit(node, distance, cur_node)
 
         return path
+    
+
+    def dfs(self, source):
+        
+        visited = defaultdict(bool) # {node: True}
+        parent_map = defaultdict() # {node: parent_node}
+        path = [source] #traverse path [0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9]
+
+
+        def _visit(node, parent_node):
+            parent_map[node] = parent_node
+            visited[node] = True
+            path.append(node)
+
+        cur_stack = [source]
+        parent_node = None
+
+        while cur_stack:
+            last_node = cur_stack.pop()
+            _visit(last_node, parent_node)
+            parent_node = last_node
+            for node in self.data[last_node]:
+                if not visited[node]:
+                    cur_stack.append(node)
+
+        return path
