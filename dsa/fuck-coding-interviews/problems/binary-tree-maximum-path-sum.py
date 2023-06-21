@@ -1,13 +1,8 @@
-# coding: utf-8
-"""
-https://leetcode.com/problems/binary-tree-maximum-path-sum/
-"""
-from . import Optional, TreeNode
+# https://leetcode.com/problems/binary-tree-maximum-path-sum/
+from . import TreeNode
 
 
 class Solution:
-    # The meaning of "path" in this problem:
-    # https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39811/What-is-the-meaning-of-path-in-this-problem
     def maxPathSum(self, root: TreeNode) -> int:
         self.max_sum = float('-inf')
 

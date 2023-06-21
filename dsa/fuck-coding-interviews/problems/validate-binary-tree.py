@@ -38,13 +38,13 @@ class Solution:
 
 
 
-import os
+# import os
 
-def exec():
-    ls = os.listdir()
-    for i, f in enumerate(ls):
-        if os.path.isfile(f):
-            try:
-                os.rename(f, os.path.join(str(i) + "_" + f))
-            except OSError as e:
-                print("e", str(e))
+# def exec():
+#     ls = os.listdir()
+#     for i, f in enumerate(ls):
+#         if os.path.isfile(f):
+#             try:
+#                 os.rename(f, os.path.join(str(i) + "_" + f))
+#             except OSError as e:
+#                 print("e", str(e))
