@@ -22,7 +22,6 @@ class Solution:
         return max(dfs(0), dfs(1))
     
     
-    
     # iterative solution
     def rob_iterative(self, nums: List[int]) -> int:
         dp = [0]* len(nums) + [0]*3
@@ -40,11 +39,9 @@ class Solution:
         return max(a, b)
     
     
+    # iterative memory optimized solution
     def rob(self, nums: List[int]) -> int:
-        rob1, rob2 = 0, 0
-
+        last, last_last = 0, 0
         for n in nums:
-            temp = max(n + rob1, rob2)
-            rob1 = rob2
-            rob2 = temp
-        return rob2
+            last_last, last = last, max(n + last_last, last)
+        return last
