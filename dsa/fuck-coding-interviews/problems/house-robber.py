@@ -33,8 +33,8 @@ class Solution:
     # iterative memory optimized solution
     def rob_iterative_optimized(self, nums: List[int]) -> int:
         a, b, c = 0, 0, 0
-        for i in range(len(nums)):
-            a, b, c = nums[i] +  max(b, c), a, b
+        for num in nums:
+            a, b, c = num +  max(b, c), a, b
         return max(a, b)
     
     
