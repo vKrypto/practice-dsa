@@ -37,7 +37,8 @@ class Graph:
                 total_distance = cur_dist + neighbor_node_dist
                 if total_distance <= distance[neighbor_node]:
                     distance[neighbor_node] = total_distance
-                    queue.append((total_distance, neighbor_node))
+                    if neighbor_node not in visited:
+                        queue.append((total_distance, neighbor_node))
         self.display_result(source, distance)
 
 # Driver's code
