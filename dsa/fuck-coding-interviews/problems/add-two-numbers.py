@@ -15,7 +15,7 @@ class Solution:
         """
         Runtime: 64 ms, faster than 96.83% of Python3 online submissions for Add Two Numbers.
         Memory Usage: 13.9 MB, less than 88.18% of Python3 online submissions for Add Two Numbers.
-        """
+        """  # noqa: E501
         res = head = ListNode()
         remainder = 0
         while l1 or l2:
