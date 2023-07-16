@@ -44,7 +44,7 @@ class Graph():
 
             for v in range(self.V):
 
-                if self.graph[u][v] > 0 and mstSet[v] == False and key[v] > self.graph[u][v]:
+                if self.graph[u][v] > 0 and mstSet[v] is False and key[v] > self.graph[u][v]:
                     key[v] = self.graph[u][v]
                     parent[v] = u
             key[u] = sys.maxsize
