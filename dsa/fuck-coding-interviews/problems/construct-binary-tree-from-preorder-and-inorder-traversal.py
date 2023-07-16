@@ -7,6 +7,7 @@ from . import Optional, TreeNode, List
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
 
     def buildTree(self, pre_order: List[int], in_order: List[int]) -> Optional[TreeNode]:

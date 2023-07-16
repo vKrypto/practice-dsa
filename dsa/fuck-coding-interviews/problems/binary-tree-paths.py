@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/binary-tree-paths/description/
-from . import *
+from . import Optional, TreeNode, List
 
 class Solution:
     def __init__(self):
