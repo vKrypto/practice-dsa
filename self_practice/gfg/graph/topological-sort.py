@@ -31,7 +31,7 @@ class Graph:
 		cnt = 0
 		top_order = []
         
-        # pop from left in queue and while poping decrement in_degree all adjacent nodes by 1.
+        # pop from left in queue and while popping decrement in_degree all adjacent nodes by 1.
         # and also add them into queue if in_degree is zero
 		while queue:
 
@@ -52,12 +52,12 @@ class Graph:
 
 
 g = Graph(6)
-g.addEdge(5, 2);
-g.addEdge(5, 0);
-g.addEdge(4, 0);
-g.addEdge(4, 1);
-g.addEdge(2, 3);
-g.addEdge(3, 1);
+g.addEdge(5, 2)
+g.addEdge(5, 0)
+g.addEdge(4, 0)
+g.addEdge(4, 1)
+g.addEdge(2, 3)
+g.addEdge(3, 1)
 
 print ("Following is a Topological Sort of the given graph")
 g.topologicalSort()
