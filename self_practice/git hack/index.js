@@ -30,7 +30,7 @@ const makeCommits = n=>{
     // const y= Math.floor((Math.random() * 6) + 1);
     
     // const DATE = moment().subtract(1, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format()
-    const DATE = randomDate('06/05/2023', '06/17/2023')
+    const DATE = randomDate('06/25/2023', '07/28/2023')
     
     const data = {date: DATE}
     console.log(data)
@@ -41,4 +41,4 @@ const makeCommits = n=>{
     })
 
 }
-makeCommits(10)
+makeCommits(100)
