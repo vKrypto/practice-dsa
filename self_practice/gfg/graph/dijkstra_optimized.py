@@ -1,6 +1,7 @@
 import sys
 import heapq
 
+# shortest_path(from_node, to_node) or shortest_distance(from_node, to_node)
 
 class Graph:
     def __init__(self, node_count) -> None:
