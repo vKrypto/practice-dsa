@@ -1,6 +1,6 @@
 # find largest path in graph from a node to others
 from collections import defaultdict
-maxsize = -10**2
+maxsize = -10**9
 
 class Graph:
     def __init__(self, vertices) -> None:
