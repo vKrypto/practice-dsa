@@ -1,36 +1,68 @@
-# A Python3 program for Prim's Minimum Spanning Tree (MST) algorithm.
-# The program is for adjacency matrix representation of the graph
+# being used to get all strongly connected components
+
+from collections import defaultdict
+
+class Graph:
+    def __init__(self,vertices):
+            self.V= vertices 
+            self.graph = defaultdict(list)
+
+    def addEdge(self,u,v):
+            self.graph[u].append(v)
+
+    def _DFSUtil(self,v,visited):
+        visited[v]= True
+        print(v)
+        for i in self.graph[v]:
+            if not visited[i]:
+                self._DFSUtil(i,visited)
 
 
-class Graph():
-
-    def __init__(self, vertices):
-        self.V = vertices
-        self.graph = [[0 for column in range(vertices)]
-                    for row in range(vertices)]
-    
-    def kosaraju(self):
-        cycle_set = set()
+    def _fillOrder(self,v,visited, stack):
+        visited[v]= True
+        for i in self.graph[v]:
+            if not visited[i]:
+                self._fillOrder(i, visited, stack)
+        stack = stack.append(v)
         
-        def dfs(node, parent=set()):
-            parent.add(node.val)
-            for neighbor in self.graph[node]:
-                if neighbor in parent:
-                    cycle_set.add(parent)
-                    parent = set()
-                dfs(neighbor, parent)
+
+    def _getTranspose(self):
+        g = Graph(self.V)
+
+        for i in self.graph:
+            for j in self.graph[i]:
+                g.addEdge(j,i)
+        return g
+
+    def printSCCs(self):            
+        stack = []
+        visited =[False]*(self.V)
         
+        # step 1:  Fill vertices in stack according to their finishing times
+        for i in range(self.V):
+            if not visited[i]:
+                self._fillOrder(i, visited, stack)
 
-# Driver's code
-if __name__ == '__main__':
-    g = Graph(5)
-    g.graph = [
-        [0, 2, 0, 6, 0],
-        [2, 0, 3, 8, 5],
-        [0, 3, 0, 0, 7],
-        [6, 8, 0, 0, 9],
-        [0, 5, 7, 9, 0]
-    ]
+        #step 2: Create a reversed graph
+        gr = self._getTranspose()
+            
+        visited =[False]*(self.V)
+        # step 3: Now process all vertices in order defined by Stack
+        while stack:
+            i = stack.pop()
+            if not visited[i]:
+                gr._DFSUtil(i, visited)
+                print("")
 
-    g.primMST()
+# Create a graph given in the above diagram
+g = Graph(5)
+g.addEdge(1, 0)
+g.addEdge(0, 2)
+g.addEdge(2, 1)
+g.addEdge(0, 3)
+g.addEdge(3, 4)
 
+
+print ("Following are strongly connected components " +
+						"in given graph")
+g.printSCCs()

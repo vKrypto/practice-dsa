@@ -1,3 +1,7 @@
+
+# shortest_path_to_all_node(from_node) or shortest_distance_to_all_node(from_node)
+
+
 class Graph:
 
 	def __init__(self, vertices):
