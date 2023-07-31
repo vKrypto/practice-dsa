@@ -18,7 +18,7 @@ class Graph:
         return min_index
     
     def display_result(self, source, distance):
-        print("node", " "*7, f"Distance From source {source}")
+        print("node", " "*7, f"Min Distance From node {source}")
         for node_index, node_distance in enumerate(distance):
             print(node_index, " "*10, node_distance)
                 

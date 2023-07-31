@@ -23,7 +23,7 @@ class Graph:
             if not visited[i]:
                 dfs(i)
 
-    def longestPath(self, source=0):
+    def iterative_longestPath(self, source=0):
         dist = [maxsize for _ in range(self.vertices)]
 
         self._topologicalSortUtil()
@@ -41,6 +41,28 @@ class Graph:
         for i in range(self.vertices):
             print("INF ",end="") if (dist[i] == maxsize) else print(dist[i],end=" ")
         print("")
+
+
+    def recursive_longestPath(self, source=0):
+        def relax(node):
+            for [child_node, weight] in self.graph[node]:
+                if dist[child_node] < dist[node] + weight:
+                    dist[child_node] = dist[node] + weight
+                    relax(child_node)
+                    
+        dist = [maxsize for _ in range(self.vertices)]
+        dist[source] = 0
+        self._topologicalSortUtil()
+        
+        while len(self.top_sort_stack) > 0:
+            node = self.top_sort_stack.pop()
+            if dist[node] != maxsize:
+                relax(node)
+
+        for i in range(self.vertices):
+            print("INF ",end="") if (dist[i] == maxsize) else print(dist[i],end=" ")
+        print("")
+
 
 # Driver code
 if __name__ == '__main__':
@@ -60,4 +82,5 @@ if __name__ == '__main__':
 
     s = 1
     print("Following are longest distances from source vertex ",s)
-    g.longestPath(s)
+    g.iterative_longestPath(s)
+    g.recursive_longestPath(s)
