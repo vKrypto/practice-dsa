@@ -2,7 +2,7 @@ from collections import defaultdict
 from typing import List
 
 
-class Graph():
+class Graph:
 
     def __init__(self, vertices):
         self.V = vertices
