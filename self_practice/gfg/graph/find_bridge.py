@@ -1,3 +1,4 @@
+from collections import defaultdict
 
 
 class Graph:
@@ -22,6 +23,71 @@ class Graph:
         
         return dfs()
                             
+class DisjointSetGraph:
+    
+    def __init__(self, n):
+        self.n = n
+        self.graph = defaultdict(list)
+        self.parent = [-1] * n
+        self.edges = []
+
+    def find(self, node):
+        if self.parent[node] < 0:
+            return node
+        else:
+            parent = self.find(self.parent[node])
+            self.parent[node] = parent
+            return parent
+        
+    
+    def add_edge(self, edge):
+        self.edges.append(edge)
+        from_node, to_node = edge
+        self.graph[from_node].append(to_node)
+        a = self.find(from_node)
+        b = self.find(to_node)
+        if a == b:
+            return            
+        #  both belong to the different family
+        weight_a = self.parent[a]
+        weight_b = self.parent[b]
+
+        # may need to update all member's parent
+        if weight_a > weight_b:
+            self.parent[a] = weight_a + weight_b
+            self.parent[b] = a 
+        elif weight_a < weight_b:
+            self.parent[b] = weight_a + weight_b
+            self.parent[a] = b 
+        else:
+            self.parent[a] = weight_a + weight_b
+            self.parent[b] = a
+    
+    def remove_edge(self, edge):
+        pass
+    
+    def find_bridge(self):
+        bridges = []
+        for edge in self.edges:
+            self.remove_edge(edge)            
+            from_node, to_node = edge
+            parent_from = self.find(from_node)
+            parent_to = self.find(to_node)
+            if parent_from != parent_to:
+                bridges.append(edge)
+        return bridges
+    
+# Driver Code
+if __name__ == '__main__':
+    g2 = DisjointSetGraph(5)
+    g2.addEdge(0, 1)
+    g2.addEdge(0, 2)
+    g2.addEdge(1, 2)
+    g2.addEdge(1, 4)
+    g2.addEdge(2, 4)
+    g2.addEdge(4, 3)
+
+    g2.find_bridges()
 
                 
 # Driver's code
