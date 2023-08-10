@@ -41,4 +41,4 @@ const makeCommits = n=>{
     })
 
 }
-makeCommits(10)
+makeCommits(20)
