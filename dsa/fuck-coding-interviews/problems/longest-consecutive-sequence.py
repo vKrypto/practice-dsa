@@ -21,4 +21,25 @@ class Solution:
                 max_length = max(max_length, temp)
                 temp = 1
         return max(max_length, temp)
-        
+
+
+    # time: o(n), space: o(n)
+    def longestConsecutive(self, nums: List[int]) -> int: 
+        # base-case:
+        if not nums:
+            return 0
+        nums_set = set()
+        for i in nums:
+            nums_set.add(i)
+        res = 1
+        for i in nums_set:
+            if i-1 in nums_set:
+                continue
+            else:
+                local_res = 1
+                while i+1 in nums_set:
+                    local_res += 1
+                    i = i+1
+                res = max(res, local_res)
+
+        return res
