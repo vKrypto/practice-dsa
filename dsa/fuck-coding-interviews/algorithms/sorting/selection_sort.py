@@ -3,13 +3,12 @@
 Selection Sort
 https://en.wikipedia.org/wiki/Selection_sort
 
-Worst-case performance: О(n^2)
-Best-case performance: О(n^2)
-Average performance: О(n^2)
+Worst-case performance: О(n^2) comparisons, О(n) swaps
+Best-case performance: О(n^2) comparisons, О(n) swaps
+Average performance: О(n^2) comparisons, О(n) swaps
 """
 
 
-# Select the smallest item each round.
 def selection_sort(arr):
     sorted_arr = []
 
@@ -33,7 +32,7 @@ def selection_sort(arr):
     return sorted_arr
 
 
-def selection_sort_in_place(arr):
+def selection_sort_nested_for_loop(arr):
     length = len(arr)
     for i in range(length - 1):
         # Find the smallest item in the unsorted sublist

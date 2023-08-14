@@ -1,5 +1,5 @@
 # coding: utf-8
-from ..heaps.array_based_binary_heap import ArrayBasedBinaryHeap
+from data_structures.heaps.array_based_binary_heap import ArrayBasedBinaryHeap
 
 
 class HeapBasedPriorityQueue:

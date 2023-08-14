@@ -29,7 +29,6 @@ class Multiset:
                 yield elem
 
     def add(self, elem):
-        # will not raise and keyError because self.dict is defaultdict(int) which has default valuse as 0
         self.dict[elem] += 1
         self.size += 1
 

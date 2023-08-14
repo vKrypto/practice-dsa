@@ -5,10 +5,8 @@ https://learning.oreilly.com/library/view/Data+Structures+and+Algorithms+in+Pyth
 import ctypes
 
 
-# A dynamic array is that a list maintains an underlying array
-#  that has greater capacity than the current length of the list
+# A dynamic array is that a list maintains an underlying array that has greater capacity than the current length of the list
 # This extra capacity makes it easy to append a new element to the list
-
 class DynamicArray:
     def __init__(self, capacity=2):
         self._size = 0
