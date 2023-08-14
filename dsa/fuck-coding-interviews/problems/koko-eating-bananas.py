@@ -2,7 +2,7 @@
 
 
 import math
-from . import List
+from typinf import List
 
 class Solution:
 

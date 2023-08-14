@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/palindrome-partitioning/description/
 
 
-from . import List
+from typinf import List
 
 class Solution:
     def partition(self, s: str) -> List[List[str]]:

@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/leaf-similar-trees/description/
 
-from . import Optional, TreeNode
-# Definition for a binary tree node.
+from . import  TreeNode
+from typing import Optional# Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val

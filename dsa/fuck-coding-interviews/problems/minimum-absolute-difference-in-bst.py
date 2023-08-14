@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/minimum-absolute-difference-in-bst/submissions/941812092/
-from . import Optional, TreeNode
-
+from . import  TreeNode
+from typing import Optional
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

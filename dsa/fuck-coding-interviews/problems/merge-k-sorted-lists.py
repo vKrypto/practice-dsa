@@ -3,7 +3,8 @@
 https://leetcode.com/problems/merge-k-sorted-lists/
 """
 import heapq
-from . import Optional, List, ListNode
+from typing import Optional, List
+from . import ListNode
 
 
 class Solution:

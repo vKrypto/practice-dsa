@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/find-center-of-star-graph/
 
 from collections import defaultdict
-from . import List
+from typinf import List
 
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:

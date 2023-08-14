@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/find-the-difference-of-two-arrays/description/
-from . import List, Counter
+from typinf import List, Counter
 
 
 class Solution:

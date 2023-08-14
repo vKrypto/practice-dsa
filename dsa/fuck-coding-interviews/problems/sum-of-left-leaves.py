@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/sum-of-left-leaves/submissions/941805786/
 
-from . import Optional, TreeNode
-
+from . import  TreeNode
+from typing import Optional
 
 
 # Definition for a binary tree node.

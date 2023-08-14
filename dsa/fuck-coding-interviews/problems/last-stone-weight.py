@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/last-stone-weight/description/
 import heapq
-from . import List
+from typinf import List
 
 
 class Solution:

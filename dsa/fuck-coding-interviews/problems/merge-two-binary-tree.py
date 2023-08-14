@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/merge-two-binary-trees/description/
 
-from . import TreeNode, Optional
-
+from . import  TreeNode
+from typing import Optional
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

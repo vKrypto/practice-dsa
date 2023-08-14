@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/daily-temperatures/submissions/957261343/
 
-from . import List
+from typinf import List
 
 class Solution:
 

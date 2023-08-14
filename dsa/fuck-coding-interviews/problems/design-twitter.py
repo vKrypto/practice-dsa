@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/design-twitter/description/
-from . import List, defaultdict, heapq
+from typinf import List, defaultdict, heapq
 
 
 class Twitter:

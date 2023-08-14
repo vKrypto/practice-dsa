@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/word-search/
 from itertools import product, starmap
-from . import List
+from typinf import List
 
 
 class Solution:

@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/diameter-of-binary-tree/
 
-from . import TreeNode, Optional
-
+from . import  TreeNode
+from typing import Optional
 
 # Definition for a binary tree node.
 # class TreeNode:

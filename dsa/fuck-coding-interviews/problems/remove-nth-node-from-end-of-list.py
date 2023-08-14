@@ -2,7 +2,8 @@
 """
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 """
-from . import Optional, ListNode
+from . import ListNode
+from typing import Optional
 
 
 class Solution:

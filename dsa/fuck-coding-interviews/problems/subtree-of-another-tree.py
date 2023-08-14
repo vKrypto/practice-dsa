@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/subtree-of-another-tree/submissions/941795949/
-from . import Optional, TreeNode
-
+from . import  TreeNode
+from typing import Optional
 
 # Definition for a binary tree node.
 # class TreeNode:

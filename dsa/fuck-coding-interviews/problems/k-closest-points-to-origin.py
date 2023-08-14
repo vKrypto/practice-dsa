@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/k-closest-points-to-origin/submissions/960522129/
-from . import List
+from typinf import List
 import heapq
 
 

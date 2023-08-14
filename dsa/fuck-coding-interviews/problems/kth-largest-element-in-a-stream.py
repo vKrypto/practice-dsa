@@ -1,4 +1,4 @@
-from . import List
+from typinf import List
 import heapq
 
 class KthLargest:

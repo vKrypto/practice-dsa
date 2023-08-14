@@ -1,5 +1,5 @@
-from . import Optional, TreeNode, List
-
+from . import TreeNode
+from typing import Optional, List
 
 # Definition for a binary tree node.
 # class TreeNode:

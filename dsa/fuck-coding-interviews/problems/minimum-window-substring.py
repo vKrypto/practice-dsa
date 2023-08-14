@@ -1,4 +1,4 @@
-from . import collections
+import collections
 
 class Solution:
     # time= o(len(s2)), space= 2* o(len(s1)),

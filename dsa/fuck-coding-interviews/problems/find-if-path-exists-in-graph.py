@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/find-if-path-exists-in-graph/
 
-from . import List
+from typinf import List
 from collections import defaultdict
 
 class Solution:

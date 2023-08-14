@@ -1,4 +1,4 @@
-from . import ListNode, Optional
+from typinf import ListNode, Optional
 
 class Solution:
 

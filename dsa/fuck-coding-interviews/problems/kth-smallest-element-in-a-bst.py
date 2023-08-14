@@ -2,8 +2,8 @@
 """
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 """
-from . import TreeNode, Optional
-
+from . import  TreeNode
+from typing import Optional
 
 
 class Solution:

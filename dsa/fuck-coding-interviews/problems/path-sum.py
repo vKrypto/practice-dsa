@@ -2,7 +2,8 @@
 """
 https://leetcode.com/problems/path-sum/
 """
-from . import *
+from typing import Optional
+
 
 class TreeNode:  # pragma: no cover
     def __init__(self, val=0, left=None, right=None):

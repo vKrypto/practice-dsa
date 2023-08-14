@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/search-a-2d-matrix/submissions/945833567/
-from . import List
+from typinf import List
 
 
 class Solution:

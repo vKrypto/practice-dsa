@@ -2,7 +2,7 @@
 
 
 from collections import defaultdict
-from . import List
+from typinf import List
 
 
 class Solution:

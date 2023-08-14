@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/combination-sum-ii/description/
 
-from . import List
+from typinf import List
 
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
