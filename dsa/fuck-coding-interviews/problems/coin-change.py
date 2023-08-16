@@ -86,3 +86,53 @@ class Solution3:
             return -1
         else:
             return coins_n[amount]
+
+class Solution4:
+    
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        dp = [amount + 1]* (amount +1)
+        dp[0] = 0
+        
+        for i in range(1, amount +1):
+            for c in coins:
+                # check amount can use at least on coins of amount c,
+                if i - c >= 0:
+                    dp[i] = min(dp[i], 1+dp[i-c])
+                    
+        return dp[amount] if dp[amount] != amount +1 else -1
+    
+    
+    
+
+class Solution5:
+    
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        # greedy approach
+        g_coins_count =  float('inf')
+        coins.sort(reverse=True)
+        max_per_coins = [amount//i for i in coins]
+        
+        for coin_index in range(len(coins)):
+            while max_per_coins[coin_index] > 0:
+                temp_amount = amount
+                coins_count = 0
+                i = 0
+                while temp_amount>0 and i <= len(coins)-1:
+                    coin_used = min(max_per_coins[i], temp_amount//coins[i])
+                    amount_remained = temp_amount - coin_used*coins[i]
+                    print(coins[i], "X", coin_used, amount_remained)
+                    coins_count += coin_used
+                    temp_amount = amount_remained
+                    i += 1
+                if temp_amount:
+                    print("not possible.")
+                else:
+                    print("coin used : ", coins_count)
+                    g_coins_count = min(g_coins_count, coins_count)
+                max_per_coins[coin_index] -= 1
+            break
+        return g_coins_count
+            
+        
+
+Solution4().coinChange([1,5,7], 36)
