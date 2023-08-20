@@ -6,6 +6,7 @@ https://leetcode.com/problems/is-subsequence/
 
 class Solution:
     
+    # time: o(n), space: o(1)ßß
     def isSubsequence(self, t: str, s: str) -> bool:
         i = j = 0
         while i < len(s) and j < len(t):
