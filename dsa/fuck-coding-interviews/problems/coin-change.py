@@ -135,4 +135,57 @@ class Solution5:
             
         
 
+class Solution6:
+    
+    # step 1: recursion solution
+    def coinChange_1(self, coins: List[int], amount: int) -> int:
+        def func(index):
+            if index == 0:
+                return 0
+            coins_used = float('inf')
+            for coin in coins:
+                if coin <= index:
+                    coins_used = min(coins_used, 1+ func(index-coin))
+            return coins_used
+        
+        res = func(amount)
+        return res if res != float('inf') else -1
+
+    # step 1: recursion solution + add memoization    
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        memo = [None for _ in range(amount + 1)]
+
+        def func(index):
+            if index == 0:
+                return 0
+            if memo[index] is not None:
+                return memo[index]
+            coins_used = float('inf')
+            for coin in coins:
+                if coin <= index:
+                    coins_used = min(coins_used, 1+ func(index-coin))
+        
+            return coins_used
+        res = func(amount)
+        return res if res != float('inf') else -1
+
+
+    # step 1: convert into tabulation solution    
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        memo = [None for _ in range(amount + 1)]
+        memo[0] = 0
+        
+        for index in range(1, amount+1):
+            if memo[index] is not None:
+                return memo[index]
+            coins_used = float('inf')
+            for coin in coins:
+                if coin <= index:
+                    coins_used = min(coins_used, 1+ memo[index-coin])
+            memo[index] = coins_used
+
+        res = memo[amount]
+        return res if res != float('inf') else -1
+
+
 Solution4().coinChange([1,5,7], 36)
