@@ -84,5 +84,5 @@ class Solution:
                         res_count += prev[char]
                 cur[last_char] = res_count
             prev = cur
-        return cur[0]
+        return prev[0]
 print(Solution().countVowelStrings(3))
