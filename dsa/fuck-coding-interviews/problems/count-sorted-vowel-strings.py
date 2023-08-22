@@ -71,10 +71,9 @@ class Solution:
         return dp[n-1][0]
     
     def countVowelStrings(self, n: int) -> int:
-        prev = [None for _ in range(5)]
         # base-case.
-        for last_char in range(5):
-            prev[last_char] = 5 - last_char
+        prev = [5-i for i in range(5)]
+        cur = [None for _ in range(5)]
         
         # index-case
         for i in range(1, n):
