@@ -81,8 +81,9 @@ class Solution:
                 res_count = 0
                 for char in range(5):
                     if last_char <= char:
-                        res_count += dp[i-1][char]
-                dp[i][last_char] = res_count
+                        res_count += prev[char]
+                cur[last_char] = res_count
+            prev = cur
         print(dp)
         return dp[n-1][0]
 print(Solution().countVowelStrings(3))
