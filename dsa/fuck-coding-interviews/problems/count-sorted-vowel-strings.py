@@ -69,4 +69,21 @@ class Solution:
                 dp[i][last_char] = res_count
         print(dp)
         return dp[n-1][0]
+    
+    def countVowelStrings(self, n: int) -> int:
+        dp = [[None]*5 for _ in range(n)]
+        # base-case.
+        for last_char in range(5):
+            dp[0][last_char] = 5 - last_char
+        
+        # index-case
+        for i in range(1, n):
+            for last_char in range(5):
+                res_count = 0
+                for char in range(5):
+                    if last_char <= char:
+                        res_count += dp[i-1][char]
+                dp[i][last_char] = res_count
+        print(dp)
+        return dp[n-1][0]
 print(Solution().countVowelStrings(3))
