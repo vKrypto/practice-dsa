@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # recursive cached solution
     def canPartition(self, nums: List[int]) -> bool:
         target = sum(nums)/2
         # base-case
