@@ -3,6 +3,7 @@
 https://leetcode.com/problems/single-number/
 """
 from typing import List
+from functools import reduce
 
 
 class Solution:
@@ -17,3 +18,7 @@ class Solution:
         for num, count in counter.items():
             if count == 1:
                 return num
+
+
+    def singleNumber(self, nums: List[int]) -> int:
+        return reduce(lambda a,b: a^b, nums)
