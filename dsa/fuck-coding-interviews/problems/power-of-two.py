@@ -28,6 +28,7 @@ class Solution2:
 
 
 class Solution3:
+
     def isPowerOfTwo(self, n: int) -> bool:
         return (n & (n - 1) == 0) and (n != 0)
 
