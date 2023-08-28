@@ -30,3 +30,20 @@ class Solution2:
 class Solution3:
     def isPowerOfTwo(self, n: int) -> bool:
         return (n & (n - 1) == 0) and (n != 0)
+
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        while n >= 2:
+            n = n/2
+        return n== 1
+
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        return n & (n-1) == 0
+
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        return n.bit_count() == 1
