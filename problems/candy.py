@@ -8,20 +8,16 @@ class Solution:
     def candy(self, ratings: List[int]) -> int:
         n = len(ratings)
         res = [1] * n
-        for index, rating in enumerate(ratings):
-            if index -1 >=0 and ratings[index] > ratings[index-1]:
-                res[index] = max(res[index], res[index-1] +1)
-            if index + 1 < n and ratings[index] > ratings[index+1]:
-                # backtrack changes..
-                res[index] = max(res[index], res[index+1] +1)
         
-        res_count = 0
-        for index in range(n-1, -1, -1):
-            if index + 1 < n and ratings[index] > ratings[index+1]:
-                # backtrack changes..
-                res[index] = max(res[index], res[index+1] +1)
-            if index -1 >=0 and ratings[index] > ratings[index-1]:
-                res[index] = max(res[index], res[index-1] +1)
-            res_count += res[index]
-
+        # from start to end
+        for i in range(n-1):
+            if ratings[i] < ratings[i+1]:
+                res[i+1] = max(1 + res[i], res[i+1])
+        
+        res_count = res[-1]
+        for i in range(n-2, -1, -1):
+            if ratings[i+1] < ratings[i]:
+                res[i] = max(1 + res[i+1], res[i])
+            res_count += res[i]
+            
         return res_count
