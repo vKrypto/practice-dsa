@@ -3,7 +3,7 @@ import sys
 from typing import List
 
 class Solution:
-    
+
     @staticmethod
     def _dist(p1, p2):
       x1,y1 = p1
@@ -46,11 +46,8 @@ class Solution:
         for _ in range(self.n):
 
             u = self.minKey(key)
-
             mstSet[u] = True
-
             for v in range(self.n):
-
                 if self.graph[u][v] > 0 and mstSet[v] is False and key[v] > self.graph[u][v]:
                     key[v] = self.graph[u][v]
                     parent[v] = u
