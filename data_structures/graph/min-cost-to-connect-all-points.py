@@ -9,25 +9,27 @@ class Solution:
       x1,y1 = p1
       x2, y2 = p2
       return abs(x2-x1) + abs(y2-y1)
-
-    def minCostConnectPoints(self, points: List[List[int]]) -> int:
-        n = len(points)
-        self.n = n
+    
+    def build_graph(self, points):
+        # build nxn grid points
+        self.n = len(points)
         self.graph = [[0]*self.n for _ in range(self.n)]
-        for i in range(n):
-          for j in range(n):
+        for i in range(self.n):
+          for j in range(self.n):
             if i != j:
               self.graph[i][j] = self._dist(points[i], points[j])
 
-        res = 0
+    def minCostConnectPoints(self, points: List[List[int]]) -> int:
+        self.build_graph(points)
         parent = self.primMST()
+
+        res = 0
         for i in range(1, self.n):
             res += self.graph[i][parent[i]]
         return res
 
     def minKey(self, key):
         min_val = sys.maxsize
-
         for v in range(self.n):
             if key[v] < min_val:
                 min_val = key[v]
