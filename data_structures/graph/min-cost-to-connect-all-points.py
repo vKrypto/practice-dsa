@@ -39,7 +39,7 @@ class Solution:
 
     def primMST(self):
         key = [sys.maxsize] * self.n
-        parent = [None] * self.V 
+        parent = [None] * self.n
         key[0] = 0
         mstSet = [False] * self.n
 
