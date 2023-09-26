@@ -16,4 +16,3 @@ class Solution:
                     dp[word] = max(dp[word], dp[prev_word] + 1)
             max_chain = max(max_chain, dp[word])
         return max_chain
-    

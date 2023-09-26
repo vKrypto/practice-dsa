@@ -25,6 +25,7 @@ class Solution:
         
         return [x for _, x in h[:k]]
     
+    # time: O(n), space: O(n)
     def topKFrequent3(self, words: List[str], k: int) -> List[str]:
         from collections import defaultdict
         freq = defaultdict(int)
@@ -35,7 +36,6 @@ class Solution:
             groups[frequency].append(word)
         sorted_words = []
         for group in groups[::-1]:
-            group.sort() # for alphabetical restriction
             for word in group:
                 sorted_words.append(word)
                 if len(sorted_words)== k:
