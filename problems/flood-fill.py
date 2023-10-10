@@ -57,6 +57,6 @@ class Solution2:
 
         for i in range(row_c):
             for j in range(col_c):
-                if image[i][j] == None:
+                if image[i][j] is None:
                     image[i][j] =color1
         return image
