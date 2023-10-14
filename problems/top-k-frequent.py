@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/top-k-frequent-words/description/
 
 from typing import List
-from collections import Counter
+from collections import Counter, defaultdict
 from heapq import heapify
 
 
@@ -41,3 +41,34 @@ class Solution:
                 if len(sorted_words)== k:
                     return sorted_words            
         return sorted_words   
+    
+    
+class Solution2:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        """
+        freq_map = {count: [items list]}
+        space: O(2n), time: o(2n + k)
+        """
+        count = {}
+        freq = defaultdict(list)
+
+        # get counter_map
+        for n in nums:
+            count[n] = 1 + count.get(n, 0)
+
+        # get frequency map
+        max_freq = 0
+        for n, c in count.items():
+            freq[c].append(n)
+            max_freq = max(max_freq, c)
+
+        res = []
+        for i in range(max_freq, 0, -1):
+            if i not in freq:
+                continue
+
+            for n in freq[i]:
+                res.append(n)
+                if len(res) == k:
+                    return res
+        # O(n)
