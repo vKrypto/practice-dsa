@@ -1,28 +1,22 @@
-'''Leetcode - https://leetcode.com/problems/product-of-array-except-self/'''
-'''
-Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
-
-The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-
-You must write an algorithm that runs in O(n) time and without using the division operation.
-
-Input: nums = [1,2,3,4]
-Output: [24,12,8,6]
-'''
-
-# Solution
-def productExceptSelf(nums):
-    res = [1] * (len(nums))
-
-    prefix = 1
-    for i in range(len(nums)):
-        res[i] = prefix
-        prefix *= nums[i]
-    postfix = 1
-    for i in range(len(nums) - 1, -1, -1):
-        res[i] *= postfix
-        postfix *= nums[i]
-    return res
+from typing import List
+# https://leetcode.com/problems/product-of-array-except-self/
 
 # T:O(N)
 # S:O(1)
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        # left product array
+        n = len(nums)
+
+        res = [1] * n
+        for i in range(1, n):
+            res[i] = res[i-1] * nums[i-1]
+        
+        
+        last = 1
+        for i in range(n-2, -1, -1):
+            last *= nums[i+1]
+            res[i] *= last
+
+        return res
