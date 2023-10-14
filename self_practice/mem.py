@@ -1,4 +1,5 @@
 import sys
+from pprint import pprint
 
 class A:
 
@@ -19,15 +20,15 @@ class A:
         pass
 
 
-print({A.__basicsize__})  # 24
-print(sys.getsizeof(A()))  # 56
-# print(A.__dict__)  
+print({A.__basicsize__})  # 32
+print(sys.getsizeof(A()))  # 48
+pprint(A.__dict__)  
 # {
 #     '__module__': '__main__', 
 #     '__init__': <function A.__init__ at 0x7f1d8f210540>, 
 #     '__dict__': <attribute '__dict__' of 'A' objects>, 
 #     '__weakref__': <attribute '__weakref__' of 'A' objects>, 
-#     '__doc__': None
+#     '__doc__': '--,....'
 # }
 
 
@@ -50,7 +51,7 @@ class B:
 
 print({B.__basicsize__})  # 16
 print(sys.getsizeof(B()))  # 32
-# print(B.__dict__)
+pprint(B.__dict__)
 # {
 #     '__module__': '__main__', 
 #     '__slots__': (), 
