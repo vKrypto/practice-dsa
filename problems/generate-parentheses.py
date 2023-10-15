@@ -3,10 +3,8 @@ from typing import List
 
 
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
-        """
-        using decision tree with DFS-backtrack
-        """
+    def generateParenthesis_rec(self, n: int) -> List[str]:
+        
         res = []
         def dfs(st="", open_count=0, close_count=0):
             # base-condition
@@ -25,4 +23,28 @@ class Solution:
                 dfs(st + ")", open_count, close_count+1 )
             
         dfs()
+        return res
+
+    def generateParenthesis_backtrack(self, n: int) -> List[str]:
+        """
+        using decision tree with DFS-backtrack
+        """
+        stack = []
+        res = []
+
+        def backtrack(openN, closedN):
+            if openN == closedN == n:
+                res.append("".join(stack))
+                return
+
+            if openN < n:
+                stack.append("(")
+                backtrack(openN + 1, closedN)
+                stack.pop()
+            if closedN < openN:
+                stack.append(")")
+                backtrack(openN, closedN + 1)
+                stack.pop()
+
+        backtrack(0, 0)
         return res
