@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/all-paths-from-source-to-target/
 
-from typinf import List
+from typing import List
 
 
 class Solution:
