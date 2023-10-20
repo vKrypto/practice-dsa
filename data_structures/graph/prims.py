@@ -29,25 +29,25 @@ class Graph():
 
     def primMST(self):
 
-        key = [sys.maxsize] * self.V
+        dist = [sys.maxsize] * self.V
         parent = [None] * self.V 
-        key[0] = 0
-        mstSet = [False] * self.V
+        visited = [False] * self.V
 
         parent[0] = -1 
+        dist[0] = 0
 
         for _ in range(self.V):
 
-            u = self.minKey(key)
+            u = self.minKey(dist)
 
-            mstSet[u] = True
+            visited[u] = True
 
             for v in range(self.V):
-
-                if self.graph[u][v] > 0 and mstSet[v] is False and key[v] > self.graph[u][v]:
-                    key[v] = self.graph[u][v]
+                w = self.graph[u][v]
+                if w and not visited[v] and dist[v] > w:
+                    dist[v] = w
                     parent[v] = u
-            key[u] = sys.maxsize
+            dist[u] = sys.maxsize
         self.printMST(parent)
 
 
