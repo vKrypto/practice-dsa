@@ -7,6 +7,7 @@ class Graph:
         
 
     def has_cycle(self):
+        # do dfs check with last_parent and make sure, no children are visited before
         visited = [False] * self.node_count
         
         def dfs(node=0, parent=None):

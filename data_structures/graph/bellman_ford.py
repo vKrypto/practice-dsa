@@ -25,8 +25,7 @@ class Graph:
 		# Step 2: Relax all edges |V| - 1 times. A simple shortest
 		for _ in range(self.V - 1):
 			for u, v, w in self.graph:
-				if dist[u] != float("Inf") and dist[u] + w < dist[v]:
-					dist[v] = dist[u] + w
+				dist[v] = min(dist[u], dist[u] + w)
 
 		# Step 3: do one more time to check negative weight cycles cycle
 		for u, v, w in self.graph:
@@ -52,6 +51,3 @@ if __name__ == '__main__':
 
 	# function call
 	g.BellmanFord(0)
-
-# Initially, Contributed by Neelam Yadav
-# Later On, Edited by Himanshu Garg
