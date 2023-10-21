@@ -46,9 +46,26 @@ class Graph:
 			cnt += 1
 
 		if cnt != self.V:
-			print ("There exists a cycle in the graph")
+			print("There exists a cycle in the graph")
 		else :
-			print (top_order)
+			print("topological sort --> ", top_order)
+
+	def dfs_recursive(self):
+		visited = set() 
+		res = []
+		def dfs(node):
+			visited.add(node)
+	
+			# Recur for all the vertices
+			# adjacent to this vertex
+			for neighbor_node in self.graph[node]:
+				if neighbor_node not in visited:
+					dfs(neighbor_node)
+			res.append(node)
+		for i in range(self.V):
+			if i not in visited:
+				dfs(i)
+		print("topological sort --> ", res[::-1])
 
 
 g = Graph(6)
@@ -58,7 +75,8 @@ g.addEdge(4, 0)
 g.addEdge(4, 1)
 g.addEdge(2, 3)
 g.addEdge(3, 1)
+g.addEdge(0, 2)
 
 print ("Following is a Topological Sort of the given graph")
 g.topologicalSort()
-
+g.dfs_recursive()
