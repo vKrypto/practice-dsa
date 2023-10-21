@@ -11,7 +11,7 @@ class Graph:
 	def addEdge(self, u, v):
 		self.graph[u].append(v)
 
-
+	# KAHN'S algorithm BFS based
 	def topologicalSort(self):
 		
 		in_degree = [0]*(self.V)
@@ -50,6 +50,7 @@ class Graph:
 		else :
 			print("topological sort --> ", top_order)
 
+	# DFS based
 	def dfs_recursive(self):
 		visited = set() 
 		res = []

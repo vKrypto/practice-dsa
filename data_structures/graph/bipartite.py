@@ -12,7 +12,7 @@ class Graph:
         for child_node, child_weight in enumerate(self.graph[node]):
             if child_weight == 0:
                 continue
-            if  self.color[node] is None:
+            if self.color[node] is None:
                 if self.bipartite(child_node, color^1):
                     return False
             if self.color[child_node] == color:
