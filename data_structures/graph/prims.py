@@ -16,13 +16,13 @@ class Graph():
         for i in range(1, self.V):
             print(parent[i], "-", i, "\t", self.graph[i][parent[i]])
 
-    def minKey(self, key):
+    def minKey(self, dist):
 
         min = sys.maxsize
 
         for v in range(self.V):
-            if key[v] < min:
-                min = key[v]
+            if dist[v] < min:
+                min = dist[v]
                 min_index = v
 
         return min_index
