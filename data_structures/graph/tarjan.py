@@ -42,11 +42,11 @@ class TarzanGraph:
                     low[node] = min(low[node], low[child_node])
                     
                     children += 1
-                    # case-1 for ap
+                    # case-1 AP for root node
                     if root_node and children > 1:
                         if node not in ap:
                             ap.add(node)
-                    # case-2 for ap
+                    # case-2 for ap, but not root node
                     if not root_node and low[child_node] >= disc[node]:
                         if node not in ap:
                             ap.add(node)

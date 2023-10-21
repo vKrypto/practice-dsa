@@ -1,8 +1,12 @@
-# being used to get all strongly connected components
 
 from collections import defaultdict
 
 class Graph:
+    # being used to get all strongly connected components
+    """
+    for un-directed graphs we can just simply do DFS.
+    but for directed graph we need Kosaraju algo to find SCC
+    """
     def __init__(self,vertices):
             self.V= vertices 
             self.graph = defaultdict(list)
@@ -12,7 +16,7 @@ class Graph:
 
     def _DFSUtil(self,v,visited):
         visited[v]= True
-        print(v)
+        print(v, end=" ")
         for i in self.graph[v]:
             if not visited[i]:
                 self._DFSUtil(i,visited)
@@ -43,7 +47,7 @@ class Graph:
             if not visited[i]:
                 self._fillOrder(i, visited, stack)
 
-        #step 2: Create a reversed graph
+        #step 2: Create a graph with reversed edges
         gr = self._getTranspose()
             
         visited =[False]*(self.V)
@@ -66,4 +70,3 @@ g.addEdge(3, 4)
 print ("Following are strongly connected components " +
                         "in given graph")
 g.printSCCs()
-g.dfs_recursive()
