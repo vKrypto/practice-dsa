@@ -53,7 +53,7 @@ class Graph:
             if not visited[i]:
                 gr._DFSUtil(i, visited)
                 print("")
-
+                
 # Create a graph given in the above diagram
 g = Graph(5)
 g.addEdge(1, 0)
@@ -64,5 +64,6 @@ g.addEdge(3, 4)
 
 
 print ("Following are strongly connected components " +
-						"in given graph")
+                        "in given graph")
 g.printSCCs()
+g.dfs_recursive()
