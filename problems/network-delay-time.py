@@ -1,13 +1,13 @@
+# https://leetcode.com/problems/network-delay-time/
 import sys
 import heapq
 from collections import defaultdict
 from typing import List
 
-
 class Solution:
     def dij(self, source=0):
-        distance = [sys.maxsize for i in range(self.node_count+1)]
-        visited = [False for i in range(self.node_count+1)]
+        distance = [sys.maxsize for i in range(self.node_count)]
+        visited = [False for i in range(self.node_count)]
         
         queue = [(0, source)]
         distance[source] = 0
@@ -23,18 +23,15 @@ class Solution:
         return distance
 
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        # build graph
         self.node_count = n
         self.graph = defaultdict(set)
         for (u, v , w) in times:
-            self.graph[u].add((v, w))
+            self.graph[u-1].add((v-1, w))
 
-        dist = self.dij(k)
-        # print(dist)
         res = 0
-        for i in dist[1:]:
+        for i in self.dij(k-1):
             if i == sys.maxsize:
                 return -1
             res = max(res, i)
-
-        return res or -1
-        
+        return res
