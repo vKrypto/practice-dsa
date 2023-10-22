@@ -9,6 +9,9 @@ class Solution:
     # edge case-missing (when center is 3 points away from edge)
     def findCenter_1(self, e: List[List[int]]) -> int:    
         return e[0][e[0][1] in e[1]]
+    
+    def findCenter_0(self, e: List[List[int]]) -> int:    
+        return (set(e[0]) & set(e[1])).pop()
 
     # edge case-missing (when center is 3 points away from edge)
     def findCenter_2(self, edges: List[List[int]]) -> int:
