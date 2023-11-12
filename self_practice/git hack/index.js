@@ -23,7 +23,7 @@ function randomDate(date1, date2){
 
 
 
-const makeCommits = n=>{
+const makeCommits = n =>{
     if(n==0) return;
 
     // const x= Math.floor((Math.random() * 54) + 1);
