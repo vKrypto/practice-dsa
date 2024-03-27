@@ -17,7 +17,7 @@ class LevelorderCodec:
         if not root:
             return '[]'
 
-        # Levelorder traversal: visting node level by level, left to right
+        # Levelorder traversal: visiting node level by level, left to right
         values = []
         node_queue = deque([root, ])
 

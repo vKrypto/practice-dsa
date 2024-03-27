@@ -59,3 +59,56 @@ class Solution:
                 if dp[i]:
                     break
         return dp[0]
+
+
+class Solution2:
+    def __input_optimization(self, wordDict):
+        # optimization 1: remove super set values
+        l_set = set(wordDict)
+        n_max = max([len(i) for i in wordDict])
+        for i in wordDict:
+            if i not in l_set:
+                continue
+            count = 2
+            while len(i)* count <= n_max:
+                temp = i * count
+                if temp in l_set:
+                    l_set.remove(temp)
+                count += 1
+        # optimization 2: try big size str first
+        wordDict = list(l_set)
+        wordDict.sort(key=len, reverse=True)
+        return wordDict
+
+    def wordBreak_rec(self, s: str, wordDict: List[str]) -> bool:
+        wordDict = self.__input_optimization(wordDict) 
+        # brute force + recursion + memo
+        memo = {"": True}
+
+        def rec(s):
+            if s in memo:
+                return memo[s]
+            for word in wordDict:
+                n = len(word)
+                if word == s[:n]:
+                    if rec(s[n:]):
+                        memo[s] = True
+                        return memo[s]
+            memo[s] = False
+        return rec(s)
+
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        wordDict = self.__input_optimization(wordDict) 
+
+        # dp + base-case
+        dp = [False] * (len(s) + 1)
+        dp[len(s)] = True
+
+        for i in range(len(s)-1, -1, -1):
+            for w in wordDict:
+                n = len(w)
+                if w[0] == s[i] and w == s[i:i+n] and dp[n+i]:
+                    dp[i] = True
+        return dp[0]
+
+    

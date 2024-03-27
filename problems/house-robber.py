@@ -21,7 +21,6 @@ class Solution:
 
         return max(dfs(0), dfs(1))
     
-    
     # iterative solution
     def rob_iterative(self, nums: List[int]) -> int:
         dp = [0]* len(nums) + [0]*3
