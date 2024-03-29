@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution2:
     # recursive cached solution
     def canPartition(self, nums: List[int]) -> bool:
         target = sum(nums)/2
@@ -46,11 +46,12 @@ class Solution:
 
 
 
-class Solution2:
-    
+class Solution:
     def canPartition(self, nums: List[int]) -> bool:
         # recursive way + memoization
         t = sum(nums)/2
+        if t != int(t):
+            return False
         n = len(nums)
         memo = {}
         nums.sort(reverse=True)
@@ -73,19 +74,11 @@ class Solution2:
         
         return rec(0)
             
-    def canPartition_1(self, nums: List[int]) -> bool:
-        # bit-manipulation
-        if not nums or sum(nums) %2 :
-            return False
-        target = sum(nums)//2
-        base = cur = 1 << target
-        for coin in nums:
-            cur |= cur >> coin
-        return cur & 1
-
     def canPartition_2(self, nums: List[int]) -> bool:
         # iterative way
         target = sum(nums)/2
+        if target != int(target):
+            return False
         s = set([0])
         nums.sort(reverse=True)
 
@@ -98,3 +91,12 @@ class Solution2:
             s.update(temp)
         return False
 
+    def canPartition_3(self, nums: List[int]) -> bool:
+        # bit-manipulation
+        if not nums or sum(nums) %2 :
+            return False
+        target = sum(nums)//2
+        cur = 1 << target
+        for coin in nums:
+            cur |= cur >> coin
+        return cur & 1
