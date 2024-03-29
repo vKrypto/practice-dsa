@@ -13,30 +13,6 @@ Input: nums = [2,3,-2,4]
 Output: 6
 '''
 
-# Solution1
-
-# T:O(N^2)
-# S:O(1)
-
-# Solution2
-def maxProduct(nums):
-    if(len(nums)) == 0:
-        return 0
-    curr_max = nums[0]
-    curr_min = nums[0]
-    result = curr_max
-
-    for i in range(len(nums)):
-        curr = nums[i]
-        temp_max = max(curr, curr_max*curr_min*curr)
-        curr_min = min(curr, curr_max*curr_min*curr)
-        curr_max = temp_max
-        result = max(curr_max, result)
-    return result
-
-# T:O(N)
-# S:O(1)
-
 
 class Solution:
     def maxProduct(nums):
