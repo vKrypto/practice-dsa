@@ -42,3 +42,59 @@ class Solution:
                 nextDP.add(t)
             dp = nextDP
         return False
+    
+
+
+
+class Solution2:
+    
+    def canPartition(self, nums: List[int]) -> bool:
+        # recursive way + memoization
+        t = sum(nums)/2
+        n = len(nums)
+        memo = {}
+        nums.sort(reverse=True)
+
+        def rec(i, total=0):
+            if total > t or i >= n:
+                return False
+            res = False
+            if (i, total) in memo:
+                return memo[(i,total)]
+            if total == t:
+                res = True
+            elif rec(i+1, nums[i]+total):
+                res = True
+            elif rec(i+1, total):
+                res = True
+            
+            memo[(i, total)] = res
+            return res
+        
+        return rec(0)
+            
+    def canPartition_1(self, nums: List[int]) -> bool:
+        # bit-manipulation
+        if not nums or sum(nums) %2 :
+            return False
+        target = sum(nums)//2
+        base = cur = 1 << target
+        for coin in nums:
+            cur |= cur >> coin
+        return cur & 1
+
+    def canPartition_2(self, nums: List[int]) -> bool:
+        # iterative way
+        target = sum(nums)/2
+        s = set([0])
+        nums.sort(reverse=True)
+
+        for i in nums:
+            temp = set()
+            for j in s:
+                if i + j == target:
+                    return True
+                temp.add(i+j)
+            s.update(temp)
+        return False
+
