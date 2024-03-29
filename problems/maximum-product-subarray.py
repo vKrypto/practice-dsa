@@ -1,6 +1,5 @@
 from typing import List
-
-'''Leetcode - https://leetcode.com/problems/maximum-product-subarray/'''
+# https://leetcode.com/problems/maximum-product-subarray/
 
 class Solution:
     def maxProduct(nums):
