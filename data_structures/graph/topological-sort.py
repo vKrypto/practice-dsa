@@ -48,7 +48,7 @@ class Graph:
 		if cnt != self.V:
 			print("There exists a cycle in the graph")
 		else :
-			print("topological sort --> ", top_order)
+			print(top_order, "<<<-----topological sort using kahn's algorithm ")
 
 	# DFS based
 	def dfs_recursive(self):
@@ -66,7 +66,7 @@ class Graph:
 		for i in range(self.V):
 			if i not in visited:
 				dfs(i)
-		print("topological sort --> ", res[::-1])
+		print(res[::-1], "<<<----topological sort using dfs", )
 
 
 g = Graph(6)
