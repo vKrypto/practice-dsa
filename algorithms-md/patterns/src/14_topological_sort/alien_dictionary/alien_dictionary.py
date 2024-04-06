@@ -1,4 +1,4 @@
-from collections import deque
+from collections import deque, defaultdict
 
 # Time complexity 
 # In step ‘d’, each task can become a source only once 
@@ -63,12 +63,39 @@ def find_order(words):
 class Solution:
     
     @classmethod
-    def alien_order(words, k):
-        pass
-
-
-
+    def alien_order(self, words):
+        # step -1: build graph
+        graph = defaultdict(set)
+        first_word = words[0]
+        for next_word in words[1:]:
+            for i in range(min(len(first_word), len(next_word))):
+                if first_word[i] != next_word[i]:
+                    graph[first_word[i]].add(next_word[i])
+                    break
+            first_word = next_word
+        
+        # find in-degree
+        in_degrees = defaultdict(int)
+        for node, child_nodes in graph.items():
+            in_degrees[node] += 0
+            for child_node in child_nodes:
+                in_degrees[child_node] += 1
+        # no deps nodes
+        stack = []
+        zero_in_degree = [node for node in in_degrees if in_degrees[node] == 0]
+        while zero_in_degree:
+            node = zero_in_degree.pop(0)
+            stack.append(node)
+            for child_node in graph[node]:
+                in_degrees[child_node] -= 1
+                if in_degrees[child_node] == 0:
+                    zero_in_degree.append(child_node)
+        if len(stack) != len(in_degrees):
+            raise ValueError('Cycle exists')     
+        return stack # return topological order
+    
 inputs = [
+    ["baa", "abcd", "abca", "cab", "cad"],
     ["ba", "bc", "ac", "cab"],
     ["cab", "aaa", "aab"],
     ["ywx", "wz", "xww", "xz", "zyy", "zwz"],
