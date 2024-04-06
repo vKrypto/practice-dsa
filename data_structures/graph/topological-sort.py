@@ -1,5 +1,5 @@
 # A Python program to print topological sorting of a graph
-# using indegrees
+# using in-degrees
 
 from collections import defaultdict
 
