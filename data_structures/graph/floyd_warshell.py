@@ -32,3 +32,23 @@ if __name__ == '__main__':
                ]
 
     print(g.floyd())
+
+import heapq
+# prims algo
+graph = {}
+
+src = 0
+visited = set()
+queue = [0, 0, -1]
+mst = []
+
+while queue:
+    weight, from_node, to_node = heapq.heappop(queue)
+    if from_node in visited: continue
+    if from_node != -1:
+        mst.append([weight, from_node, to_node])
+    visited.add(from_node)
+    for child, child_weight in graph[from_node]:
+        if child not in visited:
+            heapq.heappush(queue, [child_weight, from_node, child])
+    
