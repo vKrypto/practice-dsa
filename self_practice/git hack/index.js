@@ -41,4 +41,4 @@ const makeCommits = n =>{
     })
 
 }
-makeCommits(30)
+makeCommits(10)
