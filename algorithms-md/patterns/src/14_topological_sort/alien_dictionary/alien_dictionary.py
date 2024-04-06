@@ -32,7 +32,7 @@ def find_order(words):
         word_1, word_2 = words[i], words[i+1]
         for j in range(min(len(word_1), len(word_2))):
             parent, child = word_1[j], word_2[j]
-            if word_1[j] != word_2[j]:
+            if parent != child:
                 graph[parent].append(child)
                 in_degrees[child] += 1
                 break
