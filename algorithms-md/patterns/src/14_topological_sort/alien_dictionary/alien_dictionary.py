@@ -59,10 +59,25 @@ def find_order(words):
     return ''.join(sorted_order)
 
 
+
+class Solution:
+    
+    @classmethod
+    def alien_order(words, k):
+        pass
+
+
+
+inputs = [
+    ["ba", "bc", "ac", "cab"],
+    ["cab", "aaa", "aab"],
+    ["ywx", "wz", "xww", "xz", "zyy", "zwz"],
+]
+
 def main():
-    print("Character order: " + find_order(["ba", "bc", "ac", "cab"]))
-    print("Character order: " + find_order(["cab", "aaa", "aab"]))
-    print("Character order: " + find_order(["ywx", "wz", "xww", "xz", "zyy", "zwz"]))
+    for input in inputs:
+        print("Character order: " + find_order(input))
+        print(">>>>", Solution.alien_order(input))
 
 
 main()
