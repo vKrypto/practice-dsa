@@ -12,18 +12,6 @@ class Solution:
     
     def findCenter_0(self, e: List[List[int]]) -> int:    
         return (set(e[0]) & set(e[1])).pop()
-
-    # edge case-missing (when center is 3 points away from edge)
-    def findCenter_2(self, edges: List[List[int]]) -> int:
-        graph = defaultdict(list)
-        for u,v in edges:
-            if graph[v]:
-                return v
-            if graph[u]:
-                return u
-            graph[u].append(v)
-            graph[v].append(u)
-            
         
     def findCenter(self, edges: List[List[int]]) -> int:
         self.graph = defaultdict(list)

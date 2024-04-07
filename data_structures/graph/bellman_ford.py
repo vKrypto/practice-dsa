@@ -25,7 +25,7 @@ class Graph:
 		# Step 2: Relax all edges |V| - 1 times. A simple shortest
 		for _ in range(self.V - 1):
 			for u, v, w in self.graph:
-				dist[v] = min(dist[u], dist[u] + w)
+				dist[v] = min(dist[v], dist[u] + w)
 
 		# Step 3: do one more time to check negative weight cycles cycle
 		for u, v, w in self.graph:
