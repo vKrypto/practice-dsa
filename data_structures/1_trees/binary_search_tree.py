@@ -459,3 +459,10 @@ class BinarySearchTree(BaseTree):
                 queue.extend((node.left, node.right))
                 node.left, node.right = node.right, node.left
 
+    def invert_recursive(self):
+        def invert(node):
+            if node:
+                node.left, node.right = invert(node.right), invert(node.left)
+                return node
+        
+        invert(self.root)
