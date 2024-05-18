@@ -31,15 +31,14 @@ class Graph:
             next_level = []
             while cur_level:
                 cur_node = cur_level.pop(0)
-                if cur_node in visited:
-                    continue
-                visited.add(cur_node)
-                path.append(cur_node)
-                for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
-                    if neighbor_node_dist == 0:
-                        continue
-                    if neighbor_node not in visited:
-                        next_level.append(neighbor_node)
+                if cur_node not in visited:
+                    visited.add(cur_node)
+                    path.append(cur_node)
+                    for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
+                        if neighbor_node_dist == 0:
+                            continue
+                        if neighbor_node not in visited:
+                            next_level.append(neighbor_node)
             if next_level:
                 levels.append(next_level.copy())
                 rec(next_level, level+1)
