@@ -10,6 +10,7 @@ Average performance: О(n^2)
 
 
 def insertion_sort(arr):
+    # left[], right[], move items from right to left and place them accordingly.
     # Assume that arr[0] is already sorted, so start from arr[1]
     for i in range(1, len(arr)):
         # Iterate "the sorted part" backward, and find the correct position for arr[i]

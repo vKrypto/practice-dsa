@@ -18,6 +18,7 @@ def bubble_sort(arr):
 
         # We check i and i + 1 in each loop,
         # so we only need length - 1 loops to cover all items
+        # take two pointer and swap if they are not in order, and increment pointers by 1.
         for i in range(0, length - 1):
             if arr[i] > arr[i + 1]:
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
