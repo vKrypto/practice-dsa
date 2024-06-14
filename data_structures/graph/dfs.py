@@ -11,14 +11,14 @@ class Graph:
         stack = [source]
         while stack:
             cur_node = stack.pop()
+            
             if cur_node in visited:
                 continue
+            
             path.append(cur_node)
             visited.add(cur_node)
             for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
-                if neighbor_node_dist == 0:
-                    continue
-                if neighbor_node not in visited:
+                if neighbor_node_dist != 0 and neighbor_node not in visited:
                     stack.append(neighbor_node)
         print(path)
 
@@ -29,11 +29,9 @@ class Graph:
         def dfs(node=source):
             if node in visited:
                 return
+            
             visited.add(node)
-            path.append(node)
-    
-            # Recur for all the vertices
-            # adjacent to this vertex
+            path.append(node)    
             for neighbor_node, neighbor_node_weight in enumerate(self.graph[node]):
                 if neighbor_node_weight !=0 and neighbor_node not in visited:
                     dfs(neighbor_node)
