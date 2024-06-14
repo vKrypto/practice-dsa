@@ -15,9 +15,7 @@ class Graph:
                 path.append(cur_node)
                 visited.add(cur_node)
                 for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
-                    if neighbor_node_dist == 0:
-                        continue
-                    if neighbor_node not in visited:
+                    if neighbor_node_dist != 0 and neighbor_node not in visited:
                         queue.append(neighbor_node)
         print(path)
 
@@ -35,9 +33,7 @@ class Graph:
                     visited.add(cur_node)
                     path.append(cur_node)
                     for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
-                        if neighbor_node_dist == 0:
-                            continue
-                        if neighbor_node not in visited:
+                        if neighbor_node_dist != 0 and neighbor_node not in visited:
                             next_level.append(neighbor_node)
             if next_level:
                 levels.append(next_level.copy())

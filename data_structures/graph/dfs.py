@@ -38,9 +38,36 @@ class Graph:
         dfs()
         print(path)
     
+
+
+
+
+class Graph2:
+    
+    def __init__(self, node_count) -> None:
+        self.node_count = node_count
+        self.graph = defaultdict(list)
+    
+    def dfs_recursive(self, source):
+        visited = [False] * self.node_count
+        path = []
+        stack = [source]
+        while stack:
+            node = stack.pop()
+            if visited[node]:
+                return
+            visited[node] = True
+            path.append(node)
+            for child_node, child_node_weight in enumerate(self.graph[node]):
+                if not visited[child_node] and child_node_weight != 0:
+                    stack.append(child_node)
+                        
+        print(path)
+        
+
 # Driver's code
 if __name__ == '__main__':
-    g = Graph(9)
+    g = Graph2(9)
     g.graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
                [4, 0, 8, 0, 0, 0, 0, 11, 0],
                [0, 8, 0, 7, 0, 4, 0, 0, 2],
@@ -52,6 +79,5 @@ if __name__ == '__main__':
                [0, 0, 2, 0, 0, 0, 6, 7, 0]
                ]
 
-    g.dfs_iterative()
+    # g.dfs_iterative()
     g.dfs_recursive()
-
