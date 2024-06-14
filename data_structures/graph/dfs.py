@@ -27,6 +27,8 @@ class Graph:
         visited = set() 
         path = []
         def dfs(node=source):
+            if node in visited:
+                return
             visited.add(node)
             path.append(node)
     
@@ -37,7 +39,7 @@ class Graph:
                     dfs(neighbor_node)
         dfs()
         print(path)
-
+    
 # Driver's code
 if __name__ == '__main__':
     g = Graph(9)
