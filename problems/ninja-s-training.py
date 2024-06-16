@@ -51,6 +51,31 @@ def main():
               [30,60,90]]
     n = len(points)
     print(ninjaTraining(n, points))
+    
+    
+
+def recursive_solution(points):
+    
+    def rec(day, last_task=None):
+        if day < 0:
+            return 0
+        max_points = float('-inf')
+        for task_index, task_point in enumerate(points[day]):
+            if task_index != last_task:
+                max_points = max(max_points, task_point + rec(day-1, task_index))
+        return max_points
+    
+    return rec(len(points)-1)
+
+
+def main_2():
+    points = [[10,40,70],
+              [20,50,80],
+              [200,60,80],
+              [20,50,20],
+              [30,60,90]]
+    print(recursive_solution(points))
 
 if __name__ == '__main__':
     main()
+    main_2()
