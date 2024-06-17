@@ -79,3 +79,32 @@ def main_2():
 if __name__ == '__main__':
     main()
     main_2()
+    
+    
+def solve(arr, target):
+    
+    def rec(i, total):
+        if total > target:
+            return False
+        if total == target:
+            return True
+        
+        if rec(i+1, total+i) or rec(i+1, total):
+            return True
+        
+        return False
+    
+    
+def knapsack(weights, vals, capacity):
+    
+    def rec(i, total_weight):
+        # base-case
+        if total_weight > capacity:
+            return 0
+        if i == len(weights):
+            return 0
+        
+        case_1 = rec(i+1, total_weight+weights[i]) + vals[i]
+        case_2 = rec(i+1, total_weight)
+        
+        return max(case_1, case_2)
