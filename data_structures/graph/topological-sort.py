@@ -52,17 +52,18 @@ class Graph:
 
 	# DFS based
 	def dfs_recursive(self):
+		"""
+		node which is being finish first are not dependent on other pending nodes
+		"""	
 		visited = set() 
 		res = []
 		def dfs(node):
 			visited.add(node)
-	
-			# Recur for all the vertices
-			# adjacent to this vertex
 			for neighbor_node in self.graph[node]:
 				if neighbor_node not in visited:
 					dfs(neighbor_node)
 			res.append(node)
+
 		for i in range(self.V):
 			if i not in visited:
 				dfs(i)

@@ -19,7 +19,20 @@ class Graph:
                 return False
         return True
              
-            
+    def bipartite_recursive_bfs(self, queue=[0], color=0):
+        if not queue:
+            return True
+        next_level = []
+        for node in queue:
+            for child_node, child_weight in enumerate(self.graph[node]):
+                if child_weight == 0:
+                    continue
+                elif self.color[node] is None:
+                    self.color[node]=color^1
+                    next_level.append(child_node)
+                elif self.color[child_node] == color:
+                    return False
+        return self.bipartite_recursive_bfs(next_level, color^1)
             
 
 # Driver's code
@@ -30,5 +43,7 @@ if __name__ == '__main__':
             [0, 1, 0, 1],
             [1, 0, 1, 0]]
 
-    print(g.bipartite())
+    # print(g.bipartite())
+    g.color[0]= 0
+    print(g.bipartite_recursive_bfs([0], 0))
 
