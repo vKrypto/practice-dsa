@@ -17,14 +17,13 @@ class DisjointSetGraph:
             self.parent[node] = parent
             return parent
         
-    
     def add_edge(self, edge):
         from_node, to_node = edge
         self.graph[from_node].append(to_node)
         a = self.find(from_node)
         b = self.find(to_node)
         if a == b:
-            return            
+            return
         #  both belong to the different family
         weight_a = self.parent[a]
         weight_b = self.parent[b]
@@ -50,3 +49,4 @@ if __name__ == '__main__':
     edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]
     for edge in edges:
         g.add_edge(edge)
+    

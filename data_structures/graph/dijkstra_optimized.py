@@ -12,7 +12,7 @@ class Graph:
         print("node", " "*7, f"Distance From source {source}")
         for node_index, node_distance in enumerate(distance):
             print(node_index, " "*10, node_distance)
-                
+
         
     def dij(self, source=0):
         distance = [sys.maxsize for i in range(self.node_count)]
