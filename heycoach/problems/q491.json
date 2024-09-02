@@ -1,0 +1,64 @@
+{
+    "id": 491,
+    "description": "Given a directed graph, determine if there is a valid path from a specified source node to a destination node such that all possible paths starting from the source node lead exclusively to the destination node, without any cycles or divergent paths.\n\n**Input Format:**\n- `An integer `n` representing the number of nodes in the graph, where the nodes are numbered from 0 to `n-1`.`\n- `An integer m representing the number of directed edges in the graph.`\n- `m  pairs of integers where each pair `[u, v]` represents a directed edge from node `u` to node `v`.`\n- `Two distinct integers `source` and `destination` representing the starting node and the target node, respectively.`\n\n**`Output Format`**\n- `A boolean value `false` if there is any cycle involving the source node, or if there exists any path from the source that does not lead to the destination.`\n- `Otherwise, return `true`.`\n\n**`Example:`**\n\n**`Input:`**\n```\n3 3\n0 1\n1 2\n2 0\n0 2\n```\n\n**`Output:`**\n```\nfalse\n```\n\n**`Explanation`** \n```\nAlthough there is a path from node 0 to node 2, there is also a cycle formed by the edges `0 -> 1 -> 2 -> 0`. Since there exists a cycle that includes the source node, not all paths from node 0 lead to node 2. The correct output is `false`.\n```\n**Constraints:`**\n- `1 <= n <= 100`\n- `0 <= m <= 1,000`\n- `0 <= u, v < n`\n\n",
+    "title": "Determining Path Validity",
+    "default_testcase": {
+        "id": 3292,
+        "input": "3 3\n0 1\n1 2\n2 0\n0 2",
+        "expected_output": "false",
+        "code_problem_id": 491,
+        "created_at": "2023-12-31T10:52:48.085Z",
+        "updated_at": "2023-12-31T10:52:48.085Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1433,
+            "code_problem_id": 491,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool hasValidPath(vector<vector<int>>& graph, int source, int destination) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1434,
+            "code_problem_id": 491,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def hasValidPath(self, graph, source, destination):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1435,
+            "code_problem_id": 491,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean hasValidPath(List<List<Integer>> graph, int source, int destination) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1436,
+            "code_problem_id": 491,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    hasValidPath(graph, source, destination) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

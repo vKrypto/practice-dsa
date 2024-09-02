@@ -1,0 +1,21 @@
+{
+    "id": 957,
+    "description": "\nCaptain Mike has n badges, each with a coolness factor representing its prestige. He wants to distribute one badge to each of his n team members, but to ensure fairness, each team member must receive a badge with a distinct coolness factor. Increasing a badge's coolness factor by one costs one coin.\n\nInitially, Captain Mike knows the coolness factor of each badge, but some badges may have the same factor. Your task is to help Captain Mike determine the minimum number of coins required to make all badges have unique coolness factors.\n\nInput\n\nThe first line contains a single integer (1 \u2264 n \u2264 3000), the number of badges.\nThe second line contains n integers, ai (1\u2009\u2264\u2009ai\u2009\u2264\u2009n)  representing the initial coolness factors \nof the badges.\n\nOutput\n\nPrint a single integer \u2014 the minimum amount of coins Captain Mike has to pay to ensure all badges have unique coolness factors.\n\n\n",
+    "title": " Distinct Coolness Factors for Team Badges",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3193,
+            "code_problem_id": 957,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class SoldierAndBadges {\npublic:\n    static int minCoinsToUniqueBadges(std::vector<int>& badges) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

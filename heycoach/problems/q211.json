@@ -1,0 +1,64 @@
+{
+    "id": 211,
+    "description": "\nGiven a **non-empty** array `nums` containing **only positive integers**, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.\n### Example 1 \n\n### Input\n```CPP\nnums = [1,5,11,5]\n```\n### Output \n```CPP\ntrue\n```\n### Explanation\nThe array can be partitioned as [1, 5, 5] and [11].\n\n**Example 2:**\n\n**Input:**\n```CPP\nnums = [1,2,3,5]\n```\n**Output:** \n```CPP\nfalse\n```\n### Input Format\n```\nThe first line contain a array nums \n```\n### Output Format\n```\nOuput true is the array can be partitioned else output false\n```\n\n\n\n### Constraints:\n-   `1 <= nums.length <= 200`\n-   `1 <= nums[i] <= 100`\n",
+    "title": "Partition equal subset sum",
+    "default_testcase": {
+        "id": 6203,
+        "input": "4\n1 5 11 5",
+        "expected_output": "true",
+        "code_problem_id": 211,
+        "created_at": "2024-03-10T10:25:44.768Z",
+        "updated_at": "2024-03-10T10:25:44.768Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 316,
+            "code_problem_id": 211,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    bool canPartition(vector<int>& nums) {\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 667,
+            "code_problem_id": 211,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n   public boolean canPartition(int[] nums) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 668,
+            "code_problem_id": 211,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n      def canPartition(self, nums):\n        #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 669,
+            "code_problem_id": 211,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    canPartition(nums) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

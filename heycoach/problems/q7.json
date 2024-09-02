@@ -1,0 +1,64 @@
+{
+    "id": 7,
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day.\n\nYou want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.\n\nReturn the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.\n\n### Input Format\n```\nAn array prices where prices[i] is the price of a given stock on the ith day.\n```\n### Output Format\n```\nThe maximum profit achievable by buying and selling the stock once.\n```\n### Sample Input\n```\nInput: prices = [7,1,5,3,6,4]\n```\n\n### Sample Output\n```\nOutput: 5\n```\n### Explanation\n```\nBuy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.\nNote that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.\n````\n",
+    "title": "BTTBS",
+    "default_testcase": {
+        "id": 13,
+        "input": "9\n1 2 3 4 5 6 7 8 9",
+        "expected_output": "8",
+        "code_problem_id": 7,
+        "created_at": "2022-09-19T17:41:58.044Z",
+        "updated_at": "2022-09-19T17:41:58.044Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 267,
+            "code_problem_id": 7,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n\n    int maxProfit(vector < int > & pr) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 268,
+            "code_problem_id": 7,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxProfit(int[] prices) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 287,
+            "code_problem_id": 7,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxProfit(self, prices):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n        \n"
+        },
+        {
+            "id": 530,
+            "code_problem_id": 7,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  maxProfit(prices) {\n    //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

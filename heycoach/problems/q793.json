@@ -1,0 +1,64 @@
+{
+    "id": 793,
+    "description": "Given a 0-indexed integer array `nums` and an integer `k`, find the minimum absolute difference between any two elements in the array that are at least `k` indices apart. </br>Return the minimum absolute difference found.\n\n#### `Input Format:`\n- `The first line contains an integer` `n`, `the size of the array` `nums`.\n- `The second line contains `n` space-separated integers, the elements of the array` `nums`.\n- `The third line contains an integer` `k`, `representing the minimum index distance between two elements to be considered.`\n\n#### `Output Format:`\n- `Print a single integer, the minimum absolute difference between two elements in the array that are at least` `k` `indices apart.`\n\n#### `Sample Input 1:`\n```\n5\n5 3 2 10 15\n1\n```\n\n### `Sample Output 1:`\n```\n1\n```\n\n#### `Explanation 1:`\n`The elements` `3` `and ` `2` `are 1 index apart, and their difference is `1` which is the minimum absolute difference for` `k = 1.`\n\n#### `Sample Input 2:`\n```\n4\n1 2 3 4\n3\n```\n\n### Sample Output 2:\n```\n3\n```\n\n### Explanation 2:\n`The first and last elements (`1` and `4`) are the only pair that are at least `3` indices apart, and their absolute difference is` `3`.\n\n### Constraints:\n- `1 <= nums.length <= 10^5`\n- `1 <= nums[i] <= 10^9`\n- `0 <= k < nums.length`\n",
+    "title": "Minimum absolute difference",
+    "default_testcase": {
+        "id": 7138,
+        "input": "5\n5 3 2 10 15\n1",
+        "expected_output": "1\n",
+        "code_problem_id": 793,
+        "created_at": "2024-04-04T09:42:31.136Z",
+        "updated_at": "2024-04-04T09:42:31.136Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 2592,
+            "code_problem_id": 793,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n     int minAbsoluteDifference(vector<int>& nums, int x) {\n       //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2593,
+            "code_problem_id": 793,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minAbsoluteDifference(List<Integer> nums, int x) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2594,
+            "code_problem_id": 793,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minAbsoluteDifference(self, nums, size, x):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2619,
+            "code_problem_id": 793,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minAbsoluteDifference(nums, size, x) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

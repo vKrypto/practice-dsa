@@ -1,0 +1,8 @@
+{
+    "id": 890,
+    "description": "You are given a list of cards that are arranged in a straight line. Each of these cards have a number associated with it. In one operation you can replace the values of one card with any of it's neighboring cards. Determine the minimum sum that you can achieve if you can apply the mentioned operation at most 'k' number of times. \n\nInput Format:\n\nThe first line contains two space separated integers denoting the number of cards 'n' and the number of times you can do operation on these cards 'k'.\n\nThe second line contains 'n' space separated integers denoting the values on each of these cards.\n\nOutput Format:\n\nReturn the minimum sum achievable by performing at most 'k' operations.\n\n```\nSample Input 1:\n\n6 3\n4 1 2 2 4 3\n\nSample Output 1:\n\n10\n```\n\nExplanation: You can swap the card at position one with its neighbor with the value of 2 and now the cards would look like this - 1 1 2 2 4 3. Next you can replace the value of card at position 5 with that at position 4 resulting in cards with values - 1 1 2 2 2 3. You can still perform one more operation as k=3, so this time replace the value of card at position 6 with it's only neighbor resulting in cards with values - 1 1 2 2 2 2 whose sum = 10 and this is the minimum value achievable with k=3 operations.\n\n```\nConstraints:\n\n1<=n<=10^5\n1<=a[i]<=10^8\n0<=k<=10\n```\n",
+    "title": "Neighboring Cards",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

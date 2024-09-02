@@ -1,0 +1,64 @@
+{
+    "id": 506,
+    "description": "I'm sure you have experienced the autocomplete feature in your smartphones. Let's try to implement that using tries. Given n number of words and an incomplete word w. You need to auto-complete that word w. That means, find and print all the possible words which can be formed using the incomplete word w in sorted order(ascending). If there are no possible words print -1.\n\n\n**Sample Input 1 :**\n\n```\n7\n\ndo \ndont \nno \nnot \nnote \nnotes \nden\n\nno\n```\n\n**Sample Output 1:**\n\n```\nno not note notes\n```\n\n**Sample Input 2:**\n```\n3\n\nden \ndenmark \ndon \n\n\"\"\n```\n\n**Sample Output 2:**     \n\n```\n-1 (Empty)\n```\n\n**Input Format :**\n\n```\nThe first line of input contains an integer, that denotes the value of n.\nThe following n lines denotes each string of words.\nThe following line contains the word w, that has to be auto-completed.\n```\n\n**Output Format :**\n\n```\nA list of string containing all possible strings\n```\n\n**Constraints:**  \n \n`1 <= word.length <= 2000`",
+    "title": "Autocomplete",
+    "default_testcase": {
+        "id": 8688,
+        "input": "7\ndo\ndont\nno\nnot\nnote\nnotes\nden\nno",
+        "expected_output": "no not note notes ",
+        "code_problem_id": 506,
+        "created_at": "2024-07-04T15:58:40.647Z",
+        "updated_at": "2024-07-04T15:58:40.647Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1494,
+            "code_problem_id": 506,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\n/*class TrieNode {\n    constructor(data) {\n        this.data = data;\n        this.children = new Array(26);\n        this.isend = false;\n        for (let i = 0; i < 26; i++) {\n            this.children[i] = null;\n        }\n    }\n}*/\nclass Solution {\n    constructor() {}\n\n    AutoComplete(w, words) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1495,
+            "code_problem_id": 506,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  class TrieNode{\n    public:\n    char data;\n    TrieNode**children;\n    bool isend;\n\n    TrieNode(char data){\n        this->data = data;\n        children = new TrieNode*[26];\n        isend = false;\n        for(int i=0;i<26;i++){\n            children[i] = NULL;\n        }\n    }\n};*/\n\nclass Solution{\n  public:\n     vector<string>AutoComplete(string w,vector<string>&words)\n    {\n  \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1496,
+            "code_problem_id": 506,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    public char data;\n    public TrieNode[] children;\n    public boolean isEnd;\n\n    TrieNode(char data) {\n        this.data = data;\n        children = new TrieNode[26];\n        isEnd = false;\n        for (int i = 0; i < 26; i++) {\n            children[i] = null;\n        }\n    }\n}\n*/\n\nclass Solution {\n  public List<String> autoComplete(String w, List<String> words) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1497,
+            "code_problem_id": 506,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''\nclass TrieNode:\n    def __init__(self, data):\n        self.data = data\n        self.children = [None] * 26\n        self.isend = False\n'''\n\nclass Solution:\n    def _init_(self):\n        pass\n      \n    def AutoComplete(self, w, words):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

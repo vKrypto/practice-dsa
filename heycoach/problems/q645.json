@@ -1,0 +1,57 @@
+{
+    "id": 645,
+    "description": "\nGiven a **non-empty** array `nums` containing **only positive integers**, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.\n### Example 1 \n\n### Input\n```CPP\nnums = [1,5,11,5]\n```\n### Output \n```CPP\ntrue\n```\n### Explanation\nThe array can be partitioned as [1, 5, 5] and [11].\n\n**Example 2:**\n\n**Input:**\n```CPP\nnums = [1,2,3,5]\n```\n**Output:** \n```CPP\nfalse\n```\n### Input Format\n```\nThe first line contain a array nums \n```\n### Output Format\n```\nOuput true is the array can be partitioned else output false\n```\n\n\n\n### Constraints:\n-   `1 <= nums.length <= 200`\n-   `1 <= nums[i] <= 100`\n",
+    "title": "Partition equal subset sum",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1975,
+            "code_problem_id": 645,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1976,
+            "code_problem_id": 645,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": " class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1978,
+            "code_problem_id": 645,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2243,
+            "code_problem_id": 645,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 516,
+    "description": "There are 'n' fruits lying in a row on a long table. Each of these fruits is either a 'mango' denoted with the `letter` 'M' or a 'pineapple' denoted by the letter 'P'. There is at least one of each on the table.\n\n`You and your friend want to divide the fruits on the table: you will take a prefix of this row (several leftmost items), and the friend will take the rest. However, there are several restrictions:`\n\n```\n1. Each person should have at least one item.\n2. The number of your mangoes should differ from the number of your friend's mangoes.\n3. The number of your pineapples should differ from the number of your friend's pineapples.\n```\n\n```Find the lowest prefix selecting which division goes with these restrictions and if there is no answer print -1.```\n \n**`Input1`**:-\n\n```\nThe first line contains one integer n. The number of fruits on the table.\nThe second line contains a string of length n consisting of letters 'M' and 'P'. \n```\n\n**`Output1`**:- <br>`Return the lowest possible integer 'ans' such that, if you take 'ans' number of leftmost items and your friend takes the remaining (n\u2212ans)  fruits, each of you and your friend get at least one fruit, your number of mangoes is different from your friend's, and your number of pineapples is different from your friend's.  If there are no possible answers, return the number \u22121.`\n\n**`Sample Input:`**\n\n`3`\n\n`PMP`\n\n**`Sample output:`**   \n`-1`\n\n**`Sample Input 2:-`**\n\n`4`\n\n`PMPP`\n\n**`Sample Output 2:`**\n\n`1`\n\n`(Note that in output 2, the number 2 also satisfies the conditions but it is not the lowest possible so the answer is one.)`\n\n**`Constraints:`**  \n- `2<=n<=200`\n.",
+    "title": "Mangoes and Pineapples",
+    "default_testcase": {
+        "id": 5602,
+        "input": "10\nMMPPPPMMMP",
+        "expected_output": "1\n",
+        "code_problem_id": 516,
+        "created_at": "2024-02-16T07:25:32.338Z",
+        "updated_at": "2024-02-16T07:25:32.338Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1527,
+            "code_problem_id": 516,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(String s, int n) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1528,
+            "code_problem_id": 516,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(string s, int n){\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1529,
+            "code_problem_id": 516,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, s, n):\n        #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1540,
+            "code_problem_id": 516,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(s, n) {\n    //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

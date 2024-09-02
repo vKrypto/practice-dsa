@@ -1,0 +1,21 @@
+{
+    "id": 402,
+    "description": "Mr. H is currently exploring the country of Bugindia, \nwhich consists of multiple cities connected by one-way roads\nHe's interested in discovering the shortest paths that form a \ncycle in the road network for each city. In simpler terms, he \nwants to know the length of the shortest route that starts from \na city, travels through various cities, and eventually returns \nto the same city.\n\nMr. H is curious about this for every city in Bugindia, so he's \nasked for your help in calculating these shortest path lengths.\n\nStore N lintegers, the length of shortest path which begins in city i and ends in city i in a list or vector. If there is no path then its value is -1.\nConstraints \n\n0 < N \u2264 2000, the number of cities.\n\n0 \u2264 roads[i][j] \u2264 1. \n\nOne means, that there is a road between i and j (zero means there isn't a road).",
+    "title": "Mr.H in Bugindia",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 972,
+            "code_problem_id": 402,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

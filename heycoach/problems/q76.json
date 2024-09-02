@@ -1,0 +1,40 @@
+{
+    "id": 76,
+    "description": "Given an array of non-negative integers. Find the length of the **longest** sub-sequence such that elements in the subsequence are consecutive integers, **the consecutive numbers can be in any order**. \n\n### Example 1 \n\n### Input\n```CPP\nN = 7\narr = [2,6,1,9,4,5,3]\n``` \n### Output \n```CPP \n6\n``` \n#### Explanation:\nThe consecutive numbers here are 1, 2, 3, 4, 5, 6. These 6 numbers form the longest consecutive\nsubsquence.\n\n### Example 2 \n\n### Input\n```CPP\nN = 7\narr = [1,9,3,10,4,20,2]\n``` \n### Output \n```CPP \n4\n``` \n#### Explanation:\n1, 2, 3, 4 is the longest consecutive subsequence.\n### Constraints:\n\n* 1 <= N <= 10000\n* 0 <= arr[i] <= 10000\n",
+    "title": "Longest consecutive subsequence",
+    "default_testcase": {
+        "id": 536,
+        "input": "7\n1 9 3 10 4 20 2",
+        "expected_output": "4\n",
+        "code_problem_id": 76,
+        "created_at": "2022-10-01T13:27:45.117Z",
+        "updated_at": "2022-10-01T13:27:45.117Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 116,
+            "code_problem_id": 76,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tint findLongestConseqSubseq(int arr[], int N)\n\t{\n      // write youe code here\n\t}\n};\n"
+        },
+        {
+            "id": 485,
+            "code_problem_id": 76,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int findLongestConseqSubseq(int arr[], int N) {\n      // write your code here\n    }\n}"
+        }
+    ]
+}

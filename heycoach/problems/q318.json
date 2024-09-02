@@ -1,0 +1,15 @@
+{
+    "id": 318,
+    "description": "Given two integers dividend and divisor. Find the quotient after dividing dividend by divisor without using multiplication, division and mod operator.\n\nConstraints:\n-10^9 <= a,b <= 10^9\n",
+    "title": "Divide Two numbers without using operators",
+    "default_testcase": {
+        "id": 2071,
+        "input": "1\n10 3",
+        "expected_output": "3\n",
+        "code_problem_id": 318,
+        "created_at": "2023-09-18T18:47:05.560Z",
+        "updated_at": "2023-09-18T18:47:05.560Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": []
+}

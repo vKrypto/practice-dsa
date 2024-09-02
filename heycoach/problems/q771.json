@@ -1,0 +1,64 @@
+{
+    "id": 771,
+    "description": "\nWrite a program to determine the case (uppercase, lowercase, or neither) of a character entered by the user.\n\n#### `Input Format:`\n\n`The input consists of a single character entered by the user.`\n\n#### `Output Format:`\n\n`The program should output the case of the input character as follows:`\n- `\"Uppercase\" if the input character is an uppercase letter.`\n- `\"Lowercase\" if the input character is a lowercase letter.`\n- `\"Neither\" if the input character is not an alphabet.`\n\n#### `Sample Input 1:`\n\n```\nA\n```\n\n#### `Sample Output 1:`\n\n```\nUppercase\n```\n\n#### `Sample Input 2:`\n\n```\nb\n```\n\n#### `Sample Output 2:`\n\n```\nLowercase\n```\n\n#### `Sample Input 3:`\n\n```\n7\n```\n\n#### `Sample Output 3:`\n\n```\nNeither\n```\n\n#### `Constraints:`\n\n- `The input character can be any printable ASCII character.`\n- `The input character can be entered in either uppercase or lowercase.`",
+    "title": "Character Case Checker",
+    "default_testcase": {
+        "id": 6854,
+        "input": "A",
+        "expected_output": "Uppercase\n",
+        "code_problem_id": 771,
+        "created_at": "2024-03-23T16:26:13.166Z",
+        "updated_at": "2024-03-23T16:26:13.166Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2507,
+            "code_problem_id": 771,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static String checkCharacterCase() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2508,
+            "code_problem_id": 771,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static string checkCharacterCase() {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2509,
+            "code_problem_id": 771,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def check_character_case():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2510,
+            "code_problem_id": 771,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static checkCharacterCase(inputChar) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

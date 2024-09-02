@@ -1,0 +1,64 @@
+{
+    "id": 597,
+    "description": "You operate a factory of making chocolates and have been researching on how to cut down cost of your operation.   \n There are 'n' factors that contribute towards the total cost of making chocolates.     \n\n```\nThe cost is given as:\n\na1^2 + a2^2 +a3^2 +......+ an^2\n\nThe chief engineer at your factory has come up with a solution where using a device in your factory reduces each factor by 'k' amount, \n\n(a1-k)^2 + (a2-k)^2 + .......... + (an-k)^2\n\nbut is having trouble deciding the reading of the device. Your task is to determine a value of such that your cost of operation can be minimized.\n\nInput format:\n\nYou are given an array of numbers denoting the factor responsible for the cost of opeartion.\n\nOutput format:\n\nOutput the number 'k' such that the cost of operation can be minimized.\n\nSample Input 1:\n\n3\n\n1 2 3\n\nSample Output 1:\n\n2\n\nConstraints:\n\n1<=n<=10^5\n\n1<=a[i]<=10^5\n\n```\n",
+    "title": "The chocolate man",
+    "default_testcase": {
+        "id": 3906,
+        "input": "3\n9 1 13",
+        "expected_output": "7\n",
+        "code_problem_id": 597,
+        "created_at": "2024-01-22T07:11:13.446Z",
+        "updated_at": "2024-01-22T07:11:13.446Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1785,
+            "code_problem_id": 597,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int ar[], int n){",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1786,
+            "code_problem_id": 597,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int solve(int[] arr, int n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1787,
+            "code_problem_id": 597,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1788,
+            "code_problem_id": 597,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr, n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

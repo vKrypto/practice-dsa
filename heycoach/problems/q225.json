@@ -1,0 +1,45 @@
+{
+    "id": 225,
+    "description": "A teacher is writing a test with *n* true/false questions, with 'T' denoting true and 'F' denoting false. He wants to confuse the students by **maximizing the number of consecutive** questions with the **same** answer (multiple trues or multiple falses in a row).\n\nYou are given a string *answerKey*, where *answerKey[i]* is the original answer to the ith question. In addition, you are given an integer *k*, the maximum number of times you may perform the following operation:\n\n-Change the answer key for any question to 'T' or 'F' (i.e., set answerKey[i] to 'T' or 'F').\n\nPrint the **maximum** number of consecutive 'T's or 'F's in the answer key after performing the operation at most k times.\n\n####Input Format:\n*First line contains string\n*second line contains single integer k\n\n####Output Format:\n*single integer output\n\n####Constraints:\n*n == answerKey.length\n*1 <= n <= 50000\n*answerKey[i] is either 'T' or 'F'\n*1 <= k <= n\n\n####Example:\n**Input**:TTFF\n2\n**Output**:4",
+    "title": "Maximize the confusion of an Exam",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 154,
+            "code_problem_id": 225,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(string s,int target) {\n    \n  } \n};"
+        },
+        {
+            "id": 155,
+            "code_problem_id": 225,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(String s,int target) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 156,
+            "code_problem_id": 225,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, s, target):\n    "
+        }
+    ]
+}

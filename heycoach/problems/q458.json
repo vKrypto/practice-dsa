@@ -1,0 +1,64 @@
+{
+    "id": 458,
+    "description": "You're the architect of Harmony Hills, a quaint utopia where neighbors strive for peaceful coexistence. Each resident is represented by a number (in nums) reflecting their desired level of social interaction (the larger the number, the more social). Your goal? Build vibrant communities within this diverse population by grouping residents into \"continuous\" neighborhoods where everyone feels comfortable.\n\n\nYou're given an array nums representing the social preferences of Harmony Hills residents (positive integers between 1 and 10^9).<br/>\nA \"continuous\" neighborhood is a group of residents where the difference in desired social interaction between any two residents is at most 2 (i.e., |resident1 preference - resident2 preference| <= 2).\nYour mission is to find the total number of possible continuous neighborhoods you can create within Harmony Hills. Remember, the more harmonious neighborhoods, the happier the residents!\n\n\n#### `Input/Output Format:`\n\n#### `Input:` \n`An array nums containing the social preferences of residents separated by spaces or commas.`\n#### `Output:`\n`Return a single integer representing the total number of possible continuous neighborhoods in Harmony Hills.`\n\n#### `Examples:`\n\n#### `Input:` \n- `5 4 2 4 (Resident preferences in Harmony Hills)`\n\n#### `Output:` \n`8 (As in the original example, there are 8 possible neighborhoods catering to everyone's social needs.)`\n\n#### `Input:` \n- `1 2 3 (Another peaceful community)`\n\n#### Output: \n- `6 (Similar to the first example, 6 neighborhoods can be formed to ensure everyone feels comfortable.)`\n\n#### `Constraints:`\n\n- `1 <= n <= 10^5 (Number of residents in Harmony Hills)`<br>\n- `1 <= nums[i] <= 10^9 (Individual resident's social preference)`",
+    "title": "Continuous Neighborhoods",
+    "default_testcase": {
+        "id": 3130,
+        "input": "4\n5 4 2 4",
+        "expected_output": "8\n",
+        "code_problem_id": 458,
+        "created_at": "2023-12-23T13:27:44.594Z",
+        "updated_at": "2023-12-23T13:27:44.594Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1295,
+            "code_problem_id": 458,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long long continuousNeighborhoods(vector<int>& nums){\n  //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1341,
+            "code_problem_id": 458,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long continuousNeighborhoods(int[] nums) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1342,
+            "code_problem_id": 458,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def continuousNeighborhoods(self, nums):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1416,
+            "code_problem_id": 458,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    continuousNeighborhoods(nums) {\n      //Write your code here;\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

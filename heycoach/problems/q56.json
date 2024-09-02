@@ -1,0 +1,33 @@
+{
+    "id": 56,
+    "description": "Imagine you have a keyboard with **all keys** in a single row , The keys may be in **different order** than the standard keyboard. The layout of characters on a keyboard is denoted by a string s1 of length 26. s1 is indexed from 0 to 25. Initially, your finger is at index 0.\nTo type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index i to index j is |j-i|, where || denotes absolute value.Find the time taken to type the string s2 with the given keyboard layout.\n### Example 1 \n\n### Input\n```CPP\ns1 = \"abcdefghijklmnopqrstuvwxyz\"\ns2 = \"cba\"\n``` \n### Output \n```CPP \n4\n``` \n#### Explanation:\n\nInitially we are at index 0. To type 'c',\nit will take a time of abs(0-2) = 2. To, type\n'b' next, it will take abs(2-1) = 1. And, for\n'a', it will take abs(1-0) = 1 unit time.\nSo, total time = 2+1+1 = 4.\n\n### Example 2 \n\n### Input\n```CPP\ns1 = \"zyxwvutsrqponmlkjihgfedcba\"\ns2 = \"a\"\n``` \n### Output \n```CPP \n25\n``` \n#### Explanation:\n\n'a' is at index 25. So, the time taken\nto type 'a' will be abs(0-25) = 25.\n\n\n### Constraints:\n\n* 1 <= s2.length <= 10000\n* s1.length = 26\n* s1 contains all English alphabets in lowercase\n",
+    "title": "Time required to type string",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 101,
+            "code_problem_id": 56,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\npublic:\n\tint findTime(string s1, string s2) {\n      // write your code here\n\t}\n};"
+        },
+        {
+            "id": 474,
+            "code_problem_id": 56,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int findTime(String s1, String s2) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

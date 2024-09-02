@@ -1,0 +1,57 @@
+{
+    "id": 390,
+    "description": "Find the length of the longest palindromic subsequence within a given string, denoted by `s`. A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements. The goal is to determine the maximum length of a subsequence in `s` that is also a palindrome.\n\n### Constraints:\n```\n1 <= s.length <= 1000\ns consists only of lowercase English letters.\n```\n\n### Input Format:\n```\nA single string 's' consisting only of lowercase English letters.\n```\n\n### Output Format:\n```\nAn integer representing the length of the longest palindromic subsequence within the given string 's'.\n```\n\n\n### Examples:\n\n**Example 1**:\n\nInput: \n```\ns = \"bbbab\"\n```\n\nOutput: \n```\n4\n```\n\nExplanation:\nFor the string \"bbbab\":\n- The longest palindromic subsequence is \"bbbb\", which is a palindrome of length 4.\n\n**Example 2**:\n\nInput: \n```\ns = \"civic\"\n```\n\nOutput:\n```\n5\n```\n\nExplanation:\nFor the string \"civic\":\n- The longest palindromic subsequence is \"civic\", which is a palindrome of length 5.\n",
+    "title": "Longest Pallindromic Exams",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 924,
+            "code_problem_id": 390,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n    int longestPalinSubseq(string s) {\n      // Write your code here\n    }\n};"
+        },
+        {
+            "id": 925,
+            "code_problem_id": 390,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public int longestPalinSubseq(String s)\n    {\n        // Write your code here\n    }\n}"
+        },
+        {
+            "id": 926,
+            "code_problem_id": 390,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    # Function to find the length of the longest palindromic subsequence.\n    def longestPalinSubseq(self, s):\n        # Write your code here\n"
+        },
+        {
+            "id": 927,
+            "code_problem_id": 390,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  longestPalinSubseq(s){\n    // Write your Code here\n  }\n}"
+        }
+    ]
+}

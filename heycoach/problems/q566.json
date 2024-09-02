@@ -1,0 +1,8 @@
+{
+    "id": 566,
+    "description": "Given a string str, a partitioning of the string is a palindrome partitioning if every sub-string of the partition is a palindrome. Determine the fewest cuts needed for palindrome partitioning of the given string.\n\n\nExample 1:\n\nInput: str = \"ababbbabbababa\"\nOutput: 3\nExplaination: After 3 partitioning substrings \nare \"a\", \"babbbab\", \"b\", \"ababa\".\n\n\nConstraints:\n1 \u2264 length of str \u2264 500",
+    "title": "Palindrome Partitioning",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

@@ -1,0 +1,64 @@
+{
+    "id": 201,
+    "description": "\nYou are given an array prices where prices[i] is the price of a given stock on the ith day.\n\nFind the maximum profit you can achieve. You may complete `at most two transactions`.\n\n- Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).\n  A `subarray` is a contiguous part of an array.\n\n### Example 1\n\n### Input\n\n```CPP\nprices = [3,3,5,0,0,3,1,4]\n```\n\n### Output\n\n```CPP\n6\n```\n\n### Explanation:\n\n```\nBuy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.\nThen buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.\n```\n\n### Example 2\n\n### Input\n\n```CPP\nprices = [1,2,3,4,5]\n```\n\n### Output\n\n```CPP\n4\n```\n\n### Explanation:\n\n```\nBuy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.\nNote that you cannot buy on day 1, buy on day 2 and sell them later, as you are engaging multiple transactions at the same time. You must sell before buying again.\n```\n### Input Format\n```\nGiven an array prices of n elements \n```\n### Output Format\n```\nOutput the maximum profit you can achieve By completing at most two transactions.\n```\n\n\n### Constraints:\n\n`- 1 <= prices.length <= 10^5`\n\n`- 0 <= prices[i] <= 10^9`\n",
+    "title": "BTTS2",
+    "default_testcase": {
+        "id": 1456,
+        "input": "42\n 6\n 9\n 4\n 5\n 6\n 2\n 1\n 4\n 9\n 8\n 7\n 4\n12\n 4\n 2\n 3\n 6\n 5\n 4\n 1\n 2\n 3\n 6\n 5\n 4\n 1\n 2\n 3\n 6\n 5\n 4\n12\n 3\n65\n 9\n 8\n 7\n 4\n 5\n 2\n 1\n 4",
+        "expected_output": "75",
+        "code_problem_id": 201,
+        "created_at": "2022-10-29T18:00:38.366Z",
+        "updated_at": "2022-10-29T18:00:38.366Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 289,
+            "code_problem_id": 201,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  int maxProfit(vector < int > & p) {\n    //Write your code here;",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 294,
+            "code_problem_id": 201,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxProfit(int[] prices) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 299,
+            "code_problem_id": 201,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxProfit(self, prices):\n        # Write Code Here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 854,
+            "code_problem_id": 201,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxProfit(prices) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

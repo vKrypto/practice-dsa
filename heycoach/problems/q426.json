@@ -1,0 +1,64 @@
+{
+    "id": 426,
+    "description": "You have been given two arrays A,B of sizes  n, m respectively. You need to return the total connects in the arrays. A connect is defined as XOR of two elements from different arrays which results in 0.\n\n**Example 1:-**\n```\nInput :\n\nA[ ] = {1,2,3,4,5} ,\nB[ ] = {1,2,3,4,5}\n\nOutput : 5\n```\n\n**Example 2:-**\n```\nInput : \nA[ ]={1,2,3,4,5} ,\nB[ ]={7}\n\nOutput : 0\n```\n**Constraints:**\n\n`1 <= n,m <= 10^5`\n\n`1 <= A[i],B[i] <= 10^9`",
+    "title": "Find the XOR Connects",
+    "default_testcase": {
+        "id": 2932,
+        "input": "5 5\n1 2 3 4 5\n1 2 3 4 5",
+        "expected_output": "5\n",
+        "code_problem_id": 426,
+        "created_at": "2023-12-13T00:06:23.710Z",
+        "updated_at": "2023-12-13T00:06:23.710Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1150,
+            "code_problem_id": 426,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n   int solve(vector<int>&a, vector<int>&b){\n     //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1151,
+            "code_problem_id": 426,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public int solve(ArrayList<Integer> a, ArrayList<Integer> b) {\n    \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1152,
+            "code_problem_id": 426,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, a, b):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1153,
+            "code_problem_id": 426,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      solve(a, b) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

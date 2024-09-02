@@ -1,0 +1,8 @@
+{
+    "id": 564,
+    "description": "Given a string S consisting of digits from 1 through 9, determine the number of pairs of integers (i, j) (1 \u2264 i \u2264 j \u2264 |S|) that satisfy the following condition:\n\n`Condition: In base ten, the i-th through j-th characters of S form an integer that is a multiple of 2023.`\n\n```\nConstraints:  \n1 \u2264 |S| \u2264 200000  \nS is a string consisting of digits from 1 through 9.  \nSample Input:1  \n2232023412023  \nSample Output:1  \n4  \nFour pairs - (3,5), (7,9), (1,13), and (11,13) - satisfy the condition.\n\nSample Input:2  \n920232032212  \nSample Output:2  \n1  \nOne pair - (2,10) - satisfies the condition.\n```",
+    "title": "Multiple of 2023",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

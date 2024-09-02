@@ -1,0 +1,64 @@
+{
+    "id": 595,
+    "description": "Given a sorted dictionary of an alien language having N words and k starting alphabets of standard dictionary. Find the order of characters in the alien language.   \n**Note:** `Many orders may be possible for a particular test case, thus you may return any valid order and output will be 1 if the order of string returned by the function is correct else 0 denoting incorrect string returned.`\n\n**`Example:`**\n\n**`Input: `**  \n\n```\nN = 5, K = 4  \ndict = {\"baa\",\"abcd\",\"abca\",\"cab\",\"cad\"}\n```\n  \n**`Output:`**  \n`1`  \n**`Explanation:`**\n\n```\nHere order of characters is 'b', 'd', 'a', 'c' Note that words are sorted and in the given language \"baa\" comes before \"abcd\", therefore 'b' is before 'a' in output. Similarly, we can find other orders.\n```\n\n\n\n**` Constraints:`**  \n- `1 \u2264 N, M \u2264 300 ` \n- `1 \u2264 K \u2264 26  `\n- `1 \u2264 Length of words \u2264 50`",
+    "title": "Unique Dictionary",
+    "default_testcase": {
+        "id": 5970,
+        "input": "5 4\nbaa\nabcd\nabca\ncab\ncad",
+        "expected_output": "bdac\n",
+        "code_problem_id": 595,
+        "created_at": "2024-03-02T11:19:02.219Z",
+        "updated_at": "2024-03-02T11:19:02.219Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1779,
+            "code_problem_id": 595,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string findOrder(vector<string>& dict, int N, int K) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1780,
+            "code_problem_id": 595,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_order(self, dict, N, K):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1893,
+            "code_problem_id": 595,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String findOrder(String[] dict, int N, int K) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1894,
+            "code_problem_id": 595,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findOrder(dict, N, K) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

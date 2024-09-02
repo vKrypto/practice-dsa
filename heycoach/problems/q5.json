@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "description": "test",
+    "title": "test1",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": []
+}

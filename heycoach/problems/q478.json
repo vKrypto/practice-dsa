@@ -1,0 +1,64 @@
+{
+    "id": 478,
+    "description": "Given an array arr of n integers, you can choose any element of the array that has multiple digits and replace it with any substring of the integer. In this context, a substring of an integer is considered as any contiguous segment of digits of the integer. For example, 728, 86, 2, 37, etc., are substrings of the integer 372862, while 322, 7862 are not.\n\nSort the array by performing the operation any number of times. Find the lexicographically smallest sorted array possible. If it is not possible to create a sorted array in this manner, report [-1] as the answer, i.e., an array containing a single element, -1.\n\n**Note**:\n\nAn array x of length n is lexicographically smaller than an array y of length n if there exists an i (0 < i < n) such that x[i] < y[i], and for any j (0 < j < i), x[j] = y[j).\n\n**Examples**:\n\n**Example 1:**</br>\n**Input**:\n```\narr=[9, 112, 425]\n```\n**Output:**\n```\n[9, 11, 25]\n```\n**Explaination**:</br>\nChoose the element 112 and replace it with the substrings 11. Also, choose 425 and replace it with 25. The resulting array [9, 11, 25] is lexicographically smallest among all possible sorted arrays.\n\n**Example 2:**</br>\n**Input**:\n```\narr=[25, 87, 634, 9]\n```\n**Output**:\n```\n[-1]\n```\n\n**Explanation**:</br>\nIn this case, there is no way to choose elements and replace them with substrings to create a lexicographically smallest sorted array. Therefore, the output is [-1].\n\n\n**Constraints**:</br>\n1 <= n <= 100000</br>\n1 <= arr[i] <= 1e9",
+    "title": "Lexicographically Smallest Sorted Array",
+    "default_testcase": {
+        "id": 3219,
+        "input": "3\n9 112 425",
+        "expected_output": "[9,11,25]",
+        "code_problem_id": 478,
+        "created_at": "2023-12-28T14:50:07.824Z",
+        "updated_at": "2023-12-28T14:50:07.824Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1379,
+            "code_problem_id": 478,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n  vector<int>smallestSorted(vector<int>&arr, int n){\n    \n  }\n};\n"
+        },
+        {
+            "id": 1380,
+            "code_problem_id": 478,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<Integer> smallestSorted(int[] arr, int n) {\n       \n    }\n}\n"
+        },
+        {
+            "id": 1381,
+            "code_problem_id": 478,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def smallestSorted(self, arr, n):\n   \n\n"
+        },
+        {
+            "id": 1382,
+            "code_problem_id": 478,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    smallestSorted(arr, n) {\n       \n    }\n}"
+        }
+    ]
+}

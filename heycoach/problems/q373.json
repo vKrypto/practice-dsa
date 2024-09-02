@@ -1,0 +1,64 @@
+{
+    "id": 373,
+    "description": "You are given an array of integers with a length of N. Your task is to replace each element in the array with its corresponding rank and return the modified array. The rank of an integer is an integer between 1 to N (inclusive) that represents how large the element is in comparison to other elements in the array. The larger the element, the larger the rank should be, and if the elements are equal, they must have the same rank. The goal is to assign the smallest possible ranks to the elements.\n\n**Constraints:**\n- 1 <= N <= 10^4\n-10^9 <= arr[i] <= 10^9\n\n\n\n**Input**\n- `N` (1 <= N <= 10^4): An integer representing the length of the array.\n- `arr` (-10^9 <= arr[i] <= 10^9): A list of N integers representing the input array.\n\n**Output**\n- Return a list of N integers, where each element is replaced with its corresponding rank.\n\n**Examples**\n\n**Example 1:**\n\nInput:\n```python\nN = 4\narr = [40, 10, 20, 20]\n```\n\nOutput:\n```python\n[3, 1, 2, 2]\n```\n\nExplanation:\n- The element 40 has the largest value but larger then 1 and 2, so it gets the rank 3.\n- The element 10 is the smallest, so it gets the rank 1.\n- The element 20 is larger than 10 but smaller than 40, so it gets the rank 2.\n- The element 20 is larger than 10 and equal to 20 but smaller than 40, so it gets the rank 2.\n\n**Example 2:**\n\nInput:\n```python\nN = 3\narr = [100, 100, 100]\n```\n\nOutput:\n```python\n[1, 1, 1]\n```\n\nExplanation:\n- All elements are equal, so they all receive the same rank, which is 1.",
+    "title": "Rank elements",
+    "default_testcase": {
+        "id": 2318,
+        "input": "4\n40 10 20 20",
+        "expected_output": "3 1 2 2 \n",
+        "code_problem_id": 373,
+        "created_at": "2023-11-06T16:49:01.323Z",
+        "updated_at": "2023-11-06T16:49:01.323Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 872,
+            "code_problem_id": 373,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n    vector<int> arrayRankTransform(vector<int>& arr) {\n    \n    }\n};\n"
+        },
+        {
+            "id": 873,
+            "code_problem_id": 373,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution {\n    public int[] arrayRankTransform(int[] arr) {\n    \n    }\n}\n\n"
+        },
+        {
+            "id": 874,
+            "code_problem_id": 373,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    arrayRankTransform(n, arr) {\n\n    }\n}\n"
+        },
+        {
+            "id": 1057,
+            "code_problem_id": 373,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def arrayRankTransform(self, arr):\n      # Enter your code here"
+        }
+    ]
+}

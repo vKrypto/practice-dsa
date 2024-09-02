@@ -1,0 +1,45 @@
+{
+    "id": 91,
+    "description": "Tuntun is given two binary strings. she has to make the sum of both the binary string. She is Quite weak in coding so she needs your help to do so.\n\n#### Input Format: \n- first line contains 1st binary string\n- second line contains 2nd binary string\n\n#### Output Format:\n- Print the desired binary string.\n\n#### Constraints:\n- 1<= str.length<=10000\n- 0<=str[i]<=1\n\n#### Example:\nInput:\n1010\n1011\n\nOutput:\n10101\n",
+    "title": "Add Binary.",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 216,
+            "code_problem_id": 91,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(string s,string t) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 217,
+            "code_problem_id": 91,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(String s,String t) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 218,
+            "code_problem_id": 91,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, s, t):\n    \n\n\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 913,
+    "description": "You have an array called `stones` containing integer values, where each value represents the weight of a stone.\n\nThe objective of the game is to smash stones together until there is at most one stone remaining.\n\nDuring each turn, you select the two heaviest stones and smash them. If the two stones have the same weight, both are destroyed. Otherwise, the lighter stone is destroyed, and the heavier stone's weight is updated to the difference between their weights.\n\nYour task is to determine the weight of the last remaining stone after all possible smashing operations are completed. If there are no stones remaining, return 0.\n\n**Example 1:**</br>\n\nInput: stones = [5, 10, 15, 20]</br>\nOutput: \nIn this scenario, the array \"stones\" contains the weights of four stones: 5, 10, 15, and 20.\nThe game proceeds as follows:\n- First Turn: Smash the stones with weights 15 and 20. The heavier stone (20) crushes the lighter stone (15). The updated array becomes [5, 10, 5].\n- Second Turn: Smash the stones with weights 10 and 5. The heavier stone (10) crushes the lighter stone (5). The updated array becomes [5, 5].\n- Third Turn: Smash the stones with weights 5 and 5. Both stones have the same weight, so they are both destroyed. The array becomes empty.</br>\nSince there are no stones left, the output is 0.\n**\nExample 2:**</br>\nInput: stones = [5]</br>\nOutput: [5]\n\n\n**Constraints:**</br>\n1 <= stones.length <= 30</br>\n1 <= stones[i] <= 1000",
+    "title": "Stone Smash",
+    "default_testcase": {
+        "id": 8078,
+        "input": "4\n5 10 15 20",
+        "expected_output": "0\n",
+        "code_problem_id": 913,
+        "created_at": "2024-05-19T08:32:47.652Z",
+        "updated_at": "2024-05-19T08:32:47.652Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3021,
+            "code_problem_id": 913,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int lastStoneWeight(vector<int>& stones) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3022,
+            "code_problem_id": 913,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int lastStoneWeight(int[] stones) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3023,
+            "code_problem_id": 913,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def lastStoneWeight(self, stones):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3024,
+            "code_problem_id": 913,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    lastStoneWeight(stones) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

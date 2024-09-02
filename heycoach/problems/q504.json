@@ -1,0 +1,64 @@
+{
+    "id": 504,
+    "description": "You are a given a list of words and a root node of the TrieNode class, your task is to implement a Trie data structure and insert these words in it.\n\n**Input Format:**\n\n```\nFirst line contains an integer representing of the number of words to be pushed.\n\nSecond line contains a list of words that are to be pushed.\n```\n\n**Output Format:**\n\n```\nReturn Nothing just implement the Trie\n```\n\n**Constraints:**\n\n`1 <= word.length <= 2000`",
+    "title": "Implement Trie",
+    "default_testcase": {
+        "id": 3355,
+        "input": "3\nbig brigadier bison",
+        "expected_output": "Yes\nYes\nYes\n",
+        "code_problem_id": 504,
+        "created_at": "2024-01-03T16:51:39.372Z",
+        "updated_at": "2024-01-03T16:51:39.372Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1485,
+            "code_problem_id": 504,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    constructor(data) {\n        this.data = data;\n        this.children = new Array(26);\n        this.isend = false;\n        for (let i = 0; i < 26; i++) {\n            this.children[i] = null;\n        }\n    }\n}\n*/\n\nclass Solution {\n      insertWord(words, root) {\n        //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1486,
+            "code_problem_id": 504,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass TrieNode:\n    def __init__(self, data):\n        self.data = data\n        self.children = [None] * 26\n        self.isend = False\n\"\"\"\nclass Solution:\n    def insert_word(self, words, root):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1487,
+            "code_problem_id": 504,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    char data;\n    TrieNode[] children;\n    boolean isend;\n\n    TrieNode(char data) {\n        this.data = data;\n        children = new TrieNode[26];\n        isend = false;\n        for (int i = 0; i < 26; i++) {\n            children[i] = null;\n        }\n    }\n}\n*/\n\nclass Solution {\n      void insertWord(String[] words, TrieNode root) {\n        //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1488,
+            "code_problem_id": 504,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\nclass TrieNode{\n    public:\n    char data;\n    TrieNode**children;\n    bool isend;\n\n    TrieNode(char data){\n        this->data = data;\n        children = new TrieNode*[26];\n        isend = false;\n        for(int i=0;i<26;i++){\n            children[i] = NULL;\n        }\n    }\n};\n*/\n\nclass Solution{\npublic:\n       void insertword(vector <string> &words, TrieNode* root){",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

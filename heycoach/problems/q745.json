@@ -1,0 +1,64 @@
+{
+    "id": 745,
+    "description": "You are in a war. You are handling a F-51 Fighter Jet and have to communicate with your allies. You are waiting for a command to confirm whether to attack or not. There is one issue though, you are not sure if your communication channel has been hacked or not. </br>To make sure that the message has been received from a trusted source they will send you an array and an integer 'k'. If the array can be divided into k or more than k segments where every segment's minimum positive value which is not present in the array (for example in arr = {1,3,4,5} that value will be 2 since it is the minimum positive value that is not present in the array) is same, then you have to print \"**Attack**\" else print \"**Wait**\".\n\nWrite an algorithm to help the pilot determine what he should do.\n\n#### `Input Format:`\n\n- `First line contains an integer n denoting the number of elements in the arrray.`\n\n- `Second line contains 'n' space seperated integers denoting the elements of the array.`\n\n#### `Output Format:`\n\n- `Print the statement \"Attack\" or \"Wait\" (Case Sensitive!) based on the rules provided in the description.`\n\n#### `Sample Input:`\n```\n3 3\n\n0 1 0\n```\n#### `Sample Output:`\n\n`Wait`\n\n**Explanation:** `Since the array cannot be divided into k=3 or larger segments where the minimum positive value that is not present in the array is same for every segment, that's why print \"Wait\".`\n\n#### `Sample Input:`\n```\n6 2\n\n0 1 0 1 0 1\n```\n#### `Sample Output:`\n\n`Attack`\n\n**Explanation:** `The given array can be divided into segments, {0,1}, {0,1}, {0,1}, where the minimum positive value that is not in the array is 2 for all segments. There are a total of 3 segments and if the number of segments that we create is greater than or equal to the k then we can \"Attack\".`\n\n#### `Constraints:`\n\n- `3 <= n <= 10^4`\n\n- `2 <= k <= n`\n\n- `0 <= A[i], B[i] < 10^9`\n",
+    "title": "Jet Fighter Captain",
+    "default_testcase": {
+        "id": 6557,
+        "input": "6 2\n1 0 1 0 1 0",
+        "expected_output": "Attack\n",
+        "code_problem_id": 745,
+        "created_at": "2024-03-16T06:28:31.408Z",
+        "updated_at": "2024-03-16T06:28:31.408Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2407,
+            "code_problem_id": 745,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int a[], int n, int k) {\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2408,
+            "code_problem_id": 745,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, a, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2410,
+            "code_problem_id": 745,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int[] a, int n, int k) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2411,
+            "code_problem_id": 745,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    solve(a, n, k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

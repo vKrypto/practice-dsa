@@ -1,0 +1,45 @@
+{
+    "id": 136,
+    "description": "There are **n** balls placed on a 1-dimensional axis with each of them moving with the same non-zero speed *direction[i]* represents the direction in which the ith ball is moving, with 0 meaning that it is moving to the left and 1 meaning it is moving to the right. The Strength of the ith ball is described by strength[i]. If 2 balls collide, the one with the higher strength destroys the smaller one. If both have the same strength, both are destroyed. Return the list of the balls that remain after all the collisions have occurred, in ascending order.\n\n**NOTE**: The arrays direction and strength are 0-indexed.\n\n#### Input Format: \n- first line contains single integer n (size of the array).\n- second line contains n integers (direction array)\n- third line contains n integers (strength array)\n\n#### Output Format:\n- single space separated elements of the output array\n\n#### Example:\n**INPUT**: 2\n1 -1\n2 1\n\n**OUTPUT**: 0",
+    "title": "Ball Collision",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 176,
+            "code_problem_id": 136,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &direction,vector<int> &strength) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 184,
+            "code_problem_id": 136,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr1,Vector<Integer> arr2) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 192,
+            "code_problem_id": 136,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, direction, strength):\n        pass"
+        }
+    ]
+}

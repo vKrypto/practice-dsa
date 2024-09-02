@@ -1,0 +1,64 @@
+{
+    "id": 857,
+    "description": "Salil is on a vacation and wants to experience new things in his life. He decided to go for Ice-Skating this time, since he is new to ice skating, he's facing some difficulties in that and is asking for your help. He can only move by pushing off from a snow drift to the north, east, south, or west until he reaches another snow drift. However, he's discovered that there are some places he can't reach from certain snow drifts, no matter how he moves. To solve this problem, he wants to add more snow drifts strategically. Can you help him figure out the smallest number of new snow drifts he needs to create in order to ensure he can reach any snow drift from any other one?\n \n`Input`:\n\nThe input starts with a single integer,  n ( 1\u2264n\u2264100), representing the total number of snow drifts. After that, there are n lines, each containing two integers  xi \u200b and yi \u200b (1\u2264xi \u200b ,yi \u200b \u22641000), which denote the coordinates of the i-th snow drift. It's important to note that the north direction corresponds to the  Oy \u200b axis, and the east direction corresponds to the Ox \u200b axis. Furthermore, each snow drift is located at a unique set of coordinates.\n \n`Output`:\n\nOutput the minimal number of snow drifts that need to be created in order for Bajtek to be able to reach any snow drift from any other one.\n\n\nSample Input - 1\n\n2\n\n1 2\n\n2 1\n\nSample Output - 1\n\n1\n\nExplanation: If you place the coordinates on a coordinate plane, (1,2) and (2,1) are facing each other diagonally but Salil can only move in East, West, South or North Direction. That's why we will create another snowdrift at (1,1) which enables Salil to reach every snowdrift.\n\nSample Input - 2\n\n2\n\n2 1\n\n4 1\n\nSample Output - 2\n\n0\n\nExplanation: Salil can just travel east and west to reach every snowdrift.\n\n",
+    "title": "   Ice Skating",
+    "default_testcase": {
+        "id": 7591,
+        "input": "2\n2 1\n4 1",
+        "expected_output": "0\n",
+        "code_problem_id": 857,
+        "created_at": "2024-04-28T14:04:25.645Z",
+        "updated_at": "2024-04-28T14:04:25.645Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2823,
+            "code_problem_id": 857,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class SnowDrifts {\npublic:\n    void countDrifts(const vector<int>& xCoord, const vector<int>& yCoord, int numDrifts) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2824,
+            "code_problem_id": 857,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class SnowDrifts:\n    def count_drifts(self, x_coord, y_coord, num_drifts):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2825,
+            "code_problem_id": 857,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class SnowDrifts {\n    public void countDrifts(int[] xCoord, int[] yCoord, int numDrifts) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2826,
+            "code_problem_id": 857,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class SnowDrifts {\n    countDrifts(xCoord, yCoord, numDrifts) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

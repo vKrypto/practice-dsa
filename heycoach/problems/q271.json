@@ -1,0 +1,64 @@
+{
+    "id": 271,
+    "description": "\n\n### Longest Increasing Subsequence (LIS)\n\nGiven an array `arr[]` of size `N`, find the length of the Longest Increasing Subsequence (LIS) in the array. The LIS is defined as the longest subsequence where each element is strictly greater than the preceding one.\n\n**`Input Format:`**\n- `The first line contains an integer `N`, the size of the array.`\n- `The second line contains `N` space-separated integers representing the elements of the array `arr[]`.`\n\n**`Output Format:`**\n- `Output a single integer, the length of the longest increasing subsequence in the given array.`\n\n**`Constraints:`**\n- `1 <= N <= 2500`\n- `-10^5 <= arr[i] <= 10^5`, `where` `arr[i]` `denotes the` `i-th` `element of the array` `arr[]`.\n\n**`Sample Inputs and Outputs:`**\n\n1. **` Input:`**\n    ```\n    5\n    3 10 2 1 20\n    ```\n   **`Output:`**\n    ```\n    3\n    ```\n   **`Explanation:`** `The longest increasing subsequence is `{3, 10, 20}`, which has a length of 3.`\n\n2. **`Input:`**\n    ```\n    2\n    3 2\n    ```\n   **`Output:`**\n    ```\n    1\n    ```\n   **`Explanation:`** `The longest increasing subsequences are `{3}` and `{2}`, both with a length of 1.`\n\n3. **`Input:`**\n    ```\n    6\n    50 3 10 7 40 80\n    ```\n   **`Output:`**\n    ```\n    4\n    ```\n   **`Explanation:`** The longest increasing subsequence is `{3, 7, 40, 80}`, which has a length of 4.\n\n\n",
+    "title": "LIS",
+    "default_testcase": {
+        "id": 2280,
+        "input": "5\n3 10 2 1 20",
+        "expected_output": "3\n",
+        "code_problem_id": 271,
+        "created_at": "2023-11-01T09:24:27.667Z",
+        "updated_at": "2023-11-01T09:24:27.667Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 520,
+            "code_problem_id": 271,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int lis(int arr[], int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 580,
+            "code_problem_id": 271,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    lis(arr) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 581,
+            "code_problem_id": 271,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def lis(self, arr, n):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 582,
+            "code_problem_id": 271,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int lis(int[] arr, int n) {\n      // write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

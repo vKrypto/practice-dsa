@@ -1,0 +1,64 @@
+{
+    "id": 193,
+    "description": "Professor white wants his students to help each other in the chemistry lab. He suggests that every student should help out another student who scored less marks than him in chemistry and whose roll number appears after him. But the students are lazy and they don't want to search too far. They each pick the first roll number after them that fits the criteria. Find the marks of the student that each student picks.  \nNote: one student may be selected by multiple classmates.\n\n\n ### Example 1 \n\n### Input\n```CPP\nN = 5, arr = [3, 8, 5, 2, 25]\n```\n### Output \n```CPP\n[2,5,2,-1,-1]\n```\n### Explanation\n\n```\n1. Roll number 1 has 3 marks. The first person who has less marks than him is roll number 4, who has 2 marks.\n2. Roll number 2 has 8 marks, he helps student with 5 marks.\n3. Roll number 3 has 5 marks, he helps student with 2 marks.\n4. Roll number 4 and 5 can not pick anyone as no student with higher roll number has lesser marks than them. This is denoted by -1.Output shows the marks of the weaker student that each roll number helps in order. i.e.- 2,5,2,-1,-1\n```\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 4, a = [1, 2, 3, 4]\n```\n**Output:** \n```CPP\n[-1,-1,-1,-1]\n```\n### Explanation\n\n```\nAs the marks are in increasing order. None of the students can find a classmate who has \na higher roll number and less marks than them.\n```\n### Input Format\n```\nThe first input line has one integer n\nThe Second line contain n integers which are array elements\n```\n### Output Format\n```\nOutput the array which shows marks of the student that each student picks.  \n```\n\n### Constraints:\n-   `1 <= a.length <= 10000`\n-   `1 <= a[i] <= 100000`\n",
+    "title": "Help students",
+    "default_testcase": {
+        "id": 1410,
+        "input": "5\n3 8 5 2 25",
+        "expected_output": "2 5 2 -1 -1 ",
+        "code_problem_id": 193,
+        "created_at": "2022-10-29T12:38:47.644Z",
+        "updated_at": "2022-10-29T12:38:47.644Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 257,
+            "code_problem_id": 193,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> helpStudents(vector<int> &arr, int n)\n    {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 653,
+            "code_problem_id": 193,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> helpStudents(List<Integer> arr, int n) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 655,
+            "code_problem_id": 193,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def help_students(self, arr, n):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 656,
+            "code_problem_id": 193,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    \nhelpStudents(arr, n) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

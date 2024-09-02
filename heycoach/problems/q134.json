@@ -1,0 +1,45 @@
+{
+    "id": 134,
+    "description": "Given an integer array **nums** and an integer k, split nums into **k** non-empty subarrays such that the largest sum of any subarray is **minimized**.\n\nPrint the minimized largest sum of the split.\n\nA **subarray** is a contiguous part of the array.\n\n#### Input Format: \n- first line contains two integer n and k (size of the array and no. of partitions respectively)\n- second line consists of contains n integers (element of the array)\n\n#### Output Format: \n-  Single integer output.\n\n#### Constriants:\n- 1 <= nums.length <= 1000\n- 0 <= nums[i] <= 106\n- 1 <= k <= min(50, nums.length)\n\n#### Example:\n**Input**: nums = [7,2,5,10,8], k = 2\n**Output**: 18\n**Explanation**: There are four ways to split nums into two subarrays.\nThe best way is to split it into [7,2,5] and [10,8], where the largest sum among the two subarrays is only 18.",
+    "title": "Split Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 173,
+            "code_problem_id": 134,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr,int k) {\n    \n  } \n};\n\n\n"
+        },
+        {
+            "id": 182,
+            "code_problem_id": 134,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr,int k) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 190,
+            "code_problem_id": 134,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr, k):\n        pass\n"
+        }
+    ]
+}

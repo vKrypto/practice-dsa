@@ -1,0 +1,64 @@
+{
+    "id": 883,
+    "description": "You are given an array a1,a2,a3,....,a(n-1). You have to figure out another array x1, x2, x3,....x(n-1), xn, where the ith element's value is calculated as below:\n\na[i] = x[i+1] mod x[i], where i can be used to represent any element of array a.\n\nReturn the array x where every element of x is between 1<=x[i]<=10^8.\n\n```\nSample Input:\n\n3\n4 5\n\nSample Output:\n\n5 9 14\n```\n\nExplanation: You have to create an array 'x' of size 3 from array a using the rules explained above. We have the array x as 5 9 14, where 9%5 = 4 (first element of array a) and 14%9=5 (second element of array a.) thus 5 9 14 is a valid answer.\n\n```\nSample Input:\n\n4\n1 1 1\n\nSample Output:\n\n4 5 6 7\n```\n\nNote: there can be multiple answers possible, return any one of them. You are not allowed to use zero to build array x.\n\nConstraints:\n\n2<=n<=500\n\n1<=x[i]<=500\n\n\n\n",
+    "title": "The MOD array",
+    "default_testcase": {
+        "id": 7801,
+        "input": "6\n4 2 5 1 2",
+        "expected_output": "Valid Answer\n",
+        "code_problem_id": 883,
+        "created_at": "2024-05-10T06:40:06.128Z",
+        "updated_at": "2024-05-10T06:40:06.128Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2922,
+            "code_problem_id": 883,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    vector<int> solve(int ar[], int n){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2923,
+            "code_problem_id": 883,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, ar, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2924,
+            "code_problem_id": 883,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> solve(int[] ar, int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2925,
+            "code_problem_id": 883,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(ar, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 103,
+    "description": "\nYou are given an array `arr` of **N** positive integers and an integer **k**. Your task is to check if there exist a subset in `arr` with a `sum `equal to `k`.\n\n\n### Example 1 \n\n### Input\n```CPP \nN = 4,K = 5\narr = [4,3,2,1]\n``` \n### Output \n```CPP \n1\n``` \n#### Explanation:\n\nThere exist 2 subsets with sum = 5. These are {4,1} and {3,2}. Hence, return true.\n\n### Example 2 \n\n### Input\n```CPP\nN = 5,k = 6\narr = [1,7,2,9,10]\n```\n### Output \n```CPP \n0\n``` \n#### Explanation:\nThere are no subsets with sum = 6. Hence, return false.\n\n### Constraints:\n\n* 1 <= N <= 100\n* 1 <= k <= 300\n*  1 <= arr[i] <= 1000\n\n",
+    "title": "Check k sum subset",
+    "default_testcase": {
+        "id": 760,
+        "input": "4 5\n4 3 2 1",
+        "expected_output": "1\n",
+        "code_problem_id": 103,
+        "created_at": "2022-10-04T14:43:40.771Z",
+        "updated_at": "2022-10-04T14:43:40.771Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 197,
+            "code_problem_id": 103,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    bool subsetSumToK(int n, int k, vector<int> &arr) {\n      // write your code here\n    }\n};\n"
+        },
+        {
+            "id": 506,
+            "code_problem_id": 103,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {    \n    public boolean subsetSumToK(int n, int k, int[] arr) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

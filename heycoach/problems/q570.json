@@ -1,0 +1,64 @@
+{
+    "id": 570,
+    "description": "You are given an array of non-overlapping intervals where intervals[i] = [starti, endi] represent the start and the end of the ith interval and intervals is sorted in ascending order by starti. You are also given an interval newInterval = [start, end] that represents the start and end of another interval.\n\nInsert newInterval into intervals such that intervals is still sorted in ascending order by starti and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary).\n\nReturn intervals after the insertion.\n\n \n#### `Sample Input` \n\n```\nintervals = [[1,2],[3,5],[6,7],[8,10],[12,16]]\nnewInterval = [4,8]\n```\n#### `Sample Output`\n```\n[[1,2],[3,10],[12,16]]\n```\n#### `Explanation`\nBecause the new interval [4,8] overlaps with [3,5],[6,7],[8,10].\n\n### `Constraints:`\n\n- `0 <= intervals.length <= 10^4`\n\n- `nintervals[i].length == 2`\n\n- 0 <= starti <= endi <= 10^5\n\n- `intervals is sorted by starti in ascending order.`\n\n- `newInterval.length == 2`\n\n- `0 <= start <= end <= 10^5`",
+    "title": "Insert Interval",
+    "default_testcase": {
+        "id": 3809,
+        "input": "2\n1 3\n6 9\n2 5",
+        "expected_output": "1 5\n6 9\n",
+        "code_problem_id": 570,
+        "created_at": "2024-01-21T09:49:51.861Z",
+        "updated_at": "2024-01-21T09:49:51.861Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1705,
+            "code_problem_id": 570,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    vector<vector<int>> insert(vector<vector<int>> &intervals, vector<int> &newInterval)\n    {\n      ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1706,
+            "code_problem_id": 570,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<Integer>> insert(List<List<Integer>> intervals, List<Integer> newInterval) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1707,
+            "code_problem_id": 570,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def insert(self, intervals, newInterval):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1872,
+            "code_problem_id": 570,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    insert(intervals, newInterval) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

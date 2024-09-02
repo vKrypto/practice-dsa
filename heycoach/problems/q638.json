@@ -1,0 +1,64 @@
+{
+    "id": 638,
+    "description": "Given an integer array `nums`, return _the maximum result of_ `nums[i] XOR nums[j]`, where `0 <= i <= j < n`.\n\n### Sample Input 1\n```CPP\nnums = [3,10,5,25,2,8]\n```\n### Sample Output 1 \n```CPP\n28\n```\n### Explanation\n\n```\nThe maximum result is 5 XOR 25 = 28.\n```\n\n\n**Sample Input 2**\n```CPP\nnums = [14,70,53,83,49,91,36,80,92,51,66,70]\n```\n\n**Sample Output 2** \n```CPP\n127\n```\n### Input Format\n```\nFirst Line Contains an array nums\n```\n### Output Format\n```\nAn integer, which is the maximum possible XOR of any pair\n```\n\n\n\n### Constraints:\n-   `1 <= nums.length <= 10000`\n-   `0 <= nums[i] <= 100000000`",
+    "title": "Maximum XOR Pair",
+    "default_testcase": {
+        "id": 4272,
+        "input": "6\n3 10 5 25 2 8",
+        "expected_output": "28",
+        "code_problem_id": 638,
+        "created_at": "2024-01-27T10:08:21.033Z",
+        "updated_at": "2024-01-27T10:08:21.033Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1957,
+            "code_problem_id": 638,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1962,
+            "code_problem_id": 638,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1970,
+            "code_problem_id": 638,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2029,
+            "code_problem_id": 638,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

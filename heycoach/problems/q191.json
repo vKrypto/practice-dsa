@@ -1,0 +1,64 @@
+{
+    "id": 191,
+    "description": "Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.\n\nA subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.\n\nFor example, \"ace\" is a subsequence of \"abcde\".\nA common subsequence of two strings is a subsequence that is common to both strings.\n\n#### Example 1\n#### Input\n`text1 = \"abcde\", text2 = \"ace\"`\n#### Output\n`3`\n#### Explanation\n`The longest common subsequence is \"ace\" and its length is 3.`\n\n#### Constraints:\n\n```\n1 <= text1.length, text2.length <= 500\ntext1 and text2 consist of only lowercase English characters.\n```",
+    "title": "Longest common subsequence",
+    "default_testcase": {
+        "id": 1392,
+        "input": "abcde\nace",
+        "expected_output": "3",
+        "code_problem_id": 191,
+        "created_at": "2022-10-28T19:00:04.240Z",
+        "updated_at": "2022-10-28T19:00:04.240Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 255,
+            "code_problem_id": 191,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  int longestCommonSubsequence(string& text1, string& text2) {\n    // write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 528,
+            "code_problem_id": 191,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public static int longestCommonSubsequence(String text1, String text2) {\n      // write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 813,
+            "code_problem_id": 191,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n  def longestCommonSubsequence(self, text1: str, text2: str) -> int:\n    #write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 855,
+            "code_problem_id": 191,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    longestCommonSubsequence(text1, text2) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

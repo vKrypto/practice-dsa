@@ -1,0 +1,64 @@
+{
+    "id": 984,
+    "description": "You have n jobs and m workers. You are given three arrays: difficulty, profit, and worker where:\n\ndifficulty[i] and profit[i] are the difficulty and the profit of the i-th job.\nworker[j] is the ability of the j-th worker (i.e., the j-th worker can only complete a job with difficulty at most worker[j]).\nEvery worker can be assigned at most one job, but one job can be completed multiple times.\n\nFor example, if three workers attempt the same job that pays $1, then the total profit will be $3. If a worker cannot complete any job, their profit is $0.\n\nReturn the maximum profit we can achieve after assigning the workers to the jobs.\n\n**Input Format:**</br>\nFirst Line consist two integers n and m separated by a space:</br>\nn represents the number of jobs.</br>\nm represents the number of workers.</br>\nSecond Line contain n integers representing the difficulties of the jobs, separated by spaces.</br>\nThird Line n integers representing the profits of the jobs, separated by spaces.</br>\nFourth Line m integers representing the abilities of the workers, separated by spaces.\n\n**Output Format**:</br>\nA single integer representing the maximum profit that can be achieved by assigning workers to the jobs.\n\n**Example 1:**</br>\n**Input:**\n```\nn=5, m=4\ndifficulty = [2,4,6,8,10]\nprofit = [10,20,30,40,50]\nworker = [4,5,6,7]\n```\n**Output:**\n```\n100\n```\n**Explanation:**\n```\n Workers are assigned jobs of difficulty [4,4,6,6] and they get a profit of [20,20,30,30] separately.\n```\n**Example 2:**</br>\n**Input**:\n```\nn=3, m=3\ndifficulty = [85,47,57]\nprofit = [24,66,99]\nworker = [40,25,25]\n```\n**Output**:\n```\n 0\n```\n**Constraints:**</br>\nn == difficulty.length</br>\nn == profit.length</br>\nm == worker.length</br>\n1 <= n, m <= 10^4</br>\n1 <= difficulty[i], profit[i], worker[i] <= 10^5\n",
+    "title": "Optimal Job Assignment for Maximum Profit",
+    "default_testcase": {
+        "id": 8634,
+        "input": "5 4\n2 4 6 8 10\n10 20 30 40 50\n4 5 6 7",
+        "expected_output": "100\n",
+        "code_problem_id": 984,
+        "created_at": "2024-06-18T12:49:18.817Z",
+        "updated_at": "2024-06-18T12:49:18.817Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3292,
+            "code_problem_id": 984,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {\n       \n    ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3293,
+            "code_problem_id": 984,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3294,
+            "code_problem_id": 984,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def maxProfitAssignment(difficulty, profit, worker):\n    ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3295,
+            "code_problem_id": 984,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxProfitAssignment(difficulty, profit, worker) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

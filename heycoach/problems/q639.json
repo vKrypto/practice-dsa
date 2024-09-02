@@ -1,0 +1,64 @@
+{
+    "id": 639,
+    "description": "A `sentence` is a list of words that are separated by a single space with no leading or trailing spaces. Each of the words consists of `only` uppercase and lowercase English letters (no punctuation).\n\n* For example, \"Hello World\", \"HELLO\", and \"hello world hello world\" are all sentences. \n\nYou are given a sentence s\u200b\u200b\u200b\u200b\u200b\u200b and an integer k\u200b\u200b\u200b\u200b\u200b\u200b. You want to truncate s\u200b\u200b\u200b\u200b\u200b\u200b such that it contains only the `first` k\u200b\u200b\u200b\u200b\u200b\u200b words. Return s\u200b\u200b\u200b\u200b\u200b\u200b after `truncating` it. \n\nInput Format:\n\nFirst line takes a string 's' as input which represents the sentence which is to be truncated.\n\nSecond line takes an integer 'k' as input which denotes the the `first` k\u200b\u200b\u200b\u200b\u200b\u200b words that are to be truncated from s.\n\nOutput format:\n\nReturn s\u200b\u200b\u200b\u200b\u200b\u200b after `truncating` it. \n\n### Example 1 \n\n### Input\n```CPP\n s = \"Hello how are you Contestant\", k = 4\n``` \n### Output \n```CPP \n\"Hello how are you\"\n``` \n#### Explanation -\nThe words in s are [\"Hello\", \"how\" \"are\", \"you\", \"Contestant\"].\nThe first 4 words are [\"Hello\", \"how\", \"are\", \"you\"].\nHence, you should return \"Hello how are you\". \n\n\n### Example 2 \n\n### Input\n```CPP\n s = \"What is the solution to this problem\", k = 4\n``` \n### Output \n```CPP \n\"What is the solution\"\n``` \n#### Explanation -\nThe words in s are [\"What\", \"is\" \"the\", \"solution\", \"to\", \"this\", \"problem\"].\nThe first 4 words are [\"What\", \"is\", \"the\", \"solution\"].\nHence, you should return \"What is the solution\".\n\nConstraints:\n1<=k<=length of string s<=100\n",
+    "title": "Only K Strings",
+    "default_testcase": {
+        "id": 4247,
+        "input": "The approximate time that might be required for solving the problem\n6",
+        "expected_output": "The approximate time that might be",
+        "code_problem_id": 639,
+        "created_at": "2024-01-27T09:45:01.645Z",
+        "updated_at": "2024-01-27T09:45:01.645Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1956,
+            "code_problem_id": 639,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def onlyKString(self, s, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1958,
+            "code_problem_id": 639,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    string OnlyKString(string s, int k) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1960,
+            "code_problem_id": 639,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String onlyKString(String s, int k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1961,
+            "code_problem_id": 639,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    onlyKString(s, k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 424,
+    "description": "In the friendly village of Sortville, there lived a kind wizard named Willy. Willy was known for his love of arranging things neatly. One day, while exploring the forest, he found a box filled with jumbled-up numbers written on colourful pebbles. \nWilly wanted to put them in order because he thought it would be fun.\n\n\n----------\n\n\n### Task:<br/>\n```\nNow, it's your job to help Willy arrange these colourful pebbles in the correct order. Write a program named mergeSort to sort the numbers on the pebbles using this method.\n\nExpected Time Complexity is O(n*log(n))\n```\n#### `Input:`\n\n```\nAn integer n (1 to 100,000), tells you how many pebbles there are.\n\nA list of n numbers, written on the pebbles. Each number is between 1 and 100,000.\n\n```\n\n#### `Output:`\n```A list of n numbers, the pebbles sorted from the smallest to the biggest.```\n\n#### `Input:`\n```\n4\n\n10 5 3 7\n\n```\n\n#### `Output:`  \n```\n3 5 7 10\n```",
+    "title": "Merge Sort",
+    "default_testcase": {
+        "id": 5848,
+        "input": "5\n11 2 6 9 20",
+        "expected_output": "2 6 9 11 20 \n",
+        "code_problem_id": 424,
+        "created_at": "2024-02-19T07:51:50.608Z",
+        "updated_at": "2024-02-19T07:51:50.608Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1138,
+            "code_problem_id": 424,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      mergeSort(arr, left, right) {\n        //Write your code here",
+            "skeleton_class_end": "     }\n   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1139,
+            "code_problem_id": 424,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def merge_sort(self, arr, left, right):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1140,
+            "code_problem_id": 424,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void mergeSort(ArrayList<Integer> arr, int left, int right) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1141,
+            "code_problem_id": 424,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n    public:\n    void mergeSort(vector<int>& arr, int left, int right) {\n      //Write your code here",
+            "skeleton_class_end": "       }\n    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

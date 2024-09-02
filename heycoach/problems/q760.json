@@ -1,0 +1,64 @@
+{
+    "id": 760,
+    "description": "Write a program that finds the penultimate word (next to last word) in a sentence. </br>\nThe program takes a sentence as input and outputs the penultimate word from the sentence.\n\n#### `Input Format:`\n`The input consists of a single sentence containing words separated by spaces.`\n\n#### `Output Format:`\n`The program outputs the penultimate word from the input sentence.`\n\n\n#### `Sample Input 1:`\n```\nLearning programming is fun.\n```\n\n#### `Sample Output 1:`\n```\n is\n```\n#### `Constraints:`\n- `The sentence can contain alphabets, numbers, and special characters.`\n- `The sentence will not be empty.`\n- `The sentence will have at least two words.`\n\n#### `Explanation:`\n- `The penultimate word is \"the\" as it is the next to last word in the sentence \"She sells seashells by the seashore.\"`",
+    "title": "Penultimate Word Finder",
+    "default_testcase": {
+        "id": 6773,
+        "input": "Learning programming is fun.",
+        "expected_output": "is\n",
+        "code_problem_id": 760,
+        "created_at": "2024-03-23T05:25:16.453Z",
+        "updated_at": "2024-03-23T05:25:16.453Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2467,
+            "code_problem_id": 760,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static String findPenultimateWord(String sentence) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2468,
+            "code_problem_id": 760,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static string findPenultimateWord(const string& sentence) {\n  //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2469,
+            "code_problem_id": 760,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_penultimate_word(sentence):\n        # Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2470,
+            "code_problem_id": 760,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findPenultimateWord(sentence) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 733,
+    "description": "Rohan is 5 years old and is strong enough to carry a basket containing balls, unfortunately one day he loses his balance and all the balls get spilled on the floor. He thinks of turning this into a game, he numbers the balls from starting from 0 to n. He then draws a line between every ball and starts hopping on that line jumping from one ball to another, he observes that he can eliminate some lines from the ones that are drawn and still be able to reach every ball. Help him eliminate the lines in such a way that he is able to reach every ball and the total of all the distance between the balls is minimum. Print all the lines that will exist in the final structure, the format for printing is as follows :-\n\n(index of ball 1) (index of ball 2)\n\nInput Format:\n\nFirst line contains two integers 'n' and 'l' denoting the number of balls and total number of lines between them.\n\nThe next 'l' lines contains the three information the two balls in between which the line exists and the length of that line.\n\nOutput Format:\n\nOutput all the lines that will exist in the final structure, by printing the index of the balls in between which they will exist.\n\nSample Input 1:\n\n3 3\n\n1 2 3\n\n2 3 2\n\n1 3 5 \n\n             1\n            / \\\n           2---3\n\ndistance from 1-2 is 3\n\ndistance from 2-3 is 2\n\ndistance from 1-3 is 5\n\nSample Output:\n\n1 2\n\n2 3\n\nThe final structure will look like below.\n\n             1\n            / \n           2----3\n\n          \nThe total distance is 2 + 3 = 5 because we have eliminated the line between 1-3 and at the same time every ball is part of the structure.\n\n\nConstraints:\n\n1<=n<=1000\n\nn-1<=l<=(n*(n-1))/2\n\n0<=length of line<=1000\n",
+    "title": "Rohan's game",
+    "default_testcase": {
+        "id": 4964,
+        "input": "3 3\n0 1 2\n1 2 3\n0 2 1",
+        "expected_output": "0 2\n0 1\n",
+        "code_problem_id": 733,
+        "created_at": "2024-02-03T11:09:02.675Z",
+        "updated_at": "2024-02-03T11:09:02.675Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2341,
+            "code_problem_id": 733,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "//Definition of Line class\n/*\n  class Line{\n    public:\n        int length;\n        int p1;\n        int p2;\n};\n*/\n\nclass Solution{  \n    public:\n    void solve(Line lines[], int n, int l){\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2342,
+            "code_problem_id": 733,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Line:\n    def __init__(self, length, p1, p2):\n        self.length = length\n        self.p1 = p1\n        self.p2 = p2\n\"\"\"\n\nclass Solution:\n    def solve(self, lines, n, l):\n      ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2343,
+            "code_problem_id": 733,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "//Definition of Line class is given below\n/*\nclass Line {\n    constructor(length, p1, p2) {\n        this.length = length;\n        this.p1 = p1;\n        this.p2 = p2;\n    }\n}\n*/\n\nclass Solution {\n    solve(lines, n, l) {\n      ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2344,
+            "code_problem_id": 733,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "//Definition of Line class\n/*class Line {\n    int length;\n    int p1;\n    int p2;\n}*/\n\nclass Solution {\n    public void solve(Line[] lines, int n, int l) {\n      ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

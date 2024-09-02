@@ -1,0 +1,64 @@
+{
+    "id": 67,
+    "description": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.\n**Note**: the resultant non-overlapping intervals should be sorted in **non-decreasing** according to **starti**\n\n### Example 1 \n\n### Input\n```CPP\nintervals = [[1,3],[2,6],[8,10],[15,18]]\n``` \n### Output \n```CPP \n[[1,6],[8,10],[15,18]]\n``` \n#### Explanation:\n\nSince intervals [1,3] and [2,6] overlap, merge them into [1,6].\n\n### Example 2 \n\n### Input\n```CPP\nintervals = [[1,4],[4,5]]\n``` \n### Output \n```CPP \n[[1,5]]\n``` \n#### Explanation:\n\nIntervals [1,4] and [4,5] are considered overlapping.\n\n### Constraints:\n\n* 1 <= intervals.length <= 10000\n* intervals[i].length == 2\n* 0 <= starti <= endi <= 10000\n",
+    "title": "Merge overlapping intervals",
+    "default_testcase": {
+        "id": 463,
+        "input": "100\n34 41\n33 38\n44 46\n36 44\n140 140\n137 141\n117 118\n137 138\n100 109\n128 136\n133 142\n106 116\n105 117\n102 125\n140 142\n128 130\n107 146\n123 129\n118 150\n119 144\n118 148\n118 149\n6 6\n7 10\n4 15\n3 8\n13 15\n11 14\n6 13\n2 11\n6 9\n32 38\n42 47\n33 49\n44 45\n36 47\n38 44\n39 39\n49 50\n31 45\n44 44\n40 46\n36 36\n32 32\n37 44\n36 50\n37 40\n121 129\n126 136\n275 275\n255 262\n272 293\n210 297\n242 258\n264 289\n210 235\n244 287\n212 277\n264 290\n229 281\n231 298\n219 241\n258 263\n239 282\n241 247\n293 299\n228 273\n263 295\n204 269\n262 271\n217 249\n248 252\n234 247\n245 252\n354 379\n361 379\n363 375\n361 368\n350 361\n359 367\n354 375\n362 363\n356 372\n359 371\n11 11\n4 12\n12 17\n3 18\n5 9\n10 17\n32 47\n34 41\n35 45\n34 42\n34 39\n34 46\n42 42\n42 49\n36 48\n43 45",
+        "expected_output": "2 18\n31 50\n100 150\n204 299\n350 379\n",
+        "code_problem_id": 67,
+        "created_at": "2022-09-30T07:16:29.357Z",
+        "updated_at": "2022-09-30T07:16:29.357Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 110,
+            "code_problem_id": 67,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n\tvector<vector<int>> merge(vector<vector<int>>& intervals) {\n      // write your code here\n\t}\n};\n\n\n\n"
+        },
+        {
+            "id": 479,
+            "code_problem_id": 67,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<List<Integer>> merge(List<List<Integer>> intervals) {\n      // write your code here\n    }\n}\n\n"
+        },
+        {
+            "id": 993,
+            "code_problem_id": 67,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def merge(self, intervals):"
+        },
+        {
+            "id": 1049,
+            "code_problem_id": 67,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    merge(intervals) {\n        // Your implementation goes here\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 608,
+    "description": "**Description**:</br>\nThere are a number of spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it's horizontal, y-coordinates don't matter, and hence, the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end.            \nAn arrow can be shot up exactly vertically from different points along the x-axis. A balloon with x-start and x-end bursts by an arrow shot at x if x-start \u2264 x \u2264 x-end. There is no limit to the number of arrows that can be shot. An arrow once shot keeps traveling up infinitely.</br>\nGiven an array points where points[i] = [x_start, x_end], return the minimum number of arrows that must be shot to burst all balloons.</br>\n\n**`Input:`**\n`points is a non-empty array of intervals where each interval points[i] = [x_start, x_end].`</br>\n\n**`Output:`**</br>\n`Return the minimum number of arrows that must be shot to burst all balloons.`</br>\n**Example**:</br>\n**Input**:</br>\n```\npoints = [[10,16], [2,8], [1,6], [7,12]]\n````\n**`Output:`**\n```\n2\n```\n**`Explanation:`**</br>\n\n```\nOne way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).\n\n```\n\n**Constraints**:</br>\n\u2022\t`0 < points.length <= 10^4`</br>\n\u2022\t`points[i].length == 2`</br>\n\u2022\t`-2^31 <= x_start < x_end <= 2^31 - 1`\n",
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "default_testcase": {
+        "id": 3962,
+        "input": "4\n10 16\n2 8\n1 6 \n7 12",
+        "expected_output": "2\n",
+        "code_problem_id": 608,
+        "created_at": "2024-01-22T10:33:35.607Z",
+        "updated_at": "2024-01-22T10:33:35.607Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1828,
+            "code_problem_id": 608,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int findMinArrowShots(std::vector<std::vector<int>>& points) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1829,
+            "code_problem_id": 608,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int findMinArrowShots(int[][] points) {\n\n     \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1830,
+            "code_problem_id": 608,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findMinArrowShots(self, points):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1831,
+            "code_problem_id": 608,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findMinArrowShots(points) {\n   \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

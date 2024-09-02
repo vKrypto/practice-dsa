@@ -1,0 +1,21 @@
+{
+    "id": 354,
+    "description": "Write a program to find the articulation points (cut vertices) in an undirected graph.\n\nInput:\n\nThe number of nodes (N).\nThe number of edges (E).\nE pairs of integers representing edges.\nOutput: List of articulation points in the graph.\nConstraints:\n\n1 <= N <= 10^5 (number of nodes)\n\n0 <= E <= 10^6 (number of edges)\n\n0 <= u, v < N (node indices)",
+    "title": "Find  Articulation Points",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 821,
+            "code_problem_id": 354,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "void AP(vector<int> adj[], int V)\n{\n  \n}"
+        }
+    ]
+}

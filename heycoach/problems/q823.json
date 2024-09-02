@@ -1,0 +1,57 @@
+{
+    "id": 823,
+    "description": "Alice and Bob are participating in Concetto's Sky is the limit. In this event , Alice must launch a rocket with the maximum thrust in order to win. Bob being an amazing teammate as always guides her to the secret of winning:\n\nYou can get maximum thrust if all engines have the exact same power He calculates the intital power of engines and gives it to Alice as an array of n integers p1,p2,\u2026,pn Alice can apply the following operation an arbitrary number of times to modify the power of any engine:\n\nselect an engine with index k(1\u2264k\u2264n) and replace the value of the power pk with the value pk+(pkmod10), where pkmod10 is the remainder of the power after dividing pk by 10.\n\nThis operation can be applied multiple times for any engine. If the operation is applied repeatedly to the same engine, then the current power of pk is taken into account each time. For eg. if pk=43 then after the first operation we get pk=43+3=46, and after the second operation we get pk=46+6=52.\n\nAlice is very tired and wants you to help her predict if she can win.\n\nFor eg. There were 2 engines only and Bob calculated their powers as [6,11].\n\nAlice applies this operation to the first engine of the array. She replaces p1=6 with p1+(p1mod10)=6+(6mod10)=6+6=12. She got the powers [12,11]. Alice will then apply the operation to the second element of the array, replacing p2=11 with p2+(p2mod10)=11+(11mod10)=11+1=12 and get the array [12,12]. Thus, All engines will have an equal power of 12 and Alice will win.\n\nInput\nThe first line contains one integer t(1\u2264t\u2264104) \u2014 the number of test cases. What follows is a description of each test case.\n\nThe first line of each test case contains one integer n(1\u2264n\u22642\u22c5105) \u2014 the size of the array of powers of engines.\n\nThe second line of each test case contains n integers ai(0\u2264ai\u2264109) \u2014 initial powers as calculated by Bob.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2\u22c5105.\n\nOutput\n\nFor each test case print:\n\nYES if it is possible to make power of all engines equal;\nNO otherwise.\nYou can print YES and NO in any case (for example, the strings yEs, yes, Yes and YES will be recognized as a positive answer) .\n\nExample\n\ninput\n\n10\n\n2\n\n6 11\n\n3\n\n2 18 22\n\n5\n\n5 10 5 10 5\n\n4\n\n1 2 4 8\n\n2\n\n4 5\n\n3\n\n93 96 102\n\n2\n\n40 6\n\n2\n\n50 30\n\n2\n\n22 44\n\n2\n\n1 5\n\noutput\n\nYes\n\nNo\n\nYes\n\nYes\n\nNo\n\nYes\n\nNo\n\nNo\n\nYes\n\nNo\n\nNote:\nThe first test case is clarified above.\n\nIn the second test case, it is impossible to make power of all engines equal.\n\nIn the third test case, you need to apply this operation once to all engines equal to 5.\n\nIn the fourth test case, you need to apply this operation to all engines until they become equal to 8.\n\nIn the fifth test case, it is impossible to make power of all engines equal.\n\nIn the sixth test case, you need to apply this operation to all engines until they become equal to 102.",
+    "title": "Sky is the limit",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2681,
+            "code_problem_id": 823,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nvoid s()\n{\n\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2682,
+            "code_problem_id": 823,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def s():\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2683,
+            "code_problem_id": 823,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "import java.util.*;\n\npublic class Main {\n    static Scanner scanner = new Scanner(System.in);\n\n    public static void main(String[] args) {\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2684,
+            "code_problem_id": 823,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function solve(lines, index) {\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

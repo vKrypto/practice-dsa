@@ -1,0 +1,64 @@
+{
+    "id": 801,
+    "description": "Description\n\nYou are given an integer \u2018n\u2019, determine if it can be expressed as a product of binary numbers. For example: 55 cannot be represented as product of binary numbers but 1210 can be represented as product of binary numbers (1210 = 11* 11 *10).\n\nIf it can be represented print \u201cYES\u201d else print \u201cNO\u201d.\n\n\nSample Input:\n\nn= 14641\n\n\nSample output:\n\nYES\n\nExplanation:\n\nSince, 14641 can be represented as 11* 11* 11*11 which are all binary numbers (containing only 0 or 1 as their digit) thus the answer is YES.\n\n\nConstraints:\n\n1<=n<=10^5",
+    "title": "Is Binary?",
+    "default_testcase": {
+        "id": 7360,
+        "input": "998",
+        "expected_output": "NO\n",
+        "code_problem_id": 801,
+        "created_at": "2024-04-25T05:56:47.244Z",
+        "updated_at": "2024-04-25T05:56:47.244Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2627,
+            "code_problem_id": 801,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int n){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2647,
+            "code_problem_id": 801,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2648,
+            "code_problem_id": 801,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2649,
+            "code_problem_id": 801,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

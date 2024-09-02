@@ -1,0 +1,40 @@
+{
+    "id": 128,
+    "description": "\nGiven an integer array **a[ ]** of **N** elements and an integer **K**, the task is to check if the array **a[ ]** could be divided into **K** non-empty subsets with equal sum of elements.  \n**Note:** All elements of this array should be part of exactly one partition.\n\n\n### Example 1 \n\n### Input\n```CPP\nN = 5\na[] = {2,1,4,5,6}\nK = 3\n```\n\n\n### Output \n```CPP\n1\n```\n\n#### Explanation:\nwe can divide above array into 3 parts with equal sum as (2, 4), (1, 5), (6)\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 5 \na[] = {2,1,5,5,6}\nK = 3\n```\n**Output:** \n```CPP\n0\n```\n#### Explanation:\nIt is not possible to divide above array into 3 parts with equal sum.\n\n### Constraints:\n1 \u2264 K \u2264 N \u2264 10  \n1 \u2264 a[i] \u2264 100\n\n",
+    "title": "Partition array into k equal sum subsets",
+    "default_testcase": {
+        "id": 924,
+        "input": "5 3\n2 1 4 5 6",
+        "expected_output": "1",
+        "code_problem_id": 128,
+        "created_at": "2022-10-11T11:00:06.610Z",
+        "updated_at": "2022-10-11T11:00:06.610Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 200,
+            "code_problem_id": 128,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    bool isKPartitionPossible(int a[], int n, int k)\n    {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 509,
+            "code_problem_id": 128,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public boolean isKPartitionPossible(int[] a, int n, int k) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

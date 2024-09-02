@@ -1,0 +1,64 @@
+{
+    "id": 282,
+    "description": "Adam has received an array 'a' consisting of positive numbers. To execute different operations on this array, he needs to input it into his computer. Curious about the effort involved, Adam seeks your assistance in determining how many times he needs to press each digit key on his Numpad to type the entire array.\n\nReturn a array of size 10 where each element is frequency of how many times respective digit key is pressed . \n\n**Example 1**\n\nInput \n```\na = [2, 8, 9, 7, 12, 5]\n```\n**Output:**\n```\n0 1 2 0 0 1 0 1 1 1 \n```\n\n**Explanation :**\n\nIn Sample input 1 in order to type integer 12 you have to press keys of digit 1 and digit 2 . \n\n**Example 2**\n\n**Input:**\n```\na = [32, 12, 4, 39, 34, 48, 33, 50]\n```\n**Output:**\n```\n1 1 2 5 3 1 0 0 1 1 \n```\n\n**Constraints:**\n\n1 <= n <= 100000\n\n0 <= ai <= 100000000 \n\n0 <= i  <= n-1\n",
+    "title": "Aiding Adam",
+    "default_testcase": {
+        "id": 1893,
+        "input": "6\n2 8 9 7 12 5\n",
+        "expected_output": "0 1 2 0 0 1 0 1 1 1 \n",
+        "code_problem_id": 282,
+        "created_at": "2023-09-14T09:52:45.634Z",
+        "updated_at": "2023-09-14T09:52:45.634Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 702,
+            "code_problem_id": 282,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> digits(int n,vector<int>&nums)\n    {\n    }\n};"
+        },
+        {
+            "id": 1075,
+            "code_problem_id": 282,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int[] digits(int n, int[] nums) {\n   }\n}"
+        },
+        {
+            "id": 1076,
+            "code_problem_id": 282,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def digits(self, n, nums):"
+        },
+        {
+            "id": 1077,
+            "code_problem_id": 282,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    digits(n, nums) {\n    }\n}"
+        }
+    ]
+}

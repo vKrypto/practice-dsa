@@ -1,0 +1,64 @@
+{
+    "id": 698,
+    "description": "You are given an array nums of positive integers. In one operation, you can choose any number from nums and reduce it to `exactly` half the number. (Note that you may choose this reduced number in future operations.)\n\nReturn the `minimum` number of operations to reduce the sum of nums by `at least` half.\n\n### Example 1 \n\n### Input\n```CPP\nnums = [5,19,8,1]\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\nThe initial sum of nums is equal to 5 + 19 + 8 + 1 = 33.\nThe following is one of the ways to reduce the sum by at least half:\nPick the number 19 and reduce it to 9.5.\nPick the number 9.5 and reduce it to 4.75.\nPick the number 8 and reduce it to 4.\nThe final array is [5, 4.75, 4, 1] with a total sum of 5 + 4.75 + 4 + 1 = 14.75. \nThe sum of nums has been reduced by 33 - 14.75 = 18.25, which is at least half of the initial sum, 18.25 >= 33/2 = 16.5.\nOverall, 3 operations were used so we return 3.\nIt can be shown that we cannot reduce the sum by at least half in less than 3 operations.\n\n\n### Example 2 \n\n### Input\n```CPP\nnums = [3,8,20]\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\n The initial sum of nums is equal to 3 + 8 + 20 = 31.\nThe following is one of the ways to reduce the sum by at least half:\nPick the number 20 and reduce it to 10.\nPick the number 10 and reduce it to 5.\nPick the number 3 and reduce it to 1.5.\nThe final array is [1.5, 8, 5] with a total sum of 1.5 + 8 + 5 = 14.5. \nThe sum of nums has been reduced by 31 - 14.5 = 16.5, which is at least half of the initial sum, 16.5 >= 31/2 = 16.5.\nOverall, 3 operations were used so we return 3.\nIt can be shown that we cannot reduce the sum by at least half in less than 3 operations.\n\n\n### Constraints:\n\n1 <= nums.length <= 10^5\n\n1 <= nums[i] <= 10^7\n",
+    "title": "Reduce Sum",
+    "default_testcase": {
+        "id": 4583,
+        "input": "10\n264481\n954862\n874563\n999999\n874521\n987456\n11112\n54654\n654654\n879654",
+        "expected_output": "8",
+        "code_problem_id": 698,
+        "created_at": "2024-01-28T05:24:30.826Z",
+        "updated_at": "2024-01-28T05:24:30.826Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2191,
+            "code_problem_id": 698,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    int halveArray(vector < int > & nums) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2192,
+            "code_problem_id": 698,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int halveArray(Vector<Integer> nums) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2193,
+            "code_problem_id": 698,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def halveArray(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2194,
+            "code_problem_id": 698,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    halveArray(nums) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 610,
+    "description": "**Description**:</br>\nGiven a connected, undirected graph with weighted edges, find and return the minimum spanning tree (MST) using Kruskal's algorithm.    \n\n**`Input:`**</br>\n\u2022\t`An integer n (2 <= n <= 1000) representing the number of vertices in the graph.`</br>\n\u2022\t`An integer m (1 <= m <= n * (n-1) / 2) representing the number of edges in the graph.`</br>\n\u2022\t`An array edges of size m, where edges[i] = [u, v, w] represents an undirected edge between vertices u and v with weight w (1 <= u, v <= n, 1 <= w <= 1000).`</br>\n\n**`Output:`**</br>\n`Return a 2D array representing the edges of the minimum spanning tree. Each edge should be represented as [u, v, w] where u and v are the vertices connected by the edge and w is the weight of the edge. The order of the edges in the result does not matter.`\n\n**`Example:`**</br>\n**`Input:`**</br>\n```\nn = 4\nm = 5\nedges = [\n    [1, 2, 1],\n    [1, 3, 2],\n    [1, 4, 3],\n    [2, 3, 5],\n    [3, 4, 4]\n]\n```\n**`Output:`**\n```\n[\n    [1, 2, 1],\n    [1, 3, 2],\n    [1, 4, 3]\n]\n```\n**` Explanation:`**</br>  `The minimum spanning tree connects all vertices with the minimum total weight. In this case, the edges [1, 2, 1], [1, 3, 2], and [1, 4, 3] form the minimum spanning tree with a total weight of 1 + 2 + 3 = 6.`\n\n**`Constraints:`**</br>\n\u2022\t`The input graph is connected and has no self-loops or parallel edges.`</br>\n\u2022\t`All edge weights are distinct.`</br>\n\u2022\t`The input graph may contain cycles.`</br>\n\u2022\t`The result should be a valid minimum spanning tree.`\n",
+    "title": "Minimum Spanning Tree",
+    "default_testcase": {
+        "id": 3977,
+        "input": "4 5\n1 2 1\n1 3 2\n1 4 3\n2 3 5    \n3 4 4",
+        "expected_output": "1 2 1\n1 3 2\n1 4 3\n",
+        "code_problem_id": 610,
+        "created_at": "2024-01-22T11:20:23.375Z",
+        "updated_at": "2024-01-22T11:20:23.375Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1836,
+            "code_problem_id": 610,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n  std::vector<std::vector<int>> minimumSpanningTree(int n, int m, std::vector<std::vector<int>>& edges) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1837,
+            "code_problem_id": 610,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int[][] minimumSpanningTree(int n, int m, int[][] edges) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1838,
+            "code_problem_id": 610,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimum_spanning_tree(self, n, m, edges):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1839,
+            "code_problem_id": 610,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumSpanningTree(n, m, edges) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

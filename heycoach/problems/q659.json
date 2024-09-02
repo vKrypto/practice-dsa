@@ -1,0 +1,64 @@
+{
+    "id": 659,
+    "description": "Festive times are coming, so you decided to buy salt in advance. There are `n` shops around that sell salt: the `i-th` shop sells one pack of salt for `ai` coins, but only **one pack to one customer each day**. So in order to buy several packs, you need to visit several shops.\n\nAnother problem is that prices are increasing each day: during the first day the cost is `ai`, during the second day cost is `ai+1`, during the third day \u2014 `ai+2` and so on for each shop `i`.\n\nOn the contrary, your everyday budget is only `x` coins. In other words, each day you go and buy as many packs as possible with total cost not exceeding `x`. Note that if you don't spend some amount of coins during a day, you can't use these coins during the next days.\n\nEventually, the cost for each pack will exceed `x`, and you won't be able to buy even a single pack. So, how many packs will you be able to buy till that moment in total?\n\n### Input\n```\nn : The number of shops\nx : Everyday budget\narr : contains [a1,a2,\u2026,an] \u2014 the initial cost of one pack in each shop\n```\n\n### Output\n```\nThe total number of packs you will be able to buy until prices exceed your everyday budget.\n```\n\n### Constraints\n- 1 \u2264 `n` \u2264 2\u22c510^5\n- 1 \u2264 `x` \u2264 10^9\n- 1 \u2264 `arr[i]` \u2264 10^9\n\n### Example:\n\n**Input:**\n```\nn = 3\nx = 7\narr = [2, 1, 2]\n````\n\n**Output:**\n```\n11\n```\n\n**Input:**\n```\nn = 5\nx = 9\narr = [10, 20, 30, 40, 50]\n```\n\n**Output:**\n```\n0\n```\n",
+    "title": "Salt Stocking",
+    "default_testcase": {
+        "id": 4361,
+        "input": "3 7\n2 1 2",
+        "expected_output": "11\n",
+        "code_problem_id": 659,
+        "created_at": "2024-01-27T12:58:38.580Z",
+        "updated_at": "2024-01-27T12:58:38.580Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2033,
+            "code_problem_id": 659,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long long solve(vector<long long>& arr, long long x) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2035,
+            "code_problem_id": 659,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long solve(List<Long> arr, long x) {",
+            "skeleton_class_end": "    } \n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2036,
+            "code_problem_id": 659,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr, x):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2037,
+            "code_problem_id": 659,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr, x) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 530,
+    "description": "You would like to make dessert and are preparing to buy the ingredients. You have n ice cream base flavors and m types of toppings to choose from. You must follow these rules when making your dessert:\n\nThere must be exactly one ice cream base.\nYou can add one or more types of topping or have no toppings at all.\nThere are at most two of each type of topping.\nYou are given three inputs:\n\nbaseCosts, an integer array of length n, where each baseCosts[i] represents the price of the ith ice cream base flavor.\ntoppingCosts, an integer array of length m, where each toppingCosts[i] is the price of one of the ith topping.\ntarget, an integer representing your target price for dessert.\nYou want to make a dessert with a total cost as close to target as possible.\n\nReturn the closest possible cost of the dessert to target. If there are multiple, return the lower one.\n\nExample 1:\n\nInput: baseCosts = [1,7], toppingCosts = [3,4], target = 10  \nOutput: 10  \n\nExplanation: Consider the following combination (all 0-indexed):\n- Choose base 1: cost 7  \n- Take 1 of topping 0: cost 1 x 3 = 3  \n- Take 0 of topping 1: cost 0 x 4 = 0  \nTotal: 7 + 3 + 0 = 10.\n\nExample 2:\n\nInput: baseCosts = [2,3], toppingCosts = [4,5,100], target = 18  \nOutput: 17\n\n\nConstraints:\n\nn == baseCosts.length  \nm == toppingCosts.length  \n1 <= n, m <= 10  \n1 <= baseCosts[i], toppingCosts[i] <= 10^4  \n1 <= target <= 104",
+    "title": "Closest Dessert Cost",
+    "default_testcase": {
+        "id": 3537,
+        "input": "2\n1 7\n2\n3 4\n10",
+        "expected_output": "10",
+        "code_problem_id": 530,
+        "created_at": "2024-01-05T18:00:14.067Z",
+        "updated_at": "2024-01-05T18:00:14.067Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1574,
+            "code_problem_id": 530,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int closestCost(vector<int>& baseCosts, vector<int>& toppingCosts, int target) {\n    }\n};\n"
+        },
+        {
+            "id": 1575,
+            "code_problem_id": 530,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int closestCost(List<Integer> baseCosts, List<Integer> toppingCosts, int target) {\n    }\n}\n"
+        },
+        {
+            "id": 1577,
+            "code_problem_id": 530,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def closestCost(self, baseCosts, toppingCosts, target):\n\n"
+        }
+    ]
+}

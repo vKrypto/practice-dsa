@@ -1,0 +1,64 @@
+{
+    "id": 834,
+    "description": "Sohan starts with an empty array `a`. He performs `n` operations on this array:\n\n* **Append:** Append an integer `x` to the end of the array.\n* **Expand:** Expand the array by appending `x` copies of the entire current array to itself.\n\nAfter these operations, Sohan has `q` queries where he needs to find the value of the `k`-th element in the final array `a` (elements are 1-indexed).\n\n**Input:**\n\n* `n` (integer): The number of operations.\n* `q` (integer): The number of queries.\n* `n` lines, each containing two integers:\n    * `b` (integer): Operation type (1 for Append, 2 for Expand)\n    * `x` (integer): Value to append or number of times to expand\n* `q` lines, each containing an integer `k`: The index of the element to find in the final array.\n\n**Output:**\n\n* `q` lines, each containing the value of the `k`-th element in the final array `a`.\n\n**Example:**\n\n#### Input:            \n```\n3 1  # n (operations) and q (queries)   \n1 40  # Append 40   \n2 2   # Expand the array by 2 times   \n1 45  # Append 45   \n4     # Query for the 4th element\n```\n#### Output:\n```\n45\n```\n#### Explanation:\nAfter the operations:\n- Append `40`: array becomes `[40]`.\n- Expand the array twice: array becomes `[40, 40, 40]`.\n- Append `45`: array becomes `[40, 40, 40, 45]`.\n- The 4th element queried is `45`.\n",
+    "title": "Dynamic Array Expansion",
+    "default_testcase": {
+        "id": 7764,
+        "input": "1\n3 3\n1 2\n2 1\n1 3\n3 4 5",
+        "expected_output": "2\n3\n2\n",
+        "code_problem_id": 834,
+        "created_at": "2024-05-08T05:41:29.640Z",
+        "updated_at": "2024-05-08T05:41:29.640Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2893,
+            "code_problem_id": 834,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<long long> a;\n    void performOperations(const vector<pair<int, long long>>& operations) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2894,
+            "code_problem_id": 834,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):\n        self.a = []\n    def perform_operations(self, operations):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2895,
+            "code_problem_id": 834,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    List<Long> a = new ArrayList<>();\n    public void performOperations(List<Pair<Integer, Long>> operations) {\n  //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2935,
+            "code_problem_id": 834,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.a = [];\n    }\n\n    performOperations(operations) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": 42,
+    "description": "You have given a ==prices== array consisting of N integers where ==prices[i]== is the price of a stock on the ith day. You can make at most 1 transaction. You will buy the stock on some **ith** day and sell the stock in future say **jth** day ==(j>i)== such that your profit is maximized.Return the maximum profit you can get and if there is no profit you can achieve from any transactions then in that case return 0.\n\n### Example 1 \n\n### Input\n```CPP\nprices = [7,4,8,6,10,5,6]\n``` \n### Output \n```CPP \n6\n``` \n#### Explanation:\n\nthe maximum profit you can get is 6 by buying the stock on the day 1 **(0-based indexing)** and selling it on day 4 i.e. ==10 - 4 = 6==.\n\n\n### Example 2 \n\n### Input\n```CPP\nproducts = [5,4,3,2,1]\n``` \n### Output \n```CPP \n0\n``` \n#### Explanation:\n\nIn this case, whichever day you choose to buy the stock you won't be able to make any profit by selling it in the future, so you won't perform any transaction and simply return 0.\n\n\n### Constraints:\n\n* 1 <= N <= 10000\n* 1 <= prices[i] <= 100000\n\n\n\n\n\n",
+    "title": "Best Time to buy and sell stock",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 76,
+            "code_problem_id": 42,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution\n{\npublic:\n\tint maximumProfit(vector<int> &prices) {\n      // wtite your code here\n\t}\n};"
+        },
+        {
+            "id": 466,
+            "code_problem_id": 42,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int maximumProfit(List<Integer> prices) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

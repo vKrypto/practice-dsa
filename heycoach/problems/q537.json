@@ -1,0 +1,57 @@
+{
+    "id": 537,
+    "description": "Given a binary tree, print its inorder traversal.\n\nFor example: Given the Binary Tree\n\n         1\n       /   \\\n      2     3\n     /    \n    6\nThe inorder traversal would be 6 2 1 3.\n\nInput Format:\n\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n\nOutput Format:\n\nprint the inorder traversal of binary tree.\n\nSample Input:\n\n1 2 3 6 5 -1 -1 -1 -1 -1 -1\n\nSample Output:\n\n6 2 5 1 3\n\nConstraints:\n\n0 <= N <= 10^4\n\n0 <= data <= 10^3\n\nWhere 'N' denotes the total number of nodes and 'data' denotes the value of the node ",
+    "title": "Inorder traversal",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1602,
+            "code_problem_id": 537,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\nclass Node\n{\n    public:\n      int data;\n      Node *left;\n      Node *right;\n    \n      Node (int data)\n      {\n        this->data = data;\n        this->left = NULL;\n        this->right = NULL;\n      }\n    \n      ~Node ()\n      {\n        delete right;\n        delete left;\n      }\n};\n*/\n\nclass Solution{\n    public:\n    void solve(Node* root){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1603,
+            "code_problem_id": 537,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    public int data;\n    public Node left;\n    public Node right;\n\n    public Node(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    void solve(Node root) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1604,
+            "code_problem_id": 537,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\"\"\"\n\nclass Solution:\n    def solve(self, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1606,
+            "code_problem_id": 537,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "//Definition of node class;\n/*\nclass TreeNode {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    constructor() {\n        this.v = [];\n    }\n\n    solve(root) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

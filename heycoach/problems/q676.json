@@ -1,0 +1,64 @@
+{
+    "id": 676,
+    "description": "Dholu and Bholu are playing a game with strings. There will be t rounds in the game. In each round, there will be a string s consisting of lowercase English letters.\n\nDholu moves first and both the players take alternate turns. Dholu is allowed to remove any substring of even length (possibly empty) and Bholu is allowed to remove any substring of odd length from s.\n\nMore formally, if there was a string** s=s1s2\u2026sk** the player can choose a substring slsl+1\u2026sr\u22121sr with length of corresponding parity and remove it. After that the string will become **s=s1\u2026sl\u22121sr+1\u2026sk.**\n\nAfter the string becomes empty, the round ends and each player calculates his/her score for this round. The score of a player is the sum of values of all characters removed by him/her. The value of a is 1, the value of b is 2, the value of c is 3, \u2026, and the value of z is 26. The player with higher score wins the round. For each round, determine the winner and the difference between winner's and loser's scores. Assume that both players play optimally to maximize their score. It can be proved that a draw is impossible.\n\n#### Example :\n##### Input:\n\n```\n5\naba\nabc\ncba\nn\ncodeforces\n```\n\n##### Output :\n\n```\nAlice 2\nAlice 4\nAlice 4\nBob 14\nAlice 93\n\n```\n##### Explanation :\n\n```\nFor the first round, \"aba\"\u2212\u2192\u2212\u2212Alice\"aba\"\u2192\"a\"\u2212\u2192\u2212Bob\"a\"\u2192\"\"\n. Alice's total score is 1+2=3\n. Bob's total score is 1\n.\n\nFor the second round, \"abc\"\u2212\u2192\u2212\u2212Alice\"abc\"\u2192\"a\"\u2212\u2192\u2212Bob\"a\"\u2192\"\"\n. Alice's total score is 2+3=5\n. Bob's total score is 1\n.\n\nFor the third round, \"cba\"\u2212\u2192\u2212\u2212Alice\"cba\"\u2192\"a\"\u2212\u2192\u2212Bob\"a\"\u2192\"\"\n. Alice's total score is 3+2=5\n. Bob's total score is 1\n.\n\nFor the fourth round, \"n\"\u2212\u2192\u2212\u2212Alice\"n\"\u2192\"n\"\u2212\u2192\u2212Bob\"n\"\u2192\"\"\n. Alice's total score is 0\n. Bob's total score is 14\n.\n\nFor the fifth round, \"codeforces\"\u2212\u2192\u2212\u2212Alice\"codeforces\"\u2192\"\"\n. Alice's total score is 3+15+4+5+6+15+18+3+5+19=93\n. Bob's total score is 0\n.\n\n\n```\n\n#### Input format :\n\n```\nThe first line of input contains a single integer t (1\u2264t\u22645\u22c510^4) denoting the number of rounds.\n\nEach of the next t lines contain a single string s (1\u2264|s|\u22642\u22c510^5) consisting of lowercase English letters, denoting the string used for the round. Here |s| denotes the length of the string s.\n\nIt is guaranteed that the sum of |s| over all rounds does not exceed 2\u22c510^5.\n\n```\n\n#### Output format :\n`For each round, print a single line containing a string and an integer. If Dholu wins the round, the string must be \"Dholu\". If Bholu wins the round, the string must be \"Bholu\". The integer must be the difference between their scores assuming both players play optimally.`\n\n#### Constraints :\n\n```\n1<=t<=10^4\n1<=s.length<=10^4\n```",
+    "title": "Substring Subtraction",
+    "default_testcase": {
+        "id": 4463,
+        "input": "5\naba\nabc\ncba\nn\ncodeforces\n",
+        "expected_output": "Alice 2\nAlice 4\nAlice 4\nBob 14\nAlice 93\n",
+        "code_problem_id": 676,
+        "created_at": "2024-01-27T16:57:58.557Z",
+        "updated_at": "2024-01-27T16:57:58.557Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2104,
+            "code_problem_id": 676,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n   void sr(string &s) {\n",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2105,
+            "code_problem_id": 676,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n  void sr(String s) {\n    ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2106,
+            "code_problem_id": 676,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n\n    def sr(self, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2107,
+            "code_problem_id": 676,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      sr(s) {\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 96,
+    "description": "You are given an array `nums` of N integers. You have to return the **maximum sum** of subsequence with the constraint that **no two elements are adjacent** in the given array.\n\n\n### Example 1 \n\n### Input\n```CPP \nN = 5\nnums = [1,2,3,5,4]\n``` \n### Output \n```CPP \n8\n``` \n#### Explanation:\nout of all the possibilities, if we take the sum of `nums[0]`, `nums[2]` and `nums[4]`, i.e. 8, it will give the maximum sum of sequence in which no elements are adjacent in the given array.\n\n### Example 2 \n\n### Input\n```CPP\nN = 9\nnums = [1,2,3,1,3,5,8,1,9]\n```\n### Output \n```CPP \n24\n``` \n#### Explanation:\n\nout of all the possibilities, if we take the sum of `nums[0]`, `nums[2]`, `nums[4]`, `nums[6]` and `nums[8]`, i.e. 24 so, it will give the maximum sum of sequence in which no elements are adjacent in the given array.\n\n### Constraints:\n\n* 1 <= N <= 10000\n* 1 <= nums[i] <= 10000",
+    "title": "Maximum sum of non adjacent elements",
+    "default_testcase": {
+        "id": 707,
+        "input": "9\n1 2 3 1 3 5 8 1 9\n",
+        "expected_output": "24\n",
+        "code_problem_id": 96,
+        "created_at": "2022-10-04T09:08:56.447Z",
+        "updated_at": "2022-10-04T09:08:56.447Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 130,
+            "code_problem_id": 96,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int maximumNonAdjacentSum(vector<int> &nums) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 499,
+            "code_problem_id": 96,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int maximumNonAdjacentSum(Vector<Integer> nums) {\n      // write your code here\n    }\n}"
+        }
+    ]
+}

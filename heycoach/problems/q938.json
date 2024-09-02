@@ -1,0 +1,64 @@
+{
+    "id": 938,
+    "description": "You need to simplify file paths for a command-line interface, eliminating redundant slashes and navigating .. correctly.\n\nGiven a file path string, simplify it to the shortest possible canonical path.\n\nSample Input: \"/home//user/../docs/\"\nSample Output: \"/home/docs\"\n\nExplanation:\n\nDouble slashes are reduced to single slashes, and user/.. navigates up one directory to home.\n\nConstrainst:\n\n1 <= path.length <= 3000\n\npath consists of English letters, digits, period ., slash /, and underscore _.\n\npath is an absolute path starting with a slash /.\n\nConsecutive slashes // are treated as a single slash /.\n\nSingle period . represents the current directory and has no effect.\n\nDouble periods .. represent moving up to the parent directory. If at the root, .. has no effect.\n\nThe simplified canonical path should start with a single slash / and should not have a trailing slash unless it is the root directory /.\n\nThe simplified canonical path should not contain any unnecessary current directory references . or parent directory references ...",
+    "title": "File Path Simplifier",
+    "default_testcase": {
+        "id": 8232,
+        "input": "/",
+        "expected_output": "/\n",
+        "code_problem_id": 938,
+        "created_at": "2024-05-24T07:28:34.320Z",
+        "updated_at": "2024-05-24T07:28:34.320Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3120,
+            "code_problem_id": 938,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class PathSimplifier {\npublic:\n    static string simplifyPath(const string& path) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3121,
+            "code_problem_id": 938,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class PathSimplifier {\n    public static String simplifyPath(String path) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3122,
+            "code_problem_id": 938,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class PathSimplifier:\n    @staticmethod\n    def simplify_path(path):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3123,
+            "code_problem_id": 938,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class PathSimplifier {\n    static simplifyPath(path) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 683,
+    "description": "Tuntun is very lazy and she has got an assignment to check whether an given integer **n* is power of two or not.\nShe is not good in coding so please help her to do this.\n\nAn integer **n** is a power of two, if there exists an integer x such that n == 2^x.\nIf the entered number is power of 2 then print **true** otherwise print **false**\n\n#### Input Format:\n- first and only line contains an integer n.\n\n#### Output Format: \n- Print **true** if it is power of 2 otherwise print **false** (in lowercase).\n\n#### Constraints:\n- (-2^31) <= n <= 2(^31 - 1)\n\n#### Example:\nInput: \n```\n3\n```\nOutput: \n```\nfalse\n```",
+    "title": "Power of 2",
+    "default_testcase": {
+        "id": 4495,
+        "input": "3",
+        "expected_output": "false\n",
+        "code_problem_id": 683,
+        "created_at": "2024-01-27T19:03:06.521Z",
+        "updated_at": "2024-01-27T19:03:06.521Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2132,
+            "code_problem_id": 683,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass solution {\n\npublic:\n    bool solve(int n)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2133,
+            "code_problem_id": 683,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class Solution {\n\n      boolean solve(int n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2134,
+            "code_problem_id": 683,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2135,
+            "code_problem_id": 683,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 556,
+    "description": "We define f (X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f (2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f (2, 7) = 2.\n\nYou are given an array A of N integers, A1, A2 ,\u2026, AN. Find sum of f(Ai, Aj) for all ordered pairs (i, j) such that 1 \u2264 i, j \u2264 N. Return the answer modulo 10^9+7.\n\nConstraints:\n1 \u2264 N \u2264 10^5\n2^0 \u2264 A[i] < 2^31\n\nInput: N = 2\nA = {2, 4}\nOutput: 4\nExplaintion: We return f(2, 2) + f(2, 4) + (4, 2) + f(4, 4) = 0 + 2 + 2 + 0 = 4.\n \n",
+    "title": "Sum of different number of bits",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1664,
+            "code_problem_id": 556,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// } Driver Code Ends\n// Back-end complete function Template for C++\n\nclass Solution{\npublic:\n    int countBits(int N, long long int A[])\n    {\n\n    }\n};\n"
+        },
+        {
+            "id": 1665,
+            "code_problem_id": 556,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution{\n    static int countBits(int N, long A[])\n    {\n\n    }\n}"
+        },
+        {
+            "id": 1666,
+            "code_problem_id": 556,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def countBits(self, N, A):\n\n\n"
+        },
+        {
+            "id": 1667,
+            "code_problem_id": 556,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n//User function Template for javascript\n\nclass Solution {\n    countBits(A,n) {\n\n    }\n}"
+        }
+    ]
+}

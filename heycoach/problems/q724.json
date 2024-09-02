@@ -1,0 +1,64 @@
+{
+    "id": 724,
+    "description": "Rishav is a medical student and he needs to complete the assignment to find all the repeating DNA sequence of length 10. He is a non technical student so he has to doo it manually. As being his good friend write a code for him.\n\nThe DNA sequence is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T'.\n\nFor example, \"ACGAATTCCG\" is a DNA sequence. When studying DNA, it is useful to identify repeated sequences within the DNA.\n\nGiven a string s that represents a DNA sequence, return all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. You may Print the answer in sorted order.\n\n#### Example:\n##### Sample Input\n`AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT  `\n##### Sample Output\n\n```\nAAAAACCCCC\nCCCCCAAAAA\n```\n\n\n#### Input Format:\n`single string input`\n#### Output Format:\n`print all the output strings in separate lines (1 string in 1 line)`\n#### Constraints:\n\n```\n1 <= s.length <= 10^5 \ns[i] is either 'A', 'C', 'G', or 'T'.\n```",
+    "title": "Repeated DNA sequence",
+    "default_testcase": {
+        "id": 4884,
+        "input": "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT  ",
+        "expected_output": "AAAAACCCCC\nCCCCCAAAAA\n",
+        "code_problem_id": 724,
+        "created_at": "2024-02-01T19:17:41.007Z",
+        "updated_at": "2024-02-01T19:17:41.007Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2305,
+            "code_problem_id": 724,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass solution {\npublic:\n ",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2306,
+            "code_problem_id": 724,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2307,
+            "code_problem_id": 724,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2308,
+            "code_problem_id": 724,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    ",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

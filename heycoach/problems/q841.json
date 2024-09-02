@@ -1,0 +1,64 @@
+{
+    "id": 841,
+    "description": "In the card game popular in Berland known as \"Berlogging,\" the winner is determined by a set of rules. If, by the end of the game, only one player has the highest number of points, they emerge victorious. However, if multiple players share the maximum points, the situation becomes more complex. Throughout the game, players gain or lose points during each round. </br>The points accumulated by each player are recorded in the format \"name score,\" where \"name\" represents the player's name and \"score\" denotes the points gained or lost in that round, expressed as an integer. Negative scores indicate losses. In cases where multiple players have the same maximum points (let's call it \"m\") at the game's conclusion, the winner is the one who reached at least m points first. Initially, all players start with 0 points, and it's guaranteed that at least one player will have a positive point total by the game's end.\n\n#### Input:\n```\nThe first line contains an integer n ( 1 <= n <= 1000), which represents the number of rounds played. Then follow  n  lines, each containing the information about a round in the format \"name score\".                                                  \nHere, name is a string of lowercase Latin letters with a length between 1 and 32 characters, and score is an integer between -1000 and 1000, inclusive.\n```\n#### Output:\n\n`Print the name of the winner.`\n\n#### Example:\n\n#### Input:\n```\n3\nmike 3\nandrew 5\nmike 2\n```\n\n#### Output:\n```\nandrew\n```\n\n### Explanation:\n\n**Given the breakdown of the game rounds:**\n\n- `Round 1: mike 3: Mike's score becomes 3.`\n- `Round 2: andrew 5: Andrew's score becomes 5.`\n- `Round 3: mike 2: Mike's score increases to 5.`\n\n**At the end of the game:**\n\n- `Mike and Andrew both have the highest score of 5 points. According to the tie-breaking rule:`\n- `The winner is the player who reached the maximum score (m = 5) first. In this case:`\n- `Mike reaches 5 points first in Round 3.`\n- `Andrew reaches 5 points in Round 2.`\n\n***Therefore, the correct winner is Andrew, as he achieved the highest score of 5 points first.***\n\n#### `Sample Input and Output:`\n\n#### `Sample Input 1:`\n```\n3\nmike 3\nandrew 5\nmike 2\n```\n\n#### `Sample Output 1:`\n```\nandrew\n```\n\n#### `Sample Input 2:`\n```\n4\nalice 10\nbob 5\nalice -3\nbob 10\n```\n\n#### \n\n```\nSample Output 2:\n\n```\n\n```\nbob\n```\n\nIn this:\n- `Round 1: alice 10: Alice's score becomes 10.`\n- `Round 2: bob 5: Bob's score becomes 5.`\n- `Round 3: alice -3: Alice's score becomes 7.`\n- `Round 4: bob 10: Bob's score becomes 15.`\n\n***Alice and Bob both reach their highest scores during different rounds. Since bob reaches the highest score of 15 first, bob is the winner.***",
+    "title": "Berlogging: The Quest for Victory",
+    "default_testcase": {
+        "id": 8064,
+        "input": "7\nksjuuerbnlklcfdjeyq 312\ndthjlkrvvbyahttifpdewvyslsh -983\nksjuuerbnlklcfdjeyq 268\ndthjlkrvvbyahttifpdewvyslsh 788\nksjuuerbnlklcfdjeyq -79\nksjuuerbnlklcfdjeyq -593\nksjuuerbnlklcfdjeyq 734",
+        "expected_output": "ksjuuerbnlklcfdjeyq",
+        "code_problem_id": 841,
+        "created_at": "2024-05-19T06:01:26.414Z",
+        "updated_at": "2024-05-19T06:01:26.414Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2780,
+            "code_problem_id": 841,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n   public:\n       string winner(vector<pair<string,int>> & input,int &N){\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2782,
+            "code_problem_id": 841,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n/*class Pair<K, V> {\n    private K key;\n    private V value;\n\n    // Constructor to initialize a Pair with key and value\n    public Pair(K key, V value) {\n        this.key = key;\n        this.value = value;\n    }\n\n    // Getter method for key\n    public K getKey() {\n        return key;\n    }\n\n    // Getter method for value\n    public V getValue() {\n        return value;\n    }\n}*/\nclass Solution {\n    public String winner(List<Pair<String, Integer>> input, int N) {",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2784,
+            "code_problem_id": 841,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def winner(self, input_list):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2786,
+            "code_problem_id": 841,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    winner(input) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

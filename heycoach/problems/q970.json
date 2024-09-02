@@ -1,0 +1,64 @@
+{
+    "id": 970,
+    "description": "Given an integer n representing the number of people (labeled from 1 to n) and a list of dislikes where dislikes[i] = [ai, bi] indicates that person ai does not like person bi, determine if it is possible to split everyone into two groups such that no two people who dislike each other are in the same group.\n\nReturn true if such a division is possible, otherwise return false.\n\nExample 1:\nInput:\n\nn = 4, dislikes = [[1, 2], [1, 3], [2, 4]]\n\nOutput:\n\ntrue\n\nExplanation:\n\nThe first group has [1, 4], and the second group has [2, 3].\n\nExample 2:\nInput:\n\nn = 3, dislikes = [[1, 2], [1, 3], [2, 3]]\n\nOutput:\n\nfalse\n\nExplanation:\n\nWe need at least 3 groups to divide them. We cannot put them in two groups.\n\nConstraints:\n\n1 <= n <= 2000\n\n0 <= dislikes.length <= 10^4\n\ndislikes[i].length == 2\n\n1 <= ai < bi <= n\n\nAll the pairs of dislikes are unique.",
+    "title": "Divide People into Two Groups",
+    "default_testcase": {
+        "id": 8473,
+        "input": "3\n3\n1 2\n1 3\n2 3",
+        "expected_output": "false\n",
+        "code_problem_id": 970,
+        "created_at": "2024-05-30T12:49:23.326Z",
+        "updated_at": "2024-05-30T12:49:23.326Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3236,
+            "code_problem_id": 970,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool isBipartite(unordered_map<int, vector<int>> &adj, int node, vector<int>& color) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3237,
+            "code_problem_id": 970,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean isBipartite(Map<Integer, List<Integer>> adj, int node, int[] color) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3238,
+            "code_problem_id": 970,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def isBipartite(self, adj, node, color):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3239,
+            "code_problem_id": 970,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    isBipartite(adj, node, color) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

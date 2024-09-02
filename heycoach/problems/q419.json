@@ -1,0 +1,64 @@
+{
+    "id": 419,
+    "description": "Given a doubly-linked list, rotate the linked list clockwise by K times. Here N is number of nodes in the linked list.\n\n**\"Example 1:**\nList: 1 \u21c4 2 \u21c4 3 \u21c4 4 \u21c4 5</br>\nhead = [1,2,3,4,5], k = 2</br>\n**Output**: </br>\n 4 \u21c4 5 \u21c4 1 \u21c4 2 \u21c4 3</br>\n [4,5,1,2,3]\n\n**Example 2:**</br>\n**Input**: n=3, head = [0,1,2], k = 4</br>\n**Output**: [2,0,1]\n\n\n\n",
+    "title": "Rotate Nodes by K nodes",
+    "default_testcase": {
+        "id": 2987,
+        "input": "5 \n1 2 3 4 5\n2",
+        "expected_output": "4 5 1 2 3 ",
+        "code_problem_id": 419,
+        "created_at": "2023-12-14T12:29:14.145Z",
+        "updated_at": "2023-12-14T12:29:14.145Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1190,
+            "code_problem_id": 419,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n// Definition for doubly-linked list.\nstruct ListNode {\n    int val;\n    ListNode *prev;\n    ListNode *next;\n    ListNode(int x) : val(x), prev(nullptr), next(nullptr) {}\n};\n*/\nclass Solution {\npublic:\n    ListNode* rotate(ListNode* head, int k) {\n\n  ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1191,
+            "code_problem_id": 419,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass ListNode {\n    int val;\n    ListNode prev;\n    ListNode next;\n\n    public ListNode(int x) {\n        val = x;\n    }\n}\n*/\n\nclass Solution {\n    public ListNode rotate(ListNode head, int k) {\n\n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1192,
+            "code_problem_id": 419,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.prev = None\n        self.next = None\n\"\"\"\n\nclass Solution:\n    def rotate(self, head, k):\n      ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1193,
+            "code_problem_id": 419,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass ListNode {\n    constructor(x) {\n        this.val = x;\n        this.prev = null;\n        this.next = null;\n    }\n}\n*/\n\nclass Solution {\n    rotate(head, k) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

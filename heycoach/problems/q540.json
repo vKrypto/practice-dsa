@@ -1,0 +1,57 @@
+{
+    "id": 540,
+    "description": "Given a Binary Tree having positive and negative nodes. Find the maximum sum of a level in the given Binary Tree.\n",
+    "title": "Max level Sum",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1614,
+            "code_problem_id": 540,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n    /*You are required to complete below method */\n    int maxLevelSum(Node* root) {\n        // Your code here\n\n    }\n};\n\n"
+        },
+        {
+            "id": 1615,
+            "code_problem_id": 540,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n/*Complete the finction below\nNode is as follows\nclass Node{\n    int data;\n    Node left,right;\n    Node(int d){\n        data=d;\n        left=right=null;\n    }\n}*/\nclass Solution {\n    public static int maxLevelSum(Node root) {\n        // If the root is null, return 0\n\n    }\n}"
+        },
+        {
+            "id": 1616,
+            "code_problem_id": 540,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n# } Driver Code Ends\n# Your task is to complete this function\n# function should return max sum level in the tree\n'''\nclass Node:\n    def __init__(self, value):\n        self.left = None\n        self.data = value\n        self.right = None\n'''\nclass Solution:\n     def maxLevelSum(self, root):\n"
+        },
+        {
+            "id": 1617,
+            "code_problem_id": 540,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n//User function Template for javascript\n\n/*\nclass Node\n{\n    constructor(x){\n        this.data=x;\n        this.left=null;\n        this.right=null;\n    }\n}\n*/\n\n/**\n * @param {Node} root\n * @return {number}\n*/\n/*class Node\n{\n    constructor(x){\n        this.data=x;\n        this.left=null;\n        this.right=null;\n    }\n}\n*/\n\n/**\n * @param {Node} root\n * @return {number}\n*/\nclass Solution {\n  maxLevelSum(root){\n    // Base case\n   \n  }\n}"
+        }
+    ]
+}

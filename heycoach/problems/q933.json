@@ -1,0 +1,8 @@
+{
+    "id": 933,
+    "description": "Problem Statement:\nYou are given a Binary Search Tree (BST) and you need to remove the root element. After removing the root element, you must rearrange the BST so that it retains its properties. Implement a function to perform this operation.",
+    "title": "BST Root Removal and Rearrangement",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

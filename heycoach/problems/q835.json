@@ -1,0 +1,64 @@
+{
+    "id": 835,
+    "description": "\n\nThere are `n` players. You need to split all the players into **two** teams, the teams must have an equal number of players. We know that this group of players have **archenemies** denoted by array `v`. Each player has at most two **archenemies.**\n\n**Note:** if **PlayerA** is an archenemy to **PlayerB**, then **PlayerB** is an archenemy to **PlayerA.**\nThe players want to split so as no two **archenemies** were in one team. If splitting in the required manner is impossible, some players will have to sit on the bench.\n\nYour task is to determine the **minimum** number of players you will have to send to the bench in order to form the two teams in the described manner.\n\n**Example**\n```\nInput : n = 5, m = 4, v = [[1,2], [2,4], [5,3], [1,4]]\n\nOutput : 1\n\nExplanation:\n\nThe two teams can be splitted as - Team1 [1,5] and Team2 [2,3]. \nWe have to bench 1 player, which is at index 4.\n\n```\n\n**Input Format**\n```\nThe first line contains two integers n and m\nThe number of players and the number of pairs of archenemies correspondingly.\n\nNext n lines describe enmity between students denoted by array v. Each element in v describes an enmity as two numbers a and b, the indexes of the players who are enemies to each other. \nEach enmity occurs in the list exactly once. It is guaranteed that each student has no more than two archenemies.\n```\n**Output Format**\n```\nA single integer \u2014 the minimum number of players you will have to send to the bench in order to start the game.\n```\n\n**Constraints**\n\n`1 <= n,m <= 100`\n\n`1 <= a,b <= n , where a is not equal to be`\n\n",
+    "title": "Team Selection Problem",
+    "default_testcase": {
+        "id": 7452,
+        "input": "5 4\n1 2\n2 4\n5 3\n1 4",
+        "expected_output": "1\n",
+        "code_problem_id": 835,
+        "created_at": "2024-04-27T07:14:14.956Z",
+        "updated_at": "2024-04-27T07:14:14.956Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2733,
+            "code_problem_id": 835,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\nint TeamSelection(int n,int m,vector<vector<int>>&v)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2734,
+            "code_problem_id": 835,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    \n    int TeamSelection(int n, int m, List<List<Integer>> v) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2735,
+            "code_problem_id": 835,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def min_team_formation(self, n, m, v):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2736,
+            "code_problem_id": 835,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minTeamFormation(n, m, v) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

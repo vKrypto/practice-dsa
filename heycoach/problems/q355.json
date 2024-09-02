@@ -1,0 +1,64 @@
+{
+    "id": 355,
+    "description": "\nImplement a program to calculate the maximum flow from a source node to a sink node in a given flow network. The network is represented as a directed graph where each edge has a capacity, and the flow must not exceed this capacity for any edge. Utilize the Ford-Fulkerson algorithm for this purpose.\n\n**Input Format:**\n- `The first line contains an integer` `N`, `representing the number of nodes in the graph.`\n- `The second line contains an integer` `M`, `indicating the number of edges.`\n- `The next` `M` `lines each contain three integers` `u`, `v`, `and` `w`, `describing an edge from node` `u` `to node` `v` `with a capacity of` `w`.\n- `Nodes are numbered from` `1` `to` `N`,` where` `1` `is considered the source node and` `N` `the sink node.`\n\n**`Output Format:`**\n- `Output a single integer representing the maximum flow from the source node to the sink node in the given flow network.`\n\n**`Constraints:`**\n- `1 <= N <= 10^4`\n- `0 <= M <= 10^5`\n- `0 <= u, v < N`\n- `0 <= capacity <= 10^9`\n\n**`Sample Input:`**\n```\n4 5\n1 2 100\n1 3 50\n2 4 50\n3 4 100\n2 3 50\n```\n\n**`Sample Output:`**\n```\n150\n```\n\n**`Explanation:`**</br>\n`The sample input represents a flow network with `4` nodes and `5` edges. The maximum flow from the source node `1` to the sink node `4` is `150`.`\n\n",
+    "title": "Maximum Flow in a Flow Network",
+    "default_testcase": {
+        "id": 5876,
+        "input": "5 5\n1 2 2\n1 3 1\n2 4 3\n3 4 4\n4 5 5",
+        "expected_output": "3\n",
+        "code_problem_id": 355,
+        "created_at": "2024-02-21T07:48:56.356Z",
+        "updated_at": "2024-02-21T07:48:56.356Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 822,
+            "code_problem_id": 355,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    int findMaxFlow(int n, int m, vector<vector<int>> edge){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1109,
+            "code_problem_id": 355,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      int findMaxFlow(int n, int m, int[][] edge) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1110,
+            "code_problem_id": 355,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findMaxFlow(self, n, m, edge):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1111,
+            "code_problem_id": 355,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      findMaxFlow(n, m, edge) {\n        //Write your code here",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 303,
+    "description": "\n\nGiven an integer array `nums`, representing the number of chocolates in the ith bag where 1 <= i <= N and N is the length of Array `nums`, Alice and Bob are best friends. They want to share chocolates in such a way that the absolute difference between their set of chocolates is `d`, also make sure that Alice always gets the bigger or equal part. Count how many possible ways there are for such partitions. Since the answer can be large, print it with modulo 10^9+7.\n\nNote: that they can pick the chocolates in any order and same numbers are not considered as identical.\n\n### Constraints:\n\n- 1 \u2264 N \u2264 50\n- 0 \u2264 D \u2264 2500\n- 0 \u2264 ARR[i] \u2264 50\n\n### Example:\n\n**Input:**\n```\nN = 4\nd = 3\narr = [5, 2, 6, 4]\n````\n\n**Output:**\n```\n1\n```\n\nExplanation: The way they can distribute is for Alice we can pick chocolates at index 0,1 and for Bob chocolates at index 2,3 which is the only way we can get a total minimum difference between them to be 3 (abs(6 + 4 - 5 - 2) = 3).\n\n**Input:**\n```\nN = 4\nd = 0\narr = [1, 1, 1, 1]\n```\n\n**Output:**\n```\n6\n```\nExplanaton: There are multiple ways these chocolates can be distributed. Below are all the ways the chocolates will be distributed to Alice and the remaining would go to Bob.\n\n```\nAlice can take chocolates at index 0,1 (1st way)\nAlice can take chocolates at index 0,2 (2nd way)\nat index 0,3 (3rd way)\nat index 1,2 (4th way)\nat index 1,3 (5th way)\nat index 2,3 (6th way)\n```\nNote: that it is asking us to seperate them in sets.\n\n",
+    "title": "Partition with given difference",
+    "default_testcase": {
+        "id": 2006,
+        "input": "4 3\n5 2 6 4",
+        "expected_output": "1",
+        "code_problem_id": 303,
+        "created_at": "2023-09-17T11:29:48.124Z",
+        "updated_at": "2023-09-17T11:29:48.124Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 745,
+            "code_problem_id": 303,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    countPartitions(n, d, arr) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 746,
+            "code_problem_id": 303,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_partitions(self, n, d, arr):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 747,
+            "code_problem_id": 303,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n    public static int countPartitions(int n, int d, int[] arr) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 748,
+            "code_problem_id": 303,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    private:\n    int mod =(int)1e9+7;\n\n    public:\n    int countPartitions(int n, int d, vector<int>& arr){\n      //Write your code here;",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

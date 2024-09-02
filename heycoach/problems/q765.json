@@ -1,0 +1,64 @@
+{
+    "id": 765,
+    "description": "Write a program that calculates the value of x^n , where 'x' and 'n' are integers taken as input from the user. You need to print the result of the calculation.\n\n**Note:** For this question, you can assume that 0^0  is equal to 1.\n\n#### `Input Format:`\n\n`The input consists of two integers 'x' and 'n' on separate lines.`\n\n#### `Output Format:`\n\n`The program outputs the value of x^n  as a single integer.`\n\n\n#### `Example:`\n\n#### `Input:`\n```\n2\n5\n```\n\n#### `Output:`\n```\n32\n```\n#### `Constraints:`\n\n- `-10^9 <= x <= 10^9 `\n- `0 <= n <= 10^9 `\n#### `Explanation:`\n`The value of 2^5  is calculated as 2 x 2 x 2 x 2 x 2 = 32 , which is printed as the output of the program.`\n",
+    "title": "Power Calculation",
+    "default_testcase": {
+        "id": 6824,
+        "input": "3\n4",
+        "expected_output": "81\n",
+        "code_problem_id": 765,
+        "created_at": "2024-03-23T09:21:08.010Z",
+        "updated_at": "2024-03-23T09:21:08.010Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2487,
+            "code_problem_id": 765,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static long power(int x, int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2488,
+            "code_problem_id": 765,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static long long power(int x, int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2489,
+            "code_problem_id": 765,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def power(x, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2490,
+            "code_problem_id": 765,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static power(x, n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

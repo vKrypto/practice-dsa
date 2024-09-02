@@ -1,0 +1,64 @@
+{
+    "id": 767,
+    "description": "Write a program that takes a dictionary of words as input and finds all the longest words in the dictionary. \nIf there are multiple longest words of the same length, the program should output all of them.\n\n#### `Input Format:`\n\n`The input consists of a list of words in the dictionary. Each word is on a separate line.`\n\n#### `Output Format:`\n\n`The program outputs all the longest words found in the dictionary. If there are multiple longest words, they are printed on separate lines.`\n\n\n\n#### `Example:`\n\n#### `Input:`\n```\napple\nbanana\norange\nmango\npineapple\n```\n\n#### `Output:`\n```\npineapple\n```\n#### `Constraints:`\n\n- `The length of each word in the dictionary is at most 100 characters.`\n- `The dictionary can contain up to 10^4 words.`\n\n#### `Explanation:`\n\n`In the given dictionary, \"pineapple\" is the longest word with a length of 9 characters. Therefore, the program outputs \"pineapple\" as the longest word.`\n",
+    "title": "Longest Word in the Dictionary",
+    "default_testcase": {
+        "id": 6830,
+        "input": "dog\ncat\nelephant\nmouse\nhippopotamus",
+        "expected_output": "hippopotamus\n",
+        "code_problem_id": 767,
+        "created_at": "2024-03-23T10:36:25.096Z",
+        "updated_at": "2024-03-23T10:36:25.096Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2491,
+            "code_problem_id": 767,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static List<String> findLongestWords(List<String> words) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2492,
+            "code_problem_id": 767,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static vector<string> findLongestWords(const vector<string>& words) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2493,
+            "code_problem_id": 767,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_longest_words(words):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2494,
+            "code_problem_id": 767,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findLongestWords(words) {\n      //Write  your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

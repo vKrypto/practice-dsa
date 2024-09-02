@@ -1,0 +1,64 @@
+{
+    "id": 73,
+    "description": "You are given a string s consisting of lowercase letters of the English alphabet. Perform the following algorithm on s:\n\nLet x be the length of the longest prefix of s which occurs somewhere else in s as a contiguous substring (the other occurrence may also intersect the prefix). If x=0, break. Otherwise, remove the first x characters of s, and repeat. A prefix is a string consisting of several first letters of a given string, without any reorders. An empty prefix is also a valid prefix. For example, the string \"abcd\" has 5 prefixes: empty string, \"a\", \"ab\", \"abc,\" and \"abcd.\"\n\nReturn the final state of the string after performing the algorithm.\n\n**Input**:</br>\nA string s consisting of lowercase English letters. (1 <= |s| <= 10^5).</br>\n\n**Output**:</br>\nA string representing the final state of the string s after performing the algorithm.\n\n**Example**:</br>\n**Input**:</br>\n```\ns = \"abcabdc\"\n```\n**output**:</br>\n```\n\"abdc\"\n```\n**Explanation**:</br>\nInitially, \"ab\" is the longest prefix that also appears somewhere else as a substring in s, so s = \"cabdc\" after 1 operation.</br>\nThen, \"c\" is the longest prefix that also appears somewhere else as a substring in s, so s = \"abdc\" after 2 operations.</br>\nNow x=0 (because there are no non-empty prefixes of \"abdc\" that also appear somewhere else as a substring in s), so the algorithm terminates.",
+    "title": "Prefix Removal",
+    "default_testcase": {
+        "id": 6310,
+        "input": "abcabdc",
+        "expected_output": "abdc\n",
+        "code_problem_id": 73,
+        "created_at": "2024-03-11T11:57:17.849Z",
+        "updated_at": "2024-03-11T11:57:17.849Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 213,
+            "code_problem_id": 73,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass solution {\n    public:\n    string solve (string& str){\n",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 214,
+            "code_problem_id": 73,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String solve(String str) {\n\n\n       ",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 215,
+            "code_problem_id": 73,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, s):\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 663,
+            "code_problem_id": 73,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(str) {\n",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

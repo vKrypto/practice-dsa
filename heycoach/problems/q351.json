@@ -1,0 +1,64 @@
+{
+    "id": 351,
+    "description": "You are given a total of numCourses courses labelled from 0 to numCourses - 1. You are also given an array of prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.\n\nFor example, the pair [0, 1] indicates that to take course 0 you have to first take course 1.\n\nWrite a function to return true if you can finish all courses, i.e., there are no cycles in the course dependencies. Otherwise, return false.\n\n\n**`Example:`**\n\n**`Input:`**\n```\nnumCourses = 2, prerequisites = [[1,0]]\n```\n\n**Output**:\n```\ntrue\n\n```\n**`Explanation`**:</br>\n`You can finish both courses. To take course 1, you should have finished course 0. So it is possible.`\n**`Constraints`**:\n\n- `1 <= numCourses <= 2000`</br>\n- `0 <= prerequisites.length <= 5000`</br>\n- `prerequisites[i].length == 2`</br>\n- `0 <= ai, bi < numCourses`</br>\n- `All the pairs prerequisites[i] are unique.`</br>",
+    "title": "Course Planner",
+    "default_testcase": {
+        "id": 5752,
+        "input": "2 2\n1 0\n0 1",
+        "expected_output": "False\n",
+        "code_problem_id": 351,
+        "created_at": "2024-02-17T10:33:17.729Z",
+        "updated_at": "2024-02-17T10:33:17.729Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 818,
+            "code_problem_id": 351,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {\n      //write your code here\n       \n    ",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1112,
+            "code_problem_id": 351,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n      //Write your code here\n       \n    ",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1113,
+            "code_problem_id": 351,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:\n      #Write your code here\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1114,
+            "code_problem_id": 351,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    canFinish(numCourses, prerequisites) {\n      //Write your code here\n   \n    ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

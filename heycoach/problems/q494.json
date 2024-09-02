@@ -1,0 +1,64 @@
+{
+    "id": 494,
+    "description": "Given an input stream of N integers. The task is to insert these numbers into a new stream and find the median of the stream formed by each insertion of X to the new stream.\n\n\n**Example 1**\n\n#### Input : \n`N = 4,`</br>\n` X[] = [5,15,1,3]`\n\n#### Output : </br>\n`[5,10,5,4]`\n\n\n#### `Explanation:`\n```\nFlow in stream : 5, 15, 1, 3 \n5 goes to stream --> median 5 (5) \n15 goes to stream --> median 10 (5,15) \n1 goes to stream --> median 5 (5,15,1) \n3 goes to stream --> median 4 (5,15,1 3) \n```\n\n**Example 2**\n\n#### Input:\n`N = 3,`</br> \n`X[] = [5,10,15]`\n\n#### Output:</br>\n`5 7 10`\n\n#### Explanation:\n```\nFlow in stream: 5, 10, 15\n5 goes to stream --> median 5 (5) \n10 goes to stream --> median 7.5 (5,10) \n15 goes to stream --> median 10 (5,10,15) \n```\n\n\n**Constraints**\n\n- `1 <= N <= 10^6`  \n- `1 <= x <= 10^6`\n\n",
+    "title": "Median at every step",
+    "default_testcase": {
+        "id": 3301,
+        "input": "4\n5 15 1 3",
+        "expected_output": "5 10 5 4 \n",
+        "code_problem_id": 494,
+        "created_at": "2024-01-02T00:33:46.432Z",
+        "updated_at": "2024-01-02T00:33:46.432Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1442,
+            "code_problem_id": 494,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.v = [];\n    }\n\n    solve(newElement) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1443,
+            "code_problem_id": 494,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void streamed(int A[], int n){\n      //Write your code here",
+            "skeleton_class_end": "      }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1444,
+            "code_problem_id": 494,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void streamed(int[] A, int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1445,
+            "code_problem_id": 494,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def streamed(self, A, n):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

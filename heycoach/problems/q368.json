@@ -1,0 +1,21 @@
+{
+    "id": 368,
+    "description": "Problem: Imagine a mystical forest where a special tree, known as the \"Expression Tree,\" holds mathematical secrets. This tree is made up of numbers and basic operators like +, -, *, and /.\n\nYour task is to venture into this enchanted forest and decipher the hidden message within the Expression Tree. As you follow the branches from the root to the leaves, combine the numbers and operators to find the final result of the mathematical expression concealed within the tree.\n\nCan you use the powers of addition, subtraction, multiplication, and division to unveil the secret and reveal the answer hidden in the Expression Tree?\n",
+    "title": "Mystical forest and Expression",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 834,
+            "code_problem_id": 368,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// struct node{\n//     string data;\n//     struct node*left;\n//     struct node*right;\n\n//     node(string x){\n//         data=x;\n//         left=NULL;\n//         right=NULL;\n//     }\n// };\nclass Solution{\n  public:\n    int evalTree(node* root) {\n        \n    }\n};\n"
+        }
+    ]
+}

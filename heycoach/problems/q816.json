@@ -1,0 +1,52 @@
+{
+    "id": 816,
+    "description": "Joe is fond of finding permutations. So he wrote down the permutations of 'N' numbers in their lexicographically increasing order and numbered these orders, for example the permutations of first 2 numbers is {1,2} and {2,1} so they are arranged in lexicographically increased order and numbered so {1,2} is at line 1 and {2,1} is at line 2.\n\nJoe's brother comes up to him and gives him a riddle, he writes a sequence of elements that lies between 1 - N and some places are occupied by zero, for example {0 2 3 0}. He wants Joe to find out all the possible permutation given this sequence by filling the zeroes and then finding the sum of the line number of all of these permutations. \n\nInput Format:\n\nFirst line contains an integer n denoting the size of permutation sequence\n\nSecond line contains n space separated integer denoting the elements of permutation sequence given by Joe's brother.\n\nOutput Format:\n\nPrint a single integer denoting the sum of line numbers.\n\nConstraints:\n\n1 <= n<= 10^5\n\n0 <= a[i] <= n",
+    "title": "Line numbers",
+    "default_testcase": {
+        "id": 7628,
+        "input": "5\n0 5 3 0 2",
+        "expected_output": "117",
+        "code_problem_id": 816,
+        "created_at": "2024-05-01T21:00:28.394Z",
+        "updated_at": "2024-05-01T21:00:28.394Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2738,
+            "code_problem_id": 816,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int N, vector<int> &P){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2844,
+            "code_problem_id": 816,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, P):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2845,
+            "code_problem_id": 816,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class CardsPermutationFinal {\n    public long run(int n, int[] perm) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 917,
+    "description": "Initially you have a single pile with n\n gold nuggets. In an operation you can do the following:\n\nTake any pile and split it into two piles, so that one of the resulting piles has exactly twice as many gold nuggets as the other. (All piles should have an integer number of nuggets.)\n\nCan you make a pile with exactly m\n gold nuggets using zero or more operations?  \n**Input**  \nThe first line contains an integer t\n **(1\u2264t\u22641000**\n) \u2014 the number of test cases.\n\nThe only line of each test case contains two integers n\n and m\n (**1\u2264n,m\u226410^7**\n) \u2014 the starting and target pile sizes, respectively.\n\n**Output**  \nFor each test case, output \"YES\" if you can make a pile of size exactly m\n, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer)\n\n**Example**  \n**Input**  \n```\n6 4\n```\n**Output**\n\n```\nYES\n```\n**Input**\n\n```\n4 2\n```\n**Output**\n\n```\nNO\n```",
+    "title": "Gold Rush",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3037,
+            "code_problem_id": 917,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n   ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3039,
+            "code_problem_id": 917,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean ok(int n, int m) {\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3040,
+            "code_problem_id": 917,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3041,
+            "code_problem_id": 917,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

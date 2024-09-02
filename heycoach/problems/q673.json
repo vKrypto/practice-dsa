@@ -1,0 +1,64 @@
+{
+    "id": 673,
+    "description": "Given an array of strings **strs**, group the **anagrams** together. You can print the answer in sorted order. Also output the list of anagrams in sorted order too.\n\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.\n\n#### Input Format:\n- first line contains a single integer n (size of the array).\n- second line  contains n strings.\n\n#### Output Format:\n **Print the group of anagrams with single space between them**\n-  **each group in new line**\n\n#### Constraints:\n- 1 <= n <= 10^4\n- 0 <= strs[i].length <= 100\n- strs[i] consists of lowercase English letters.\n\n#### Example: \n**Input**: 6<br>\neat tea tan ate nat bat\n\n**Output**: <br>\nate  eat tea<br>\nbat<br>\nnat tan<br>\n\n**Explaination**: <br>\nAs ate comes before bat so group of anagrams of ate should come before group of anagrams of bat. same for others.\n\n",
+    "title": "Group Anagrams",
+    "default_testcase": {
+        "id": 4428,
+        "input": "6\neat tea tan ate nat bat",
+        "expected_output": "ate eat tea \nbat \nnat tan \n",
+        "code_problem_id": 673,
+        "created_at": "2024-01-27T15:29:15.865Z",
+        "updated_at": "2024-01-27T15:29:15.865Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2080,
+            "code_problem_id": 673,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class solution {\npublic:\n    vector<vector<string>> groupAnagrams(vector<string>& strs)\n    {\n\n",
+            "skeleton_class_end": "    }\n\n\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2081,
+            "code_problem_id": 673,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2082,
+            "code_problem_id": 673,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def groupAnagrams(self, strs):\n\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2083,
+            "code_problem_id": 673,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n    groupAnagrams(strs) {\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

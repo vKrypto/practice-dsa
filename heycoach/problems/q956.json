@@ -1,0 +1,21 @@
+{
+    "id": 956,
+    "description": "Alex loves lucky numbers, which are positive integers composed only of the digits 4 and 7. Examples of lucky numbers include 47, 744, and 4, whole numbers like 5, 17, and 467 are not considered lucky.\n\nAlex has two strings, s1 and s2, both of the same length n. These strings consist exclusively of the lucky digits 4 and 7. Alex can perform the following operations to transform string s1 into string s2:\n\nReplace any single digit in string s1 with its opposite:\n\nReplace 4 with 7\n\nReplace 7 with 4\n\nSwap any pair of digits in string s1.\nYour task is to determine the minimum number of operations required to make string s1 identical to string  s2.\n\n```\nInput\n```\n\nThe first line contains the string s1.\n\nThe second line contains the string s2.\n\nStrings s1 and s2 have equal lengths and contain only the digits 4 and 7.\nThe length of the strings does not exceed 10^5.\n\n```\nOutput\n```\n\nPrint a single integer \u2014 the minimum number of operations needed to convert string\ns1 into string s2.\n",
+    "title": " Minimum Operations for Lucky String Conversion",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3192,
+            "code_problem_id": 956,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class LuckyConversion {\npublic:\n    static int minOperations(const std::string &s1, const std::string &s2) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

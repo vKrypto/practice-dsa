@@ -1,0 +1,64 @@
+{
+    "id": 361,
+    "description": "\nGiven an undirected graph, write a program to find the number of connected components in the graph.\n\n#### Input format\n\n- The first line contains two integers, ( N ) and ( E ), where:\n  - ( N ) is the number of nodes.\n  - ( E ) is the number of edges.\n- The next ( E ) lines each contain two integers ( u ) and ( v ), representing an edge between nodes ( u ) and ( v ).\n\n#### Output\n\n- A single integer representing the number of connected components in the graph.\n\n\n#### Sample Input\n\n```\n6 5\n0 1\n1 2\n2 0\n3 4\n5 5\n```\n\n#### Sample Output\n\n```\n3\n```\n\n#### Explanation\n\nIn the given graph:\n- The first three nodes (0, 1, and 2) are connected, forming one connected component.\n- Nodes 3 and 4 are connected, forming another connected component.\n- Node 5 is self-connected (loop), forming a third connected component.\n#### Constraints\n\n- ( 1 <= N <= 10^6 ) (number of nodes)\n- ( 0 <= E <= 10^6 ) (number of edges)\n- ( 0 <= u, v < N ) (node indices)",
+    "title": "Find number of connected components.",
+    "default_testcase": {
+        "id": 2825,
+        "input": "6 5\n0 1\n1 2\n2 0\n3 4\n5 5",
+        "expected_output": "3\n",
+        "code_problem_id": 361,
+        "created_at": "2023-12-10T10:52:13.875Z",
+        "updated_at": "2023-12-10T10:52:13.875Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 828,
+            "code_problem_id": 361,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n    int findConnectedComponents(int N, const vector<vector<int>>& edges) {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1094,
+            "code_problem_id": 361,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n  public int findConnectedComponents(int N, List<int[]> edges) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1095,
+            "code_problem_id": 361,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n     def find_connected_components(self, N, edges):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1096,
+            "code_problem_id": 361,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n      findConnectedComponents(N, edges) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 881,
+    "description": "You are given a n x m matrix which contains only 1s and 0s. You can select any two cells of the matrix provided that they have the same number in the cell and enclose a sub rectangle between those two cells and convert all the numbers in the enclosed rectangle equal to the value of cell chosen.\n\nDetermine if you can convert the given grid in such a way that all the elements of the grid are equal.\n\n```\nLet us take an example:\n\n1 0 0 1\n0 1 1 0\n0 1 0 0\n```\nGiven the above binary grid I can select the cell at matrix[0][2] and another one at matrix[2][0] and convert all the elements inside this to '0' as that is the chosen cell value. So my grid now turns like this:\n```\n0 0 0 1\n0 0 0 0\n0 0 0 0\n```\nNow I can select the topmost left and rightmost bottom value and create another sub rectangle.\n```\n0 0 0 0\n0 0 0 0\n0 0 0 0\n0 0 0 0\n```\nThus I have reached a stage where my grid have values which are all equal to each other.\n\nInput Format:\n\nThe first line contains, the value of n and m which denotes the number of rows and columns in my grid.\n\nThe next n lines contains m elements that can either be equal to '1' or '0'.\n\nOutput format:\n\nReturn true if you can convert the grid in such a way that all values are equal otherwise return false.\n\nSample Input:\n\n2 3\n\n0 0 0\n\n1 0 0\n\nSample Output:\n\nFalse\n\nExplanation : You can never pick another '1' in your grid as there is only one available and thus this element can never be converted.\n\nConstraints:\n\n1<=n,m<=500",
+    "title": "Binary Grid",
+    "default_testcase": {
+        "id": 7793,
+        "input": "6 6\n000010\n010000\n111000\n100011\n001011\n111010",
+        "expected_output": "Yes\n",
+        "code_problem_id": 881,
+        "created_at": "2024-05-08T11:24:17.340Z",
+        "updated_at": "2024-05-08T11:24:17.340Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2911,
+            "code_problem_id": 881,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    bool solve(vector<string> &grid, int n, int m){\n        //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2912,
+            "code_problem_id": 881,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, grid, n, m):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2913,
+            "code_problem_id": 881,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean solve(String[] grid, int n, int m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2914,
+            "code_problem_id": 881,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(grid, n, m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

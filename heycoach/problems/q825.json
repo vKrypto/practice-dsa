@@ -1,0 +1,64 @@
+{
+    "id": 825,
+    "description": "You are given two integers x and y of the same length, consisting of digits from 1 to 9.\nYou can perform the following operation any number of times (possibly zero): swap the i-th digit in x and the i-th digit in y.\n\nFor example, if x = 73 and y = 31, you can swap the 2-nd digits and get x = 71 and y = 33.\n\n`Your task is to maximise the product of x and y using the aforementioned operation any number of times. Print x and then y where x is lexicographically smallest or equal to y.`\n\n\n#### `Input:`\n\n- `The first line of each test case contains a single integer x (1 \u2264 x \u2264 10^100).`\n- `The second line of each test case contains a single integer y (1 < y < 10^100).`\n- `Additional constraint on input: the integers x and y consist only of digits from 1 to 9.`\n\n\n\n#### `Output:`\n```\nFor each test case, print two lines - the first line should contain the number after performing the operations; similarly, the second line should contain the number y after performing the operations. If there are multiple answers, print any of them.\n```\n\n#### `Sample Input 1`\n```\n73  \n31\n```\nOutput\n```\n33  \n71\n```\n\n#### `Sample Input 2`\n```\n3516  \n3982\n```\n#### `Output:`\n```\n3586\n3912\n```\n",
+    "title": " Maximise the Multiply",
+    "default_testcase": {
+        "id": 7413,
+        "input": "73\n31",
+        "expected_output": "33\n71\n",
+        "code_problem_id": 825,
+        "created_at": "2024-04-26T19:12:45.468Z",
+        "updated_at": "2024-04-26T19:12:45.468Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2690,
+            "code_problem_id": 825,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    vector<string> Maximisenumber(string s, string t){\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2691,
+            "code_problem_id": 825,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String[] Maximisenumber(String s, String t) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2692,
+            "code_problem_id": 825,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def Maximisenumber(self, s, t):\n      #Write your code here\n  ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2693,
+            "code_problem_id": 825,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function Solution() {\n    this.maximizeNumber = function(s, t) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

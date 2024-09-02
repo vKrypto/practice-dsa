@@ -1,0 +1,64 @@
+{
+    "id": 71,
+    "description": "You will  be given a non negative integer **x** , You have to find and return the square root of **x**.\n\nYou have to print the integer part of the square root i.e. decimal digits must be **truncated**, and only the **the integer part** of the answer is printed.\n\n**Note**: You are not allowed to use any built-in exponent function or operator, such as pow(x, 0.5) or x ** 0.5.\n\n#### Constraints:\n- 0 <= x <= 2^(31 - 1)\n\n#### Input Format: \n- first line contains x.\n\n#### Output Format: \n- print the integer part of the square root of x.\n\n**Example: **</br>\n**Input**:\n```\n25\n```\n**output**:\n```\n5\n```",
+    "title": "Find Square Root",
+    "default_testcase": {
+        "id": 5205,
+        "input": "256",
+        "expected_output": "16\n",
+        "code_problem_id": 71,
+        "created_at": "2024-02-08T12:58:09.773Z",
+        "updated_at": "2024-02-08T12:58:09.773Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 83,
+            "code_problem_id": 71,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\n\nclass SquareRootSolver {\npublic:\n    long long findSquareRoot(long long x) {\n",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 84,
+            "code_problem_id": 71,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class SquareRootSolver {\n    // Function to find the integer part of the square root\n     long findSquareRoot(long x) {\n\n        ",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 85,
+            "code_problem_id": 71,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass SquareRootSolver:\n    def find_square_root(self, x):\n\n\n       ",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 586,
+            "code_problem_id": 71,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findSquareRoot(x) {\n\n       ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

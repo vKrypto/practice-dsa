@@ -1,0 +1,45 @@
+{
+    "id": 121,
+    "description": "Given a string containing digits from **2-9** inclusive, return all possible letter combinations that the number could represent. Print the answer in ascending order.\n\nA mapping of digits to letters (just like on the telephone buttons). Note that 1 does not map to any letters.\n\n#### Input Format: \n- single line string\n\n#### Output Format:\n- single space separated strings.\n\n#### Constraints:\n- 0 <= digits.length <= 4\n- digits[i] is a digit in the range ['2', '9'].",
+    "title": "Letter Combinations",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 141,
+            "code_problem_id": 121,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(string s) {\n    \n  } \n};"
+        },
+        {
+            "id": 144,
+            "code_problem_id": 121,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(String s) {\n    \n  } \n}\n\n"
+        },
+        {
+            "id": 148,
+            "code_problem_id": 121,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, s):\n    \n\n\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 598,
+    "description": "You are on an adventure to find the lost treasure. You come across a cave and decide to enter in, inside you find an old tablet upon which some single digit numbers are written. When u dig you find a chest on which it is written that whoever can use all the numbers on the tablet to form two numbers whose sum is the minimum shall be able to open this chest.\nYour task is to find the code to open the chest.\n\n**Sample Input:**  \n\n```\n6\n\n1 3 5 9 2 4\n```\n\n**Sample output:**\n\n`384`\n\n**Explanation:** `The two possible numbers that can be formed are 135 and 249 whose sum turns out to be minimum which is 384.`\n\n**`Constraints:`**\n\n- `1 \u2264 n \u2264 10^5`\n\n- `0 \u2264 a[i] \u2264 9`\n",
+    "title": "Jumble for Treasure",
+    "default_testcase": {
+        "id": 3915,
+        "input": "6\n1 3 5 9 2 4",
+        "expected_output": "384\n",
+        "code_problem_id": 598,
+        "created_at": "2024-01-22T07:41:04.672Z",
+        "updated_at": "2024-01-22T07:41:04.672Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1789,
+            "code_problem_id": 598,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String solve(int[] arr, int n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1790,
+            "code_problem_id": 598,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{   \n    public:\n    string solve(int arr[], int n) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1791,
+            "code_problem_id": 598,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1792,
+            "code_problem_id": 598,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr, n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

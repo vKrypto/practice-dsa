@@ -1,0 +1,64 @@
+{
+    "id": 51,
+    "description": "Given a square matrix of nxn return the sum of the matrix diagonals.\n\nOnly include the sum of all the elements on the primary diagonal and all the elements on the secondary diagonal that are not part of the primary diagonal.\n\n### Example\n#### Input:\n`mat = [[1,2,3], [4,5,6], [7,8,9]]`\n\n#### Output: 25\n\n#### Explanation:\nDiagonals sum: 1 + 5 + 9 + 3 + 7 = 25   \nNotice that element mat[1][1] = 5 is counted only once.\n\n#### Constraints:  \n\n```\nn == mat.length == mat[i].length  \n1 <= n <= 100  \n1 <= mat[i][j] <= 100 \n``` \n\n#### Input Format:\n\n```\nfirst line contains n (the size of the n*n matrix)\nnext n line contains n elements of the of the matrix\n\n```\n\n#### Output Format:\n`print the sum of the diagonals`",
+    "title": "Diagonal sum",
+    "default_testcase": {
+        "id": 332,
+        "input": "3\n1 2 3\n4 5 6\n7 8 9",
+        "expected_output": "25",
+        "code_problem_id": 51,
+        "created_at": "2022-09-27T17:36:37.509Z",
+        "updated_at": "2022-09-27T17:36:37.509Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 55,
+            "code_problem_id": 51,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def diagonalSum(self, mat: List[List[int]]) -> int:",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 56,
+            "code_problem_id": 51,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int diagonalSum(int[][] mat) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 57,
+            "code_problem_id": 51,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n\tint solve(vector<vector<int>>grid) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 842,
+            "code_problem_id": 51,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    diagonalSum(mat) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

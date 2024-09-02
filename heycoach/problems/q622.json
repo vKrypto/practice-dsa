@@ -1,0 +1,64 @@
+{
+    "id": 622,
+    "description": "You are given an array `arr`, which is a permutation of size `n`. \n\nA permutation is a sequence of integers from 1 to n of length n containing each number exactly once. For example, `(1)`, `(4,\u20093,\u20095,\u20091,\u20092)`, `(3,\u20092,\u20091)` are permutations, and `(1,\u20091)`, `(4,\u20093,\u20091)`, `(2,\u20093,\u20094)` are not.\n\nYour task is to return an integer array `result`, where `result[i]` is the count of unique elements smaller than `arr[i]` to the right of it.\n\n\n**`Example 1`**\n```\nInput: n = 5, arr = [3,2,5,1,4]\n\nOutput: [2,1,2,0,0]\n\nExplanation:\nTo the right of 3 there are 2 smaller elements (2 and 1).\nTo the right of 2 there is only 1 smaller element (1).\nTo the right of 5 there is 2 smaller element (1,4).\nTo the right of 1 there is 0 smaller element.\nTo the right of 4 there is 0 smaller element.\n```\n\n**`Example 2`**\n\n```\nInput: n = 1, arr = [1]\n\nOutput: [0]\n```\n\n`Constraints`\n\n`1 <= n <= 10^5`\n\n`arr is a permutation of size n`\n\n\n\n",
+    "title": "Count in Permutation",
+    "default_testcase": {
+        "id": 4185,
+        "input": "5\n3 2 5 1 4",
+        "expected_output": "2 1 2 0 0 ",
+        "code_problem_id": 622,
+        "created_at": "2024-01-27T05:10:17.082Z",
+        "updated_at": "2024-01-27T05:10:17.082Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1906,
+            "code_problem_id": 622,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1907,
+            "code_problem_id": 622,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    // ... (methods and implementation details)\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1908,
+            "code_problem_id": 622,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2227,
+            "code_problem_id": 622,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/**/",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

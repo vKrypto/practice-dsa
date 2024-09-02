@@ -1,0 +1,64 @@
+{
+    "id": 688,
+    "description": "Alice and his sister are playing with two arrays `a` which consist `n` elements and `b` consisting of `m` elements. The array `a` is given to Alice and `b` to his sister.\n As Alice is really naughty he wants the **minimum** value of his array `a` should be **at least** as much as the **maximum** value of his sister's array `b`. \nNow You have to help Alice in achieving his condition. You can perform multiple operations on the array. In single operation, you are allowed to **increase** or **decrease** any element of any of the arrays by 1.\n `Note that you are allowed to apply the operation on any index of the array multiple times`.\nYou need to find the **minimum** number of operations required to satisfy Alice's condition.\n\n\n\n### Example 1 \n\n### Input\n```CPP\nn = 2, m = 2  \na = [2,3]  \nb = [3,5]\n```\n\n\n### Output \n```CPP\n3\n```\n### Explanation\nIn example 1, you can increase a1 by 1 and decrease b2 by 1 and then again decrease b2 by 1. Now array a will be [3,3] and array b will also be [3, 3]. Here minimum element of a is at least as large as maximum element of b. So minimum number of operations needed to satisfy Alice's condition are 3.\n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 3,m = 2  \na = [4,5,6]  \nb = [1,2]\n```\n**Output:** \n```CPP\n0\n```\n### Explanation\nyou don't need to do any operation, Alice's condition is already satisfied.\n\n\n### Constraints:\n* `1 <= n,m <= 10000`\n\n* `1 <= a[i],b[i]<= 10000`\n",
+    "title": "Min operations",
+    "default_testcase": {
+        "id": 4519,
+        "input": "3 2\n1 2 3\n3 4",
+        "expected_output": "4",
+        "code_problem_id": 688,
+        "created_at": "2024-01-28T01:30:33.809Z",
+        "updated_at": "2024-01-28T01:30:33.809Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2152,
+            "code_problem_id": 688,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int minimumOperations(vector<int> &a, vector<int> &b) {\n\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2153,
+            "code_problem_id": 688,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n\n    \n\n    int minimumOperations(int[] a, int[] b) {\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2154,
+            "code_problem_id": 688,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n\n    def minimumOperations(self, a, b):\n\n\n\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2155,
+            "code_problem_id": 688,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n\n    minimumOperations(a, b) {\n\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

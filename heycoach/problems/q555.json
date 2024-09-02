@@ -1,0 +1,57 @@
+{
+    "id": 555,
+    "description": "Given an array arr[] of N positive integers. Find an integer denoting the maximum XOR subset value in the given array arr[].\nContraints :\n1 <= N <= 10^5\n1 <= arr[i] <= 10^6\n\nInput : \nN = 3\narr[] = {2, 4, 5}\nOutput : 7\nExplanation : \nThe subset {2, 5} has maximum \nsubset XOR value.",
+    "title": "Maximum XOR subset",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1660,
+            "code_problem_id": 555,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// } Driver Code Ends\n// Function to return maximum XOR subset in set[]\n// Number of bits to represent int\n#define INT_BITS 32\nclass Solution\n{\n    public:\n    int maxSubsetXOR(int set[], int n)\n    {\n       \n    }\n};\n"
+        },
+        {
+            "id": 1661,
+            "code_problem_id": 555,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution {\n    public static int maxSubsetXOR(int set[], int n) {\n\n    }\n}"
+        },
+        {
+            "id": 1662,
+            "code_problem_id": 555,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    # Function to return \n    # maximum XOR subset \n    # in set[] \n    def maxSubsetXOR(self, set,n): \n      \n        \n\n\n"
+        },
+        {
+            "id": 1663,
+            "code_problem_id": 555,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n/**\n * @param {number[]} arr\n * @param {number} n\n * @returns {number}\n*/\nclass Solution {\n    \n    maxSubsetXOR(arr, n)\n    {\n\n    }\n}"
+        }
+    ]
+}

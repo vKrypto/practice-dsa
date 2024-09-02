@@ -1,0 +1,64 @@
+{
+    "id": 773,
+    "description": "Write a program to find the index of the first non-repeating character in a given string. \nIf there is no non-repeating character, return -1.\n\n#### `Input Format:`\n\n`The input consists of a single string containing lowercase English alphabets.`\n\n#### `Output Format:`\n\n`Print the index of the first non-repeating character in the string. If there is no non-repeating character, print -1.`\n\n\n#### `Sample Input 1:`\n\n```\ngoogle\n```\n\n#### `Sample Output 1:`\n\n```\n4\n```\n\n#### `Explanation 1:`\n\n`In the input string \"google\", the first non-repeating character is 'l' at index 4.`\n\n#### Sample Input 2:\n\n```\nhello\n```\n\n#### `Sample Output 2:`\n\n```\n0\n```\n\n#### `Explanation 2:`\n\n`In the input string \"hello\", the first non-repeating character is 'h' at index 0.`\n\n#### `Constraints:`\n\n- `The string contains only lowercase English alphabets.`\n- `The length of the string is at most 10^5 characters.`",
+    "title": "First Non-Repeating Character Index",
+    "default_testcase": {
+        "id": 6870,
+        "input": "racecars",
+        "expected_output": "3\n",
+        "code_problem_id": 773,
+        "created_at": "2024-03-23T17:39:02.080Z",
+        "updated_at": "2024-03-23T17:39:02.080Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2515,
+            "code_problem_id": 773,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static int firstUniqChar() {\n      //write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2516,
+            "code_problem_id": 773,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static int firstUniqChar() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2517,
+            "code_problem_id": 773,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def firstUniqChar():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2518,
+            "code_problem_id": 773,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static firstUniqChar(s) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

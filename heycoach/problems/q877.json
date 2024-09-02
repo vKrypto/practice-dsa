@@ -1,0 +1,64 @@
+{
+    "id": 877,
+    "description": "Consider a football tournament where n teams participate. Each team has two football kits: for home games, and for away games. The kit for home games of the i-th team has color xi and the kit for away games of this team has color yi (xi\u2009\u2260\u2009yi).  <br/>\nIn the tournament, each team plays exactly one home game and exactly one away game with each other team (n(n\u2009-\u20091) games in total). The team, that plays the home game, traditionally plays in its home kit. The team that plays an away game plays in its away kit. However, if two teams has the kits of the same color, they cannot be distinguished. In this case the away team plays in its home kit.   <br/>\nCalculate how many games in the described tournament each team plays in its home kit and how many games it plays in its away kit.  \n**`Input format:`**  \n- `The first line contains a single integer n` **`(2\u2009\u2264\u2009n\u2009\u2264\u200910^5)`** \u2014 `the number of teams. Next n lines contain the description of the teams. `\n-  `The i-th line contains two space-separated numbers xi, yi **(1\u2009\u2264\u2009xi,\u2009yi\u2009\u2264\u2009105; xi\u2009\u2260\u2009yi)** \u2014 the color numbers for the home and away kits of the i-th team.` <br/>\n\n**`Output format:`**  \n- `For each team, print on a single line two space-separated integers \u2014 the number of games this team is going to play in home and away kits, correspondingly. Print the answers for the teams in the order they appeared in the input. `\n\n\n**Examples**  \n**Sample Input:1**  \n\n```\n2  \n1 2  \n2 1\n```\n  \n**Sample Output:1**   \n\n```\n2 0  \n2 0\n```\n  \n**Sample Input:2**  \n\n```\n3  \n1 2  \n2 1  \n1 3\n```\n  \n**Sample Output:2**  \n\n```\n3 1  \n4 0  \n2 2\n```\n  \n",
+    "title": "football tournament",
+    "default_testcase": {
+        "id": 7881,
+        "input": "2\n1 2\n2 1",
+        "expected_output": "2 0\n2 0\n",
+        "code_problem_id": 877,
+        "created_at": "2024-05-14T03:32:25.502Z",
+        "updated_at": "2024-05-14T03:32:25.502Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2930,
+            "code_problem_id": 877,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void calculateGames(int n, vector<pair<int, int>>& kits) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2931,
+            "code_problem_id": 877,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void calculateGames(int n, int[][] kits) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2932,
+            "code_problem_id": 877,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def calculate_games(self, n, kits):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2933,
+            "code_problem_id": 877,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    calculateGames(n, kits) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

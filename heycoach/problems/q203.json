@@ -1,0 +1,45 @@
+{
+    "id": 203,
+    "description": "Given an integer n, return the least number of perfect square numbers that sum to n.\n\nA `perfect square` is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 1, 4, 9, and 16 are perfect squares while 3 and 11 are not.\n### Example 1 \n\n### Input\n```CPP\nn=12\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\n12 = 4 + 4 + 4.\n\n\n### Example 2 \n\n### Input\n```CPP\nn=13\n``` \n### Output \n```CPP \n11\n``` \n#### Explanation:\n13 = 4 + 9.\n\n\n### Constraints:\n\n* 1 <= n <= 10^4\n\n",
+    "title": "Perfect Number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 335,
+            "code_problem_id": 203,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(int num) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 341,
+            "code_problem_id": 203,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(int n) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 347,
+            "code_problem_id": 203,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, n):\n        # your code here\n"
+        }
+    ]
+}

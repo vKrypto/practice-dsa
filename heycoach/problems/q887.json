@@ -1,0 +1,64 @@
+{
+    "id": 887,
+    "description": "Alice has an array a which contains n elements where each element is from 1 to n and are distinct. Alice just learned about Binary Search Trees and was wondering, in how many ways can she rearrange the elements of array a so that the Binary search tree that she can get from the original array remains unchanged.\n\nInput Format:\n\nThe first line contains an integer 'n' denoting the size of the array a.\n\nThe next line contains 'n' space separated integers denoting the elements of the array a.\n\nOutput Format:\n\nThe number ways array can be rearranged so that we get the original array's BST.\n\n```\nSample Input - 1\n\n5\n3 4 5 1 2\n\nSample Output - 1\n\n5\n```\n\nExplanation: The array can be rearranged in the following ways to get the same BST. \n\n[3,1,2,4,5]\n\n[3,1,4,2,5]\n\n[3,1,4,5,2]\n\n[3,4,1,2,5]\n\n[3,4,1,5,2]\n\n```\n\nSample Input - 2\n\n3\n1 2 3\n\nSample output - 2\n\n0\n```\n\nExplanation: There are no possible ways to reorder so that we get the same BST as original array.\n\n```\nConstraints:\n\n1<=n<=1000\n```",
+    "title": "Alice's BST",
+    "default_testcase": {
+        "id": 7813,
+        "input": "3\n2 1 3",
+        "expected_output": "1\n",
+        "code_problem_id": 887,
+        "created_at": "2024-05-12T07:12:50.789Z",
+        "updated_at": "2024-05-12T07:12:50.789Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2926,
+            "code_problem_id": 887,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int rearrange(vector<int> &ar){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2927,
+            "code_problem_id": 887,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int rearrange(List<Integer> ar) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2928,
+            "code_problem_id": 887,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "MOD = 10**9 + 7\n\nclass Solution:\n    def rearrange(self, ar):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2929,
+            "code_problem_id": 887,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "const MOD = 1000000007;\n\nclass Solution {\n    rearrange(ar) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

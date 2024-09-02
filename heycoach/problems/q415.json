@@ -1,0 +1,64 @@
+{
+    "id": 415,
+    "description": "In the lively town of Main Street, two HeyCoach students, Ram and Shyam, embarked on an intriguing challenge. Tasked by their mentor, they ventured onto a straight road lined with an even number of buildings. Each building held a stash of gold coins, but here's the twist \u2013 certain buildings were occupied by cunning thieves who could pilfer coins from their pockets.\n\nRam kicked off the adventure from the 0th building, while Shyam began at the (n-1)th building, both determined to maximize their gold haul. Guided by their mentor's strategy, they aimed to visit n/2 buildings, ensuring they'd eventually meet in the middle.\n\n\n- `You have to return an array of size` `n/2` `where ith index would denote who has the maximum number of coins collected at ith time.`\n\n\n- `if Ram has maximum coins answer would be 1, -1 if Shyam has maximum coins, 0 if both have same number of coins.`\n\n\n\n**Example 1**\n\n#### Input: \n```\n[1,2,-1,4,-1,1]   \n```\n#### Output: \n```\n[0,1,-1]\n```\n#### Explanation:    \nAt moment 1 Ram will have 1 coin and Shyam will have 1 coin thus the output would be 0 at zeroth index. The next moment Ram will have 2+1 coin which in total is 3 and Shyam will have -1+1=0 coin and that's why the output for the next index would be 1 (Ram has more coins than Shyam). Then at the next moment Ram will have 3-1 = 2 coins and Shyam would have 0+4=4 coins and since Shyam has more coins the output for that should be -1. They have now covered all the houses so, return the output as array which in this case is: [0 1 -1].\n\n\n**Example 2**\n\n#### Input:</br> \n```\n[1,-1]   \n```\nOutput:\n</br>\n```\n  [1]\n```\n\n\n**Example 3**\n\n#### Input:\n```\n  [2,2,2,2]   \n```\n#### Output: \n```\n[0,0]\n```\n\n\n**Constraints**\n  \n- `2 <= n <= 200000`\n\n- `n is even` \n\n- `-1e^9 <= coins[i] <= 1e^9`",
+    "title": "Coin Chase on Main Street",
+    "default_testcase": {
+        "id": 2975,
+        "input": "6\n1 2 -1 4 -1 1",
+        "expected_output": "0 1 -1 ",
+        "code_problem_id": 415,
+        "created_at": "2023-12-14T11:55:39.202Z",
+        "updated_at": "2023-12-14T11:55:39.202Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1182,
+            "code_problem_id": 415,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n  vector<int> maximizeCoins(const vector<int>& coins) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1183,
+            "code_problem_id": 415,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def maximizeCoins(self, coins):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n      "
+        },
+        {
+            "id": 1184,
+            "code_problem_id": 415,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class MaximizeCoinsSolution {\n   public ArrayList<Integer> maximizeCoins(ArrayList<Integer> coins) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n\n\n"
+        },
+        {
+            "id": 1185,
+            "code_problem_id": 415,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      maximizeCoins(coins) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

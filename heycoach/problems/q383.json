@@ -1,0 +1,64 @@
+{
+    "id": 383,
+    "description": "In the peaceful village of Melodyville, musicians are practising for an upcoming concert. Each musician is assigned a musical note represented by an integer. </br>\nThe harmony of the concert is disrupted when two musicians with adjacent notes have a \"local discordance.\" A local discordance occurs when the absolute difference between \nthe notes of two adjacent musicians are greater than or equal to the specified threshold. </br>\nYour task is to find and print all pairs of musicians that have local discordances. Write a function findLocalDiscordances that takes an array of musical notes (integers) and a\n threshold as input and prints all pairs of musicians that have local discordances.\n\n\n**`Sample Test Cases:`**\n\n**`Input:`**\n\n```\n5\n\n3 6 10 14 18\n\n4\n```\n\n**`Output: `**\n\n```\nThe index of the musicians that have local discordance.\nIn the above test case:\n\n1 2\n\n2 3\n\n3 4\n```\n\n**`Constraints:-`**\n\n- `The number of musicians (n) is between 2 and 1000.`\n- `Each musical note is an integer between 1 and 10^9.`\n- `The threshold (threshold) is a positive integer between 1 and 10^9.`",
+    "title": "Musicians of Melodyville",
+    "default_testcase": {
+        "id": 2380,
+        "input": "5\n3 6 10 14 18\n4",
+        "expected_output": "1 2\n2 3\n3 4\n",
+        "code_problem_id": 383,
+        "created_at": "2023-11-09T10:34:19.213Z",
+        "updated_at": "2023-11-09T10:34:19.213Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 905,
+            "code_problem_id": 383,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void solve(int musical_notes[], int threshold, int size) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 906,
+            "code_problem_id": 383,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "public class Main {\n    // Function to find and print pairs of indices with local discordances\n    public static void solve(int[] musical_notes, int threshold, int size) {\n      //Write your code here\n\n\n\n",
+            "skeleton_class_end": "       }\n   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 907,
+            "code_problem_id": 383,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def solve(musical_notes, threshold, size):\n\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 912,
+            "code_problem_id": 383,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    solve(musicalNotes, threshold, size) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

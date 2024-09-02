@@ -1,0 +1,64 @@
+{
+    "id": 384,
+    "description": "You are given an array of integers representing the performance scores of n participants in a coding competition. Each participant is assigned a unique score based on their performance, and no two participants have the same score. \nYour task is to calculate the total number of Special pairs in the list of scores.       \nA Special pair is defined as a pair of indices (i, j) such that i < j and scores[i] > scores[j].\n\n\n#### `Sample Input:`\n\n```\n6\n\n8 4 2 1 5 3\n```\n\n#### `Output:`      \n`10`\n\n#### `Constraints:`\n\n- `The number of participants (n): 2 \u2264 n \u2264 10^5.`\n- `The scores of participants: 1 \u2264 score[i] \u2264 10^9.`\n`For example, out of the 10 total pairs 3 possible pairs are : (8,4),(8,5),(4,3).`",
+    "title": "Special Pair of Scores",
+    "default_testcase": {
+        "id": 6056,
+        "input": "6\n8 4 2 1 5 3",
+        "expected_output": "10\n",
+        "code_problem_id": 384,
+        "created_at": "2024-03-06T05:42:33.020Z",
+        "updated_at": "2024-03-06T05:42:33.020Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 908,
+            "code_problem_id": 384,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long long inversionCount(long long arr[], long long N) {\n      //Write your code here\n        ",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 913,
+            "code_problem_id": 384,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n  inversionCount(arr,n) {\n    //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 914,
+            "code_problem_id": 384,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n     public static long inversionCount(long[] arr, int N) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 915,
+            "code_problem_id": 384,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def inversion_count(arr, n):\n      # Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 914,
+    "description": "Given the root of a binary search tree and an integer k, return true if there exist three elements in the BST such that their product is equal to k, or false otherwise.\n\n`Example 1`\n\n```\nInput:\n\nroot = [5,3,6,2,4,null,7], k = 60\n```\n\n```\nOutput: true\n\n```\n\nExplanation:\nThe three numbers 3, 4, and 5 have a product of 60.\n\n\n`Example 2`\n\n\n```\nInput:\nroot = [5,3,6,2,4,null,7], k = 28\n```\n\n```\nOutput: false\n```\n\nExplanation:\nThere are no three numbers in the BST that have a product of 28.\n\nConstraints\n\n\nThe number of nodes in the tree is in the range [1, 10^4].\n-10^4 <= Node.val <= 10^4\nroot is guaranteed to be a valid binary search tree.\n-10^5 <= k <= 10^5",
+    "title": " Three Numbers Product - Input is a BST",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3026,
+            "code_problem_id": 914,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n        bool findTarget(TreeNode* root, int k) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3034,
+            "code_problem_id": 914,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findTarget(self, root, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3035,
+            "code_problem_id": 914,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean findTarget(TreeNode root, int k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3036,
+            "code_problem_id": 914,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findTarget(root, k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

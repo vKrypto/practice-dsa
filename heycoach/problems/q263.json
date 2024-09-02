@@ -1,0 +1,64 @@
+{
+    "id": 263,
+    "description": "\nGiven an array of strings words representing an English Dictionary, return the longest word in words that can be built one character at a time by other words in words.\n\nIf there is more than one possible answer, return the longest word with the smallest lexicographical order. If there is no answer, return the empty string.\n\nNote that the word should be built from left to right with each additional character being added to the end of a previous word.</br>\nThe construction should follow these rules:\n- The word must be built from left to right.\n- Each additional character must be added to the end of the previous word.\n- If multiple words meet the criteria, return the one that is lexicographically smallest.\n- If no word meets the criteria, return an empty string.\n\n### Example 1\n\n\n\n**Input Format:**\n- The first line contains an integer `n`, the size of the list of words.\n- The next `n` lines contain strings, each representing a word in the dictionary.\n\n**Output Format:**\n- A string representing the longest word that can be built one character at a time by other words in `words`. If there is more than one possible answer, return the longest word with the smallest lexicographical order. If there is no answer, return an empty string.\n\n**Sample Input 1:**\n```\n5\nw\nwo\nwor\nworl\nworld\n```\n**Sample Output 1:**\n```\nworld\n```\n**Explanation:** The word \"world\" can be built one character at a time by \"w\", \"wo\", \"wor\", and \"worl\".\n\n**Sample Input 2:**\n```\n7\na\nbanana\napp\nappl\nap\napply\napple\n```\n**Sample Output 2:**\n```\napple\n```\n\n#### Explanation:\n\nBoth \"apply\" and \"apple\" can be built from other words in the dictionary. However, \"apple\" is lexicographically smaller than \"apply\".\n\n### Constraints:\n\n- 1 <= words.length <= 1000\n- 1 <= words[i].length <= 30\n- words[i] consists of lowercase English letters.\n",
+    "title": "LDW",
+    "default_testcase": {
+        "id": 1814,
+        "input": "14\n   yo\n   ew\n   fc\n   zrc\n   yodn\n   fcm\n   qm\n   qmo\n   fcmz\n   z\n   ewq\n   yod\n   ewqz\n   y",
+        "expected_output": "yodn",
+        "code_problem_id": 263,
+        "created_at": "2022-11-06T08:31:41.875Z",
+        "updated_at": "2022-11-06T08:31:41.875Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 409,
+            "code_problem_id": 263,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string longestWord(vector<string>& words) {\n      // write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 597,
+            "code_problem_id": 263,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def longestWord(self, words):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 598,
+            "code_problem_id": 263,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    longestWord(words) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 599,
+            "code_problem_id": 263,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String longestWord(String[] words) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

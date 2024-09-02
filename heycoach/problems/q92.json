@@ -1,0 +1,45 @@
+{
+    "id": 92,
+    "description": "Tuntun is given an integer array of unique elements, She has to make all possible subsets (the power set). She is not too good in coding so she needs help from you.\n\nThe solution set must not contain duplicate subsets. Print the solution in sorted order.\n\n#### Input Format:\n- first line contains single integer n (size of the array)\n- second line contains n unique elements.\n\n#### Output Format:\n- Print all the vectors in seperate lines.\nIf there exists n vectors then there will be n line output.\n\n#### Example:\nInput:\n3\n1 2 3\nOutput:\n\n1\n1 2\n1 2 3\n1 3\n2\n2 3\n3",
+    "title": "Unique Subsets",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 219,
+            "code_problem_id": 92,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 220,
+            "code_problem_id": 92,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr) {\n  } \n}\n\n"
+        },
+        {
+            "id": 221,
+            "code_problem_id": 92,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

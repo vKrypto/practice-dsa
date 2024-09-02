@@ -1,0 +1,57 @@
+{
+    "id": 951,
+    "description": "You are given a binary array `arr` of length `n` where each element indicates whether a level in a game is possible to clear (1) or impossible to clear (0).\nAlice and Bob are playing a game consisting of `n` levels. The rules of the game are:\n\n- If `arr[i]` == 0, the ith level is impossible for both players to clear.\n- If `arr[i]` == 1, the ith level can be cleared by both players, earning 1 point per cleared level.\n- Each player loses 1 point for each impossible level they attempt.</br>\n\nThe game proceeds as follows:\n- Alice starts by playing the levels sequentially from the 0th level.\n- After Alice decides to stop, Bob plays the remaining levels sequentially.</br>\nBoth players aim to maximize their points. Your task is to determine the minimum number of levels Alice needs to play so that she gains more points than Bob by the end of the game. If it is not possible for Alice to achieve a higher score than Bob, return -1.\n\n**Example:**</br>\n**Input:** arr = [1,1,1,1,1]</br>\n**Output:** 3</br>\n**Explanation:**\nLet's look at all the levels that Alice can play up to:\n- If Alice plays only level 0 and Bob plays the rest of the levels, Alice has 1 point, while Bob has 4 points.\n- If Alice plays till level 1 and Bob plays the rest of the levels, Alice has 2 points, while Bob has 3 points.\n- If Alice plays till level 2 and Bob plays the rest of the levels, Alice has 3 points, while Bob has 2 points.\n- If Alice plays till level 3 and Bob plays the rest of the levels, Alice has 4 points, while Bob has 1 point.</br>\nAlice must play a minimum of 3 levels to gain more points.\n",
+    "title": "Least Levels for Maximum Points",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3172,
+            "code_problem_id": 951,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int leastLevelsForMaximumPoints(vector<int>& arr) {\n",
+            "skeleton_class_end": "    }\n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3173,
+            "code_problem_id": 951,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int leastLevelsForMaximumPoints(List<Integer> arr) {\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3174,
+            "code_problem_id": 951,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    leastLevelsForMaximumPoints(arr) {\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3175,
+            "code_problem_id": 951,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def leastLevelsForMaximumPoints(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

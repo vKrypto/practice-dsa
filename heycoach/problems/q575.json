@@ -1,0 +1,64 @@
+{
+    "id": 575,
+    "description": "You are given a task to minimize the total outcome of a sum of numbers. You can perform one operation that is you can choose a number 'k' and get absolute difference of k with every individual number that forms the sum.  \n For example: suppose the numbers are (1,2,3) then you can choose a k to perform the following operation to minimize the outcome:-\n|1-x| + |2-x| +|3-x| = result. Your task is to minimize the result.\n\n**`Input format:`**\n\n`You are given an array of numbers whose sum is to be figured out.`\n\n**`Output format:`**\n\n`Output the number 'k' such that the sum can be minimized when you perform the operation discussed in the description.`\n\n**`Sample Input 1:`**\n\n```\n\n3\n\n1 2 3\n```\n\n**`Sample Output 1:`**\n\n`2`\n\n**`Constraints:`**\n\n- `1<=n<=10^5`\n\n- `1<=a[i]<=10^5`",
+    "title": "Least Outcome",
+    "default_testcase": {
+        "id": 3816,
+        "input": "2\n1 6",
+        "expected_output": "3\n",
+        "code_problem_id": 575,
+        "created_at": "2024-01-21T11:47:57.200Z",
+        "updated_at": "2024-01-21T11:47:57.200Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1711,
+            "code_problem_id": 575,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int ar[], int n){",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1712,
+            "code_problem_id": 575,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int solve(int[] arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1713,
+            "code_problem_id": 575,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1714,
+            "code_problem_id": 575,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

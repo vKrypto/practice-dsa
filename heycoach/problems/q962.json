@@ -1,0 +1,57 @@
+{
+    "id": 962,
+    "description": "People queue up for a ride at an amusement park, and VIP pass holders can skip the line.\n\nImplement a priority queue to manage the ride queue with VIP priority.\n\nExample\nInput: 4 People: [P1, VIP1, P2, VIP2]\n\nOutput: Queue: [VIP1, VIP2, P1, P2]\n\nExplanation:\nVIP pass holders are given priority in the queue.\n\nEdge Case\nInput: 2 People: [P1, P2]\n\nOutput: Queue: [P1, P2]\n\nInput Format:\n\nThe first line contains an integer n \u2014 the number of people in the queue.\n\nThe next n lines contain the names of the people, where VIP pass holders have the prefix \"VIP\".\n\nOutput Format:\n\nPrint the names of the people in the final queue, with VIPs at the front.\n\nConstraints:\n\n1 \u2264 n \u2264 10^5\n\nThe names of the people will only contain alphanumeric characters and have a maximum length of 10 characters.",
+    "title": "Amusement Park Ride Management",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3204,
+            "code_problem_id": 962,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class AmusementParkRide {\npublic:\n    vector<string> manageQueue(const vector<string>& people) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3205,
+            "code_problem_id": 962,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class AmusementParkRide:\n    def manage_queue(self, people):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3206,
+            "code_problem_id": 962,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class AmusementParkRide {\n    public List<String> manageQueue(List<String> people) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3207,
+            "code_problem_id": 962,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class AmusementParkRide {\n    manageQueue(people) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

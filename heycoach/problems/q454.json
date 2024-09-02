@@ -1,0 +1,64 @@
+{
+    "id": 454,
+    "description": " Imagine you're organizing a grand party with three different rooms for your guests. Each guest belongs to a specific group (1, 2, or 3). But things get messy! Some guests end up in the wrong rooms, and the rooms themselves are quite unorganized.\n\nYour task is to get everyone properly grouped and seated in a way that satisfies these conditions:\n* `Grouped by colour: Guests in each room, represented by their group number, should be sitting together after sorting them within the room.`\n* `Sorted in order: The entire seating arrangement, after combining all rooms, should be in ascending order.`\n* `Minimum adjustments: You can \"swap\" a guest's group assignment (change their \"ticket\") any number of times. But the goal is to use the fewest number of swaps possible to achieve the desired seating arrangement.`\n### `Input:`\n* `An array nums of length n, where each element nums[i] represents the group number (1, 2, or 3) of guest i.`\n### `Output:`\n* `An integer representing the minimum number of group swaps needed to make the final seating arrangement beautiful (sorted within and between groups).`\n### `Example Input/Output:`\n#### `Input:`\n`[2, 1, 3, 2, 1]`\n#### Output: \n`3 (Swap nums[0], nums[2], and nums[3] to group 1)`\n#### `Input:` \n`[1, 3, 2, 1, 3, 3]`\n#### Output: \n`2 (Swap nums[1] and nums[2] to group 1)`\n#### `Input:` \n`[2, 2, 2, 2, 3, 3]`\n#### `Output:` \n`0 (No swaps needed; already beautiful)`\n## `Constraints:`\n* `1 <= n <= 100`\n* `1 <= nums[i] <= 3`",
+    "title": "Group Guests",
+    "default_testcase": {
+        "id": 5647,
+        "input": "5\n2 1 3 2 1",
+        "expected_output": "3\n",
+        "code_problem_id": 454,
+        "created_at": "2024-02-16T12:39:36.873Z",
+        "updated_at": "2024-02-16T12:39:36.873Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1291,
+            "code_problem_id": 454,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1331,
+            "code_problem_id": 454,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimumOperations(self, nums):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1332,
+            "code_problem_id": 454,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      public int minimumOperations(int[] nums) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1415,
+            "code_problem_id": 454,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumOperations(nums) {\n        // Write your code here",
+            "skeleton_class_end": "     \n  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

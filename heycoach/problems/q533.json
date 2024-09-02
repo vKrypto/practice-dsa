@@ -1,0 +1,57 @@
+{
+    "id": 533,
+    "description": "Given a binary tree return the count of leaf nodes(nodes which have no children in the tree.\n\nFor example: Given the Binary Tree\n\n         1\n       /   \\\n      2       3\n     /    \n    6\n\nThe number of leaf nodes would be two which are 6 and 3.\n\nInput Format:\n\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n\nOutput Format:\n\nReturn a single integer representing the number of leaf nodes.\n\nSample input:\n1 2 3 -1 -1 -1 -1\n\nSample output:\n2\n\nConstraints:\n\n0 <= N <= 10^4\n\n0 <= data <= 10^3\n\nWhere 'N' denotes the total number of nodes and 'data' denotes the value of the node\n",
+    "title": "Leafs of Binary Tree",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1584,
+            "code_problem_id": 533,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class;\n/*\nclass Node\n{\n    public:\n      int data;\n      Node *left;\n      Node *right;\n    \n      Node (int data)\n      {\n        this->data = data;\n        this->left = NULL;\n        this->right = NULL;\n      }\n    \n      ~Node ()\n      {\n        delete right;\n        delete left;\n      }\n};*/\n\nclass Solution{\n    public:\n    int solve(Node* root){\n        //Write your code here;\n    }\n};"
+        },
+        {
+            "id": 1585,
+            "code_problem_id": 533,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class;\n/*\nclass Node {\n    public int data;\n    public Node left;\n    public Node right;\n\n    public Node(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    int solve(Node root) {\n        //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1586,
+            "code_problem_id": 533,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\"\"\"\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\"\"\"\n\nclass Solution:\n    def solve(self, root):\n      #Write your code here;"
+        },
+        {
+            "id": 1587,
+            "code_problem_id": 533,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class;\n/*\nclass TreeNode {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    solve(root) {\n        //Write your code here;\n    }\n}"
+        }
+    ]
+}

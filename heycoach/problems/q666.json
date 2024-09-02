@@ -1,0 +1,64 @@
+{
+    "id": 666,
+    "description": "You are given an n x n 2D matrix representing an picture, rotate the image by 90 degrees (clockwise).\n\nYou have to rotate the picture in-place, which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.\n\n### Example\n\ninput  &nbsp; &nbsp;  &nbsp;output <br>\n1 2 3 &nbsp;  &nbsp; &nbsp; 7 4 1<br>\n4 5 6&nbsp;=>&nbsp;8 5 2<br>\n7 8 9 &nbsp;  &nbsp; &nbsp;  9 6 3<br>\n\n\n### Constraints:\n\n- 1 <= n <= 20\n- -value of matrix[i][j] may be negative.",
+    "title": "Rotate Image",
+    "default_testcase": {
+        "id": 4405,
+        "input": "12\n711 -779 -538 -662 697 -337 36 855 -737 602 -479 -554\n-102 492 -197 908 -373 928 491 -39 -423 -647 607 42\n564 888 -743 587 -779 -706 -175 -82 714 -945 -265 -573\n-852 957 -5 -774 439 865 -20 655 -913 -94 -328 612\n-542 747 -756 -970 108 -435 -704 -346 819 677 734 445\n912 977 -736 636 -157 -108 -282 283 -356 -214 -114 -529\n-588 -310 -149 494 -186 -245 452 852 -838 56 -1 597\n727 -215 -508 613 -188 -286 -604 -684 -603 -544 830 -274\n-30 811 -250 -620 -190 -770 790 -125 865 303 -788 -524\n-650 -494 -697 353 -89 -625 -844 137 38 -66 300 163\n-400 -993 761 -557 962 -676 -73 274 -313 -113 -586 -560\n-556 106 -621 -992 47 -42 -581 962 623 -574 -600 248",
+        "expected_output": "-556 -400 -650 -30 727 -588 912 -542 -852 564 -102 711 \n106 -993 -494 811 -215 -310 977 747 957 888 492 -779 \n-621 761 -697 -250 -508 -149 -736 -756 -5 -743 -197 -538 \n-992 -557 353 -620 613 494 636 -970 -774 587 908 -662 \n47 962 -89 -190 -188 -186 -157 108 439 -779 -373 697 \n-42 -676 -625 -770 -286 -245 -108 -435 865 -706 928 -337 \n-581 -73 -844 790 -604 452 -282 -704 -20 -175 491 36 \n962 274 137 -125 -684 852 283 -346 655 -82 -39 855 \n623 -313 38 865 -603 -838 -356 819 -913 714 -423 -737 \n-574 -113 -66 303 -544 56 -214 677 -94 -945 -647 602 \n-600 -586 300 -788 830 -1 -114 734 -328 -265 607 -479 \n248 -560 163 -524 -274 597 -529 445 612 -573 42 -554 \n",
+        "code_problem_id": 666,
+        "created_at": "2024-01-27T14:02:33.393Z",
+        "updated_at": "2024-01-27T14:02:33.393Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2057,
+            "code_problem_id": 666,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\nvector<vector<int>>  rotateimage(vector<vector<int>> & matrix)\n{",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2058,
+            "code_problem_id": 666,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static List<List<Integer>> rotateImage(List<List<Integer>> matrix) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2059,
+            "code_problem_id": 666,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def rotateimage(self, matrix):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2060,
+            "code_problem_id": 666,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    rotateImage(matrix) {",
+            "skeleton_class_end": "   }\n }\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

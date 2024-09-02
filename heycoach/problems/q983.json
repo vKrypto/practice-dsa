@@ -1,0 +1,64 @@
+{
+    "id": 983,
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from letters of sequentially adjacent cells, where \"adjacent\" cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.\n\n**Input Format:**.</br>\nThe first line contains two integers m and n, representing the number of rows and columns in the board, respectively.</br>\nThe next m lines each contain n space-separated characters representing the board..</br>\nThe last line contains the string word that we need to search for in the board.\n\n**Output Format:**.</br>\nReturn true if the word exists in the board..</br>\nReturn false if the word does not exist in the board.\n\n**Example:**\n\n**Input:**\n```\n3 4\nA B C E\nS F C S\nA D E E\nABCCED\n```\nOutput:\n```\ntrue\n```\n\n**Constraints:**.</br>\nm == board.length.</br>\nn == board[i].length.</br>\n1 <= m, n <= 6.</br>\n1 <= word.length <= 15.</br>\nboard and word consists of only lowercase and uppercase English letters.\n",
+    "title": "Word Search",
+    "default_testcase": {
+        "id": 8628,
+        "input": "3 4\nA B C E\nS F C S\nA D E E\nABCCED",
+        "expected_output": "true",
+        "code_problem_id": 983,
+        "created_at": "2024-06-17T17:21:18.934Z",
+        "updated_at": "2024-06-17T17:21:18.934Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3288,
+            "code_problem_id": 983,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n    class Solution {\npublic:\n    bool exist(vector<vector<char>>& board, string word) {\n        ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3289,
+            "code_problem_id": 983,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public boolean exist(char[][] board, String word) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3290,
+            "code_problem_id": 983,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    exist(board, word) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3291,
+            "code_problem_id": 983,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def exist(self, board, word):\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

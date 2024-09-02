@@ -1,0 +1,64 @@
+{
+    "id": 288,
+    "description": "There is a tunnel which is under construction. Workers go inside in a sequence\nand come out in reverse sequence i.e., person going in will come out last. You have been\ngiven two sequences, IN and OUT. If any worker does not obey the sequence other workers\nwill be trapped. Determine if all the workers came out safely. \n\n**Sample Input:**\n\n5\n\n1 2 3 4 5\n\n5 4 3 2 1\n\n**Sample Output:**\n\n1\n \n**Constraints:**    \nsize.sequence_in = n\n\n1 <= n <= 1e5\n\n1 <= sequence_in[i], sequence_out[i] <= 1e9\n \n**Note :-**\n \nAll workers don\u2019t go inside together",
+    "title": "Tunnel",
+    "default_testcase": {
+        "id": 2586,
+        "input": "5\n1 2 3 4 5\n5 4 3 2 1",
+        "expected_output": "1\n",
+        "code_problem_id": 288,
+        "created_at": "2023-11-23T19:09:12.795Z",
+        "updated_at": "2023-11-23T19:09:12.795Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 714,
+            "code_problem_id": 288,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Tunnel {\npublic:\n    bool calculateTotalTrappedWorkers(vector<int> IN, vector<int> OUT) {\n       //Write your code here;\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 935,
+            "code_problem_id": 288,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Tunnel {\n    boolean calculateTotalTrappedWorkers(Vector<Integer> in, Vector<Integer> out) {\n       //Write your code here;\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 936,
+            "code_problem_id": 288,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Tunnel:\n    def calculate_total_trapped_workers(self, in_sequence, out_sequence):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 937,
+            "code_problem_id": 288,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Tunnel {\n    calculateTotalTrappedWorkers(inSequence, outSequence) {\n        //Write your code here and return boolean value;\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

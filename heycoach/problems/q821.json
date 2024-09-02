@@ -1,0 +1,64 @@
+{
+    "id": 821,
+    "description": "You are given a string `s`, consisting of lowercase English letters. Find the longest string, `t` which satisfies the following conditions  **1)** The length of `t` should be lesser than equal to length of s. **2)** `t`  is a **palindrome**. **3)** There exists two strings `a` and `b` (possibly empty), such that `t = a + b (\"+\" represents concatenation)`, and a is prefix of s while b is suffix of `s`.\n\n**Example**\n```\nInput : s = \"abcdfdcecba\"\n\nOutput : \u201cabcdfdcba\u201d\n\nExplanation:\n\nThe string \"abcdfdcba\" satisfies all conditions, because: \nIts length is 9, which does not exceed the length of the string s, which equals 11. \nIt is a palindrome\n\n\"abcdfdcba\" = \"abcdfdc\" + \"ba\", and \"abcdfdc\" is a prefix of s while \"ba\" is a suffix of s .\n```\n**Input Format**\n```\nA Single line containing a non-empty string s\n```\n**Output Format**\n```\nA String denoting the longest string which satisfies the conditions described above.\n```\n\n**Constraints**\n\n`1 <= s.length() <= 5000`",
+    "title": "Longest Possible Palindrome",
+    "default_testcase": {
+        "id": 7470,
+        "input": "abcdfdcecba",
+        "expected_output": "abcdfdcba\n",
+        "code_problem_id": 821,
+        "created_at": "2024-04-27T16:09:54.485Z",
+        "updated_at": "2024-04-27T16:09:54.485Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2670,
+            "code_problem_id": 821,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nstring LongestPalindrome(string &s)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2671,
+            "code_problem_id": 821,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n      String LongestPalindrome(String s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2672,
+            "code_problem_id": 821,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n    def LongestPalindrome(self, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2675,
+            "code_problem_id": 821,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  longestPalindrome(s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

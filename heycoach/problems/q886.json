@@ -1,0 +1,21 @@
+{
+    "id": 886,
+    "description": "Ajay and Vijay are playing a game with 'n' piles of stone. Each player in their turn can pick at most those number of stones which are equal to the size of smallest pile of stone and then reduce that number of stones from every pile. Ajay starts first and the first player which cannot make a move would lose the game.\n\nPrint the name of the winner, if  Ajay wins, print \"Ajay\" else print \"Vijay\".\n\nInput Format:\n\nThe first line contains an integer 'n' denoting the umber of piles of stones.\n\nThe second line contains 'n' space separated integers denoting the size of each pile of stone (number of stones in each pile)\n\nOutput Format:\n\nPrint the name of the winner of the game.\n\n```\nSample Input - 1:\n\n3\n2 7 3\n\nSample Output - 1:\n\nAjay\n```\n\nExplanation: Ajay plays first and he can pick at most 2 number of stones (since that is the smallest pile present). Then the pile of stone would look like this - [0, 5, 1]. Now Vijay plays and he can only choose 1 (note that the player cannot choose 0), so the stones now look like this - [0,4,0]. It's Ajay's turn now and he can choose 4 and make the whole pile empty. Now it's Vijay's turn and he has nothing to choose thus he loses the game.\n\n```\nSample Input - 2:\n\n2\n1 7\n\nSample Output - 2:\n\nVijay\n```\n\nExplanation: Ajay plays first and has only one option that is to choose 1. After that Vijay chooses 6 and makes the pile empty leaving Ajay as the loser of the game.\n\n```\nConstraints:\n\n1 <= n <= 10^5\n1 <= a[i] <= 10^6\n```",
+    "title": "Pile of stone",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2943,
+            "code_problem_id": 886,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int n, int ar[]){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

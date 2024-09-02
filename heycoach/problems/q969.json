@@ -1,0 +1,64 @@
+{
+    "id": 969,
+    "description": "A genetic sequence can be represented by an 8-character long string, with choices from 'A', 'C', 'G', and 'T'.\n\nSuppose we need to investigate a mutation from a genetic sequence startSequence to a genetic sequence endSequence where one mutation is defined as one single character change in the genetic sequence.\n\nFor example, \"AACCGGTT\" --> \"AACCGGTA\" is one mutation.\nThere is also a gene bank validGenes that records all the valid genetic mutations. A genetic sequence must be in validGenes to be considered a valid mutation.\n\nGiven the two genetic sequences startSequence and endSequence and the gene bank validGenes, return the minimum number of mutations needed to mutate from startSequence to endSequence. If there is no such mutation, return -1.\n\nNote that the starting point is assumed to be valid, so it might not be included in validGenes.\n\nExample 1:\n\nInput:\n\nstartSequence = \"AACCGGTT\"\nendSequence = \"AACCGGTA\"\nEnter the number of valid Genes : 1\nvalidGenes = [\"AACCGGTA\"]\nOutput: 1\n\nExample 2:\n\nInput:\n\nstartSequence = \"AACCGGTT\"\nendSequence = \"AAACGGTA\"\nEnter the number of valid Genes : 3\nvalidGenes = [\"AACCGGTA\", \"AACCGCTA\", \"AAACGGTA\"]\nOutput: 2\n\nConstraints:\n\n0 <= validGenes.length <= 10\n\nstartSequence.length == endSequence.length == validGenes[i].length == 8\n\nstartSequence, endSequence, and validGenes[i] consist of only the characters ['A', 'C', 'G', 'T'].",
+    "title": "Minimum Mutations in Genetic Sequence",
+    "default_testcase": {
+        "id": 8468,
+        "input": "AACCGGTT \nAACCGGTA \n1\nAACCGGTC",
+        "expected_output": "-1\n",
+        "code_problem_id": 969,
+        "created_at": "2024-05-30T09:14:57.844Z",
+        "updated_at": "2024-05-30T09:14:57.844Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3232,
+            "code_problem_id": 969,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int minMutation(string start, string end, vector<string>& bank) {\n        ",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3233,
+            "code_problem_id": 969,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minMutation(String start, String end, List<String> bank) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3234,
+            "code_problem_id": 969,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minMutation(self, start: str, end: str, bank: list) -> int:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3235,
+            "code_problem_id": 969,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minMutation(start, end, bank) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

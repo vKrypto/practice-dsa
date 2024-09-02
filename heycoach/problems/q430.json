@@ -1,0 +1,64 @@
+{
+    "id": 430,
+    "description": "\nYou are given an integer `n`. Your task is to simulate the execution of a series of nested loops, where the innermost loop calls a `print()` function. You need to determine the total number of times the `print()` function is executed based on the value of `n`.\n\n### Input Format:\n- A single integer `n`.\n\n### Output Format:\n- A single integer representing the number of times the `print()` function was called.\n### `Outer Loop (i-loop): `    \n                                                                                                            \n#### `Initializer:`\n`int i = 0, Endpoint: i < n , Increment: i++`\n\n### `First Inner Loop (j-loop):`                                                                                                                        \n\n#### `Initializer:`\n` int j = i , Endpoint: j >= 0, Decrement: j--`\n\n### `Second Inner Loop (k-loop):  ` \n#### `Initializer:`\n` int k = i, Endpoint: k >= i - 1, Decrement: k--`\n\n`During each iteration of the 'k-loop', a function 'print()' is called, which takes constant time O(1) to execute.`\n\n#### Nested Loops Explanation:\n1. **Outer Loop (i-loop)**: Runs from `0` to `n-1`.\n2. **First Inner Loop (j-loop)**: Starts at `i` and decrements until `0`.\n3. **Second Inner Loop (k-loop)**: Starts at `i` and decrements until `i-1` (runs exactly 2 times for each `j`).\n\n#### Sample Input:\n```\n3\n```\n\n#### Sample Output:\n```\n12\n```\n\n#### Explanation:\n- When `n = 3`, the loops execute as follows:\n  - For `i = 0`: `j-loop` runs 1 time, and each time `k-loop` runs 2 times (total `2`).\n  - For `i = 1`: `j-loop` runs 2 times, and each time `k-loop` runs 2 times (total `4`).\n  - For `i = 2`: `j-loop` runs 3 times, and each time `k-loop` runs 2 times (total `6`).\n  - Summing up: `2 + 4 + 6 = 12` (error in previous manual calculation, it should be 12).\n#### Sample Input:\n```\n5\n```\n\n#### Sample Output:\n```\n30\n```\n\n#### Explanation:\nFor `n = 5`, let's analyze the execution:\n1. **Outer Loop (i-loop)**: Iterates from `0` to `4` (since `n = 5`).\n2. **First Inner Loop (j-loop)**: Starts at `i` and decrements down to `0`.\n3. **Second Inner Loop (k-loop)**: Starts at `i` and decrements to `i-1`. This loop will always execute exactly 2 times for each iteration of the `j-loop`.\n\n#### Breakdown by Iterations:\n- **When `i = 0`**:\n  - `j` iterates from `0` to `0` (1 time).\n  - For each `j`, `k` iterates from `0` to `-1` (2 times).\n  - Total for `i = 0`: 1x2= 2 calls to `print()`.\n\n- **When `i = 1`**:\n  - `j` iterates from `1` to `0` (2 times).\n  - For each `j`, `k` iterates from `1` to `0` (2 times).\n  - Total for `i = 1`: 2 x 2= 4 calls to `print()`.\n\n- **When `i = 2`**:\n  - `j` iterates from `2` to `0` (3 times).\n  - For each `j`, `k` iterates from `2` to `1` (2 times).\n  - Total for `i = 2`: 3*2 = 6 calls to `print()`.\n\n- **When `i = 3`**:\n  - `j` iterates from `3` to `0` (4 times).\n  - For each `j`, `k` iterates from `3` to `2` (2 times).\n  - Total for `i = 3`: 4*2 = 8 calls to `print()`.\n\n- **When `i = 4`**:\n  - `j` iterates from `4` to `0` (5 times).\n  - For each `j`, `k` iterates from `4` to `3` (2 times).\n  - Total for `i = 4`: 5*2 = 10 calls to `print()`.\n\n#### Calculation for `n = 5`:\nAdding all these together:\n- 2 + 4 + 6 + 8 + 10 = 30\n\nTherefore, when the input `n` is `5`, the `print()` function is called a total of **30 times**.\n",
+    "title": "Time Complexity - 1",
+    "default_testcase": {
+        "id": 2954,
+        "input": "5",
+        "expected_output": "30\n",
+        "code_problem_id": 430,
+        "created_at": "2023-12-13T23:20:26.251Z",
+        "updated_at": "2023-12-13T23:20:26.251Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1170,
+            "code_problem_id": 430,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int cnt=0;\n    void print(){\n        cnt++;\n        return;\n      //Do not change this code;\n    }\n    void solve(int n){\n        //Write your code here;\n",
+            "skeleton_class_end": "                }\n            }\n        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1171,
+            "code_problem_id": 430,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int cnt = 0;\n\n    public void print() {\n        cnt++;\n    }\n\n    public void solve(int n) {\n        //Write your code here;\n  ",
+            "skeleton_class_end": "                }\n            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1172,
+            "code_problem_id": 430,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):\n        self.cnt = 0\n\n    def print(self):\n        self.cnt += 1\n\n    def solve(self, n):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1173,
+            "code_problem_id": 430,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.cnt = 0;\n    }\n\n    print() {\n        this.cnt++;\n    }\n\n    solve(n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

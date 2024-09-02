@@ -1,0 +1,64 @@
+{
+    "id": 697,
+    "description": "\nYou are given the root of a binary tree with n nodes where each node in the tree has node.val coins. There are n coins in total throughout the whole tree.\n\nIn one move, we may choose two adjacent nodes and move one coin from one node to another. A move may be from parent to child, or from child to parent.\n\nReturn the `minimum` number of moves required to make every node have `exactly` one coin.\n\n### Example 1\n\n![Image](https://assets.leetcode.com/uploads/2019/01/18/tree1.png)\n\n### Input\n\n```CPP\nroot = [3,0,0]\n```\n\n### Output\n\n```CPP\n2\n```\n\n#### Explanation:\n```\nFrom the root of the tree, we move one coin to its left child, and one coin to its right child.\n```\n\n### Example 2\n\n![Image](https://assets.leetcode.com/uploads/2019/01/18/tree2.png)\n\n### Input\n\n```CPP\nroot = [0,3,0]\n```\n\n### Output\n\n```CPP\n3\n```\n\n#### Explanation:\n```\nFrom the left child of the root, we move two coins to the root [taking two moves]. Then, we move one coin from the root of the tree to the right child.\n```\n### Input Format\n\n```\nA TreeNode, Containg  all nodes in the tree.\n```\n\n### Output Format\n\n```\nAn Integer, denoting minimum number of moves\n```\n\n### Constraints:\n\n` The number of nodes in the tree is n`\n\n`1 <= n <= 100`\n\n`0 <= Node.val <= n`\n\n`The sum of all Node.val is n`",
+    "title": "Coin Problem",
+    "default_testcase": {
+        "id": 4577,
+        "input": "10 1 2 3 4 0 0 0 0 0 0",
+        "expected_output": "9\n",
+        "code_problem_id": 697,
+        "created_at": "2024-01-28T05:14:11.666Z",
+        "updated_at": "2024-01-28T05:14:11.666Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2187,
+            "code_problem_id": 697,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "struct Node {\n\tint key;\n\tNode *left, *right;\n};\nclass Solution\n{\n    public:\n",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2188,
+            "code_problem_id": 697,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Node {\n    int data;\n    Node left;\n    Node right;\n    Node(int data) {\n        this.data = data;\n        left = null;\n        right = null;\n    }\n} \nclass Solution\n{\n    \n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2189,
+            "code_problem_id": 697,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Node:\n    def __init__(self, val):\n        self.right = None\n        self.data = val\n        self.left = None\n\nclass Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2190,
+            "code_problem_id": 697,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Node\n{\n    constructor(x){\n        this.key=x;\n        this.left=null;\n        this.right=null;\n    }\n}\nclass Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

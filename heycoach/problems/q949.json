@@ -1,0 +1,64 @@
+{
+    "id": 949,
+    "description": "Evacuation routes in a building are represented as a linked list. Each node represents a room and has a pointer to the next room in the sequence and possibly a shortcut to another room. Your task is to find the shortest path to the exit using Breadth-First Search (BFS).\n\nExample 1:\n\nInput:\n\nEnter the number of rooms: 4\nEnter the number of shortcuts: 1\nEnter shortcut from room to room (format: from to): 2 4\n\nOutput:\n\nShortest path: 1 2 4\n\nExplanation:\n\nThe rooms are connected as: 1 -> 2 -> 3 -> 4\nThere is a shortcut from room 2 to room 4.\nThe shortest path to the exit is [1, 2, 4] by taking the shortcut from room 2 to room 4.\n\nInput Format:\n\nThe first line contains an integer n \u2014 the number of rooms.\nThe second line contains an integer s \u2014 the number of shortcuts.\nThe next s lines each contain two integers from and to \u2014 indicating a shortcut from room from to room to.\n\nOutput Format:\n\nPrint a single line containing the shortest path from room 1 to the last room in the form of space-separated room IDs.\n\nConstraints:\n\n1 <= n <= 10^5\n\n0 <= s <= 10^5\n\n1 <= from, to <= n",
+    "title": "Emergency Evacuation Plan",
+    "default_testcase": {
+        "id": 8322,
+        "input": "4\n1\n4 2",
+        "expected_output": "\n",
+        "code_problem_id": 949,
+        "created_at": "2024-05-25T11:31:44.041Z",
+        "updated_at": "2024-05-25T11:31:44.041Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3164,
+            "code_problem_id": 949,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nstruct Room {\n    int id;\n    Room* next;\n    Room* shortcut;\n    \n    Room(int id) : id(id), next(nullptr), shortcut(nullptr) {}\n};\n\nclass Solution {\npublic:\n    vector<int> findShortestPath(Room* start) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3165,
+            "code_problem_id": 949,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Room:\n    def __init__(self, id):\n        self.id = id\n        self.next = None\n        self.shortcut = None\n\nclass Solution:\n    def find_shortest_path(self, start):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3166,
+            "code_problem_id": 949,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Room {\n    int id;\n    Room next;\n    Room shortcut;\n\n    Room(int id) {\n        this.id = id;\n        this.next = null;\n        this.shortcut = null;\n    }\n}\n\nclass EvacuationPlan {\n    public static List<Integer> findShortestPath(Room start) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3167,
+            "code_problem_id": 949,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Room {\n    constructor(id) {\n        this.id = id;\n        this.next = null;\n        this.shortcut = null;\n    }\n}\n\nclass EvacuationPlan {\n    findShortestPath(start) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

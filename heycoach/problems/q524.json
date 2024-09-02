@@ -1,0 +1,64 @@
+{
+    "id": 524,
+    "description": "Given an array of integers nums, find the maximum XOR of any two elements.\n\nA Trie (pronounced \"try\") is a tree-like data structure that is used to efficiently store a dynamic set of strings over an alphabet. In this problem, you are required to implement a Trie and use it to find the maximum XOR of any two numbers in the given array.\n\n**Input**:</br>\n**nums**:  A list of integers where each element is between 0 and 2^31 - 1.</br>\n\n**Output**:</br>\nReturn an integer representing the maximum XOR of any two elements in the array.\n\n**Examples**:</br>\n\n**Example 1:**</br>\n**Input**:\n```\n nums = [3,10,5,25,2,8]\n```\n**Output**:\n``` \n28\n```\n**Explanation**:</br>\n The maximum result is 5 XOR 25 = 28.</br>\n\n**Example 2:**</br>\n**Input**: \n```\nnums = [14,70,53,83,49,91,36,80,92,51,66,70]\n```\n**Output**:\n```\n 127\n```\n**Constraints**:</br>\n1 <= nums.length <= 2 * 105</br>\n0 <= nums[i] <= 231 - 1",
+    "title": "Maximum XOR of Two Numbers in an Array",
+    "default_testcase": {
+        "id": 3498,
+        "input": "6\n3 10 5 25 2 8",
+        "expected_output": "28\n",
+        "code_problem_id": 524,
+        "created_at": "2024-01-05T13:47:07.032Z",
+        "updated_at": "2024-01-05T13:47:07.032Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1545,
+            "code_problem_id": 524,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n    int findMaximumXOR(std::vector<int>& nums) {\n\n    }\n};\n\n"
+        },
+        {
+            "id": 1547,
+            "code_problem_id": 524,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n class Solution {\n    public int findMaximumXOR(int[] nums) {\n        \n    }\n}\n"
+        },
+        {
+            "id": 1548,
+            "code_problem_id": 524,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    findMaximumXOR(nums) {\n       \n    }\n}\n\n"
+        },
+        {
+            "id": 1549,
+            "code_problem_id": 524,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def find_maximum_xor(self, nums):\n       \n"
+        }
+    ]
+}

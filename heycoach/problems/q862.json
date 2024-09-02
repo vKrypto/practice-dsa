@@ -1,0 +1,64 @@
+{
+    "id": 862,
+    "description": "Given a binary string, calculate the minimum number of '1's in any valid binary string that satisfies a pattern derived from every possible substring of the given binary string. A substring satisfies its pattern if, for every character in the pattern, there exists a substring in which this character is the most frequently occurring character.\n\n#### Input Format:\n\n1. The first line contains an integer `t` (1 \u2264 t \u2264 500) \u2014 the number of test cases.\n2. Each test case starts with a line containing an integer `n` (1 \u2264 n \u2264 100) \u2014 the length of the binary string `s`.\n3. The following line contains the binary string `s` of length `n`, consisting only of characters '0' and '1'.\n\n#### Output Format:\n\nFor each test case, output a single integer \u2014 the sum of minimum counts of '1's needed for all substrings of `s`.\n\n#### Example:\n\n#### Input:\n```\n4\n1\n1\n2\n10\n5\n00000\n20\n11110110000000111111\n```\n\n#### Output:\n```\n1\n2\n0\n718\n```\n\n#### Explanation:\n\n- **First Test Case**: The only substring is \"1\", which is self-satisfying with no '0's and one '1'. Thus, `f(1) = 1`.\n  \n- **Second Test Case**: For the string \"10\", possible substrings include \"1\", \"0\", and \"10\".\n  - `f(1) = 1` as it is self-satisfying.\n  - `f(0) = 0` as it is self-satisfying.\n  - `f(10)` requires a p-good string like \"01\" or \"10\", both needing one '1'. Thus, `f(10) = 1`.\n  - Total: `1 + 1 + 0 = 2`.\n  \n- **Third Test Case**: The string \"00000\" yields only substrings with '0's. Since '1' never occurs, `f(p) = 0` for all substrings.\n\n- **Fourth Test Case**: The string \"11110110000000111111\" contains multiple substrings. Calculating `f(p)` for each yields a total of 718.\n",
+    "title": "Minimum Ones in Substring Patterns",
+    "default_testcase": {
+        "id": 7925,
+        "input": "4\n1\n1\n2\n10\n5\n00000\n20\n11110110000000111111",
+        "expected_output": "1\n2\n0\n718\n",
+        "code_problem_id": 862,
+        "created_at": "2024-05-14T14:08:26.613Z",
+        "updated_at": "2024-05-14T14:08:26.613Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2902,
+            "code_problem_id": 862,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int minimumOnes(string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2903,
+            "code_problem_id": 862,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minimumOnes(String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2904,
+            "code_problem_id": 862,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimum_ones(self, s):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2905,
+            "code_problem_id": 862,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumOnes(s) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

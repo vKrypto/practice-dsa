@@ -1,0 +1,33 @@
+{
+    "id": 274,
+    "description": "Given an integer array a[ ] of length n, you want to create an array res of length 2n \nwhere x res[i] == a[i] and res[i + n] == a[n-i-1] for 0 <= i < n (0-indexed).\n\nHint: res[ ] array is the concatenation of a[ ] and reverse of a[ ].        \n\n### **Example 1**\n\nInput \n```\na = [1, 2, 3]\n\n```\nOutput\n```\n [1, 2, 3, 3, 2, 1]\n```\n\n### **Example 2**\n\nInput \n```\na = [-1, -2, -3]\n\n```\nOutput\n```\n [-1, -2, -3, -3, -2, -1]\n```\n\n### Constraints:\n\n1 <= n <= 1000\n\n-1000 <= nums[i] <= 1000\"",
+    "title": "REVERSEARRAY",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 686,
+            "code_problem_id": 274,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 875,
+            "code_problem_id": 274,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public static int maxScoreSubstring(String s, int d) {\n   \n    }\n}\n"
+        }
+    ]
+}

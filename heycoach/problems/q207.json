@@ -1,0 +1,64 @@
+{
+    "id": 207,
+    "description": "Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.\n\nThe next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.\n\n### Example 1 \n\n### Input\n```CPP\nnums = [1,2,1]\n``` \n### Output \n```CPP \n[2,-1,2]\n``` \n### Explanation \nThe first 1's next greater number is 2; \nThe number 2 can't find next greater number. \nThe second 1's next greater number needs to search circularly, which is also 2.\n\n\n### Example 2 \n\n### Input\n```CPP\nnums = [1,2,3,4,3]\n``` \n### Output \n```CPP \n[2,3,4,-1,4]\n``` \n### Input Format\n```\nGiven a array nums of n element\n```\n### Output Format\n```\nOutput the array containing next greater element of every element if there is no next greater element output -1 on that position\n```\n### Constraints\n```\n1 <= nums.size()<= 1e5\n1 <= nums[i]<= 1e6\n```",
+    "title": "Next Greater Element",
+    "default_testcase": {
+        "id": 1483,
+        "input": "16\n0\n0\n0\n0\n0\n0\n2\n1\n2\n3\n0\n4\n5\n1\n0\n0\n",
+        "expected_output": "2 2 2 2 2 2 3 2 3 4 4 5 -1 2 2 2 ",
+        "code_problem_id": 207,
+        "created_at": "2022-10-29T18:54:10.785Z",
+        "updated_at": "2022-10-29T18:54:10.785Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 525,
+            "code_problem_id": 207,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n vector < int > nextGreaterElements(vector < int > & n) {\n   //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 648,
+            "code_problem_id": 207,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\npublic int[] nextGreaterElements(int[] nums) {\n  //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 650,
+            "code_problem_id": 207,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def nextGreaterElements(self, nums):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 651,
+            "code_problem_id": 207,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    nextGreaterElements(n) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

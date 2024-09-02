@@ -1,0 +1,64 @@
+{
+    "id": 837,
+    "description": "\nPintu is a football enthusiast and often sketches the positions of players during a match for analysis. He represents the players' positions using a binary string where '0' denotes players from one team and '1' denotes players from the opposing team. A situation in the match is deemed \"dangerous\" if seven or more consecutive players from the same team are noted in his sketch.\n\nGiven a string representation of players' positions, your task is to determine whether the situation depicted is dangerous.\n\n**Input format:**\n```\nThe input contains a single non-empty string of characters '0' and '1', each character representing a player from one of the two teams. The string will have a maximum length of 100 characters.\n```\n**Outpu formatt:**\n```\nPrint \"YES\" if the given situation is dangerous (i.e., if there are seven or more consecutive '0's or '1's in the string). Otherwise, print \"NO\".\n```\n**Examples:**\n\n#### `Input:`\n```\n001001\n```\n#### `Output:`\n```\nNO\n```\n\n#### `Input:`\n```\n1000000001\n```\n#### `Output:`\n```\nYES\n```\n\n**Explanation:**\n\n`In the first example, the longest sequence of consecutive players from the same team is three ('000'), which is not dangerous. In the second example, there is a sequence of nine consecutive '0's, which makes the situation dangerous.`",
+    "title": "Dangerous Football Situation",
+    "default_testcase": {
+        "id": 7780,
+        "input": "001001",
+        "expected_output": "NO\n",
+        "code_problem_id": 837,
+        "created_at": "2024-05-08T07:34:35.121Z",
+        "updated_at": "2024-05-08T07:34:35.121Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2898,
+            "code_problem_id": 837,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string isDangerous(string positions) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2899,
+            "code_problem_id": 837,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String isDangerous(String positions) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2900,
+            "code_problem_id": 837,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def is_dangerous(self, positions):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2901,
+            "code_problem_id": 837,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    isDangerous(positions) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

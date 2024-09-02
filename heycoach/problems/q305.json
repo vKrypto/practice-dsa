@@ -1,0 +1,28 @@
+{
+    "id": 305,
+    "description": "Given a queue of integers and Q queries. The task is to perform operations on queue according to the query. \n\nQueries are as:\n\ni x : (adds element x in the queue from rear).\n\nr : (Removes the front element of queue).\n\nh : (Returns the front element).\n\nf y : (check if the element y is present or not in the queue). Return \"Yes\" if present, else \"No\".\n",
+    "title": "Queue Operations",
+    "default_testcase": {
+        "id": 2028,
+        "input": "1\n6\ni 2 i 4 i 3 i 5 h f 8",
+        "expected_output": "2\nNo\n",
+        "code_problem_id": 305,
+        "created_at": "2023-09-17T15:50:25.396Z",
+        "updated_at": "2023-09-17T15:50:25.396Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 753,
+            "code_problem_id": 305,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    void enqueue(queue<int> &q,int x)\n    {\n      \n    }\n     \n    //Function to remove front element from queue.\n    void dequeue(queue<int> &q)\n    {\n       \n    }\n    \n    //Function to find the front element of queue.\n    int front(queue<int> &q)\n    {\n       \n    }\n    \n    //Function to find an element in the queue.\n    string find(queue<int> q, int x)\n    {\n        \n    }\n};\n"
+        }
+    ]
+}

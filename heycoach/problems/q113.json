@@ -1,0 +1,45 @@
+{
+    "id": 113,
+    "description": "You are given a 0-indexed integer array nums of even length consisting of an `equal` number of positive and negative integers.\nYou should rearrange the elements of nums such that the modified array follows the given conditions:\n\n1. Every `consecutive pair` of integers have `opposite` signs.\n2. For all integers with the same sign, the order in which they were present in nums is preserved.\n3. The rearranged array begins with a positive integer.\nReturn the modified array after rearranging the elements to satisfy the aforementioned conditions.\n\n### Example 1 \n\n### Input\n```CPP\nnums = [3,1,-2,-5,2,-4]\n``` \n### Output \n```CPP \n[3,-2,1,-5,2,-4]\n``` \n#### Explanation:\nThe positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].\nThe only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].\nOther ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions. \n\n\n\n\n### Example 2 \n\n### Input\n```CPP\n[-1,1]\n``` \n### Output \n```CPP \n[1,-1]\n``` \n#### Explanation:\n1 is the only positive integer and -1 the only negative integer in nums.\nSo nums is rearranged to [1,-1]. \n\n\n",
+    "title": "Alternative Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 387,
+            "code_problem_id": 113,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 394,
+            "code_problem_id": 113,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 401,
+            "code_problem_id": 113,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

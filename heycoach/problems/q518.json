@@ -1,0 +1,64 @@
+{
+    "id": 518,
+    "description": "You are given two arrays a1,a2,\u2026,an and b1,b2,\u2026,bn.  In one operation, you can choose any integer i from 1 to n\nand swap the numbers a (ith) and b (ith).\n\n```\nDetermine whether, after using any (possibly zero) number of operations, the following two conditions can be satisfied simultaneously:\n1.  a(nth) = max(a1,a2,\u2026,an)\n2. b(nth) = max(b1,b2,\u2026,bn)\n```\n\n`Here max(c1,c2,\u2026,ck) denotes the maximum number among c1,c2,\u2026,ck. For example, max(3,5,4)=5, max(1,7,7)=7, max(6,2)=6`\n\n**`Input Format:`**\n\n```\n1. The first line contains an integer 'n' denoting the length of arrays.\n2. The second line contains the elements of array 'a'.\n3. The third line contains the elements of array 'b'.\n```\n\n**`Output Format:`**  \n`If the above conditions can be met, print \"YES\" else print \"NO\".`\n\n**`Sample Input:`**\n\n```\n\n3\n\n7 9 7\n\n7 6 9\n\n```\n\n**`Sample Output:`**\n\n`\"YES\"`\n\n**` Explanation:`** `You can swap the numbers a3 and b3 after which the array a becomes equal to [7,9,9] and the array b becomes equal to [7,6,7] and both conditions are met.`\n\n**`Constraints:`**\n\n- `1\u2264n\u2264100`\n\n- `1\u2264ai\u226410^4`\n\n- `1\u2264bi\u2264100^4`",
+    "title": "Swap to Max",
+    "default_testcase": {
+        "id": 5613,
+        "input": "3\n7 9 7\n7 6 9",
+        "expected_output": "YES\n",
+        "code_problem_id": 518,
+        "created_at": "2024-02-16T07:51:31.919Z",
+        "updated_at": "2024-02-16T07:51:31.919Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1536,
+            "code_problem_id": 518,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, a, b) {\n  //Write your code here;\n      ",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1537,
+            "code_problem_id": 518,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    void solve(int n, int[] a, int[] b) {\n       //Write your code here;\n      ",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1538,
+            "code_problem_id": 518,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, a, b):\n    #Write your code here\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1539,
+            "code_problem_id": 518,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void solve(int n, vector<int>& a, vector<int>& b) {\n      //Write your code here",
+            "skeleton_class_end": "      }\n    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

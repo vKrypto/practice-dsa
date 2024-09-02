@@ -1,0 +1,8 @@
+{
+    "id": 893,
+    "description": "\nA string qualifies as a 'happy prefix' if it is a non-empty prefix that also functions as a suffix, but it cannot be the entire string itself. For a given string `s`, determine the longest such happy prefix. Return an empty string if no suitable prefix exists.\n\n#### `Input Format:`\n- `One line containing a string` `s`, `where` `1 <= s.length <= 100000`. `The string `s` is composed only of lowercase English letters.`\n\n#### `Output Format:`\n- `One line that returns the longest happy prefix for the string `s`. If no such prefix is found, return an empty string.`\n\n#### `Example 1:`\n#### `Input:`\n`s = \"abacabad\"`\n #### Output:\n `aba`\n#### Explanation:\n`The string \"abacabad\" has the prefixes (\"a\", \"ab\", \"aba\", \"abac\", \"abaca\", \"abacab\", \"abacaba\") and suffixes (\"d\", \"ad\", \"bad\", \"abad\", \"cabad\", \"acabad\", \"bacabad\"). The longest prefix that is also a suffix is \"aba\".`\n\n#### `Example 2:`\n#### Input: \n`s = \"banana\"`\n#### Output:\n `ana`\n#### `Explanation:\n- `\"banana\" has the prefixes (\"b\", \"ba\", \"ban\", \"bana\", \"banan\") and suffixes (\"a\", \"na\", \"ana\", \"nana\", \"anana\"). The longest prefix which is also a suffix is \"ana\".`\n",
+    "title": "Maximum Overlapping Prefix-Suffix",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

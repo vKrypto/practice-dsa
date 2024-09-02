@@ -1,0 +1,64 @@
+{
+    "id": 551,
+    "description": "Let's denote as popcount(x) the number of bits set ('1' bits) in the binary representation of the non-negative integer x.\n\nYou are given multiple queries consisting of pairs of integers l and r. For each query, find the x, such that l\u2009\u2264\u2009x\u2009\u2264\u2009r, and popcount(x)  is maximum possible. If there are multiple such numbers find the smallest of them.\n\n**Input**</br>\n\n```\nThe first line contains integer n \u2014 the number of queries (1\u2009\u2264\u2009n\u2009\u2264\u200910000).\n\nEach of the following n lines contains two integers li,\u2009ri \u2014 the arguments for the corresponding query (0\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u200910^18).\n```\n\n**Output**</br>\n`For each query print the answer in a separate line.`\n\n**input**\n```\n3\n1 2\n2 4\n1 10\n```\n\n**output**\n```\n1\n3\n7\n```\n**Explaination**:</br>\n\n```\n- For the first query (1, 2), the binary representations of 1 and 2 are '1' and '10' respectively. The maximum popcount is achieved by setting the leftmost unset bit in 1, resulting in x=1.\n- For the second query (2, 4), the binary representations of 2, 3, and 4 are '10', '11', and '100' respectively. The maximum popcount is achieved by setting the rightmost unset bit in 3, resulting in x=3.\n- For the third query (1, 10), the binary representations of 7, 8, and 9 are '111', '1000', and '1001' respectively. The maximum popcount is achieved by setting the rightmost unset bit in 7, resulting in x=7.\n\n```",
+    "title": "Maximizing Popcount in a Rang",
+    "default_testcase": {
+        "id": 3661,
+        "input": "3\n1 2\n2 4\n1 11",
+        "expected_output": "1\n3\n7\n",
+        "code_problem_id": 551,
+        "created_at": "2024-01-09T17:46:24.842Z",
+        "updated_at": "2024-01-09T17:46:24.842Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1649,
+            "code_problem_id": 551,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class PopcountMaximizer {\npublic:\n    ll maximizePopcount(ll l, ll r) {\n       \n    }\n};"
+        },
+        {
+            "id": 1650,
+            "code_problem_id": 551,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass PopcountMaximizer {\n    public long maximizePopcount(long l, long r) {\n       \n    }\n}\n\n"
+        },
+        {
+            "id": 1651,
+            "code_problem_id": 551,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class PopcountMaximizer:\n    def maximize_popcount(self, l, r):\n       "
+        },
+        {
+            "id": 1652,
+            "code_problem_id": 551,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class PopcountMaximizer {\n    maximizePopcount(l, r) {\n       \n    }\n}\n\n"
+        }
+    ]
+}

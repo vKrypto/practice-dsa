@@ -1,0 +1,40 @@
+{
+    "id": 553,
+    "description": "You are in a magical world with a list of consecutive integers from 1 to n, sorted in increasing order. In this world, you play a special game following these rules:\n\nStarting from the left end of the list, you remove the first number and then every other number afterward until you reach the end of the list.\n\nAfter reaching the end or if only one number remains, you repeat the process from right to left, removing the rightmost number and every other number from the remaining list.\n\nYou keep alternating between left to right and right to left, removing numbers until only one number remains.\n\nYour task is to find the last remaining number in the list after following this process.\n\nWrite a function lastRemaining that takes an integer n as input and returns the last remaining number in the list after playing this game with the numbers from 1 to n.\n\n### Input Format:\n\n`An integer n (1 \u2264 n \u2264 10^9), representing the length of the list.`\n\n### Output Format:\n\n```\nAn integer, the last remaining number in the list.\nConstraints:\n```\n\nThe input integer n will always be a positive integer.\n###    Sample Input and Output \n \n#### Sample Input 1\n\n```\n6\n```\n#### Sample Output 1\n```\n4\n```\n#### Sample Input 2\n\n```\n15\n```\n#### Sample Output 2\n```\n8\n```\n\n### Constraints:\n`1 \u2264 n \u2264 10^9`",
+    "title": "Magical World",
+    "default_testcase": {
+        "id": 3673,
+        "input": "1245661",
+        "expected_output": "480734\n",
+        "code_problem_id": 553,
+        "created_at": "2024-01-10T14:12:36.627Z",
+        "updated_at": "2024-01-10T14:12:36.627Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1658,
+            "code_problem_id": 553,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "public class Main {\n    public static int lastRemaining(int n) {\n\n    }\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        int result = lastRemaining(n);\n        System.out.println(result);\n    }\n}\n\n"
+        },
+        {
+            "id": 1659,
+            "code_problem_id": 553,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def last_remaining(n):"
+        }
+    ]
+}

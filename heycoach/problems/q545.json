@@ -1,0 +1,57 @@
+{
+    "id": 545,
+    "description": "  In the lively town of Everwood, young Mia loved exploring the enchanted \n forest. One day, she found a magic bracelet that revealed hidden messages \n in nature's patterns. Eager to decipher its secrets, she uncovered a \n challenge: finding the greatest flower in each sub bouquet of size k . Help \n Mia in solving the challenge .\n She has been given a bouquet of flowers represented by array (say arr) of \n size N  where the greatness of flowers is represented by an integer the max \n the integer more is the greatness.\n### Input Format:\n\nThe first line contains N,K- Size of array, Size of sub bouquet\nThe last line contains N integers representing the array.\n### Output Format:\n\nFor each test case, print the greatest flower in each sub bouquet of size k.\n\n\n###    Sample Input and Output \n \n#### Sample Input 1\n\n```\n9 3\n1 2 3 1 4 5 2 3 6\n```\n#### Sample Output 1\n```\n3 3 4 5 5 5 6\n```\n\n### Constraints:\n\n  1 \u2264 N \u2264 106\n\n  1 \u2264 K \u2264 N\n\n  0 \u2264 arr[i] \u2264 106\n\n",
+    "title": "Mia in Enchanted Forest",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1632,
+            "code_problem_id": 545,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\npublic:\nvector<int> max_of_subarrays(vector<int> arr, int N, int K) {\n}\n};"
+        },
+        {
+            "id": 1633,
+            "code_problem_id": 545,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    Vector<Integer> max_of_subarrays(Vector<Integer> arr, int N, int K) {\n    }\n}"
+        },
+        {
+            "id": 1634,
+            "code_problem_id": 545,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def max_of_subarrays(self, arr, N, K):"
+        },
+        {
+            "id": 1635,
+            "code_problem_id": 545,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    max_of_subarrays(arr, N, K) {\n    }\n}"
+        }
+    ]
+}

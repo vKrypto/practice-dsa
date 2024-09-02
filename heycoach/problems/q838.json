@@ -1,0 +1,64 @@
+{
+    "id": 838,
+    "description": "Heycoach has designed a new File system. It is possible to use any number of characters `'/'` as a delimiter in path instead of one traditional `' / '`. For **example**, strings `//usr///local//user/sbin//` and `/usr/local/user///sbin` are equivalent.\n\nThe character `'/'` (or some sequence of such characters) at the end of the path is required only in case of the path to the root directory, which can be represented as single character `'/'`.\n\n**Note:** A path called normalized if it contains the smallest possible number of characters '`/'`.\n\nYou are given a string `s`. Your task is to transform a given path to the **normalized** form.\n\n**Example**\n```\nInput : s = \"//usr///local//folder///sbin\"\n\nOutput : \"/usr/local/folder/sbin\"\n\n```\n\n**Input Format**\n```\nThe first line of the input contains string s , containing only lowercase Latin letters and character ' / ' \u2014 the path to some directory. \n```\n**Output Format**\n```\nA String, The path in normalized form.\n```\n**Constraints**\n\n`2 <= s.length <= 100`\n\n`s contains only lowercase latin letters, and symbol '/'`\n\n`There will be atleast 1 '/' in s`",
+    "title": "Normalize Path in File System",
+    "default_testcase": {
+        "id": 7455,
+        "input": "//usr///local//folder///sbin",
+        "expected_output": "/usr/local/folder/sbin\n",
+        "code_problem_id": 838,
+        "created_at": "2024-04-27T10:19:16.212Z",
+        "updated_at": "2024-04-27T10:19:16.212Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2737,
+            "code_problem_id": 838,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\npublic:\n\n\nstring NormalizePath(string &s)\n{\n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2740,
+            "code_problem_id": 838,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public String normalizePath(String s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2741,
+            "code_problem_id": 838,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def normalize_path(self, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2742,
+            "code_problem_id": 838,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n    normalizePath(s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

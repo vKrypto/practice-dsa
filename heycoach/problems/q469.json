@@ -1,0 +1,57 @@
+{
+    "id": 469,
+    "description": "Imagine a bustling food court where patrons compete for the tastiest food. Each stall owner (person) has a different quality of food (amount of money) and a different level of patience (quietness). You want to help hungry customers (query person) find the most patient stall owner (least quiet) among those serving food of equal or higher quality (equal to or more money).\n\nThere is a group of n people labeled from 0 to n - 1 where each person has a different amount of money and a different level of quietness.You are given an array richer where richer[i] = [ai, bi] indicates that ai has more money than bi and an integer array quiet where quiet[i] is the quietness of the ith person.\n\nReturn an integer array answer where answer[x] = y if y is the least quiet person (that is, the person y with the smallest value of quiet[y]) among all people who definitely have equal to or more money than the person x.\n\n### Input:\n\nn: Number of stall owners (people) - Integer between 1 and 500.<br>\nquiet: Array of patience levels (quietness) for each stall owner - Integers between 0 and n-1, unique.<br>\nricher: Array of pairs of stall owners where the first one has higher quality food (more money) than the second - List of pairs (ai, bi) where 0 <= ai, bi < n, ai != bi, and no pair appears twice. All relationships in richer are logically consistent.\n### Output:\n\n#### answer: \nArray where answer[x] is the identifier of the most patient stall owner (least quiet) among those serving food of equal or higher quality than the stall owner with identifier x. If no such stall owner exists, answer[x] should be -1.\n### Constraints:\n\nSame as original problem.\n### Examples:\n\n#### Example 1:<br>\nInput: n = 8,<br> quiet = [3, 2, 5, 4, 6, 1, 7, 0],<br> richer = [[1, 0], [2, 1], [3, 1], [3, 7], [4, 3], [5, 3], [6, 3]]<br>\nOutput:<br>\nanswer = [5, 5, 2, 5, 4, 5, 6, 7]\n#### Example 2:\nInput: n = 1,<br> quiet = [0],<br> richer = []<br>\nOutput: <br>answer = [0]\n",
+    "title": "TopoOwner",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1314,
+            "code_problem_id": 469,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n    vector<int> quietAndRich(vector<vector<int>>& richer, vector<int>& quiet) {\n        \n    }\n};\n"
+        },
+        {
+            "id": 1362,
+            "code_problem_id": 469,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int[] quietAndRich(int[][] richer, int[] quiet) {\n        \n    }\n}\n\n"
+        },
+        {
+            "id": 1363,
+            "code_problem_id": 469,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def quietAndRich(self, richer: List[List[int]], quiet: List[int]) -> List[int]:\n        # Code"
+        },
+        {
+            "id": 1418,
+            "code_problem_id": 469,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    quietAndRich(richer, quiet) {\n      //Write your code here;\n    }\n}"
+        }
+    ]
+}

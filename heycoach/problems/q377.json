@@ -1,0 +1,64 @@
+{
+    "id": 377,
+    "description": "Two heyCoach students have been assigned to solve certain coding problems for their upcoming tasks , the problems is represented with tme. \nhe help of the problem\u2019s number associated with it, both of them have a list of problems represented by an array of problem\u2019s number(say arr1 and arr2), now as they have very limited time, they want to help each other by solving together. Return how many problems they have to solve together in order to save time. \n\n\n\n\n\n\n### Example 1\n### Input\n```CPP\n arr1= [1, 2, 3 , 5]\n arr2 =[7,6,5,8,9] \n``` \n### Output \n```CPP \n8\n``` \n\n\n### Example 2\n### Input\n```CPP\n arr1=[2,3]\n arr2 =[2,3]\n``` \n### Output \n```CPP \n2\n``` \n\n\n\n### Constraints:\n1<=arr1.length,arr2.length<=1000\nFor all 0<= i <arr1.length,arr2.length \n\n1<=arr1[i],arr2[i]<=1000 \n",
+    "title": "Union in heycoach",
+    "default_testcase": {
+        "id": 6588,
+        "input": "4 5\n1 2 3 5\n7 6 5 8 9",
+        "expected_output": "8\n",
+        "code_problem_id": 377,
+        "created_at": "2024-03-16T10:59:18.466Z",
+        "updated_at": "2024-03-16T10:59:18.466Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 884,
+            "code_problem_id": 377,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    unionArray(arr1, arr2) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 885,
+            "code_problem_id": 377,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    int Unionarray(vector<int> arr1, vector<int> arr2, int n, int m){\n      //Write your code here",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 886,
+            "code_problem_id": 377,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int unionArray(List<Integer> arr1, List<Integer> arr2, int n, int m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 887,
+            "code_problem_id": 377,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def unionArray(self, arr1, arr2, n, m):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

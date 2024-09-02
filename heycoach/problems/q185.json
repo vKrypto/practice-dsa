@@ -1,0 +1,64 @@
+{
+    "id": 185,
+    "description": "Rishav is a medical student and he needs to complete the assignment to find all the repeating DNA sequence of length 10.\nHe is a non technical student so he has to doo it manually. As being his good friend write a code for him.\n\nThe DNA sequence is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T'.\n\n*For example, \"ACGAATTCCG\" is a DNA sequence.*\nWhen studying DNA, it is useful to identify repeated sequences within the DNA.\n\nGiven a string s that represents a **DNA sequence**, return all the **10-letter-long** sequences (substrings) that occur more than once in a DNA molecule. You may Print the answer in sorted order.\n\n### Input Format:\n```\nsingle string input\n```\n\n### Output Format:\n```\nprint all the output strings in separate lines (1 string in 1 line)\n```\n### Constraints:\n```\n1 <= s.length <= 10^5 \ns[i] is either 'A', 'C', 'G', or 'T'.\n```\n\n#### Example:\n### Sample Input\n```\nAAAAACCCCCAAAAACCCCCCAAAAAGGGTTT  \n```\n### Sample Output\n```\nAAAAACCCCC\nCCCCCAAAAA\n```",
+    "title": "Repeated DNA sequence",
+    "default_testcase": {
+        "id": 1337,
+        "input": "AAAAAAAAAAAA",
+        "expected_output": "AAAAAAAAAA\n",
+        "code_problem_id": 185,
+        "created_at": "2022-10-27T13:51:36.396Z",
+        "updated_at": "2022-10-27T13:51:36.396Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 140,
+            "code_problem_id": 185,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<string> findRepeatedDnaSequences(string& s) {\n      // write your code here",
+            "skeleton_class_end": "   }\n\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 145,
+            "code_problem_id": 185,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<String> findRepeatedDnaSequences(String s) {\n      // write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 149,
+            "code_problem_id": 185,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findRepeatedDnaSequences(self, s):\n      # write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 622,
+            "code_problem_id": 185,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    \nfindRepeatedDnaSequences(s) {\n  // write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

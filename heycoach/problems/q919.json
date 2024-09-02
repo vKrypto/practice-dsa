@@ -1,0 +1,64 @@
+{
+    "id": 919,
+    "description": "There is a frog staying to the left of the string s=s1s2\u2026sn\n consisting of n\n characters (to be more precise, the frog initially stays at the cell 0\n). Each character of s\n is either 'L' or 'R'. It means that if the frog is staying at the i\n-th cell and the i\n-th character is 'L', the frog can jump only to the left. If the frog is staying at the i\n-th cell and the i\n-th character is 'R', the frog can jump only to the right. The frog can jump only to the right from the cell 0\n.\n\nNote that the frog can jump into the same cell twice and can perform as many jumps as it needs.\n\nThe frog wants to reach the n+1\n-th cell. The frog chooses some positive integer value d\n before the first jump (and cannot change it later) and jumps by no more than d\n cells at once. I.e. if the i\n-th character is 'L' then the frog can jump to any cell in a range [max(0,i\u2212d);i\u22121]\n, and if the i\n-th character is 'R' then the frog can jump to any cell in a range [i+1;min(n+1;i+d)]\n.\n\nThe frog doesn't want to jump far, so your task is to find the minimum possible value of d\n such that the frog can reach the cell n+1\n from the cell 0\n if it can jump by no more than d\n cells at once. It is guaranteed that it is always possible to reach n+1\n from 0\n.\n\nYou have to answer t\n independent test cases.\n\n**Input**  \nThe first line of the input contains one integer t\n (**1\u2264t\u226410^4**\n) \u2014 the number of test cases.\n\nThe next t\n lines describe test cases. The i\n-th test case is described as a string s\n consisting of at least 1\n and at most 2\u22c510^5\n characters 'L' and 'R'.\n\nIt is guaranteed that the sum of lengths of strings over all test cases does not exceed 2\u22c5105\n (\u2211|s|\u22642\u22c5105\n).\n\n**Output**  \nFor each test case, print the answer \u2014 the minimum possible value of d\n such that the frog can reach the cell n+1\n from the cell 0\n if it jumps by no more than d\n at once.\n\n**Example**  \n**Input**\n\n```\nLRLRRLL\n```\n**Output**\n\n```\n3\n```\n**Input**\n\n```\nLLLLLL\n```\nOutput\n\n```\n7\n```",
+    "title": "frog jumps",
+    "default_testcase": {
+        "id": 8112,
+        "input": "LRLRRLL",
+        "expected_output": "3\n",
+        "code_problem_id": 919,
+        "created_at": "2024-05-19T10:10:19.630Z",
+        "updated_at": "2024-05-19T10:10:19.630Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3049,
+            "code_problem_id": 919,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3050,
+            "code_problem_id": 919,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3051,
+            "code_problem_id": 919,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3052,
+            "code_problem_id": 919,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

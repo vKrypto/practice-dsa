@@ -1,0 +1,64 @@
+{
+    "id": 915,
+    "description": "You have a list of n items where each item contains a name and one or more emails. Two items are considered similar if they share at least one common email. You need to group similar items together.\n\nGiven a list of n items, return the groups of similar items.\n\n**Input Format**:\n\nThe first line contains an integer n, indicating the number of lists of items.\nFollowing are n lines, each containing a list of items.\n\n**Output Format:**</br>\nMerged lists of items are printed, each list on a separate line.\nItems within each list are separated by spaces.\n\n\n**Example:**\n\n**Input:**\n```\nn=4\n[[\"John\",\"johnsmith@mail.com\",\"john_newyork@mail.com\"],\n [\"John\",\"johnsmith@mail.com\",\"john00@mail.com\"],\n [\"Mary\",\"mary@mail.com\"],\n [\"John\",\"johnnybravo@mail.com\"]]\n```\n\n**Output:**\n```\n[[\"John\",\"john00@mail.com\",\"john_newyork@mail.com\",\"johnsmith@mail.com\"],\n [\"Mary\",\"mary@mail.com\"],\n [\"John\",\"johnnybravo@mail.com\"]]\n```\n**Constraints:**\n\n- 1 <= accounts.length <= 1000\n- 2 <= accounts[i].length <= 10\n- 1 <= accounts[i][j].length <= 30\n- accounts[i][0] consists of English letters.\n- accounts[i][j] (for j > 0) is a valid email.",
+    "title": "Grouping Similar Items",
+    "default_testcase": {
+        "id": 8563,
+        "input": "3\nAnna anna@mail.com\nAnna anna123@mail.com\nBob bob@mail.com",
+        "expected_output": "Anna anna@mail.com\nAnna anna123@mail.com\nBob bob@mail.com\n",
+        "code_problem_id": 915,
+        "created_at": "2024-06-08T10:25:12.762Z",
+        "updated_at": "2024-06-08T10:25:12.762Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3045,
+            "code_problem_id": 915,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {\n       ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3046,
+            "code_problem_id": 915,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<String>> accountsMerge(List<List<String>> accounts) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3047,
+            "code_problem_id": 915,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n    def accountsMerge(self, accounts):\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3048,
+            "code_problem_id": 915,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n    accountsMerge(accounts) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

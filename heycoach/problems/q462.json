@@ -1,0 +1,64 @@
+{
+    "id": 462,
+    "description": " You are given an array \u2018ARR\u2019 with N positive integers and an integer K. return true if there is a subset  whose sum is equal to K.\n\n**Example :**\n```\nInput : N = 4 , K = 5 , arr = [1,4,4,5]\n\nOutput : true\n```\n\n**Constraints** \n\n`1<= 'n' <= 100`\n\n`0 <= 'arr[i]' <= 1000`\n\n`1 <= 'k' <= 1000`\n",
+    "title": "sum equal to k",
+    "default_testcase": {
+        "id": 3151,
+        "input": "4 5\n1 4 4 5\n",
+        "expected_output": "true\n",
+        "code_problem_id": 462,
+        "created_at": "2023-12-24T06:20:05.363Z",
+        "updated_at": "2023-12-24T06:20:05.363Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1298,
+            "code_problem_id": 462,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n  public:\n        bool isSubsetSum(vector<int>& arr, int n, int k) {\n\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1299,
+            "code_problem_id": 462,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  boolean isSubsetSum(int[] arr, int n, int k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1300,
+            "code_problem_id": 462,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def isSubsetSum(self, arr, n, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n      \n"
+        },
+        {
+            "id": 1301,
+            "code_problem_id": 462,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      isSubsetSum(arr, n, k) {\n    \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 189,
+    "description": "\nYou are given two images,  `img1`  and  `img2`, represented as binary, square matrices of size  `n x n`. A binary matrix has only  `0`s and  `1`s as values.\n\nWe  **translate**  one image however we choose by sliding all the  `1`  bits left, right, up, and/or down any number of units. We then place it on top of the other image. We can then calculate the  **overlap**  by counting the number of positions that have a  `1`  in  **both**  images.\n\nNote also that a translation does  **not**  include any kind of rotation. Any  `1`  bits that are translated outside of the matrix borders are erased.\n\nReturn  _the largest possible overlap_.\n### Example 1 \n[![image-overlap-tc1.png](https://i.postimg.cc/D0wgRp7F/image-overlap-tc1.png)](https://postimg.cc/HcFXy2JP)\n\n### Input\n```CPP\nimg1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]\n\n```\n### Output \n```CPP\n3\n```\n### Explanation\n[![image-overlap-exp.png](https://i.postimg.cc/gjpJ01xF/image-overlap-exp.png)](https://postimg.cc/r0hcnnGQ)\n\n**Example 2:**\n\n**Input:**\n```CPP\nimg1 = [[1]], img2 = [[1]]\n```\n**Output:** \n```CPP\n1\n```\n\n### Constraints:\n* `1 <= n <= 30`\n*  `0 <= img1[i][j],img2[i][j] <= 1`\n",
+    "title": "Overlapping image",
+    "default_testcase": {
+        "id": 1374,
+        "input": "3\n1 1 0\n0 1 0\n0 1 0\n0 0 0\n0 1 1\n0 0 1",
+        "expected_output": "3",
+        "code_problem_id": 189,
+        "created_at": "2022-10-28T16:49:08.703Z",
+        "updated_at": "2022-10-28T16:49:08.703Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 253,
+            "code_problem_id": 189,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  int largestOverlap(vector<vector<int>>& img1, vector<vector<int>>& img2) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 545,
+            "code_problem_id": 189,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n  public int largestOverlap(int[][] img1, int[][] img2) {\n    // write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 570,
+            "code_problem_id": 189,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def largestOverlap(self, img1, img2):\n      # write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 571,
+            "code_problem_id": 189,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    largestOverlap(img1, img2) {\n      // write your code here",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

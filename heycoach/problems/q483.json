@@ -1,0 +1,21 @@
+{
+    "id": 483,
+    "description": " Given a Binary Tree with all unique values and two nodes value, n1 and n2. The task is to find the lowest common ancestor of the given two nodes. We may assume that either both n1 and n2 are present in the tree or none of them are present.\nLCA: It is the first common ancestor of both the nodes n1 and n2 from bottom of tree.\n",
+    "title": "Lowest Common Ancestor",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1404,
+            "code_problem_id": 483,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    Node* lca(Node* root ,int n1 ,int n2 )\n    {\n    }\n};"
+        }
+    ]
+}

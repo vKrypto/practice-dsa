@@ -1,0 +1,28 @@
+{
+    "id": 190,
+    "description": "\nGiven a number **A** in a form of string.\n\nYou have to find the smallest number that has same set of digits as A and is greater than A.\n\nIf A is the greatest possible number with its set of digits, then return -1.\n### Example 1 \n\n### Input\n```CPP\nA = \"218765\"\n```\n### Output \n```CPP\n\"251678\"\n```\n### Explanation\nThe smallest number greater then 218765 with same set of digits is 251678.\n\n**Example 2:**\n\n**Input:**\n```CPP\n\"4321\"\n```\n**Output:** \n```CPP\n\"-1\"\n```\n### Explanation\n The given number is the largest possible number with given set of digits so we will return -1.\n\n### Constraints:\n* `1 <= A.length <= 10000`\n*  `0 <= A[i] <= 9`\n* `A doesn't contain leading zeroes.`\n",
+    "title": "Next greater number",
+    "default_testcase": {
+        "id": 1381,
+        "input": "218765",
+        "expected_output": "251678",
+        "code_problem_id": 190,
+        "created_at": "2022-10-28T17:16:36.434Z",
+        "updated_at": "2022-10-28T17:16:36.434Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 254,
+            "code_problem_id": 190,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    string solve(string A) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

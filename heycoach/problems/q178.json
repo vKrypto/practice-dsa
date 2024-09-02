@@ -1,0 +1,64 @@
+{
+    "id": 178,
+    "description": "Tic-tac-toe is a game played between two players on a 3\u00d73 grid. In a turn, a player chooses an empty cell and places their symbol on the cell. The players take alternating turns, where the player with the first turn uses the symbol X and the other player uses the symbol O. The game continues until there is a row, column, or diagonal containing three of the same symbol (X or O), and the player with that token is declared the winner. Otherwise if every cell of the grid contains a symbol and nobody won, then the game ends and it is considered a draw.\n\nYou are given a tic-tac-toe board A after a certain number of moves, consisting of symbols O, X, and underscore(_). Underscore signifies an empty cell.\n\n### Print \n* if the position is reachable, and the game has drawn or one of the players won.\n* if the position is reachable, and the game will continue for at least one more move.\n* if the position is not reachable.\n\n### Note:\n\nStarting from an empty board, reachable position means that the grid is possible after a finite number of moves in the game where the players may or may not be playing optimally.\nThe answer for each testcase should be with respect to the present position and independent of the results in the further successive moves.**\n\n### Input Format:\n```\n3 lines of input where each line contains a string describing the state of the game in *ith* row.\n```\n### Output Format:\n```\noutput in a single line 1, 2 or 3 as described in the problem.\n```\n### Sample Input\n```\nXOX\nXXO\nO_O\n```\n### Sample Output\n```\n2\n```\n### Explanation\n```\nIn this board:\n\nPlayer X has two X's in the top row.\nPlayer O has two O's in the second row.\nThere is an empty cell in the third row.\nThe game is still ongoing, and there is an empty cell for the next move. Therefore, the output is 2.\n```\n### Constraints\n\n- 1\u2264T\u226439\n- Aij\u2208{X,O,_}\n- Subtasks\n- Subtask #1 (100 points): Original Constraints",
+    "title": "TIC TAC TOE",
+    "default_testcase": {
+        "id": 1271,
+        "input": "XOX\nXXO\nO_O",
+        "expected_output": "2\n",
+        "code_problem_id": 178,
+        "created_at": "2022-10-25T18:04:56.287Z",
+        "updated_at": "2022-10-25T18:04:56.287Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 540,
+            "code_problem_id": 178,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int tictac(vector<vector<char>> board) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 542,
+            "code_problem_id": 178,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int tictac(char[][] board) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 611,
+            "code_problem_id": 178,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def tictac(self, board):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 838,
+            "code_problem_id": 178,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    tictac(board) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

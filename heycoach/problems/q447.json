@@ -1,0 +1,64 @@
+{
+    "id": 447,
+    "description": "Given the root of a binary tree, return the maximum width of the given tree.\n\nThe maximum width of a tree is the maximum width among all levels.\n\nThe width of one level is defined as the length between the end-nodes (the leftmost and rightmost non-null nodes), where the null nodes between the end-nodes that would be present in a complete binary tree extending down to that level are also counted into the length calculation.\n\nIt is guaranteed that the answer will in the range of a 32-bit signed integer.\n\n**Input** : \n```\n[ 1 2 3 4 5 -1 -1 -1 -1 -1 -1]  \n```\n**Output :**   \n2\n```\n        1\n       / \\\n      2   3\n     / \\\n    4   5\n```\n\n**Input:**\n```\n[10 5 20 3 7 -1 25 -1 -1 -1 -1 -1 -1]  \n```\n**Output**:\n4\n```\n        10\n        /  \\\n       5    20\n      / \\     \\\n     3   7     25\n```\n\n**Constraints**:</br>\nThe number of nodes in the tree is in the range [1, 3000].</br>\n0 <= Node.val <= 100\n",
+    "title": "WIDTH OF BINARY TREE",
+    "default_testcase": {
+        "id": 3062,
+        "input": "10 5 20 3 7 -1 25 -1 -1 -1 -1 -1 -1",
+        "expected_output": "4",
+        "code_problem_id": 447,
+        "created_at": "2023-12-23T02:53:57.687Z",
+        "updated_at": "2023-12-23T02:53:57.687Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1273,
+            "code_problem_id": 447,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    widthOfBinaryTree(root) {\n       \n    }\n}\n\n\n"
+        },
+        {
+            "id": 1274,
+            "code_problem_id": 447,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": " class Solution {\n    public int widthOfBinaryTree(TreeNode root) {\n    }\n}\n"
+        },
+        {
+            "id": 1275,
+            "code_problem_id": 447,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def widthOfBinaryTree(root):\n"
+        },
+        {
+            "id": 1276,
+            "code_problem_id": 447,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public:\nint widthOfBinaryTree(TreeNode* root) {\n    }\n};\n"
+        }
+    ]
+}

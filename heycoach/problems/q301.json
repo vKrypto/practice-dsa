@@ -1,0 +1,57 @@
+{
+    "id": 301,
+    "description": " You are given an array \u2018ARR\u2019 with N positive integers and an integer K. return true if there is a subset  whose sum is equal to K.\n\nConstraints \n\n1<= 'N <= 100\n\n0 <= 'arr[i]' <= 1000\n\n1 <= 'K' <= 1000\n\nExample:\n\nInput N=4, K=5 \n\narr={1,4,4,5}\n\nOutput : true\n",
+    "title": "subset sum equal to k",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 737,
+            "code_problem_id": 301,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "function subsetSumToK(n, k, arr) {\n\n}\n\n"
+        },
+        {
+            "id": 738,
+            "code_problem_id": 301,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def subsetSumToK(n, k, arr):\n"
+        },
+        {
+            "id": 739,
+            "code_problem_id": 301,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "bool subsetSumToK(int n, int k, vector<int> &arr){\n// Write your code here\n}\n\n"
+        },
+        {
+            "id": 740,
+            "code_problem_id": 301,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "public class SubsetSum {\npublic static boolean subsetSumToK(int n, int k, int[] arr) {\n\n  }\n}\n"
+        }
+    ]
+}

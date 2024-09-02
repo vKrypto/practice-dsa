@@ -1,0 +1,64 @@
+{
+    "id": 775,
+    "description": "\nYou are given three values: Start Fahrenheit Value (S), End Fahrenheit value (E), and Step Size (G). Your task is to convert all Fahrenheit values from Start to End at the gap of G into their corresponding Celsius values and print the table.\n\n#### `Input Format:`\n\n`The input consists of three integers separated by spaces:`\n- `Start Fahrenheit Value (S)`\n- `End Fahrenheit Value (E)`\n- `Step Size (G)`\n\n#### `Output Format:`\n\n`The program should output a Fahrenheit to Celsius conversion table as follows:`\n- `For each Fahrenheit value from S to E at the gap of G, print the Fahrenheit value and its corresponding Celsius value, separated by a space, on a new line.`\n\n#### `Sample Input:`\n```\n0 100 20\n```\n\n#### `Sample Output:`\n```\n0 -17\n20 -6\n40 4\n60 15\n80 26\n100 37\n\n```\n\n#### `Constraints:`\n- `-1000 <= S, E <= 1000`\n- `0 < G <= 100`\n",
+    "title": "Fahrenheit to Celsius Conversion",
+    "default_testcase": {
+        "id": 6881,
+        "input": "0 100 20",
+        "expected_output": "0 -17\n20 -6\n40 4\n60 15\n80 26\n100 37\n",
+        "code_problem_id": 775,
+        "created_at": "2024-03-24T01:18:34.202Z",
+        "updated_at": "2024-03-24T01:18:34.202Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2523,
+            "code_problem_id": 775,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void convertFahrenheitToCelsius() {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2524,
+            "code_problem_id": 775,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void convertFahrenheitToCelsius() {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2525,
+            "code_problem_id": 775,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def convert_fahrenheit_to_celsius():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2526,
+            "code_problem_id": 775,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static convertFahrenheitToCelsius(S, E, G) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

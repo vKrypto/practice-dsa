@@ -1,0 +1,64 @@
+{
+    "id": 855,
+    "description": "In a queue for a \"Double Soda\" drink vending machine, Anish, Leonard, Penny, Rajesh, and Howard stand in line, with Sheldon being at the front. When a person reaches the front of the queue, they buy a can, drink it, and then split into two identical copies of themselves. These copies join the end of the queue. This process repeats indefinitely. For instance, after Penny drinks the third can of cola, the queue will be rearranged as follows: Rajesh, Howard, Sheldon, Sheldon, Leonard, Leonard, Penny, Penny. Write a program to determine which person will drink the n-th can of cola. The queue initially consists of Sheldon, Leonard, Penny, Rajesh, and Howard, in that order.\n\n`Input`:\n\nThe input data consist of a single integer n (1\u2009\u2264\u2009n\u2009\u2264\u200910^9).\nIt is guaranteed that the pretests check the spelling of all the five names, that is, that they contain all the five possible answers.\n\n`Output`:\n\nPrint the single line \u2014 the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1. Please note that you should spell the names like this: \"Sheldon\", \"Leonard\", \"Penny\", \"Rajesh\", \"Howard\" (without the quotes). In that order precisely the friends are in the queue initially.\n",
+    "title": "Double Cola Queue: Who Takes the N-th Can?",
+    "default_testcase": {
+        "id": 7569,
+        "input": "6\n",
+        "expected_output": "Sheldon\n",
+        "code_problem_id": 855,
+        "created_at": "2024-04-28T11:30:19.887Z",
+        "updated_at": "2024-04-28T11:30:19.887Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2811,
+            "code_problem_id": 855,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string solve(int n) {  // Change the return type to string",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2812,
+            "code_problem_id": 855,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String solve(int n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2813,
+            "code_problem_id": 855,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2814,
+            "code_problem_id": 855,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

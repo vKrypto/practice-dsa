@@ -1,0 +1,64 @@
+{
+    "id": 352,
+    "description": "Write a program to find the minimum number of edges to add to a directed graph to make it strongly connected.\n\nA strongly connected component (SCC) is a group of nodes in a directed graph where each node can be reached from any other node within the same group by following the directed paths.\n\n#### `Input:`\n\n- `The first line of input contains two space separated integers 'N' and 'M' which are the number of nodes and edges in the graph`\n- `The next line contains 'M' space separated integers denoting the source node of each edge.`\n- `The next line contains 'M' space separated integers denoting the destination node of each edge.`\n\n#### `Output:` \n`The minimum number of edges to add or \"Not possible\" if it's not possible to make the graph strongly connected.`\n\n#### `Sample input:`\n```\n5 5\n1 3 1 3 4\n2 2 3 4 5\n```\n#### `Sample Output:`\n```\n2\n```\n\n#### `Explanation:`\n\nYou can make the graph strongly connected by inserting a directed edge from 2 to 5 and another from 5 to 1. The graph formed now allows you to go from every vertex to every other vertex along the directed edges and thus is a strongly connected graph.\n\n\n\n#### `Constraints:`\n\n- `1 <= N <= 10^5 (number of nodes)`\n\n- `0 <= E <= 10^6 (number of edges)`\n\n- `0 <= u, v < N (node indices)`\n\n- `The graph is guaranteed to be directed but not necessarily strongly connected.`",
+    "title": "Minimum Number of Edges to Make a Directed Graph Strongly Connected",
+    "default_testcase": {
+        "id": 6641,
+        "input": "5 5\n1 3 1 3 4\n2 2 3 4 5",
+        "expected_output": "2\n",
+        "code_problem_id": 352,
+        "created_at": "2024-03-20T12:59:46.294Z",
+        "updated_at": "2024-03-20T12:59:46.294Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 819,
+            "code_problem_id": 352,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static int findMinimumEdges(int source[], int N, int M, int dest[]) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1115,
+            "code_problem_id": 352,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static int findMinimumEdges(int[] source, int N, int M, int[] dest) {\n        // Write your code here",
+            "skeleton_class_end": "            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1116,
+            "code_problem_id": 352,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def find_minimum_edges(source, N, M, dest):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1117,
+            "code_problem_id": 352,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findMinimumEdges(source, N, M, dest) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

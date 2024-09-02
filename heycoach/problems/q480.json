@@ -1,0 +1,64 @@
+{
+    "id": 480,
+    "description": "In the HeyCoach Society, All Houses are arranged in the form of a Binary Tree. With all nodes representing the price of the house. Sam is interested to find out the minimum and maximum prices among all the houses present.\n\n**For Example:**\nGiven the Binary Tree\n\n           1000\n         /     \\\n       2000    3000\n      /    \\       \\\n     4000  7000    13000\n\nThe minimum and maximum prices among all the houses would be '1000' and '13000' respectively.\n\n```\nInput Format:\n\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n```\n\n```\nOutput Format:\n\nPrint an integer denoting the minimum price followed by another integer denoting the maximum price.\n```\n\n**Sample Input:**\n\n```\n2000 3000 5000 1000 -1 4000 -1 -1 -1 -1 -1\n```\n\n**Sample Output:**\n\n```\n1000 5000\n```\n\n**Constraints:**\n\n`0 <= N <= 10^3`\n\n`0 <= data <= 10^6`\n\n```\nWhere N denotes the total number of nodes and 'data' denotes the value of the node\n```",
+    "title": "Houses of Binary Tree",
+    "default_testcase": {
+        "id": 6648,
+        "input": "2000 3000 5000 1000 -1 4000 -1 -1 -1 -1 -1",
+        "expected_output": "1000 5000\n",
+        "code_problem_id": 480,
+        "created_at": "2024-03-21T09:12:49.969Z",
+        "updated_at": "2024-03-21T09:12:49.969Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1387,
+            "code_problem_id": 480,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(Node* root){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1388,
+            "code_problem_id": 480,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(Node root) {\n      // write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1389,
+            "code_problem_id": 480,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\"\"\"\n\nclass Solution:\n    def solve(self, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1390,
+            "code_problem_id": 480,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 577,
+    "description": "Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.\n\n*Return the sorted string. If there are multiple answers, return any of them.*\n\n \n\n#### Example 1:\n\n#### Input:<br/>\n```\n s = \"tree\"\n```\n#### Output: <br/>\n```\n\"eert\"\n```\n#### Explanation: <br/>\n- 'e' appears twice while 'r' and 't' both appear once.\nSo 'e' must appear before both 'r' and 't'. Therefore \"eetr\" is also a valid answer.\n#### Example 2:\n\n#### Input: <br/>\n```\ns = \"cccaaa\"\n```\n#### Output: <br/>\n```\n\"aaaccc\"\n```\n#### Explanation: <br/>\n- Both 'c' and 'a' appear three times, so both \"cccaaa\" and \"aaaccc\" are valid answers.\nNote that \"cacaca\" is incorrect, as the same characters must be together.\n#### Example 3:\n\n#### Input: <br/>\n```\ns = \"Aabb\"\n```\n#### Output:<br/>\n \"bbAa\"\n#### Explanation: <br/>\n- \"bbaA\" is also a valid answer, but \"Aabb\" is incorrect.\nNote that 'A' and 'a' are treated as two different characters.\n \n\n#### `Constraints:`\n\n- `1 <= s.length <= 5 * 105`\n- `s consists of uppercase and lowercase English letters and digits.`",
+    "title": "Sort Characters By Frequency",
+    "default_testcase": {
+        "id": 8237,
+        "input": "tree",
+        "expected_output": "eert",
+        "code_problem_id": 577,
+        "created_at": "2024-05-24T12:20:38.780Z",
+        "updated_at": "2024-05-24T12:20:38.780Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1763,
+            "code_problem_id": 577,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    std::string frequencySort(std::string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1770,
+            "code_problem_id": 577,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String frequencySort(String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1878,
+            "code_problem_id": 577,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def frequencySort(self, s: str) -> str:\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1879,
+            "code_problem_id": 577,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    frequencySort(s) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

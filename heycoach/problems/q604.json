@@ -1,0 +1,64 @@
+{
+    "id": 604,
+    "description": "Given three integers a, b, and n, return the maximum value of (a XOR x) * (b XOR x) where 0 <= x < 2^n.   \nSince the answer may be too large, return it modulo 10^9 + 7. Note that XOR is the bitwise XOR operation.\n\n#### `Input:`\n\n`Three integers a, b, and n (0 <= a, b <15, 0 <= n <= 15).`\n#### `Output:`\n\n`An integer representing the maximum value of (a XOR x) * (b XOR x) modulo 10^9 + 7.`\n#### Examples:\n\n**`Input:`** `a = 12, b = 5, n = 4`<br>\n**`Output:`**  \n `98`<br> \n**`Explanation:`**     \n- `For x = 2, (a XOR x) = 14 and (b XOR x) = 7. Hence, (a XOR x) * (b XOR x) = 98.` <br>\n- `It can be shown that 98 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2^n.`\n",
+    "title": "Xor Magic Product",
+    "default_testcase": {
+        "id": 3954,
+        "input": "12 5 4",
+        "expected_output": "98\n",
+        "code_problem_id": 604,
+        "created_at": "2024-01-22T09:39:33.317Z",
+        "updated_at": "2024-01-22T09:39:33.317Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1810,
+            "code_problem_id": 604,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maximumXorProduct(long long a, long long b, long long n) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1811,
+            "code_problem_id": 604,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maximumXorProduct(long a, long b, long n) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1816,
+            "code_problem_id": 604,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maximum_xor_product(self, a, b, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1817,
+            "code_problem_id": 604,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maximumXorProduct(a, b, n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

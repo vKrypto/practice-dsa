@@ -1,0 +1,64 @@
+{
+    "id": 804,
+    "description": "Description:\n\nIn a workplace there are \u2018n\u2019 coworkers and they are communicating with each other in \u2018m\u2019 groups of people. The workers at this office loves to gossip, initially some worker \u2018x\u2019 will receive cool gossip from some source which he then communicates to all his friends (Two workers are friends if they have at least one group in common). This process continues, where everyone is telling this gossip to each of their friends. The spread of gossip will end when there are no pair of friends such that one of them is aware of the gossip and the other one is not.\n\nFor every coworker, determine how many people will get the gossip if that particular coworker starts the gossip.\n\n**Pay attention to how parameters are passed to you for this problem which is explained in detail at the end**\n\n```\nSample Input:\n\n7 5 (These represent n and m)\n\n3 2 5 4 (Info about group 1 which contains 3 elements, which are 2 5 and 4)\n\n0 (info about group 2 which contains 0 elements.)\n\n2 1 2  \n\n1 1\n\n2 6 7\n\nSample Output:\n\n4 4 1 4 4 2 2 (Number of people that would know the gossip if a worker number 1 starts, worker number 2 starts and so on).\n```\n\nExplanation:\n\nLet\u2019s look at the explanation for coworker 1.\n\n1 is friends with 2 since they are both present in group 3. So, 2 gets the gossip, now 2 is in turn friends with 5 and 4 in group 1. So 5 and 4 get the gossip as well. The spread cannot be continued and the total number of people that know the gossip is now equal to 4.\nSimilarly you have to calculate for every coworker in order.\n\nInput Format:\n\nThe first line contains two space separated integers 'n' and 'm' denoting the number of coworkers and the number of groups respectively.\n\nThe next 'm' lines contains first an integer 'x' denoting the number of people in the mth group and then x space separated integers denoting the coworkers in that group.\n\nOutput Format:\n\nPrint 'n' integers, where the i-th integer denotes the number of workers that would get the gossip if it is started by the i-th coworker.\n\n```\n**Parameter Explanation**\n\nYou are provided with 'n' and 'm' which are discussed above. \nOther than that you are provided with a 2D array named 'info' that\n contains information about the groups in the following ways:\n\nthe array at index - 0 represents group - 1 info, index - 1 contains\n info about group - 2 and so on.\n\nIn each of these array, the value at index[0] represents the number \nof coworkers in that group and the subsequent elements represents \nan integer denoting which coworker is present in that group.\n\nIn the example:\n\n7 5 (These represent n and m)\n\n3 2 5 4 (Info about group 1 which contains 3 elements, which are 2 5 and 4)\n\n0 (info about group 2 which contains 0 elements.)\n\n2 1 2  \n\n1 1\n\n2 6 7\n```\n\nConstraints:\n\n1<=n,m<=10^4\n",
+    "title": "Spread among groups",
+    "default_testcase": {
+        "id": 7674,
+        "input": "7 2\n0\n0",
+        "expected_output": "1 1 1 1 1 1 1 ",
+        "code_problem_id": 804,
+        "created_at": "2024-05-03T12:28:53.771Z",
+        "updated_at": "2024-05-03T12:28:53.771Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2633,
+            "code_problem_id": 804,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(vector<vector<int>> &info, int n, int m){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2634,
+            "code_problem_id": 804,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(ArrayList<ArrayList<Integer>> info, int n, int m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2635,
+            "code_problem_id": 804,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, info, n, m):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2877,
+            "code_problem_id": 804,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(info, n, m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

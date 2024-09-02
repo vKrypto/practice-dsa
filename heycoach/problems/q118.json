@@ -1,0 +1,8 @@
+{
+    "id": 118,
+    "description": "Nobita is weak in studies and to pass the exams he need to solve a question. Doremon is also not giving him any gadgets so he is asking your help. You are given **n** non-negative integers representing an elevation in map where the width of each bar is *1*. Find how much water it can trap after raining.\n\n#### Input Format: \n- first line contains n (size of the array)\n- second line contains n elements of the array\n\n#### Output Format:\n- Print an integer\n\n#### Constraints: \n- 1 <= n <= 20000\n- 0 <= height[i] <= 10^5",
+    "title": "Filling Rain Water",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

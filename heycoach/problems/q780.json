@@ -1,0 +1,64 @@
+{
+    "id": 780,
+    "description": "Given a sentence, reverse the content of the sentence without reversing every word individually.\n\n#### `Input Format:`\n`The input consists of a sentence as a string.`\n\n#### `Output Format:`\n`Print the reversed content of the sentence.`\n\n#### `Constraints:`\n- `The sentence may contain letters, spaces, punctuation marks, and special characters.`\n- `The length of the sentence does not exceed 10^5 characters.`\n\n#### `Example:`\n#### `Input:`\n`Hello, how are you?`\n\n#### `Output:`\n`you? are how Hello,`\n\n#### `Explanation:`\n`The content of the sentence \"Hello, how are you?\" is reversed while keeping the words in their original order.`",
+    "title": "Reverse Sentence Content",
+    "default_testcase": {
+        "id": 6920,
+        "input": "Hello, how are you?",
+        "expected_output": "you? are how Hello,",
+        "code_problem_id": 780,
+        "created_at": "2024-03-24T03:33:23.260Z",
+        "updated_at": "2024-03-24T03:33:23.260Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2543,
+            "code_problem_id": 780,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static String reverseSentenceContent() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2544,
+            "code_problem_id": 780,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void reverseString(string& str, int start, int end) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2545,
+            "code_problem_id": 780,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def reverse_sentence_content():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2546,
+            "code_problem_id": 780,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static reverseSentenceContent(sentence) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

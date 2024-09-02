@@ -1,0 +1,64 @@
+{
+    "id": 474,
+    "description": "Given a Binary Tree of N Nodes having integer values . Your Task is to find out the Largest Number that could be formed by concatenating all its nodes values.\n\n#### `For example:`\nGiven the Binary Tree\n\n           5\n         /    \\\n      34       47\n     /    \n    6\n\nThe answer would be 654734 since by concatenating the node values this is the highest number possible.\n\n\n#### `Input Format:`\n```\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n```\n\n#### `Output Format:`\n```\nPrint the integer that represents the largest number that could be formed by concatenating all its nodes given in a Binary Tree.\n```\n\n#### `Sample Input:`\n\n5 34 47 6 -1 -1 -1 -1 -1\n\n#### `Sample Output:`\n```\n654734\n```\n\n\n#### `Constraints:`\n\n- `0 <= N <= 10^4`\n\n- `0 <= data <= 10^3`    \n\n\n- `Where 'N' denotes the total number of nodes and 'data' denotes the value of the node.`\n",
+    "title": "Concatenate the Nodes",
+    "default_testcase": {
+        "id": 3200,
+        "input": "5 34 47 6 -1 -1 -1 -1 -1",
+        "expected_output": "654734\n",
+        "code_problem_id": 474,
+        "created_at": "2023-12-27T21:51:31.895Z",
+        "updated_at": "2023-12-27T21:51:31.895Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1343,
+            "code_problem_id": 474,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void Concatenate(Node* root){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": "\n   \n"
+        },
+        {
+            "id": 1344,
+            "code_problem_id": 474,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class Node {\n    public int data;\n    public Node left;\n    public Node right;\n\n    public Node(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}*/\nclass Solution {\n      public void Concatenate(Node root) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1345,
+            "code_problem_id": 474,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''class Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None'''\nclass Solution:\n    def concatenate(self, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1346,
+            "code_problem_id": 474,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "//The node class is given as;\n/*class TreeNode {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}*/\n\nclass Solution {\n    concatenate(root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

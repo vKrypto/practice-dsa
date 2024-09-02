@@ -1,0 +1,64 @@
+{
+    "id": 845,
+    "description": "Given an array of n integer , Your task is to find a minimum subarray sum whose size is greater than 1.\n\n#### `Input:`\n\n- `The first line contains an integer n (2<=n<=1e5).`\n\n- `The second line contains n spaced integer a1 ,a2 ,a3 \u2026. an (-1e9<=a[i]<=1e9)`\n\n\n\n#### `Output:`\n\n- `Output a single integer , minimum subarray sum of size greater than 1.`\n\n#### `Sample input and output:1`\n\n#### `Input:`\n```\n6\n\n1 1 -2 5 -2 -1\n```\n#### `Output:` \n```\n-3\n```\n\n#### `Sample Input and output : 2`\n\n#### `Input:`\n```\n2\n\n5 -7\n```\n#### `Output:`\n```\n-2\n```",
+    "title": "Minimum Subarray Sum 2",
+    "default_testcase": {
+        "id": 7484,
+        "input": "6\n1 1 -2 5 -2 -1",
+        "expected_output": "-3\n",
+        "code_problem_id": 845,
+        "created_at": "2024-04-28T04:59:47.831Z",
+        "updated_at": "2024-04-28T04:59:47.831Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2764,
+            "code_problem_id": 845,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    long long int minimumsubarray2(int n, vector<int> &a){\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2765,
+            "code_problem_id": 845,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    long minimumsubarray2(int n, ArrayList<Integer> arr) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2766,
+            "code_problem_id": 845,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimumsubarray2(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2767,
+            "code_problem_id": 845,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumsubarray2(n, arr) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

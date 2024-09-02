@@ -1,0 +1,52 @@
+{
+    "id": 501,
+    "description": "You are given a binary array nums and an integer k.\nA k-bit flip is choosing a subarray of length k from nums and simultaneously changing every 0 in the subarray to 1, and every 1 in the subarray to 0.\nReturn the minimum number of k-bit flips required so that there is no 0 in the array. If it is not possible, return -1.\nA subarray is a contiguous part of an array.\n\n### Input Format\n```\n- Length of the array\n- An array of integers nums representing a binary sequence.\n- An integer k representing the maximum number of consecutive 1's that can be flipped to 0.\n\n```\n### Output Format\n```\nAn integer representing the maximum length of subarray with at most k consecutive 1's flipped to 0.\n```\n### Sample Input 1:\n```\nn=3\nnums = [0,1,0], k = 1\n```\n### Sample Output:\n```\n2\n```\n\n### Explanation\n```\nFlip nums[0], then flip nums[2].\n```\n### Sample Input 2\n```\nn=3\nnums = [1,1,0], k = 2\n```\n### Sample Output 2\n```\n -1\n```\n### Explanation\n```\n No matter how we flip subarrays of size 2, we cannot make the array become [1,1,1].\n```\n### Sample Input 3\n```\nn=8\nnums = [0,0,0,1,0,1,1,0], k = 3\n```\n### Sample Output 3\n```\n3\n```\n### Explanation\n```\nFlip nums[0],nums[1],nums[2]: nums becomes [1,1,1,1,0,1,1,0]\nFlip nums[4],nums[5],nums[6]: nums becomes [1,1,1,1,1,0,0,0]\nFlip nums[5],nums[6],nums[7]: nums becomes [1,1,1,1,1,1,1,1]\n```",
+    "title": "Minimum Number of K Consecutive Bit Flips",
+    "default_testcase": {
+        "id": 3342,
+        "input": "3\n0 1 0\n1",
+        "expected_output": "2\n",
+        "code_problem_id": 501,
+        "created_at": "2024-01-03T11:21:29.980Z",
+        "updated_at": "2024-01-03T11:21:29.980Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1473,
+            "code_problem_id": 501,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int minKBitFlips(int[] A, int K) {\n      // write your code here\n    }\n}"
+        },
+        {
+            "id": 1474,
+            "code_problem_id": 501,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int minKBitFlips(std::vector<int>& A, int K) {\n    }\n};"
+        },
+        {
+            "id": 1475,
+            "code_problem_id": 501,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def minKBitFlips(self, A, K):"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 791,
+    "description": "Anjana just learned about Union-Find algorithm and in order to show her skills, she have scattered n number of cards each containing an integer on a table and have asked her friends to figure out the maximum length of consecutive sequence of numbers from the numbers on the table.</br> Your task is to help Anjana flex on her friends by creating an algorithm that determines the answer by using Union-Find algorithm.\n\n**Note:** *The cards are scattered meaning there is no predefined sequence you can pick cards and create a sequence. Also it is not given that all the numbers are going to be distinct.*\n\n#### `Input Format:`\n\n- `First line contains a single integer 'n' denoting the number of cards on the table.`\n\n- `Second line contains 'n' space separated integers denoting the value of cards on the table.`\n\n#### `Output Format:`\n\n`Return the maximum consecutive sequence of numbers.`\n\n#### `Sample Input - 1:`\n```\n5\n\n0 3 2 1 4\n```\n#### `Sample Output - 1:`\n```\n5\n```\n#### `Explanation:`</br>\n`From the given cards we can pick 0,1,2,3,4 which results in a length of 5 and is in a consecutive sequence as well.`\n\n#### `Sample Input - 2:`\n```\n6\n\n99 3 98 6 4 5\n```\n#### `Sample Output - 2:`\n\n`4`\n\n#### `Explanation:`</br>\n`We can pick cards with numbers 3,4,5,6 which results in a length of 4.`\n\n#### `Constraints:`\n\n- `0<=n<=10^5`\n\n- `-10^5<=number on cards<=10^5`",
+    "title": "Cards of Anjana",
+    "default_testcase": {
+        "id": 7131,
+        "input": "5\n4 2 0 1 6",
+        "expected_output": "3\n",
+        "code_problem_id": 791,
+        "created_at": "2024-04-04T09:18:16.794Z",
+        "updated_at": "2024-04-04T09:18:16.794Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 2588,
+            "code_problem_id": 791,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int MaxConsecutive(vector<int>& nums) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2589,
+            "code_problem_id": 791,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxConsecutive(int[] nums) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2590,
+            "code_problem_id": 791,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxConsecutive(self, nums):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2591,
+            "code_problem_id": 791,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxConsecutive(nums) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

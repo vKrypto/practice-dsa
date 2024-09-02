@@ -1,0 +1,45 @@
+{
+    "id": 210,
+    "description": "You are given an integer array target. You have an integer array initial of the same size as target with all elements initially zeros.\n\nIn one operation you can choose any subarray from initial and increment each value by one.\n\nReturn the minimum number of operations to form a target array from initial.\n\nThe test cases are generated so that the answer fits in a 32-bit integer.\n\n### Example 1 \n\n### Input\n```CPP\ntarget = [1,2,3,2,1]\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation -\nWe need at least 3 operations to form the target array from the initial array.\n[0,0,0,0,0] increment 1 from index 0 to 4 (inclusive).\n[1,1,1,1,1] increment 1 from index 1 to 3 (inclusive).\n[1,2,2,2,1] increment 1 at index 2.\n[1,2,3,2,1] target array is formed.\n\n\n### Example 2 \n\n### Input\n```CPP\ntarget = [3,1,1,2]\n``` \n### Output \n```CPP \n4\n``` \n#### Explanation -\n[0,0,0,0] -> [1,1,1,1] -> [1,1,1,2] -> [2,1,1,2] -> [3,1,1,2]\n\n### Constraints:\n\n* 1 <= target.length <= 10^5\n* 1 <= target[i] <= 10^5\n",
+    "title": "Target Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 417,
+            "code_problem_id": 210,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 424,
+            "code_problem_id": 210,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n\t\n  } \n}\n"
+        },
+        {
+            "id": 431,
+            "code_problem_id": 210,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

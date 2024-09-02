@@ -1,0 +1,28 @@
+{
+    "id": 314,
+    "description": "A car travels from a starting position to a destination which is Dist miles right of the starting position.\n\nThere are petrol pumps along the way. The petrol pumps are represented as an array pumps where pumps[i] = [positioni, fueli] indicates that the ith petrol pump is positioni miles right of the starting position and has fueli liters of petrol.\n\nThe car starts with an infinite tank of petrol, which initially has P liters of petrol in it. It uses one liter of petrol per one mile that it drives. When the car reaches a petrol pump, it may stop and refuel, transferring all the petrol from the station into the car.\n\nReturn the minimum number of refueling stops the car must make in order to reach its destination. If it cannot reach the destination, return -1.\n\nNote: That if the car reaches a petrol pump with 0 fuel left, the car can still refuel there. If the car reaches the destination with 0 fuel left, it is still considered to have arrived.\nConstraints:\n1 \u2264 Dist, P \u2264 10^9\n1 \u2264 pumps.size() \u2264 10^5\n0 \u2264 position[i] < position[i+1] < Dist\n1 \u2264 fueli \u2264 10^9",
+    "title": "Minimum number of Refueling stops",
+    "default_testcase": {
+        "id": 2049,
+        "input": "1\n100\n10\n4\n10 60\n20 30\n30 30\n60 40",
+        "expected_output": "2\n",
+        "code_problem_id": 314,
+        "created_at": "2023-09-17T18:04:22.804Z",
+        "updated_at": "2023-09-17T18:04:22.804Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 762,
+            "code_problem_id": 314,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int Minimum_Stops(int dist, int P, vector<vector<int>> &pumps)\n    {\n        \n    }\n};"
+        }
+    ]
+}

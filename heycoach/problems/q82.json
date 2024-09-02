@@ -1,0 +1,40 @@
+{
+    "id": 82,
+    "description": "Given an array of n elements, where each element is **at most k** distance away from its target(sorted) position, you need to sort the array optimally.\n\n**Note**: DO NOT use in-built sort() function for this question.\n\n### Example 1 \n\n### Input\n```CPP\nn = 7, k = 3\narr = [6,5,3,2,8,10,9]\n``` \n### Output \n```CPP \n2 3 5 6 8 9 10\n``` \n#### Explanation:\nThe sorted array will be 2 3 5 6 8 9 10\n\n### Example 2 \n\n### Input\n```CPP\nn = 5, k = 2\narr = [3,1,4,2,5]\n``` \n### Output \n```CPP \n1 2 3 4 5 \n``` \n### Constraints:\n\n* 1 <= n <= 10000\n* 1 <= k < n\n* 1 <= arr[i] <= 100000\n",
+    "title": "K sorted array",
+    "default_testcase": {
+        "id": 588,
+        "input": "7 3\n2 5 3 9 6 10 8 ",
+        "expected_output": "2 3 5 6 8 9 10 ",
+        "code_problem_id": 82,
+        "created_at": "2022-10-03T06:02:38.875Z",
+        "updated_at": "2022-10-03T06:02:38.875Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 123,
+            "code_problem_id": 82,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\npublic:\n\tvector <int> nearlySorted(int arr[], int n, int K) {\n      // write your code here\n\t}\n};"
+        },
+        {
+            "id": 491,
+            "code_problem_id": 82,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<Integer> nearlySorted(int[] arr, int n, int K) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

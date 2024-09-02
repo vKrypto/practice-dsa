@@ -1,0 +1,64 @@
+{
+    "id": 365,
+    "description": "You have been given a sorted and rotated array containing distinct integers. \nThe rotation point is unknown, and it splits the array into two sorted \nsubarrays. Your task is to find a target integer within this rotated array \nand return its index if it exists. If the target integer is not present, you\nshould return -1. \n\n```\nYour algorithm must solve this problem with a runtime \ncomplexity of O(log n).\n```\n\n```\nSample Input \n\n7\n4 5 6 7 0 1 2 \n0\n```\n\n```\nSample Output\n\n4\n```\n\n\n`Constraints:`\n\n`1 <= nums.length <= 5000`\n\n`-104 <= nums[i] <= 104`\n\n```\nAll values of nums are unique.\n\nnums is an ascending array that is possibly rotated.\n```\n\n`-104 <= target <= 104`\n \n",
+    "title": "Index of target",
+    "default_testcase": {
+        "id": 5987,
+        "input": "7\n4 5 6 7 0 1 2\n0",
+        "expected_output": "4",
+        "code_problem_id": 365,
+        "created_at": "2024-03-02T14:40:58.757Z",
+        "updated_at": "2024-03-02T14:40:58.757Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1056,
+            "code_problem_id": 365,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n   public:\n    int searchRoated(vector<int>& nums, int target) {\n      //Write your code here",
+            "skeleton_class_end": "      }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1078,
+            "code_problem_id": 365,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int searchRotated(int[] nums, int target) {\n        //Write your code here",
+            "skeleton_class_end": "      }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1079,
+            "code_problem_id": 365,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def search_rotated(self, nums, target):\n        #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1080,
+            "code_problem_id": 365,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      searchRoated(nums, target) {\n        //Write your code here",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

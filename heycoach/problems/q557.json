@@ -1,0 +1,64 @@
+{
+    "id": 557,
+    "description": "Given an array A[] of N positive integers having all the numbers occurring exactly three times, except for one number which will occur only once. Find the number occurring only once.\n\n```\n\nInput:\n\nN = 10\n\nA = {12, 1, 12, 3, 12, 1, 1, 2, 3, 3}\n\nOutput: 2\n\nExplanation: \n\nSince 2 occurs once, while\nother numbers occur thrice, \n2 is the answer.\n\nConstraints:\n\n4 <   N  <= 2 * 10^5\n\n0 <= A[i] <= 10^9\n```",
+    "title": "One in three",
+    "default_testcase": {
+        "id": 3687,
+        "input": "7\n10 20 10 30 10 30 30",
+        "expected_output": "20\n",
+        "code_problem_id": 557,
+        "created_at": "2024-01-10T20:20:15.683Z",
+        "updated_at": "2024-01-10T20:20:15.683Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1668,
+            "code_problem_id": 557,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    sear(A, N) {\n      //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1669,
+            "code_problem_id": 557,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def sear(self, A, N):"
+        },
+        {
+            "id": 1670,
+            "code_problem_id": 557,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int sear(int[] A, int N) {\n      //Wite your code here;\n    }\n}"
+        },
+        {
+            "id": 1671,
+            "code_problem_id": 557,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int sear(vector<int> &A, int N)\n    {\n      //Write your code here;\n    }\n};"
+        }
+    ]
+}

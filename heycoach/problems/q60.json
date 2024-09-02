@@ -1,0 +1,33 @@
+{
+    "id": 60,
+    "description": "Given a string s and an integer k you need to print the size of the longest possible substring that has **exactly K unique** characters. If there is no possible substring then print -1.\nThe string contains only lowercase English letters.\n### Example 1 \n\n### Input\n```CPP\ns = \"aabacbebebe\", k = 3\n``` \n### Output \n```CPP \n7\n``` \n#### Explanation:\n\n\"cbebebe\" is the longest substring with 7 distinct characters.\n\n### Example 2 \n\n### Input\n```CPP\ns = \"aaaa\", k = 2\n``` \n### Output \n```CPP \n-1\n``` \n#### Explanation:\n\nThere is no substring with k distinct characters.\n\n\n### Constraints:\n\n* 1 <= s.length <= 10000\n* 1 <= k <= 100\n* s contains all English alphabets in lowercase\n",
+    "title": "Longest substring with k distinct characters",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 475,
+            "code_problem_id": 60,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int longestSubstrWithKUnique(String s, int k) {\n     // write your code here\n    }\n}\n\n"
+        },
+        {
+            "id": 476,
+            "code_problem_id": 60,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n\tint longestSubstrWithKUnique(string s, int k) {\n      // write your code here\n\t}\n};\n\n"
+        }
+    ]
+}

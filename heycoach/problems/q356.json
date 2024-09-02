@@ -1,0 +1,64 @@
+{
+    "id": 356,
+    "description": "**Write a program to find the number of strongly connected components in a directed graph.**\n\n`Input:`\n\n**The number of nodes (N). : 5**</br>\n**The number of edges (E).:  6**</br>\n**E pairs of integers representing directed edges.**</br>\n**(1\u21922),(2\u21923),(3\u21921),(3\u21924),(4\u21925),(5\u21924).**\n\n\n`Output:` \n\n**Number of strongly connected components.**\n\n\n`Constraints:`\n\n\n`1 <= N <= 10^5 (number of nodes)`\n\n`0 <= E <= 10^6 (number of edges)`\n\n`0 <= u, v < N (node indices)`\n",
+    "title": "Finding Strongly Connected Components ",
+    "default_testcase": {
+        "id": 7073,
+        "input": "5 5\n1 3\n1 4\n2 1\n3 2\n4 5",
+        "expected_output": "3\n",
+        "code_problem_id": 356,
+        "created_at": "2024-03-30T12:45:58.381Z",
+        "updated_at": "2024-03-30T12:45:58.381Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 823,
+            "code_problem_id": 356,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n    int findSCC(int n,vector<vector<int>>& a)\n\t{\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1107,
+            "code_problem_id": 356,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int findSCC(int n, List<List<Integer>> a) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1108,
+            "code_problem_id": 356,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findSCC(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 2395,
+            "code_problem_id": 356,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findSCC(n, a) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

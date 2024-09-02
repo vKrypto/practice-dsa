@@ -1,0 +1,64 @@
+{
+    "id": 25,
+    "description": "\nGiven an array of strings nums containing n `unique binary` strings each of length n, return a binary string of length n that `does not appear` in nums. If there are multiple answers, you may return `any` of them.\n\n### Example 1 \n\n### Input\n```CPP\n\nnums = [\"01\",\"10\"] \n``` \n### Output \n```CPP \n\"11\"\n``` \n#### Explanation:\n\"11\" does not appear in nums. \"00\" would also be correct.\n\n\n### Example 2 \n\n### Input\n```CPP\n\nnums = [\"00\",\"01\"]\n``` \n### Output \n```CPP \n\"11\"\n``` \n#### Explanation:\n\"11\" does not appear in nums. \"10\" would also be correct.\n\n\n### Constraints:\n\n* n == nums.length\n* 1 <= n <= 16\n* nums[i].length == n\n* nums[i] is either '0' or '1'.\n* All the strings of nums are unique.\n\n",
+    "title": "Unique String",
+    "default_testcase": {
+        "id": 3775,
+        "input": "4\n0000\n0001 \n0011\n0111",
+        "expected_output": "1100\n",
+        "code_problem_id": 25,
+        "created_at": "2024-01-18T10:19:17.983Z",
+        "updated_at": "2024-01-18T10:19:17.983Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 392,
+            "code_problem_id": 25,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        ",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 399,
+            "code_problem_id": 25,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String findDifferentBinaryString(List<String> nums) {\n",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 406,
+            "code_problem_id": 25,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findDifferentBinaryString(self, nums):",
+            "skeleton_class_end": "\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 561,
+            "code_problem_id": 25,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findDifferentBinaryString(nums) {\n      ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

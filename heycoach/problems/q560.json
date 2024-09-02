@@ -1,0 +1,64 @@
+{
+    "id": 560,
+    "description": "Write a program to print the following pyramid pattern of stars.      \n\n#### `Sample Input:`   \n` N = 4  `  \n#### `Sample Output:`\n\n```\n   *\n  ***\n *****\n*******\n```\n#### `Constraints:`\n- `0< N < 50`",
+    "title": "Pyramid of Stars",
+    "default_testcase": {
+        "id": 3714,
+        "input": "4",
+        "expected_output": "   *\n  ***\n *****\n*******\n",
+        "code_problem_id": 560,
+        "created_at": "2024-01-11T12:20:33.192Z",
+        "updated_at": "2024-01-11T12:20:33.192Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1679,
+            "code_problem_id": 560,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void printPyramidPattern(int n) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1680,
+            "code_problem_id": 560,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void printPyramidPattern(int n) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2416,
+            "code_problem_id": 560,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def print_pyramid_pattern(n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2417,
+            "code_problem_id": 560,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static printPyramidPattern(n) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

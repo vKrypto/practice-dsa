@@ -1,0 +1,64 @@
+{
+    "id": 811,
+    "description": "Lena is a marketing strategist tasked with promoting a new product through influencer collaborations. In order to promote the new product, she wants to conclude partnership with some influencers. In total, Lena  has a list of `n` different influencers. Influencer numbered `i` has `a[i]`, number of followers.\n\nHowever, her budget only allows her to partner with `k` influencers. Lena's objective is to maximize the total number of followers reached through these partnerships. Therefore, she must partner with influencers  with the maximum total number of followers.\n\nYour task is to assist Lena in determining the number of unique ways she can select k influencers to achieve the maximum total number of followers. Remember that selections must be **distinct**; *two selections are considered different if they involve even a single different influencer.*\n\n**Note** : Since the answer can be quite large, output it modulo `1e9 + 7`.\n\n\n**Example 1**\n```\nInput : n = 4, k = 3, a = [1, 3, 1, 2]\n\nOutput : 2\n\nExplanation:\n\nLena has two ways to select 3 influencers with the maximum total number of followers:\n\nConclude partnership with influencers with numbers 0, 1 and 3.\nIn this case, the number of followers will be equal to a[0]+ a[1] + a[3] = 6.\n\nConclude partnership with influeners with numbers 1, 2 and 3. \nIn this case, the number of followers will be equal to a[1] + a[2] + a[3] = 6.\n\n````\n\n\n**Input Format**\n\n\nThe first line contains two integers n and k  \u2014 the number of influencers and how many of them you can sign partnership with.\n\nThe second line contains n integers \u2014 the number of followers of each influencer. \n\n**Output Format**\n\nOutput one integer \u2014 the number of ways to select `k` influencers so that the total number of their followers is maximum possible.\n\n**Contraints**\n\n`1 <= k <= n <= 1000`\n\n`1 <= a[i] <= n`\n",
+    "title": "Lena and Influencers",
+    "default_testcase": {
+        "id": 7353,
+        "input": "4 3\n1 3 1 2\n",
+        "expected_output": "2\n",
+        "code_problem_id": 811,
+        "created_at": "2024-04-24T05:15:32.650Z",
+        "updated_at": "2024-04-24T05:15:32.650Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2643,
+            "code_problem_id": 811,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nlong long LenaAndInfluencers(int n, int k, vector<int>&a)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2644,
+            "code_problem_id": 811,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\n\nclass Solution {\n\n    long LenaAndInfluencers(int n, int k, List<Integer> a) {\n\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2645,
+            "code_problem_id": 811,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n\n    def LenaAndInfluencers(self, n, k, a):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2646,
+            "code_problem_id": 811,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n    LenaAndInfluencers(n, k, a) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

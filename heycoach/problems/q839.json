@@ -1,0 +1,64 @@
+{
+    "id": 839,
+    "description": "You are given a **tolerable** string `s` of length `n` and an integer `p`. \n\nA string is **tolerable** if each its character is one of the first `p` letters of the English alphabet and it doesn't contain any **palindrome** contiguous substring of length 2 or more.\n\nYour task is to find the **lexicographically** next **tolerable** string of the same length. If such string exists, return that string, or else return `\u201c-1\u201d`.\n\n**Note:**\n\nA string `a` is **lexicographically** smaller than `a` string `b` (of the same length) if in the first position where `a` and `b` differ, string `a` has a letter that appears earlier in the alphabet than the corresponding letter in `b`. For example, `\"abde\"` is **lexicographically** smaller than `\"abge\"` because the first position they differ is at the third letter, and `'d'` comes before `'g'`.\n\nThe **lexicographically** next **tolerable** string is the **lexicographically** minimum tolerable string which is larger than the given one.\n\nA **palindrome** is a string that reads the same forward or reversed.\n\n**Example** \n\n```\nInput : n = 3, p = 4, s = \u201ccba\u201d\n\nOutput : \u201ccbd\u201d\n```\n\n**Input Format**\n\n```\nThe first line contains a single integer n.\nThe second line contains a single integer p.\nThe third line contains string s.\n```\n\n**Output Format**\n\n```\nA string denoting, the lexicographically next tolerable string of the same length exists,return it. Otherwise, return \"-1\".\n```\n\n**Constraints**\n\n`1 <= n <= 1000`\n\n`1 <= p <= 26`\n\n`It is guaranteed that s is tolerable`\n\n`s contains only lowercase English alphabets`\n",
+    "title": "Next Tolerable String",
+    "default_testcase": {
+        "id": 7534,
+        "input": "3 \n4\ncba\n",
+        "expected_output": "cbd\n",
+        "code_problem_id": 839,
+        "created_at": "2024-04-28T09:45:32.202Z",
+        "updated_at": "2024-04-28T09:45:32.202Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2743,
+            "code_problem_id": 839,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    tolerableString(n, p, s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2744,
+            "code_problem_id": 839,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution{\npublic:\nstring TolerableString(int n, int p, string &s)\n{\n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2745,
+            "code_problem_id": 839,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public String tolerableString(int n, int p, String s) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2746,
+            "code_problem_id": 839,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def tolerable_string(self, n, p, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

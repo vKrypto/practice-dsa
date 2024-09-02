@@ -1,0 +1,57 @@
+{
+    "id": 947,
+    "description": "You are given an integer array a1,a2,\u2026,an. In one operation, you can choose an integer x (0\u2264x\u22641e18) and replace a[i] with \u230a(a[i]+x)/2\u230b (\u230ay\u230b denotes rounding y down to the nearest integer) for all i from  1 to  n . \n\nPay attention to the fact that all elements of the array are affected on each operation.\n\nReturn the smallest number of operations required to make all elements of the array equal.\n\nInput\n\nThe first line of each testcase contains a single integer n.\n\nThe second line contains n integers a1,a2,\u2026,an.\n\nOutput\n\nReturn the smallest number of operations required to make all elements of the array equal.\n\n```\nSample Input 1 : \n\n6\n\n2 1 2 1 2 1\n\nOutput \n\n1\n```\n\n```\nSample Input 2 : \n\n2\n\n0 32\n\nOutput \n\n6\n```\n\nConstraints :\n\n`1\u2264n\u22642\u22c51e5`\n\n`0\u2264a[i]\u22641e9`",
+    "title": "Count number of Divide",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3156,
+            "code_problem_id": 947,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    int countdivision(int n, vector<int> &arr)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3157,
+            "code_problem_id": 947,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countDivision(int n, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3158,
+            "code_problem_id": 947,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_division(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3159,
+            "code_problem_id": 947,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countDivision(n, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

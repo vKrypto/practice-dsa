@@ -1,0 +1,64 @@
+{
+    "id": 215,
+    "description": "\nStarting with a 1-indexed array of zeros and a list of operations, for each operation add a value to each of the array element between two given indices, inclusive. Once all operations have been performed, return the maximum value in the array.\n### Example 1 \n\n### Input\n```CPP\nn = 5,operations = 3\n[left,right,value]\n1 2 100\n2 5 100\n3 4 100\n```\n### Output \n```CPP\n200\n```\n### Explanation\n\n```\nAfter the first update the list is  `100 100 0 0 0`.  \nAfter the second update list is  `100 200 100 100 100`.  \nAfter the third update list is  `100 200 200 200 100`.\n```\n\nThe maximum value is  200.\n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 4,operations = 2\n2 3 6\n1 2 5\n```\n**Output:** \n```CPP\n11\n```\n### Explanation\n\n```\nAfter the first update the list is  `0 6 6 0`.  \nAfter the second update list is  `5 11 6 0`.  \nSo the Maximum element is 11\n```\n\n### Input Format\n```\nThe first line contain an integer n which denotes the number of element in array and operations which denotes number of operation to take place in array\nThen the operation number of lines denotes 3 integer that is left , right , val.\n```\n### Output Format\n```\nOutput the maximum value of the array after applying all operations.\n```\n\n### Constraints:\n-   `1 <= n,operations <= 10000`\n- ` 1 <= left <= right <= n`\n- ` 1 <= value <= 100000 `\n",
+    "title": "Maximum after range updates ",
+    "default_testcase": {
+        "id": 1535,
+        "input": "4 2\n2 3 6\n1 2 5",
+        "expected_output": "11",
+        "code_problem_id": 215,
+        "created_at": "2022-10-30T18:48:16.881Z",
+        "updated_at": "2022-10-30T18:48:16.881Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 320,
+            "code_problem_id": 215,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  long long rangeUpdate(int n, vector<vector<int>> queries) {\n    //Write yor code here;",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 642,
+            "code_problem_id": 215,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long rangeUpdate(int n, List<List<Integer>> queries) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 643,
+            "code_problem_id": 215,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def rangeUpdate(self, n, queries):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 644,
+            "code_problem_id": 215,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  rangeUpdate(n, queries) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

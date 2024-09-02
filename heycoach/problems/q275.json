@@ -1,0 +1,64 @@
+{
+    "id": 275,
+    "description": "Ramesh is working on a problem given by his teacher, the problem states that he is given an array(say nums), \n\nHe has to find such an array (say ans) such that ans[i]=leftsum[i]+rightsum[i]. \nHelp Ramesh to solve the problem.\nleftsum[i] is the sum of all the elements to the left of index i in the array nums, if there is no such element leftsum[i]=0;\n\nrightsum[i] is the sum of all the elements to the right of index i in the array nums, if there is no such element rightsum[i]=0;\n\n### `Example 1`\n\n#### `Input:`\n```\nnums = [1, 2, 3, 4, 5]\n```\n#### `Output:` \n```\n[14, 13, 12, 11, 10]\n```\n### **Example 2**\n\n#### `Input` \n```\nnums =[1, 2, -3, 4, -5]\n```\n#### `Output:` \n```\n[-2, -3, 2, -5, 4]\n```\n\n\n### Constraints :\n1 <= nums.length <= 1000\n\n-10000 <= nums[i] <= 10000",
+    "title": "SOLO SUM",
+    "default_testcase": {
+        "id": 5856,
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "14 13 12 11 10 \n",
+        "code_problem_id": 275,
+        "created_at": "2024-02-19T07:59:50.959Z",
+        "updated_at": "2024-02-19T07:59:50.959Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 687,
+            "code_problem_id": 275,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> leftRightSum(vector<int>& nums) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 916,
+            "code_problem_id": 275,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def left_right_sum(nums):\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 917,
+            "code_problem_id": 275,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n  public static int[] leftRightSum(int[] nums) {\n        //Write your code here;\n ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 918,
+            "code_problem_id": 275,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    leftRightSum(nums,n) {\n      //Write your code here and return the result\n ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

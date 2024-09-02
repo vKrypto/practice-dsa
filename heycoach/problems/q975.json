@@ -1,0 +1,64 @@
+{
+    "id": 975,
+    "description": "A unique number is a positive integer whose prime factors are limited to 2, 3, and 5.\n\nGiven an integer n, return the n-th unique number.\n\nExample 1:\n\nInput: n = 10\n\nOutput: 12\n\nExplanation: [1, 2, 3, 4, 5, 6, 8, 9, 10, 12] is the sequence of the first 10 unique numbers.\n\nExample 2:\n\nInput: n = 1\n\nOutput: 1\n\nExplanation: 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.\n\nConstraints:\n\n1 <= n <= 1690",
+    "title": "Unique Number Occurrence",
+    "default_testcase": {
+        "id": 8504,
+        "input": "0",
+        "expected_output": "0\n",
+        "code_problem_id": 975,
+        "created_at": "2024-05-31T13:17:27.341Z",
+        "updated_at": "2024-05-31T13:17:27.341Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3253,
+            "code_problem_id": 975,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    unordered_map<int, bool> mp;\n\n    bool isUgly(int n) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3254,
+            "code_problem_id": 975,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    Map<Integer, Boolean> mp = new HashMap<>();\n\n    public boolean isUgly(int n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3255,
+            "code_problem_id": 975,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3256,
+            "code_problem_id": 975,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.mp = new Map();\n    }\n\n    isUgly(n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

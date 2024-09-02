@@ -1,0 +1,64 @@
+{
+    "id": 607,
+    "description": "**Description**:</br>\nGiven an n x n matrix where each row and column is sorted in non-decreasing order, find the kth smallest element in the matrix. Note that it is the kth smallest element in the sorted order, not the kth distinct element.\n\n**`Input:`**</br>\n\u2022\t`An n x n matrix where 1 <= n <= 300.`</br>\n\u2022\t`All elements of the matrix are integers within the range [1, 10^9].`</br>\n\u2022\t`1 <= k <= n^2.`\n\n**`Output:`**</br>\n`Return the kth smallest element in the matrix.`\n\n**`Example:`**</br>\n**`Input:`**</br>\nmatrix = \n[   [ 1,  5,  9],  \n   [10, 11, 13],  \n   [12, 13, 15]\n],</br>\nk = 8</br>\n**`Output:`**\n13</br>\n\n**`Explanation:`**</br>\n`The 8th smallest element in the matrix is 13.`</br>\n\n**`Constraints:`**</br>\n\u2022\t`The matrix is guaranteed to have distinct integers.`</br>\n\u2022\t`You may assume that the input matrix is always valid.`\n",
+    "title": "Kth Smallest Element in a Sorted Matrix",
+    "default_testcase": {
+        "id": 8132,
+        "input": "3\n1 5 9\n10 11 13\n12 13 15\n8",
+        "expected_output": "13\n",
+        "code_problem_id": 607,
+        "created_at": "2024-05-19T10:48:56.203Z",
+        "updated_at": "2024-05-19T10:48:56.203Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1819,
+            "code_problem_id": 607,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  \nint kthSmallest(std::vector<std::vector<int>>& matrix, int k) {\n  \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1821,
+            "code_problem_id": 607,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int kthSmallest(int[][] matrix, int k) {\n       \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1823,
+            "code_problem_id": 607,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def kthSmallest(self, matrix, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1825,
+            "code_problem_id": 607,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    kthSmallest(matrix, k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

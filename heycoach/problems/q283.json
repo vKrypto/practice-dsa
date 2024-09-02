@@ -1,0 +1,33 @@
+{
+    "id": 283,
+    "description": "You are exploring a dense forest with various paths. Each day, you decide to take either one step forward or one step backward. \nWrite a recursive function to count the number of unique paths you can take to explore the forest over a given number of days.\n\n\nInput Fromat:\n\nAn integer n, representing the number of days you will explore the forest.\n\nOutput Format:\n\nAn integer representing the count of unique paths.\n\n**Exmaple 1**\n\nInput:\n```\nn = 2\n```\nOutput:\n```\n4\n```\n**Explanation:**\n\nFor 2 days, you have the following unique paths:\n1. Forward - Forward\n2. Forward - Backward\n3. Backward - Forward\n4. Backward - Backward\n\n**Exmaple 2**\n\nInput:\n```\nn = 1\n```\nOutput:\n```\n2\n```\n\nConstraints:\n\n1 \u2264 n \u2264 20",
+    "title": "Unique Paths",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 703,
+            "code_problem_id": 283,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 728,
+            "code_problem_id": 283,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

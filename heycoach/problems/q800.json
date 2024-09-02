@@ -1,0 +1,64 @@
+{
+    "id": 800,
+    "description": "A group of friends decide that they want to make frequent visits to a newly opened restaurant which is owned by one of their other friend to popularize the restaurant.\n\nThe group plans to visit it in groups of at least two people on a given day. Given the number of friends \u2018n\u2019 and the amount of money that i th friend has **`y[i]`** and the amount of food that **`i th`** friend would eat  **`x[i]`**, you have to make groups in a way that the bill calculated is in their budget. Find out the maximum amount of consecutive days these friends could go to the restaurant given that no person can go more than once.\n\n#### Example:\n```\nConsider a scenario where n=6, x = [8,3,9,2,4,5] and y = [5,3,1,4,5,10]. Now let us look at all the ways they can visit the restaurant.\n ```\n\n- `On the first day first and sixth friend can visit (A group of at least 2) together they eat 8+5=13 amount of food. The budget for them is 5+10 = 15 (15>13).`\n- `Now on the second day (Note that first and sixth friend can no longer visit the restaurant now) 2nd 4th and 5th friend can visit the restaurant and together they will eat, 3+2+4=10 and their budget is 3+4+5=12 (12>10). They can go to the restaurant for a maximum of two days and thus the answer should be two.`\n\n#### Input Format:\n\n- `A single line which contains the number of friends \u2018n\u2019.`\n\n- `Second line contains \u2018n\u2019 space separated integers containing the amount of food that each friend would eat.`\n\n- `Third line contains \u2018n\u2019 space separated integers containing the amount of money that each friend can spend. `\n \n#### Output Format:\n\n- `Print a single integer denoting the number of days they will visit the restaurant.`\n \n\n#### Sample Inputs:\n```\n6\n\n1 4 1 2 4 2\n\n1 3 3 2 3 4\n \n4\n\n1 2 3 4\n\n1 1 2 2\n ```\n#### Sample Outputs:\n```\n3 (for 1st testcase)\n\n0 (for 2nd testcase)\n```\n\n#### Constraints:\n\n- `2<=n<=10^5`",
+    "title": "Restaurant Trip",
+    "default_testcase": {
+        "id": 8217,
+        "input": "6\n8 3 9 2 4 5\n5 3 1 4 5 10",
+        "expected_output": "2\n",
+        "code_problem_id": 800,
+        "created_at": "2024-05-23T09:35:26.327Z",
+        "updated_at": "2024-05-23T09:35:26.327Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2626,
+            "code_problem_id": 800,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve (int n, vector<int> x, vector<int> y)\n    {\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3117,
+            "code_problem_id": 800,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int n, List<Integer> x, List<Integer> y) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3118,
+            "code_problem_id": 800,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, x, y):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3119,
+            "code_problem_id": 800,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, x, y) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

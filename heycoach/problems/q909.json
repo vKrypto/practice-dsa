@@ -1,0 +1,8 @@
+{
+    "id": 909,
+    "description": "In a Binary Search Tree (BST), some nodes are occupied by thieves. You need to travel from a start node to a target node while minimizing the risk. The risk is defined as the number of thieves encountered on the path. If it's not possible to reach the target node due to obstacles, return -1. Nodes occupied by thieves or obstacles cannot be traversed.",
+    "title": "Minimum Risk Path in a BST",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

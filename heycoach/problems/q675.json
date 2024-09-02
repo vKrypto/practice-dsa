@@ -1,0 +1,64 @@
+{
+    "id": 675,
+    "description": "You are given a string s, consisting only of Latin letters 'a', and a string t, consisting of lowercase Latin letters.\n\nIn one move, you can replace any letter 'a' in the string s with a string t. Note that after the replacement string s might contain letters other than 'a'.\n\nYou can perform an arbitrary number of moves (including zero). How many different strings can you obtain? Print the number, or report that it is infinitely large.\n\nTwo strings are considered different if they have different length, or they differ at some index.\n\n#### Example \n##### Input 1 :\n\n```\naaaa\na\n```\n##### Output 1 \n`1`\n\n#### Explanation:\n`In the first example, you can replace any letter 'a' with the string \"a\", but that won't change the string. So no matter how many moves you make, you can't obtain a string other than the initial one.`\n\n#### Input format: \n\n```\nThe first line contains a single integer q (1\u2264q\u226410^4) \u2014 the number of testcases.\n\nThe first line of each testcase contains a non-empty string s, consisting only of Latin letters 'a'. The length of s doesn't exceed 50.\n\nThe second line contains a non-empty string t, consisting of lowercase Latin letters. The length of t doesn't exceed 50.\n\n```\n\n#### Output format\n`For each testcase, print the number of different strings s that can be obtained after an arbitrary amount of moves (including zero). If the number is infinitely large, print -1. Otherwise, print the number.`\n\n#### Constraints :\n\n```\n1<=s.length<=1000\n1<=t.length<=1000\n```",
+    "title": "String Replacement",
+    "default_testcase": {
+        "id": 4458,
+        "input": "aaaa\na",
+        "expected_output": "1",
+        "code_problem_id": 675,
+        "created_at": "2024-01-27T16:33:17.194Z",
+        "updated_at": "2024-01-27T16:33:17.194Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2100,
+            "code_problem_id": 675,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n       int sr(string s,string t) {\n",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2101,
+            "code_problem_id": 675,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n  int sr(String s, String t) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2102,
+            "code_problem_id": 675,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n\n    def sr(self, s, t):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2103,
+            "code_problem_id": 675,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    sr(s, t) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

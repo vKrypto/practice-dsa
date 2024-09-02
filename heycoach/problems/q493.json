@@ -1,0 +1,64 @@
+{
+    "id": 493,
+    "description": "Given a string str which denotes stream of characters. Your task is to find a new string output_str.\noutput_str is formed such that we have to find first non-repeating character at each instance when a character is inserted to the stream and append it at the end of output_str. If no such non-repeating charater is found then append 'X' at the end of output_str.\n#### `Input Format:`\n\n- `Only one line which contains a string that needs to be converted to output_str.`\n\n#### `Output Format:`\n\n- `Return the updated string.`\n\n#### Input:\n` str = dabc`\n\n#### `Output:`\n` dddd`\n\n#### Explanation: \n```\n\"d\" - first non-repeating chararcter 'd'.\n\n\"da\" - first non-repeating chararcter 'd'.\n\n\"dab\" - first non-repeating chararcter 'd'.\n\n\"dabc\" - first non-repeating chararcter 'd'\n```\n#### Input: \n`str = bbe`\n\n#### Output: \n\n`bXe`\n\n#### Explanation: \n```\n\"b\" - first non-repeating character 'b'\n\n\"bb\" - no non-repeating character so 'X'\n\n\"bbe\" - first non-repeating character 'e'\n\n```\n\n#### Constraints:\n\n- `1 \u2264 |str| \u2264 10^5`",
+    "title": "First Non Repeating",
+    "default_testcase": {
+        "id": 3295,
+        "input": "dacb",
+        "expected_output": "dddd\n",
+        "code_problem_id": 493,
+        "created_at": "2024-01-01T07:05:04.066Z",
+        "updated_at": "2024-01-01T07:05:04.066Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1438,
+            "code_problem_id": 493,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\n    public:\n    string firstNonRep(string str) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1439,
+            "code_problem_id": 493,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String firstNonRep(String str) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1440,
+            "code_problem_id": 493,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def firstNonRep(self, s):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1441,
+            "code_problem_id": 493,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    firstNonRep(str) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 278,
+    "description": "Two heyCoach students have been assigned to solve certain coding problems for their upcoming tasks , the problems is represented with number. \n\nBoth of them have a list of problems represented by an array of problem\u2019s number(say a and b), now as they have very limited time, they want to help each other by solving together. Return how many problems they have to solve together in order to save time. \n\n### **Example 1**\n\nInput \n```\na = [1,2,3,5]\nb = [7,6,5,8,9] \n```\nOutput: \n```\n8\n```\n\nExplanation :\nboth of them will solve problems 1,2,3,5,6,7,8,9.\n\n### **Example 2**\n\nInput \n```\na = [2,3]\nb = [2,3]\n```\nOutput: \n```\n2\n```\n\nConstraints:\n\n1<=a.length,b.length<=1000\n\nFor all 0<= i <a.length,b.length 1<=a[i],b[i]<=1000 \n",
+    "title": "UNION IN ARRAY",
+    "default_testcase": {
+        "id": 1876,
+        "input": "2 2\n2 3\n2 3",
+        "expected_output": "2\n",
+        "code_problem_id": 278,
+        "created_at": "2023-09-13T18:02:01.578Z",
+        "updated_at": "2023-09-13T18:02:01.578Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 690,
+            "code_problem_id": 278,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n  int Unionarray(int arr1[], int arr2[], int n, int m){\n    //Write your code here;\n  }\n};"
+        },
+        {
+            "id": 1071,
+            "code_problem_id": 278,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def union_array(arr1, arr2):"
+        },
+        {
+            "id": 1072,
+            "code_problem_id": 278,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n    unionArray(arr1, arr2) {\n        //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1073,
+            "code_problem_id": 278,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class UnionArray {\n    public static int unionArray(int[] arr1, int[] arr2) {\n        //Write your code here;\n    }\n}"
+        }
+    ]
+}

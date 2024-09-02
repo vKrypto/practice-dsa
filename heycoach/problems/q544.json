@@ -1,0 +1,64 @@
+{
+    "id": 544,
+    "description": "Given an integer x and you can flip exactly one bit from 0 to 1. Write code to find the length of the longest contiguous subsegment of 1 you can create in the binary format.\n\n#### `Input Format:`\n`A single line that contains an integer x.`\n\n#### `Output Format:`\n`A single line that contains an integer which represents the length of the longest contiguous subsegment of 1 you can create in the binary format.`\n\n\n#### `Example 1`\n\n#### `Input:`\n`1775`\n#### `Output:`\n`8`\n\n#### `Explanation: `\n`Binary of 1775 is 11011101111. So 4th bit(0 based indexed) from right can be flipped to get the contiguous subsegment of length 8.` \n\n\n#### `Example 2:`\n\n#### `Input:`\n`7`\n#### `Output:`\n`3`\n\n\n#### `Explanation:` \n`Binary of 7 is 111. So it doesn't have any bit 0 which can be flipped.`\n\n#### `Constraints:`\n- `0 <= x <= 10^18`",
+    "title": "Flip Bit",
+    "default_testcase": {
+        "id": 3622,
+        "input": "1775",
+        "expected_output": "8",
+        "code_problem_id": 544,
+        "created_at": "2024-01-07T09:53:13.910Z",
+        "updated_at": "2024-01-07T09:53:13.910Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1628,
+            "code_problem_id": 544,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    int flipBitToWin(long long x) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1629,
+            "code_problem_id": 544,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int flipBitToWin(long x) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1630,
+            "code_problem_id": 544,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def longest_ones(n):\n  #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1631,
+            "code_problem_id": 544,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    flipBitToWin(x) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

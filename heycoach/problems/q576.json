@@ -1,0 +1,64 @@
+{
+    "id": 576,
+    "description": "Aman has exams coming up and he has a lot of subjects to cover. Unfortunately in all the anxiety he promised all of his friends that he will study with them but did not think about the fact that their timings might clash.   \nGiven each subject, you are given its starting time and ending time that was discussed with the friend. You need to help out Aman and help him decide with how many maximum friends can he afford to study, given that once he starts he cannot leave without completing.\n\n**`Input format:`**\n```\nYou are given two arrays, starting time and ending time of each subject on the ith index.\n```\n\n**`Output Format:`**\n\n`Return a single integer denoting the maximum number of friends he can study with.`\n\n**```Sample Input:```**  \n\n```\n4\n\n1 2 3 6\n\n3 5 9 8\n```\n\n`Sample Output:`\n\n2\n\n**`Explanation:`** `He can choose to study with a friend at index 1 from 2->5 and then can go study with a friend at index 3.`\n",
+    "title": "Exam Season",
+    "default_testcase": {
+        "id": 3833,
+        "input": "4\n1 2 3 6\n3 5 9 8",
+        "expected_output": "2\n",
+        "code_problem_id": 576,
+        "created_at": "2024-01-21T12:50:36.104Z",
+        "updated_at": "2024-01-21T12:50:36.104Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1717,
+            "code_problem_id": 576,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  int solve(List<Integer> start, List<Integer> end, int n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1718,
+            "code_problem_id": 576,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(vector<int> start, vector<int> end, int n){",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1719,
+            "code_problem_id": 576,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, start, end, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1720,
+            "code_problem_id": 576,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(start, end, n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 131,
+    "description": "\nGiven a set of  **N**  jobs where each  **jobi** has a deadline and profit associated with it.\n\nEach job takes  **1**  unit of time to complete and only one job can be scheduled at a time. We earn the profit associated with job if and only if the job is completed by its deadline.\n\nFind the **maximum profit** you can earn.\n\n**Note:** Jobs will be given in the form (Profit, deadline) associated with that Job:\n```CPP\nstruct Job\n{\n    int profit;\n    int dead;\n\n};\n```\n\n\n### Example 1 \n\n### Input\n```CPP\nN = 4\nJobs = {(20,4),(10,1),(40,1),(30,1)}\n```\n\n\n### Output \n```CPP\n60\n```\n\n#### Explanation:\nJob0 and Job2 can be done with maximum profit of 60 (20+40).\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 5\nJobs = {(100,2),(19,1),(27,2),(25,1),(15,1)}\n```\n**Output:** \n```CPP\n127\n```\n#### Explanation:\n2 jobs can be done with maximum profit of 127 (100+27).\n\n### Constraints:\n1 \u2264 N \u2264 10000  \n1 \u2264 deadline \u2264 100\n1 \u2264 profit \u2264 500\n\n",
+    "title": "Maximum profit earned from jobs",
+    "default_testcase": {
+        "id": 946,
+        "input": "4\n20 4\n10 1\n40 1\n30 1\n",
+        "expected_output": "60",
+        "code_problem_id": 131,
+        "created_at": "2022-10-13T05:56:21.772Z",
+        "updated_at": "2022-10-13T05:56:21.772Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 202,
+            "code_problem_id": 131,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "struct Job\n{\n    int profit;\n    int dead;\n\n};\n\nclass Solution\n{\npublic:\n\n    static bool comp(Job a, Job b) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": "\n    "
+        },
+        {
+            "id": 511,
+            "code_problem_id": 131,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Job {\n    int profit;\n    int dead;\n\n    Job(int profit, int dead) {\n        this.profit = profit;\n        this.dead = dead;\n    }\n}\n\nclass Solution {\n    public int jobScheduling(Job[] arr, int n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1896,
+            "code_problem_id": 131,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Job:\n    def __init__(self, profit, dead):\n        self.profit = profit\n        self.dead = dead\n\nclass Solution:\n    def jobScheduling(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1897,
+            "code_problem_id": 131,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Job {\n    constructor(profit, dead) {\n        this.profit = profit;\n        this.dead = dead;\n    }\n}\n\nclass Solution {\n    jobScheduling(arr, n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

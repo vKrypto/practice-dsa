@@ -1,0 +1,64 @@
+{
+    "id": 587,
+    "description": "**Problem Statement:**\n\nYou are given a 0-indexed integer array nums of even length, and an empty array arr. Alice and Bob decide to play a game with the following rules:\n\nIn every round, Alice removes the minimum element from nums, and then Bob does the same.<br>\nBob appends the removed element to the array arr, and then Alice does the same.<br>\nThe game continues until nums becomes empty.<br>\nReturn the resulting array arr.\n\n### `Input Format:`\n\n```\nAn array nums of even length (1 <= nums.length <= 100).<br>\nEach element in nums is an integer (1 <= nums[i] <= 100).<br>\nnums.length is guaranteed to be even.\n```\n\n### `Output Format:`\n\n`An array arr containing the elements removed during the game.`\n### `Example`\n\n#### `Input:` \n`nums = [5,4,2,3]`\n#### `Output:` \n`[3,2,5,4]`\n#### `Explanation: `\n\n```\n  In round one, first Alice removes 2 and then Bob removes 3.\n  Then in arr, firstly Bob appends 3 and then Alice appends 2. So arr = [3,2].\n  At the beginning of round two, nums = [5,4].\n  Now, first Alice removes 4 and then Bob removes 5.\n  Then both append in arr, which becomes [3,2,5,4].\n```\n",
+    "title": "Two Minimum at a time",
+    "default_testcase": {
+        "id": 4060,
+        "input": "4\n4 5 8 9",
+        "expected_output": "5 4 9 8 ",
+        "code_problem_id": 587,
+        "created_at": "2024-01-24T05:34:25.189Z",
+        "updated_at": "2024-01-24T05:34:25.189Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1761,
+            "code_problem_id": 587,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> numberGame(vector<int>& nums) {\n        \n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1764,
+            "code_problem_id": 587,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def numberGame(self, nums):\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1766,
+            "code_problem_id": 587,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public ArrayList<Integer> numberGame(ArrayList<Integer> nums) {\n        ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1767,
+            "code_problem_id": 587,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    numberGame(nums) {\n        \n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

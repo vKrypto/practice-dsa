@@ -1,0 +1,64 @@
+{
+    "id": 872,
+    "description": "Bizon the Champion, a member of the \"Bizons\" team, is faced with a challenge during a competition. The challenge is to transform one word, `s`, into another word, `t`, using advanced data structures known as suffix structures. The team has expertise in different suffix structures which include the suffix automaton and the suffix array:\n\n- **Suffix Automaton:** `Allows the removal of any single character from a string each time it is applied.`\n- **Suffix Array:** `Allows any two characters of the string to be swapped each time it is applied.`\n\n`The task is to determine if it's possible to transform `s` into `t` using these structures, and if so, identify which structures are needed.`\n\n**Input Format:**\n- `The first line contains the word` `s`, `a non-empty string of lowercase English letters.`\n- `The second line contains the word` `t`, `a non-empty string of lowercase English letters.`\n\n**Output Format:**\n- `Print \"need tree\" if it's impossible to transform `s` into `t` even using both suffix array and suffix automaton.`\n- `Print \"automaton\" if only the suffix automaton is needed.`\n- `Print \"array\" if only the suffix array is required.`\n- `Print \"both\" if both data structures are required.`\n\n**Constraints:**\n- `Both words `s` and `t` are distinct and consist of at most 100 lowercase English letters.`\n\n**Examples:**\n\n**Example 1:**\n\n#### `Input:`\n```\nautomaton\ntomat\n```\n#### `Output:`\n```\nautomaton\n```\n**Explanation:**\n- The word \"tomat\" can be formed by removing some characters from \"automaton\" using the suffix automaton.\n\n**Example 2:**\n\n#### `Input:`<br/>\n```\narray  \narray   \n```\n#### `Output:` \narray\n\n**Explanation:**\n- `By swapping the third and fifth characters of \"array\", you can obtain \"arary\". This can be achieved using the suffix array.`\n\n**Detailed Scenarios:**\n1. **Automaton Only:** `If` `t` `can be formed by removing characters from` `s` `without rearranging the order of the remaining characters.`\n2. **Array Only:** `If` `t` `can be formed by rearranging the characters in `s` (i.e., `s` and `t` are anagrams).`\n3. **Both Needed:** `If` `t` `requires characters to be removed and the remaining characters to be rearranged.`\n4. **Need Tree:** `If it's impossible to form` `t` `from` `s` `even with any combination of operations allowed by the suffix automaton and array. `",
+    "title": "Suffix Structures",
+    "default_testcase": {
+        "id": 7647,
+        "input": "automaton\ntomat",
+        "expected_output": "automaton\n",
+        "code_problem_id": 872,
+        "created_at": "2024-05-02T18:50:00.085Z",
+        "updated_at": "2024-05-02T18:50:00.085Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2858,
+            "code_problem_id": 872,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n    int suff(string  s,string t){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2859,
+            "code_problem_id": 872,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": " class Solution {\n    public void suff(String s, String t) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2860,
+            "code_problem_id": 872,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def suff(self, s, t):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2861,
+            "code_problem_id": 872,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n suff(s, t) {\n   //Write your code here",
+            "skeleton_class_end": "    }\n  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

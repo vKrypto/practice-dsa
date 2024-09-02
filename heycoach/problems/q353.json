@@ -1,0 +1,64 @@
+{
+    "id": 353,
+    "description": "You are given a directed acyclic graph (DAG) represented by its nodes and edges. Implement a program to find and print the topological sorting of the nodes using Kahn's algorithm.\n\nTopological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u-v, vertex u comes before v in the ordering.\n\n**Input**:\n\n- An integer N representing the number of nodes in the graph.\n- An integer E representing the number of directed edges in the graph.\n- E pairs of integers representing directed edges in the graph.\n\n.\n**Output**:\n\n- A list of elements representing the topological sort.\n\n\n**Examples**:\n**Input**:\n```\n6 6\n5 2\n5 0\n4 0\n4 1\n2 3\n3 1\n```\n\n**Output**:\n```\n4 5 2 0 3 1 \n```\n\n\n**Constraints**:\n\n1 <= N <= 10^5 (number of nodes)\n\n0 <= E <= 10^6 (number of edges)\n\n0 <= u, v < N (node indices)\n\nThe graph is guaranteed to be a directed acyclic graph (DAG).",
+    "title": "Topological Sorting of a Directed Acyclic Graph",
+    "default_testcase": {
+        "id": 2719,
+        "input": "6 6\n5 2\n5 0\n4 0\n4 1\n2 3\n3 1\n",
+        "expected_output": "4 5 2 0 3 1 ",
+        "code_problem_id": 353,
+        "created_at": "2023-11-26T02:58:27.935Z",
+        "updated_at": "2023-11-26T02:58:27.935Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 820,
+            "code_problem_id": 353,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    vector<int> topologicalSort(int N, vector<pair<int, int>>& edges) {\n       ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 958,
+            "code_problem_id": 353,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def topologicalSort(self, N, edges):\n      ",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 959,
+            "code_problem_id": 353,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public List<Integer> topologicalSort(int N, List<int[]> edges) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1014,
+            "code_problem_id": 353,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    topologicalSort(N, edges) {\n\n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": 245,
+    "description": "\nThe task is to find the `Second Smallest Number` with a given sum of digit `s` and number of digit as `d`;\n\n### Example 1 \n\n### Input\n```CPP\n S=9\n D=2\n``` \n### Output \n```CPP \n27\n``` \n#### Explanation -\n18 is the smallest number possible with sum = 9\nand total digits = 2, Whereas the second\nsmallest is 27.\n\n\n### Example 2 \n\n### Input\n```CPP\nS=16\nD=3;\n``` \n### Output \n```CPP \n178\n``` \n#### Explanation -\n169 is the smallest number possible with sum is\n16 and total digits = 3, Whereas the second\nsmallest is 178.\n\n\n### Constraints:\n\n* 0<s<10^5+1\n* 0<d<10^5+1\n",
+    "title": "Second smallest number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 442,
+            "code_problem_id": 245,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(int s,int d) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 443,
+            "code_problem_id": 245,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, s, d):\n        # your code here\n"
+        }
+    ]
+}

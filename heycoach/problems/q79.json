@@ -1,0 +1,40 @@
+{
+    "id": 79,
+    "description": "Given an input stream of A of n characters consisting only of lower case alphabets. The task is to find the **first non repeating** character, each time a character is inserted to the stream. If there is no such character then append '#' to the answer. After processing all n characters return the resultant string.\n\n### Example 1 \n\n### Input\n```CPP\nA = \"aabc\"\n``` \n### Output \n```CPP \n\"a#bb\"\n``` \n#### Explanation:\nFor every character first non-repeating character is as follow-\n\"a\" - first non-repeating character is 'a'\n\"aa\" - no non-repeating character so '#'\n\"aab\" - first non-repeating character is 'b'\n\"aabc\" - first non-repeating character is 'b'\n\n### Example 2 \n\n### Input\n```CPP\nA = \"zz\"\n``` \n### Output \n```CPP \n\"z#\"\n``` \n#### Explanation:\nFor every character first non-repeating character is as follow-\n\"z\" - first non-repeating character is 'z'\n\"zz\" - no non-repeating character so '#'\n### Constraints:\n\n* 1 <= A.length <= 10000\n* string A contains lowercase English letters.\n",
+    "title": "First non-repeating character in a stream",
+    "default_testcase": {
+        "id": 565,
+        "input": "aabc",
+        "expected_output": "a#bb\n",
+        "code_problem_id": 79,
+        "created_at": "2022-10-02T12:33:54.107Z",
+        "updated_at": "2022-10-02T12:33:54.107Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 119,
+            "code_problem_id": 79,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tstring FirstNonRepeating(string A) {\n      // write your code here\n\t}\n\n};"
+        },
+        {
+            "id": 488,
+            "code_problem_id": 79,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public String FirstNonRepeating(String A) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

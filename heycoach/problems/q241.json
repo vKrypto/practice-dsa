@@ -1,0 +1,28 @@
+{
+    "id": 241,
+    "description": "\nGiven the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list `sorted` as well.\n\n### Example 1\n\n![Image](https://assets.leetcode.com/uploads/2021/01/04/linkedlist1.jpg)\n\n### Input\n\n```CPP\nhead = [1,2,3,3,4,4,5]\n```\n\n### Output\n\n```CPP\n[1,2,5]\n```\n\n### Example 2\n\n![Image](https://assets.leetcode.com/uploads/2021/01/04/linkedlist2.jpg)\n\n### Input\n\n```CPP\nhead = [1,1,1,2,3]\n```\n\n### Output\n\n```CPP\n[2,3]\n```\n\n### Constraints:\n\n- The number of nodes in the list is in the range [0, 300].\n- -100 <= Node.val <= 100\n- The list is guaranteed to be sorted in ascending order.\n",
+    "title": "Sort List 2",
+    "default_testcase": {
+        "id": 1718,
+        "input": "5\n1 \n1 \n5\n1 \n1",
+        "expected_output": "5 ",
+        "code_problem_id": 241,
+        "created_at": "2022-11-03T13:53:52.177Z",
+        "updated_at": "2022-11-03T13:53:52.177Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 448,
+            "code_problem_id": 241,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// struct ListNode {\n//   int val;\n//   ListNode * next;\n//   ListNode(): val(0), next(nullptr) {}\n//   ListNode(int x): val(x), next(nullptr) {}\n//   ListNode(int x, ListNode * next): val(x), next(next) {}\n// };\n\nclass Solution {\n  public:\n    ListNode * deleteDuplicates(ListNode * head) {\n      // write your code here\n    }\n};\n\n"
+        }
+    ]
+}

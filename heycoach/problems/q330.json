@@ -1,0 +1,28 @@
+{
+    "id": 330,
+    "description": "You are given a number N. Find the total count of set bits for all numbers from 1 to N(both inclusive).\nConstraints:\n1 \u2264 N \u2264 10^8",
+    "title": "Set Buts upto N",
+    "default_testcase": {
+        "id": 2170,
+        "input": "1\n4",
+        "expected_output": "5\n",
+        "code_problem_id": 330,
+        "created_at": "2023-09-20T17:48:17.517Z",
+        "updated_at": "2023-09-20T17:48:17.517Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 791,
+            "code_problem_id": 330,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int countsetbit(int n)\n    {\n        \n    }\n};"
+        }
+    ]
+}

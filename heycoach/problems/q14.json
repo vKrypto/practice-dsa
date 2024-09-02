@@ -1,0 +1,45 @@
+{
+    "id": 14,
+    "description": "You are given N numbers. You are allowed to perform a \"drop\" operation where you simply choose any one of the N given numbers and remove it. After dropping ith number, number to left of it and number to right of it becomes adjacent numbers.\n\n\nYour task is to perform minimum number of drop operations and get a resulting set of numbers where sum of every two adjacent numbers is even.\n\nInput\nThe first line will contain an integer N, the number of integers in given Array.\nThe second line will contain N given integers seperated by space\nConstraints\n1   \u2264   N   \u2264   105\n-104   \u2264   Each Value in Array   \u2264   104\nOutput\nSingle integer representing minimum number of required drop operations.",
+    "title": "Easy Transform",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 18,
+            "code_problem_id": 14,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 19,
+            "code_problem_id": 14,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}"
+        },
+        {
+            "id": 20,
+            "code_problem_id": 14,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass"
+        }
+    ]
+}

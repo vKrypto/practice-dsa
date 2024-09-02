@@ -1,0 +1,64 @@
+{
+    "id": 395,
+    "description": "Given an input stream arr of n integers. Find the Kth smallest element for each element in the stream and if the Kth smallest element doesn't exist, then print -1.\n\n**`Example 1`**\n\n```\nInput: n = 6, k = 4, arr = [1,2,3,4,5,6]\n\nOutput: [-1,-1,-1,4,4,4]\n\n```\n\n`Constraints`\n\n`1 <= n,k <= 10^5`\n\n`1 <= arr[i] <= 10^5`\n",
+    "title": "kth smallest element",
+    "default_testcase": {
+        "id": 2448,
+        "input": "6 4\n1 2 3 4 5 6",
+        "expected_output": "-1 -1 -1 4 4 4 ",
+        "code_problem_id": 395,
+        "created_at": "2023-11-19T04:26:20.284Z",
+        "updated_at": "2023-11-19T04:26:20.284Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 952,
+            "code_problem_id": 395,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n\tvector<int> kthsmallest(int k, int arr[], int n) {\n      //Write your code here;\n",
+            "skeleton_class_end": "\t}\n};",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 953,
+            "code_problem_id": 395,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n    public int[] kthSmallest(int k, int[] arr, int n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 954,
+            "code_problem_id": 395,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n    def kthSmallest(self, k, arr, n):\n    ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1084,
+            "code_problem_id": 395,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n\n\n    kthsmallest(k, arr, n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

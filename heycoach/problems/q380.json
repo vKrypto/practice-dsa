@@ -1,0 +1,64 @@
+{
+    "id": 380,
+    "description": "A learner from heyCoch loves finding unique things, so in the next task by heyCoach,he has been assigned to check if in a given array say nums say **s** is the maximum sum out of all the subarray he can get from an array nums, and **p** is the maximum product he can get out of all subarrays, his task is to check if s is greater than p or not. </br>\nif(s>p) print 1;</br>\nif(s<p) print -1;</br>\nif(s==p) print 0;</br>\n\n#### `Sample Input:`\n\n```\n5\n\n9 12 18 66 94\n```\n\n#### `Sample Output:`\n\n`-1`\n\n#### `Sample Input- 2 `\n\n```\n2\n-1 1\n```\n#### `Sample Output - 2`\n\n`0`\n \n#### `Sample Input- 3`\n\n```\n2\n2 2\n```\n#### `Sample Output - 3`\n\n`0`\n\n#### `Constraints:`\n\n- `The length of the array nums will be between 1 and 10^5.`\n\n- `For all 0<i<nums.length, -10^4<=nums[i]<=10^4.`\n",
+    "title": "MAXSUM OR MAX PRODUCT",
+    "default_testcase": {
+        "id": 7820,
+        "input": "5\n1 2 -3 4 5",
+        "expected_output": "-1\n",
+        "code_problem_id": 380,
+        "created_at": "2024-05-12T15:25:11.769Z",
+        "updated_at": "2024-05-12T15:25:11.769Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 898,
+            "code_problem_id": 380,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int* ar, int n){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 899,
+            "code_problem_id": 380,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int[] ar, int n) {\n          //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 900,
+            "code_problem_id": 380,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, ar, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1118,
+            "code_problem_id": 380,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(ar, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

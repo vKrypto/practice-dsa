@@ -1,0 +1,21 @@
+{
+    "id": 864,
+    "description": "In this interactive problem, you are tasked with determining the size of a hidden cyclic graph. The graph is structured such that it consists of `n` vertices, forming a single cycle. This means each vertex is connected in a ring, with the cycle's total length also being `n`.\n\nYou are allowed to interact with a system to query the length of paths between pairs of vertices. You can make a maximum of 50 queries per game.\n\n**Interaction Details:**\n\n- You can query the path length between any two distinct vertices `a` and `b` by issuing the query `? a b`. In response, the system will either:\n  - Return one of the two path lengths between `a` and `b`, chosen at random.\n  - Return `-1` if either `a` or `b` exceeds the number of vertices in the graph, `n`.\n\n- The result of a query `? a b` is consistent across multiple invocations, but querying `? b a` might yield a different path length due to the cyclic nature of the graph.\n\n- If the result of a query is `0`, it indicates an error (e.g., exceeding the query limit or an invalid query), and your solution should immediately terminate.\n\n**Objective:**\n\nYour goal is to determine the exact number of vertices `n` in the cyclic graph by strategically making queries and interpreting the responses. After deducing `n`, output it using the format `! n`.\n\n**Example Interaction:**\n\n#### `Input:`\n```\n? 1 2  \n? 1 3  \n? 1 4\n```\n#### `Output:`\n```\n1\n2\n-1\n```\n#### `From the output:`\n- `The response to `? 1 2` is `1`, indicating a direct connection between vertices 1 and 2.`\n- `The response to `? 1 3` is `2`, suggesting that vertex 3 is two edges away from vertex 1.`\n- `The response to `? 1 4` is `-1`, indicating that vertex 4 does not exist in the graph, confirming the cycle size is `3`.`\n\n`Thus, the final result should be:`\n```\n! 3\n```\n\n**Note:**\n`Ensure your solution efficiently handles large values and conforms to the constraints on queries and graph size (up to 1,018 vertices).`",
+    "title": "Determine the Cycle Size",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2910,
+            "code_problem_id": 864,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int determineCycleSize() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

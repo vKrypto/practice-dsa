@@ -1,0 +1,64 @@
+{
+    "id": 796,
+    "description": "You are given a set of playing cards which can either be red or black card. </br>These cards are  aligned in a sequence, you have to determine how many minimum cards needs to be replaced in \norder to create a segment of atleast k black cards.\n\n#### `Input Format:`\n\n- `First line contains two integers 'n' denoting the number of cards on the table and 'k' denoting the segment of black cards required.`\n\n- `Second line contains a string where each character is either 'R' denoting red or 'B' denoting black.`\n\n#### `Output Format:`\n\n- `Return the minimum number of replacement required in order to get atleast 'k' segment of black cards.`\n\n#### `Sample Input - 1:`\n```\n5 3\n\nBBRBR\n```\n#### ` Sample Output - 1:\n\n1\n\n#### `Explanation:`</br>\n```\nYou can replace the card at index-2 with a black card and get a segment of 4 black cards which satisfies the condition of getting atleast k black cards which in this case was 3.\n```\n#### `Sample Input - 2:`\n```\n1 1\n\nR\n```\n#### `Sample Output - 2:`\n\n`1`\n\n#### `Explanation:`</br>\n` There exists only one card and it is not black hence needs to be replaced.`\n\n#### `Constraints:`\n\n- `0<=k<=n<=10^5`\n\n- `-10^5<=number on cards<=10^5`",
+    "title": "Black and Red Arrangement",
+    "default_testcase": {
+        "id": 7142,
+        "input": "5 3\nBBRBR",
+        "expected_output": "1\n",
+        "code_problem_id": 796,
+        "created_at": "2024-04-04T10:26:48.183Z",
+        "updated_at": "2024-04-04T10:26:48.183Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 2600,
+            "code_problem_id": 796,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, s, k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2601,
+            "code_problem_id": 796,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, s, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2602,
+            "code_problem_id": 796,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int solve(int n, String s, int k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2603,
+            "code_problem_id": 796,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n      int solve(int n, string s, int k){\n        //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

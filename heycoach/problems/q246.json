@@ -1,0 +1,28 @@
+{
+    "id": 246,
+    "description": "\nGiven a `0-indexed` integer array nums of length n and an integer k, return the `number of pairs` (i, j) such that:\n\n- 0 <= i < j <= n - 1 and\n- nums[i] \\* nums[j] is divisible by k.\n\n### Example 1\n\n### Input\n\n```CPP\n nums = [1,2,3,4,5], k = 2\n```\n\n### Output\n\n```CPP\n7\n```\n\n#### Explanation:\n\nThe 7 pairs of indices whose corresponding products are divisible by 2 are\n(0, 1), (0, 3), (1, 2), (1, 3), (1, 4), (2, 3), and (3, 4).\n\nTheir products are 2, 4, 6, 8, 10, 12, and 20 respectively.\n\nOther pairs such as (0, 2) and (2, 4) have products 3 and 15 respectively, which are not divisible by 2.\n\n### Example 2\n\n### Input\n\n```CPP\nnums = [1,2,3,4], k = 5\n```\n\n### Output\n\n```CPP\n0\n```\n\n### Explanation:\n\nThere does not exist any pair of indices whose corresponding product is divisible by 5.\n\n### Constraints:\n\n- 1 <= nums.length <= 10^5\n- 1 <= nums[i], k <= 10^5\n",
+    "title": "Count K",
+    "default_testcase": {
+        "id": 1739,
+        "input": "18 34\n 112\n 223\n 233\n 764\n5354\n 234\n  34\n  12\n3223\n 436\n5776\n 456\n1234\n 435\n  46\n 578\n 789\n8790\n",
+        "expected_output": "33",
+        "code_problem_id": 246,
+        "created_at": "2022-11-03T14:18:13.596Z",
+        "updated_at": "2022-11-03T14:18:13.596Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 411,
+            "code_problem_id": 246,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    long long countPairs(vector<int>& nums, int k) {\n       // write your code here\n    }\n};\n"
+        }
+    ]
+}

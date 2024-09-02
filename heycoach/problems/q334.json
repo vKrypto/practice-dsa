@@ -1,0 +1,28 @@
+{
+    "id": 334,
+    "description": "Let's denote as popcount(x) the number of bits set ('1' bits) in the binary representation of the non-negative integer x.\n\nYou are given multiple queries consisting of pairs of integers l and r. For each query, find the x, such that l\u2009\u2264\u2009x\u2009\u2264\u2009r, and popcount(x)  is maximum possible. If there are multiple such numbers find the smallest of them.\n\nInput\nThe first line contains integer n \u2014 the number of queries (1\u2009\u2264\u2009n\u2009\u2264\u200910000).\n\nEach of the following n lines contain two integers li,\u2009ri \u2014 the arguments for the corresponding query (0\u2009\u2264\u2009li\u2009\u2264\u2009ri\u2009\u2264\u200910^18).\n\nOutput\nFor each query print the answer in a separate line.",
+    "title": "Range and set bits",
+    "default_testcase": {
+        "id": 2150,
+        "input": "3\n1 2\n2 4\n1 10\n",
+        "expected_output": "1\n3\n7 ",
+        "code_problem_id": 334,
+        "created_at": "2023-09-19T19:15:46.057Z",
+        "updated_at": "2023-09-19T19:15:46.057Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 794,
+            "code_problem_id": 334,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "#include<bits/stdc++.h>\nusing namespace std;\n\n\nint main(){\n    // Code here\n    return 0;\n}"
+        }
+    ]
+}

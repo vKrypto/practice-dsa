@@ -1,0 +1,45 @@
+{
+    "id": 385,
+    "description": "Happy is a curious explorer who finds himself in a mysterious land. While exploring, he stumbles upon a magical cave filled with sparkling gemstones. \nAs he walks deeper into the cave, he discovers a box containing a peculiar linked list. Each node of the linked list contains the coordinates of a gemstone\n and a label indicating whether the gemstone is valuable or not. Happy wants to find all the valuable gemstones in the cave.\n\nTask: Write a function that takes the head of the linked list and returns a new linked list containing only the valuable gemstones' coordinates.\n\nEach node of the linked list has the following attributes:\n\nx and y coordinates, which are integers representing the position of the gemstone and a value label that signifies the gemstone's value\u20141 indicates valuable, and 0 indicates non-valuable.\nThe next pointer that points to the next node in the linked list.\n\nConstraints:\n1) The linked list representing gemstones will have at most 10^4 nodes.\n2) Each gemstone's coordinates, x and y, will be integers in the range of -10^6 to 10^6.\n3) The value label of each gemstone will be either 0 or 1.\n4) The number of gemstones with a value of 1 (valuable) will be at most the number of total gemstones.",
+    "title": "Gemstones",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 909,
+            "code_problem_id": 385,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "ListNode* findValuableGemstones(ListNode* head) {\n   \n}"
+        },
+        {
+            "id": 910,
+            "code_problem_id": 385,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "public static ListNode findValuableGemstones(ListNode head) {\n        ListNode valuableHead = null;\n        ListNode valuableTail = null;\n\n        ListNode current = head;\n        while (current != null) {\n            if (current.value == 1) {\n                if (valuableHead == null) {\n                    valuableHead = valuableTail = new ListNode(current.x, current.y, current.value);\n                } else {\n                    valuableTail.next = new ListNode(current.x, current.y, current.value);\n                    valuableTail = valuableTail.next;\n                }\n            }\n            current = current.next;\n        }\n\n        return valuableHead;\n    }"
+        },
+        {
+            "id": 911,
+            "code_problem_id": 385,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def find_valuable_gemstones(head):\n    "
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 379,
+    "description": "Imagine you're a coach of a competitive programming team, and you've been given an interesting problem to solve. Your task is to help your team members find the index of the greatest peak element in an array.\nA peak element in an array is an element that is greater than or equal to its neighbours. To clarify, an element at the edge of the array only needs one neighbour to be considered a peak. For example, in the array [5, 3, 4], both 5 and 4 are peak elements.\n\n\n```\n\n```\n\n```\nSample Input 1\n\n4\n1 2 3 1\n```\n\n```\nSample Output : 2 (the index of 3 is 2)\n```\n\n```\nSample Input 2\n\n5\n1 7 3 5 9\n```\n\n```\nSample Output : 4 (The index of 9 is 4)\n```\n\n\n`Constraints :   `  \n\n`  The length of the array nums will be between 1 and 10^5. ` \n\n`0<i<nums.length`\n\n` -10^4<=nums[i]<=10^4.`",
+    "title": "Peak Element",
+    "default_testcase": {
+        "id": 2773,
+        "input": "4\n1 2 3 1",
+        "expected_output": "2\n",
+        "code_problem_id": 379,
+        "created_at": "2023-12-04T09:43:37.659Z",
+        "updated_at": "2023-12-04T09:43:37.659Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 895,
+            "code_problem_id": 379,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int findPeakElement(vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 896,
+            "code_problem_id": 379,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int findPeakElement(List<Integer> nums) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 897,
+            "code_problem_id": 379,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findPeakElement(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1062,
+            "code_problem_id": 379,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      findPeakElement(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

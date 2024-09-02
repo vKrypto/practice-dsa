@@ -1,0 +1,64 @@
+{
+    "id": 807,
+    "description": "Satyam runs a factory which builds strings for customers. The factory can build the desired string for the customer from an empty string 'W' using two ways:\n\n1. They can add any character at the end of 'W' using B money.\n2. They can append a substring of 'S' to the end of 'W' at a cost of A money.\n\nHelp Satyam think of an algorithm that minimizes the amount of money it takes to build the desired string.\n\nInput Format:\n\nThe first line contains three integers 'n' the size of desired string, the cost 'a' and the cost 'b' which were discussed above.\n\nThe second line contains the desired string that has to be created.\n\nOutput Format:\n\nReturn a single integer which denotes the minimum total cost to make the string.\n\nSample Input:\n\n9 4 5\n\naabaacaba\n\nSample Output:\n\n26\n\n```\nExplanation:\n\nStarting from an empty string, let us look at the order of operation to create S.\n\nAppend 'a' cost = 4\n\nAppend 'a' cost = 4\n\nAppend 'b' cost = 4\n\nCopy 'aa' from W and append to W cost = 5\n\nAppend 'c' cost = 4\n\nCopy and append 'aba' from W and append it to end cost = 5\n\nThe total cost comes out to be 4+4+4+5+4+5 = 26 which is the minimum possible cost.\n```\n\nConstraints:\n\n1<=n,a,b<=10^4\n",
+    "title": "String factory",
+    "default_testcase": {
+        "id": 7352,
+        "input": "9 8 9\nbacbacacb",
+        "expected_output": "42\n",
+        "code_problem_id": 807,
+        "created_at": "2024-04-23T21:27:52.738Z",
+        "updated_at": "2024-04-23T21:27:52.738Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2639,
+            "code_problem_id": 807,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int buildStringCost(int N, int A, int B, string S) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2640,
+            "code_problem_id": 807,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n    public int buildStringCost(int N, int A, int B, String S){\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2641,
+            "code_problem_id": 807,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self,s,l,a,b):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2642,
+            "code_problem_id": 807,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(N, A, B, S) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

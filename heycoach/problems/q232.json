@@ -1,0 +1,28 @@
+{
+    "id": 232,
+    "description": "Given a string  `s`  and a dictionary of strings  `wordDict`, return  `true`  if  `s`  can be segmented into a space-separated sequence of one or more dictionary words.\n\n**Note**  that the same word in the dictionary may be reused multiple times in the segmentation.\n### Example 1 \n\n### Input\n```CPP\ns = \"heycoach\", wordDict = [\"hey\",\"coach\"]\n```\n### Output \n```CPP\ntrue\n```\n### Explanation\nReturn true because \"heycoach\" can be segmented as \"hey coach\".\n\n**Example 2:**\n\n**Input:**\n```CPP\ns = \"applepenapple\", wordDict = [\"apple\",\"pen\"]\n```\n**Output:** \n```CPP\ntrue\n```\n### Explanation\nReturn true because \"applepenapple\" can be segmented as \"apple pen apple\".\nNote that you are allowed to reuse a dictionary word.\n**Example 3:**\n\n**Input:**\n```CPP\ns = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]\n```\n**Output:** \n```CPP\nfalse\n```\n\n\n\n### Constraints:\n-   `1 <= s.length <= 300`\n-   `1 <= wordDict.length <= 1000`\n-   `1 <= wordDict[i].length <= 20`\n-   `s`  and  `wordDict[i]`  consist of only lowercase English letters.\n-   All the strings of  `wordDict`  are  **unique**.",
+    "title": "Valid string partition",
+    "default_testcase": {
+        "id": 1655,
+        "input": "heycoach\n2\nhey coach",
+        "expected_output": "1",
+        "code_problem_id": 232,
+        "created_at": "2022-11-02T06:52:10.164Z",
+        "updated_at": "2022-11-02T06:52:10.164Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 331,
+            "code_problem_id": 232,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    bool wordBreak(string s, vector<string>& wordDict) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

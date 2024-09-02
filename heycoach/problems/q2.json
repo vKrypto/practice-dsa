@@ -1,0 +1,21 @@
+{
+    "id": 2,
+    "description": "Read the space-separated inputs and print each number.\n\n<----- input format ----->\n1. read 'n'.\n2. read 'n' space-separated integers.",
+    "title": "Read and print",
+    "default_testcase": null,
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 2,
+            "code_problem_id": 2,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "Class Solution {\npublic:\n  void solve() {\n    \n  } \n};"
+        }
+    ]
+}

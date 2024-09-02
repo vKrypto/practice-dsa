@@ -1,0 +1,64 @@
+{
+    "id": 961,
+    "description": "A game has a scoring system where each player's score is stored in a stack. Players can score points, lose points, or reset their score.\n\nImplement functions to handle scoring, losing points, and resetting scores.\n\nExample\n\nInput: \n4\nOperations: [\"Score 10\", \"Score 20\", \"Lose 5\", \"Reset\"]\n\nOutput: \nFinal Score: 0\n\nExplanation:\nScores are added and subtracted, and then reset to 0.\n\nEdge Case\nInput: Operations: [\"Reset\"]\n\nOutput: Final Score: 0\n\nInput Format\n\nThe first line contains an integer n \u2014 the number of operations.\n\nThe next n lines contain operations in the format: \"Score X\", \"Lose X\", or \"Reset\".\n\nOutput Format\n\nPrint a single integer \u2014 the final score after all operations.\n\nConstraints\n\n1 \u2264 n \u2264 10^5\n\n\"Score X\" and \"Lose X\" will have X as an integer where -10^6 \u2264 X \u2264 10^6.\n",
+    "title": "Game Scoring System",
+    "default_testcase": {
+        "id": 8393,
+        "input": "0\n",
+        "expected_output": "Final Score: 0\n",
+        "code_problem_id": 961,
+        "created_at": "2024-05-27T06:44:25.343Z",
+        "updated_at": "2024-05-27T06:44:25.343Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3200,
+            "code_problem_id": 961,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class GameScoringSystem {\npublic:\n    int performOperations(const vector<string>& operations) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3201,
+            "code_problem_id": 961,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class GameScoringSystem:\n    def perform_operations(self, operations):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3202,
+            "code_problem_id": 961,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass GameScoringSystem {\n    public int performOperations(List<String> operations) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3203,
+            "code_problem_id": 961,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class GameScoringSystem {\n    performOperations(operations) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

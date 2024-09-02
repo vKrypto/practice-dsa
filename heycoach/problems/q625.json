@@ -1,0 +1,21 @@
+{
+    "id": 625,
+    "description": "Find the largest index r\n\nYou are given an array a of n elements, and Your task is to handling q queries. The array elements undergo the bitwise AND operation within specified subarrays defined by indices l and r (l<=r).Keep in mind that this operation is valid only when l is less than or equal to r.\n\nYour responsibility is to respond to each query, which consists of two integers k and l. For each query, You must determine the largest index r (l<=r<=n) at which the bitwise AND operation f(l,r)  is greater than or equal to k.\n\n\n#### `Input:`\n\n- `Array a of n elements.`\n- `q queries, each with two integers k and l.`\n\n#### `Output:`\n```\nFor each query, provide the maximum index r such that f(l,r) is greater than or equal to k.\n```\n\n\n#### `Sample Input and output:1`\n\n5  \n15 14 17 42 34  \n3  \n1 7  \n2 15  \n4 5\n\n#### `Output:`\n```\n2 -1 5\n```\n\n\n#### `Sample Input and output:2`\n```\n5   \n7 5 3 1 7\n4\n1 7\n5 7\n2 3\n2 2\n```\n#### `Output:`\n```\n1 5 2 2\n```\n#### `Sample Input 3:`\n```\n7\n19 20 15 12 21 7 11\n4\n1 15\n4 4\n7 12\n5 7\n```\n#### `Output:`\n```\n2 6 -1 5\n```\n\n\n#### `Constraints:`\n\n- `1 \u2264 n \u2264 10^5`\n\n- `1 \u2264 a[i], k \u2264 10^9`\n\n- `1 \u2264 l \u2264 n`\n\n- `1 \u2264 q \u2264 10^5`\n\n\n",
+    "title": "Find the largest index r",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2689,
+            "code_problem_id": 625,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n",
+            "skeleton_class_end": "    }\n};\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

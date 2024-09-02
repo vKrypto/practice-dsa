@@ -1,0 +1,28 @@
+{
+    "id": 234,
+    "description": "Given an array of strings  `words`  representing an English Dictionary, return  _the longest word in_  `words`  _that can be built one character at a time by other words in_  `words`.\n\nBasically a word can be made if all the prefixes of that word is present as a whole word in the Dictionary.\n\n`example: [\"w\",\"wo\", \"wor\", \"worl\",\"world\", \"app\", \"apply\"]`\n`\"world\"` is valid because all its prefixes => [\"w\", \"wo\", \"wor\", \"worl\", \"world\"] are present in the Dictionary as a word.\n\nIf there is more than one possible answer, return the longest word with the smallest lexicographical order. If there is no answer, return the empty string.\n\nNote that the word should be built from left to right with each additional character being added to the end of a previous word.\n### Example 1 \n\n### Input\n```CPP\nwords = [\"w\",\"wo\",\"wor\",\"worl\",\"world\"]\n```\n### Output \n```CPP\n\"world\"\n```\n### Explanation\n The word \"world\" can be built one character at a time by \"w\", \"wo\", \"wor\", and \"worl\".\n\n**Example 2:**\n\n**Input:**\n```CPP\nwords = [\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]\n```\n**Output:** \n```CPP\n\"apple\"\n```\n### Explanation\nBoth \"apply\" and \"apple\" can be built from other words in the dictionary. However, \"apple\" is lexicographically smaller than \"apply\".\n\n### Constraints:\n-   `1 <= words.length <= 1000`\n-   `1 <= words[i].length <= 30`\n-   `words[i]`  consists of lowercase English letters.",
+    "title": "Longest valid word in dictionary",
+    "default_testcase": {
+        "id": 1674,
+        "input": "5\nw wo wor worl world",
+        "expected_output": "world",
+        "code_problem_id": 234,
+        "created_at": "2022-11-02T11:38:51.172Z",
+        "updated_at": "2022-11-02T11:38:51.172Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 333,
+            "code_problem_id": 234,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    string longestWord(vector<string>& words) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

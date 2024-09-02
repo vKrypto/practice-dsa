@@ -1,0 +1,64 @@
+{
+    "id": 450,
+    "description": "Priya and Aman are very close friends. One day they were playing different kinds of games and \u201cSOS\u201d is one of them, they felt bored of playing the same old game. Priya got an idea of playing the same game in a different way. She started explaining the game to Aman. The player is given with a string and total number of queries the player is going to get. The query consists of a range from [1,n] , here the maximum n value is the length of the given string , and the range could be anything within the range. The task is to count the total number of \u201csos\u201d subsequences that are occurred in that particular range of the given string. Return the count of the subsequence \u201csos\u201d in the given string of the particular range. Your task is to implement an efficient algorithm to answer the queries by counting the total number of \"sos\" subsequences within the given range of the string. \n\n\n### Example 1\n\n#### Sample Input \n```\nThe String str = \u201csosspso\u201d\n\nq = 2 (number of queries) \n\nRange of the Queries\n\n[1,6]\n\n[2,7]\n```\n#### Sample Output \n```\n3\n\n0\n```\n#### Explanation:\n\nFor Example, Given a String s=\u201csosspso\u201d, q = 2 (number of queries)\n and the queries are [1,6] and [2,7]\n\n **Query 1** : \u201csosspso\u201d => \u201csossps\u201d, has 2 \u201csos\u201d\n 1) \u201c**sos**sps\u201d , \u201c**so**s**s**ps\u201d , \"**so**ssp**s**\"  these are the three \u201csos\u201d subsequences in the given string of\nrange [1,6]\n\n **Query 2**: \u201csosspso\u201d => \u201cosspso\u201d has 0 \u201csos\u201d\n 2) \u201cosspso\u201d no subsequence \u201csos\u201d is found so the count is 0 for the range [2,7]\n\n### Input Format\n\n- The first line contains the input string \u2018s\u2019, which is a sequence of lowercase English\nletters.\n\n- The second line contains an integer \u2018q\u2019 (1<=q<=10^5), representing the total number\nof queries.\n\n- Each of following \u2018q\u2019 lines contains a query in the form of two space-seperated integers,\u2018l\u2019 and \u2018r\u2019(1<=l<=r<=n), where \u2018l\u2019 and \u2018r\u2019 define the range within the string for which \u201csos\u201d subsequences need to be counted.\n\n### Output Format\nThe output consists of several lines, where each line contains a single integer\nrepresenting the count of \u201csos\u201d subsequences within the specified query range.\n\n### Constraints\n\n\n- A string \u2018s\u2019 of length \u2018N\u2019 (1<=N<=10^5) consisting of lowercase English letters.\n\n- An integer \u2018q\u2019 (1<=q<=10^5), representing the total number of queries.\n\n- For each query, you are given a pair of integers \u2018l\u2019 and \u2018r\u2019 (1<=l<=r<=n), indicating a\nrange within the string.\n\n\n",
+    "title": "The SOS Game",
+    "default_testcase": {
+        "id": 3066,
+        "input": "sosspso\n2\n1 6 \n2 7",
+        "expected_output": "3\n0\n",
+        "code_problem_id": 450,
+        "created_at": "2023-12-23T07:43:27.133Z",
+        "updated_at": "2023-12-23T07:43:27.133Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1281,
+            "code_problem_id": 450,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static List<Long> countOccurrences(String s, List<List<Integer>> queries) {\n        // write the code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1282,
+            "code_problem_id": 450,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def count_occurrences(s, queries):\n      # write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1283,
+            "code_problem_id": 450,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static vector<long long> countOccurrences(string s, vector<vector<int>> queries) {\n      // write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1284,
+            "code_problem_id": 450,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  static countOccurrences(s, queries) {\n    // write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

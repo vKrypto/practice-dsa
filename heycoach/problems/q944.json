@@ -1,0 +1,57 @@
+{
+    "id": 944,
+    "description": "You are given with two integers x and y (they can be equal), and  an array a of length n. A pair of indices \u27e8i,j\u27e9 (1\u2264i<j\u2264n) beautiful if:\n\na[i]+a[j] is divisible by x and a[i]\u2212a[j] is divisible by y. \n\nFind the number of beautiful pairs in the array a.\n\nInput\n\nThe first line of each test case contains three integers n,x,and y \u2014 the size of the array and two integers x and y.\n\nThe second line of each test case contains n integers a1,a2,\u2026,an  \u2014 the elements of the array.\n\nOutput\n\nFor each test case, output a single integer \u2014 the number of beautiful pairs in the array a.\n\n```\nSample Input 1 :\n\n9 2 3\n\n14 6 1 15 12 15 8 2 15\n\nOutput : 7\n```\n\n```\nSample Input 2 :\n\n9 6 2\n\n4 9 7 1 2 2 13 3 15\n\nOutput : 5\n```\n\nConstraints :\n\n`2\u2264n\u22642*1e5` \n\n`1\u2264x,y\u22641e9 `\n\n`1\u2264ai\u22641e9`",
+    "title": "Count Pairs",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3144,
+            "code_problem_id": 944,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    int countpairs(int n, vector<int> &a, int x, int y)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3145,
+            "code_problem_id": 944,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countPairs(int n, int[] a, int x, int y) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3146,
+            "code_problem_id": 944,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def countPairs(self, n, a, x, y):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3147,
+            "code_problem_id": 944,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countPairs(n, a, x, y) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

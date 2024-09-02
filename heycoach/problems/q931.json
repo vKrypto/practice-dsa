@@ -1,0 +1,57 @@
+{
+    "id": 931,
+    "description": "You are given two code snippets:\n\n##### First Code Snippet:\n```\nk=0\nfor(i=0; i<n; i++)\n    for(j=i; j<n; j++)\n        k = k + 1\n\nprint(k)\n```\n#####  Second Code Snippet:\n```\nk = 0;\nfor (i = n / 2; i <= n; i++) \n    for (j = 2; j <= n; j = j * 2) \n        k = k + n / 2;\n\nprint(k)\n```\n\n- `Which of the two has the better worst time complexity? Print 1 if its the first one and 2 if its the second one. Also on the next line print the answer to this question \"If an algorithm A has a better worst time complexity as compared to another algorithm B does that mean A will always be faster than B?\", print \"Yes\" or \"No\".`\n\n\n#### Output Format:\n- `on the first line print 1 or 2.`</br>\n- `on the next line print \"Yes\" or \"No\".`\n",
+    "title": "Time Complexity - 5",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3093,
+            "code_problem_id": 931,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function printTimeComplexity() {\n    // Print the answer here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3094,
+            "code_problem_id": 931,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def print_time_complexity():\n    # Print the answer here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3095,
+            "code_problem_id": 931,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n    public static void printTimeComplexity() {\n      //Print answer here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3096,
+            "code_problem_id": 931,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "void TimeComplexity(){\n    //Print the answer here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

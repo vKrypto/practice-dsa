@@ -1,0 +1,64 @@
+{
+    "id": 10,
+    "description": "Dholu and Bholu are great fans of odd numbers, that's why they want to divide the chocolate in such a way that each of the two parts weighs odd number of grams, at the same time it is not obligatory that the parts are equal. The boys are extremely excited to start eating their chocolates as soon as possible, that's why you should help them and find out, if they can divide the chocolate in the way they want. For sure, each of them should get a part of positive weight.\n\n### Input Format\nThe first (and the only) input line contains integer number c (1\u2009\u2264\u2009c\u2009\u2264\u2009100) \u2014 the weight of the chocolate bought by the boys.\n\n### Output Format\nReturn True, if the boys can divide the chocolate into two parts, each of them weighing odd number of grams; and False in the opposite case\n\n### Sample Input\n```\n5\n```\n### Sample Output\n```\nNO\n```\n### Explanation\n```\nIn this case, the weight of the chocolate is 5. The condition for dividing the chocolate into two parts, each weighing an odd number of grams, is not satisfied. Hence, the output is \"NO.\"\n```\n### Constraints\n* 1 \u2264 c \u2264 100: The weight of the chocolate bought by the boys.",
+    "title": "Chocolate Distribution",
+    "default_testcase": {
+        "id": 28,
+        "input": "5",
+        "expected_output": "NO",
+        "code_problem_id": 10,
+        "created_at": "2022-09-25T09:13:08.112Z",
+        "updated_at": "2022-09-25T09:13:08.112Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 4,
+            "code_problem_id": 10,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool canDivideChocolate(int n) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 7,
+            "code_problem_id": 10,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean canDivideChocolate(int n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 8,
+            "code_problem_id": 10,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def canDivideChocolate(self, n):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 553,
+            "code_problem_id": 10,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static canDivideChocolate(n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

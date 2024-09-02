@@ -1,0 +1,64 @@
+{
+    "id": 420,
+    "description": "On the festival of Diwali, people decorate their houses with colorful lights. Rahul wants to decorate his house in a unique way. He has a string s representing the pattern of lights he wants to use. Each character in the string represents a lightbulb `('*')` or an empty space `('.')`. Rahul wants to know the maximum number of consecutive lightbulbs he can use without violating the following rule:\n\nThere should be at least one empty space `('.')` between every two already present consecutive lightbulbs, meaning that let's say you were given\n\n`(* ... '*)` these stars are already present and thus there needs to be atleast one space between them. So the largest sequence comes out to be `(**** . *)`, remember that you have to check the condition add an empty space between the series of already present stars. \n\nWrite a function **maxConsecutiveLights** to help Rahul determine the maximum number of consecutive lightbulbs he can use in the given string.\n**\n\n**Example 1**\n\n```\nInput\n\n*.*.*\n\nOutput\n\n1\n```\n\n**Example 2**\n\n```\nInput: \n\n*....*.*.....*\n\nOutput\n\n5\n\n\nCharacter 1: *\n\n- currentConsecutive is reset to 0.\n- maxConsecutive remains 0.\n\nCharacter 2: .\n\n- Increment currentConsecutive to 1.\n- Update maxConsecutive to 1.\n\nCharacter 3: .\n\n- Increment currentConsecutive to 2.\n- Update maxConsecutive to 2.\n\nCharacter 4: .\n\n- Increment currentConsecutive to 3.\n- Update maxConsecutive to 3.\n\nCharacter 5: .\n\n- Increment currentConsecutive to 4.\n- Update maxConsecutive to 4.\n\nCharacter 6: *\n\n- currentConsecutive is reset to 0.\n- maxConsecutive remains 4.\n\nCharacter 7: .\n\n- Increment currentConsecutive to 1.\n- maxConsecutive remains 4.\n\nCharacter 8: *\n\n- currentConsecutive is reset to 0.\n- maxConsecutive remains 4.\n\nCharacter 9: .\n\n- Increment currentConsecutive to 1.\n- maxConsecutive remains 4.\n\nCharacter 10: .\n\n- Increment currentConsecutive to 2.\n- maxConsecutive remains 4.\n\nCharacter 11: .\n\n- Increment currentConsecutive to 3.\n- maxConsecutive remains 4.\n\nCharacter 12: .\n\n- Increment currentConsecutive to 4.\n- maxConsecutive remains 4.\n\nCharacter 13: .\n\n- Increment currentConsecutive to 5.\n- Update maxConsecutive to 5 (since currentConsecutive > maxConsecutive).\n\nCharacter 14: *\n\n- currentConsecutive is reset to 0.\n- maxConsecutive remains 5.\n\n\nFinal Output:\n\nAt the end of the string, the function finds that the longest sequence of consecutive spaces (.) is 5\n\n```\n\n**Input Format**\n```\nA single string s.\n````\n**Output Format**\n````\nAn integer representing the maximum number of consecutive lightbulbs that can be used in the given string.\n````\n**Constraints**\n\n`1 <= |s| <= 10^4`\n\n` s contains only '*' and '.' characters`",
+    "title": "DIWALI PARTY",
+    "default_testcase": {
+        "id": 8640,
+        "input": "*....*.*.....*",
+        "expected_output": "5\n",
+        "code_problem_id": 420,
+        "created_at": "2024-06-18T15:03:17.493Z",
+        "updated_at": "2024-06-18T15:03:17.493Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1194,
+            "code_problem_id": 420,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxConsecutiveLights(String s) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1195,
+            "code_problem_id": 420,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution {\npublic:\n    int maxConsecutiveLights(string &s) {",
+            "skeleton_class_end": " }\n};",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1196,
+            "code_problem_id": 420,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def max_consecutive_lights(self, s):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1197,
+            "code_problem_id": 420,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxConsecutiveLights(s) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

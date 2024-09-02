@@ -1,0 +1,45 @@
+{
+    "id": 115,
+    "description": "\nYou have `n`  `tiles`, where each tile has one letter tiles[i] printed on it.\n\nReturn the number of possible non-empty sequences of letters you can make using the letters printed on those `tiles`.\n\n### Example 1 \n\n### Input\n```CPP\ntiles = \"AAB\"\n``` \n### Output \n```CPP \n8\n``` \n#### Explanation:\nThe possible sequences are \"A\", \"B\", \"AA\", \"AB\", \"BA\", \"AAB\", \"ABA\", \"BAA\".\n\n\n### Example 2 \n\n### Input\n```CPP\ntiles = \"AAABBC\"\n``` \n### Output \n```CPP \n188\n``` \n\n\n\n",
+    "title": "Letter Printer",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 379,
+            "code_problem_id": 115,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(string s) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 382,
+            "code_problem_id": 115,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(String s) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 385,
+            "code_problem_id": 115,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, s):\n        # your code here\n"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 561,
+    "description": "You are given an array containing n number of elements. The elements of the array are inserted in a Trie data structure in the form of binary representation for example 1, 2 and 3 will be represented as:\n\n                        0                   2nd bit\n                      /   \\\n                     0      1               1st bit\n                     \\     / \\\n                      1   0    1            0th bit\n\nNote that the Trie is for 32-bit representation and out of those only first three are shown in the example above.\n\nYour task is to use the trie in order to find the max XOR pair. This can also be done without using Trie but I encourage you to try and solve the question using trie.\n\nSample Input:\n\n3\n\n1 2 3\n\nSample Output:\n3\n\nMax XOR pair is 1 and 2 whose XOR is equal to 3.\n\nConstraints:\n\n2 <= n <= 10^4\n\n2^0 <= A[i] <=2^31 ",
+    "title": "XOR Pair in Trie",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1689,
+            "code_problem_id": 561,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "//Definition of TrieNode class;\n/*\nclass TrieNode{\n    public:\n        TrieNode* left; (represents the presence of zero at ith bit.)\n        TrieNode* right; (represents the presence of one at ith bit.)\n};\n*/\n\n\nclass Solution{\n    public:\n    int solve(TrieNode* root, int ar[], int n){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1690,
+            "code_problem_id": 561,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of TrieNode class;\n/*\nclass TrieNode{\n        TrieNode left; (represents the presence of zero at ith bit.)\n        TrieNode right; (represents the presence of one at ith bit.)\n}\n*/\nclass Solution {\n    int solve(TrieNode root, int[] ar, int n) {\n      //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1691,
+            "code_problem_id": 561,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\"\"\"\nclass TrieNode:\n    def __init__(self):\n        self.left = None  (Represents the presence of zero at ith bit)\n        self.right = None (Represents the presence of one at ith bit)\n\"\"\"\nclass Solution:\n    def solve(self, root, ar, n):\n      #Write your code here and return the maximum XOR possible by a pair;"
+        },
+        {
+            "id": 1692,
+            "code_problem_id": 561,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class\n/*\nclass TrieNode {\n    constructor() {\n        this.left = null;  (Represents the presence of zero at ith bit)\n        this.right = null; (Represents the presence of one at ith bit)\n    }\n}\n*/\n\nclass Solution {\n    solve(root, ar, n) {\n      //Write your code here and return the maximum XOR possible by a pair;\n    }\n}"
+        }
+    ]
+}

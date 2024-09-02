@@ -1,0 +1,57 @@
+{
+    "id": 954,
+    "description": "Given an integer array `arr` of even length, you need to determine if it's possible to split the array into two parts, `arr1` and `arr2`, such that:\n- The lengths of arr1 and arr2 are equal to arr.length / 2.\n- Both arr1 and arr2 contain distinct elements.\n\nReturn true if it is possible to split the array, and false otherwise.\n\n**Example 1:**</br>\n**Input:** arr= [5,5,2,2,9,10]</br>\n**Output:** true</br>\n**Explanation:** One of the possible ways to split arr is arr1= [5,2,9] and arr2= [5,2,10].\n\n**Example 2:**</br>\n**Input:** arr= [1,1,1,1]</br>\n**Output:** false</br>\n\nConstraints:</br>\n\n`1 <= nums.length <= 100`</br>\n`nums.length % 2 == 0 `</br>\n`1 <= nums[i] <= 100`</br>\n",
+    "title": "Divide Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3188,
+            "code_problem_id": 954,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool divideArray(vector<int>& arr) {\n",
+            "skeleton_class_end": "   }   \n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3189,
+            "code_problem_id": 954,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean divideArray(int[] arr) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3190,
+            "code_problem_id": 954,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def divideArray(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3191,
+            "code_problem_id": 954,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    divideArray(arr) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

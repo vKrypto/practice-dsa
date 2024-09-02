@@ -1,0 +1,28 @@
+{
+    "id": 322,
+    "description": "We define f (X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f (2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f (2, 7) = 2.\n\nYou are given an array A of N integers, A1, A2 ,\u2026, AN. Find sum of f(Ai, Aj) for all ordered pairs (i, j) such that 1 \u2264 i, j \u2264 N. Return the answer modulo 10^9+7.\n\nConstraints:\n1 \u2264 N \u2264 10^5\n2^0 \u2264 A[i] < 2^31",
+    "title": "Bit Difference Addition ",
+    "default_testcase": {
+        "id": 2089,
+        "input": "1\n2\n2 4",
+        "expected_output": "4\n",
+        "code_problem_id": 322,
+        "created_at": "2023-09-18T19:01:32.112Z",
+        "updated_at": "2023-09-18T19:01:32.112Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 768,
+            "code_problem_id": 322,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int count(int N, vector<long long int> &arr)\n    {\n        \n    }\n};"
+        }
+    ]
+}

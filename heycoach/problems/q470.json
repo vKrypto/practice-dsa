@@ -1,0 +1,64 @@
+{
+    "id": 470,
+    "description": "You're invited to a delicious banquet with n delectable dishes represented by their bitwise representation (numbers between 1 and 10^9). However, some dishes are hidden under silver cloches (k operations allowed). You can lift a cloche and double the bitwise representation of one hidden dish under it. Your goal is to maximize the overall \"deliciousness\" of the feast, measured by the bitwise OR of all dish values after lifting cloches.\n\n\n----------\n\n\n### `Input:`\n\n- `n: Number of dishes (integers) - Integer between 1 and 10^5 (inclusive).`<br>\n- `nums: Array of dish bitwise representations - Integers between 1 and 10^9 for each dish in the 0-based index of nums.`<br>\n- `k: Number of cloches you can lift - Integer between 1 and 15 (inclusive).`\n### `Output:`<br>\n\n`max_deliciousness: The maximum possible bitwise OR of all dish values after lifting cloches at most k times.`\n\n\n#### `Example 1:`\n\n#### `Input:`<br/>\n `n = 2, nums = [12, 9], k = 1`<br>\n#### `Output:` \n`30 (Explanation: Lift the cloche on dish 1 to get [12, 18]. Then, max_deliciousness = 12 | 18 = 30)`<br>\n#### `Example 2:`<br>\n\n#### `Input:`\n` n = 3, nums = [8, 1, 2], k = 2`<br>\n#### `Output:`\n`35 (Explanation: Lift the cloche on dish 0 twice to get [32, 1, 2].` <br>` Then, max_deliciousness = 32 | 1 | 2 = 35).`\n\n\n----------\n\n\n#### `Constraints:`\n\n- `n: Number of dishes (integers) must be an integer between 1 and 10^5 (inclusive).`<br>\n- `nums: Array of dish bitwise representations must have a length equal to n.\nEach element in nums must be an integer between 1 and 10^9 (inclusive).`<br>\n- `k: Number of cloches you can lift must be an integer between 1 and 15 (inclusive).`<br>\n\n----------\n\n",
+    "title": "Maximum Deliciousness",
+    "default_testcase": {
+        "id": 3175,
+        "input": "2 1\n12 9",
+        "expected_output": "30\n",
+        "code_problem_id": 470,
+        "created_at": "2023-12-26T08:51:03.032Z",
+        "updated_at": "2023-12-26T08:51:03.032Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1364,
+            "code_problem_id": 470,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      public long maximumDeliciousness(int[] nums, int k) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1365,
+            "code_problem_id": 470,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long long maximumDeliciousness(vector<int>& nums, int k) {\n           //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1366,
+            "code_problem_id": 470,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maximum_deliciousness(self, nums, k):\n        #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1401,
+            "code_problem_id": 470,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      maximumDeliciousness(nums, k) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

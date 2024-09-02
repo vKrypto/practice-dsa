@@ -1,0 +1,64 @@
+{
+    "id": 735,
+    "description": "Abhay has \u2018n\u2019 number of toys with each toy having the amount of fun a[i]. Vijay is jealous of him and asks his father to buy him \u2018m\u2019 number of toys where m is greater than n. Each toy that belongs to Vijay has the amount of fun as b[i]. Vijay now selects \u2018n\u2019 number of toys from the ones he has to show to Abhay. He does not want their toys to be similar and thus wants to arrange them in such a way that the sum of the absolute difference of the toys at every index is maximum, meaning d=\u2211|ai\u2212ci| where i ranges from 0 to (n-1) and you want to maximize d.\nReturn the maximum possible total absolute difference achievable.\n\nInput Format:\n\nFirst line contains two space separated integers \u2018n\u2019 and \u2018m\u2019 denoting the number of toys that Abhay and Vijay have respectively.\n\nSecond line contains \u2018n\u2019 space separated integers where each integer denotes the amount of fun of Abhay\u2019s toy at ith position.\n\nThird line contains \u2018m\u2019 space separated integers where each integer denotes the amount of fun of Vijay\u2019s toy at ith position.\n\nOutput Format:\n\nReturn a single integer which is the maximum possible achievable \u2018d\u2019 where  d=\u2211|ai\u2212ci| where i ranges from 0 to (n-1).\n \nSample Input:\n\n3 5\n\n1 6 4\n\n3 5 12 11 4\n\nSample Output:\n\n21\n\nExplanation: We can select 12 at index 0, 3 for index 1 and 11 for index 2, so the resulting array would be [12,3,11] and the maximum of the sum of absolute difference of the fun of their toys would be |12-1| + |3-6| + |11-4| = 21 which is the maximum possible.\n\nConstraints:\n\n1<=n<m<=10^5\n\n1<= a[i] <=10^5\n\n1<= b[i] <= 10^5",
+    "title": "Toys of Abhay and Vijay",
+    "default_testcase": {
+        "id": 4988,
+        "input": "3 4\n1 3 6\n9 2 3 8",
+        "expected_output": "17",
+        "code_problem_id": 735,
+        "created_at": "2024-02-07T07:07:22.822Z",
+        "updated_at": "2024-02-07T07:07:22.822Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2349,
+            "code_problem_id": 735,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(vector<int> &a, vector<int> &b, int n, int m){\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2350,
+            "code_problem_id": 735,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, a, b, n, m):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2351,
+            "code_problem_id": 735,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long solve(Vector<Integer> a, Vector<Integer> b, int n, int m) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2352,
+            "code_problem_id": 735,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(a, b, n, m) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

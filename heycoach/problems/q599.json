@@ -1,0 +1,64 @@
+{
+    "id": 599,
+    "description": "You are given an array of integers nums of length n. The cost of an array is the value of its first element. You need to divide nums into 3 disjoint contiguous subarrays. Return the minimum possible sum of the cost of these subarrays.\n\n#### `Input Format:`\n\n`A list of integers nums of length n (3 <= n <= 50).`<br>\n`Each element in nums is an integer (1 <= nums[i] <= 1000).`<br>\n#### `Output Format:`\n\n`An integer representing the minimum possible sum of the cost of the three disjoint contiguous subarrays.`\n### `Examples:`\n\n#### `Example 1:`\n**`Input: `** \n`nums = [1,2,3,12] `  \n\n**`Output:`**  \n`6  `\n\n**` Explanation:`** \n`The best possible way to form 3 subarrays is: [1], [2], and [3,12] at a total cost of 1 + 2 + 3 = 6.`",
+    "title": "Minimum Cost For a Subarray",
+    "default_testcase": {
+        "id": 3929,
+        "input": "4\n13 231 12 1211",
+        "expected_output": "256\n",
+        "code_problem_id": 599,
+        "created_at": "2024-01-22T08:38:53.951Z",
+        "updated_at": "2024-01-22T08:38:53.951Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1793,
+            "code_problem_id": 599,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int minimumCost(vector<int>& nums) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1794,
+            "code_problem_id": 599,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minimumCost(ArrayList<Integer> nums) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1795,
+            "code_problem_id": 599,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimum_cost(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1797,
+            "code_problem_id": 599,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function minimumCost(nums) {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

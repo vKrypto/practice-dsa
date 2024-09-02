@@ -1,0 +1,64 @@
+{
+    "id": 742,
+    "description": "You are given two array 'a' of length n and b of length 'm'. You can choose any element of array b and after that you have to do an \"OR\" operation on every element of array 'a'. Basically for the chosen element of b let us call it 'c', generate another array containing 'n' elements where the element at ith index is c | ai (| here is the OR operator).\n\nAfter generating that array, find x = a1 \"XOR\" a2 \"XOR\" a3 ....... \"XOR\" an. Based on the value that you choose from the array b, find out the smallest and greatest possible value of x.\n\nInput Format:\n\nFirst line contains two space separated integers 'n' and 'm' denoting the size of array a and b respectively.\n\nSecond line contains n space separated integers which are the elements of array a\n\nThird line contains m space separated integers which are the elements of array b.\n\nOutput format:\n\nPrint the smallest and greatest possible value of x respectively. \n\nSample Input:\n\n2 3\n\n0 1\n\n1 2 3\n\nSample Output:\n\n0 1\n\nExplanation: In array b we can choose the element 1 and OR it with the elements of a, xoring which we get 0 which is smallest possible and for greatest we can choose 2.\n\nConstraints:\n\n1<=n,m<=10^4\n\n1<=a[i], b[i]<=10^4",
+    "title": "The Greatest and smallest XOR",
+    "default_testcase": {
+        "id": 5469,
+        "input": "2 3\n0 1\n1 2 3",
+        "expected_output": "0 1\n",
+        "code_problem_id": 742,
+        "created_at": "2024-02-13T17:01:06.069Z",
+        "updated_at": "2024-02-13T17:01:06.069Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2377,
+            "code_problem_id": 742,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int n, int m, int*a, int*b){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2378,
+            "code_problem_id": 742,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, m, a, b) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2379,
+            "code_problem_id": 742,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, m, a, b):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2380,
+            "code_problem_id": 742,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int n, int m, int[] a, int[] b) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

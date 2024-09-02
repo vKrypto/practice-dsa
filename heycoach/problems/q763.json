@@ -1,0 +1,64 @@
+{
+    "id": 763,
+    "description": "Write a program that takes an integer 'n' as input and prints the sum of all its even digits and the sum of all its odd digits separately. Digits refer to numbers, not places within the integer.\n\n#### `Input Format:`\n\n`The input consists of a single integer 'n' on a single line.`\n\n#### `Output Format:`\n```\nThe program outputs two space-separated integers on a single line:\n1. The sum of all even digits in 'n'.\n2. The sum of all odd digits in 'n'.\n```\n#### `Example:`\n\n\n#### `Input:`\n```\n987654\n```\n\n#### `Output:`\n```\n18 21\n```\n#### `Constraints:`\n\n- `The length of the input digits is between 0 and 10000 inclusive.`\n\n#### `Explanation:`\n\n- `In the input integer 987654, the even digits are 8, 6, and 4. Their sum is 8 + 6 + 4 = 18 .`\n\n- `The odd digits in the input are 9, 7, and 5. Their sum is 9 + 7 + 5  = 21.`\n\n`Therefore, the program outputs \"18 21\", where 18 is the sum of even digits and 21 is the sum of odd digits.`\n",
+    "title": "Even and Odd Digit Sums",
+    "default_testcase": {
+        "id": 6804,
+        "input": "987654",
+        "expected_output": "18 21\n",
+        "code_problem_id": 763,
+        "created_at": "2024-03-23T07:25:14.850Z",
+        "updated_at": "2024-03-23T07:25:14.850Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2479,
+            "code_problem_id": 763,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void calculateDigitSums(int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2480,
+            "code_problem_id": 763,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void calculateDigitSums(int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2481,
+            "code_problem_id": 763,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def calculate_digit_sums(n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2482,
+            "code_problem_id": 763,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static calculateDigitSums(n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

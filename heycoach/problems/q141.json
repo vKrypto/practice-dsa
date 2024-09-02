@@ -1,0 +1,64 @@
+{
+    "id": 141,
+    "description": "Diwali is coming so you have to clear all your stock so that you can bring new arrival goods at your store. You have 2 stores in store 1 you have n goods and in store 2 you have m goods. Each goods have 2 components written on it 1st value and weight. You have to find the total weight of the goods with respect to value number in both store. You are given two 2D integer arrays, **items1** and **items2**, representing two sets of *items*. Each array items has the following properties:\n- **items[i] = [valuei, weighti]** where valuei represents the value and weighti represents the weight of the ith item.\n- The value of each item in items is **unique**.\n\n#### `Input Format:` \n- `first line contains 2 integers n(size of the first store) and m(size of the second store).`\n- `next (n+m) lines contains 2 integers value and weight respectively. first n lines are the goods of the 1st store and next m lines are the goods of 2nd store.`\n\n#### `Output Format:`\n- `Print all the goods with their value and weights (with single space separated).`\n- `each goods in new line.`\n#### `Example:`\n**`Input`**:</br>\n3 2   \n1 1  \n4 5  \n3 8  \n3 1  \n1 5  \n**`Output`**:   \n\n```\n1 6  \n3 9  \n4 5\n```\n#### `Contraints:`\n- `1 <=n,m <= 1000`\n- `items1[i].length == items2[i].length == 2`\n- `1 <= valuei, weighti <= 1000`\n- `Each valuei in items1 is unique.`  \n- ` Each valuei in items2 is unique.`\n\n\n",
+    "title": "Merge Similar",
+    "default_testcase": {
+        "id": 1038,
+        "input": "3 2\n1 1\n4 5\n3 8\n3 1\n1 5",
+        "expected_output": "1 6\n3 9\n4 5\n",
+        "code_problem_id": 141,
+        "created_at": "2022-10-18T05:57:35.991Z",
+        "updated_at": "2022-10-18T05:57:35.991Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 526,
+            "code_problem_id": 141,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass solution {\npublic:\n    void mergeSimilarItems(vector<vector<int>>& item1, vector<vector<int>>& item2)\n    {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 527,
+            "code_problem_id": 141,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void mergeSimilarItems(List<List<Integer>> item1, List<List<Integer>> item2) {\n       // Write Code Here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 674,
+            "code_problem_id": 141,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def mergeSimilarItems(self, items1, items2):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 845,
+            "code_problem_id": 141,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    mergeSimilarItems(item1, item2) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 479,
+    "description": "\nParents have organized a birthday party for their kids, featuring a rectangular fruit cake divided into N x M pieces. Each piece is labeled with a unique fruit number from 1 to N*M. To maximize the number of happy guests among the invited friends, who each have a list of favorite fruit choices, the parents seek an algorithm to determine the maximum number of guests that can be made happy.\n\n**Input Format:**\n- The first line of the input consists of an integer, K, representing the number of friends (guests).\n- The next K lines contain X+1 space-separated integers, where the first integer represents the count of choices of the ith friend, followed by X fruit choices.\n- The next two lines specify the number of rows (N) and columns (M) of the fruit cake.\n\n**Output Format:**</br>\nPrint an integer representing the maximum number of guests the parents can make happy.\n\n\n\n**Example**:\n**Input**:\n```\n3\n3 1 2 3\n1 2\n1 1 \n2\n2\n```\n\n**Output**:</br>\n```\n3\n```\n\n**Explanation**:</br>\nIn this example, a maximum of 3 guests can be made happy:</br>\nGuest 1 gets fruit 3.</br>\nGuest 2 gets fruit 2.</br>\nGuest 3 gets fruit 1.\n\n**Constraints**:</br>\n1 \u2264 N, M \u2264 50</br>\n0 \u2264 numOfFriends \u2264 3000</br>\n0 \u2264 x \u2264 N * M</br>\n1 \u2264 i \u2264 numOfFriends",
+    "title": "Fruitful Celebrations",
+    "default_testcase": {
+        "id": 3225,
+        "input": "3\n3 1 2 3\n1 2\n1 1\n2\n2",
+        "expected_output": "3",
+        "code_problem_id": 479,
+        "created_at": "2023-12-28T17:01:12.945Z",
+        "updated_at": "2023-12-28T17:01:12.945Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1383,
+            "code_problem_id": 479,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int maxNumberOfGuest(int k, vector<vector<int>>&nums, int n, int m){\n    //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1384,
+            "code_problem_id": 479,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxNumberOfGuest(int k, List<List<Integer>> nums, int n, int m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1385,
+            "code_problem_id": 479,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def max_number_of_guest(self, k: int, nums: List[List[int]], n: int, m: int) -> int:\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1386,
+            "code_problem_id": 479,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxNumberOfGuest(k, nums, n, m) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

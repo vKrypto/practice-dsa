@@ -1,0 +1,64 @@
+{
+    "id": 897,
+    "description": "You are given an array a, you have to arrange the elements of array a in such a way that they create a wave meaning that, ar[0]>=ar[1]<=ar[2]>=ar[3].....ar[n-2]>=ar[n-1].\n\n#### Note: </br>\n```\nYou have to solve this question in O(1) space complexity and O(n) Time complexity.\n```\n\nInput Format\n\nThe first line contains a single integer denoting the size of the array.\n\nThe second line contains n space separated integers denoting the elements of the array.\n\nOutput Format\n\nPrint the wave array that you have formed where the integers are separated by space.\n\n\n#### Sample Input:\n```\n5\n1 2 3 4 5\n```\n#### Sample Output:\n```\n2 1 4 3 5\n```\n\n#### Explanation: </br>\n```\nThe elements are in a wave when ar[0]>=ar[1]<=ar[2]>=ar[3]<=ar[4] , thus [2 1 4 3 5] fulfils that condition.\n\n```\n#### Constraints:\n\n- `1<=n<=10^6`\n- `1<=a[i]<=10^8`\n",
+    "title": "Wave array",
+    "default_testcase": {
+        "id": 7997,
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "2 1 4 3 5 ",
+        "code_problem_id": 897,
+        "created_at": "2024-05-18T09:11:27.498Z",
+        "updated_at": "2024-05-18T09:11:27.498Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2973,
+            "code_problem_id": 897,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void print_array(int n, int arr[]){\n      //write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2974,
+            "code_problem_id": 897,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void printArray(int n, int[] arr) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2975,
+            "code_problem_id": 897,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def print_array(self, n, arr):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2976,
+            "code_problem_id": 897,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    printArray(n, arr) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

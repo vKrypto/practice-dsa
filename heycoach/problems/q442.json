@@ -1,0 +1,64 @@
+{
+    "id": 442,
+    "description": "Given an array nums of integers, you need to find the total number of continuous subarrays such that for any pair of indices i1 and i2 in the subarray (i <= i1, i2 <= j), the absolute difference between nums[i1] and nums[i2] is at most 2.\n\nA subarray is defined as a contiguous non-empty sequence of elements within an array.\n\n\n**Input**:\n\nnums (1 <= len(nums) <= 10^5): A list of integers, where 1 <= nums[i] <= 10^9.\n\n**Output**:\n\nReturn an integer representing the total number of continuous subarrays.\n\n**Example 1:**\n\n**Input**:\n```\n nums = [5,4,2,4]\n```\n**Output**: \n```\n8\n```\n**Explanation**:</br>\nContinuous subarray of size 1: [5], [4], [2], [4].</br>\nContinuous subarray of size 2: [5,4], [4,2], [2,4].</br>\nContinuous subarray of size 3: [4,2,4].</br>\nThere are no subarrays of size 4.</br>\nTotal continuous subarrays = 4 + 3 + 1 = 8.\n\n**Example 2:**</br>\n**Input**: \n```\nnums = [1,2,3]\n```\n**Output:**\n```\n 6\n```\n**Explanation**:</br>\nContinuous subarray of size 1: [1], [2], [3].</br>\nContinuous subarray of size 2: [1,2], [2,3].</br>\nContinuous subarray of size 3: [1,2,3].</br>\n\n**Constraints**:</br>\n1 <= nums.length <= 10^5</br>\n1 <= nums[i] <= 10^9",
+    "title": "Continuous Subarrays",
+    "default_testcase": {
+        "id": 3249,
+        "input": "3\n1 2 3",
+        "expected_output": "6",
+        "code_problem_id": 442,
+        "created_at": "2023-12-29T12:31:32.264Z",
+        "updated_at": "2023-12-29T12:31:32.264Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1253,
+            "code_problem_id": 442,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    continuousSubarrays(arr) {\n\n    }\n}\n"
+        },
+        {
+            "id": 1254,
+            "code_problem_id": 442,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def continuous_subarrays(self, arr):\n"
+        },
+        {
+            "id": 1255,
+            "code_problem_id": 442,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public long continuousSubarrays(List<Integer> arr) {\n    }\n}"
+        },
+        {
+            "id": 1256,
+            "code_problem_id": 442,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n    long long continuousSubarrays(vector<int>& arr) {\n    }\n};\n"
+        }
+    ]
+}

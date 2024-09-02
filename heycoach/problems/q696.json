@@ -1,0 +1,57 @@
+{
+    "id": 696,
+    "description": "You are given an array of people, *people* , which are the attributes of some people in a queue (not necessarily in order). Each people[i] = [hi, ki] represents the ith person of height hi with **exactly** ki other people in front who have a height greater than or equal to hi.\n\nReconstruct and print the queue that is represented by the input array people. The returned queue should be formatted as an array queue, where *queue[j] = [hj, kj]* is the attributes of the jth person in the queue (*queue[0]* is the person at the front of the queue).\n\n**Sample Input 1**\n\n```\n6\n7 0 \n4 4 \n7 1 \n5 0\n6 1 \n5 2\n```\n\n**Output:**\n```\n5 0\n7 0\n5 2\n6 1\n4 4\n7 1\n```\n**Explanation**\n\n```\nPerson 0 has height 5 with no other people taller or the same height in front.\nPerson 1 has height 7 with no other people taller or the same height in front.\nPerson 2 has height 5 with two persons taller or the same height in front, which is person 0 and 1.\nPerson 3 has height 6 with one person taller or the same height in front, which is person 1.\nPerson 4 has height 4 with four people taller or the same height in front, which are people 0, 1, 2, and 3.\nPerson 5 has height 7 with one person taller or the same height in front, which is person 1.\nHence [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]] is the reconstructed queue.\n```\n\n**Sample Input 2**\n\n```\n6\n6 0\n5 0\n4 0\n3 2\n2 2\n1 4\n```\n\n**Output:**\n```\n4 0\n5 0\n2 2\n3 2\n1 4\n6 0\n```\n\nInput Format:\n\n```\nFirst line contains sinlgle integer n (length of the array)\nNext n lines contains 2 single separated integers\n```\n\nOutput Format:\n\n```\nn lines each contains single space separated 2 integers\n```\n\nConstraints:\n\n`1 <= people.length <= 2000`\n\n`0 <= hi <= 10^6`\n\n`0 <= ki < people.length`\n\n`It is guaranteed that the queue can be reconstructed.`\n",
+    "title": "Queue Reconstruction by Height",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2183,
+            "code_problem_id": 696,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2184,
+            "code_problem_id": 696,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2185,
+            "code_problem_id": 696,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2247,
+            "code_problem_id": 696,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

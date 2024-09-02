@@ -1,0 +1,64 @@
+{
+    "id": 295,
+    "description": "Given a string `S` and an integer `K`, find the length of the longest substring of `S` that contains exactly `K` unique characters. If no such substring exists, return -1.</br>\n#### `Your Task:`\n```\nYou don't need to read input or print anything. Your task is to complete the function longestKSubstr() which takes the string S and an integer K as input and returns the length of the longest substring with exactly K distinct characters. If there is no substring with exactly K distinct characters then return -1.\n```\n**`Input:`**\n- `A string `S` containing lowercase letters.`\n- `An integer `K`, the number of unique characters required in the substring.`\n\n**`Output:`**\n- `The length of the longest substring with exactly `K` unique characters.`\n\n**`Constraints:`**\n- `1<=length of S<=10^6`\n- `0<= K<= 26`\n\n**`Examples:`**\n\n#### `Input:`\n`S = \"aabacbebebe\"`, `K = 3`\n#### `Output:`\n`7`\n#### `Explanation:` </br>\n`The longest substring with exactly 3 distinct characters is \"cbebebe\".`\n\n",
+    "title": "LongestSubStringWith K unique charachters",
+    "default_testcase": {
+        "id": 7094,
+        "input": "aabacbebebe\n3",
+        "expected_output": "7",
+        "code_problem_id": 295,
+        "created_at": "2024-04-03T07:30:56.369Z",
+        "updated_at": "2024-04-03T07:30:56.369Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 725,
+            "code_problem_id": 295,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int longestKSubstr(string s, int k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1489,
+            "code_problem_id": 295,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static int longestKSubstr(String s, int k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1818,
+            "code_problem_id": 295,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def longestKSubstr(s, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1826,
+            "code_problem_id": 295,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static longestKSubstr(s, k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

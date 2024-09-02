@@ -1,0 +1,57 @@
+{
+    "id": 538,
+    "description": "You are given a Binary Tree of N nodes and an integer K, each node is assigned a particular value. Your job is to calculate the total number of good paths from root node to leaf nodes and return -1 if no such path exists. \n\nA Good path is a path such that the sum of all the nodes that lie on the path is equal to K.\n \n \n",
+    "title": "Good Path",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1601,
+            "code_problem_id": 538,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    bool hasPathSum(Node *root, int S) {\n }\n};\n\n"
+        },
+        {
+            "id": 1605,
+            "code_problem_id": 538,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution {\n    /*you are required to complete this function */\n    int Sum(ArrayList<Integer> l){\n        int sum = 0;\n        for(Integer k : l){\n            sum += k;\n        }\n        return sum;\n    }\n    void Path(Node root,ArrayList<Integer> l,ArrayList<Integer> ans){\n        if(root == null){\n            return;\n        }\n        l.add(root.data);\n        if(root.left == null && root.right == null){\n            int sum = Sum(l);\n            ans.add(sum);\n        }\n        Path(root.left,l,ans);\n        Path(root.right,l,ans);\n        l.remove(l.size()-1);\n        \n    }\n    boolean hasPathSum(Node root, int S) {\n        // Your code here\n\n    }\n}"
+        },
+        {
+            "id": 1607,
+            "code_problem_id": 538,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def hasPathSum(self,node, s): \n          \n"
+        },
+        {
+            "id": 1608,
+            "code_problem_id": 538,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    hasPathSum(root, S) {\n\n    }\n}"
+        }
+    ]
+}

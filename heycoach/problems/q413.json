@@ -1,0 +1,64 @@
+{
+    "id": 413,
+    "description": "**Objective:** Determine who escapes first from a binary tree by either always moving left (Ram) or always moving right (Shyam).\n\n**`Given:`** \n- A binary tree where each node represents a position in a unique training course, with two children nodes (left and right) except for leaf nodes, which have no children.\n- Two characters, Ram and Shyam, start from the root of the binary tree. Ram always moves to the left child, and Shyam always moves to the right child. Their goal is to reach any leaf node to escape the tree.\n\n**`Output:`**\n- `If both Ram and Shyam escape the tree simultaneously, return` `0`.\n- `If Ram escapes first, return` `-1`.\n- `If Shyam escapes first, return` `1`.\n\n**`Constraints:`**\n- `The number of nodes in the tree is in the range` `[0, 200000]`.</br>\n- `Node values are within` `[-1000, 1000]`.\n\n**`Examples:`**\n\n1. **`Input:`** `root = [1]`</br>\n   **`Output:`** `0`\n   `Explanation: Both start and end at the root node (the only node), escaping simultaneously.`\n\n2. **`Input:`** `root = [10, 5, -1, -1, 15, 12, -1, -1, -1]`</br>\n   **`Output:`** `1`\n   `Explanation: Shyam escapes the tree first by always moving to the right child.`\n\n3. **`Input:`** `root = [3, 9, 20, -1, -1, 15, 7, -1, -1, -1, -1]`</br>\n   **`Output:`** `-1`\n   `Explanation: Ram escapes the tree first by always moving to the left child.`\n\n**`Solution Approach:`**</br>\n```\nThe solutions provided traverse the binary tree based on Ram's and Shyam's strategies, tracking the depth of traversal to determine who reaches a leaf node first. The depth comparison between the leftmost and rightmost paths effectively decides the output according to the specified rules.\n```\n\n",
+    "title": "Optimal Tree Escape",
+    "default_testcase": {
+        "id": 7110,
+        "input": "1 2 3 4 5 6 7 8 9 10 11 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1",
+        "expected_output": "1\n",
+        "code_problem_id": 413,
+        "created_at": "2024-04-03T11:11:12.319Z",
+        "updated_at": "2024-04-03T11:11:12.319Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1146,
+            "code_problem_id": 413,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n public:\nint escapeTree(TreeNode* root) {\n  //Write your code here\n",
+            "skeleton_class_end": "  } \n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1147,
+            "code_problem_id": 413,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n  public int escapeTree(Node root) {\n    //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1148,
+            "code_problem_id": 413,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def escape_tree(self, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1149,
+            "code_problem_id": 413,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\n  class TreeNode {\n    constructor(x) {\n        this.val = x;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\nclass Solution {\n    escapeTree(root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

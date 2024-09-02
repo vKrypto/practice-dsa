@@ -1,0 +1,57 @@
+{
+    "id": 955,
+    "description": "The factorial of a positive integer `n` is the product of all positive integers less than or equal to `n`.</br>\nFor example, the factorial of 10 is calculated as:</br>\nfactorial(10)=10\u00d79\u00d78\u00d77\u00d76\u00d75\u00d74\u00d73\u00d72\u00d71</br>\nHowever, we define a \"clumsy factorial\" using the integers in decreasing order by cycling through a fixed sequence of operations:* multiplication (*), division (/), addition (+)*, and *subtraction (-).*</br>\n\nFor instance, the clumsy factorial of 10 is calculated as:</br>\nclumsy(10)=10\u00d79\u00f78+7\u22126\u00d75\u00f74+3\u22122\u00d71</br>\n\nImportant Points</br>\n- Order of Operations: Follow the standard arithmetic rules where multiplication and division are performed before addition and subtraction, and they are evaluated from left to right.\n- Floor Division: Use integer division for the division operation, discarding any fractional part (e.g., 90\u00f78=1190\u00f78=11).\n\n**Example:**</br>\n**Input:** n = 10</br>\n**Output:** 12</br>\n**Explanation:** 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1</br>\n\n**Constraints:**</br>\n1 <= `n` <= 104\n\n",
+    "title": "Clumsy Factorial",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3184,
+            "code_problem_id": 955,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int clumsy(int n) {\n",
+            "skeleton_class_end": "    }\n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3185,
+            "code_problem_id": 955,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int clumsy(int n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3186,
+            "code_problem_id": 955,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def clumsy(self, n: int) -> int:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3187,
+            "code_problem_id": 955,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    clumsy(n) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

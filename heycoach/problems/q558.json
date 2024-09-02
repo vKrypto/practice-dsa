@@ -1,0 +1,64 @@
+{
+    "id": 558,
+    "description": "Given a set of string S of length N. Return the length of smallest string which has all the strings in the set as substring.\n\n```\n\nInput: S = {\"bcdc\", \"b\"}\n\nOutput: 4\n\nExplanation: \n\nShortest string = \"bcdc\" in which \"bcdc\" and \"b\" are substrings.\n\nConstraints:\n\n1 <= N <= 18\n\n1 <= |Si| <= 100\n```",
+    "title": "Smallest string of subsets",
+    "default_testcase": {
+        "id": 3695,
+        "input": "6\nyr eser hagle taio bon shake",
+        "expected_output": "22\n",
+        "code_problem_id": 558,
+        "created_at": "2024-01-10T20:53:43.495Z",
+        "updated_at": "2024-01-10T20:53:43.495Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1672,
+            "code_problem_id": 558,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  findlen(S) {\n    //Write your cod ehere;\n  }\n}"
+        },
+        {
+            "id": 1673,
+            "code_problem_id": 558,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def findlen(self, S):\n    #Write your code here"
+        },
+        {
+            "id": 1674,
+            "code_problem_id": 558,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n \n\n    int findlen(ArrayList<String> S) {\n\n    }\n}\n"
+        },
+        {
+            "id": 1675,
+            "code_problem_id": 558,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n   int findlen(vector<string> &S) {\n     //Write your code here;\n   }\n};"
+        }
+    ]
+}

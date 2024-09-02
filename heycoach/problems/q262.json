@@ -1,0 +1,64 @@
+{
+    "id": 262,
+    "description": "\nGiven an array of words, devise a method to encode these words into a single reference string and an array of indices in such a way that:\n- The length of the array of words equals the length of the array of indices.\n- The reference string ends with the '#' character.\n- For each index `indices[i]`, the substring of the reference string starting at `indices[i]` and ending before the next '#' character equals `words[i]`.\n\nYour task is to return the length of the shortest possible reference string that can be generated to validly encode the given array of words.</br>\n\n**Input Format:**\n- The input consists of an array of words `words`, where each word consists only of lowercase letters.\n\n**Output Format:**\n- Return the length of the shortest reference string `s` possible of any valid encoding of words.\n\n### Example 1\n\n### Input\n\n```CPP\nwords = [\"time\", \"me\", \"bell\"]\n```\n\n### Output\n\n```CPP\n`10`\n```\n\n#### Explanation:\n\n```\nA valid encoding would be s = \"time#bell#\" and indices = [0, 2, 5].\nwords[0] = \"time\", the substring of s starting from indices[0] = 0 to the next '#' is underlined in \"time#bell#\"\nwords[1] = \"me\", the substring of s starting from indices[1] = 2 to the next '#' is underlined in \"time#bell#\"\nwords[2] = \"bell\", the substring of s starting from indices[2] = 5 to the next '#' is underlined in \"time#bell#\"\n```\n\n### Example 2\n\n### Input\n\n```CPP\n` words = [\"t\"]`\n```\n\n### Output\n\n```CPP\n`2`\n```\n\n#### Explanation:\n\n`A valid encoding would be s = \"t#\" and indices = [0].`\n\n### `Constraints:`\n\n- `1 <= words.length <= 2000`\n- `1 <= words[i].length <= 7`\n- `words[i] consists of only lowercase letters.`\n",
+    "title": "Encoder",
+    "default_testcase": {
+        "id": 1809,
+        "input": "4\nejfgkh\nmeequ\nbejll\njtaff",
+        "expected_output": "25",
+        "code_problem_id": 262,
+        "created_at": "2022-11-05T19:40:02.516Z",
+        "updated_at": "2022-11-05T19:40:02.516Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 408,
+            "code_problem_id": 262,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int minimumLengthEncoding(std::vector<std::string>& W) {\n      // write your code here",
+            "skeleton_class_end": "   }\n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 583,
+            "code_problem_id": 262,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumLengthEncoding(W) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 584,
+            "code_problem_id": 262,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimumLengthEncoding(self, W):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 585,
+            "code_problem_id": 262,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minimumLengthEncoding(String[] W) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 94,
+    "description": "There is a staircase of total **N** stairs indexed from 0 to N-1. A frog is initially at **0th stair** and want to reach the **last(N-1)th stair**. If the frog is on the ith stair then he can jump either to **(i+1)th** or **(i+2)th** stair. If the frog jumps from the ith stair to the jth stair then the energy lost is given by `|height[i] - height[j]|` where `|x|` is the absolute value of x. `height[i]` is the height of the ith stair. Your task is to find the **minimum** total energy lost by frog to reach the (N-1)th stair starting from 0th stair\n\n\n### Example 1 \n\n### Input\n```CPP \nN = 4\nheight = [10,20,30,10]\n``` \n### Output \n```CPP \n20\n``` \n#### Explanation:\nThe frog can jump from 1st stair to 2nd stair (|20-10| = 10 energy lost). Then a jump from the 2nd stair to the last stair (|10-20| = 10 energy lost).\nSo, the total energy lost is 20 which is the minimum. \nHence, the answer is 20.\n\n### Example 2 \n\n### Input\n```CPP\nN = 3\nheight = [10,50,10]\n```\n### Output \n```CPP \n0\n``` \n#### Explanation:\nThe frog can jump from 1st stair to 3rd stair (|10-10| = 0 energy lost).So, the total energy lost is 0 which is the minimum. \n\n### Constraints:\n\n* 1 <= N <= 10000\n* 1 <= height[i] <= 10000",
+    "title": "Minimize the total energy lost",
+    "default_testcase": {
+        "id": 689,
+        "input": "4\n10 20 30 10",
+        "expected_output": "20\n",
+        "code_problem_id": 94,
+        "created_at": "2022-10-04T08:13:24.739Z",
+        "updated_at": "2022-10-04T08:13:24.739Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 128,
+            "code_problem_id": 94,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n\n    int frogJump(int n, vector<int> &heights)\n    {\n        // write your code here\n    }\n};"
+        },
+        {
+            "id": 497,
+            "code_problem_id": 94,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int frogJump(int n, List<Integer> heights) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

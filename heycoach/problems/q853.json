@@ -1,0 +1,64 @@
+{
+    "id": 853,
+    "description": "In this problem-solving task inspired by mathematical conjectures, we explore a statement modification based on the famous \"Goldbach's conjecture\". \n<br/>Unlike Goldbach's conjecture which posits that every even number greater than or equal to four can be expressed as the sum of two primes, we have a different proposition: \"Each integer no less than 12 can be expressed as the sum of two composite numbers.\" <br/>The task is to prove this modified statement by finding two composite numbers that sum up to a given integer.\n\n\n**Input Format:**\n- `A single integer `n` (12 \u2264 n \u2264 10^6).`\n\n**Output Format:**\n- `Two composite integers `x` and `y` (1 < x, y < n) such that `x + y = n`. If multiple solutions exist, any valid pair can be output.`\n\n**Constraints:**\n- `The number` `n` `is guaranteed to be at least 12, ensuring that the numbers` `x` `and` `y` `are greater than 1 and less than` `n`.\n- `The goal is to demonstrate that `n` can be decomposed into the sum of two composite numbers.`\n\n**Examples:**\n\n**Example 1:**\n- #### `Input:`\n  ```\n  15\n  ```\n- #### Output:\n  ```\n  6 9\n  ```\n- #### Explanation:\n  `Both 6 and 9 are composite numbers, and their sum equals 15.`\n\n**Example 2:**\n- #### Input:\n  ```\n  23\n  ```\n- #### Output:\n  ```\n  8 15\n  ```\n- #### Explanation:\n  `The numbers 8 and 15 are both composite, and they sum up to 23.`\n\n**Example 3:**\n- #### Input:\n  ```\n  1000000\n  ```\n- #### Output:\n  ```\n  500000 500000\n  ```\n- #### `Explanation:`\n - `The number 500000 is composite, and two of these sum to 1000000.`\n.",
+    "title": "Design Tutorial: Learn from Math",
+    "default_testcase": {
+        "id": 7829,
+        "input": "23",
+        "expected_output": "9 14\n",
+        "code_problem_id": 853,
+        "created_at": "2024-05-13T11:33:34.876Z",
+        "updated_at": "2024-05-13T11:33:34.876Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2800,
+            "code_problem_id": 853,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int learnmath(int n) { \n       //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2801,
+            "code_problem_id": 853,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int learnMath(int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2802,
+            "code_problem_id": 853,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def learn_math(self, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2803,
+            "code_problem_id": 853,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    learnMath(n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

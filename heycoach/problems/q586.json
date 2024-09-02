@@ -1,0 +1,57 @@
+{
+    "id": 586,
+    "description": "You are given two positive integers x and y. In each operation, you can choose one of the following:\n\n```\nDivide x by 11 if x is a multiple of 11.\nDivide x by 5 if x is a multiple of 5.\nDecrement x by 1.\nIncrement x by 1.\nReturn the minimum number of operations required to make x and y equal.\n```\n\n### **`Input Format:`**\n`Two positive integers x and y, where (1 <= x, y <= 10^4).`\n\n### **`Output Format:`**\n\n```\nAn integer representing the minimum number of operations required.\n\n```\n\n### `Example`\n\n#### `Input: `\n ` x =26 , y=1`\n#### `Output:` \n  `3`\n#### `Explanation: `\n  `We can make 26 equal to 1 by applying the following operations:` \n  \n```\n  1. Decrement x by 1\n  2. Divide x by 5\n  3. Divide x by 5\n  It can be shown that 3 is the minimum number of operations required to make 26 equal to 1.\n```\n\n",
+    "title": "Make X and Y Equal",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1757,
+            "code_problem_id": 586,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\n\nclass Solution {\npublic:\n    int minimumOperationsToMakeEqual(int x, int y) {\n        \n\n \n \n",
+            "skeleton_class_end": "    }\n}; ",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1758,
+            "code_problem_id": 586,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minimumOperationsToMakeEqual(int x, int y) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1759,
+            "code_problem_id": 586,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimumOperationsToMakeEqual(self, x, y):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1760,
+            "code_problem_id": 586,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimumOperationsToMakeEqual(x, y) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 789,
+    "description": "You are given an odd integer N. Print a diamond pattern using asterisks (*) for N number of rows.\n\n**Pattern:**\n- `The diamond pattern consists of asterisks arranged in a diamond shape.`\n- `The top half of the diamond has increasing rows of asterisks, starting from 1 asterisk at the center and expanding outward.`\n- `The bottom half of the diamond has decreasing rows of asterisks, starting from N - 2 asterisks and reducing inward.`\n\n**`Input Format:`**\n- `An odd integer N representing the number of rows in the diamond pattern.`\n\n**`Output Format:`**\n- `Print the diamond pattern based on the given input.`\n\n**`Constraints:`**\n- `N is always odd.`\n- `1 <= N <= 15 (to keep the diamond pattern readable)`\n\n**`Example:`**\n\n**`Input:`**\n```\n5\n```\n\n**`Output:`**\n```\n  *\n ***\n*****\n ***\n  *\n```\n\n**`Explanation:`**\n- `For N = 5, the diamond pattern is printed as shown above.`",
+    "title": "Diamond of Stars",
+    "default_testcase": {
+        "id": 6972,
+        "input": "5",
+        "expected_output": "  *\n ***\n*****\n ***\n  *\n",
+        "code_problem_id": 789,
+        "created_at": "2024-03-24T12:43:37.727Z",
+        "updated_at": "2024-03-24T12:43:37.727Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2579,
+            "code_problem_id": 789,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void printDiamond(int N) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2580,
+            "code_problem_id": 789,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void printDiamond(int N) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2581,
+            "code_problem_id": 789,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def print_diamond(N):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2582,
+            "code_problem_id": 789,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static printDiamond(N) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

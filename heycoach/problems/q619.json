@@ -1,0 +1,64 @@
+{
+    "id": 619,
+    "description": "Given a MST with N vertices numbered 1, 2, ..., N, and N-1 edges connecting these vertices with weights w1, w2, ..., wN-1, define the function f(u, v) as the Smallest weight of an edge contained in the shortest path from Vertex u to Vertex v. How can you efficiently compute or find the values of f(u, v) for all pairs of vertices u and v in the given tree?\n\n\n\nThe given graph is a MST.\n\nAll values in input are integers.\n\n\n----------\n\n\n\n**`Input:`**\n\nFirst Line Contains the Positive Number N\nThen N-1 lines containing u,v vertex with given edge weight w.\n\nOutput:\n\nPrint the Sum of all f(u, v) over all possible pairs where u!=v.\n\n\n#### `Sample Input1`\n```\n5\n\n1 2 5\n\n2 3 10\n\n4 2 3\n\n3 5 20\n```\n#### `Output` \n```\n67\n```\n\n\n### `Sample Input 2`\n```\n5\n\n1 2 1\n\n2 3 2\n\n4 2 5\n\n3 5 14\n```\n### `Output` \n```\n31\n```\n\n\n----------\n\n\n#### `Constraints:`\n\n- `2 \u2264 N \u2264 10^5`\n\n- `1 \u2264 u[i],v[i] \u2264 N`\n\n- `1 \u2264 w[i] \u2264 10^7`\n\n\n\n----------\n\n",
+    "title": "Minimize the Number of distinct Character in the path",
+    "default_testcase": {
+        "id": 4156,
+        "input": "5\n1 2 9\n2 3 10\n4 2 25\n3 5 71",
+        "expected_output": "172\n",
+        "code_problem_id": 619,
+        "created_at": "2024-01-26T08:39:11.586Z",
+        "updated_at": "2024-01-26T08:39:11.586Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1900,
+            "code_problem_id": 619,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\n    public:\n           long long Solve(int n,vector<vector<int>> vp){\n    \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2330,
+            "code_problem_id": 619,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private static class Node {\n        int u, v, w;\n\n        Node(int u, int v, int w) {\n            this.u = u;\n            this.v = v;\n            this.w = w;\n        }\n    }\n\n    public long solve(int n, List<List<Integer>> vp) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2331,
+            "code_problem_id": 619,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, vp):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2332,
+            "code_problem_id": 619,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, vp) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

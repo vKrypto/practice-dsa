@@ -1,0 +1,64 @@
+{
+    "id": 298,
+    "description": "\nYou are tasked with analyzing a directed graph representing the road network of a country. The graph consists of cities connected by one-way roads. Your objective is to find the length of the shortest path that forms a cycle starting and ending at the same city for each city in the graph. A cycle means you must return to the starting city after travelling through a series of one-way roads. If no cycle is possible from a city, the shortest path length for that city should be marked as -1.\n\n**Input Format:**\n\n- `The first line contains an integer `N`, representing the number of cities in the country (`1 <= N <= 2000`).`\n- `The next `N` lines each contain `N` integers, representing an `N x N` adjacency matrix where the `j-th` integer in the `i-th` line is `1` if there is a direct road from city `i` to city `j`, and `0` otherwise.`\n\n**Output Format:**\n\n- `Output `N` integers, where the `i-th` integer represents the length of the shortest cycle starting and ending at city `i`. If no cycle is possible for city `i`, output `-1` for that city.`\n\n**Constraints:**\n\n- `0 < N \u2264 2000`, `where` `N` `is the number of cities.`\n- `roads[i][j]` `is` `0` `or` `1`, `indicating the absence or presence of a direct road from city` `i` `to city` `j`.\n- `The graph may contain cycles, and you need to find the shortest cycle for each city.`\n\n**Examples:**\n\n1. **Input:**\n\n    ```\n    5\n    0 1 1 1 1\n    1 0 0 0 1\n    0 0 1 1 0\n    0 0 1 0 0\n    0 0 0 1 0\n    ```\n\n   **Output:**\n\n    ```\n    2 2 1 2 -1\n    ```\n\n2. **Input:**\n\n    ```\n    5\n    0 1 0 0 1\n    0 0 1 0 0\n    0 0 0 1 0\n    0 0 0 0 1\n    1 0 0 0 0\n    ```\n\n   **Output:**\n\n    ```\n    2 5 5 5 2\n    ```\n\n**Explanation for Example 1:**</br>\n`For the given input, the shortest cycle for city `3` is `1`, as it can directly return to itself. For cities `1`, `2`, and `4`, the shortest cycles have a length of `2`. City `5` does not have any outgoing roads, so it has no cycle, resulting in `-1`.`",
+    "title": "Shortest path ",
+    "default_testcase": {
+        "id": 3507,
+        "input": "5\n0 1 0 0 1\n0 0 1 0 0\n0 0 0 1 0\n0 0 0 0 1\n1 0 0 0 0",
+        "expected_output": "2 5 5 5 2 \n",
+        "code_problem_id": 298,
+        "created_at": "2024-01-05T14:11:32.756Z",
+        "updated_at": "2024-01-05T14:11:32.756Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1551,
+            "code_problem_id": 298,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1552,
+            "code_problem_id": 298,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def shortest_cycle_paths(N, roads):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1553,
+            "code_problem_id": 298,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> shortestCyclePaths(int N, int[][] roads) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1554,
+            "code_problem_id": 298,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

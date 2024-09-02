@@ -1,0 +1,28 @@
+{
+    "id": 335,
+    "description": "Petya learned a new programming language CALPAS. A program in this language always takes one non-negative integer and returns one non-negative integer as well.\n\nIn the language, there are only three commands: apply a bitwise operation AND, OR or XOR with a given constant to the current integer. A program can contain an arbitrary sequence of these operations with arbitrary constants from 0 to 1023. When the program is run, all operations are applied (in the given order) to the argument and in the end the result integer is returned.\n\nPetya wrote a program in this language, but it turned out to be too long. Write a program in CALPAS that does the same thing as the Petya's program, and consists of no more than 5 lines. Your program should return the same integer as Petya's program for all arguments from 0 to 1023.\n\nInput\nThe first line contains an integer n (1\u2009\u2264\u2009n\u2009\u2264\u20095\u00b710^5) \u2014 the number of lines.\n\nNext n lines contain commands. A command consists of a character that represents the operation (\"&\", \"|\" or \"^\" for AND, OR or XOR respectively), and the constant xi 0\u2009\u2264\u2009xi\u2009\u2264\u20091023.\n\nOutput\nOutput an integer k (0\u2009\u2264\u2009k\u2009\u2264\u20095) \u2014 the length of your program.\n\nNext k lines must contain commands in the same format as in the input.\n",
+    "title": "Petya and CALPAS",
+    "default_testcase": {
+        "id": 2155,
+        "input": "3\n| 3\n^ 2\n| 1",
+        "expected_output": "3\n^ 0\n& 1021\n| 1\n",
+        "code_problem_id": 335,
+        "created_at": "2023-09-19T19:19:14.477Z",
+        "updated_at": "2023-09-19T19:19:14.477Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 795,
+            "code_problem_id": 335,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "#include <bits/stdc++.h>\n\nusing namespace std;\n\nsigned main() {\n  \n\treturn 0;\n}\n"
+        }
+    ]
+}

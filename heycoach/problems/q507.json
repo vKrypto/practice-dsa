@@ -1,0 +1,64 @@
+{
+    "id": 507,
+    "description": "A New Year party is not a New Year party without lemonade! As usual, you are expecting a lot of guests, and buying lemonade has already become a pleasant necessity.</br>\nYour favorite store sells lemonade in bottles of n different volumes at different costs. A single bottle of type i has volume 2^(i-1) litres and costs ci roubles. The number of bottles of each type in the store can be considered infinite.</br>\nYou want to buy at least L litres of lemonade. How many roubles do you have to spend?\n\n#### `Input:`\n\n`The input consists of two integers n and L.` \n\n`1 \u2264 n \u2264 30` \n\n`1 \u2264 L \u2264 10^9`\n\n\n\n```\nthe number of types of bottles in the store and the required amount of lemonade in litres, respectively.\n\nn integers c1, c2, ..., cn (`1 \u2264 ci \u2264 10^9`) \u2014 the costs of bottles of different types.\n```\n\n#### `Output:`\n\n`Output a single integer \u2014 the smallest number of roubles you have to pay to buy at least L litres of lemonade.`\n\n\n#### `Example 1:`\n\n#### `Input:`\n```\n4 12\n20 30 70 90\n```\n#### `Output:`\n```\n150\n```\n#### `Explanation:`</br>\n\n`You should buy one 8-litre bottle for 90 roubles and two 2-litre bottles for 30 roubles each. In total, you'll get 12 litres of lemonade for just 150 roubles.`\n#### `Example 2:`</br>\n#### `Input:`\n```\n4 3\n10000 1000 100 10\n```\n**Output**:\n```\n10\n```\n#### `Explanation:`</br>\n\n```\n\nEven though you need only 3 litres, it's cheaper to buy a single 8-litre bottle for 10 roubles.\n```",
+    "title": "Minimum Cost for New Year Lemonade Party",
+    "default_testcase": {
+        "id": 3409,
+        "input": "4 12\n20 30 70 90",
+        "expected_output": "150",
+        "code_problem_id": 507,
+        "created_at": "2024-01-04T12:09:56.529Z",
+        "updated_at": "2024-01-04T12:09:56.529Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1498,
+            "code_problem_id": 507,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public: \n              long long buyLemonde(vector<long long>&a, int n, int l){\n                //Write your code here",
+            "skeleton_class_end": "  }  \n};",
+            "skeleton_solution_class": "\n\n     \n\n"
+        },
+        {
+            "id": 1500,
+            "code_problem_id": 507,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class LemonadeBuyer {\n    public long buyLemonade(int n, long l, Vector<Long> a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": "\n\n      \n"
+        },
+        {
+            "id": 1501,
+            "code_problem_id": 507,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class LemonadeBuyer:\n    def buy_lemonade(self, n, l, a):\n        #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n   \n\n\n\n"
+        },
+        {
+            "id": 1502,
+            "code_problem_id": 507,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class LemonadeBuyer {\n    buyLemonade(n, l, a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": "\n     \n"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": 235,
+    "description": "Given an encoded string, print its decoded string.\n\nThe encoding rule is: *k[encoded_string]*, where the *encoded_string* inside the square brackets is being repeated exactly k times. Note that *k* is guaranteed to be a positive integer.\n\nYou may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there will not be input like 3a or 2[4].\n\nThe test cases are generated so that the length of the output will never exceed 10^5.\n\n#### Input Format:\n*first line contains a string (encoded string)*\n\n#### Output Format:\n*single string (decoded string)*\n\n#### Constraints:\n*1 <= s.length <= 30*\\\n*s consists of lowercase English letters, digits, and square brackets '[]'.*\\\n*s is guaranteed to be a valid input.*\\\n**All the integers in s are in the range [1, 300]**.\n\n#### Example:\n**Input**: 3[a]2[bc]\\\n**Output**: aaabcbc",
+    "title": "Decode String",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 139,
+            "code_problem_id": 235,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(string s) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 146,
+            "code_problem_id": 235,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(String s) {\n    \n  } \n}\n\n"
+        },
+        {
+            "id": 150,
+            "code_problem_id": 235,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, s):\n    "
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": 323,
+    "description": "Given an array A[] of N positive integers having all the numbers occurring exactly three times, except for one number which will occur only once. Find the number occurring only once.\nConstraints\n0 <   N  <= 2 * 10^5\n0 <= A[i] <= 10^9",
+    "title": "Find Number That Occurs Once in the Array",
+    "default_testcase": {
+        "id": 2094,
+        "input": "1\n10\n12 1 12 3 12 1 1 2 3 3",
+        "expected_output": "2\n",
+        "code_problem_id": 323,
+        "created_at": "2023-09-18T19:08:34.278Z",
+        "updated_at": "2023-09-18T19:08:34.278Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 769,
+            "code_problem_id": 323,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int search(vector<int> &A, int N)\n    {\n        \n    }\n};"
+        }
+    ]
+}

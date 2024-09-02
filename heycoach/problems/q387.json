@@ -1,0 +1,64 @@
+{
+    "id": 387,
+    "description": "In the enchanting village of Bookland, there are two mystical bookstores, Alara's Books and Balin's Reads. \n</br>\nYour task is to create a program that combines their inventories into a single sorted list.\n\n\n\n\n\n\n#### `Input:`\n\n```\n4 4\n\nbook enchanted spell wand\n\nancient dragon magic scroll\n```\n\n#### `Output:`\n\n`ancient book dragon enchanted magic scroll spell wand`\n\n#### `Constraints:`\n\n- `The size of each inventory (n) and (m): 1 \u2264 n, m \u2264 10^5`\n\n- `Length of each book title: 1 \u2264 length \u2264 100`\n\n-  `The inventories are sorted in alphabetical order.`\n\n",
+    "title": "Combine the Books",
+    "default_testcase": {
+        "id": 3783,
+        "input": "4 4\nbook enchanted spell wand\nancient dragon magic scroll",
+        "expected_output": "ancient book dragon enchanted magic scroll spell wand \n",
+        "code_problem_id": 387,
+        "created_at": "2024-01-18T17:41:09.404Z",
+        "updated_at": "2024-01-18T17:41:09.404Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1015,
+            "code_problem_id": 387,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(inventory1, inventory2):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1019,
+            "code_problem_id": 387,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<string> solve(const vector<string>& inventory1, const vector<string>& inventory2) {\n     //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1020,
+            "code_problem_id": 387,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public List<String> solve(List<String> inventory1, List<String> inventory2) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1021,
+            "code_problem_id": 387,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(inventory1, inventory2) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

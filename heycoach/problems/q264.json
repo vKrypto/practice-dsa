@@ -1,0 +1,28 @@
+{
+    "id": 264,
+    "description": "\nIn English, we have a concept called `root`, which can be followed by some other word to form another longer word - let's call this word successor. For example, when the `root` \"an\" is followed by the `successor` word \"other\", we can form a new word \"another\".\n\nGiven a dictionary consisting of many `roots` and a sentence consisting of words separated by spaces, replace all the `successors` in the sentence with the root forming it. If a successor can be replaced by more than one root, replace it with the root that has the shortest length.\n\nReturn the sentence after the replacement.\n\n### Example 1\n\n### Input\n\n```CPP\ndictionary = [\"cat\",\"bat\",\"rat\"], sentence = \"the cattle was rattled by the battery\"\n```\n\n### Output\n\n```CPP\n\"the cat was rat by the bat\"\n```\n\n### Example 2\n\n### Input\n\n```CPP\ndictionary = [\"a\",\"b\",\"c\"], sentence = \"aadsfasf absbs bbab cadsfafs\"\n```\n\n### Output\n\n```CPP\n\"a a b c\"\n```\n\n### Constraints:\n\n- 1 <= dictionary.length <= 1000\n- 1 <= dictionary[i].length <= 100\n- dictionary[i] consists of only lower-case letters.\n- 1 <= sentence.length <= 106\n- sentence consists of only lower-case letters and spaces.\n- The number of words in sentence is in the range [1, 1000]\n- The length of each word in sentence is in the range [1, 1000]\n- Every two consecutive words in sentence will be separated by exactly one space.\n- sentence does not have leading or trailing spaces.\n",
+    "title": "Replace word",
+    "default_testcase": {
+        "id": 1818,
+        "input": "words trecat by spaces turytrut swkajsgfqkwugfuyg was rattled by the ttabyr\n5\nt\ntt\ntre\nsert\nyb",
+        "expected_output": "words t by spaces t swkajsgfqkwugfuyg was rattled by t t",
+        "code_problem_id": 264,
+        "created_at": "2022-11-06T09:02:44.965Z",
+        "updated_at": "2022-11-06T09:02:44.965Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 410,
+            "code_problem_id": 264,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  string replaceWords(vector < string > & dict, string sentence) {\n     // write your code here\n  }\n};\n"
+        }
+    ]
+}

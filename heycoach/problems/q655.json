@@ -1,0 +1,64 @@
+{
+    "id": 655,
+    "description": "In English, we have a concept called  **root**, which can be followed by some other word to form another longer word - let's call this word  **successor**. For example, when the  **root**  `\"an\"`  is followed by the  **successor**  word  `\"other\"`, we can form a new word  `\"another\"`.\n\nGiven a  `dictionary`  consisting of n **roots**  and a  `sentence`  consisting of words separated by spaces, replace all the  **successors**  in the sentence with the  **root**  forming it. If a  **successor**  can be replaced by more than one  **root**, replace it with the  **root**  that has  **the shortest length**.\n\nReturn  _the  `sentence`_  after the replacement.\n### Sample Input 1\n\n```\nthe cattle was rattled by the battery\n3\ncat\nbat\nrat\n\n```\n### Sample Output 1\n\n```\n\"the cat was rat by the bat\"\n```\n### Explanation\n\n```\nthe => it does not have any root word in dictionary so keep it as it is.\ncattle => `cat` is the root of this word so replace it with cat.\nwas => it does not have any root word in dictionary so keep it as it is.\nrattled => `rat` is the root of this word so replace it with rat.\nby => it does not have any root word in dictionary so keep it as it is.\nbattery => `bat` is the root of this word so replace it with bat.\n```\n\n### Sample Input 2\n\n```\naadsfasf absbs bbab cadsfafs\n3\na\nb\nc\n\n```\n### Sample Output 2\n\n```\n\"a a b c\"\n```\n\n### Input Format\n```\nFirst Line contains a string \"sentance\"\nSecond Line constains an interger n, the number of strings in  Array \"Dictionary\", followed by n lines of strings\n```\n### Output Format\n```\nReturn a string \"result\" , the sentence after the replacement.\n```\n### Constraints:\n-   `1 <= dictionary.length <= 1000`\n-   `1 <= dictionary[i].length <= 100`\n-   `dictionary[i]`  consists of only lower-case letters.\n-   `1 <= sentence.length <= 10000`\n-   `sentence`  consists of only lower-case letters and spaces.\n-   The number of words in  `sentence`  is in the range  `[1, 1000]`\n-   The length of each word in  `sentence`  is in the range  `[1, 1000]`\n-   Every two consecutive words in  `sentence`  will be separated by exactly one space.\n-   `sentence`  does not have leading or trailing spaces.\n\n\n",
+    "title": "Replace Words with their Roots",
+    "default_testcase": {
+        "id": 4387,
+        "input": "the cattle was rattled by the battery\n3\ncat \nbat \nrat",
+        "expected_output": "the cat was rat by the bat",
+        "code_problem_id": 655,
+        "created_at": "2024-01-27T13:40:06.488Z",
+        "updated_at": "2024-01-27T13:40:06.488Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2016,
+            "code_problem_id": 655,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2017,
+            "code_problem_id": 655,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2018,
+            "code_problem_id": 655,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def replaceWords(self, dictionary, sentence):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2019,
+            "code_problem_id": 655,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

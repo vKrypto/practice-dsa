@@ -1,0 +1,52 @@
+{
+    "id": 500,
+    "description": "Given two positive integers low and high represented as strings, find the count of stepping numbers in the inclusive range [low, high].A stepping number is an integer such that all of its adjacent digits have an absolute difference of exactly 1.\nReturn an integer denoting the count of stepping numbers in the inclusive range [low, high].\nSince the answer may be very large, return it modulo 109 + 7.\nNote: A stepping number should not have a leading zero.\n\n### Input Format\n```\nTwo positive integers represented as strings, low and high, defining the inclusive range.\n```\n### Output Format\n```\nThe count of stepping numbers within the specified range .\n```\n### Sample Input\n```\nlow = \"1\", high = \"11\"\n```\n### Sample Output\n```\n10\n```\n### Explanation\n```\nThe stepping numbers in the range [1,11] are 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10. There are a total of 10 stepping numbers in the range. Hence, the output is 10.\n```\n### Constraints\n\n- 1 <= int(low) <= int(high) < 10100\n- 1 <= low.length, high.length <= 100\n- low and high consist of only digits.\n- low and high don't have any leading zeros.",
+    "title": "Count Stepping Numbers in Range",
+    "default_testcase": {
+        "id": 3332,
+        "input": "1\n11",
+        "expected_output": "10\n",
+        "code_problem_id": 500,
+        "created_at": "2024-01-03T06:29:47.499Z",
+        "updated_at": "2024-01-03T06:29:47.499Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1463,
+            "code_problem_id": 500,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n   public int countSteppingNumbers(String A, String B) {\n     // write your code here\n   }\n}\n  "
+        },
+        {
+            "id": 1464,
+            "code_problem_id": 500,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int countSteppingNumbers(string A, string B) {\n      // write the code\n    }\n}"
+        },
+        {
+            "id": 1472,
+            "code_problem_id": 500,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def countSteppingNumbers(self, A, B):"
+        }
+    ]
+}

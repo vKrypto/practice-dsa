@@ -1,0 +1,45 @@
+{
+    "id": 147,
+    "description": "Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.\n\nIn one move, you can increment or decrement an element of the array by 1.\n\n\n### Example 1 \n\n### Input\n```CPP\nnums = [1,2,3]\n``` \n### Output \n```CPP \n2\n``` \n#### Explanation -\nOnly two moves are needed (remember each move increments or decrements one element):\n[1,2,3]  =>  [2,2,3]  =>  [2,2,2]\n\n\n### Example 2 \n\n### Input\n```CPP\nnums = [1,10,2,9]\n``` \n### Output \n```CPP \n16\n``` \n\n\n### Constraints:\n\n* n == nums.length\n* 1 <= nums.length <= 10^5\n* -10^9 <= nums[i] <= 10^9\n",
+    "title": "Minimum Moves",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 259,
+            "code_problem_id": 147,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 276,
+            "code_problem_id": 147,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 279,
+            "code_problem_id": 147,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 512,
+    "description": "You are given an array `a` consisting of `n` integers. Your task is to find the frequency of the maximum element in the array.\n\n\n### `Input format`\nThe first line contains an integer n (1 \u2264 n \u2264 10^5) \u2014 the size of the array.<br>\nThe second line contains n integers a1, a2, ..., an (1 \u2264 ai \u2264 10^9) \u2014 the elements of the array.\nYou will be given a function to implement with parameters as array `a` and its length `n`.\n\n### `Output format`\nReturn a single integer \u2014 the frequency of the maximum element in the array.\n\n### `Examples`\n\n#### Example 1\nInput\n```\n5\n1 3 2 3 3\n```\nOutput\n```\n3\n```\n#### Example 2\nInput\n```6\n5 5 5 5 5 5\n```\nOutput\n```\n6\n```\n\n### `Explanation`\nIn the first example, the maximum element is 3, and it appears 3 times in the array.<br>\nIn the second example, all elements are the same, and the maximum element (5) appears 6 times.\n",
+    "title": "Maximum Element Frequency",
+    "default_testcase": {
+        "id": 5520,
+        "input": "5\n1 3 2 3 3",
+        "expected_output": "3\n",
+        "code_problem_id": 512,
+        "created_at": "2024-02-15T08:59:26.906Z",
+        "updated_at": "2024-02-15T08:59:26.906Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1511,
+            "code_problem_id": 512,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maxElementFrequency(int n, const vector<int>& a) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1512,
+            "code_problem_id": 512,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxElementFrequency(self, n, a):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1513,
+            "code_problem_id": 512,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxElementFrequency(int n, ArrayList<Integer> a) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1514,
+            "code_problem_id": 512,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxElementFrequency(n, a) {",
+            "skeleton_class_end": "   } \n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

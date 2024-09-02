@@ -1,0 +1,64 @@
+{
+    "id": 485,
+    "description": "You are given an array of integers and another integer 'k'. Your task is to perform the following operations:-\n\n1. Implement a queue with integers from the given array.\n2. Remove the first element of queue.\n3. Print the first element of queue.\n4. Find if the integer k exists in the queue.\n5. Finally return the queue.\n\nNote that these operations are to be done in the provided order.\n\nInput Format:\n\nFirst line contains of two integers denoting the size of array and the integer whose existence in the implemented queue has to be checked\n\nSecond line contains the elements of the given integer array.\n\nOutput format:\n\nComplete the operations and return the output (if it produces a output) of each operation on a new line.\n\nSample Input:\n\n5 4\n\n1 9 11 3 2\n\nSample Output:\n\n9\n\nNo\n\n9 11 3 2 \n\nConstraints:\n\n1<=k<=10^6\n\n1<=n<=10^6\n\n1<=ar[i]<=10^6\n",
+    "title": "Queue Functions",
+    "default_testcase": {
+        "id": 3257,
+        "input": "5 4\n1 9 11 3 2",
+        "expected_output": "9\nNo\n9 11 3 2 \n",
+        "code_problem_id": 485,
+        "created_at": "2023-12-29T22:47:15.456Z",
+        "updated_at": "2023-12-29T22:47:15.456Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1406,
+            "code_problem_id": 485,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    queue<int> solve(vector<int> &v, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1407,
+            "code_problem_id": 485,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public Queue<Integer> solve(Vector<Integer> v, int k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1408,
+            "code_problem_id": 485,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, v, k):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1409,
+            "code_problem_id": 485,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(v, k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

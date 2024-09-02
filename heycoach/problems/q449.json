@@ -1,0 +1,64 @@
+{
+    "id": 449,
+    "description": "In a picturesque village, Gram, the revered elder, received a magical string named \"s.\" The village, filled with avid letter collectors, eagerly anticipated Gram's ingenuity. With a quest to create a unique and lexicographically ordered sequence, Gram carefully crafted an algorithm. Duplicates vanished, and the string transformed into a captivating tale of linguistic elegance. \n\nThe village celebrated Gram as the guardian of lexicographical order, and the magical string \"s\" became a symbol of their commitment to precision. The story resonated through the hills, inspiring generations to unravel the mysteries of letters and strings.\n\n#### **`Input:`**\n```A string s of length between 1 and 10,000.```\n#### **`Output:`**\n```Return the smallest lexicographical order string after removing duplicates. ```\n\n#### **`Example 1:`**\n\n**`Input:`**     \n\n` s = \"bcabc\"`\n\n**`Output:`**  \n`\"abc\"`\n\n#### `Example2:`\n\n**`Input:`**     \n`s = \"cbacdcbc\" `\n\n**`Output:`**      \n`\"acdb\"`\n\n#### `Constraints:`\n\n- `The length of the input string s is within the range [1, 10,000].`\n- `The string s consists of lowercase English letters.`\n",
+    "title": "Gram and the string",
+    "default_testcase": {
+        "id": 5633,
+        "input": "bcabc",
+        "expected_output": "abc\n",
+        "code_problem_id": 449,
+        "created_at": "2024-02-16T11:43:02.196Z",
+        "updated_at": "2024-02-16T11:43:02.196Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1285,
+            "code_problem_id": 449,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string removeDuplicateLetters(string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1327,
+            "code_problem_id": 449,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String removeDuplicateLetters(String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1328,
+            "code_problem_id": 449,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def removeDuplicateLetters(self, s: str) -> str:\n      # Write Your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1367,
+            "code_problem_id": 449,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    removeDuplicateLetters(s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 348,
+    "description": "Given two distinct words startWord and targetWord, and a list denoting wordList of unique words of equal lengths. Find the length of the shortest transformation sequence from startWord to targetWord.\nKeep the following conditions in mind:\n\nA word can only consist of lowercase characters.\nOnly one letter can be changed in each transformation.\nEach transformed word must exist in the wordList including the targetWord.\nstartWord may or may not be part of the wordList\nThe second part of this problem can be found here.\n\nNote: If no possible way to transform sequence from startWord to targetWord return 0\n\n**`Expected Time Compelxity:`**      \n`O(N2 * M)`\n#### `Expected Auxiliary Space:`  </br>\n`O(N * M) where N = length of wordList and M = |wordListi|`\n\n**`Sample Input 1`:**\n```\n5\n\ndes der dfr dgt dfs\n\nder dfs\n```\n**Sample Output 1:**  \n `3`\n\n**Sample Input 2:**\n```\n6\n\nglue glut geut neut next hill\n\nblue next\n```\n**Sample Output:**   \n `6`\n\n\n\n#### `Constraints:`\n- `1 \u2264 N \u2264 100`\n- `1 \u2264 M \u2264 10`\n\n",
+    "title": "Word Ladder",
+    "default_testcase": {
+        "id": 2204,
+        "input": "5\ndes der dfr dgt dfs\nder dfs",
+        "expected_output": "3\n",
+        "code_problem_id": 348,
+        "created_at": "2023-09-24T23:32:07.921Z",
+        "updated_at": "2023-09-24T23:32:07.921Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 815,
+            "code_problem_id": 348,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n// Function to check if two words differ by exactly one character\npublic:\n// Function to find the length of the shortest transformation sequence\nint shortestTransformationLength(const string& startWord, const string& targetWord, const vector<string>& wordList) {\n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1085,
+            "code_problem_id": 348,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class WordTransformer {\n    shortestTransformationLength(startWord, targetWord, wordList) {\n      \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1086,
+            "code_problem_id": 348,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": " class WordTransformer {\n    public int shortestTransformationLength(String startWord, String targetWord, List<String> wordList) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1087,
+            "code_problem_id": 348,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class WordTransformer:\n    def __init__(self):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

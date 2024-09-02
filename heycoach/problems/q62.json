@@ -1,0 +1,40 @@
+{
+    "id": 62,
+    "description": "Given two binary strings A and B consisting of only 0s and 1s. Find the resultant string after adding the two Binary Strings.\n**Note**: The input strings may contain leading zeros but the output string should **not** have any **leading zeros**.\n\n### Example 1 \n\n### Input\n```CPP\nA = \"1101\", B = \"111\"\n``` \n### Output \n```CPP \n10100\n``` \n#### Explanation:\n\n1  1  0 1\n \\+ 1 1 1\n1 0 1 0 0\n\n### Example 2 \n\n### Input\n```CPP\nA = \"10\", B = \"01\"\n``` \n### Output \n```CPP \n11\n``` \n#### Explanation:\n\n   1 0 + 0 1  = 1  1\n\n### Constraints:\n\n* 1 <= A.length,B.length <= 10000\n* A and B contains only 0's and 1's\n",
+    "title": "Add two binary strings",
+    "default_testcase": {
+        "id": 429,
+        "input": "1101\n111",
+        "expected_output": "10100\n",
+        "code_problem_id": 62,
+        "created_at": "2022-09-29T08:44:13.517Z",
+        "updated_at": "2022-09-29T08:44:13.517Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 109,
+            "code_problem_id": 62,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution {\npublic:\n\tstring addBinary(string A, string B)\n\t{\n      // write your code here\n\t}\n};"
+        },
+        {
+            "id": 478,
+            "code_problem_id": 62,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n\n    public String addBinary(String A, String B) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

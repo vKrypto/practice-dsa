@@ -1,0 +1,64 @@
+{
+    "id": 392,
+    "description": "You are the manager at \"Dream Wheels\" which is a Car Showroom and there are 'n' number of cars available here. <br/>You read an analysis that customers tend to buy expensive rare cars if they come across them after the common cheaper cars. <br/>Your task is to arrange the cars in the decreasing order of their frequency, cars are represented by a string of characters, if two or more cars have the same number of frequencies sort them lexicographically.\n \n\n#### `Sample Input:`   \n  ```ssgysyqa```\n\n#### `Sample Output:`   \n   ```sssyyagq```\n\n#### `Constraints:`  \n- `1<= n <= 10^5`\n\n\n```All characters are lowercase only and are English alphabets.```",
+    "title": "Bucket Sort",
+    "default_testcase": {
+        "id": 5835,
+        "input": "ssgysyqa",
+        "expected_output": "sssyyagq\n",
+        "code_problem_id": 392,
+        "created_at": "2024-02-19T07:24:37.926Z",
+        "updated_at": "2024-02-19T07:24:37.926Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 943,
+            "code_problem_id": 392,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic: \nstring bucketSortCars(string cars) {\n  //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 944,
+            "code_problem_id": 392,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    String bucketSortCars(String cars) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 945,
+            "code_problem_id": 392,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def frequencySort(self, s: str) -> str:\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 946,
+            "code_problem_id": 392,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    frequencySort(s) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

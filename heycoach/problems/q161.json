@@ -1,0 +1,28 @@
+{
+    "id": 161,
+    "description": "There is an integer array ** nums ** sorted in ascending order (with distinct values).\n\nPrior to being passed to your function, ** nums ** is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is * [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed) *. For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].\n\nGiven the array ** nums ** after the possible rotation and an integer target, return the index of target if it is in * nums * , or -1 if it is not in nums.\n\n** You must write an algorithm with O(log n) runtime complexity.\n\n#### Input Format:\n* first line consists of two integer n (size of the array) and target.\n* second line consists of n integers (elements of the array)\n\n#### Output Format:\n* print single integer output. The index of the target if present otherwise print -1.\n\n#### Constraints:\n* 1 <= nums.length <= 5000\n* -10^4 <= nums[i] <= 10^4\n* All values of nums are unique.\n* nums is an ascending array that is possibly rotated.\n* -10^4 <= target <= 10^4\n\n#### Example:\n** Input: **\n\n```\n7 0\n4 5 6 7 0 1 2\n```\n\n** Output :** \n```\n4\n```\n",
+    "title": "Search in Rotated Sorted Array",
+    "default_testcase": {
+        "id": 1161,
+        "input": "7 0\n4 5 6 7 0 1 2",
+        "expected_output": "4",
+        "code_problem_id": 161,
+        "created_at": "2022-10-23T09:59:48.902Z",
+        "updated_at": "2022-10-23T09:59:48.902Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1055,
+            "code_problem_id": 161,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": " \nclass Solution {\npublic:\n    int search(std::vector<int>& nums, int target) {\n        \n    }\n};\n\n"
+        }
+    ]
+}

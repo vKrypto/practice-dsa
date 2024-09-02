@@ -1,0 +1,64 @@
+{
+    "id": 809,
+    "description": "Description:\n\nGiven an integer range (a, b], count the number of times digit 1 occurs in this range where a < b and is exclusive meaning it is not included in the range.\n\nInput Format:\n\nTwo integers a, b where a<b and they signify the range (a,b], where a is exclusive.\n\nOutput Format:\n\nA single integer representing the total number of occurrences of digit 1 in the given range\n\nSample Inputs:\n\n10 25 1\n\nSample Outputs:\n\n8\n\nExplanation:\n\nThe integers that contain 1 in the range (10, 25] are 11,12,13,14,15,16,17,18,19 and 21. If you count the number of times digit '1' occurs then that would be 11 and thus you have to return that as the answer.\n\nConstraint:\n\n0 <= a < b <= 10^9\n",
+    "title": "Counting Special Digit",
+    "default_testcase": {
+        "id": 7632,
+        "input": "9 116",
+        "expected_output": "45\n",
+        "code_problem_id": 809,
+        "created_at": "2024-05-02T07:12:09.731Z",
+        "updated_at": "2024-05-02T07:12:09.731Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2846,
+            "code_problem_id": 809,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    SpecialDigit(a, b) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2847,
+            "code_problem_id": 809,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def SpecialDigit(self, a, b):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2848,
+            "code_problem_id": 809,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countDigitOne(int a, int b) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2849,
+            "code_problem_id": 809,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int SpecialDigit(int a, int b) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

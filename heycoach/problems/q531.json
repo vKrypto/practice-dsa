@@ -1,0 +1,45 @@
+{
+    "id": 531,
+    "description": "Given a Binary Tree Your job is to completely Destroy the entire Binary Tree using the following operation:\nSelect all the leaf nodes of the binary Tree and Remove these nodes.\nKeep doing the operation 1 till all the nodes of Binary Tree are removed.\nYour Job is to print the total number of nodes removed at each step.\n\nInput: String s, tree in form of string.\n\nOutput: array of numbers represent number of leaf nodes for each iterative removal of leaf nodes.\n\nSample Input: 1 2 3 N N N N\n\nSample Output: 2 1 \n\nExplaination: Initially 2 leaf nodes (2 and 3). After removing them only one leaf node (1).\nSo 2 1 is expected output.\n\nConstraint: N, number of nodes in tree <=10000.\n",
+    "title": "Destroy the tree",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1579,
+            "code_problem_id": 531,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n \n// Print and remove leaf nodes\nvoid printLeafNodes(Node* root)\n{\n}\n"
+        },
+        {
+            "id": 1588,
+            "code_problem_id": 531,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Main {\n    static Map<Integer, List<Integer>> resultMap = new HashMap<>();\n\n\n    // Print and remove leaf nodes\n    static void printLeafNodes(Node root) {\n      \n    }\n\n    // Helper function to build a binary tree from a level order traversal string\n    static Node buildTree(String levelOrder) {\n        if (levelOrder == null || levelOrder.equals(\"N\")) {\n            return null;\n        }\n\n        StringTokenizer st = new StringTokenizer(levelOrder);\n        String token = st.nextToken();\n\n        Node root = new Node(Integer.parseInt(token));\n        Queue<Node> q = new LinkedList<>();\n        q.add(root);\n\n        while (!q.isEmpty()) {\n            Node currNode = q.poll();\n\n            if (!st.hasMoreTokens()) {\n                break;\n            }\n\n            token = st.nextToken();\n            if (!token.equals(\"N\")) {\n                currNode.left = new Node(Integer.parseInt(token));\n                q.add(currNode.left);\n            }\n\n            if (!st.hasMoreTokens()) {\n                break;\n            }\n\n            token = st.nextToken();\n            if (!token.equals(\"N\")) {\n                currNode.right = new Node(Integer.parseInt(token));\n                q.add(currNode.right);\n            }\n        }\n\n        return root;\n    }\n\n    public static void main(String[] args) {\n        // Example Usage\n        Scanner scanner = new Scanner(System.in);\n        String levelOrder = scanner.nextLine();\n\n        Node root = buildTree(levelOrder);\n\n        printLeafNodes(root);\n    }\n}\n"
+        },
+        {
+            "id": 1589,
+            "code_problem_id": 531,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n# Print and remove leaf nodes\ndef print_leaf_nodes(root):\n\n"
+        }
+    ]
+}

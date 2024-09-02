@@ -1,0 +1,64 @@
+{
+    "id": 668,
+    "description": "Tuntun is very creative. She is thinking of a new way to modify the matrix but she is very weak in coding so help her to do so.\nYou are given a *m x n* integer matrix matrix, if an element is 0, set its entire row and column to 0's.\n\nYou must do it in place.\n\n### Input Format\n```\n\n- The first line contains two space-separated integers \u2018N\u2019 and \u2018M\u2019, denoting the no. of the rows and columns of the matrix.\n\n- The next 'N' lines will contain \u2018M\u2019 space separated integers representing the elements of the matrix.\n\n```\n### Output Format:\n```\nprint the modified grid in a separate line.\n```\n### Example\n```\n1 1 1                  1 0 1\n1 0 1     =>           0 0 0\n1 1 1                  1 0 1\n```\n### Constraints:\n```\n- m == matrix.length\n- n == matrix[0].length\n- 1 <= m, n <= 200\n- (-231) <= matrix[i][j] <= (231 - 1)\n```",
+    "title": "New Matrix",
+    "default_testcase": {
+        "id": 4439,
+        "input": "3 3\n1 1 1\n1 0 1\n1 1 1",
+        "expected_output": "1 0 1 \n0 0 0 \n1 0 1 \n",
+        "code_problem_id": 668,
+        "created_at": "2024-01-27T15:59:47.594Z",
+        "updated_at": "2024-01-27T15:59:47.594Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2092,
+            "code_problem_id": 668,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\ntypedef long long int ll;\nll mod = 1000000007;\nll n;\n\nll gcd(ll a, ll b)\n{",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2093,
+            "code_problem_id": 668,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int n, int m, int[][] matrix) {",
+            "skeleton_class_end": "      }\n  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2094,
+            "code_problem_id": 668,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, m, matrix):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2095,
+            "code_problem_id": 668,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, m, matrix) {",
+            "skeleton_class_end": "       }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

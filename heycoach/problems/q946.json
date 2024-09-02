@@ -1,0 +1,57 @@
+{
+    "id": 946,
+    "description": "You have n sticks, numbered from 1 to  n.  The length of the i-th stick is 2^a[i].\n\nYou want to choose exactly 3 sticks out of the given n sticks, and form a non-degenerate triangle out of them, using the sticks as the sides of the triangle. A triangle is called non-degenerate if its area is strictly greater than 0.\n\nYou have to calculate the number of ways to choose exactly 3 sticks so that a triangle can be formed out of them. Note that the order of choosing sticks does not matter (for example, choosing the 1-st, 2-nd and 4-th stick is the same as choosing the 2-nd, 4-th and 1-st stick).\n\nInput\n\nThe first line contains one integer n\n\nThe second line contains n integers a1,a2,\u2026,an.\n\n```\nSample Input 1 : \n\n7\n\n1 1 1 1 1 1 1\n\nOutput \n\n35\n```\n\n```\nSample Input 2 : \n\n3\n\n1 2 3\n\nOutput \n\n0\n```\n\nConstraints :\n\n`3\u2264n\u22642\u22c51e5`\n\n`0\u2264a[i]\u2264n`",
+    "title": "Count Traingles",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3152,
+            "code_problem_id": 946,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    long long int counttraingle(int n, vector<int> &a)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3153,
+            "code_problem_id": 946,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long countTriangle(int n, int[] a) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3154,
+            "code_problem_id": 946,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_triangle(self, n, a):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3155,
+            "code_problem_id": 946,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countTriangle(n, a) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

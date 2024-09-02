@@ -1,0 +1,64 @@
+{
+    "id": 817,
+    "description": "Description:\nAjay and Vijay are playing an intense game, they are provided an array a with n positive integers which has the following rules:\n1.  \tIf a1=0, the game ends and the person whose turn it is loses. (a1 is the element at 1th position)\n2.  \tIn a move a player can choose i such that 2<=i<=n. The player decreases the value of a1 by 1 and swaps ai (ith position) by a1(1th position).\n3.  \tAjay always plays first.\n\nPrint the winner of the game if they both play the game logically.\n\nExample:\n\nLet\u2019s say that n=2 and a = [1,1] now Ajay goes first and he chooses i=2 (only choice), now a1=1 gets reduced to 0 and after that it is swapped with a2 = 1 so the array we end up with is a = [1,0]\n\nNow it is the turn of Vijay, so he then chooses i=2 (only choice) , now a1=1 gets reduced to zero and after that it is swapped with a2=0 and the array is a= [0,0].\nIt\u2019s Ajay\u2019s turn now and a1 = 0, thus the winner of the game is \u201cVijay\u201d.\n \nSample Input:\n\nN = 2, a = [2, 1]\n\nSample Output:\n\nAjay\n \nConstraints:\n\n2<=n<=10^4\n\n1<=ai<=10^8\n",
+    "title": "Let\u2019s Swap",
+    "default_testcase": {
+        "id": 7426,
+        "input": "3\n5 4 4",
+        "expected_output": "Ajay\n",
+        "code_problem_id": 817,
+        "created_at": "2024-04-26T22:14:06.384Z",
+        "updated_at": "2024-04-26T22:14:06.384Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2709,
+            "code_problem_id": 817,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n\tpublic:\n\tvoid solve(int *ar, int n){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2710,
+            "code_problem_id": 817,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def solve(ar, n):\n  #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2711,
+            "code_problem_id": 817,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(int[] ar, int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2712,
+            "code_problem_id": 817,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    solve(ar, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

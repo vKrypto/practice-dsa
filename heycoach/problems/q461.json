@@ -1,0 +1,64 @@
+{
+    "id": 461,
+    "description": "You've landed on a mysterious island inhabited by two distinct tribes, cloaked in secrecy and suspicion. Each tribe occupies a hidden village within the island's lush jungle, connected by ancient trails (represented by the graph array). Your mission? Determine if any path exists between the two villages, revealing whether the tribes are truly separate or secretly intertwined.\n\n\n\nYou're given an array graph, where each element graph[u] represents the villages neighbouring village u. Imagine these as hidden pathways through the jungle.<br/>\nThe island possesses these unique characteristics:<br/>\nNo village resides alone (every graph[u] has at least one element).<br/>\nNo loop exists within a village (a village cannot have a path back to itself).<br/>\nTwo villages are truly separate if no hidden path connects them (graph is not connected).<br/>\nYour mission is to identify if the two tribes live in complete isolation (the graph is not bipartite) or if, somewhere within the jungle, a hidden path unites them (the graph is bipartite). Remember, uncovering this secret connection paves the way for peaceful interaction and understanding between the tribes.<br/>\n\n\n----------\n\n\n### `Input/Output Format:`\n\n#### `Input:` \n`A nested array graph representing the village connections (each element graph[u] contains integers representing connected villages).`\n`i.e. the graph is in the form of an adjacency list.`\n\n#### `Output:` \n`A boolean value indicates whether the two tribes are fully isolated (False) or interconnected (True).`\n\n### `Examples:`\n\n#### `Input:` \n`[[0,1],[0,2],[1,2]] (Island map with separate villages)`\n\n#### `Output:` \n`False (No path connects the villagers, making the tribes remain divided.)`\n\n#### `Input:` \n`[[0,1],[1,2]] (Another island map with a hidden connection)`\n\n#### Output: \n`True (A hidden path exists between villages 1 and 2, hinting at a potential connection between the tribes.)`\n\n\n----------\n\n\n#### `Constraints:`\n\n- `1 <= n (number of villages on the island) <= 100`<br>\n- `Each element graph[u] has at least one value but less than n values.`\n- `graph[u] does not contain u (villages have no loop paths).`<br>\n- `If v is in graph[u], then u is in graph[v] (graph is undirected).`\n\n\n----------\n\n",
+    "title": "Isolated or Interconnected",
+    "default_testcase": {
+        "id": 3158,
+        "input": "4 4\n0 2\n0 3\n1 3\n2 3",
+        "expected_output": "0\n",
+        "code_problem_id": 461,
+        "created_at": "2023-12-26T07:55:02.408Z",
+        "updated_at": "2023-12-26T07:55:02.408Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1355,
+            "code_problem_id": 461,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      public boolean IsolatedOrInterconnected(List<List<Integer>> graph) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1356,
+            "code_problem_id": 461,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool IsolatedOrInterconnected(vector<vector<int>>& graph) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1357,
+            "code_problem_id": 461,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def IsolatedOrInterconnected(self, graph):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1398,
+            "code_problem_id": 461,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    IsolatedOrInterconnected(graph) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

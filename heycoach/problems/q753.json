@@ -1,0 +1,64 @@
+{
+    "id": 753,
+    "description": "\nWrite a program that calculates the number of values within a given range that are divisible by a specified value.         \n \nThe program takes three integers as input: the start and end of the range, and the value to check for divisibility. It outputs the count of numbers within the range that are divisible by the specified value.\n\n#### `Input Format:`\n```\nThe input consists of three integers separated by spaces:  start  (the starting value of the range), \nend  (the ending value of the range), and  divisor  (the value to check for divisibility). All integers are within the range  -10^9  to  10^9 .\n```\n#### `Output Format:`\n```\nThe program outputs a single integer representing the count of numbers within the range  start  \nto  end  (inclusive) that are divisible by  divisor .\n```\n\n#### `Sample Input:`\n```\n5 20 3\n```\n\n#### `Sample Output:`\n```\n5\n```\n#### `Constraints:`\n-  `-10^9  <=  start , end , divisor  <=  10^9`\n- \n-  `start  <=  end `\n#### `Explanation:`\n\n`Input specifies a range from 5 to 20 and checks for numbers divisible by 3. \nThe numbers within this range that are divisible by 3 are 6, 9, 12, 15, and 18, resulting in a count of 5.`",
+    "title": "Divisible Values Count",
+    "default_testcase": {
+        "id": 6728,
+        "input": "5 20 3",
+        "expected_output": "5",
+        "code_problem_id": 753,
+        "created_at": "2024-03-22T17:36:51.680Z",
+        "updated_at": "2024-03-22T17:36:51.680Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2439,
+            "code_problem_id": 753,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static int countDivisible(int start, int end, int divisor) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2440,
+            "code_problem_id": 753,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static int countDivisible(int start, int end, int divisor) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2441,
+            "code_problem_id": 753,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_divisible(start, end, divisor):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2442,
+            "code_problem_id": 753,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static countDivisible(start, end, divisor) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

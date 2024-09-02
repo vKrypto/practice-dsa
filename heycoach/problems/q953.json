@@ -1,0 +1,57 @@
+{
+    "id": 953,
+    "description": "Given an integer `n`, return the count of all numbers with unique digits, `x`, where 0 <= x < 10n.\n\n**Example:**</br>\n**Input:** n = 2</br>\n**Output:** 91</br>\n**Explanation:** The answer should be the total numbers in the range of 0 \u2264 x < 100, excluding 11,22,33,44,55,66,77,88,99\n\n\n**Constraints:**\n\n0 <= n <= 8",
+    "title": "Non-Repeating Digits",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3180,
+            "code_problem_id": 953,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int nonRepeatingDigits (int n) {\n",
+            "skeleton_class_end": "    }\n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3181,
+            "code_problem_id": 953,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int nonRepeatingDigits(int n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3182,
+            "code_problem_id": 953,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def nonRepeatingDigits(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3183,
+            "code_problem_id": 953,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    nonRepeatingDigits(n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

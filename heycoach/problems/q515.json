@@ -1,0 +1,64 @@
+{
+    "id": 515,
+    "description": "You are given an integer k representing the number of sorted linked lists. Each linked list is represented by two lines: the first line contains an integer n representing the number of elements in the linked list, and the second line contains n space-separated integers representing the sorted elements of the linked list. Merge all the linked lists into one sorted linked list and return its head.\n\n**Input**:\n\n```\n- The first line specifies the value of k (number of linked lists), which is 2 in this case.\n- The subsequent lines represent the linked lists. Each line starts with an integer n (number of elements in the linked list) followed by n space-separated integers in next line representing the sorted elements of the linked list.\n```\n\n**Output**:</br>\n`Return the head of the merged sorted linked list.`\n\n**Example:**</br>\n**Example 1:**</br>\n**Input**:\n```\n2\n3\n1 4 5\n3\n3 4 6\n```\n**Output**:\n```\n[1,1,2,3,4,4,5,6]\n```\n**Example 2:**</br>\n**Input**:\n```\n0\n```\n**Output**:</br>\n```\n[]\n```\n\n**Note**:</br>\nThe merged linked list should be sorted in ascending order.",
+    "title": "Merge k sorted linked list",
+    "default_testcase": {
+        "id": 8122,
+        "input": "2\n3\n1 4 5\n3\n3 4 6",
+        "expected_output": "1 3 4 4 5 6 ",
+        "code_problem_id": 515,
+        "created_at": "2024-05-19T10:31:09.133Z",
+        "updated_at": "2024-05-19T10:31:09.133Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1526,
+            "code_problem_id": 515,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  // Definition for singly-linked list.\nstruct ListNode {\n    int val;\n    ListNode *next;\n    ListNode(int x) : val(x), next(NULL) {}\n};\n*/\n\nclass Solution {\npublic:\n    ListNode* mergeKLists(vector<ListNode*>& listArray) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1686,
+            "code_problem_id": 515,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int x) {\n        val = x;\n        next = null;\n    }\n}\n*/\n\nclass Solution {\n    public ListNode mergeKLists(List<ListNode> listArray) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1687,
+            "code_problem_id": 515,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\"\"\"\nclass Solution:\n    def mergeKLists(self, lists):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1688,
+            "code_problem_id": 515,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass ListNode {\n    constructor(val) {\n        this.val = val;\n        this.next = null;\n    }\n}\n*/\n\nclass Solution {\n    mergeKLists(lists) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

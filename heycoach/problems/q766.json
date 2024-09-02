@@ -1,0 +1,8 @@
+{
+    "id": 766,
+    "description": "Write a program that takes a dictionary of words as input and finds all the longest words in the dictionary. \nIf there are multiple longest words of the same length, the program should output all of them.\n\n#### `Input Format:`\n\n`The input consists of a list of words in the dictionary. Each word is on a separate line.`\n\n#### `Output Format:`\n\n`The program outputs all the longest words found in the dictionary. If there are multiple longest words, they are printed on separate lines.`\n\n\n\n#### `Example:`\n\n#### `Input:`\n```\napple\nbanana\norange\nmango\npineapple\n```\n\n#### `Output:`\n```\npineapple\n```\n#### `Constraints:`\n\n- `The length of each word in the dictionary is at most 100 characters.`\n- `The dictionary can contain up to 10^4 words.`\n\n#### `Explanation:`\n\n`In the given dictionary, \"pineapple\" is the longest word with a length of 9 characters. Therefore, the program outputs \"pineapple\" as the longest word.`\n",
+    "title": "Longest Word the Dictionary",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

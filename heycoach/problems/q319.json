@@ -1,0 +1,28 @@
+{
+    "id": 319,
+    "description": "Given a number N, generate bit patterns from 0 to 2^N-1 such that successive patterns differ by one bit. \nThe sequence must begin with 0.\nConstraints :\n1<=N<=16",
+    "title": "Bit Pattern Generate",
+    "default_testcase": {
+        "id": 2076,
+        "input": "1\n2\n",
+        "expected_output": "00 01 11 10 \n",
+        "code_problem_id": 319,
+        "created_at": "2023-09-18T18:50:03.928Z",
+        "updated_at": "2023-09-18T18:50:03.928Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 766,
+            "code_problem_id": 319,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    vector<string> sequence_gen(int n)\n    {\n        \n    }\n};"
+        }
+    ]
+}

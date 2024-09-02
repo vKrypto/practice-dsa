@@ -1,0 +1,64 @@
+{
+    "id": 464,
+    "description": "In a town, there are n people labeled from 1 to n. There is a rumour that one of these people is secretly the town judge.\n\nIf the town judge exists, then:\n\nThe town judge trusts nobody.\nEverybody (except for the town judge) trusts the town judge.\nThere is exactly one person that satisfies properties 1 and 2. You are given an array trust where trust[i] = [a, b] representing that the person labelled a trust the person labelled b. If a trust relationship does not exist in the trust array, then such a trust relationship does not exist.\n\nReturn the label of the town judge if the town judge exists and can be identified, or return -1 otherwise.\n\n\n----------\n\n\n**`Example 1:`**\n\n**`Input:`**\n```\nn = 2, trust = [[1,2]]\n```\n**`Output:`**\n```\n2\n```\n**`Example 2:`**\n\n**`Input:`**\n```\nn = 3, trust = [[1,3],[2,3]]\n```\n**`Output:`**\n```\n3\n```\n**`Example 3:`**\n\n**`Input:`**\n```\nn = 3, trust = [[1,3],[2,3],[3,1]]\n```\n**`Output:`**\n```\n-1\n```\n\n\n----------\n\n\n**`Constraints:`**</br>\n- `1 <= n <= 1000`</br>\n- `0 <= trust.length <= 10^4`</br>\n- `trust[i].length == 2`</br>\n- `All the pairs of trust are unique.`</br>\n- `a != b`</br>\n- `1 <= a, b <= n`\n\n\n----------\n\n",
+    "title": "Find town judge ",
+    "default_testcase": {
+        "id": 3156,
+        "input": "3 2\n1 3\n2 3",
+        "expected_output": "3",
+        "code_problem_id": 464,
+        "created_at": "2023-12-25T16:34:46.349Z",
+        "updated_at": "2023-12-25T16:34:46.349Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1302,
+            "code_problem_id": 464,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findJudge(n, trust) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1303,
+            "code_problem_id": 464,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findJudge(self, n, trust):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1304,
+            "code_problem_id": 464,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\npublic int findJudge(int n, int[][] trust) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1305,
+            "code_problem_id": 464,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int findJudge(int n, vector<vector<int>>& trust) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

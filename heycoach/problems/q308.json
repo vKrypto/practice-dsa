@@ -1,0 +1,28 @@
+{
+    "id": 308,
+    "description": "Given a string str which denotes stream of characters. Your task is to find a new string output_str.\noutput_str is formed such that we have to find first non-repeating character at each instance when a character is inserted to the stream and append it at the end of output_str. If no such non-repeating charater is found then append 'X' at the end of output_str.\nConstraints:\n1 \u2264 |str| \u2264 10^5\n",
+    "title": "Output the required String",
+    "default_testcase": {
+        "id": 2033,
+        "input": "1\ndabc",
+        "expected_output": "dddd\n",
+        "code_problem_id": 308,
+        "created_at": "2023-09-17T16:05:02.823Z",
+        "updated_at": "2023-09-17T16:05:02.823Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 756,
+            "code_problem_id": 308,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    string firstNonRep(string str) {\n        \n    }\n    \n};"
+        }
+    ]
+}

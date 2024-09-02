@@ -1,0 +1,45 @@
+{
+    "id": 163,
+    "description": "Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.\n\n### Example 1 \n\n### Input\n```CPP\nmatrix = [[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]\n``` \n### Output \n```CPP \n4\n``` \n#### Explanation:\n![Image](https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg)\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\n matrix = [[\"0\",\"1\"],[\"1\",\"0\"]]\n``` \n### Output \n```CPP \n1\n``` \n#### Explanation:\n![Image](https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg)",
+    "title": "Max Matrix",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 353,
+            "code_problem_id": 163,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tvoid solve(vector<vector<int>> arr) {\n\n\t}\n};\n"
+        },
+        {
+            "id": 357,
+            "code_problem_id": 163,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(Vector<Vector<Integer>> arr) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 361,
+            "code_problem_id": 163,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        # your code here\n"
+        }
+    ]
+}

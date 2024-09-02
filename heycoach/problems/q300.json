@@ -1,0 +1,64 @@
+{
+    "id": 300,
+    "description": "Given an integer array nums, representing the number of chocolates in ith bag where `1<=i<=N` and `N` is the length of Array nums , Alice and Bob are best friends they want to share chocolates in such a way that minimises the absolute difference between the sum of two arrays. Return the minimum possible absolute difference. \n\nFor example the given array is [8, 6, 5] and we divide it in arrays [6,5] and [8] then the absolute difference of these arrays would be |8 - (6+5)| = 3. You have to seperate the array in such a way that the absolute difference between the array is minimised.\n\n\n**Example 1 :**\n```\nInput:  nums = [3,9,7,3]\n\nOutput: 2\n```\n\n**Example 2 :**\n```\nInput: nums = [36,36]\n\nOutput: 0\n```\n\n**Constraints:**\n\n- `1 <= n <= 15`\n\n- `nums.length == 2 * n`\n\n- `0 <= nums[i] <= 10^5`\n",
+    "title": "Partition with minimum sum difference",
+    "default_testcase": {
+        "id": 5866,
+        "input": "3\n8 6 5",
+        "expected_output": "3",
+        "code_problem_id": 300,
+        "created_at": "2024-02-21T06:23:04.204Z",
+        "updated_at": "2024-02-21T06:23:04.204Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 733,
+            "code_problem_id": 300,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minDifference(arr, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 734,
+            "code_problem_id": 300,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class SubsetSumDifference:\n    def minDifference(self, arr, n):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 735,
+            "code_problem_id": 300,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      static int minDifference(int[] arr, int n) {\n        //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 736,
+            "code_problem_id": 300,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class SubsetSumDifference {\npublic:\n   int minDifference(vector<int>& arr, int n) {\n\n",
+            "skeleton_class_end": "\n};\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 573,
+    "description": "Given a matrix of size r*c. Traverse the matrix in spiral form.\n\n**`Input:`**  \n\n```\nr = 4, c = 4\nmatrix[][] =   \n {{1, 2, 3, 4},  \n {5, 6, 7, 8},  \n {9, 10, 11, 12},  \n {13, 14, 15,16}} \n```\n    \n**`Output: `**\n1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10\n\n**` Constraints:`**  \n- `1 <= r, c <= 100 `  \n- `0 <= matrix <= 100`",
+    "title": "Spiral Traversal",
+    "default_testcase": {
+        "id": 3813,
+        "input": "1\n4 4\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16",
+        "expected_output": "1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 \n",
+        "code_problem_id": 573,
+        "created_at": "2024-01-21T11:15:20.322Z",
+        "updated_at": "2024-01-21T11:15:20.322Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1708,
+            "code_problem_id": 573,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{   \n    public: \n    //Function to return a list of integers denoting spiral traversal of matrix.\n    vector<int> spirallyTraverse(vector<vector<int> > matrix, int r, int c) {\n        // Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1709,
+            "code_problem_id": 573,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    #Function to return a list of integers denoting spiral traversal of matrix.\n    def spirallyTraverse(self,matrix, r, c): \n      #Write your code here\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1881,
+            "code_problem_id": 573,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> spirallyTraverse(int[][] matrix, int r, int c) {\n      //Write your code here",
+            "skeleton_class_end": "    } \n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1882,
+            "code_problem_id": 573,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    spirallyTraverse(matrix, r, c) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

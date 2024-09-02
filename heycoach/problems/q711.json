@@ -1,0 +1,64 @@
+{
+    "id": 711,
+    "description": "\nGiven the root of a binary tree, return the `maximum width` of the given tree.\n\nThe `maximum width` of a tree is the maximum `width` among all levels.\n\nThe `width` of one level is defined as the length between the end-nodes (the leftmost and rightmost non-null nodes), where the null nodes between the end-nodes that would be present in a complete binary tree extending down to that level are also counted into the length calculation.\n\nIt is guaranteed that the answer will in the range of a `32-bit` signed integer.\n\n### Example 1\n\n![Image](https://assets.leetcode.com/uploads/2021/05/03/width1-tree.jpg)\n\n### Input\n\n```CPP\nroot = [1,3,2,5,3,null,9]\n```\n\n### Output\n\n```CPP\n4\n```\n\n#### Explanation:\n\nThe maximum width exists in the third level with length 4 (5,3,null,9).\n\n### Example 2\n\n![Image](https://assets.leetcode.com/uploads/2022/03/14/maximum-width-of-binary-tree-v3.jpg)\n\n### Input\n\n```CPP\nroot = [1,3,2,5,null,null,9,6,null,7]\n```\n\n### Output\n\n```CPP\n7\n```\n\n#### Explanation:\n\nThe maximum width exists in the fourth level with length 7 (6,null,null,null,null,null,7).\n\n### Constraints:\n\n- The number of nodes in the tree is in the range [1, 3000].\n- -100 <= Node.val <= 100\n",
+    "title": "Width of a tree",
+    "default_testcase": {
+        "id": 4800,
+        "input": "   9\n   0\n   5\n   1\nnull\nnull\n   4\n   9\n   0\n   5\n   4\n   9\n   0\n   5\n   1\n   9\n   0\n   5\n   1\n   1\n   2\n   3\nnull\n   4\n   9\n   0\n   5\n   1\nnull\n   4\n   9\n   5\n   4\n   3\n   2\n   3\n   4\n   5\n   6\n   7\n   8\n   9\n   0\n",
+        "expected_output": "32",
+        "code_problem_id": 711,
+        "created_at": "2024-02-01T07:00:49.244Z",
+        "updated_at": "2024-02-01T07:00:49.244Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2256,
+            "code_problem_id": 711,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": " int WidthofTheTree(struct Node* root){",
+            "skeleton_class_end": "   }",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2257,
+            "code_problem_id": 711,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class WidthCalculator {\n    static int widthOfBinaryTree(Node root) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2259,
+            "code_problem_id": 711,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def width_of_binary_tree(self, root):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2261,
+            "code_problem_id": 711,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    widthOfBinaryTree(root) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

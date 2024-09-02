@@ -1,0 +1,64 @@
+{
+    "id": 840,
+    "description": "You have `r` no. of **red**, `g` no. of **green** and `b` no. if  **blue** balloons. To decorate a single table for the banquet you need exactly **three** balloons. Three balloons attached to some table shouldn't have the same color. What **maximum** number of tables can be decorated if we know number of balloons of each color?\n\nYour task is to determine what will be the maximum number of tables, that can be decorated in the required manner.\n\n**Example**\n```\nInput : r = 5, g = 4, b = 3\n\nOutput : 4\n\nExplanation\n\nYou can decorate the tables with the following balloon sets: \"rgg\", \"gbb\", \"brr\", \"rrg\" , where \"r\", \"g\" and \"b\" represent the red, green and blue balls, respectively.\n```\n**Input Format**\n```\nThree lines were first, second and third line contains the integers r, g and b denoting the number of red, green and blue baloons respectively. \n```\n**Output Format**\n```\nA single integer denoting the maximum number of tables that can be decorated in the required manner.\n```\n**Constraints**\n\n`0 <= r,g,b <= 10^9`",
+    "title": "Decorate Tables",
+    "default_testcase": {
+        "id": 7549,
+        "input": "5\n4\n3",
+        "expected_output": "4\n",
+        "code_problem_id": 840,
+        "created_at": "2024-04-28T10:31:03.527Z",
+        "updated_at": "2024-04-28T10:31:03.527Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2747,
+            "code_problem_id": 840,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nint DecorateTables(int r, int g, int b)\n{\n  ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2748,
+            "code_problem_id": 840,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int decorateTables(int r, int g, int b) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2749,
+            "code_problem_id": 840,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def decorate_tables(self, r, g, b):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2750,
+            "code_problem_id": 840,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    decorateTables(r, g, b) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

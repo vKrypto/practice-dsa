@@ -1,0 +1,64 @@
+{
+    "id": 876,
+    "description": "Kitahara Haruki has bought n apples for Touma Kazusa and Ogiso Setsuna. Now he wants to divide all the apples between the friends.   \nEach apple weighs 100 grams or 200 grams. Of course, Kitahara Haruki doesn't want to offend any of his friends. Therefore the total weight of the apples given to Touma Kazusa must be equal to the total weight of the apples given to Ogiso Setsuna.    \nBut unfortunately, Kitahara Haruki doesn't have a knife right now, so he cannot split any apple into some parts. Please, tell him: is it possible to divide all the apples in a fair way between his friends?\n\n**Input format:**\n\n- `The first line contains an integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 the number of apples. The second line contains n integers w1,\u2009w2,\u2009...,\u2009wn (wi\u2009=\u2009100 or wi\u2009=\u2009200), where wi is the weight of the i-th apple.`\n\n**Output format:**\n\n- `In a single line print \"YES\" (without the quotes) if it is possible to divide all the apples between his friends. Otherwise, print \"NO\" (without the quotes).`\n\n**Examples**\n\n**Sample Input**  \n```\n3    \n100 200 100  \n```\n**Sample Output**  \n```\nYES  \n```\n**Sample Input**  \n```\n4   \n100 100 100 200  \n```\n**output**  \n`NO`\n\n**Note**  \n- `In the first test sample Kitahara Haruki can give the first and the last apple to Ogiso Setsuna and the middle apple to Touma Kazusa`\n",
+    "title": "Kitahara Haruki's Gift",
+    "default_testcase": {
+        "id": 7875,
+        "input": "3\n100 200 100",
+        "expected_output": "YES\n",
+        "code_problem_id": 876,
+        "created_at": "2024-05-14T03:11:58.870Z",
+        "updated_at": "2024-05-14T03:11:58.870Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2878,
+            "code_problem_id": 876,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    f(n, a, b) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2879,
+            "code_problem_id": 876,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def f(self, n, a, b):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2880,
+            "code_problem_id": 876,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void f(int n, int a, int b) {\n      //Write your code here\n ",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2881,
+            "code_problem_id": 876,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int f(int n,int a,int b){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

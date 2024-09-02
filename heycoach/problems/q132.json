@@ -1,0 +1,64 @@
+{
+    "id": 132,
+    "description": "\nYou are given N pairs of numbers. In every pair, the first number is always smaller than the second number. A pair (c, d) can follow another pair (a, b) if b < c. Chain of pairs can be formed in this fashion. You have to find the longest chain which can be formed from the given set of pairs.\n\n**Note:** pairs will be given in the form (first, second) associated with that pair:\n```CPP\nstruct val\n{\n    int first;\n    int second;\n\n};\n```\n\n\n### Example 1 \n\n### Input\n```CPP\nN = 5\nP[] = {(5,24),(39,60),(15,28),(27,40),(50,90)}\n```\n\n\n### Output \n```CPP\n3\n```\n\n#### Explanation:\nThe given pairs are { {5, 24}, {39, 60}, {15, 28}, {27, 40}, {50, 90} },the longest chain that\ncan be formed is of length 3, and the chain is {{5, 24}, {27, 40}, {50, 90}}\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 2\nP[] = {(5,10),(1,11)}\n```\n**Output:** \n```CPP\n1\n```\n#### Explanation:\nThe max length chain possible is only of length one.\n\n### Constraints:\n* 1 \u2264 N \u2264 10000  \n* 1 \u2264 first,second \u2264 10000\n\n\n",
+    "title": "Optimal chaining",
+    "default_testcase": {
+        "id": 954,
+        "input": "5\n5 24\n39 60\n15 28\n27 40\n50 90",
+        "expected_output": "3",
+        "code_problem_id": 132,
+        "created_at": "2022-10-13T06:18:50.362Z",
+        "updated_at": "2022-10-13T06:18:50.362Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 203,
+            "code_problem_id": 132,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "struct val\n{\n    int first;\n    int second;\n\n};\n\nclass Solution {\npublic:\n    static bool comp(val a, val b) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 512,
+            "code_problem_id": 132,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Val {\n    int first;\n    int second;\n\n    Val(int first, int second) {\n        this.first = first;\n        this.second = second;\n    }\n}\n\nclass Solution {\n    public int maxChainLen(Val[] p, int n) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1898,
+            "code_problem_id": 132,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Val:\n    def __init__(self, first, second):\n        self.first = first\n        self.second = second\n\nclass Solution:\n    def maxChainLen(self, p, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1899,
+            "code_problem_id": 132,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Val {\n    constructor(first, second) {\n        this.first = first;\n        this.second = second;\n    }\n}\n\nclass Solution {\n    maxChainLen(p, n) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

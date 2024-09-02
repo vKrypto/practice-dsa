@@ -1,0 +1,57 @@
+{
+    "id": 863,
+    "description": "Stack has an array `a` of length `n` and an initially empty set `S`. He performs a specific operation `n` times, which involves selecting an index `i` from the array `a`, adding the value of `a[i] + i` to the set `S`, and then removing `a[i]` from the array (thus shifting the indices of all subsequent elements left by one).\n\nAfter all operations are completed, `a` will be empty. Stack's goal is to sort the values in `S` in descending order to form a new array `b`. The objective is to determine the sequence of operations that leads to the lexicographically largest array `b`.\n\n**Input:**\n\n`The input consists of multiple test cases:`\n- `The first line contains an integer `t` (1 \u2264 t \u2264 10^4), the number of test cases.`\n- `Each test case begins with an integer `n` (1 \u2264 n \u2264 3 \u00d7 10^5), denoting the length of array `a`.`\n- `The following line contains `n` integers representing the elements of array `a` (1 \u2264 a_i \u2264 10^9).`\n\n`The sum of all `n` values across all test cases will not exceed 3 \u00d7 10^5.`\n\n**Output:**\n\n`For each test case, output the lexicographically largest array `b` possible after performing the operations.`\n\n**Examples:**\n\n#### `Input:`\n```\n3  \n2  \n2 1  \n5   \n1 100 1000 1000000 1000000000  \n3  \n6 4 8\n```\n##### `Output:`\n\n3 2   \n1000000005 1000004 1003 102 2  \n11 7 6\n\n\n**Explanation:**\n\n- `In the first test case, to form the lexicographically largest array `b`, Stack starts by selecting `i=1`, adding `a[1] + 1 = 3` to `S`, then removing `a[1]`. For the next operation, he selects `i=1` again (previously `i=2` before the shift), adds `a[1] + 1 = 2` to `S`, resulting in `S = {2, 3}` and `b = [3, 2]`.`\n- `The optimal strategy in each test case is to select elements in a way that maximizes the values added to `S` for the construction of the lexicographically largest `b`.`\n",
+    "title": "Optimal Set Formation",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2906,
+            "code_problem_id": 863,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> optimalSetFormation(vector<int>& a) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2907,
+            "code_problem_id": 863,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> optimalSetFormation(List<Integer> a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2908,
+            "code_problem_id": 863,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def optimal_set_formation(self, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2909,
+            "code_problem_id": 863,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    optimalSetFormation(a) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

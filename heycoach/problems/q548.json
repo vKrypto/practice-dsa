@@ -1,0 +1,45 @@
+{
+    "id": 548,
+    "description": "Alice is fond of wordplay games. She gave Bob a challenge: given a string, find all possible permutations of it. Can you help Bob solve this challenge?\n\nWrite a C++ function findAllPermutations that takes a string as input and returns a vector of strings containing all possible permutations of the input string.\n\n### Input Format:\n\n```\nThe input consists of a single string, s (1 <= |s| <= 10), where |s| represents the length of the string. The string may contain only lowercase alphabetical characters.\n\n```\n\n### Output Format:\n\n`Return a vector of strings, each representing a unique permutation of the input string. The order of permutations in the vector does not matter.`\n\n###    Sample Input and Output \n \n#### Sample Input 1\n\n```\nabc\n```\n#### Sample Output 1\n```\n[\"abc\", \"acb\", \"bac\", \"bca\", \"cab\", \"cba\"]\n```\n#### Sample Input 2\n\n```\nabcd\n```\n#### Sample Output 2\n```\n[\"abcd\", \"abdc\", \"acbd\", \"acdb\", \"adbc\", \"adcb\", \"bacd\", \"badc\", \"bcad\", \"bcda\", \"bdac\", \"bdca\", \"cabd\", \"cadb\", \"cbad\", \"cbda\", \"cdab\", \"cdba\", \"dabc\", \"dacb\", \"dbac\", \"dbca\", \"dcab\", \"dcba\"]\n\n```\n\n### Constraints:\n\n  `1<=|S|<=8`",
+    "title": "Alice and Wordplay",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1640,
+            "code_problem_id": 548,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\npublic:\nvector<string> findAllPermutations(string s) {\n}\n};"
+        },
+        {
+            "id": 1641,
+            "code_problem_id": 548,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<String> findAllPermutations(String s) {\n    }\n}"
+        },
+        {
+            "id": 1642,
+            "code_problem_id": 548,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def findAllPermutations(self, s):"
+        }
+    ]
+}

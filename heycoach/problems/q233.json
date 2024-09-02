@@ -1,0 +1,64 @@
+{
+    "id": 233,
+    "description": "In English, certain words can be formed by appending a \"successor\" word to a \"root\" word. For example, appending \"other\" to the root \"an\" forms the word \"another\".\n\nYou are given a dictionary containing a list of root words and a sentence comprised of words separated by spaces. Your task is to replace every successor in the sentence with its corresponding root word. If a successor can be formed by more than one root, use the shortest root available.\n\n**Objective:**\n\nReturn the modified sentence where all successors have been replaced by their roots.\n\n**Input Format:**\n\n- `A string `sentence` containing words separated by spaces.`\n- `An integer `n`, representing the number of roots in the dictionary, followed by `n` lines of strings representing each root word.`\n\n**Output Format:**\n\n- `A string representing the modified sentence after all successors have been replaced by their root words.`\n\n\n\n**Sample Input 1:**\n\n```\nthe cattle was rattled by the battery\n3\ncat\nbat\nrat\n```\n\n**Sample Output 1:**\n\n```\nthe cat was rat by the bat\n```\n\n**Explanation 1:**\n\n- `\"the\" does not match any root word, so it remains unchanged.`\n- `\"cattle\" is replaced by \"cat\", \"rattled\" by \"rat\", and \"battery\" by \"bat\", according to the roots provided.`\n\n**Sample Input 2:**\n\n```\naadsfasf absbs bbab cadsfafs\n3\na\nb\nc\n```\n\n**Sample Output 2:**\n\n```\na a b c\n```\n\n**Explanation 2:**\n\n- `Each word in the sentence is replaced by the root word that forms its beginning, according to the roots provided.`\n</br>\n**Constraints:**\n\n- `1 <= dictionary.length <= 1000`\n- `1 <= dictionary[i].length <= 100. Each string in the dictionary consists of lowercase English letters only.`\n- `1 <= sentence.length <= 10000. The sentence consists of lowercase English letters and spaces only.`\n- `The number of words in the sentence is in the range `[1, 1000]`.`\n- `Each word in the sentence has a length in the range `[1, 1000]`.`\n- `Every two consecutive words in the sentence are separated by exactly one space.`\n- `The sentence does not have leading or trailing spaces.`",
+    "title": "Replace words with their roots",
+    "default_testcase": {
+        "id": 6465,
+        "input": "innovation in industry leads to growth\n4\ninnovate\nindustry\nlead\ngrowth",
+        "expected_output": "innovation in industry lead to growth",
+        "code_problem_id": 233,
+        "created_at": "2024-03-13T09:09:11.252Z",
+        "updated_at": "2024-03-13T09:09:11.252Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 332,
+            "code_problem_id": 233,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  string replaceWords(vector<string>& dictionary, string sentence) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 678,
+            "code_problem_id": 233,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String replaceWords(List<String> dictionary, String sentence) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 679,
+            "code_problem_id": 233,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def replaceWords(self, dictionary, sentence):\n        # Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 856,
+            "code_problem_id": 233,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.root = {};\n    }\n    replaceWords(dictionary, sentence) {\n        // Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 465,
+    "description": "You are given an integer n. There is an undirected graph with n vertices, numbered from 0 to n - 1. You are given a 2D integer array of edges where edges[i] = [ai, bi] denotes that there exists an undirected edge connecting vertices ai and bi.\n\nReturn the number of complete connected components of the graph.\n\nA connected component is a subgraph of a graph in which there exists a path between any two vertices, and no vertex of the subgraph shares an edge with a vertex outside of the subgraph.\n\nA connected component is said to be complete if there exists an edge between every pair of its vertices.\n\n\n----------\n\n\n\n**`Examples:`**\n\n**`Input:`**\n```\n n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]\n```\n**`Output:`** \n```\n3\n```\n\n**`Input:`**\n```\nn = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]\n```\n**`Output:`**\n```\n1\n```\n\n----------\n\n\n**`Constraints:`**</br>\n- `1<= n <= 50`</br>\n- `0 <= edges.length <= n * (n - 1) / 2`</br>\n- `edges[i].length == 2`</br>\n- `0 <= ai, bi <= n - 1`</br>\n- `ai != bi`</br>\n- `There are no repeated edges.`\n\n\n----------\n\n",
+    "title": "Count the Number of Complete Components",
+    "default_testcase": {
+        "id": 5792,
+        "input": "6 4\n0 1\n0 2\n1 2\n3 4 ",
+        "expected_output": "3",
+        "code_problem_id": 465,
+        "created_at": "2024-02-18T07:02:25.573Z",
+        "updated_at": "2024-02-18T07:02:25.573Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1306,
+            "code_problem_id": 465,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countCompleteComponents(int n, List<List<Integer>> edges) {\n        //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1307,
+            "code_problem_id": 465,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int countCompleteComponents(int n, vector<vector<int>>& edges) {\n      //write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1405,
+            "code_problem_id": 465,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      countCompleteComponents(n, edges) {\n        //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1476,
+            "code_problem_id": 465,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def countCompleteComponents(self, n, edges):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

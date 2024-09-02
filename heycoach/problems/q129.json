@@ -1,0 +1,45 @@
+{
+    "id": 129,
+    "description": "Given a sorted integer array **nums** and an integer **n**, *add/patch* elements to the array such that any number in the range **[1, n]** inclusive can be formed by the sum of some elements in the array.\n\nPrint the minimum number of patches required.\n\n#### Input Format: \n- first line contains two integer m (size of the array) and n.\n- second line contains m integers (element of the array)\n\n#### Output Format: \n- Print  single integer \n\n#### Constraints:\n\n- 1 <= nums.length <= 1000\n- 1 <= nums[i] <= 10000\n- nums is sorted in ascending order.\n- 1 <= m <= (2^31) - 1\n\n#### Example:\n**Input**: 3 20\n1 5 10\n**Output**: 2\n- Explanation: The two patches can be [2, 4].",
+    "title": "Patches",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 172,
+            "code_problem_id": 129,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr,int n) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 181,
+            "code_problem_id": 129,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr,int n) {\n  } \n}\n"
+        },
+        {
+            "id": 189,
+            "code_problem_id": 129,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr, n):\n        pass\n\n"
+        }
+    ]
+}

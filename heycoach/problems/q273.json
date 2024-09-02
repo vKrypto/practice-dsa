@@ -1,0 +1,64 @@
+{
+    "id": 273,
+    "description": "At HeyCoach, a dedicated mentor is determined to assist students with their problems. The students are organized in a tree-like fashion, with each student representing a node in a binary tree. The mentor can offer support to a student by personally visiting them, but there's a catch - he can only move in a zigzag pattern! This means that after helping a student, the mentor must choose the next student from the opposite direction. He can either move to the left child and then to the right child, or vice versa.\n\nThe mentor aims to maximize the number of students he can provide support to during his zigzag traversal. Your task is to help the mentor by finding out the maximum number of students he can assist at HeyCoach. \n\n\n\n\n#### `Example 1`\n\n#### `Input` \n```\nroot = [3,9,20,N, N,15,7]\n\n      3\n     / \\\n    9   20\n       / \\\n      15  7\n            \n```\nOutput: \n```\n3\n```\nExplanation :\n\nRam is travelling in the path:- 3->20->15\n20 is the right child of 3\n15 is the left child of 20\n\nThus, the total nodes travelled: 3\n\n####  `Example 2:`\n\n#### `Input:` \n```\nroot = []\n```\nOutput: \n```\n0\n```\n\n\n#### `Example 3:`\n\n#### `Input:` \n```\nroot = [5 4 8 11 N 13 4 7 2 N N 5 1]\n```\n#### `Output:` \n```\n3\n```\n#### `Constraints:`\n\n`The number of nodes in the tree is in the range [0, 200000].`\n\n- `-1000 <= Node.val <= 1000`\n\n",
+    "title": "Zigzagging through the Binary Tree",
+    "default_testcase": {
+        "id": 7104,
+        "input": "1\n1 2 3 4 N 5 N N 6 7 N N N 8 N",
+        "expected_output": "3\n",
+        "code_problem_id": 273,
+        "created_at": "2024-04-03T10:41:15.477Z",
+        "updated_at": "2024-04-03T10:41:15.477Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 685,
+            "code_problem_id": 273,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maxZigzagStudents(TreeNode* root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 987,
+            "code_problem_id": 273,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   public int maxZigzagStudents(TreeNode root) {\n     //Write your code here\n       \n    \n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 988,
+            "code_problem_id": 273,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\n# Definition for a binary tree node.\nclass TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\"\"\"\n\nclass Solution:\n    def maxZigzagStudents(self, root):\n      #Write your code here\n\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1018,
+            "code_problem_id": 273,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = null;\n        this.right = null;\n    }\n}*/\nclass Solution {\n   maxZigzagStudents(root) {\n     //Write your code here\n\n    \n\n    ",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

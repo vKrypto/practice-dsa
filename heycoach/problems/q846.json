@@ -1,0 +1,64 @@
+{
+    "id": 846,
+    "description": "Alice finds herself in a country with rather unique tax laws. In this country, the tax owed by an individual is determined by the largest divisor of their total income, excluding the income itself. For example, if Alice earns 6 burles, she must pay 3 burles in taxes; if she earns 25 burles, she must pay 5 burles, and so on. However, Alice, being the clever individual she is, seeks to exploit a loophole in the system. She wants to divide her income, represented by the value n (where n\u22652), into several parts\nn1+n2+n3+...nk=n (where k can be any positive integer, including 1), and pay taxes for each part separately. The only constraint is that each part must be greater than or equal to 2. Additionally, she cannot make any part equal to 1, as this would expose her deception.\n\n#### `Input:` \n\n- `The first line of the input contains a single integer n (2\u2264n\u22642e9) \u2014 the total year income of Alice.`\n\n\n#### `Output:` \n\n- `Print one integer - minimum possible number of burles that Alice has to pay as a tax.`\n\n#### `Sample Input and output:1`\n\n#### `Input : `\n`4`\n\n#### `Output :`\n`2`\n\n#### `Sample Input and output:2`\n\n#### `Input :`\n`27`\n\n#### `Output :`\n` 3`\n\n",
+    "title": "Minimise the Tax",
+    "default_testcase": {
+        "id": 7486,
+        "input": "27",
+        "expected_output": "3\n",
+        "code_problem_id": 846,
+        "created_at": "2024-04-28T05:25:21.698Z",
+        "updated_at": "2024-04-28T05:25:21.698Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2768,
+            "code_problem_id": 846,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    int minimumsubarray2(int n){\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2769,
+            "code_problem_id": 846,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimisetax(self, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2770,
+            "code_problem_id": 846,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int minimumsubarray2(int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2771,
+            "code_problem_id": 846,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimisetax(n) {               \n  //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

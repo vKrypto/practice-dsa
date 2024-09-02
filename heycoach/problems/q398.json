@@ -1,0 +1,64 @@
+{
+    "id": 398,
+    "description": "You are given an array of integers stones where `stones[i]` is the weight of the ith stone.\nWe are playing a game with the stones. On each turn, we choose the  two lightest stones and smash them together. Suppose the  two lightest  stones have weights `x` and `y` with `x <= y`. The result of this smash is:\nIf `x == y`, both stones are destroyed, and\nIf `x != y`, the stone of weight `x` is destroyed, and the stone of weight `y` has new weight `y - x`.\nAt the end of the game, there is at most one stone left.\nReturn the weight of the last remaining stone. If there are no stones left, return 0.\n\n### Example 1 \n### Input\n```CPP\nInput : n = 6, nums = [2,7,1,8,1,4]\nOutput : 3\n``` \n\n### Constraints\n\n`1 <= stones.length <= 30`\n\n` 1 <= stones[i] <= 1000`",
+    "title": "Light War",
+    "default_testcase": {
+        "id": 6682,
+        "input": "6\n2 7 4 1 8 1",
+        "expected_output": "3\n",
+        "code_problem_id": 398,
+        "created_at": "2024-03-22T13:33:46.482Z",
+        "updated_at": "2024-03-22T13:33:46.482Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 994,
+            "code_problem_id": 398,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int stonebreaker(vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 996,
+            "code_problem_id": 398,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass StoneBreakerSolver {\n    public static int stonebreaker(Vector<Integer> nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n  "
+        },
+        {
+            "id": 998,
+            "code_problem_id": 398,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class StoneBreakerSolver:\n    def stonebreaker(self, nums):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1051,
+            "code_problem_id": 398,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    stonebreaker(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 847,
+    "description": "Let's call an array a beautiful if you can make all its elements the same by using the following operation an arbitrary number of times (possibly, zero): choose an index i (2 \u2264 i \u2264 |a| -1) such that a[i-1]=a[i+1], and replace a[i] with a[i-1] You are given a beautiful array a1,a2,a3\u2026an. What is the minimum number of elements you have to remove from it in order for it to stop being beautiful? Swapping elements is prohibited. If it is impossible to do so, then output -1.\n\n\n#### `Input:`\n\n- `The first line of each test case contains a single integer n (1 \u2264 n \u2264 3 \u22c5 10^5). `\n- `The second line contains n integers a1, a2,..., an (1 \u2264 a[j] \u2264n).`\n\n#### `Output:`\n\n`Output a single integer - the minimum number of elements you have to remove from the array a in order for it to stop being beautiful. If it is impossible, then output -1.`\n\n#### `Sample Input and output:1`\n\n#### `Input:`\n```\n3\n\n2 2 2\n```\n#### `Output:`\n```\n-1\n```\n\n\n#### `Sample Input and output:2`\n\n#### `Input:`\n```\n\n7\n\n3 3 3 5 3 3 3\n\nOutput\n\n3\n```\n",
+    "title": "Operations",
+    "default_testcase": {
+        "id": 7489,
+        "input": "7\n3 3 3 5 3 3 3",
+        "expected_output": "3\n",
+        "code_problem_id": 847,
+        "created_at": "2024-04-28T06:07:42.951Z",
+        "updated_at": "2024-04-28T06:07:42.951Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2772,
+            "code_problem_id": 847,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    int operations(int n, vector<int> &a){\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2773,
+            "code_problem_id": 847,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def operations(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2774,
+            "code_problem_id": 847,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int operations(int n, int[] a) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2775,
+            "code_problem_id": 847,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    operations(n, a) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

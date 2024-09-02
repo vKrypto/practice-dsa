@@ -1,0 +1,64 @@
+{
+    "id": 603,
+    "description": "You are a blacksmith at Iron&Steel Sons. You are presented a Large piece of Iron sheet by a client who says its waste material from the construction of his house. The sheet is in a weird shape because it has been created by welding together a number rectangle iron sheets side by side of width 1cm but of variable height. The client wants you to cut out the greatest rectangle shaped Iron sheet from the given shape.\n\nYou are given an array representing the height of each iron sheet which was welded into the larger iron sheet. Remember each of these sheets had a width of 1cm. Your task is to return the area of the largest rectangular iron sheet that can be cut out from this.\n\n**`Sample Input:`**\n\n```\n5\n\n1 3 4 5 4\n```\n\n**`Sample Output:`**\n\n`12`\n\n**`Explanation:`**   \n`We can pick 3rd,4th and 5th index and cutout an area of 4x3=12cm^2 of iron sheet.`\n\n**`Constraints:`**\n\n`1 \u2264 N \u2264 10^5`\n\n`0 \u2264 height[i] \u2264 10^5`",
+    "title": "Iron Bars",
+    "default_testcase": {
+        "id": 3940,
+        "input": "5\n1 3 4 5 4",
+        "expected_output": "12\n",
+        "code_problem_id": 603,
+        "created_at": "2024-01-22T09:12:42.508Z",
+        "updated_at": "2024-01-22T09:12:42.508Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1806,
+            "code_problem_id": 603,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\n    public:\n    long long getMaxArea(long long arr[], int n)\n    {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1807,
+            "code_problem_id": 603,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long getMaxArea(long[] arr, int n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1808,
+            "code_problem_id": 603,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def getMaxArea(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1809,
+            "code_problem_id": 603,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    getMaxArea(arr, n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

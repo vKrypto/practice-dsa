@@ -1,0 +1,64 @@
+{
+    "id": 285,
+    "description": "You are given an m x n integer array grid. There is a robot initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.\nAn obstacle and space are marked as 1 or 0 respectively in the grid. A path that the robot takes cannot include any square that is an obstacle.\nReturn the number of possible unique paths that the robot can take to reach the bottom-right corner.\n\n`The test cases are generated so that the answer will be less than or equal to 2 * 10^9.`\n\n**Example**\n\n```\nInput : obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]\n\nOutput: 2\n\nExplanation: \n\nThere is one obstacle in the middle of the 3x3 grid above.\nThere are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right\n```\n\n**Constraints**\n\n`2 <= m,n <= 500`\n\n`grid contains only 0 and 1`",
+    "title": "Grid Puzzle-II",
+    "default_testcase": {
+        "id": 1918,
+        "input": "3 3\n0 0 0\n0 1 0\n0 0 0",
+        "expected_output": "2",
+        "code_problem_id": 285,
+        "created_at": "2023-09-14T21:06:09.657Z",
+        "updated_at": "2023-09-14T21:06:09.657Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 708,
+            "code_problem_id": 285,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class GridPuzzleSolver {\n    constructor() {\n        this.dp = [];\n    }\n\n    solve(n, m, obstacleGrid) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 709,
+            "code_problem_id": 285,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def gridpuzzle_II(self, n, m, obstacleGrid):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 710,
+            "code_problem_id": 285,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n public: \n   int gridpuzzle_II(int n, int m, vector<vector<int>> &obstacleGrid) \n   {\n    ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 711,
+            "code_problem_id": 285,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class GridPuzzleII {\n      public static int gridPuzzleII(int n, int m, int[][] obstacleGrid) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

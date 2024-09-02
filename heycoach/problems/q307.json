@@ -1,0 +1,64 @@
+{
+    "id": 307,
+    "description": "Suppose there is a circular route with N petrol pumps, represented as points on the circle. You are given two sets of data:\n\nThe amount of petrol that every petrol pump has.\nDistance from that petrol pump to the next petrol pump.\nYour task is to find a starting point where a truck can start to get through the complete circle without exhausting its petrol in between. Assume that for 1 litre of petrol, the truck can go 1 unit of distance.\n\n**Constraints:**\n\n1 <= N <= 10^4\n-10^9 <= petrol[i], distance[i] <= 10^9\n\n**Input:**\n\n- N (1 <= N <= 10^4): An integer representing the number of petrol pumps.\n- petrol (petrol[i] for 1 <= i <= N): A list of integers representing the amount of petrol at each petrol pump.\n- distance (distance[i] for 1 <= i <= N): A list of integers representing the distance to the next petrol pump.\n\n**Output:**\n\nReturn the index of the starting petrol pump if there exists a valid starting point, otherwise return -1.\n\n**Example**:\n\n**Input**:\n\n- N = 4\n- petrol = [4, 6, 7, 4]\n- distance = [6, 5, 3, 5]\n\n**Output**:\n 1\n\n**Explanation**:\nStarting from petrol pump at index 1 allows the truck to complete the circle without running out of petrol.",
+    "title": "Petrol Pumps and Truck",
+    "default_testcase": {
+        "id": 2032,
+        "input": "1\n4\n4 6 7 4\n6 5 3 5",
+        "expected_output": "1\n",
+        "code_problem_id": 307,
+        "created_at": "2023-09-17T16:02:14.502Z",
+        "updated_at": "2023-09-17T16:02:14.502Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 755,
+            "code_problem_id": 307,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int tour(petrolPump p[],int n)\n    {\n    \n    }\n    \n};"
+        },
+        {
+            "id": 938,
+            "code_problem_id": 307,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int tour(PetrolPump[] p, int n) {\n        \n    }\n}\n\n"
+        },
+        {
+            "id": 939,
+            "code_problem_id": 307,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def tour(self, p, n):\n       \n"
+        },
+        {
+            "id": 1011,
+            "code_problem_id": 307,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    tour(n, petrol, distance) {\n       \n    }\n}\n\n\n"
+        }
+    ]
+}

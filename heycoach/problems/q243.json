@@ -1,0 +1,8 @@
+{
+    "id": 243,
+    "description": "\nGiven an integer n, return the least number of perfect square numbers that sum to n.\n\nA `perfect square` is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 1, 4, 9, and 16 are perfect squares while 3 and 11 are not.\n### Example 1 \n\n### Input\n```CPP\nn=12\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\n12 = 4 + 4 + 4.\n\n\n### Example 2 \n\n### Input\n```CPP\nn=13\n``` \n### Output \n```CPP \n11\n``` \n#### Explanation:\n13 = 4 + 9.\n\n\n### Constraints:\n\n* 1 <= n <= 10^4\n\n",
+    "title": "Perfect Number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

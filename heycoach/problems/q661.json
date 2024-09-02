@@ -1,0 +1,64 @@
+{
+    "id": 661,
+    "description": "You are given a `0-indexed` integer array nums, where nums[i] is a digit between 0 and 9 `inclusive`.\n\nThe `triangular sum` of nums is the value of the only element present in nums after the following process terminates:\n\nLet nums comprise of n elements. If n == 1, end the process. Otherwise, create a new 0-indexed integer array newNums of length n - 1.\nFor each index i, where 0 <= i < n - 1, assign the value of newNums[i] as (nums[i] + nums[i+1]) % 10, where % denotes modulo operator.\n`Replace` the array nums with newNums.\n`Repeat` the entire process starting from step 1.\nReturn the triangular sum of nums.\n\n### Example 1\n\n### Input\n\n```CPP\nnums = [1,2,3,4,5]\n```\n\n### Output\n\n```CPP\n8\n```\n\n#### Explanation:\n\nThe above diagram depicts the process from which we obtain the triangular sum of the array.\n\n![Image](https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png)\n\n### Example 2\n\n### Input\n\n```CPP\n [5]\n```\n\n### Output\n\n```CPP\n5\n```\n\n#### Explanation:\n\nSince there is only one element in nums, the triangular sum is the value of that element itself.\n",
+    "title": "Triangle Sum",
+    "default_testcase": {
+        "id": 4383,
+        "input": "9\n1 2 3 4 5 6 7 8 9",
+        "expected_output": "0",
+        "code_problem_id": 661,
+        "created_at": "2024-01-27T13:29:09.216Z",
+        "updated_at": "2024-01-27T13:29:09.216Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2045,
+            "code_problem_id": 661,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    int triangularSum(vector < int > & nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2046,
+            "code_problem_id": 661,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int triangularSum(List<Integer> nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2047,
+            "code_problem_id": 661,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def triangularSum(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2048,
+            "code_problem_id": 661,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function triangularSum(nums) {",
+            "skeleton_class_end": "}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 453,
+    "description": "You're a traffic engineer stuck in a rush hour nightmare on an infinitely long highway. But it's not your typical gridlock \u2013 this road has only cars moving in either direction (left or right) or simply stalled out! Your job is to predict the chaos: how many collisions will occur before the dust settles?\n\nGiven a string direction (length <= 10^5) where each character is 'L' (left), 'R' (right), or 'S' (stopped), predict the total number of collisions that will happen on the road. Collisions occur when:\n\nTwo moving cars (one left, one right) meet \u2013 a head-on smash! Increases collisions by 2.\nA moving car slams into a stopped car \u2013 rear-end ouch! Increases collisions by 1.\nRemember, once a car collides, it stops and becomes an obstacle for future crashes. Cars never change direction or speed.\n\n#### `Example 1:`\n```\nScenario: \"RLRSLL\"\n\nCollisions: 5 (2 for cars 0/1, 1 for cars 2/3, 1 for cars 3/4, 1 for cars 4/5)\n```\n#### `Example 2:`\n```\nScenario: \"LLRR\"\n\nCollisions: 0 (no head-on or rear-end collisions)\n```\n#### `Input:`\n```\nA single line containing the string directions, where each character can be:\n'L': denotes a car moving left.\n'R': denotes a car moving right.\n'S': denotes a car staying stationary.\n```\n#### Output:\n```\nA single integer representing the total number of collisions that will occur on the road.\n```\n### `Constraints:`\n\n- `The length of directions (n) must be between 1 and 10^5 (inclusive).`\n- `Each character in directions must be either 'L', 'R', or 'S'.`\n",
+    "title": "Traffic Rush",
+    "default_testcase": {
+        "id": 3086,
+        "input": "RLRSLL",
+        "expected_output": "5\n",
+        "code_problem_id": 453,
+        "created_at": "2023-12-23T12:35:02.124Z",
+        "updated_at": "2023-12-23T12:35:02.124Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1286,
+            "code_problem_id": 453,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int countCollisions(string dirs) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1329,
+            "code_problem_id": 453,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countCollisions(String dirs) {\n      // Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1330,
+            "code_problem_id": 453,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def countCollisions(self, dirs: str) -> int:\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1369,
+            "code_problem_id": 453,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countCollisions(dirs) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

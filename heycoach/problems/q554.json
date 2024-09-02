@@ -1,0 +1,8 @@
+{
+    "id": 554,
+    "description": "Given two strings text1 and text2, return the  longest common subsequence. If there is no common subsequence, return 0.\nA subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.\nFor example, \"ace\" is a subsequence of \"abcde\".\nA common subsequence of two strings is a subsequence that is common to both strings.\n\n### Input Format\nBoth lines consist of one string each\n\n### Output Format\nYoua have to output the lenght of Longest Common Subsequence\n\n### Sample Inputs and Outputs\n\n### Input\n```CPP\nabcde\nabc\n``` \n### Output \n```CPP \n3\n``` \n\n### Constraints\n\n1 <= text1.length, text2.length <= 1000\n\ntext1 and text2 consist of only lowercase English characters.\n",
+    "title": "Longest Common Subsequence",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

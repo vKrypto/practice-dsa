@@ -1,0 +1,64 @@
+{
+    "id": 649,
+    "description": "*n* friends stand in a circle. For each friend his height ai is known. A reconnaissance unit can be made of such two neighbouring friends, whose heights difference is minimal, i.e. *|ai\u2009-\u2009aj|* is minimal. So each of them will be less noticeable with the other. Output the minimal difference.\n### Input\n```\nThe first line contains integer n (2\u2009\u2264\u2009n\u2009\u2264\u2009100) \u2014 amount of soldiers. Then follow the heights of the soldiers in their order in the circle \u2014 n space-separated integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091000). The soldier heights are given in clockwise or counterclockwise direction.\n```\n\n### Output\n```\nOutput two integers \u2014 indexes of neighbouring soldiers, who should form a reconnaissance unit. If there are many optimum solutions, output any of them. Remember, that the soldiers stand in a circle.\n```\n### Sample Input\n```\n5\n10 12 13 15 10\n```\n### Sample Output\n```\n0\n```\n### Explanation\n```\nThe input represents the heights of friends:\n10 12 13 15 10\nAfter sorting the array in ascending order, we get:\n10 10 12 13 15\nNow, we find the pair of neighboring soldiers with the minimum absolute height difference. In this case, the minimum difference is between the first and second soldiers (10 and 10), which is 0.\n```",
+    "title": "Minimum height difference",
+    "default_testcase": {
+        "id": 4321,
+        "input": "5\n10 12 13 15 10",
+        "expected_output": "0\n",
+        "code_problem_id": 649,
+        "created_at": "2024-01-27T10:34:57.809Z",
+        "updated_at": "2024-01-27T10:34:57.809Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1998,
+            "code_problem_id": 649,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int minDifference(vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1999,
+            "code_problem_id": 649,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minDifference(int[] nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2002,
+            "code_problem_id": 649,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minDifference(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2003,
+            "code_problem_id": 649,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minDifference(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

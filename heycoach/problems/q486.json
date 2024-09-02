@@ -1,0 +1,64 @@
+{
+    "id": 486,
+    "description": "You are given a queue and an integer 'k'. Your task is to reverse the order of first 'k' elements of queue.\n\nInput Format:\n\nFirst line contains of two integers denoting the size of array and the integer representing the number of elements that is to be reversed.\n\nSecond line contains the elements of the given queue.\n\nOutput format:\n\nReturn the updated queue.\n\nSample Input:\n\n5 3\n\n1 2 3 4 5\n\nSample Output:\n\n3 2 1 4 5\n\nConstraints:\n\n1<=k<=10^6\n\n1<=n<=10^6\n\n1<=q[i]<=10^6 (elements of queue)",
+    "title": "Reverse elements of queue",
+    "default_testcase": {
+        "id": 3264,
+        "input": "5 4\n1 9 11 3 2",
+        "expected_output": "3 11 9 1 2 \n",
+        "code_problem_id": 486,
+        "created_at": "2023-12-29T23:51:22.517Z",
+        "updated_at": "2023-12-29T23:51:22.517Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1410,
+            "code_problem_id": 486,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(q, k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1411,
+            "code_problem_id": 486,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, q, k):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1412,
+            "code_problem_id": 486,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public Queue<Integer> solve(Queue<Integer> q, int k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1413,
+            "code_problem_id": 486,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    queue<int> solve(queue<int> &q, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

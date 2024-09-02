@@ -1,0 +1,64 @@
+{
+    "id": 296,
+    "description": "Determine the maximum length of a substring in\nstring s that does not contain any repeated characters.\n\n```\nSample Input:\nHeycoachsuper30\n```\n\n```\nSample Output: 11\n```\n \n`Constraints:`\n\n`0 <= s.length <= 5 * 104`\n\n`s consists of English letters, digits, symbols and spaces.`",
+    "title": "Length of longest substring with no repeated characters.",
+    "default_testcase": {
+        "id": 1970,
+        "input": "heycoachsuper30",
+        "expected_output": "11",
+        "code_problem_id": 296,
+        "created_at": "2023-09-15T21:42:30.628Z",
+        "updated_at": "2023-09-15T21:42:30.628Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 726,
+            "code_problem_id": 296,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n     int longestUniqueSubsttr(string str){",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1063,
+            "code_problem_id": 296,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def longestUniqueSubsttr(self,s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1064,
+            "code_problem_id": 296,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution{\n  longestUniqueSubsttr(str) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1065,
+            "code_problem_id": 296,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   static final int NO_OF_CHARS = 256;\n\n    int longestUniqueSubsttr(String str) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

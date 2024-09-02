@@ -1,0 +1,64 @@
+{
+    "id": 435,
+    "description": "A learner at heycoach goes to a parallel world by some magic, upon reaching there he saw that a war is going on between two nations, the soldiers are protecting the civilians, as he was one of the civilian there he saw that soldiers had create a grid like structure formation in which there are m rows and n columns and in which   the soldiers are represented by 1 and civilians are represented by 0, all the soldiers are on left of civilians your task is to find out k weakest rows indexes out of those m rows.\nA row i is weaker than a row j if one of the following is true:\n\n```\n1). The number of soldiers in row i is less than the number of soldiers in row j.\n\n2). Both rows have the same number of soldiers and i < j.\n\nReturn the indices of the k weakest rows in the matrix ordered from weakest to strongest.\n```\n\n**`Example 1`** \n\n```\nInput :  \n\nmatrix =    \n[[1,1,0,0,0],  \n [1,1,1,1,0],  \n [1,0,0,0,0],  \n [1,1,0,0,0],  \n [1,1,1,1,1]],   \n\n k = 3\n\nOutput : [2,0,3]\n```\n \n\n**Constraints**\n\n\n`2 <= n, m <= 100  , elements of the matrix are either 0 or 1`\n\n",
+    "title": "Row Wars",
+    "default_testcase": {
+        "id": 3026,
+        "input": "5 5 3\n1 1 0 0 0\n1 1 1 1 0\n1 0 0 0 0\n1 1 0 0 0\n1 1 1 1 1",
+        "expected_output": "2 0 3 \n",
+        "code_problem_id": 435,
+        "created_at": "2023-12-18T14:34:11.314Z",
+        "updated_at": "2023-12-18T14:34:11.314Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1227,
+            "code_problem_id": 435,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    kWeakestRows(matrix, k) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": "\n\n\n"
+        },
+        {
+            "id": 1228,
+            "code_problem_id": 435,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n    public List<Integer> kWeakestRows(int[][] matrix, int k) {",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1229,
+            "code_problem_id": 435,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution {\npublic:\n    vector<int> kWeakestRows(vector<vector<int>>& matrix, int k) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1230,
+            "code_problem_id": 435,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def kWeakestRows(self, matrix, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

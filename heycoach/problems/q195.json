@@ -1,0 +1,28 @@
+{
+    "id": 195,
+    "description": "A parentheses string is valid if and only if:\n\n-   It is the empty string,\n-   It can be written as  `AB`  (`A`  concatenated with  `B`), where  `A`  and  `B`  are valid strings, or\n-   It can be written as  `(A)`, where  `A`  is a valid string.\n\nYou are given a parentheses string  `s`. In one move, you can insert a parenthesis at any position of the string.\n\n-   For example, if  `s = \"()))\"`, you can insert an opening parenthesis to be  `\"(()))\"`  or a closing parenthesis to be  `\"())))\"`.\n\nReturn  _the minimum number of moves required to make_ `s` _valid_.\n### Example 1 \n\n### Input\n```CPP\ns = \"())\"\n```\n### Output \n```CPP\n1\n```\n### Explanation\nYou can add one opening bracket in front to make the string valid i.e. **(**())\n\n**Example 2:**\n\n**Input:**\n```CPP\ns = \"(((\"\n```\n**Output:** \n```CPP\n3\n```\n\n### Constraints:\n-   `1 <= s.length <= 10000`\n-   `s[i]`  is either  `'('`  or  `')'`.",
+    "title": "Minimum insertion to make Parentheses valid",
+    "default_testcase": {
+        "id": 1429,
+        "input": "())",
+        "expected_output": "1",
+        "code_problem_id": 195,
+        "created_at": "2022-10-29T13:53:15.472Z",
+        "updated_at": "2022-10-29T13:53:15.472Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 315,
+            "code_problem_id": 195,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int minAddToMakeValid(string s) {\n      // write your code here\n    }\n};"
+        }
+    ]
+}

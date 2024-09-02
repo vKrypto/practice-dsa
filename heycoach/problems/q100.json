@@ -1,0 +1,64 @@
+{
+    "id": 100,
+    "description": "\nYou are given a grid of `n` rows and `m` columns. Each cell in the grid has some cost associated with it. Find a path from top left (0,0) to the bottom right (N-1,M-1) which **minimizes** the the sum of the cost of all the number along the path. You need to tell the **minimum sum of that path**.\n**Note**: You can only move right or down at any point of time.\n\n### Example 1 \n\n### Input\n```CPP \nN = 2,M = 3\n5 9 6\n11 5 2\n``` \n### Output \n```CPP \n21\n``` \n#### Explanation:\n\nFor this the grid the path with minimum value is (0,0) -> (0,1) -> (1,1) -> (1,2). And the sum along this path is 5 + 9 +5 + 2 = 21. So the ans is 21.\n\n### Example 2 \n\n### Input\n```CPP\nN = 3,M = 3\n1 2 3\n4 5 4\n7 5 9\n```\n### Output \n```CPP \n19\n``` \n#### Explanation:\n\nFor this the grid the path with minimum value is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2).The sum along this path is 1 + 2 + 3 + 4 + 9 = 19.\n\n### Constraints:\n\n* 1 <= N,M <= 100\n* 1 <= grid[i][j] <= 10000\n\n",
+    "title": "Minimum path sum in a grid",
+    "default_testcase": {
+        "id": 737,
+        "input": "2 3\n5 9 6\n11 5 2",
+        "expected_output": "21\n",
+        "code_problem_id": 100,
+        "created_at": "2022-10-04T13:12:54.962Z",
+        "updated_at": "2022-10-04T13:12:54.962Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 194,
+            "code_problem_id": 100,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n   int minSumPath(vector<vector<int>> &grid) {\n     //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 503,
+            "code_problem_id": 100,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minSumPath(int[][] grid) {\n      //Write yoru code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 554,
+            "code_problem_id": 100,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minSumPath(self, grid):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 556,
+            "code_problem_id": 100,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minSumPath(grid) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n\n"
+        }
+    ]
+}

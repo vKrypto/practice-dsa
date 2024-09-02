@@ -1,0 +1,45 @@
+{
+    "id": 526,
+    "description": "In a mystical forest, Sammy, an adventurous squirrel, heard about the Binary Tree of Whimsy, which held secrets in a zigzag pattern. Guided by a wise owl, Sammy traversed the tree, recording values as he alternated between left and right, unveiling its hidden treasures. Sammy's journey added an enchanting tale to the forest's lore.\n\nYour Job is to output the nodes values the way Sammyy traversed the tree guided by the owl.\nInput: It is given in the form of the level order traversal of the tree.\nThe number of nodes in the tree is in the range [0, 2000].\n-100 <= Node.val <= 100\n\nSample Input:\n1 2 3 4 N N 5 6\n\nSample Output:\n1\n3 2\n4 5\n6\n\nExplaination:\nLevel 1: 1 --> 1\nLevel 2: 2 3 --> 3 2\nLevel 3: 4 N N 5 --> 4 5\nLevel 4:6 --> 6",
+    "title": "ZigZag traversal",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1559,
+            "code_problem_id": 526,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    TreeNode* buildTreeFromString(const string& str) {\n        if (str.empty() || str[0] == 'N') {\n            return NULL;\n        }\n\n        vector<string> values;\n        istringstream iss(str);\n        while (iss.good()) {\n            string val;\n            iss >> val;\n            values.push_back(val);\n        }\n\n        int index = 0;\n        TreeNode* root = new TreeNode(stoi(values[index++]));\n        queue<TreeNode*> q;\n        q.push(root);\n\n        while (!q.empty() && index < values.size()) {\n            TreeNode* currentNode = q.front();\n            q.pop();\n\n            string leftVal = values[index++];\n            if (leftVal != \"N\") {\n                currentNode->left = new TreeNode(stoi(leftVal));\n                q.push(currentNode->left);\n            }\n\n            if (index >= values.size()) {\n                break;\n            }\n\n            string rightVal = values[index++];\n            if (rightVal != \"N\") {\n                currentNode->right = new TreeNode(stoi(rightVal));\n                q.push(currentNode->right);\n            }\n        }\n\n        return root;\n    }\n\n    vector<vector<int>> zigzagTraversal(TreeNode* root) {\n       \n    }\n};\n"
+        },
+        {
+            "id": 1560,
+            "code_problem_id": 526,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution:\n    def build_tree_from_string(self, s):\n        if not s or s[0] == 'N':\n            return None\n\n        values = s.split()\n        index = 0\n        root = TreeNode(int(values[index]))\n        queue = deque([root])\n\n        while queue and index < len(values):\n            current_node = queue.popleft()\n\n            left_val = values[index]\n            index += 1\n            if left_val != 'N':\n                current_node.left = TreeNode(int(left_val))\n                queue.append(current_node.left)\n\n            if index >= len(values):\n                break\n\n            right_val = values[index]\n            index += 1\n            if right_val != 'N':\n                current_node.right = TreeNode(int(right_val))\n                queue.append(current_node.right)\n\n        return root\n\n    def zigzag_traversal(self, root):\n        \n"
+        },
+        {
+            "id": 1561,
+            "code_problem_id": 526,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public TreeNode buildTreeFromString(String str) {\n        if (str == null || str.isEmpty() || str.charAt(0) == 'N') {\n            return null;\n        }\n\n        String[] values = str.split(\" \");\n        int index = 0;\n        TreeNode root = new TreeNode(Integer.parseInt(values[index++]));\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.add(root);\n\n        while (!queue.isEmpty() && index < values.length) {\n            TreeNode currentNode = queue.poll();\n\n            String leftVal = values[index++];\n            if (!leftVal.equals(\"N\")) {\n                currentNode.left = new TreeNode(Integer.parseInt(leftVal));\n                queue.add(currentNode.left);\n            }\n\n            if (index >= values.length) {\n                break;\n            }\n\n            String rightVal = values[index++];\n            if (!rightVal.equals(\"N\")) {\n                currentNode.right = new TreeNode(Integer.parseInt(rightVal));\n                queue.add(currentNode.right);\n            }\n        }\n\n        return root;\n    }\n\n    public List<List<Integer>> zigzagTraversal(TreeNode root) {\n        \n    }\n}\n"
+        }
+    ]
+}

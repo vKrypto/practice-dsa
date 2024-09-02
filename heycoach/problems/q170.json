@@ -1,0 +1,28 @@
+{
+    "id": 170,
+    "description": "\nGiven an array `A` consisting of n integers, find the index of values that satisfy `A + B = C + D`, where `A,B,C & D` are integers values in the array\n\n**Note:**\n\n```\n1) Return the indices `A1 B1 C1 D1`, so that \n  A[A1] + A[B1] = A[C1] + A[D1]\n  A1 < B1, C1 < D1\n  A1 < C1, B1 != D1, B1 != C1 \n\n2) If there are more than one solutions, \n   then return the tuple of values which are lexicographical smallest. \n\nAssume we have two solutions\nS1 : A1 B1 C1 D1 ( these are values of indices int the array )  \nS2 : A2 B2 C2 D2\n\nS1 is lexicographically smaller than S2 iff\n  A1 < A2 OR\n  A1 = A2 AND B1 < B2 OR\n  A1 = A2 AND B1 = B2 AND C1 < C2 OR \n  A1 = A2 AND B1 = B2 AND C1 = C2 AND D1 < D2\n```\n\n\n\n### Example 1 \n\n### Input\n```CPP\nn = 7\nA = [3, 4, 7, 1, 2, 9, 8]\n```\n\n\n### Output \n```CPP\n[0, 2, 3, 5] (O index)\n```\n### Explanation\nA[0] + A[2] = A[3] + A[5] = 10 \n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 5\nA = [1,10,20,100,30]\n```\n**Output:** \n```CPP\n[]\n```\n### Explanation\nThere are no 4 integers satisfying the equality so return empty array.\n\n\n### Constraints:\n* `1 <= n <= 200`\n\n* `1 <= A[i] <= 10000`\n",
+    "title": "Equal pairs",
+    "default_testcase": {
+        "id": 1210,
+        "input": "7\n3 4 7 1 2 9 8",
+        "expected_output": "0 2 3 5 ",
+        "code_problem_id": 170,
+        "created_at": "2022-10-24T16:24:44.992Z",
+        "updated_at": "2022-10-24T16:24:44.992Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 242,
+            "code_problem_id": 170,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> equal(vector<int> &A) {\n      // write your code here\n    }\n\n};"
+        }
+    ]
+}

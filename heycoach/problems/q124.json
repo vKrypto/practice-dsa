@@ -1,0 +1,8 @@
+{
+    "id": 124,
+    "description": "Birju has to study for Harvard so he needs to do maximum no. of courses. There are **n** different online courses numbered from 1 to n. You are given an array courses where **courses[i] = [durationi, lastDayi]** indicate that the ith course should be taken continuously for *durationi* days and must be finished before or on *lastDayi*.\n\nYou will start on the 1st day and you cannot take two or more courses simultaneously.\n\nPrint the maximum number of courses that you can take.\n\n#### Input Format:\n- first line contains single integer n (the size of the array)\n- next n line contains 2 integers durationi and lastdayi respectively\n\n#### Output Format:\n- single line integer. Print the maximum no. of courses he can take.\n\n#### Constraints:\n\n- 1 <= courses.length <= 104\n- 1 <= durationi, lastDayi <= 104",
+    "title": "Course Schedule",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

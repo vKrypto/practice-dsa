@@ -1,0 +1,57 @@
+{
+    "id": 945,
+    "description": "There are n glasses arranged in a line. The i-th glass has a[i] units of juice in it. You drink only from odd-numbered glasses, while your date drinks only from even-numbered glasses.\n\nTo impress your date, you want to find a contiguous subarray of these glasses such that both you and your date will have the same amount of juice in total if only the glasses in this subarray are considered.\n\nMore formally, find out if there exists two indices l, r such that 1\u2264l\u2264r\u2264n, and a[l]+a[l+2]+a[l+4]+\u22ef+a[r]=a[l+1]+a[l+3]+\u22ef+a[r\u22121] if l and r have the same parity and a[l]+a[l+2]+a[l+4]+\u22ef+a[r\u22121]=a[l+1]+a[l+3]+\u22ef+a[r] otherwise.\n\nInput\n\nThe first line of each test case contains a single integer n - the total number of glasses.\n\nThe second line of each test case contains n integers a1,\u2026,an -  the amount of juice in each glass.\n\nOutput\n\nFor each test case, output 1 if there exists a subarray satisfying the condition, and 0 otherwise.\n\n\n```\nSample Input 1 : \n\n3\n\n1 3 2\n\nOutput \n\n1\n```\n\n```\nSample Input 2 : \n\n10\n\n1 6 9 8 55 3 14 2 7 2\n\nOutput \n\n0\n```\n\nConstraints :\n\n`1\u2264n\u22642\u22c51e5`\n\n`1\u2264a[i]\u22641e9`",
+    "title": "Is Subarray Exist ?",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3148,
+            "code_problem_id": 945,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    int issubarrayexist(int n, vector<int> &a)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3149,
+            "code_problem_id": 945,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int isSubarrayExist(int n, int[] a) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3150,
+            "code_problem_id": 945,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def is_subarray_exist(self, n, a):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3151,
+            "code_problem_id": 945,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    isSubarrayExist(n, a) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

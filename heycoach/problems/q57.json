@@ -1,0 +1,64 @@
+{
+    "id": 57,
+    "description": "In MATLAB, there is a function called transform which can transform an n x n matrix into a new one with a different size r x c keeping its original data.\n\nYou are given an n x n matrix and two integers r and c representing the number of rows and the number of columns of the wanted transformed matrix.\n\nThe transformed matrix should be filled with all the elements of the original matrix in the same row-traversing order as they were.\n\nIf the transform operation with given parameters is possible and legal, output the new transformed matrix; Otherwise, output the original matrix.\n\n#### Example\n##### Input \n\n```\n2 1 4\n1 2\n3 4\n```\n##### Output\n`1 2 3 4` \n\nConstraints:  \n\n```\n1 <= n <= 100  \n1 <= r, c <= 300  \n(-1000) <= mat[i][j] <= 1000\n```\n\n##### Input Format:\n\n```\nfirst line contains n , r, c respectively      \nnext n line contains n elements each  \n```\n\n##### Output Format:\n\n```\n\nA new matrix with r rows and c coloumns or the original matrix\n```\n\n",
+    "title": "Matrix Transform",
+    "default_testcase": {
+        "id": 5496,
+        "input": "2 1 4\n1 2\n3 4",
+        "expected_output": "1 2 3 4 \n",
+        "code_problem_id": 57,
+        "created_at": "2024-02-14T14:24:06.519Z",
+        "updated_at": "2024-02-14T14:24:06.519Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 52,
+            "code_problem_id": 57,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n     vector<vector<int>> matrixReshape(vector<vector<int>>& mat, int r, int c) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 53,
+            "code_problem_id": 57,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public int[][] matrixReshape(int[][] mat, int r, int c) {\n    //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 54,
+            "code_problem_id": 57,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n\n    def matrixReshape(self, mat, r, c):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 652,
+            "code_problem_id": 57,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    matrixReshape(mat, r, c) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

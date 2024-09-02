@@ -1,0 +1,64 @@
+{
+    "id": 511,
+    "description": "Given an array arr with n balls numbered 0, 1, or 2, sort them in place so that balls of the same number are adjacent, with the numbers in the order 0, 1, and 2.\n\n### `Note`:-\nYou must solve this problem without using the library's sort function.\n\n### `Input format: `\n```\nn == arr.length\n1 <= n <= 200\narr[i] is either 0, 1, or 2.\n\n```\n\n### `Output format:` \nYou do not need to return anything,  sort them in place.\n\n### `Examples`\n\n#### Example 1\n```\nInput: n=6 , arr = [2,0,2,1,1,0]\nOutput: [0,0,1,1,2,2]\n```\n\n#### Example 2\n```\nInput: n=5 , nums = [2,0,1,1,1]\nOutput: [0,1,1,1,2]\n```\n\n\n\n\n",
+    "title": "Sort Balls",
+    "default_testcase": {
+        "id": 5515,
+        "input": "10\n0 0 0 0 1 2 2 2 1 2",
+        "expected_output": "0 0 0 0 1 1 2 2 2 2 ",
+        "code_problem_id": 511,
+        "created_at": "2024-02-15T08:40:56.672Z",
+        "updated_at": "2024-02-15T08:40:56.672Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1507,
+            "code_problem_id": 511,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void sortBalls(vector<int>& nums) {",
+            "skeleton_class_end": "            }\n        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1508,
+            "code_problem_id": 511,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    void sortBalls(ArrayList<Integer> nums) {",
+            "skeleton_class_end": "            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1509,
+            "code_problem_id": 511,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def sort_balls(self, nums):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1510,
+            "code_problem_id": 511,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    sortBalls(nums) {",
+            "skeleton_class_end": "            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

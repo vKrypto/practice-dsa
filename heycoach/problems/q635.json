@@ -1,0 +1,64 @@
+{
+    "id": 635,
+    "description": "Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.\n\nThe next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.\n\n### Example 1 \n\n### Input\n```CPP\nnums = [1,2,1]\n``` \n### Output \n```CPP \n[2,-1,2]\n``` \n### Explanation \nThe first 1's next greater number is 2; \nThe number 2 can't find next greater number. \nThe second 1's next greater number needs to search circularly, which is also 2.\n\n\n### Example 2 \n\n### Input\n```CPP\nnums = [1,2,3,4,3]\n``` \n### Output \n```CPP \n[2,3,4,-1,4]\n``` \n### Input Format\n```\nGiven a array nums of n element\n```\n### Output Format\n```\nOutput the array containing next greater element of every element if there is no next greater element output -1 on that position\n```\n### Constraints\n```\n1 <= nums.size()<= 1e5\n1 <= nums[i]<= 1e6\n```",
+    "title": "Next Greater Element",
+    "default_testcase": {
+        "id": 4232,
+        "input": "42\n 6\n 9\n 4\n 5\n 6\n 2\n 1\n 4\n 9\n 8\n 7\n 4\n12\n 4\n 2\n 3\n 6\n 5\n 4\n 1\n 2\n 3\n 6\n 5\n 4\n 1\n 2\n 3\n 6\n 5\n 4\n12\n 3\n65\n 9\n 8\n 7\n 4\n 5\n 2\n 1\n 4\n",
+        "expected_output": "9 12 5 6 9 4 4 9 12 12 12 12 65 6 3 6 12 6 6 2 3 6 12 6 6 2 3 6 12 12 12 65 65 -1 12 9 9 5 6 4 4 6 ",
+        "code_problem_id": 635,
+        "created_at": "2024-01-27T09:23:59.369Z",
+        "updated_at": "2024-01-27T09:23:59.369Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1938,
+            "code_problem_id": 635,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n vector < int > nextGreaterElements(vector < int > & n) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1940,
+            "code_problem_id": 635,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\npublic int[] nextGreaterElements(int[] nums) {\n  //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1944,
+            "code_problem_id": 635,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def nextGreaterElements(self, nums):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2241,
+            "code_problem_id": 635,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

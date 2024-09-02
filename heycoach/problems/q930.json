@@ -1,0 +1,57 @@
+{
+    "id": 930,
+    "description": "What is the time complexity of this given code:\n\n```\nfunction (k)\n    if (k<=0){\n        return 0;\n    }\n    return function(k-1) + function(k-2);\n```\n```\nPrint the answer in  terms of Big- O notation, for example \"O(n)\" or \"O(n^2)\" or \"O(n!)\" etc.\n```",
+    "title": "Time Complexity - 4",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3089,
+            "code_problem_id": 930,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "void TimeComplexity(){\n    //Print the answer here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3090,
+            "code_problem_id": 930,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n    public static void printTimeComplexity() {\n      //Print answer here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3091,
+            "code_problem_id": 930,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def print_time_complexity():\n    # Print the answer here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3092,
+            "code_problem_id": 930,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function printTimeComplexity() {\n    // Print the answer here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 49,
+    "description": "\nYou have given an array arr consisting of N distinct integers and an integer target. Return a list of all unique combinations of numbers where the chosen numbers sum to target. The same number may be chosen from arr an unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different. Note :\n\nElements in each combination should be in non-decreasing order\nThe combinations themselves must also be sorted in lexographically increasing order\n\n### Example 1:\n#### Input :\n`arr = [2,3,6,7], target = 7`\n#### Output \n` [[2,2,3],[7]]`\n#### Explanation :\nAbove are all the unique combinations of numbers in array which sums up to target 7 and are in lexographically increasing order. Note:Here, [2,2,3] and [2,3,2] are different permutation of same combinations which sums up to 7. So you should output only one of this combination i.e.[2,2,3] as it is in non-decreasing order.\n#### Constraints:\n\n```\n1 <= N <= 20  \n2 <= arr[i] <= 30  \nAll elements are distinct  \n1 <= target <= 100\n```\n#### Input format\n\n```\nfirst line contains two integers n(size of array ) and target\nnext line represents the elements of array separted by space.\n```\n#### Output format  \n`k lines where each line reprsents an array` ",
+    "title": "Combination sum",
+    "default_testcase": {
+        "id": 7269,
+        "input": "4 7\n2 3 6 7",
+        "expected_output": "2 2 3\n7\n",
+        "code_problem_id": 49,
+        "created_at": "2024-04-13T14:28:10.647Z",
+        "updated_at": "2024-04-13T14:28:10.647Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 79,
+            "code_problem_id": 49,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\nvector<vector<int>> combinationSum(vector<int> &arr, int target) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 228,
+            "code_problem_id": 49,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n public List<List<Integer>> combinationSum(int[] nums, int target) {",
+            "skeleton_class_end": "     }\n   }\n}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 229,
+            "code_problem_id": 49,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def combinationSum(self, arr, target):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 657,
+            "code_problem_id": 49,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n   constructor() {}\n   combinationSum(arr, target) {",
+            "skeleton_class_end": "        }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 916,
+    "description": "Given an array of integers `arr`, find the maximum value that can be obtained by subtracting 1 from each of two distinct elements and multiplying them together.\n\n**Example1:**</br>\nInput: nums = [1,5,4,5]</br>\nOutput: 16</br>\nExplanation: Maximum value in the array: (5-1)*(5-1) = 16.\n\n**Example 2:**</br>\nInput: nums = [2,3]</br>\nOutput: 2</br>\nExplanation: Maximum value: (3-1)*(2-1) = 2.\n\n**Constraints:**\n- 2 <= arr.length <= 500\n- 1 <= arr[i] <= 10^3",
+    "title": "Max Product Pair",
+    "default_testcase": {
+        "id": 8095,
+        "input": "4\n1 5 4 5",
+        "expected_output": "16\n",
+        "code_problem_id": 916,
+        "created_at": "2024-05-19T09:10:09.958Z",
+        "updated_at": "2024-05-19T09:10:09.958Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3030,
+            "code_problem_id": 916,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maxProduct(vector<int>& arr) {",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3031,
+            "code_problem_id": 916,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxProduct(int[] arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3032,
+            "code_problem_id": 916,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxProduct(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3033,
+            "code_problem_id": 916,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxProduct(arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

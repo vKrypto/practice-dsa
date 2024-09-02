@@ -1,0 +1,40 @@
+{
+    "id": 95,
+    "description": "There is a staircase of total **N** stairs indexed from 0 to N-1. A frog is initially at **0th stair** and want to reach the **last(N-1)th stair**. If the frog is on the ith stair then he can jump either to i+1 or i+2 or i+3.... or i+**kth** stair where k is a positive integer . If the frog jumps from the ith stair to the jth stair then the energy lost is given by `|height[i] - height[j]|` where `|x|` is the absolute value of x. `height[i]` is the height of the ith stair. Your task is to find the **minimum** total energy lost by frog to reach the (N-1)th stair starting from 0th stair\n\n\n### Example 1 \n\n### Input\n```CPP \nN = 5, k = 3\nheight = [10,30,40,50,20]\n``` \n### Output \n```CPP \n30\n``` \n#### Explanation:\nIf we follow the path 0\u2192 1 \u2192 4, the total loss incurred would be |10 - 30| + |30 - 20| = 30\n\n### Example 2 \n\n### Input\n```CPP\nN = 10, k = 4\nheight = [40,10,20,70,80,10,20,70,80,60]\n```\n### Output \n```CPP \n40\n``` \n#### Explanation:\nIf we follow the path 0\u2192 3\u2192 7 \u2192 9, the total lost incurred would be |40 - 70| + |70 - 70| + |70 - 60| = 40\n\n### Constraints:\n\n* 1 <= N <= 10000\n* 1 <= K <= 200\n* 1 <= height[i] <= 10000",
+    "title": "Minimize the total energy lost 2",
+    "default_testcase": {
+        "id": 699,
+        "input": "10 4\n40 10 20 70 80 10 20 70 80 60\n",
+        "expected_output": "40\n",
+        "code_problem_id": 95,
+        "created_at": "2022-10-04T08:38:26.523Z",
+        "updated_at": "2022-10-04T08:38:26.523Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 129,
+            "code_problem_id": 95,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int frogJump(int n, vector<int> &height, int k)\n    {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 498,
+            "code_problem_id": 95,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int frogJump(int n, int[] height, int k) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

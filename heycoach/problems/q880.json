@@ -1,0 +1,64 @@
+{
+    "id": 880,
+    "description": "You are given a n x n matrix, with non negative integers present inside the given grid. You have to determine a Path that would start from the top left cell of the grid and end at the bottom right of cell of the grid, there are only two ways to travel along the grid that is you can either move towards right or down but there is a condition involved. The path that you choose to travel, the integers that you find along the way their product should lead to a value which has the least amount of trailing zeroes.\n\nGiven a grid 'n x n' provide a path to fulfil the above condition and provide a path where moving down is represented with 'D' and moving right is represented by 'R'.\n\nInput Format:\n\nThe first line contains an integer 'n' denoting the size of square matrix 'n'.\n\nThe next 'n' lines contains 'n' space separated integers denoting the integers in every ith row.\n\nOutput Format:\n\nOn the first line print the amount of minimum zeroes that you can get and then in the next line print a single line denoting the directions to move from top cell to bottom cell where 'D' denotes down and 'R' denotes right.\n\n```\nSample Input - 1:\n\n3\n\n1 2 10\n10 3 68\n50 9 10\n\nSample Output - 1:\n\n1\n\nRDDR\n ```\n\nExplanation:\nWe start from 1 -> 2 (moving right that's why R) then from 2->3 (moving down that's why D) then 3->9 and finally 9->10. The product of these integers come out to be 1x2x3x9x10 = 540 and it has one trailing zero which is the minimum possible that we can get.\n\n\nConstraints:\n\n2\u2009\u2264\u2009n\u2009\u2264\u20091000\n\n0<=elements of grid<10^8",
+    "title": "Least Rounded Zeroes",
+    "default_testcase": {
+        "id": 7742,
+        "input": "3\n1 20 8\n3 9 120\n40 5 300",
+        "expected_output": "2\nDRDR\n",
+        "code_problem_id": 880,
+        "created_at": "2024-05-06T10:22:15.652Z",
+        "updated_at": "2024-05-06T10:22:15.652Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2886,
+            "code_problem_id": 880,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": " class Solution{\n    public:\n    void solve(int n, vector<vector<int>> &matrix){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2887,
+            "code_problem_id": 880,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, matrix) {\n        // Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2888,
+            "code_problem_id": 880,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, matrix):\n        # Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2889,
+            "code_problem_id": 880,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public void solve(int n, int[][] matrix) {\n        // Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

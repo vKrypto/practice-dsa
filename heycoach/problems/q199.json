@@ -1,0 +1,45 @@
+{
+    "id": 199,
+    "description": "You are given a binary array nums and an integer k.\n\nA **k-bit flip** is choosing a **subarray** of length k from *nums* and simultaneously changing every 0 in the subarray to 1, and every 1 in the subarray to 0.\n\nPrint the minimum number of **k-bit flips** required so that there is no 0 in the array. If it is not possible, print *-1*.\n\nA subarray is a contiguous part of an array.\n\n####Input Format:\n*first line contains two integers n and k respectively\n*second line contains n single space space separated integers  (0, 1)\n\n####Output Format:\n*single integer output\n\n####Constraints:\n*1 <= n <= 10^5\n*1 <= k <= n\n\n####Example:\n**Input**: 3 1\n0 1 0\n**Output**: 2\n",
+    "title": "Minimum Number of K Consecutive Bit Flips",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 236,
+            "code_problem_id": 199,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr,int k) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 237,
+            "code_problem_id": 199,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr,int k) {\n  } \n}\n"
+        },
+        {
+            "id": 238,
+            "code_problem_id": 199,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr, k):\n        pass\n"
+        }
+    ]
+}

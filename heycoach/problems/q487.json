@@ -1,0 +1,64 @@
+{
+    "id": 487,
+    "description": "Suppose there is a circle. There are N petrol pumps on that circle. You will be given two sets of data.\n\n1. The amount of petrol that every petrol pump has.\n2. Distance from that petrol pump to the next petrol pump.\n\nFind a starting point where the truck can start to get through the complete circle without exhausting its petrol in between. If no such path exists return -1.\n\nNote :  Assume for 1 liter petrol, the truck can go 1 unit of distance.\n\nFor example:\n\nN = 4 (No. of petrol pumps), \nPetrol = 4 6 7 4, \nDistance = 6 5 3 5\n\nOutput: 1\n\nExplanation: There are 4 petrol pumps with\namount of petrol and distance to next\npetrol pump value pairs as {4, 6}, {6, 5},\n{7, 3} and {4, 5}. The first point from\nwhere truck can make a circular tour is\n2nd petrol pump. Output in this case is 1\n(index of 2nd petrol pump).\n\nSample Input:\n\n3\n\n6 3 7\n\n4 6 3\n\nSample Output:\n\n2\n\nConstraints:\n\n2 \u2264 N \u2264 10000\n\n1 \u2264 petrol, distance \u2264 1000\n\n",
+    "title": "Tour of all Petrol Pump",
+    "default_testcase": {
+        "id": 3271,
+        "input": "4\n4 6 7 4\n6 5 3 5",
+        "expected_output": "1\n",
+        "code_problem_id": 487,
+        "created_at": "2023-12-30T23:48:41.793Z",
+        "updated_at": "2023-12-30T23:48:41.793Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1421,
+            "code_problem_id": 487,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "//Definition of Petrol pump class\n/*\nstruct PetrolPump {\n    int petrol;\n    int distance;\n};\n*/\n\nclass Solution {\npublic:\n    int solve(PetrolPump p[], int n) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1422,
+            "code_problem_id": 487,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class PetrolPump {\n    int petrol;\n    int distance;\n\n    PetrolPump(int petrol, int distance) {\n        this.petrol = petrol;\n        this.distance = distance;\n    }\n}class PetrolPump {\n    int petrol;\n    int distance;\n\n    PetrolPump(int petrol, int distance) {\n        this.petrol = petrol;\n        this.distance = distance;\n    }\n}*/\n\nclass Solution {\n    int solve(PetrolPump[] p, int n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1423,
+            "code_problem_id": 487,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass PetrolPump:\n    def __init__(self, petrol, distance):\n        self.petrol = petrol\n        self.distance = distance\n\"\"\"\n\nclass Solution:\n    def solve(self, p, n):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1424,
+            "code_problem_id": 487,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass PetrolPump {\n    constructor(petrol, distance) {\n        this.petrol = petrol;\n        this.distance = distance;\n    }\n}\n*/\nclass Solution {\n    solve(p, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

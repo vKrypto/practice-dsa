@@ -1,0 +1,57 @@
+{
+    "id": 822,
+    "description": "A universe is created consisting exactly of n galaxies. The universe is a connected undirected graph with n\u22121 edges. Each galaxy g of this universe has a density ag assigned to it.\n\nLet dist(x,y) be the distance between the galaxies x and y. The distance between the galaxies is the number of edges on the simple path between them.\n\nLet's define the beauty of the universe as the following value: firstly, let's fix some galaxy of the universe. Let it be g. Then the beauty of the universe is \u2211i=1ndist(i,g)\u22c5ai, where ai is the density of galaxy i.\n\nYour task is to calculate the maximum possible beauty of the universe if you can choose g arbitrarily.\n\nInput:\nThe first line contains one integer n, the number of galaxies in the universe (1\u2264n\u22642\u22c5105).\n\nThe second line of the input contains n integers a1,a2,\u2026,an (1\u2264ai\u22642\u22c5105), where ai is the density of the galaxy.\n\nEach of the next n\u22121 lines describes an edge of the universe. Edge i is denoted by two integers ui and vi, the labels of galaxies it connects (1\u2264ui,vi\u2264n, ui\u2260vi).\n\nIt is guaranteed that the given edges form a universe of the structure of a tree.\n\nOutput:\nPrint one integer \u2014 the maximum possible beauty of the universe if you can choose any galaxy as g.\n\nExamples\n\ninput\n\n8\n\n9 4 1 7 10 1 6 5\n\n1 2\n\n2 3\n\n1 4\n\n1 5\n\n5 6\n\n5 7\n\n5 8\n\noutput\n\n121\n\n\ninput\n\n1\n\n1337\n\noutput\n\n0",
+    "title": "Beauty of the Universe",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2677,
+            "code_problem_id": 822,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class TreeSolver {\npublic:\n\n",
+            "skeleton_class_end": "  \n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2678,
+            "code_problem_id": 822,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class TreeSolver:\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2679,
+            "code_problem_id": 822,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass TreeSolver {\n\n\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2680,
+            "code_problem_id": 822,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class TreeSolver {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

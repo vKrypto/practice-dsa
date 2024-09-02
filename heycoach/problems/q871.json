@@ -1,0 +1,64 @@
+{
+    "id": 871,
+    "description": "After winning gold and silver in IOI 2014, Akshat and Malvika want to have some fun. Now they are playing a game on a grid made of n horizontal and m vertical sticks.\nAn intersection point is any point on the grid which is formed by the intersection of one horizontal stick and one vertical stick.\nIn the grid shown below, n\u2009=\u20093 and m\u2009=\u20093. There are n\u2009+\u2009m\u2009=\u20096 sticks in total (horizontal sticks are shown in red and vertical sticks are shown in green). There are n\u00b7m\u2009=\u20099 intersection points, numbered from 1 to 9.\n![](https://espresso.codeforces.com/35872993e9eebb348b3a53cdab731e61b66bd30c.png)\n\nThe rules of the game are very simple. The players move in turns. Akshat won gold, so he makes the first move. During his/her move, a player must choose any remaining intersection point and remove from the grid all sticks which pass through this point. A player will lose the game if he/she cannot make a move (i.e. there are no intersection points remaining on the grid at his/her move).\n\nAssume that both players play optimally. Who will win the game?\n\n**Input format:**\n\n- `The first line of input contains two space-separated integers, n and m (1\u2009\u2264\u2009n,\u2009m\u2009\u2264\u2009100).`\n\n**Output format:**\n\n- `Print a single line containing \"Akshat\" or \"Malvika\" (without the quotes), depending on the winner of the game.`\n\n**Examples**\n\n**input**\n\n```\n2 2\n```\n\n**output**\n\n```\nMalvika\n```\n\n**input**\n\n```\n2 3\n```\n\n**output**\n\n```\nMalvika\n```\n\n\n**Note**\n\n#### `Explanation of the first sample:`\nThe grid has four intersection points, numbered from 1 to 4.\n![](https://espresso.codeforces.com/034c713c527471648741d4d10ca115ec786c733e.png)\n\nIf Akshat chooses intersection point 1, then he will remove two sticks (1\u2009-\u20092 and 1\u2009-\u20093). The resulting grid will look like this\n![](https://espresso.codeforces.com/91032c4c6be9d154543301439088de56e8c0cf8f.png)\n\nNow there is only one remaining intersection point (i.e. 4). Malvika must choose it and remove both remaining sticks. After her move the grid will be empty.\n\nIn the empty grid, Akshat cannot make any move, hence he will lose.\n\nSince all 4 intersection points of the grid are equivalent, Akshat will lose no matter which one he picks.",
+    "title": "Game With Sticks",
+    "default_testcase": {
+        "id": 7637,
+        "input": "2 2",
+        "expected_output": "Malvika\n",
+        "code_problem_id": 871,
+        "created_at": "2024-05-02T09:02:46.345Z",
+        "updated_at": "2024-05-02T09:02:46.345Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2850,
+            "code_problem_id": 871,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n    int gamesticks(int n,int m){\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2851,
+            "code_problem_id": 871,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   public void gamesticks(int n, int m) {\n     //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2852,
+            "code_problem_id": 871,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def gamesticks(self, n, m):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2853,
+            "code_problem_id": 871,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\ngamesticks(n, m) {\n  //Write your code here",
+            "skeleton_class_end": "    }\n  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

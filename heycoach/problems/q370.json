@@ -1,0 +1,21 @@
+{
+    "id": 370,
+    "description": "In the classroom, the teacher provided Sammy with two Binary Trees. Each Node in the first binary tree corresponds to a Node in the second tree, with the exception of one Node which is different, referred to as the \"Odd One Out.\" Sammy is now seeking assistance in determining the data stored in this Odd One Out Node. Please help Sammy find this information.\n\nPlease note that when we say \"identical node,\" we mean that the value stored in the node is the same. It's also possible that all nodes in the trees have the same values.",
+    "title": "Sammy and the Odd Node",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 836,
+            "code_problem_id": 370,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// struct Node{\n//         int data;\n//         Node* left;\n//         Node* right;\n//         Node(int x){\n//                 data=x;\n//                 left=right=NULL;\n//         }\n// };\nclass Solution{\n    public:\n    int oddNodeOut(Node* root1, Node* root2){\n        \n    }\n};"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 932,
+    "description": "**Problem Description:**\n\nYou are given a binary search tree (BST) with N nodes. Your task is to count the number of levels in the BST where the number of nodes in each level is a power of 2 (2 ^level). \n\nEach node value is unique.\nNodes are inserted in the BST in level-order (top to bottom, left to right).\n\nInput:\n\nThe input consists of two lines:\n\nThe first line contains an integer\n( 1<=N<=10^5 ), the number of nodes in the BST.\n\nThe second line contains N space-separated integers, representing the values of the nodes in level-order.\n\nOutput:\n\nPrint an integer representing the count of levels in the BST where the number of nodes in each level is a power of 2.\n\n```\nExample:\nInput:\n7\n5 3 8 2 4 6 9\nOutput:\n3\n```\n\nExplanation:\nThe given BST looks like this:\n\n        5           Level 0 (1 node)\n       /  \\\n      3    8        Level 1 (2 nodes)\n     / \\  / \\\n    2   4 6  9      Level 2 (4 nodes)\nThere are 3 levels (0-based indexing) in the BST where the number of nodes in each level is a power of 2: levels 0, 1, and 2.\n\n```\nConstraints:\n1 <= N <= 10^5\n```",
+    "title": "Power of 2 Levels in Binary Search Tree",
+    "default_testcase": {
+        "id": 8181,
+        "input": "6\n1 2 3 4 5 6",
+        "expected_output": "1",
+        "code_problem_id": 932,
+        "created_at": "2024-05-20T06:40:44.959Z",
+        "updated_at": "2024-05-20T06:40:44.959Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3097,
+            "code_problem_id": 932,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class BinaryTree {\nprivate:\n   TreeNode* root;\npublic:\n     int countNodesAtEachLevel() {\n\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3098,
+            "code_problem_id": 932,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class BinaryTree {\n      private TreeNode root;\n      public int countPowerOfTwoLevels() {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3099,
+            "code_problem_id": 932,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class BinaryTree:\n    def __init__(self):\n        self.root = None\n    def count_power_of_two_levels(self):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3100,
+            "code_problem_id": 932,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n\n\n    countPowerOfTwoLevels() {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

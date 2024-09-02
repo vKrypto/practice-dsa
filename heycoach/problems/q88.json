@@ -1,0 +1,40 @@
+{
+    "id": 88,
+    "description": "Given an  `m x n`  2D binary grid  `grid`  which represents a map of  `1`s (land) and  `0`s (water), return  _the number of islands_.\n\nAn  **island**  is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.\n\n### Example 1 \n\n### Input\ngrid = [\n  [1,1,1,1,0],\n  [1,1,0,1,0],\n  [1,1,0,0,0],\n  [0,0,0,0,0]\n]\n### Output \n```CPP \n1\n``` \n#### Explanation:\nThere is only 1 island.\n### Example 2 \n\n### Input\ngrid = [\n  [1,1,0,0,0],\n  [1,1,0,0,0],\n  [0,0,1,0,0],\n  [0,0,0,1,1]\n]\n### Output \n```CPP \n3\n``` \n#### Explanation:\nThere are 3 groups of islands. \n### Constraints:\n\n* 1 <= n,m <= 100",
+    "title": "Count islands",
+    "default_testcase": {
+        "id": 640,
+        "input": "4 5\n1 1 0 0 0\n1 1 0 0 0\n0 0 1 0 0\n0 0 0 1 1",
+        "expected_output": "3\n",
+        "code_problem_id": 88,
+        "created_at": "2022-10-03T11:58:50.930Z",
+        "updated_at": "2022-10-03T11:58:50.930Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 126,
+            "code_problem_id": 88,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int countIslands(vector<vector<int>>& grid) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 495,
+            "code_problem_id": 88,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    int countIslands(Vector<Vector<Integer>> grid) {\n        // write youe code here\n    }\n}"
+        }
+    ]
+}

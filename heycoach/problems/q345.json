@@ -1,0 +1,21 @@
+{
+    "id": 345,
+    "description": "You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target.\n\nWe will send a signal from a given node k. Return the minimum time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1.\n\nConstraints:\n\n1 <= k <= n <= 100\n\n1 <= times.length <= 6000\n\ntimes[i].length == 3\n\n1 <= ui, vi <= n\n\nui != vi\n\n0 <= wi <= 100\n\nAll the pairs (ui, vi) are unique. (i.e., no multiple edges.)",
+    "title": "Minimum Network Delay",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 808,
+            "code_problem_id": 345,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int networkDelayTime(vector<vector<int>>& times, int n, int k) {\n        \n    }\n};"
+        }
+    ]
+}

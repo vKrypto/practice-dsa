@@ -1,0 +1,64 @@
+{
+    "id": 679,
+    "description": "Given weights and values of N items, we need to put these items in a knapsack of capacity W to get the maximum total value in the knapsack.\n**Note**: Unlike 0/1 knapsack, you are allowed to break the item. \n\n### Example 1 \n\n### Input\n```CPP\nN = 3, W = 50\nvalues = [60,100,120]\nweight = [10,20,30]\n``` \n### Output \n```CPP \n240.00\n``` \n#### Explanation:\nInitial W = 50. \ntake item 1 with weight 10 and value 60 so W is now 50 - 10 = 40.\ntake item 2 with weight 20 and value 100 so W is now 40 - 20 = 20.\nNow, we cannot take item 3 completely so we will just take W = 20 amount of it and the value we will get out of it is 80 and W becomes 20 - 20 = 0.\nso total value is 60 + 100 + 80 = 240. So,Total maximum value of item we can have is 240.00 from the given capacity of sack.\n\n### Example 2 \n\n### Input\n```CPP\nN = 2, W = 50\nvalues = [60,100]\nweight = [10,20]\n``` \n### Output \n```CPP \n160.00\n``` \n#### Explanation:\nTotal maximum value of item we can have is 160.00 from the given capacity of sack.\n### Constraints:\n\n* 1 <= Items.length <= 10000\n* 1 <= Items.value , Items.weight <= 100000 \n",
+    "title": "Fractional knapsack",
+    "default_testcase": {
+        "id": 4472,
+        "input": "3 50\n60 100 120\n10 20 30",
+        "expected_output": "240.00\n",
+        "code_problem_id": 679,
+        "created_at": "2024-01-27T18:11:38.704Z",
+        "updated_at": "2024-01-27T18:11:38.704Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2113,
+            "code_problem_id": 679,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    double fractionalKnapsack(int N, int W, vector<int>& values, vector<int>& weight) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2114,
+            "code_problem_id": 679,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public double fractionalKnapsack(int N, int W, List<Integer> values, List<Integer> weight) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2115,
+            "code_problem_id": 679,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def fractional_knapsack(self, N, W, values, weight):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2116,
+            "code_problem_id": 679,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    fractionalKnapsack(N, W, values, weight) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

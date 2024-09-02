@@ -1,0 +1,64 @@
+{
+    "id": 230,
+    "description": "\n\nGiven a string `s`, your task is to calculate the number of distinct **non-empty subsequences** of `s`. Due to the potential size of the answer, return it modulo `1000000007` (1e9 + 7).\n\nA subsequence of a string is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. For example, `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n**Input Format:**\n- `A single line containing the string s`.\n\n**Output Format:**\n- `An integer representing the number of distinct non-empty subsequences of `s` modulo `1000000007.`\n\n\n**Sample Input 1:**\n```\nabc\n```\n\n**Sample Output 1:**\n```\n7\n```\n\n**Explanation:**</br>\n`The seven distinct subsequences are `\"a\"`, `\"b\"`, `\"c\"`, `\"ab\"`, `\"ac\"`, `\"bc\"`, and `\"abc\"`.`\n\n\n**Sample Input 2:**\n```\naba\n```\n\n**Sample Output 2:**\n```\n6\n```\n\n**Explanation:**</br>\n`The six distinct subsequences are `\"a\"`, `\"b\"`, `\"ab\"`, `\"aa\"`, `\"ba\"`, and `\"aba\"`.`</br>\n\n**Constraints:**\n- `1 <= s.length <= 2000`\n- `s consists of lowercase English letters.`\n\n",
+    "title": "Count unique subsequences",
+    "default_testcase": {
+        "id": 1639,
+        "input": "abc",
+        "expected_output": "7",
+        "code_problem_id": 230,
+        "created_at": "2022-11-01T15:25:59.184Z",
+        "updated_at": "2022-11-01T15:25:59.184Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 329,
+            "code_problem_id": 230,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n#define ll long long\n\n    ll mod = (ll)(1e9 + 7);\n    int uniqueSubsequences(string s) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 539,
+            "code_problem_id": 230,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private static final long MOD = 1000000007;\n    public int uniqueSubsequences(String s) {\n      //Write tyour code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 577,
+            "code_problem_id": 230,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def uniqueSubsequences(self, s: str) -> int:\n        # Write Code Here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 578,
+            "code_problem_id": 230,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  constructor() {\n    this.mod = 1e9 + 7;\n  }\n    uniqueSubsequences(s) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

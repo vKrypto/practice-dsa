@@ -1,0 +1,64 @@
+{
+    "id": 156,
+    "description": "\nGiven a characters array  `job`, representing the process a CPU needs to do, where each letter represents a different job. job could be done in any order. Each job is done in one unit of time. For each unit of time, the CPU could complete either one job or just be idle.\n\nHowever, there is a non-negative integer `n`  that represents the cooldown period between two  **same jobs** (the same letter in the array), that is that there must be at least  `n`  units of time between any two same jobs.\n\nReturn  _the least number of units of times that the CPU will take to finish all the given jobs_.\n\n\n### Example 1 \n\n### Input\n```CPP\njobs = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2\n```\n\n\n### Output \n```CPP\n8\n```\n\n#### Explanation:\nA -> B -> idle -> A -> B -> idle -> A -> B\nThere is at least 2 units of time between any two same jobs.\n\n**Example 2:**\n\n**Input:**\n```CPP\njobs = [\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"], n = 2\n```\n**Output:** \n```CPP\n16\n```\n#### Explanation:\nOne possible solution is\nA -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> idle -> A\n\n### Constraints:\n-   `1 <= jobs.length <= 10000`\n-   `jobs[i]`  is upper-case English letter.\n-   The integer  `n`  is in the range  `[0, 100]`",
+    "title": "Optimize job scheduler",
+    "default_testcase": {
+        "id": 1121,
+        "input": "6\nA A A B B B \n2",
+        "expected_output": "8",
+        "code_problem_id": 156,
+        "created_at": "2022-10-22T08:06:39.823Z",
+        "updated_at": "2022-10-22T08:06:39.823Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 210,
+            "code_problem_id": 156,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int leastInterval(vector<char>& jobs, int n) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 519,
+            "code_problem_id": 156,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int leastInterval(char[] tasks, int n) {\n      // write your code here\n    }\n}\n\n"
+        },
+        {
+            "id": 1209,
+            "code_problem_id": 156,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def leastInterval(self, jobs, n):"
+        },
+        {
+            "id": 1210,
+            "code_problem_id": 156,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    leastInterval(jobs, n) {\n    }\n}\n"
+        }
+    ]
+}

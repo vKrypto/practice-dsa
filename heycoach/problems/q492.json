@@ -1,0 +1,40 @@
+{
+    "id": 492,
+    "description": "In this hot summer AIUB students decided to go on a trip to Cox\u2019s Bazaar sea beach. Every student has some amount of money to spend in this trip. Each student belongs to some group. If student A knows student B, B knows C then A, B and C belong to the same group. In order to utilize the budget properly students hired a travel agency to get an optimal travel plan. They submitted the information about all the student\u2019s money and relations among them. Now the agency wants to figure out the number of groups and the total budget of each group. Total budget of a group is the summation of all the student\u2019s money in that group.\n\n### Input Format\n```\nThe first line contains an integer T (1<=T<=50), denoting the number of test cases.\n\nEach case starts with two integers N M. N (1<=N<=1000), denotes the number of students and M (0<=M<=(N*(N-1)/2)), denotes the number of relationships. In the next line N integers are given. The ith (1<=i<=N) integer ai (1<=ai<=100) denotes the money ith student has. Next M lines each contains two integers u v, (1<=u,v<=N and u != v) denoting that u knows v and vice versa.\n```\n### Output Format\n```\nFor each test case output \u201cCase X: K\u201d where X is the case number starting from 1 and K is the number of groups. In the next line output K integers, the total budget of all the groups in ascending order of budget.\n```\n### Sample Input\n```\n1\n5 3\n5 7 4 6 8\n1 2\n1 3\n4 5\n```\n### Sample Output\n```\ncase 1: 2\n14 16\n```\n",
+    "title": "Summer Trip",
+    "default_testcase": {
+        "id": 3340,
+        "input": "1\n5 3\n5 7 4 6 8\n1 2\n1 3\n4 5",
+        "expected_output": "Case 1: 2\n14 16 \n",
+        "code_problem_id": 492,
+        "created_at": "2024-01-03T10:48:08.442Z",
+        "updated_at": "2024-01-03T10:48:08.442Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1470,
+            "code_problem_id": 492,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "ll bfs(int x)\n{\n  // write your code here\n}"
+        },
+        {
+            "id": 1471,
+            "code_problem_id": 492,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n   static long bfs(int x) {\n   }\n}"
+        }
+    ]
+}

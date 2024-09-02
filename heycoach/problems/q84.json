@@ -1,0 +1,45 @@
+{
+    "id": 84,
+    "description": "Given an integer array of size **n**, find all elements that appear more than \u230a n/3 \u230b times. If there is no such element in the array print  '-1' (without quotes).\n\n#### Constriant: \n- 3<= n <= 5000\n- 1<= arr[i]<=100000\n\n#### Input Format: \n- first line contains single element n (the size of the array)\n- second line contains n elements\n\n#### Output Format:\n- print the output in single line space seperated",
+    "title": "Maximum Element I",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 63,
+            "code_problem_id": 84,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};"
+        },
+        {
+            "id": 68,
+            "code_problem_id": 84,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr) {\n  } \n}"
+        },
+        {
+            "id": 73,
+            "code_problem_id": 84,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass"
+        }
+    ]
+}

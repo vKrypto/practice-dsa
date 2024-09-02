@@ -1,0 +1,64 @@
+{
+    "id": 686,
+    "description": "                                                               Time limit: 1.00 s Memory limit: 512 MB\nThere is a large hotel, and n customers will arrive soon. Each customer wants to have a single room.\n\nYou know each customer's arrival and departure day. Two customers can stay in the same room if the departure day of the first customer is earlier than the arrival day of the second customer.\n\nWhat is the minimum number of rooms that are needed to accommodate all customers?\n\n### Input\n\nThe first input line contains an integer n: the number of customers.\n\nThen there are n lines, each of which describes one customer. Each line has two integers a and b: the arrival and departure day.\n\n### Output\n\nPrint first an integer k: the minimum number of rooms required.\n\n### Example 1 \n\n### Input\n```CPP\n3\n1 2\n2 4\n4 4\n``` \n### Output \n```CPP \n2\n``` \n\n\n\n\n### Constraints:\n\n* 1\u2264 n \u22642*10^5\n* 1\u2264 a \u2264 b \u226410^9\n\n\n",
+    "title": "Allotting room",
+    "default_testcase": {
+        "id": 4514,
+        "input": "10\n6 6\n5 5\n6 6\n10 10\n7 7\n10 10\n6 6\n8 8\n3 3\n9 9",
+        "expected_output": "3",
+        "code_problem_id": 686,
+        "created_at": "2024-01-28T01:12:10.321Z",
+        "updated_at": "2024-01-28T01:12:10.321Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2144,
+            "code_problem_id": 686,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    // Function to find the minimum number of platforms required\n    int roomsReq(vector<int> &arr, vector<int> &dep, int n) {\n\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2145,
+            "code_problem_id": 686,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    // Function to find the minimum number of platforms required\n    public int roomsReq(int[] arr, int[] dep, int n) {\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2146,
+            "code_problem_id": 686,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def rooms_req(self, arr, dep, n):\n\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2147,
+            "code_problem_id": 686,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    // Function to find the minimum number of platforms required\n    roomsReq(arr, dep, n) {\n\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

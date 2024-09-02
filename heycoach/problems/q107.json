@@ -1,0 +1,45 @@
+{
+    "id": 107,
+    "description": "The set [1, 2, 3, ..., n] contains a total of n! unique permutations.\n\nBy listing and labeling all of the permutations in order, we get the following sequence for n = 3:\n```CPP\n\"123\"\n\"132\"\n\"213\"\n\"231\"\n\"312\"\n\"321\"\n```\nGiven n and k, return the kth permutation sequence.\n### Example 1 \n\n### Input\n```CPP\nn = 3, k = 3\n``` \n### Output \n```CPP \n\"213\"\n``` \n\n\n\n### Example 2 \n\n### Input\n```CPP\nn = 4, k = 9\n``` \n### Output \n```CPP \n\"2314\"\n``` \n\n\n\n### Constraints:\n\n* 1 <= n <= 9\n* 1 <= k <= n!\n",
+    "title": "Sequencing",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 338,
+            "code_problem_id": 107,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(int n,int k) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 344,
+            "code_problem_id": 107,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(int n,int k) {\n        // your code here\n    }\n}\n\n"
+        },
+        {
+            "id": 350,
+            "code_problem_id": 107,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, n, k):\n        # your code here\n\n"
+        }
+    ]
+}

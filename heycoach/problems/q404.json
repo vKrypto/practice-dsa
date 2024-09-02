@@ -1,0 +1,57 @@
+{
+    "id": 404,
+    "description": "Create a Diamond pattern made of '#' character where the number of columns are half of that of number of rows. You are given an integer 'n' representing the number of rows for the Diamond pattern to be created.\n\nSample Input:\n\n3\n\nSample Output:\n\n\n&nbsp; &nbsp;&nbsp;&nbsp;# <br>\n&nbsp; &nbsp; # # <br>\n&nbsp; # # # <br>\n&nbsp; # # # <br>\n&nbsp; &nbsp; # # <br>\n &nbsp;&nbsp; &nbsp; &nbsp;# <br>\n\n\n\n\n\nConstraints:\n\n1 <= n <= 20",
+    "title": "Diamond Pattern",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 981,
+            "code_problem_id": 404,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n    DiamondPattern(n) {\n    //Write your code here and print the result\n  }\n}"
+        },
+        {
+            "id": 982,
+            "code_problem_id": 404,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def DiamondPattern(n):\n  #Write your code here and print the result"
+        },
+        {
+            "id": 983,
+            "code_problem_id": 404,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "void DiamondPattern(int n)  \n{  \n    //Write your code here\n}  "
+        },
+        {
+            "id": 984,
+            "code_problem_id": 404,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Main \n{  \n    static void DiamondPattern(int n) \n    { \n        //Write your code here\n    } \n} "
+        }
+    ]
+}

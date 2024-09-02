@@ -1,0 +1,64 @@
+{
+    "id": 302,
+    "description": "A thief wants to steal gifts from a shop where gifts are arranged in a linear order. The thief's safety mechanism triggers an alarm unless he steals a precise number of gifts quantified by value, not by count. The task is to determine the number of unique ways the thief can combine the gifts to achieve exactly `k` value without triggering the alarm.\n\n**`Objective:`**<br/>\n`Calculate the number of distinct combinations of gifts that sum up to exactly` `k`.\n\n**Constraints**:\n- `1 <= n <= 100` `where` `n` `is the number of gifts.`\n- `0 <= gifts[i] <= 1000` `where` `gifts[i]` `is the value of the` `i-th` `gift.`\n- `1 <= k <= 1000` `where` `k` `is the exact value of gifts the thief needs to steal to avoid triggering the alarm.`\n\n**`Input Format:`**\n``` \nThe input consists of three lines:\n  1. An integer n, the number of gifts.\n  2. An integer k, the exact total value of gifts the thief must steal.\n  3. A list of n integers, each representing the value of a gift.\n```\n**Output Format**:\n- `An integer representing the number of unique combinations of gifts that sum up to exactly` `k`.\n\n#### `Sample Inputs and Outputs:`\n\n#### Example 1:\n**Input**:\n```\n5 4\n1 2 1 2 3\n```\n\n**Output**:\n```\n3\n```\n\n**Explanation**:\n`There are three unique ways to achieve a total gift value of` `3`:\n- `Using the gifts with values` `[1, 2, 1]`\n- `Using the gifts with values` `[1, 3]`\n- `Using the gifts with values` `[2, 2]`\n\n#### `Note:`<br/>\n`The combination` `[2, 2]` `is counted as one unique way even though the values come from different positions in the array.`\n\n#### Example 2:\n**Input**:\n```\n3 2\n1 2 2\n```\n\n**Output**:\n```\n1\n```\n\n**Explanation**:<br/>\n`There is only one unique way to achieve a total gift value of `2` using the gift with value `[2]`. The gift value of `2` appears twice in the list but contributes to only one unique combination for the sum.`\n\n#### `Note:`\n\n- **`Uniqueness:`** `Each combination should be counted once, irrespective of the permutation of the values or if the same value appears multiple times in the gift list.`\n- **`Combination, not Permutation:`** `The order in which gifts are selected does not matter; only the sum is important.`\n\n",
+    "title": "Stolen Gifts",
+    "default_testcase": {
+        "id": 7617,
+        "input": "10 5\n1 2 3 4 5 6 7 8 9 10",
+        "expected_output": "3\n",
+        "code_problem_id": 302,
+        "created_at": "2024-04-29T10:38:17.071Z",
+        "updated_at": "2024-04-29T10:38:17.071Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 741,
+            "code_problem_id": 302,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\n  param : {Array} ar, {Number} n (size of array), {Number} k (Target Value)\n*/\n\nclass Solution {\n    solve(ar, n, k) {\n      //Write your code here;",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 742,
+            "code_problem_id": 302,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "# n is size of ar and k is the target value\n\nclass Solution:\n    def solve(self, ar, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 743,
+            "code_problem_id": 302,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int[] ar, int n, int k) {\n        //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 744,
+            "code_problem_id": 302,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int*ar, int n, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

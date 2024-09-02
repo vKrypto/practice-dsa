@@ -1,0 +1,64 @@
+{
+    "id": 941,
+    "description": "As the ruler of a kingdom, you have an army of wizards at your command. \n\nYou are given a 0-indexed integer array strength of length n , where strength[i] denotes the strength of the ith wizard. For a contiguous group of wizards (i.e. the wizards' strengths form a subarray of strength), the total strength is defined as the product of the following two values: \n\nThe strength of the weakest wizard in the group. \nThe total of all the individual strengths of the wizards in the group. \n\nReturn the sum of the total strengths of all contiguous groups of wizards. Since the answer may be very large, return it modulo 10^9 + 7. \n\nA subarray is a contiguous non-empty sequence of elements within an array.\n\n\n**Example 1:**\n```\nInput: n = 4, strength = [1,3,1,2] \n\nOutput: 44 \n\nExplanation: \n\nThe following are all the contiguous groups of wizards:\n\n- [1] from [1,3,1,2] has a total strength of min([1]) * sum([1]) = 1 * 1 = 1 \n- [3] from [1,3,1,2] has a total strength of min([3]) * sum([3]) = 3 * 3 = 9 \n- [1] from [1,3,1,2] has a total strength of min([1]) * sum([1]) = 1 * 1 = 1 \n- [2] from [1,3,1,2] has a total strength of min([2]) * sum([2]) = 2 * 2 = 4 \n- [1,3] from [1,3,1,2] has a total strength of min([1,3]) * sum([1,3]) = 1 * 4 = 4 \n- [3,1] from [1,3,1,2] has a total strength of min([3,1]) * sum([3,1]) = 1 * 4 = 4 \n- [1,2] from [1,3,1,2] has a total strength of min([1,2]) * sum([1,2]) = 1 * 3 = 3 \n- [1,3,1] from [1,3,1,2] has a total strength of min([1,3,1]) * sum([1,3,1]) = 1 * 5 = 5 \n- [3,1,2] from [1,3,1,2] has a total strength of min([3,1,2]) * sum([3,1,2]) = 1 * 6 = 6\n- [1,3,1,2] from [1,3,1,2] has a total strength of min([1,3,1,2]) * sum([1,3,1,2]) = 1 * 7 = 7 \n\nThe sum of all the total strengths is 1 + 9 + 1 + 4 + 4 + 4 + 3 + 5 + 6 + 7 = 44. \n```\n\n**Example 2:**\n\n ```\nInput: n = 3, strength = [5,4,6] \n\nOutput: 213\n\nExplanation: \n\nThe following are all the contiguous groups of wizards: \n- [5] from [5,4,6] has a total strength of min([5]) * sum([5]) = 5 * 5 = 25 \n- [4] from [5,4,6] has a total strength of min([4]) * sum([4]) = 4 * 4 = 16 \n- [6] from [5,4,6] has a total strength of min([6]) * sum([6]) = 6 * 6 = 36 \n- [5,4] from [5,4,6] has a total strength of min([5,4]) * sum([5,4]) = 4 * 9 = 36 \n- [4,6] from [5,4,6] has a total strength of min([4,6]) * sum([4,6]) = 4 * 10 = 40 \n- [5,4,6] from [5,4,6] has a total strength of min([5,4,6]) * sum([5,4,6]) = 4 * 15 = 60 \n\nThe sum of all the total strengths is 25 + 16 + 36 + 36 + 40 + 60 = 213. \n```\n\n**Input Format**:\n```\nThe first line contains an integer n \u2014 the number of elements in the array strength.\nThe second line contains n space-separated integers \u2014 the elements of the array strength.\n```\n**Output Format:**\n```\nPrint a single integer \u2014 the sum of the total strengths of all contiguous groups of wizards modulo 109 + 7. \n```\n\n\n**Constraints:** \n\n`1 <= n <= 10^5`\n\n`1 <= strength[i] <= 10^9`\n\n\n",
+    "title": "Sum of Total Power",
+    "default_testcase": {
+        "id": 8257,
+        "input": "4\n1 3 1 2",
+        "expected_output": "44\n",
+        "code_problem_id": 941,
+        "created_at": "2024-05-24T13:19:10.387Z",
+        "updated_at": "2024-05-24T13:19:10.387Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3132,
+            "code_problem_id": 941,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution {\npublic:\n    int totalStrength(int n, vector<int>& strength) {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3133,
+            "code_problem_id": 941,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int totalStrength(int n, int[] strength) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3134,
+            "code_problem_id": 941,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def totalStrength(self, n, strength):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3135,
+            "code_problem_id": 941,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    totalStrength(n, strength) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

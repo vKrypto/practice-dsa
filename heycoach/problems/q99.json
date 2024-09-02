@@ -1,0 +1,40 @@
+{
+    "id": 99,
+    "description": "\nThe task is to count all the possible paths from top left to bottom right of a **m** X **n** matrix with the constraints that from each cell you can either move **only to right or down**. i.e. if you are at the cell (i,j) then you can either move to cell(i+1,j) or cell(i,j+1)  given that they are within the bound of the grid. Also, you cannot move to the cell which has blockage. A cell in the given grid has a value `-1` if it is a **blockage** else `0`. \n**Note**:The answer may be very large, compute the `answer modulo 10^9 + 7`.\n\n### Example 1 \n\n### Input\n```CPP \nm = 3, n = 3\n0 0 0 \n0 -1 0 \n0 0 0\n``` \n### Output \n```CPP \n2\n``` \n#### Explanation:\nthere are two ways to reach the bottom right corner :\n* (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)\n* (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)\n\n### Example 2 \n\n### Input\n```CPP\nm = 2,n = 2\n0 0\n0 0\n```\n### Output \n```CPP \n2\n``` \n#### Explanation:\nThere are two possible paths to reach (1, 1) from (0, 0) : \n   *  (0, 0) -> (0, 1) -> (1, 1)\n    * (0, 0) -> (1, 0) -> (1, 1)\n\n\n### Constraints:\n\n* 1 <= m,n <= 100\n* grid[i][j] == 0 or grid[i][j] == -1\n\n",
+    "title": "Number of paths in a grid 2",
+    "default_testcase": {
+        "id": 730,
+        "input": "3 3\n0 0 0 \n0 -1 0 \n0 0 0",
+        "expected_output": "2\n",
+        "code_problem_id": 99,
+        "created_at": "2022-10-04T11:56:05.004Z",
+        "updated_at": "2022-10-04T11:56:05.004Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 193,
+            "code_problem_id": 99,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int gridObstacles(int m, int n, vector< vector< int> > &mat) {\n      // write your code here\n    }\n};\n"
+        },
+        {
+            "id": 502,
+            "code_problem_id": 99,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {    \n    int gridObstacles(int m, int n, List<List<Integer>> mat) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

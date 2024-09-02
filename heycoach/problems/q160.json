@@ -1,0 +1,28 @@
+{
+    "id": 160,
+    "description": "Given an `m x n`  `matrix`, return _all elements of the_  `matrix`  _in spiral order_\n\n### Example 1 \n[![spiral-matrix-1.png](https://i.postimg.cc/1RVdB8Hx/spiral-matrix-1.png)](https://postimg.cc/6Twz55gz)\n\n### Input\n```CPP\nmatrix = [[1,2,3],[4,5,6],[7,8,9]]\n```\n\n\n### Output \n```CPP\n[1,2,3,6,9,8,7,4,5]\n```\n\n\n**Example 2:**\n[![spiral-matrix-2.png](https://i.postimg.cc/4d694bGk/spiral-matrix-2.png)](https://postimg.cc/BLv6MFtM)\n\n**Input:**\n```CPP\nmatrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]\n```\n**Output:** \n```CPP\n[1,2,3,4,8,12,11,10,9,5,6,7]\n```\n\n\n### Constraints:\n-   `m == matrix.length`\n-   `n == matrix[i].length`\n-   `1 <= m, n <= 100`\n-   `-1000 <= matrix[i][j] <= 1000`\n",
+    "title": "Spiral traversal of a matrix",
+    "default_testcase": {
+        "id": 1154,
+        "input": "3 4\n1 2 3 4\n5 6 7 8\n9 10 11 12",
+        "expected_output": "1 2 3 4 8 12 11 10 9 5 6 7 ",
+        "code_problem_id": 160,
+        "created_at": "2022-10-22T18:16:23.461Z",
+        "updated_at": "2022-10-22T18:16:23.461Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 212,
+            "code_problem_id": 160,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> spiralOrder(vector<vector<int>>& matrix) {\n      // write your code here\n    }\n};"
+        }
+    ]
+}

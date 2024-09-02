@@ -1,0 +1,64 @@
+{
+    "id": 860,
+    "description": "There are n boys and m girls attending a theatre club. To set a play they need to choose a group containing exactly t actors containing no less than 4 boys and no less than 1 girl. How many ways are there to choose a group? Of course, the variants that only differ in the composition of the troupe are considered different.\n\n#### `Input:`\n\n- `The only line of the input data contains three integers n, m, t (4\u2009\u2264\u2009n\u2009\u2264\u200930,\u20091\u2009\u2264\u2009m\u2009\u2264\u200930,\u20095\u2009\u2264\u2009t\u2009\u2264\u2009n\u2009+\u2009m).`\n\n#### `Output:`\n\n- `Find the required number of ways.`\n\n#### `Sample input and output:1`\n\n#### `Input:`\n```\n5 2 5\n```\n#### `Output:`\n```\n10\n```\n\n#### `Sample Input and output:2`\n\n#### `Input:`\n```\n4 3 5\n```\n#### `Output:`\n```\n3\n```\n",
+    "title": "Total Groups",
+    "default_testcase": {
+        "id": 7610,
+        "input": "4 3 5",
+        "expected_output": "3\n",
+        "code_problem_id": 860,
+        "created_at": "2024-04-28T18:46:57.473Z",
+        "updated_at": "2024-04-28T18:46:57.473Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2836,
+            "code_problem_id": 860,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    long long int totalgroup(int n, int m, int tot){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2837,
+            "code_problem_id": 860,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long totalGroup(int n, int m, int tot) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2838,
+            "code_problem_id": 860,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def total_group(self, n, m, tot):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2839,
+            "code_problem_id": 860,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    totalGroup(n, m, tot) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

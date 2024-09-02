@@ -1,0 +1,64 @@
+{
+    "id": 982,
+    "description": "You are given two words, beginWord and endWord, and a dictionary wordList containing a list of distinct words. Your goal is to find the length of the shortest transformation sequence from beginWord to endWord, such that:\n\nOnly one letter can be changed at a time.</br>\nEach transformed word must exist in the word list.</br>\nYou can assume that beginWord and endWord are not empty and are of the same length. beginWord and endWord are also distinct.\n\n**Input:**</br>\nbeginWord: A string representing the starting word.</br>\nendWord: A string representing the target word.</br>\nwordList: A list of strings representing the dictionary of words.\n\n**Output:**</br>\nAn integer representing the length of the shortest transformation sequence from beginWord to endWord, or 0 if no such transformation sequence exists.\n\n**Example**:\n\n**Input**:\n```\nbeginWord = \"hit\"\nendWord = \"cog\"\nwordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\n```\nOutput:\n```\n5\n```\nExplanation:\nOne shortest transformation sequence is:\n```\n\"hit\" -> \"hot\" -> \"dot\" -> \"dog\" -> \"cog\"\n```\nThe length of the transformation sequence is 5, since we need to change hit to cog with 5 intermediate steps.\n\n**Constraint:**</br>\nAll words have the same length.</br>\nAll words contain only lowercase alphabetic characters (a-z).",
+    "title": "Word Ladder Transformation",
+    "default_testcase": {
+        "id": 8619,
+        "input": "hit\ncog\nhot dot dog lot log cog",
+        "expected_output": "5\n",
+        "code_problem_id": 982,
+        "created_at": "2024-06-17T15:35:37.952Z",
+        "updated_at": "2024-06-17T15:35:37.952Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3284,
+            "code_problem_id": 982,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {\n       \n    ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3285,
+            "code_problem_id": 982,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int ladderLength(String beginWord, String endWord, List<String> wordList) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3286,
+            "code_problem_id": 982,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    ladderLength(beginWord, endWord, wordList) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3287,
+            "code_problem_id": 982,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 434,
+    "description": "Given equations in the form of a/b = k, where a and b are variables and k is a constant, evaluate queries of the form c/d and determine if they can be evaluated using the given equations.</br>\nYou are given a list of equations of fractions along with their values and queries. Your task is to evaluate the queries based on the given equations and return the results. If a query cannot be evaluated, return `-1.0` as its result.\n\n#### `Input Format:`\n\n- **First Line**: `Two integers `n` and `q`, separated by a space, where `n` is the number of equations and `q` is the number of queries.`\n- **Next `n` Lines**: `Each line contains two strings `a` and `b` representing an equation` `a/b`.\n- **Following Line**: `n` `floating-point numbers representing the values of the given `n` equations.`\n- **Next `q` Lines**: `Each line contains two strings `c` and `d` representing a query` `c/d`.\n\n#### `Output Format:`\n\n- `A list of floating-point numbers representing the answers to the given queries. If a query cannot be evaluated, its result is `-1.0`.`\n\n#### `Examples:`\n\n**`Input:`**\n```\n2 5\na b\nb c\n2.0 3.0\na c\nb a\na e\na a\nx x\n```\n\n**Output:**\n```\n[6.00000,0.50000,-1.00000,1.00000,-1.00000]\n```\n\n#### `Explanation:`\n\n- `Given equations are` `a/b = 2.0` and `b/c = 3.0`.\n- `For the query `a/c`, we can evaluate as` `a/b * b/c = 2.0 * 3.0 = 6.0`.\n- `For `b/a`, it's the inverse of `a/b`, so 1/2.0 = 0.5.`\n- `The query `a/e` cannot be evaluated since there's no information about `e`, resulting in  -1.0.`\n- `For` `a/a`, `any variable divided by itself is  1.0.`\n- `Since `x` is not in the equations, `x/x` also cannot be evaluated, resulting in `-1.0`.`\n\n#### `Constraints:`\n\n- `1 <= n <= 20`\n- `1 <= q <= 100`\n- `Equation forms: \"a/b = k\" where 1 <= |a|, |b| <= 5`.\n- `Each query is of the form \"c/d\" where 1 <= |c|, |d| <= 5`.\n",
+    "title": "Evaluate Division",
+    "default_testcase": {
+        "id": 7388,
+        "input": "3 4\na b\nb c\nbc cd\n1.5\n2.5\n5.0\na c\nc b\nbc cd\ncd bc",
+        "expected_output": "[ 3.75000,0.40000,5.00000,0.20000 ]\n",
+        "code_problem_id": 434,
+        "created_at": "2024-04-26T09:18:35.653Z",
+        "updated_at": "2024-04-26T09:18:35.653Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1223,
+            "code_problem_id": 434,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1224,
+            "code_problem_id": 434,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   public double[] calcEquation(List<List<String>> equations, List<Double> values, List<List<String>> queries) {\n     //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1225,
+            "code_problem_id": 434,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:\n        #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1226,
+            "code_problem_id": 434,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    calcEquation(equations, values, queries) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 882,
+    "description": "Monocarp wants to throw a party. He has n friends, and he wants to have at least 2 of them at his party.<br/>\nThe i-th friend's best friend is pi. All pi are distinct, and for every i\u2208[1,n], pi\u2260i. Monocarp can send invitations to friends. The i-th friend comes to the party if both the i-th friend and the pi-th friend receive an invitation (note that the pi-th friend doesn't have to actually come to the party). Each invitation is sent to exactly one of the friends For example, if p=[3,1,2,5,4], and Monocarp sends invitations to the friends [1,2,4,5], then the friends [2,4,5] will come to the party. The friend 1 won't come since his best friend didn't receive an invitation; the friend 3 won't come since he didn't receive an invitation.<br/>\nCalculate the minimum number of invitations Monocarp has to send so that at least 2 friends come to the party.\n\n**Input format:**  \n- `The first line contains one integer t (1\u2264t\u22645000) \u2014 the number of test cases.`\n- `Each test case consists of two lines:`  \n`the first line contains one integer n (2\u2264n\u226450) \u2014 the number of friends the second line contains n integers p1,p2,\u2026,pn (1\u2264pi\u2264n ; pi\u2260i ; all pi are distinct).`\n\n**Output format:**  \n- `Print one integer \u2014 the minimum number of invitations Monocarp has to send.`\n\n**Example:**  \n**Sample Input**\n```\n5\n3 1 2 5 4\n```\n**Sample Output**\n\n```\n2\n```\n**Sample Input**\n\n```\n4\n2 3 4 1\n```\n**Sample Output**\n\n```\n3\n```",
+    "title": "Two Friends",
+    "default_testcase": {
+        "id": 7798,
+        "input": "4\n2 3 4 1",
+        "expected_output": "3\n",
+        "code_problem_id": 882,
+        "created_at": "2024-05-08T11:47:27.637Z",
+        "updated_at": "2024-05-08T11:47:27.637Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2918,
+            "code_problem_id": 882,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n   void f(int n, vector<int>& a) {\n     //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2919,
+            "code_problem_id": 882,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void f(int n, int[] a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2920,
+            "code_problem_id": 882,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def f(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2921,
+            "code_problem_id": 882,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    f(n, a) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

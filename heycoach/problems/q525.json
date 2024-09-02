@@ -1,0 +1,57 @@
+{
+    "id": 525,
+    "description": "In the classroom, the teacher provided Sammy with two Binary Trees. Each Node in the first binary tree corresponds to a Node in the second tree, with the exception of one Node which is different, referred to as the \"Odd One Out.\" Sammy is now seeking assistance in determining the data stored in this Odd One Out Node. Please help Sammy find this information.\n\nPlease note that when we say \"identical node,\" we mean that the value stored in the node is the same. It's also possible that all nodes in the trees have the same values\n\nSample Input:\n1\n1 N 2 3\n1 3 N 2 4\n\nSample Output:\n4\n\nExplaination:\nComparing both trees we can find 4 is node which is presested in 2nd tree but not in 1st.",
+    "title": "Odd Node ",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1555,
+            "code_problem_id": 525,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n    public:\n    int oddNodeOut(Node* root1, Node* root2){\n    }\n};\n\n"
+        },
+        {
+            "id": 1556,
+            "code_problem_id": 525,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public Node buildTree(String str) {\n        if (str.length() == 0 || str.charAt(0) == 'N') {\n            return null;\n        }\n        String[] ip = str.split(\"\\\\s+\");\n        Node root = new Node(Integer.parseInt(ip[0]));\n        Queue<Node> queue = new LinkedList<>();\n        queue.add(root);\n        int i = 1;\n        while (!queue.isEmpty() && i < ip.length) {\n            Node currNode = queue.poll();\n            String currVal = ip[i++];\n            if (!currVal.equals(\"N\")) {\n                currNode.left = new Node(Integer.parseInt(currVal));\n                queue.add(currNode.left);\n            }\n            if (i >= ip.length) {\n                break;\n            }\n            currVal = ip[i++];\n            if (!currVal.equals(\"N\")) {\n                currNode.right = new Node(Integer.parseInt(currVal));\n                queue.add(currNode.right);\n            }\n        }\n        return root;\n    }\n\n    public int oddNodeOut(Node root1, Node root2) {\n      \n    }\n\n}\n"
+        },
+        {
+            "id": 1557,
+            "code_problem_id": 525,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def build_tree(self, s):\n        if not s or s[0] == 'N':\n            return None\n        ip = s.split()\n        root = Node(int(ip[0]))\n        queue = deque([root])\n        i = 1\n        while queue and i < len(ip):\n            curr_node = queue.popleft()\n            curr_val = ip[i]\n            if curr_val != 'N':\n                curr_node.left = Node(int(curr_val))\n                queue.append(curr_node.left)\n            i += 1\n            if i >= len(ip):\n                break\n            curr_val = ip[i]\n            if curr_val != 'N':\n                curr_node.right = Node(int(curr_val))\n                queue.append(curr_node.right)\n            i += 1\n        return root\n\n    def odd_node_out(self, root1, root2):\n"
+        },
+        {
+            "id": 1558,
+            "code_problem_id": 525,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    buildTree(str) {\n        if (!str || str[0] === 'N') {\n            return null;\n        }\n        const ip = str.split(' ');\n        const root = new Node(parseInt(ip[0]));\n        const queue = [root];\n        let i = 1;\n        while (queue.length && i < ip.length) {\n            const currNode = queue.shift();\n            const currVal = ip[i++];\n            if (currVal !== 'N') {\n                currNode.left = new Node(parseInt(currVal));\n                queue.push(currNode.left);\n            }\n            if (i >= ip.length) {\n                break;\n            }\n            const nextVal = ip[i++];\n            if (nextVal !== 'N') {\n                currNode.right = new Node(parseInt(nextVal));\n                queue.push(currNode.right);\n            }\n        }\n        return root;\n    }\n\n\n\n    oddNodeOut(root1, root2) {\n\n    }\n}\n"
+        }
+    ]
+}

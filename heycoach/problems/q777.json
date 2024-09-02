@@ -1,0 +1,64 @@
+{
+    "id": 777,
+    "description": "\nWrite a program that finds and prints the k  largest elements in a given array. \nThe program should output the largest elements in descending order.\n\n#### `Input Format:`\n\n`The input consists of two lines:`\n- `The first line contains an integer n , representing the size of the array (1 <=n<=10^5 ).`\n- `The second line contains n  space-separated integers, representing the elements of the array.`\n-  `The third line contains an integer 'k', representing the number of largest elements to find.`\n\n#### `Output Format:`\n\n`The program should output the k largest elements of the array in descending order, separated by a space.`\n\n#### `Constraints:`\n\n- `1 <=k <= n`\n- `Elements of the array are integers within the range [-10^9, 10^9]`\n\n#### `Example:`\n\n##### `Input:`\n\n```\n7\n1 4 17 7 25 3 100\n3\n```\n\n##### `Output:`\n\n```\n100 25 17\n```\n\n#### `Explanation:`\n\n`The original array is [1, 4, 17, 7, 25, 3, 100]. The 3 largest elements of the array are 100, 25, and 17, which are printed in descending order.`",
+    "title": "K Largest Elements",
+    "default_testcase": {
+        "id": 6895,
+        "input": "8\n1 3 5 7 9 11 13 15\n4",
+        "expected_output": "15 13 11 9 ",
+        "code_problem_id": 777,
+        "created_at": "2024-03-24T02:12:29.477Z",
+        "updated_at": "2024-03-24T02:12:29.477Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2531,
+            "code_problem_id": 777,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void findKLargestElements() {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2532,
+            "code_problem_id": 777,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void findKLargestElements() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2533,
+            "code_problem_id": 777,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_k_largest_elements():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2534,
+            "code_problem_id": 777,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findKLargestElements(arr, k) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

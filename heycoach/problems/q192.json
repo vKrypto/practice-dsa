@@ -1,0 +1,52 @@
+{
+    "id": 192,
+    "description": "Given an array **arr** of size **N** having elements, the task is to find the next greater element for each element of the array in order of their appearance in the array.  \nNext greater element of an element in the array is the nearest element on the right which is greater than the current element.  \nIf there does not exist next greater of current element, then next greater element for current element is -1. For example, next greater of the last element is always -1\n### Example 1 \n\n### Input\n```CPP\nN = 4, arr = [1 3 2 4]\n```\n### Output \n```CPP\n[3,4,4,-1]\n```\n### Explanation\nIn the array, the next larger element to 1 is 3 , 3 is 4 , 2 is 4 and for 4 there doesn't exist, any greater element than 4 on its right so it is -1.\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 5, arr = [6,8,0,1,3]\n```\n**Output:** \n```CPP\n[8,-1,1,3,-1]\n```\n### Explanation\nIn the array, the next larger element to 6 is 8, for 8 there is no larger elements hence it is -1, for 0 it is 1 , for 1 it is 3 and then for 3 there is no larger element on right and hence -1.\n\n### Constraints:\n-   `1 <= N <= 10000`\n-   `1 <= A[i] <= 100000`\n",
+    "title": "Next greater element",
+    "default_testcase": {
+        "id": 1401,
+        "input": "5\n6 8 0 1 3",
+        "expected_output": "8 -1 1 3 -1 ",
+        "code_problem_id": 192,
+        "created_at": "2022-10-29T12:21:39.895Z",
+        "updated_at": "2022-10-29T12:21:39.895Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 256,
+            "code_problem_id": 192,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<long long> nextLargerElement(vector<long long> arr, int n) {\n      // write your code here\n    }\n};\n"
+        },
+        {
+            "id": 422,
+            "code_problem_id": 192,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n\t\n  } \n}\n"
+        },
+        {
+            "id": 429,
+            "code_problem_id": 192,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 536,
+    "description": "Sammy is a lazy person. His Mother has told him to bring some vegetables from a shop present in the society where he lives. The Society is of the form of a Binary Tree All the vegetable shops are present at the leaf Nodes of the Binary Tree, and all the edges of the Binary Tree are regarded as roads of the society. Sammy being lazy wants you to find out the shortest distance that he has to travel to get to any of the vegetable shops. Sammy\u2019s house is placed at the root node of the Binary tree.\n\n```\nInput:  \nt, number of test cases  \ns, string form of input of binary tree\n \nOutput:  \nprint minimum distance from root to leaf nodes.\n\nSample Input:  \n1  \n1 2 3\n \nSample Output:  \n1\n```\n\n```\nExplanation:\n2 and 3 are leaf nodes with distances 1 and 1 so 1 is minimum distance for root.\n```\n",
+    "title": "Shortest Path from root",
+    "default_testcase": {
+        "id": 3585,
+        "input": "1\n1 2 N 3 N 4 5",
+        "expected_output": "3\n",
+        "code_problem_id": 536,
+        "created_at": "2024-01-06T08:27:29.352Z",
+        "updated_at": "2024-01-06T08:27:29.352Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1598,
+            "code_problem_id": 536,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution{\n  public:\n    /*You are required to complete this method*/\n    int minDepth(Node *root) {\n        // Your code here\n\n    }\n};\n\n"
+        },
+        {
+            "id": 1599,
+            "code_problem_id": 536,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n\tint minDepth(Node root)\n\t{\n\t    //code here\n\n\t}\n}\n\n"
+        },
+        {
+            "id": 1600,
+            "code_problem_id": 536,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution:\n    def minDepth(self, root):\n\n\n"
+        }
+    ]
+}

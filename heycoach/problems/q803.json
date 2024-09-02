@@ -1,0 +1,64 @@
+{
+    "id": 803,
+    "description": "Description:\n\nSince Aman was exceptionally good last year, on New Year's Eve, he was visited by Santa Claus, who brought an enormous bag of gifts with him! The bag contains n sweet candies from the beloved bakery, each labeled from 1 to n corresponding to its tastiness. Notably, no two candies share the same tastiness.\nThe selection of candies has a profound impact on Aman's joy. One might assume that he should choose the most delicious ones \u2014 but no, the holiday magic turns things around. It is the xor-sum of the tastinesses that matters, rather than the ordinary sum!\nThe xor-sum of a sequence of integers a1,a2,..,am\u200b is defined as the bitwise XOR of all its elements: a1 XOR a2 XOR a3 XOR\u200b\u2026..XOR am, where XOR denotes the bitwise XOR operation.\nSanta Claus asked Aman that he has more houses to visit, so Aman can take no more k candies from the bag. Assist Aman in determining the largest xor-sum (which leads to maximum happiness!) he can achieve.\n\nInput Format:\n\nThe first and only line contains two integers 'n' and 'k' where n denotes the sequence of numbers from 1 to n and k represents the number of candies that aman can take.\n\nOutput Format:\n\nReturn a single integer denoting the largest xor-sum that aman can achieve.\n\nSample Input:\n\n4 3\n \nSample Output:\n\n7\n \nExplanation:\n\nWe have the sequence as 1 2 3 4 and can take upto 3 elements from it. In order to maximize the taste we can take 1, 2 and 3 whose XOR sum would be equal to 7 which turns out to be the maximum.\n\nConstraints:\n\n1<=k<=n<=10^18",
+    "title": "Santa's Visit",
+    "default_testcase": {
+        "id": 7348,
+        "input": "1000000 99999",
+        "expected_output": "1048575\n",
+        "code_problem_id": 803,
+        "created_at": "2024-04-23T13:08:58.123Z",
+        "updated_at": "2024-04-23T13:08:58.123Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2629,
+            "code_problem_id": 803,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n\tpublic:\n\tint solve(int n, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2630,
+            "code_problem_id": 803,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2631,
+            "code_problem_id": 803,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n: int, k: int) -> int:\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2632,
+            "code_problem_id": 803,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int n, int k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

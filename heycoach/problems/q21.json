@@ -1,0 +1,64 @@
+{
+    "id": 21,
+    "description": "A string is called a `LPS` if is a non-empty prefix which is also a suffix (excluding itself).\n\nGiven a string s, return the  longest `LPS` of s. Return an empty string \"\" if no such prefix exists.\n\n### Example 1 \n\n### Input\n```CPP\ns = \"level\"\n``` \n### Output \n```CPP \n\"l\"\n``` \n#### Explanation:\n s contains 4 prefix excluding itself (\"l\", \"le\", \"lev\", \"leve\"), and suffix (\"l\", \"el\", \"vel\", \"evel\"). The largest prefix which is also suffix is given by \"l\".\n\n\n### Example 2 \n\n### Input\n```CPP\ns = \"ababab\"\n``` \n### Output \n```CPP \n\"abab\"\n``` \n#### Explanation:\n \"abab\" is the largest prefix which is also suffix. They can overlap in the original string.\n\n\n### Constraints:\n\n* 1 <= s.length <= 10^5\n* s contains only lowercase English letters.\n",
+    "title": "LPS",
+    "default_testcase": {
+        "id": 120,
+        "input": "abcdefghabcdefgh",
+        "expected_output": "abcdefgh",
+        "code_problem_id": 21,
+        "created_at": "2022-09-25T15:10:54.919Z",
+        "updated_at": "2022-09-25T15:10:54.919Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 303,
+            "code_problem_id": 21,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    string longestPrefix(string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 307,
+            "code_problem_id": 21,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String longestPrefix(String s) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 311,
+            "code_problem_id": 21,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def longestPrefix(self, s):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 646,
+            "code_problem_id": 21,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    longestPrefix(s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

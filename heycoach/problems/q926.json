@@ -1,0 +1,57 @@
+{
+    "id": 926,
+    "description": "We are given an integer array asteroids of size N representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.\nFind out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are of same size, both will explode. Two asteroids moving in the same direction will never meet.\n\n```\nSample Input 1:\n\nN = 3\n\nasteroids[ ] = [3, 5, -3]\n\nOutput: [3, 5]\n\nExplanation: The asteroid 5 and -3 collide resulting in 5. The 5 and 3 never collide.\n```\n\n```\nSample Input 2:\n\nN = 2\n\nasteroids[ ] = [10, -10]\n\nOutput: []\n```\n\nConstraints:\n\n`1 \u2264 N \u2264 105`\n\n`-1000 \u2264 asteroids[i]  \u2264 1000`\n\n`asteroids[i]!=0`\n",
+    "title": "Collisions",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3076,
+            "code_problem_id": 926,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution \n{\n  public:\n    vector<int> asteroidCollision(int n, vector<int> &arr) \n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3078,
+            "code_problem_id": 926,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int[] asteroidCollision(int n, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3079,
+            "code_problem_id": 926,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def asteroid_collision(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3080,
+            "code_problem_id": 926,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    asteroidCollision(n, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

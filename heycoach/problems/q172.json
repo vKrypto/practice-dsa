@@ -1,0 +1,28 @@
+{
+    "id": 172,
+    "description": "\nGiven an array `nums` of `n` integers, are there elements `a, b, c, and d` in `nums` such that `a + b + c + d = target`? Find all unique quadruplets in the array which gives the sum of target.\n\n **Note:**\n \n -   Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a \u2264 b \u2264 c \u2264 d)\n -   The solution set must not contain duplicate quadruplets.\n\nAlso make sure that the solution set is lexicographically sorted.  \n\n### Example 1 \n\n### Input\n```CPP\nnums = [1,0,-1,0,-2,2],target = 0\n```\n\n\n### Output \n```CPP\n[[-2, -1, 1, 2],[-2,  0, 0, 2],[-1,  0, 0, 1]]\n```\n### Explanation\n\nthe above quadruplets sums up to the target and are unique. Also noticed that [-2,-1,1,2] is coming before [-2,0,0,2] because it is lexicographically smaller than [-2,0,0,2] and quadruplets themselves are also sorted in non-decreasing order.\n\n**Example 2:**\n\n**Input:**\n```CPP\nnums = [1,3,5,2,6,10], target = 4\n```\n**Output:** \n```CPP\n[]\n```\n### Explanation\nThere are no quadruplets that sums up to 4.\n\n\n### Constraints:\n* `1 <= n <= 50`\n\n* `-200 <= nums[i],target <= 200`\n",
+    "title": "Quadruplet sum",
+    "default_testcase": {
+        "id": 1225,
+        "input": "6 0\n1 0 -1 0 -2 2",
+        "expected_output": "-2 -1 1 2 \n-2 0 0 2 \n-1 0 0 1 \n",
+        "code_problem_id": 172,
+        "created_at": "2022-10-25T05:38:33.620Z",
+        "updated_at": "2022-10-25T05:38:33.620Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 244,
+            "code_problem_id": 172,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<vector<int>> fourSum(vector<int>& nums, int target) {\n      // write your code here\n    }\n};"
+        }
+    ]
+}

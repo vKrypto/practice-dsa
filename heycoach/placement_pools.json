@@ -1,0 +1,837 @@
+[
+    {
+        "id": 1,
+        "enrollment_id": 1497,
+        "status": "active",
+        "created_at": "2024-01-17T08:10:51.918Z",
+        "updated_at": "2024-01-17T08:10:51.918Z",
+        "enrollment": {
+            "id": 1497,
+            "program_access": "disabled",
+            "enrollments_levels": [],
+            "user": {
+                "id": 204,
+                "name": "anvay bhat",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 76,
+                "name": "Super - 30 January 2024",
+                "internal_name": "Super - 30 January 2024 - Batch B",
+                "created_at": "2023-12-27T05:37:20.512Z",
+                "updated_at": "2024-02-02T13:36:12.166Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 2,
+        "enrollment_id": 1503,
+        "status": "active",
+        "created_at": "2024-01-29T09:51:10.324Z",
+        "updated_at": "2024-01-29T09:51:10.324Z",
+        "enrollment": {
+            "id": 1503,
+            "program_access": "disabled",
+            "enrollments_levels": [],
+            "user": {
+                "id": 2175,
+                "name": "Rohith",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 74,
+                "name": "Super - 30 January 2024",
+                "internal_name": "Super - 30 January 2024 - Batch A",
+                "created_at": "2023-11-25T15:07:14.075Z",
+                "updated_at": "2024-02-02T09:04:41.665Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 3,
+        "enrollment_id": 205,
+        "status": "active",
+        "created_at": "2024-02-08T09:07:04.853Z",
+        "updated_at": "2024-02-08T09:07:04.853Z",
+        "enrollment": {
+            "id": 205,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 130,
+                    "unlocked_on": "2022-12-19T16:30:00.000Z",
+                    "enrollment_id": 205,
+                    "level_id": 1,
+                    "created_at": "2022-12-21T07:39:11.220Z",
+                    "updated_at": "2022-12-21T07:39:11.220Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 147,
+                    "unlocked_on": "2022-12-19T16:48:00.000Z",
+                    "enrollment_id": 205,
+                    "level_id": 3,
+                    "created_at": "2023-01-03T16:48:24.276Z",
+                    "updated_at": "2023-01-03T16:48:24.276Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 146,
+                "name": "DAKSH BHARDWAJ",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 19,
+                "name": "Super-30 November 2022",
+                "internal_name": "Super-30 November 2022",
+                "created_at": "2022-11-30T06:36:04.609Z",
+                "updated_at": "2022-12-10T12:59:56.578Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 4,
+        "enrollment_id": 205,
+        "status": "active",
+        "created_at": "2024-02-08T09:07:28.410Z",
+        "updated_at": "2024-02-08T09:07:28.410Z",
+        "enrollment": {
+            "id": 205,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 130,
+                    "unlocked_on": "2022-12-19T16:30:00.000Z",
+                    "enrollment_id": 205,
+                    "level_id": 1,
+                    "created_at": "2022-12-21T07:39:11.220Z",
+                    "updated_at": "2022-12-21T07:39:11.220Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 147,
+                    "unlocked_on": "2022-12-19T16:48:00.000Z",
+                    "enrollment_id": 205,
+                    "level_id": 3,
+                    "created_at": "2023-01-03T16:48:24.276Z",
+                    "updated_at": "2023-01-03T16:48:24.276Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 146,
+                "name": "DAKSH BHARDWAJ",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 19,
+                "name": "Super-30 November 2022",
+                "internal_name": "Super-30 November 2022",
+                "created_at": "2022-11-30T06:36:04.609Z",
+                "updated_at": "2022-12-10T12:59:56.578Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 5,
+        "enrollment_id": 687,
+        "status": "active",
+        "created_at": "2024-02-08T09:08:07.663Z",
+        "updated_at": "2024-02-08T09:08:07.663Z",
+        "enrollment": {
+            "id": 687,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 930,
+                    "unlocked_on": "2023-09-01T10:02:00.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 1,
+                    "created_at": "2023-09-01T10:02:14.096Z",
+                    "updated_at": "2023-09-01T10:02:14.096Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1063,
+                    "unlocked_on": "2023-09-19T08:32:28.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 2,
+                    "created_at": "2023-09-19T08:32:28.591Z",
+                    "updated_at": "2023-09-19T08:32:28.591Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1263,
+                    "unlocked_on": "2023-10-11T18:00:00.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 4,
+                    "created_at": "2023-10-13T05:28:30.870Z",
+                    "updated_at": "2023-10-13T05:28:30.870Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1404,
+                    "unlocked_on": "2023-11-04T11:59:44.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 5,
+                    "created_at": "2023-11-04T11:59:44.605Z",
+                    "updated_at": "2023-11-04T11:59:44.605Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1424,
+                    "unlocked_on": "2023-11-07T08:29:45.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 6,
+                    "created_at": "2023-11-07T08:29:45.062Z",
+                    "updated_at": "2023-11-07T08:29:45.062Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1482,
+                    "unlocked_on": "2023-11-14T07:49:56.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 7,
+                    "created_at": "2023-11-14T07:49:56.185Z",
+                    "updated_at": "2023-11-14T07:49:56.185Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1605,
+                    "unlocked_on": "2023-11-23T10:28:24.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 3,
+                    "created_at": "2023-11-23T10:28:24.738Z",
+                    "updated_at": "2023-11-23T10:28:24.738Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1738,
+                    "unlocked_on": "2023-11-24T17:58:15.000Z",
+                    "enrollment_id": 687,
+                    "level_id": 4,
+                    "created_at": "2023-11-24T17:58:15.713Z",
+                    "updated_at": "2023-11-24T17:58:15.713Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 503,
+                "name": "Meghana Shanubhogh",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 45,
+                "name": "Super - 30 August 2023",
+                "internal_name": "Super - 30 August 2023",
+                "created_at": "2023-07-29T06:53:56.652Z",
+                "updated_at": "2023-10-26T08:04:11.748Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 6,
+        "enrollment_id": 59,
+        "status": "active",
+        "created_at": "2024-02-08T09:08:30.379Z",
+        "updated_at": "2024-02-08T09:08:30.379Z",
+        "enrollment": {
+            "id": 59,
+            "program_access": "disabled",
+            "enrollments_levels": [],
+            "user": {
+                "id": 7,
+                "name": "Vasupradha R",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 1,
+                "name": "Placements July 2022",
+                "internal_name": "Placements July 2022",
+                "created_at": "2022-06-22T14:50:00.253Z",
+                "updated_at": "2022-09-22T14:19:55.725Z"
+            },
+            "mentor": {
+                "id": 1,
+                "name": "Pratik Kapasi",
+                "gender": "Male"
+            }
+        }
+    },
+    {
+        "id": 7,
+        "enrollment_id": 742,
+        "status": "active",
+        "created_at": "2024-02-08T09:08:50.571Z",
+        "updated_at": "2024-02-08T09:08:50.571Z",
+        "enrollment": {
+            "id": 742,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 963,
+                    "unlocked_on": "2023-09-01T10:08:00.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 1,
+                    "created_at": "2023-09-01T10:08:15.216Z",
+                    "updated_at": "2023-09-01T10:08:15.216Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1071,
+                    "unlocked_on": "2023-09-22T12:45:08.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 2,
+                    "created_at": "2023-09-22T12:45:08.365Z",
+                    "updated_at": "2023-09-22T12:45:08.365Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1262,
+                    "unlocked_on": "2023-10-11T18:00:00.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 4,
+                    "created_at": "2023-10-13T05:27:50.873Z",
+                    "updated_at": "2023-10-13T05:27:50.873Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1339,
+                    "unlocked_on": "2023-10-14T08:40:14.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 5,
+                    "created_at": "2023-10-14T08:40:14.315Z",
+                    "updated_at": "2023-10-14T08:40:14.315Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1370,
+                    "unlocked_on": "2023-10-22T14:15:48.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 6,
+                    "created_at": "2023-10-22T14:15:48.385Z",
+                    "updated_at": "2023-10-22T14:15:48.385Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1611,
+                    "unlocked_on": "2023-11-23T10:28:24.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 3,
+                    "created_at": "2023-11-23T10:28:24.808Z",
+                    "updated_at": "2023-11-23T10:28:24.808Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1612,
+                    "unlocked_on": "2023-11-23T10:28:24.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 7,
+                    "created_at": "2023-11-23T10:28:24.809Z",
+                    "updated_at": "2023-11-23T10:28:24.809Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1739,
+                    "unlocked_on": "2023-11-24T18:00:53.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 8,
+                    "created_at": "2023-11-24T18:00:53.914Z",
+                    "updated_at": "2023-11-24T18:00:53.914Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1778,
+                    "unlocked_on": "2023-11-24T15:30:00.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 9,
+                    "created_at": "2023-11-30T12:55:04.418Z",
+                    "updated_at": "2023-11-30T12:55:04.418Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1836,
+                    "unlocked_on": "2023-12-07T18:49:28.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 10,
+                    "created_at": "2023-12-07T18:49:28.574Z",
+                    "updated_at": "2023-12-07T18:49:28.574Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1918,
+                    "unlocked_on": "2023-12-16T16:06:44.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 11,
+                    "created_at": "2023-12-16T16:06:44.372Z",
+                    "updated_at": "2023-12-16T16:06:44.372Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1981,
+                    "unlocked_on": "2023-12-23T08:48:01.000Z",
+                    "enrollment_id": 742,
+                    "level_id": 12,
+                    "created_at": "2023-12-23T08:48:01.812Z",
+                    "updated_at": "2023-12-23T08:48:01.812Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 550,
+                "name": "Irfan Md",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 45,
+                "name": "Super - 30 August 2023",
+                "internal_name": "Super - 30 August 2023",
+                "created_at": "2023-07-29T06:53:56.652Z",
+                "updated_at": "2023-10-26T08:04:11.748Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 8,
+        "enrollment_id": 508,
+        "status": "active",
+        "created_at": "2024-02-08T09:09:03.245Z",
+        "updated_at": "2024-02-08T09:09:03.245Z",
+        "enrollment": {
+            "id": 508,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 629,
+                    "unlocked_on": "2023-06-13T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 2,
+                    "created_at": "2023-07-31T12:30:52.957Z",
+                    "updated_at": "2023-07-31T12:30:52.957Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 661,
+                    "unlocked_on": "2023-06-25T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 3,
+                    "created_at": "2023-07-31T12:40:17.186Z",
+                    "updated_at": "2023-07-31T12:40:17.186Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 682,
+                    "unlocked_on": "2023-07-02T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 4,
+                    "created_at": "2023-07-31T12:57:22.529Z",
+                    "updated_at": "2023-07-31T12:57:22.529Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 702,
+                    "unlocked_on": "2023-07-16T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 5,
+                    "created_at": "2023-07-31T13:04:57.583Z",
+                    "updated_at": "2023-07-31T13:04:57.583Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 711,
+                    "unlocked_on": "2023-07-23T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 6,
+                    "created_at": "2023-07-31T13:08:05.457Z",
+                    "updated_at": "2023-07-31T13:08:05.457Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 726,
+                    "unlocked_on": "2023-08-06T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 7,
+                    "created_at": "2023-08-14T10:57:09.110Z",
+                    "updated_at": "2023-08-14T10:57:09.110Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 727,
+                    "unlocked_on": "2023-08-13T16:30:00.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 8,
+                    "created_at": "2023-08-14T10:57:28.509Z",
+                    "updated_at": "2023-08-14T10:57:28.509Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 967,
+                    "unlocked_on": "2023-09-01T15:50:58.000Z",
+                    "enrollment_id": 508,
+                    "level_id": 9,
+                    "created_at": "2023-09-01T15:50:58.703Z",
+                    "updated_at": "2023-09-01T15:50:58.703Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 367,
+                "name": "Sushil Kumar",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 39,
+                "name": "Super -30 May 2023",
+                "internal_name": "Super -30 May 2023",
+                "created_at": "2023-06-08T06:47:21.837Z",
+                "updated_at": "2023-06-08T06:47:21.837Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 9,
+        "enrollment_id": 306,
+        "status": "active",
+        "created_at": "2024-02-08T09:09:14.860Z",
+        "updated_at": "2024-02-08T09:09:14.860Z",
+        "enrollment": {
+            "id": 306,
+            "program_access": "disabled",
+            "enrollments_levels": [
+                {
+                    "id": 234,
+                    "unlocked_on": "2023-03-19T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 3,
+                    "created_at": "2023-03-27T09:29:40.950Z",
+                    "updated_at": "2023-03-27T09:29:40.950Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 268,
+                    "unlocked_on": "2023-04-09T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 5,
+                    "created_at": "2023-04-10T09:34:43.208Z",
+                    "updated_at": "2023-04-10T09:34:43.208Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 286,
+                    "unlocked_on": "2023-04-16T10:44:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 6,
+                    "created_at": "2023-04-17T10:44:10.759Z",
+                    "updated_at": "2023-04-17T10:44:10.759Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 367,
+                    "unlocked_on": "2023-05-09T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 4,
+                    "created_at": "2023-05-22T10:02:09.885Z",
+                    "updated_at": "2023-05-22T10:02:09.885Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 378,
+                    "unlocked_on": "2023-05-28T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 7,
+                    "created_at": "2023-06-01T06:46:19.638Z",
+                    "updated_at": "2023-06-01T06:46:19.638Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 507,
+                    "unlocked_on": "2023-06-25T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 8,
+                    "created_at": "2023-06-29T13:12:13.576Z",
+                    "updated_at": "2023-06-29T13:12:13.576Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 789,
+                    "unlocked_on": "2023-07-02T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 9,
+                    "created_at": "2023-08-16T08:21:10.188Z",
+                    "updated_at": "2023-08-16T08:21:10.188Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 790,
+                    "unlocked_on": "2023-07-09T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 10,
+                    "created_at": "2023-08-16T08:21:25.116Z",
+                    "updated_at": "2023-08-16T08:21:25.116Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 792,
+                    "unlocked_on": "2023-07-16T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 11,
+                    "created_at": "2023-08-16T08:21:41.309Z",
+                    "updated_at": "2023-08-16T08:21:41.309Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 793,
+                    "unlocked_on": "2023-08-30T16:30:00.000Z",
+                    "enrollment_id": 306,
+                    "level_id": 12,
+                    "created_at": "2023-08-16T08:22:00.559Z",
+                    "updated_at": "2023-08-16T08:22:00.559Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 219,
+                "name": "Anil reddy",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 29,
+                "name": "Super-30 February 2023",
+                "internal_name": "Super-30 February 2023",
+                "created_at": "2023-02-23T09:19:42.315Z",
+                "updated_at": "2023-02-23T09:19:42.315Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 10,
+        "enrollment_id": 828,
+        "status": "active",
+        "created_at": "2024-02-08T09:09:32.161Z",
+        "updated_at": "2024-02-08T09:09:32.161Z",
+        "enrollment": {
+            "id": 828,
+            "program_access": "allowed",
+            "enrollments_levels": [
+                {
+                    "id": 1090,
+                    "unlocked_on": "2023-09-24T15:19:50.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 1,
+                    "created_at": "2023-09-24T15:19:50.783Z",
+                    "updated_at": "2023-09-24T15:19:50.783Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1333,
+                    "unlocked_on": "2023-10-08T18:29:00.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 3,
+                    "created_at": "2023-10-13T10:07:52.327Z",
+                    "updated_at": "2023-10-13T10:07:52.327Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1335,
+                    "unlocked_on": "2023-10-13T16:29:46.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 4,
+                    "created_at": "2023-10-13T16:29:46.972Z",
+                    "updated_at": "2023-10-13T16:29:46.972Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1406,
+                    "unlocked_on": "2023-11-04T13:43:09.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 5,
+                    "created_at": "2023-11-04T13:43:09.020Z",
+                    "updated_at": "2023-11-04T13:43:09.020Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1422,
+                    "unlocked_on": "2023-11-07T05:48:30.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 6,
+                    "created_at": "2023-11-07T05:48:30.349Z",
+                    "updated_at": "2023-11-07T05:48:30.349Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1634,
+                    "unlocked_on": "2023-11-23T10:28:24.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 2,
+                    "created_at": "2023-11-23T10:28:24.902Z",
+                    "updated_at": "2023-11-23T10:28:24.902Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1742,
+                    "unlocked_on": "2023-11-25T03:30:33.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 3,
+                    "created_at": "2023-11-25T03:30:33.042Z",
+                    "updated_at": "2023-11-25T03:30:33.042Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1833,
+                    "unlocked_on": "2023-12-07T06:31:13.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 4,
+                    "created_at": "2023-12-07T06:31:13.939Z",
+                    "updated_at": "2023-12-07T06:31:13.939Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1892,
+                    "unlocked_on": "2023-12-10T10:48:00.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 7,
+                    "created_at": "2023-12-13T10:48:22.340Z",
+                    "updated_at": "2023-12-13T10:48:22.340Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1893,
+                    "unlocked_on": "2023-12-11T10:48:00.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 8,
+                    "created_at": "2023-12-13T10:48:37.325Z",
+                    "updated_at": "2023-12-13T10:48:37.325Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1903,
+                    "unlocked_on": "2023-12-15T12:11:31.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 9,
+                    "created_at": "2023-12-15T12:11:31.775Z",
+                    "updated_at": "2023-12-15T12:11:31.775Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 1961,
+                    "unlocked_on": "2023-12-22T05:06:32.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 10,
+                    "created_at": "2023-12-22T05:06:32.156Z",
+                    "updated_at": "2023-12-22T05:06:32.156Z",
+                    "locked_till": null
+                },
+                {
+                    "id": 2024,
+                    "unlocked_on": "2023-12-27T16:29:16.000Z",
+                    "enrollment_id": 828,
+                    "level_id": 11,
+                    "created_at": "2023-12-27T16:29:16.632Z",
+                    "updated_at": "2023-12-27T16:29:16.632Z",
+                    "locked_till": null
+                }
+            ],
+            "user": {
+                "id": 726,
+                "name": "Neha Kumari",
+                "gender": "Female"
+            },
+            "program": {
+                "id": 62,
+                "name": "Super - 30 September 2023",
+                "internal_name": "Super - 30 September 2023 - Batch A",
+                "created_at": "2023-08-19T07:21:41.261Z",
+                "updated_at": "2023-09-08T08:53:40.440Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 11,
+        "enrollment_id": 23,
+        "status": "active",
+        "created_at": "2024-03-11T11:26:39.076Z",
+        "updated_at": "2024-03-11T11:26:39.076Z",
+        "enrollment": {
+            "id": 23,
+            "program_access": "disabled",
+            "enrollments_levels": [],
+            "user": {
+                "id": 24,
+                "name": "Kunal Trivedi",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 3,
+                "name": "Super 30 Jun 2022",
+                "internal_name": "Super 30 Jun 2022",
+                "created_at": "2022-07-01T11:24:12.017Z",
+                "updated_at": "2022-09-22T14:18:36.932Z"
+            },
+            "mentor": {
+                "id": 1,
+                "name": "Pratik Kapasi",
+                "gender": "Male"
+            }
+        }
+    },
+    {
+        "id": 12,
+        "enrollment_id": 1870,
+        "status": "active",
+        "created_at": "2024-03-11T11:28:00.490Z",
+        "updated_at": "2024-03-11T11:28:00.490Z",
+        "enrollment": {
+            "id": 1870,
+            "program_access": "disabled",
+            "enrollments_levels": [],
+            "user": {
+                "id": 2175,
+                "name": "Rohith",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 85,
+                "name": "Super - 30 February 2024",
+                "internal_name": "Super - 30 February 2024 - Batch A",
+                "created_at": "2024-01-29T07:49:08.538Z",
+                "updated_at": "2024-06-01T05:49:31.457Z"
+            },
+            "mentor": null
+        }
+    },
+    {
+        "id": 13,
+        "enrollment_id": 2283,
+        "status": "active",
+        "created_at": "2024-03-11T11:54:17.583Z",
+        "updated_at": "2024-03-11T11:54:17.583Z",
+        "enrollment": {
+            "id": 2283,
+            "program_access": "allowed",
+            "enrollments_levels": [],
+            "user": {
+                "id": 7995,
+                "name": "D Jyotsna",
+                "gender": "Male"
+            },
+            "program": {
+                "id": 74,
+                "name": "Super - 30 January 2024",
+                "internal_name": "Super - 30 January 2024 - Batch A",
+                "created_at": "2023-11-25T15:07:14.075Z",
+                "updated_at": "2024-02-02T09:04:41.665Z"
+            },
+            "mentor": null
+        }
+    }
+]

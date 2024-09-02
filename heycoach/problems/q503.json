@@ -1,0 +1,64 @@
+{
+    "id": 503,
+    "description": "Vanya is interested in the bitwise AND (&) operation and its applications on strings represented as integers in a base 64 numeral system. To explore this, Vanya wants to calculate the number of pairs of words of length |s|, such that their bitwise AND is equal to a given string s. You are tasked with writing a program that, for multiple test cases, returns the count of such pairs modulo 10^9+7.\n\nTo represent the string as a number in the numeral system with base 64, Vanya uses the following rules:\n\n- `Digits from '0' to '9' correspond to integers from 0 to 9`.</br>\n- `Letters from 'A' to 'Z' correspond to integers from 10 to 35.`</br>\n- ` Letters from 'a' to 'z' correspond to integers from 36 to 61.`</br>\n- `The letter '-' corresponds to the integer 62.`</br>\n- `The letter '_' corresponds to the integer 63.`</br></br>\n##### Explanation:</br>\n`Vanya wants to find the number of pairs of words of length 1 (length of s), such that their bitwise AND is equal to s. The possibilities are:`\n\n`\"z\" AND \"1\" = \"z\"`</br>\n`\"_\" AND \"z\" = \"z\"`</br>\n`\"z\" AND \"z\" = \"z\"`</br>\n`There are 3 possible pairs, and the output is 3.`\n#### `Input Format:`\n- `The first line contains an integer, T, the number of test cases.`</br>\n- `Each of the next T lines contains a single word s, consisting of digits, lowercase and uppercase English letters, characters '-', and '_'.`\n#### `Output Format:`\n- `For each test case, output a single line containing a single integer \u2014 the number of possible pairs of words, such that their bitwise AND is equal to string s, modulo 10^9+7.`\n\n**Input**:</br>\n`A single word s (1 \u2264 |s| \u2264 100,000), consisting of digits, lowercase and uppercase English letters, characters '-', and '_'.`\n\n**`Output`**:</br>\n`Return a single integer \u2014 the number of possible pairs of words, such that their bitwise AND is equal to string s modulo 10^9+7.`\n\n**Example 1:**\n\n**Input**:\n``` \n1\nz\n```\n**Output**:\n```\n3\n```\n\n\n**Example 2:**</br>\n\n**Input**:\n```\n2\nV_V\nCodeforces\n```\n**Output**:\n```\n9\n130653412\n```\n\n#### `Constraints:`\n\n- `1 \u2264 T \u2264 1000`\n- `1 \u2264 |s| \u2264 100,000`",
+    "title": "Number of Pairs with Bitwise AND Equal to String",
+    "default_testcase": {
+        "id": 3352,
+        "input": "3\nabc\n0ab_\njdbvV09",
+        "expected_output": "59049\n1594323\n486784380\n",
+        "code_problem_id": 503,
+        "created_at": "2024-01-03T16:20:34.794Z",
+        "updated_at": "2024-01-03T16:20:34.794Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1481,
+            "code_problem_id": 503,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\nlong long numOfPairs(string &s){\n  //Write your code here",
+            "skeleton_class_end": "   }\n};\n",
+            "skeleton_solution_class": "\n\n\n"
+        },
+        {
+            "id": 1482,
+            "code_problem_id": 503,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    long numOfPairs(String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": "\n\n  \n"
+        },
+        {
+            "id": 1483,
+            "code_problem_id": 503,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def numOfPairs(self, s):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n\n\n\n"
+        },
+        {
+            "id": 1484,
+            "code_problem_id": 503,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    numOfPairs(s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": "\n   \n     \n"
+        }
+    ]
+}

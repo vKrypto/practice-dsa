@@ -1,0 +1,64 @@
+{
+    "id": 873,
+    "description": "Valera loves gardening and this year his garden of `n` fruit trees will yield a plentiful harvest. Each tree bears fruits that ripen on a specific day, and Valera can collect the fruits only on the day they ripen and the day after. Valera can collect a maximum of `v` fruits per day, and he can choose to collect them from one or several trees.\n\n**Input Format:**\n- `The first line contains two space-separated integers `n` and `v` (1 \u2264 n, v \u2264 3000) \u2014 the number of fruit trees in the garden and the maximum number of fruits that Valera can collect in a day.`\n- `The next `n` lines each contain two space-separated integers `ai` and `bi` (1 \u2264 ai, bi \u2264 3000). `ai` is the day the fruits on the i-th tree ripen, and `bi` is the number of fruits on that tree.`\n\n**Output Format:**\n- `Print a single integer \u2014 the maximum number of fruits that Valera can collect.`\n\n**Examples:**\n\n**Example 1:**\n\nInput:\n```\n2 3\n1 5\n2 3\n```\n\nOutput:\n```\n8\n```\n\n**Explanation:**\n- `Day 1: Collect 3 fruits from the 1st tree.`\n- `Day 2: Collect 2 fruits remaining from the 1st tree and 1 fruit from the 2nd tree.`\n- `Day 3: Collect the remaining 2 fruits from the 2nd tree.`\n\n**Example 2:**\n\n#### Input:\n```\n5 10\n3 20\n2 20\n1 20\n4 20\n5 20\n```\n\n#### Output:\n```\n60\n```\n\n**Explanation:**\n- `Day 1: Collect 10 fruits from the 1st tree.`\n- `Day 2: Collect 10 fruits from the 2nd tree.`\n- `Day 3: Collect 10 fruits from the 3rd tree.`\n- `Day 4: Collect 10 fruits from the 4th tree.`\n- `Day 5: Collect 10 fruits from the 5th tree.`\n- `Remaining fruits will wither as they exceed daily collection capacity.`\n\n\n\n",
+    "title": "Valera and Fruits",
+    "default_testcase": {
+        "id": 7855,
+        "input": "5 10\n3 20\n2 20\n1 20\n4 20\n5 20",
+        "expected_output": "60\n",
+        "code_problem_id": 873,
+        "created_at": "2024-05-13T14:40:06.953Z",
+        "updated_at": "2024-05-13T14:40:06.953Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2862,
+            "code_problem_id": 873,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n    int valera(int n,int v,vector<int>&a,vector<int>&b){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2863,
+            "code_problem_id": 873,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int valera(int n, int v, List<Integer> a, List<Integer> b) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2864,
+            "code_problem_id": 873,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def valera(self, n, v, a, b):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2865,
+            "code_problem_id": 873,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    valera(n, v, a, b) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

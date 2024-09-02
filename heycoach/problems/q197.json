@@ -1,0 +1,45 @@
+{
+    "id": 197,
+    "description": "Given an integer array nums where every element appears `three times` except for one, which appears exactly once. Find the single element and return it.\n\nYou must implement a solution with a `linear runtime complexity` and use only `constant extra space`.\n\n### Example 1\n\n### Input\n\n```CPP\nnums = [2,2,3,2]\n```\n\n### Output\n\n```CPP\n3\n```\n\n### Example 2\n\n### Input\n\n```CPP\nnums = [0,1,0,1,0,1,99]\n```\n\n### Output\n\n```CPP\n99\n```\n\n### Constraints:\n\n- 1 <= nums.length <= 3 * 10^4\n-  -2^31 <= nums[i] <= 2^31 - 1\n- Each element in nums appears exactly three times except for one element which appears once.\n",
+    "title": "Single Number 2",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 290,
+            "code_problem_id": 197,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 293,
+            "code_problem_id": 197,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 300,
+            "code_problem_id": 197,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

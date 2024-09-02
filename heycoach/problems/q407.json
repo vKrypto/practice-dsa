@@ -1,0 +1,64 @@
+{
+    "id": 407,
+    "description": "You are given 'n' number of balls and all the balls are either green white or saffron. Arrange the balls such that it resembles the Indian Flag (Saffron followed by white followed by Green).\n\n#### Sample Input:\n```\nG S S W S G W S\n```\n#### Sample Output:\n```\nS S S S W W G G\n```\n#### Constraints:\n\n- `3<=n<=10^6`",
+    "title": "Arrange the balls",
+    "default_testcase": {
+        "id": 2541,
+        "input": "9\nS S G G W W W W W",
+        "expected_output": "S S W W W W W G G \n",
+        "code_problem_id": 407,
+        "created_at": "2023-11-21T10:13:18.423Z",
+        "updated_at": "2023-11-21T10:13:18.423Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1000,
+            "code_problem_id": 407,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "void Arrange(int n, char balls[]){\n  //Write your code here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1001,
+            "code_problem_id": 407,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def arrange(self, n, balls):\n        #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1002,
+            "code_problem_id": 407,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    static void arrange(int n, char[] balls) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1022,
+            "code_problem_id": 407,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static arrange(n, balls) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

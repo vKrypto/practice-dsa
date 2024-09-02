@@ -1,0 +1,64 @@
+{
+    "id": 786,
+    "description": "\nYou are given an array of integers. Your task is to find and print the numbers greater than the average of the numbers in the array.\n\n#### `Input Format:`\n\n- `The first line contains an integer `n`, representing the size of the array.`\n\n- `The second line contains `n` space-separated integers, representing the elements of the array.`\n\n#### `Output Format:`\n\n`Print all numbers in the array that are greater than the average of the numbers in the array, each separated by a space.`\n\n#### `Sample Input:`\n\n```\n5\n10 15 8 20 5\n```\n\n#### `Sample Output:`\n\n```\n15 20\n```\n\n#### `Constraints:`\n\n- `1 <= n <= 10^5`\n- `-10^9 <= Elements of the array <= 10^9`\n\n",
+    "title": "Greater Than Average",
+    "default_testcase": {
+        "id": 6956,
+        "input": "5\n10 15 8 20 5",
+        "expected_output": "15 20 \n",
+        "code_problem_id": 786,
+        "created_at": "2024-03-24T11:58:04.570Z",
+        "updated_at": "2024-03-24T11:58:04.570Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2567,
+            "code_problem_id": 786,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void findGreaterThanAverage() {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2568,
+            "code_problem_id": 786,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void findGreaterThanAverage() {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2569,
+            "code_problem_id": 786,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_greater_than_average():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2570,
+            "code_problem_id": 786,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findGreaterThanAverage(arr) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": 885,
+    "description": "There are 'n' players present at a chess tournament and the rating of players is present in an array where the rating of ith player is a[i]. The tournament happens in the following manner:\n\nThe player at 0th and first index plays the first match.\nAfter that whoever is the winner plays the match with the player at next index.\n\nYou have some officials of the tournament who can make some arrangement for you. You can ask them to change your position with any player of the tournament but only once.\n\nFind an optimal way to swap your position (You can also choose not to swap your position at all) so that you can win the maximum amount of games.\n\nInput Format:\n\nThe first line contains two integer, the number of elements 'n' and the index of your position on the tournament as 'k'.\n\nThe next line contains 'n' space separated integers denoting the elements of the array.\n\n\nOutput Format:\n\nReturn a single integer denoting the maximum number of wins that you can get.\n\n```\nSample Input -1\n\n6 0\n12 10 14 11 8 3\n\nSample Output -1\n\n1\n```\n\nExplanation: You are present at index 0 and you can choose to swap yourself with no one and can win the first game against 10 but will lose the next one to 14. So, in total you can win just 1 game which is the maximum possible.\n\n```\nSample Input -2\n\n6 4\n7 2 727 10 12 13\n\nSample Output -2\n\n2\n```\n\nExplanation: You are present at index  4 and your rating is 12, now you can swap yourself with the participant with rating 727. The tournament then proceeds as follows:\n\nAfter round 1 - a = [7, 12, 10, 727,13] , Our wins = 0.\n\nAfter round 2, a = [12, 10, 727, 13] , Our wins = 1.\n\nAfter round 3, a = [12, 727, 13] , Our wins = 2.\n\nAfter round 4, a = [727, 13] , We have been eliminated and we managed to win 2 games.\n\n```\nConstraints\n\n1<=n<=10^5\n\n1<=a[i]<=10^8",
+    "title": "Chess Battle",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2942,
+            "code_problem_id": 885,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int n, int k, int a[]){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

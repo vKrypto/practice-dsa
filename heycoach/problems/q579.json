@@ -1,0 +1,64 @@
+{
+    "id": 579,
+    "description": "Simon is playing a game where he has a sword a blow of which can kill any monster on the screen. There are 'n' monsters on the screen and every monster when killed provides a[i], a being the array of points and i being the ith monster on the screen.    \nHowever, there is a twist, each monster must be killed on or before a time associated with that particular monster, if killed after that, it will yield zero points. Help Simon develop a strategy to gain the maximum amount of points (Return the maximum amount of points possible).\n\n**`Input Format:`**   \n```\nA single integer n denoting the number of monsters.\nThe second line represents an array containing the points that the monsters yield when killed.\nThe third  line represents an array containing the time until which each monster must be killed to get points.\n```\n\n**`Output Format:`**\n\n`Return a single integer representing the maximum achievable points.`\n\n**`Sample Input:`**\n\n```\n3\n\n50 80 90\n\n1 2 2\n\n```\n\n**`Sample Output:`**\n\n`170`\n\n`Constraints:`\n\n`1<=n<=1000`\n\n`1<=a[i]<=10^4`\n\n\n",
+    "title": "Simon and the monsters",
+    "default_testcase": {
+        "id": 3851,
+        "input": "3\n80 90 70\n2 2 1",
+        "expected_output": "170\n",
+        "code_problem_id": 579,
+        "created_at": "2024-01-21T15:35:33.620Z",
+        "updated_at": "2024-01-21T15:35:33.620Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1733,
+            "code_problem_id": 579,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(vector<int> points, vector<int> timer, int n){",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1734,
+            "code_problem_id": 579,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, points, timer, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1736,
+            "code_problem_id": 579,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(points, timer, n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1740,
+            "code_problem_id": 579,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    static class Pair {\n        int points;\n        int timer;\n\n        Pair(int points, int timer) {\n            this.points = points;\n            this.timer = timer;\n        }\n    }\n\n    public static int solve(int[] points, int[] timer, int n) {\n      //Write your code here;",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

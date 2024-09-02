@@ -1,0 +1,64 @@
+{
+    "id": 364,
+    "description": "In this scenario, the objective is to strategically allocate k aggressive \ncows to stalls in a way that maximizes the minimum distance between any \ntwo cows. Given an array of n integers representing stall positions, along \nwith the integer k indicating the number of aggressive cows, the challenge \nis to find an arrangement that ensures the largest possible gap between any \ntwo cows.\n\n```\nSample Input \n\n5 3\n\n1 2 4 8 9\n```\n\n```\nSample Output \n\n3\n```\n\n\n`Constraints:`\n\n`2 <= n <= 10^5`\n\n`2 <= k <= n`\n\n`0 <= stalls[i] <= 10^9`\n",
+    "title": "Aggressive Cows",
+    "default_testcase": {
+        "id": 2239,
+        "input": "5 3\n1 2 4 8 9",
+        "expected_output": "3",
+        "code_problem_id": 364,
+        "created_at": "2023-09-25T23:47:22.632Z",
+        "updated_at": "2023-09-25T23:47:22.632Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 831,
+            "code_problem_id": 364,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n     int solve(int n, int k, std::vector<int>& stalls) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1395,
+            "code_problem_id": 364,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   public int solve(int n, int k, int[] stalls) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1396,
+            "code_problem_id": 364,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      solve(n, k, stalls) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1402,
+            "code_problem_id": 364,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n   def solve(self, n, k, stalls):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

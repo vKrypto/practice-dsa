@@ -1,0 +1,15 @@
+{
+    "id": 321,
+    "description": "Given an array arr[] of N positive integers. Find an integer denoting the maximum XOR subset value in the given array arr[].\nContraints :\n1 <= N <= 10^5\n1 <= arr[i] <= 10^6",
+    "title": "Maximum XOR",
+    "default_testcase": {
+        "id": 2084,
+        "input": "1\n3\n2 4 5",
+        "expected_output": "7\n",
+        "code_problem_id": 321,
+        "created_at": "2023-09-18T18:58:06.081Z",
+        "updated_at": "2023-09-18T18:58:06.081Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": []
+}

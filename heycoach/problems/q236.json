@@ -1,0 +1,64 @@
+{
+    "id": 236,
+    "description": "Given a string **`s`** representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.\n\n#### Note: </br> \n` You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().`\n\n \n\n```\nExample 1:\n\nInput: s = \"1 + 1\"\n\nOutput: \n2\n\n\nExample 2:\n\nInput: s = \" 2-1 + 2 \"\nOutput:\n 3\nExample 3:\n\nInput:\ns = \"(1+(4+5+2)-3)+(6+8)\"</br> \nOutput:\n  23\n```\n \n\nConstraints:\n\n- `1 <= s.length <= 3 * 105`\n- `s consists of digits, '+', '-', '(', ')', and ' '.`\n` s represents a valid expression.`\n- ` '+' is not used as a unary operation (i.e., \"+1\" and \"+(2 + 3)\" is invalid).`\n- `'-' could be used as a unary operation (i.e., \"-1\" and \"-(2 + 3)\" is valid).`\n- `There will be no two consecutive operators in the input.`\n- `Every number and running calculation will fit in a signed 32-bit integer.`",
+    "title": "Basic Calculator",
+    "default_testcase": {
+        "id": 6986,
+        "input": "(1+(4+5+2)-3)+(6+8)",
+        "expected_output": "23\n",
+        "code_problem_id": 236,
+        "created_at": "2024-03-27T06:30:29.662Z",
+        "updated_at": "2024-03-27T06:30:29.662Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 133,
+            "code_problem_id": 236,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int calculate(string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 134,
+            "code_problem_id": 236,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int calculate(String s) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 135,
+            "code_problem_id": 236,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def calculate(self, s: str) -> int:\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 558,
+            "code_problem_id": 236,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  static calculate(s) {\n    //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

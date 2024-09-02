@@ -1,0 +1,64 @@
+{
+    "id": 357,
+    "description": "\nGiven a weighted directed graph, write a program to find the minimum spanning tree (MST) using Kruskal's algorithm.\n\n### Input:\n\n- The number of nodes (N).\n- The number of edges (E).\n- Each edge is represented by a triplet of source, destination, and weight in (edges).\n\n### Output:\n\n- The minimum spanning tree total weight.\n\n### Constraints:\n\n- 1 <= N <= 10^4 (number of nodes)\n- 0 <= E <= 10^5 (number of edges)\n- 0 <= u, v < N (node indices)\n- 1 <= weight <= 10^9 (edge weights)\n- The graph is guaranteed to be connected.\n\n\n### Example:\n\n**Input:**\n```\nN = 4\nE = 5\nedges = [\n  [0, 1, 10],\n  [1, 3, 15],\n  [2, 3, 4],\n  [2, 0, 6],\n  [0, 3, 5]\n]\n````\n\n**Output:**\n```\n19\n```\n\n\n**Input:**\n```\nN = 4\nE = 3\nedges = [\n  [0, 1, 5],\n  [1, 2, 3],\n  [0, 2, 1]\n]\n````\n\n**Output:**\n```\n4\n```\n",
+    "title": "Finding Minimum Spanning Tree",
+    "default_testcase": {
+        "id": 2561,
+        "input": "4 5\n0 1 10\n1 3 15 \n2 3 4 \n2 0 6 \n0 3 5",
+        "expected_output": "19",
+        "code_problem_id": 357,
+        "created_at": "2023-11-23T13:17:05.742Z",
+        "updated_at": "2023-11-23T13:17:05.742Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 824,
+            "code_problem_id": 357,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n    int kruskal(int N, const vector<vector<int>>& edges) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1009,
+            "code_problem_id": 357,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def kruskal(N, edges):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1010,
+            "code_problem_id": 357,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n   static int kruskal(int N, List<List<Integer>> edges) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1035,
+            "code_problem_id": 357,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n  static kruskal(N, edges) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 854,
+    "description": "The latest 'Die Hard' movie just premiered! There's a queue at the cinema box office with \u2018n\u2019 people in it. Each person in the queue has either a 100, 50, or 25 ruble bill. A ticket for 'Die Hard' costs 25 rubles. Is it possible for the ticket clerk to sell a ticket to each person and provide change, starting with no money and selling tickets in the exact order of the queue?\n \n`Input`:\n\nThe first line contains integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009105) \u2014 the number of people in the line. The next line contains n integers, each of them equals 25, 50 or 100 \u2014 the values of the bills the people have. The numbers are given in the order from the beginning of the line (at the box office) to the end of the line.   \t\n \n\n`Output`:\n\nPrint \"YES\" (without the quotes) if the booking clerk can sell a ticket to each person and give the change. Otherwise print \"NO\".\n\n`example`:\n\nn = 4\n\n[25 25 50 50 ]\n\nStart with count_25 = 0 and count_50 = 0.\n\nProcess each person in the queue:\n\nPerson 1 (25 rubles): Increment count_25 to 1.\n\nPerson 2 (25 rubles): Increment count_25 to 2.\n\nPerson 3 (50 rubles): Check if there's a 25-ruble bill available (yes): Decrement count_25 and increment count_50.\n\nPerson 4 (50 rubles): Check if there's a 25-ruble bill available (yes): Decrement count_25 and increment count_50.\n\n\n`Outcome`:\n\nAll transactions were successful without running out of change.\nTherefore, the output is \"YES\".",
+    "title": "Ticket Conundrum",
+    "default_testcase": {
+        "id": 7559,
+        "input": "4\n25 25 50 50\n",
+        "expected_output": "YES\n",
+        "code_problem_id": 854,
+        "created_at": "2024-04-28T11:03:22.117Z",
+        "updated_at": "2024-04-28T11:03:22.117Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2807,
+            "code_problem_id": 854,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n   void solve(int a[],int n){\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2808,
+            "code_problem_id": 854,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n  def solve(self, a):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2809,
+            "code_problem_id": 854,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n\n    public void solve(int[] a) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2810,
+            "code_problem_id": 854,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(a) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

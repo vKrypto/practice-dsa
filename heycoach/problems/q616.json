@@ -1,0 +1,64 @@
+{
+    "id": 616,
+    "description": "**Description**:</br>\nGiven a 2D grid containing '1' (land) and '0' (water), find the total number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. Assume all four edges of the grid are surrounded by water.  \nA group of connected 1s forms an island. Two cells belonging to the same island are considered adjacent if they are horizontally or vertically adjacent (not diagonally).\nWrite a function numIslands to return the total number of islands.\n\n**`Input:`**</br>\n\u2022\t`A 2D grid grid of size m x n where 1 <= m, n <= 300.`</br>\n\u2022\t`Each cell of the grid can be either '1' (land) or '0' (water).`\n\n**`Output:`**</br>\n`Return the total number of islands.`\n\n**`Example`:**</br>\n**`Input:`**\n```\n    m=4 n=4\n    grid = [\n  [\"1\",\"1\",\"1\",\"0\"],\n  [\"1\",\"1\",\"0\",\"0\"],\n  [\"1\",\"1\",\"0\",\"1\"],\n  [\"0\",\"0\",\"1\",\"1\"]\n      ]\n```\n**`Output`:**\n```\n 3\n```\n**`Explanation`:**</br>\n`The example grid represents three islands:`</br>\n\u2022\t`Island 1 is formed by the top-left corner.`</br>\n\u2022\t`Island 2 is formed by the centre and bottom-left cells.`</br>\n\u2022\t`Island 3 is formed by the bottom-right cell.`</br>\n**`Constraints:`**</br>\n\u2022\t`m == grid.length`</br>\n\u2022\t`n == grid[i].length`</br>\n\u2022\t`1 <= m, n <= 300`</br>\n\u2022\t`grid[i][j] is '0' or '1'.`\n",
+    "title": "Number of Islands",
+    "default_testcase": {
+        "id": 4008,
+        "input": "4 4\n1 1 1 0\n1 1 0 0\n1 1 0 1\n0 0 1 1",
+        "expected_output": "2\n",
+        "code_problem_id": 616,
+        "created_at": "2024-01-22T19:04:39.989Z",
+        "updated_at": "2024-01-22T19:04:39.989Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1856,
+            "code_problem_id": 616,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int numIslands(std::vector<std::vector<char>>& grid) {\n      ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1857,
+            "code_problem_id": 616,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class Solution {\n    public int numIslands(char[][] grid) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1858,
+            "code_problem_id": 616,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    numIslands(grid) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1859,
+            "code_problem_id": 616,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def numIslands(self, grid):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

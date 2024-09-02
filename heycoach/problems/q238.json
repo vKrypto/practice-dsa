@@ -1,0 +1,64 @@
+{
+    "id": 238,
+    "description": "\n A `critical point` in a linked list is defined as either a local `maxima` or a local `minima`.\n\n A node is a `local maxima` if the current node has a value `strictly greater` than the previous node and the next node.\n\n A node is a `local minima` if the current node has a value `strictly smaller` than the previous node and the next node.\n\nNote that a node can only be a local maxima/minima if there exists `both` a previous node and a next node.\n\nGiven a linked list head, return an array of length 2 containing [minDistance, maxDistance] where minDistance is the minimum distance between any two distinct critical points and `maxDistance` is the `maximum distance` between any two distinct critical points. If there are fewer than two critical points, return [-1, -1].\n\n### Example 1\n\n![Image](https://assets.leetcode.com/uploads/2021/10/13/a2.png)\n\n### Input\n\n```CPP\nhead = [5,3,1,2,5,1,2]\n```\n\n### Output\n\n```CPP\n[1,3]\n```\n\n### Explanation:\n\nThere are three critical points:\n\n- [5,3,1,2,5,1,2]: The third node is a local minima because 1 is less than 3 and 2.\n- [5,3,1,2,5,1,2]: The fifth node is a local maxima because 5 is greater than 2 and 1.\n- [5,3,1,2,5,1,2]: The sixth node is a local minima because 1 is less than 5 and 2.\n\nThe minimum distance is between the fifth and the sixth node. minDistance = 6 - 5 = 1.\n\nThe maximum distance is between the third and the sixth node. maxDistance = 6 - 3 = 3.\n\n### Example 2\n\n![Image](https://assets.leetcode.com/uploads/2021/10/14/a5.png)\n\n### Input\n\n```CPP\n head = [1,3,2,2,3,2,2,2,7]\n```\n\n### Output\n\n```CPP\n[3,3]\n```\n\n### Explanation:\n\nThere are two critical points:\n\n- [1,3,2,2,3,2,2,2,7]: The second node is a local maxima because 3 is greater than 1 and 2.\n- [1,3,2,2,3,2,2,2,7]: The fifth node is a local maxima because 3 is greater than 2 and 2.\n\nBoth the minimum and maximum distances are between the second and the fifth node.\n\nThus, minDistance and maxDistance is 5 - 2 = 3.\n\nNote that the last node is not considered a local maxima because it does not have a next node.\n\n### Constraints:\n\n- The number of nodes in the list is in the range [2, 10^5].\n- 1 <= Node.val <= 10^5\n",
+    "title": "MaxMin",
+    "default_testcase": {
+        "id": 6505,
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "-1 -1",
+        "code_problem_id": 238,
+        "created_at": "2024-03-14T06:40:22.888Z",
+        "updated_at": "2024-03-14T06:40:22.888Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 445,
+            "code_problem_id": 238,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\nstruct ListNode {\n  int val;\n  ListNode * next;\n  ListNode(): val(0), next(nullptr) {}\n  ListNode(int x): val(x), next(nullptr) {}\n  ListNode(int x, ListNode * next): val(x), next(next) {}\n};\n*/\n\n\nclass Solution {\n  public:\n    vector < int > nodesBetweenCriticalPoints(ListNode * head) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 671,
+            "code_problem_id": 238,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n// class ListNode {\n//     int val;\n//     ListNode next;\n\n//     ListNode() {\n//         val = 0;\n//         next = null;\n//     }\n\n//     ListNode(int x) {\n//         val = x;\n//         next = null;\n//     }\n\n//     ListNode(int x, ListNode next) {\n//         val = x;\n//         this.next = next;\n//     }\n// }\n\nclass Solution {\n    public int[] nodesBetweenCriticalPoints(ListNode head) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 672,
+            "code_problem_id": 238,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''class ListNode:\n     def __init__(self, val=0, next=None):\n         self.val = val\n         self.next = next'''\n\nclass Solution:\n    def nodes_between_critical_points(self, head):\n        # write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 673,
+            "code_problem_id": 238,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class ListNode {\n    constructor(val = 0, next = null) {\n        this.val = val;\n        this.next = next;\n    }\n}*/\n\nclass Solution {\n    nodesBetweenCriticalPoints(head) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

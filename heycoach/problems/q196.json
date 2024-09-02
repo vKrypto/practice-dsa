@@ -1,0 +1,57 @@
+{
+    "id": 196,
+    "description": "Given a `non-empty` array of integers nums, every element appears twice except for one. Find that single one.\n\nYou must implement a solution with a linear runtime complexity and use only constant extra space.\n\n### Example 1\n\n### Input\n\n```CPP\n nums = [2,2,1]\n```\n\n### Output\n\n```CPP\n1\n```\n\n### Example 2\n\n### Input\n\n```CPP\nnums = [4,1,2,1,2]\n```\n\n### Output\n\n```CPP\n4\n```\n\n### Constraints:\n\n- 1 <= nums.length <= 3 * 10^4\n\n* -3 *10^4 <= nums[i] <= 3 *10^4\n* Each element in the array appears twice except for one element which appears only once.",
+    "title": "Single Number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 291,
+            "code_problem_id": 196,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 292,
+            "code_problem_id": 196,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int singleNumber(int[] nums) {\n      // write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 301,
+            "code_problem_id": 196,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def singleNumber(self, nums):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2422,
+            "code_problem_id": 196,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    singleNumber(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

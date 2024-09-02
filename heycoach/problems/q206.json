@@ -1,0 +1,8 @@
+{
+    "id": 206,
+    "description": "Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.\n### Example 1 \n\n### Input\n```CPP\n temperatures = [73,74,75,71,69,72,76,73]\n``` \n### Output \n```CPP \n[1,1,4,2,1,1,0,0]\n``` \n\n### Example 2 \n\n### Input\n```CPP\ntemperatures = [30,40,50,60]\n``` \n### Output \n```CPP \n[1,1,1,0]\n``` \n\n\n### Constraints:\n\n* 1 <= temperatures.length <= 10^5\n* 30 <= temperatures[i] <= 100\n\n",
+    "title": "Sort the Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

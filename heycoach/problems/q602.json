@@ -1,0 +1,64 @@
+{
+    "id": 602,
+    "description": "Given an array of integers temperatures representing the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature.   \nIf there is no future day for which this is possible, keep answer[i] == 0 instead.\n\n**`Example 1:`**  \n**`Input:`** `temperatures = [73,74,75,71,69,72,76,73]  `   \n**`Output:`** `[1,1,4,2,1,1,0,0]`\n\n**`Example 2:   `**  \n**`Input: `**\n`temperatures = [30,40,50,60]  `  \n**`Output: `**`[1,1,1,0]`\n\n**` Constraints:`**\n\n`1 <= temperatures.length <= 10^5    `   \n`30 <= temperatures[i] <= 100`",
+    "title": "Daily Temperatures",
+    "default_testcase": {
+        "id": 3937,
+        "input": "3\n30 60 90",
+        "expected_output": "1 1 0 ",
+        "code_problem_id": 602,
+        "created_at": "2024-01-22T09:01:41.375Z",
+        "updated_at": "2024-01-22T09:01:41.375Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1802,
+            "code_problem_id": 602,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n vector<int> dailyTemperatures(vector<int>& tp) {\n ",
+            "skeleton_class_end": "}};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1803,
+            "code_problem_id": 602,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int[] dailyTemperatures(int[] temperatures) {\n  ",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1804,
+            "code_problem_id": 602,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def dailyTemperatures(self, temperatures):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1805,
+            "code_problem_id": 602,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static dt(temp) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

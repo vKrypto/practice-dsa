@@ -1,0 +1,64 @@
+{
+    "id": 399,
+    "description": "Given an array of integers nums and an integer k, write a program to return the number of unique k-diff pairs in the array. </br>A k-diff pair is defined as an integer pair (nums[i], nums[j]), where the following conditions are true:</br>\n\n\n----------\n\n\n- `0\u2264i,j<length of nums and i\u2260j.`</br>\n\n- `The absolute difference between the two numbers is exactly k, i.e., \u2223nums[i]\u2212nums[j]\u2223=k.`</br>\n\n\n#### `Input Format:`\n- `The first line contains an integer n and k space-separated, representing the number of elements in the array nums.`</br>\n\n- `The second line contains n space-separated integers, the elements of the array nums.`</br>\n\n\n#### `Output Format:`\n`Print a single integer representing the number of unique k-diff pairs in the array.`\n#### `Sample Input:`\n\n```\n5 2\n3 1 4 1 5  \n\n```\n\n#### `Sample Output:`\n`2`\n#### `Explanation:`\n`In the given array, there are two unique pairs that have a difference of 2: the pair (1, 3) and the pair (3, 5). Hence, the output is 2.`</br>\n\n\n----------\n\n\n#### `Constraints:`\n- `The number of elements in the array nums is within the range \n[1,10^4].`\n\n- `The value of each element in nums is in the range [\u221210^7 ,10^7].`\n- `k is a non-negative integer within the range [0,10^7].`\n",
+    "title": "k different pairs",
+    "default_testcase": {
+        "id": 2467,
+        "input": "5 2\n3 1 4 1 5",
+        "expected_output": "2",
+        "code_problem_id": 399,
+        "created_at": "2023-11-19T11:21:30.254Z",
+        "updated_at": "2023-11-19T11:21:30.254Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 963,
+            "code_problem_id": 399,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int findPairs(vector<int>& nums, int k) {\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 964,
+            "code_problem_id": 399,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int findPairs(ArrayList<Integer> nums, int k)  {\n\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 965,
+            "code_problem_id": 399,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findPairs(self, nums, k):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 966,
+            "code_problem_id": 399,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findPairs(nums, k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

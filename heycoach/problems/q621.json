@@ -1,0 +1,64 @@
+{
+    "id": 621,
+    "description": "**Problem Description:**\nGiven an m x n grid with a ball initially at the position [startRow, startColumn], you are allowed to move the ball to one of the four adjacent cells in the grid, possibly crossing the grid boundary. The objective is to find the number of unique paths the ball can take to move out of the grid after applying at most maxMove moves. Since the result can be very large, return it modulo 10^9 + 7.\n\n**Input Format:**</br>\nFive integers separated by spaces: m n maxMove startRow startColumn</br>\nm: Number of rows in the grid (1 <= m <= 50).</br>\nn: Number of columns in the grid (1 <= n <= 50).</br>\nmaxMove: Maximum number of moves allowed for the ball (0 <= maxMove <= 50).</br>\nstartRow: Initial row index of the ball (0 <= startRow < m).</br>\nstartColumn: Initial column index of the ball (0 <= startColumn < n).</br>\n\n**Output Format:**</br>\nAn integer representing the number of unique paths the ball can take to move out of the grid, modulo 10^9 + 7.\n\n**Example 1:**</br>\n```\nInput: m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0\n```\n**Output**: \n```\n6\n```\n**Explanation**:</br> The ball can move out of the grid in 6 different ways: RRD, RDD, LLD, LDD, UUR, UUD (R = Right, L = Left, U = Up, D = Down).\n\n**Example 2**:</br>\n```\nInput: m = 1, n = 3, maxMove = 3, startRow = 0, startColumn = 1\n```\n**Output**: </br>\n```\n12\n```\n**Explanation**:</br>\n The ball can move out of the grid in 12 different ways.\n\n**Constraints**:</br>\n1 <= m, n <= 50</br>\n0 <= maxMove <= 50</br>\n0 <= startRow < m</br>\n0 <= startColumn < n",
+    "title": "Ball Out of Bounds",
+    "default_testcase": {
+        "id": 4160,
+        "input": "2 2 2 0 0",
+        "expected_output": "6",
+        "code_problem_id": 621,
+        "created_at": "2024-01-26T10:06:13.403Z",
+        "updated_at": "2024-01-26T10:06:13.403Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1901,
+            "code_problem_id": 621,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n     int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1902,
+            "code_problem_id": 621,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n     public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1903,
+            "code_problem_id": 621,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "const Solution = class {\n      findPaths(m, n, maxMove, startRow, startColumn) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1904,
+            "code_problem_id": 621,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findPaths(self, m, n, maxMove, startRow, startColumn):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

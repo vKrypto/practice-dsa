@@ -1,0 +1,64 @@
+{
+    "id": 693,
+    "description": "\nYou are given a string s containing lowercase letters and an integer k. You need to :\n\n     First, change some characters of s to other lowercase English letters.\n     Then divide s into k non-empty disjoint substrings such that each substring is a palindrome.\n\nReturn the minimal number of characters that you need to change to divide the string.\n\n### Example 1\n\n### Input\n\n```CPP\n s = \"abc\", k = 2\n```\n\n### Output\n\n```CPP\n1\n```\n\n#### Explanation:\n\n```\nYou can split the string into \"ab\" and \"c\", and change 1 character in \"ab\" to make it palindrome.\n```\n\n### Example 2\n\n### Input\n\n```CPP\ns = \"aabbc\", k = 3\n```\n\n### Output\n\n```CPP\n0\n```\n\n#### Explanation:\n\n```\nYou can split the string into \"aa\", \"bb\" and \"c\", all of them are palindrome.\n```\n### Input Format\n\n```\nA string, and an Integer K\n```\n\n### Output Format\n\n```\nAn Integer denoting the minimal number of characters that you need to change to divide the string.\n```\n### Constraints:\n\n`1 <= k <= s.length <= 100`\n\n`s only contains lowercase English letters`\n",
+    "title": "Palindrome Op2",
+    "default_testcase": {
+        "id": 4606,
+        "input": "horsgdpyshagstbfkcnhydefe 10",
+        "expected_output": "5",
+        "code_problem_id": 693,
+        "created_at": "2024-01-28T06:38:43.444Z",
+        "updated_at": "2024-01-28T06:38:43.444Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2176,
+            "code_problem_id": 693,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution {\npublic:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2177,
+            "code_problem_id": 693,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2178,
+            "code_problem_id": 693,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n   ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2186,
+            "code_problem_id": 693,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/**/",
+            "skeleton_class_end": "    \n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

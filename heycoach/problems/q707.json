@@ -1,0 +1,64 @@
+{
+    "id": 707,
+    "description": "Given an vector of strings tokens, which represents an arithmetic expression in Reverse Polish Notation (RPN), your task is to calculate and return the integer result of the expression.\n\n**Operational Guidelines:**</br>\n\n- The set of valid operators consists of '+', '-', '*', and '/'.\n- Each operand can either be an integer or another expression.\n- Integer division between two numbers truncates toward zero.\n- Division by zero will not occur.\n- The input guarantees a valid arithmetic expression in RPN.\n- The result and all intermediate calculations can be expressed as 32-bit integers\n\n**Illustrative Examples:**\n\n**Example1:**</br>\n**Input**:\n```\n ['2', '1', '+', '3', '*']\n```\n**Output**: \n```\n9\n```\n**Explanation**: </br>\n((2 + 1) * 3) equals 9.\n\n**Example2**:</br>\n**Input**:\n```\n ['4', '13', '5', '/', '+']\n```\n**Output**:\n```\n 6\n```\n**Explanation**:</br>\n (4 + (13 / 5)) equals 6.\n\n**Problem Constraints:**</br>\nThe length of the tokens array is between 1 and 104.</br>\nEach tokens[i] is either an operator: \"+\", \"-\", \"*\", or \"/\", or an integer within the range [-200, 200].",
+    "title": "Arithmetic Expression Evaluation in Reverse Polish Notation",
+    "default_testcase": {
+        "id": 4717,
+        "input": "2 1 + 3 *",
+        "expected_output": "9\n",
+        "code_problem_id": 707,
+        "created_at": "2024-01-30T04:45:28.534Z",
+        "updated_at": "2024-01-30T04:45:28.534Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2228,
+            "code_problem_id": 707,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int evalRPN(const std::vector<std::string>& tokens) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2229,
+            "code_problem_id": 707,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def evalRPN(self, tokens):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2230,
+            "code_problem_id": 707,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    evalRPN(tokens) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2231,
+            "code_problem_id": 707,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": " class Solution {\n    public int evalRPN(String[] tokens) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

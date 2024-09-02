@@ -1,0 +1,8 @@
+{
+    "id": 336,
+    "description": "Given a list S that initially contains a single value 0. Below are the Q queries of the following types:\n\n0 X: Insert X in the list\n1 X: For every element A in S, replace it by A XOR X.\nPrint all the element in the list in increasing order after performing the given Q queries.\nConstraints:\n1 \u2264 Length of Q \u2264 10^5",
+    "title": "Operations on the List",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

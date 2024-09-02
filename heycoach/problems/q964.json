@@ -1,0 +1,64 @@
+{
+    "id": 964,
+    "description": "Patients are admitted to a hospital, and beds are allocated based on severity. When a patient is discharged, the bed becomes available.\n\nUse a priority queue to manage bed allocation and discharge processes.\n\nExample\n\nInput: 3 Patients: [P1 (high), P2 (low), P3 (medium)], Discharge: P1\nOutput: Available Bed: P1\n\nExplanation: Patients are prioritized by severity for bed allocation.\n\nEdge Case\n\nInput: Patients: []\nOutput: Available Bed: None\n\nInput Format\n\nThe first line contains an integer n \u2014 the number of patients.\n\nThe next n lines contain patient names and their severity levels in the format name severity.\n\nThe last line contains the name of the patient to be discharged.\n\nOutput Format\n\nPrint the name of the available bed after the discharge.\n\nConstraints\n\n1 <= n <= 100\n\nSeverity levels are one of high, medium, low\n\nPatient names are unique and contain only alphanumeric characters.",
+    "title": "Hospital Bed Management",
+    "default_testcase": {
+        "id": 8427,
+        "input": "0\nP1\n",
+        "expected_output": "None\n",
+        "code_problem_id": 964,
+        "created_at": "2024-05-27T11:19:28.918Z",
+        "updated_at": "2024-05-27T11:19:28.918Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3212,
+            "code_problem_id": 964,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "struct Patient {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3213,
+            "code_problem_id": 964,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Patient implements Comparable<Patient> {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3214,
+            "code_problem_id": 964,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Patient:\n    def __init__(self, name, severity):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3215,
+            "code_problem_id": 964,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Patient {\n    constructor(name, severity) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

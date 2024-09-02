@@ -1,0 +1,64 @@
+{
+    "id": 732,
+    "description": "Manish is the coach of a high school football team. He has come up with a training regime of difficulty 'd' but he is afraid that it might result in his team getting exhausted quickly and prone to fatigue. </br>So he has decided to break the training in 'n' number of days where every day has a certain amount of difficulty and the difficulty of each day adds up to 'd' the original difficulty.</br> But he also wants to make sure that his training results in a greater output so he cannot spread the difficulty of training without planning. The result can be determined by calculating the GCD of the difficulty of all the days.\nReturn the greatest result that can be achieved from the training.\n\n#### Input Format:\n\n`You are given two space-separated integers d and n, denoting the total difficulty and number of days it is divided into.`\n\n#### Output Format:\n\n`You have to return a single integer denoting the maximum result that can be achieved from the training.`\n\n#### Sample Input:\n\n9 2\n\n#### Sample Output:\n\n3\n\n#### Explanation: \n`We can break the difficulty in 3 and 6 whose GCD results in 3 which is the greatest output possible.`\n\n#### Constraints:\n\n- `1 <= d <= 10^5`\n\n- `1<= n <= d`",
+    "title": "Coach Manish",
+    "default_testcase": {
+        "id": 4950,
+        "input": "15 4",
+        "expected_output": "3",
+        "code_problem_id": 732,
+        "created_at": "2024-02-02T13:28:54.003Z",
+        "updated_at": "2024-02-02T13:28:54.003Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 2333,
+            "code_problem_id": 732,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int solve(int d, int n){\n    //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2334,
+            "code_problem_id": 732,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, d, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2335,
+            "code_problem_id": 732,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(d, n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2336,
+            "code_problem_id": 732,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int d, int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

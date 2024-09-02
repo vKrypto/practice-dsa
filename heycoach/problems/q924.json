@@ -1,0 +1,64 @@
+{
+    "id": 924,
+    "description": "You are given two jugs with capacities x liters and y liters. You have an infinite water supply. Return whether the total amount of water in both jugs may reach target using the following operations:\n\nFill either jug completely with water.\nCompletely empty either jug.\nPour water from one jug into another until the receiving jug is full, or the transferring jug is empty.\n\nExample 1:\n\nInput: x = 3, y = 5, target = 4\n\nOutput: true\n\nExample 2:\n\nInput: x = 2, y = 6, target = 5\n\nOutput: false",
+    "title": "Water & Jug Problem ",
+    "default_testcase": {
+        "id": 8144,
+        "input": "2 6 5",
+        "expected_output": "False",
+        "code_problem_id": 924,
+        "created_at": "2024-05-19T11:21:12.472Z",
+        "updated_at": "2024-05-19T11:21:12.472Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3069,
+            "code_problem_id": 924,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n     bool canMeasureWater(int jug1Capacity, int jug2Capacity, int targetCapacity) {\n       //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3070,
+            "code_problem_id": 924,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean canMeasureWater(int jug1Capacity, int jug2Capacity, int targetCapacity) {",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3071,
+            "code_problem_id": 924,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def canMeasureWater(self, jug1Capacity: int, jug2Capacity: int, targetCapacity: int) -> bool:\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3072,
+            "code_problem_id": 924,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    canMeasureWater(jug1Capacity, jug2Capacity, targetCapacity) {\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

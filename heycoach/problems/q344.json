@@ -1,0 +1,21 @@
+{
+    "id": 344,
+    "description": "You are given a dataset representing a network that initially formed as a tree of n nodes, each labeled from 1 to n. However, one additional connection was made, creating a situation where the network is no longer a tree. The additional connection involves two different nodes, selected from the range 1 to n, and it's guaranteed that this connection didn't previously exist.\n\nThe network is represented as an array of edges with a length of n, where each entry, edges[i] = [ai, bi], signifies the existence of a connection between nodes ai and bi.\n\nYour task is to identify the last added connection that can be removed in order to restore the network to a tree of n nodes. If there are multiple valid answers, select the one that appears last in the input array.\n\nInput:\n\nAn array edges of length n, where edges[i] = [ai, bi] represents a connection between nodes ai and bi.\nOutput:\n\nReturn the last added connection that, when removed, would transform the network into a tree of n nodes again.\nNotes:\n\nThe network is guaranteed to be initially connected and free from cycles.\n",
+    "title": "Reused Connections",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 803,
+            "code_problem_id": 344,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> findRedundantConnection(vector<vector<int>>& edges) {\n        \n    }\n};"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 477,
+    "description": "\n\nGiven equations in the form of **a/b = k**, where **a** and **b** are variables and **k** is a constant, evaluate queries of the form **c/d** and determine if they can be evaluated using the given equations.\n\n**Sample Input:**\n\nEquations: [[\"a\",\"b\"],[\"b\",\"c\"]]  \nValues: [2.0,3.0]  \nQueries: [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]\n\n**Sample Output:**\n [6.0,0.5,-1.0,1.0,-1.0]\n\n**Explanation:**\n\na / b = 2.0, b / c = 3.0, so a / c = 2.0 * 3.0 = 6.0.\nb / a = 1 / (a / b) = 0.5.\n\na / e is not present in the equations, so it's -1.0.\na / a is 1.0.\nx is not present in the equations, so x / x is -1.0.\n\n**Sample Input:**\n\nEquations: [[\"a\",\"b\"],[\"c\",\"d\"],[\"e\",\"f\"]]  \nValues: [1.0,2.0,3.0]  \nQueries: [[\"a\",\"c\"],[\"b\",\"d\"],[\"e\",\"f\"],[\"a\",\"e\"],[\"f\",\"c\"]]     \n\n**Sample Output:**\n\n   [-1.0,-1.0,1.0,-1.0,3.0]    \n\n**Explanation:**\na / c is not present in the equations, so it's -1.0.\nb / d is not present in the equations, so it's -1.0.\ne / f = 3.0.\na / e is not present in the equations, so it's -1.0.\nf / c = (e / f) / (e / c) = 3.0 / (3.0 * 1.0) = 1.0.\n\n**Sample Input:**\n\n\nEquations: [[\"a\",\"b\"],[\"b\",\"c\"],[\"c\",\"d\"]]  \nValues: [1.0,2.0,3.0]  \nQueries: [[\"a\",\"d\"]]     \n\n**Sample Output:**  \n[6.0]   \n**Explanation:**  a / d = (a / b) * (b / c) * (c / d) = 1.0 * 2.0 * 3.0 = 6.0.\n\n**Constraints:**\n\n* 1 <= Number of equations <= 20  \n* Each equation is of the form \"a/b = k\" where 1 <= |a|, |b| <= 5\n1 <= Number of queries <= 100.                                                                                                                                                                \n* Each query is of the form \"c/d\" where 1 <= |c|, |d| <= 5",
+    "title": "Evaluate Division",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1371,
+            "code_problem_id": 477,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1372,
+            "code_problem_id": 477,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    unordered_map<string, unordered_map<string, double>> graph;"
+        },
+        {
+            "id": 1373,
+            "code_problem_id": 477,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1374,
+            "code_problem_id": 477,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

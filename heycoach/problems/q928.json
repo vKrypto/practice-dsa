@@ -1,0 +1,8 @@
+{
+    "id": 928,
+    "description": "Given a weighted graph in the form edges, determine the sum of weights of edges after the graph is turned into a MST using Prim's Algorithm.\n\n```\nSample Input - 1\n\n2 1\n0 1 5\n\nSample Output - 1\n\n5\n```\n\nExplanation: \n\nThere are two vertices and one edge of length 5, the graph is already a MST and thus the edge weight comes out to be 5.\n\n```\nSample input - 2:\n\n3 3\n0 1 2\n1 2 3\n0 2 1\n\nSample Output -2:\n\n3\n```\n\nExplanation: We will remove the edge 1 - 2 which has a weight of 3, the resulting graph is a MST with total edge weight of 3.\n",
+    "title": "Prim's Algorithm",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

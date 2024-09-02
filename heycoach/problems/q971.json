@@ -1,0 +1,64 @@
+{
+    "id": 971,
+    "description": "Harsh loves his family and wants them to be happy, in order to do so he works quite hard.\n\nFor the next 'n' months harsh will work every month to earn 'm' amounts of money. For the ith month, it will cost a[i] amounts of money to make his family h[i] amount of happy. Since, he receives his salary at the end of the month, salary earned in month i can only be spent in some month j where j>i.\n\nHelp Harsh in achieving maximum amount of happiness for his family.\n\n```\nInput Format\n\nThe first line contains two space separated integers 'n' and 'm' denoting the no. of months and the salary of harsh respectively.\n\nThe next 'n' lines contains two space separated integers where the i th line denotes the the cost of money a[i] and the happiness earned on that month which is h[i].\n\nOutput Format:\n\nThe maximum amount of happiness achievable.\n```\n\n```\nSample Input- 1:\n\n1 10\n1 5\n\nSample Output- 1:\n\n0\n\nSample Input- 2:\n\n2 80\n0 20\n100 50\n\nSample Output- 2:\n\n20\n\nSample Input- 3:\n\n3 80\n80 80\n80 100\n160 500\n\nSample Output- 3:\n\n500\n```\n\nExplanation: In the first testcase since harsh receives his salary at the end of the month thus he cannot get any happiness in the first and only month.\n\nIn the second testcase, the first month costs nothing to be happy so he gains 20 happiness, starting the second month he has 80 amount of money but the cost of happiness is 100 thus he gains maximum 20 amounts of happiness.\n\nConstraints:\n\n1<=months<=50\n1<=salary<=10^8",
+    "title": "Family Man",
+    "default_testcase": {
+        "id": 8511,
+        "input": "2 5\n1 5\n2 1",
+        "expected_output": "1\n",
+        "code_problem_id": 971,
+        "created_at": "2024-05-31T13:26:12.352Z",
+        "updated_at": "2024-05-31T13:26:12.352Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3240,
+            "code_problem_id": 971,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int months, int salary, vector<int>& c, vector<int>& h) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3257,
+            "code_problem_id": 971,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int months, int salary, List<Integer> c, List<Integer> h) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3258,
+            "code_problem_id": 971,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, months, salary, c, h):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3259,
+            "code_problem_id": 971,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(months, salary, c, h) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

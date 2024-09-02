@@ -1,0 +1,64 @@
+{
+    "id": 652,
+    "description": "Brijesh is thinking something opposite as **valid parenthesis** is very famous question. So now he wants to make all the valid parentheses from a integer **n**. You have to help him in solving this problem. \nPrint all the *combinations of well-formed parentheses*.\n\n#### Input Format: \n- first and only line contains an integer n.\n\n#### Output Format:\n- print all the combinations of parentheses with single space seperated.\n\n#### Example:\n#### Input : \n3\n\nOutput: \n\n((())) (()()) (())() ()(()) ()()()\n\n#### Constraints:\n- 1 <= n <= 8\n",
+    "title": "Generate Paranthesis",
+    "default_testcase": {
+        "id": 4333,
+        "input": "3",
+        "expected_output": "((())) (()()) (())() ()(()) ()()() \n",
+        "code_problem_id": 652,
+        "created_at": "2024-01-27T10:53:59.901Z",
+        "updated_at": "2024-01-27T10:53:59.901Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2004,
+            "code_problem_id": 652,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  vector<string> generateParenthesis(int n) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2005,
+            "code_problem_id": 652,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<String> generateParenthesis(int n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2006,
+            "code_problem_id": 652,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def generateParenthesis(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2007,
+            "code_problem_id": 652,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n      generateParenthesis(n) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

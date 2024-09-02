@@ -1,0 +1,28 @@
+{
+    "id": 306,
+    "description": "Given an array arr[] of size N and an integer K. Find the maximum for each and every contiguous subarray of size K.\n\nConstraints:\n1 \u2264 N \u2264 10^5\n1 \u2264 K \u2264 N\n0 \u2264 arr[i] \u2264 10^7",
+    "title": "Maximums of Subarrays of size K",
+    "default_testcase": {
+        "id": 2024,
+        "input": "9 3\n1 2 3 1 4 5 2 3 6",
+        "expected_output": null,
+        "code_problem_id": 306,
+        "created_at": "2023-09-17T15:38:10.332Z",
+        "updated_at": "2023-09-17T15:38:10.332Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 754,
+            "code_problem_id": 306,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    vector <int> max_of_subarrays(int *arr, int n, int k)\n    {\n        \n    }\n};"
+        }
+    ]
+}

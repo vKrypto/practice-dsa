@@ -1,0 +1,64 @@
+{
+    "id": 827,
+    "description": "A xor-sum of a sequence of integers a1,a2,a3\u2026.am  is defined as the bitwise XOR of all its elements : a1^a2^a3\u2026.^am .\nHere ^ denotes the bitwise XOR operation\n\nYou can take no more than k distinct integers from positive integer from 1 to n. Find the largest xor-sum (largest xor-sum means maximum happiness!) you can obtain..\n\n\n#### `Input:1`\n\n- `The two integers n and k (1\u2264k\u2264n\u226410^18).`\n\n\n\n#### `Output:`\n\n- `Output one number - the largest possible xor-sum.`\n\n\n\n#### `Sample 1`\n\n#### `Input :`\n`4 3`\n\n#### `Output :`\n`7`\n\n\n\n#### `Sample 2`\n\n#### `Input :`\n`6 6`\n\n#### `Output :`\n`7`",
+    "title": "XOR SUM",
+    "default_testcase": {
+        "id": 7415,
+        "input": "4 3",
+        "expected_output": "7\n",
+        "code_problem_id": 827,
+        "created_at": "2024-04-26T19:46:03.367Z",
+        "updated_at": "2024-04-26T19:46:03.367Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2697,
+            "code_problem_id": 827,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    long long int Xorsum(long long int n, long long int k){\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2698,
+            "code_problem_id": 827,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long Xorsum(long n, long k) {\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2699,
+            "code_problem_id": 827,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def Xorsum(self, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2700,
+            "code_problem_id": 827,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    Xorsum(n, k) {\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

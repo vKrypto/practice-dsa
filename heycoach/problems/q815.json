@@ -1,0 +1,64 @@
+{
+    "id": 815,
+    "description": "\nA chef is preparing **n** dishes for a gourmet banquet, with each dish containing a specified amount of fish and meat. A food critic is tasked to sample a predetermined total quantity of grams from each dish.<br/> The aim is to determine the exact amount of fish and meat the critic should consume from each dish to minimize the variety among the dishes after sampling. The ideal scenario is for some dishes to end up with identical contents of fish and meat.\n\n**Input Format:**\n\n- An integer **n**, representing the number of dishes.\n- Followed by **n** lines, each containing three integers: **ai**, **bi**, and **mi**, where:\n  - **ai** represents the grams of fish in the ith dish.\n  - **bi** represents the grams of meat in the ith dish.\n  - **mi** represents the total grams the critic should consume from the ith dish.\n\n**Output Format:**\n\n- For each dish, output a pair (**xi**, **yi**):\n  - **xi**: Grams of fish the critic consumes from the ith dish.\n  - **yi**: Grams of meat the critic consumes from the ith dish.\n\nThe strategy for consumption should be such that the critic attempts to consume as much as possible from one type of ingredient (either fish or meat), which could potentially help match the post-sampling contents of other dishes and thus reduce variety.\n\n**Constraints:**\n- `1 \u2264` **`n`** `\u2264 10^5`\n- `0 \u2264 `**`ai`**`,` **`bi`** `\u2264 10^6`\n- `0 \u2264` **`mi`** `\u2264 `**`ai`**` +` **`bi`**\n\n**Example:**\n\n**Input:**\n```\n3\n10 5 3\n5 10 4\n7 3 2\n```\n\n**Output:**\n```\n3 0\n4 0\n2 0\n```\n\n**Explanation:**\n- `For` **`Dish 1`** `(10g fish, 5g meat, requires 3g): The critic consumes 3g of fish and 0g of meat, leaving 7g of fish and 5g of meat remaining.`\n- `For` **`Dish 2`** `(5g fish, 10g meat, requires 4g): The critic consumes all 4g of fish available and 0g of meat, leaving 1g of fish and 10g of meat remaining.`\n- `For` **`Dish 3`** `(7g fish, 3g meat, requires 2g): The critic consumes 2g of fish and 0g of meat, leaving 5g of fish and 3g of meat remaining.`",
+    "title": "Variety Minimization in Banquet Dishes",
+    "default_testcase": {
+        "id": 7905,
+        "input": "3\n10 5 3\n5 10 4\n7 3 2",
+        "expected_output": "3 0\n4 0\n2 0\n",
+        "code_problem_id": 815,
+        "created_at": "2024-05-14T09:26:27.598Z",
+        "updated_at": "2024-05-14T09:26:27.598Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2661,
+            "code_problem_id": 815,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<pair<int, int>> minimizeVariety(vector<tuple<int, int, int>>& dishes) {\n      //Write your code here ",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2890,
+            "code_problem_id": 815,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<int[]> minimizeVariety(List<int[]> dishes) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2891,
+            "code_problem_id": 815,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minimize_variety(self, dishes):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2892,
+            "code_problem_id": 815,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minimizeVariety(dishes) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 154,
+    "description": "\n\nGiven an array of strings, `words`, and an integer, `k`, your task is to return the `k` most frequent strings. The output should be sorted by the frequency from highest to lowest, and words with the same frequency should be sorted in lexicographical order.\n\n**`Input Format:`**\n- `The first line contains two integers, `n` and `k`, representing the size of the array and the number of most frequent words to return, respectively.`\n- `The second line contains `n` space-separated words.`\n\n**`Output Format:`**\n- `Print `k` single space-separated words that are the most frequent in the given array, sorted by their frequency and then lexicographically.`\n\n\n\n**`Sample Input 1:`**\n```\n6 2\ni love hritik i love coding\n```\n\n**`Sample Output 1:`**\n```\ni love\n```\n\n**`Explanation 1:`**\n- `The words \"i\" and \"love\" both appear twice, making them the most frequent words in the given array. They are returned in lexicographical order as they have the same frequency.`\n\n**`Sample Input 2:`**\n```\n4 2\napple banana apple fruit\n```\n\n**`Sample Output 2:`**\n```\napple banana\n```\n\n**`Explanation 2:`**\n\n`The word \"apple\" appears twice, making it the most frequent word. The words \"banana\" and \"fruit\" both appear once, but \"banana\" comes before \"fruit\" in lexicographical order. Since `k = 2`, only \"apple\" and \"banana\" are returned.`\n\n **`Constraints:`**\n- `1 <= words.length <= 500`\n- `1 <= words[i].length <= 10`\n- `words[i] consists of lowercase English letters.`\n- `k  is in the range [1, The number of unique words[i]]`",
+    "title": "Top K Frequent Words",
+    "default_testcase": {
+        "id": 1108,
+        "input": "6 2\ni love hritik i love coding",
+        "expected_output": "i love ",
+        "code_problem_id": 154,
+        "created_at": "2022-10-21T17:34:11.853Z",
+        "updated_at": "2022-10-21T17:34:11.853Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 163,
+            "code_problem_id": 154,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class solution {\npublic:\n    vector<string> topKFrequent(vector<string>& words, int k)\n    {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 164,
+            "code_problem_id": 154,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<String> topKFrequent(String[] words, int k) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 165,
+            "code_problem_id": 154,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def topKFrequent(self, words, k):\n        # Write Code Here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 857,
+            "code_problem_id": 154,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    topKFrequent(words, k) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

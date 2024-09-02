@@ -1,0 +1,21 @@
+{
+    "id": 959,
+    "description": "You are given an array of n integers. Your task is to count the number of pairs of indices (i,j) such that ii<j and a[j]\u2212a[i]=j\u2212i.\n\nInput\n\nThe first line contains one integer (1 \u2264 t \u2264 10^4), the number of test cases.\n\nEach test case consists of two lines:\n\nThe first line contains one integer,  (1\u2264n\u22642\u22c510^5)\n  representing the array.\n\nThe sum of n over all test cases does not exceed 2 times 10^5.\n\nOutput\n\nFor each test case, print a single integer \u2014 the number of pairs (i,j) such that i<j and a[j]\u2212a[i]=j\u2212i.\n",
+    "title": "Count Pairs with Specific Differences",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3195,
+            "code_problem_id": 959,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class SameDifferences {\npublic:\n    static void countPairsWithSpecificDifferences(int t, const std::vector<std::pair<int, std::vector<int>>>& testCases) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

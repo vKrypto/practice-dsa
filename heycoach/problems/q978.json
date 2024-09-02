@@ -1,0 +1,64 @@
+{
+    "id": 978,
+    "description": "Design a system that efficiently calculates the frequency of occurrences of specified terms in a given lexicon.\n\nImplement the LexiconWordFrequency class:\n\nLexiconWordFrequency(vector<string>& lexicon): Initializes the object with the terms in the lexicon.\nfrequency(vector<string>& words): Returns the frequency of each term present in the words list in non-decreasing order based on the term's frequency in the lexicon.</br>\n\n**Input**:</br>\nThe first input line contains the list of terms present in the lexicon.</br>\nThe second input line contains the list of terms for which the frequency needs to be calculated.\n\n**Output**:</br>\nReturn the frequency of each term present in the words list, sorted in non-decreasing order based on their frequency in the lexicon.\n\n**Example**:</br>\n\n**Input**:\n```\nlexicon: [\"banana\", \"apple\", \"apple\", \"banana\", \"grapes\", \"grapes\", \"grapes\", \"grapes\"]\nwords: [\"banana\", \"apple\", \"grapes\"]\n```\n\n**Output:**\n```\napple: 2\nbanana: 2\ngrapes: 4\n\n```\n\n**Constraints:**</br>\nThe number of terms in the lexicon is at most 10^4.</br>\nEach term in the lexicon consists of lowercase English letters only.</br>\nThe length of each term is at most 10 characters.</br>\nAt most 10^4 calls will be made to the frequency function.",
+    "title": "Term Search in Lexicon",
+    "default_testcase": {
+        "id": 8543,
+        "input": "banana apple apple banana grapes grapes grapes grapes\nbanana apple grapes",
+        "expected_output": "banana: 2\napple: 2\ngrapes: 4\n",
+        "code_problem_id": 978,
+        "created_at": "2024-06-05T13:52:22.188Z",
+        "updated_at": "2024-06-05T13:52:22.188Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3268,
+            "code_problem_id": 978,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass LexiconWordFrequency {\n    unordered_map<string, int> frequencyMap;\npublic:\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3269,
+            "code_problem_id": 978,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class LexiconWordFrequency:\n    def frequency(self, words):\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3270,
+            "code_problem_id": 978,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class LexiconWordFrequency {\n    public List<Map.Entry<String, Integer>> frequency(List<String> lexicon, List<String> words) {\n       \n    ",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3271,
+            "code_problem_id": 978,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class LexiconWordFrequency {\n   \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

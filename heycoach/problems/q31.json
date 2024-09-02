@@ -1,0 +1,64 @@
+{
+    "id": 31,
+    "description": "Tuntun wants to pass n exams and get the academic scholarship. She will get the scholarship if the average grade mark for all the exams is at least avg. The exam grade cannot exceed r. Tuntun has passed the exams and got grade ai for the i-th exam. To increase the grade for the i-th exam by 1 point, Tuntun must write bi essays. She can raise the exam grade multiple times.\n\nWhat is the minimum number of essays that Tuntun needs to write to get the scholarship?\n\n**`Input:`**  \n- `The first line contains three integers n, r, avg (1\u2009\u2264\u2009n\u2009\u2264\u200910^5, 1\u2009\u2264\u2009r\u2009\u2264\u200910^9, 1\u2009\u2264\u2009avg\u2009\u2264\u2009min(r,\u200910^6)) \u2014 the number of exams, the maximum grade and the required grade point average, respectively.`\n\n- `Each of the following n lines contains space-separated integers ai and bi (1\u2009\u2264\u2009ai\u2009\u2264\u2009r, 1\u2009\u2264\u2009bi\u2009\u2264\u200910^6).`\n\n**`Output:`**  \n`In the first line print the minimum number of essays.`",
+    "title": "Pass Exam",
+    "default_testcase": {
+        "id": 182,
+        "input": "10 10 7\n1 10\n2 9\n3 8\n4 7\n5 6\n6 5\n7 4\n8 3\n9 2\n10 1",
+        "expected_output": "70\n",
+        "code_problem_id": 31,
+        "created_at": "2022-09-26T05:40:16.741Z",
+        "updated_at": "2022-09-26T05:40:16.741Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 225,
+            "code_problem_id": 31,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, students, r, avg):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 226,
+            "code_problem_id": 31,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void solve(List<List<Long>> students, long r, long avg) {\n      //Write your code here",
+            "skeleton_class_end": "          }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 227,
+            "code_problem_id": 31,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long long solve(vector<pair<long long, long long>>& students, long long r, long long avg){\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 864,
+            "code_problem_id": 31,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(students, r, avg) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

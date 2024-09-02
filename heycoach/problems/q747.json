@@ -1,0 +1,64 @@
+{
+    "id": 747,
+    "description": "You are browsing the internet and wants to search about baseball. As soon as you start typing you are bombarded by the results, given an incomplete word 's' determine the total number of recommended words that you will get, you are provided the head of an already implemented trie that contains all the searches that the browser might suggest. Calculate the number of recommended results.\n\nInput Format :\n\nThe first line of input contains an integer, that denotes the value of n.\n\nThe following line contains n space separated words that the browser might recommend.\n\nThe third line contains the incomplete word s.\n\nOutput Format:\n\nCalculate the number of recommended results.\n\nConstraints:\n\n1<=n<=100",
+    "title": "Recommended Results",
+    "default_testcase": {
+        "id": 5582,
+        "input": "3\nharsh harkirat harshit\nhar",
+        "expected_output": "3",
+        "code_problem_id": 747,
+        "created_at": "2024-02-16T06:22:49.368Z",
+        "updated_at": "2024-02-16T06:22:49.368Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2386,
+            "code_problem_id": 747,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  class TrieNode{\n    public:\n    char data;\n    TrieNode**children;\n    bool isend;\n\n    TrieNode(char data){\n        this->data = data;\n        children = new TrieNode*[26];\n        isend = false;\n        for(int i=0;i<26;i++){\n            children[i] = NULL;\n        }\n    }\n};\n*/\n\nclass Solution{\n    private:\n    int cnt=0;\n    public:\n    int recommendedresults(string word, TrieNode* root, int i=0){\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2390,
+            "code_problem_id": 747,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    char data;\n    TrieNode[] children;\n    boolean isEnd;\n\n    TrieNode(char data) {\n        this.data = data;\n        children = new TrieNode[26];\n        isEnd = false;\n        for (int i = 0; i < 26; i++) {\n            children[i] = null;\n        }\n    }\n}\n*/\n\nclass Solution {\n    private int cnt = 0;\n\n    int recommendedresults(String word, TrieNode root, int i) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2391,
+            "code_problem_id": 747,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass TrieNode:\n    def __init__(self, data):\n        self.data = data\n        self.children = [None] * 26\n        self.isEnd = False\n\"\"\"\n\nclass Solution:\n    def __init__(self):\n        self.cnt = 0\n\n    def recommendedresults(self, word, root, i=0):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2397,
+            "code_problem_id": 747,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    constructor(data) {\n        this.data = data;\n        this.children = Array(26).fill(null);\n        this.isend = false;\n    }\n}*/\n\nclass Solution {\n    constructor() {\n        this.cnt = 0;\n    }\n\n    recommendedresults(word, root, i = 0) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 722,
+    "description": "Given that `n` integers are read from a data stream. Your task is to find the `median` of the elements read so far. \nMedian is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the floor of the average of the two middle values.\n\n### Example 1 \n\n### Input\n```CPP\narr = [5,3,8]\n```\n### Output \n```CPP\n[5,4,5]\n```\n### Explanation\nAfter reading first element of stream, Median of [5] is 5 \nAfter reading second element of stream, Median of [5, 3]  = floor((5+3)/2)=4\nAfter reading third element of stream, Median of [5,3,8] = 5 ,it is the middle value of the sorted array\nSo the output will be 5 4 5.\n\n**Example 2:**\n\n**Input:**\n```CPP\narr = [1,2,3] \n```\n**Output:** \n```CPP\n[1,1,2]\n```\n\n### Constraints:\n* `1 <= n <= 10000`\n*  `0 <= arr[i] <= 100000`",
+    "title": "Median in a data stream",
+    "default_testcase": {
+        "id": 4820,
+        "input": "3\n5 3 8",
+        "expected_output": "5 4 5 ",
+        "code_problem_id": 722,
+        "created_at": "2024-02-01T07:36:28.946Z",
+        "updated_at": "2024-02-01T07:36:28.946Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2276,
+            "code_problem_id": 722,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n\n    vector<int> findMedian(vector<int> &arr, int n) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2277,
+            "code_problem_id": 722,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> findMedian(List<Integer> arr, int n) {\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2280,
+            "code_problem_id": 722,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findMedian(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2281,
+            "code_problem_id": 722,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findMedian(arr, n) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

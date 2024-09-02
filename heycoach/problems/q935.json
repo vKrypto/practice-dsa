@@ -1,0 +1,64 @@
+{
+    "id": 935,
+    "description": "After a natural disaster, relief packages must be distributed to various locations. Each location has a different demand.\n\nGiven an array of demands and a total number of packages, distribute the packages to maximize the minimum packages any location receives.\n\n#### `Sample Input:`  \n```\nDemands: [10, 20, 30], Packages: 60\n```\n#### `Sample Output:` \n```\nDistribution: [10, 20, 30]\n```\n\n\n\n\n\n#### `Explanation:`\n\n`The code correctly distributes packages based on the calculated bestMid value. It ensures that the minimum `</br>`packages any location receives is maximized without exceeding the available packages. Since the demands are `</br>` 10, 20, and 30, they fit exactly into the total available packages, resulting in the output 10 20 30.`\n\n\n#### `Constraints:`\n\n- `1 <= Number of locations <= 10^5`\n\n- `0 <= Demand of each location <= 10^9`\n\n- `0 <= Total packages available <= 10^9`",
+    "title": "Disaster Relief Distribution",
+    "default_testcase": {
+        "id": 8188,
+        "input": "3\n10 20 30\n0",
+        "expected_output": "0 0 0 ",
+        "code_problem_id": 935,
+        "created_at": "2024-05-22T08:40:18.167Z",
+        "updated_at": "2024-05-22T08:40:18.167Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3105,
+            "code_problem_id": 935,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class PackageDistributor {\npublic:\n    static std::vector<int> distributePackages(const std::vector<int>& demands, int packages) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3106,
+            "code_problem_id": 935,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class PackageDistributor {\n    public static List<Integer> distributePackages(List<Integer> demands, int packages) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3107,
+            "code_problem_id": 935,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class PackageDistributor:\n    @staticmethod\n    def distribute_packages(demands, packages):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3108,
+            "code_problem_id": 935,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class PackageDistributor {\n    distributePackages(demands, packages) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

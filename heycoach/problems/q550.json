@@ -1,0 +1,57 @@
+{
+    "id": 550,
+    "description": "Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*' where:\n\n'?' Matches any single character.\n'*' Matches any sequence of characters (including the empty sequence).\nThe matching should cover the entire input string (not partial).\n\n\nExample 1:\n\nInput: s = \"aa\", p = \"a\"\nOutput: false\nExplanation: \"a\" does not match the entire string \"aa\". \n\nConstraints:\n\n0 <= s.length, p.length <= 2000\ns contains only lowercase English letters.\np contains only lowercase English letters, '?' or '*'.",
+    "title": "Willdcard Matching",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1645,
+            "code_problem_id": 550,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution{\n  public:\n/*You are required to complete this method*/\n    \n\n    \n    int wildCard(string s1,string s2)\n    {\n\n    }\n};\n\n"
+        },
+        {
+            "id": 1646,
+            "code_problem_id": 550,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution\n{\n\t// Method to find if a given pattern matches a given string using wildcards.\n\tint wildCard(String pattern, String str) {\n\n    }\n}\n"
+        },
+        {
+            "id": 1647,
+            "code_problem_id": 550,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def wildCard(self,pattern, string):\n        # initializing variables for length of input string and pattern\n\n\n"
+        },
+        {
+            "id": 1648,
+            "code_problem_id": 550,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    wildCard(pattern, str) {\n\n    }\n}"
+        }
+    ]
+}

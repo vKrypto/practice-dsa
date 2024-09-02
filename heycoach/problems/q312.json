@@ -1,0 +1,28 @@
+{
+    "id": 312,
+    "description": "Given K sorted arrays arranged in the form of a matrix of size K*K. The task is to merge them into one sorted array.\n",
+    "title": "Merge k sorted Arrays",
+    "default_testcase": {
+        "id": 2042,
+        "input": "1\n3\n1 2 3\n4 5 6\n7 8 9",
+        "expected_output": "1 2 3 4 5 6 7 8 9 \n",
+        "code_problem_id": 312,
+        "created_at": "2023-09-17T16:45:28.800Z",
+        "updated_at": "2023-09-17T16:45:28.800Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 760,
+            "code_problem_id": 312,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    vector<int> mergeArrays(vector<vector<int>> arr, int K)\n    {\n        \n    }\n};\n"
+        }
+    ]
+}

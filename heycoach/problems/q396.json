@@ -1,0 +1,64 @@
+{
+    "id": 396,
+    "description": "Given the head of a singly linked list, return the middle node of the linked list.\n\nIf there are two middle nodes, return the first middle node.\n\n**`Sample Input:`**\n\n```\n5\n1 2 3 4 5\n```\n\n**`Sample Output:`**  \n`3`\n\n**`Sample Input:`**\n\n```\n4\n1 2 3 4\n```\n\n**`Sample Output:`**  \n`2`\n\n**` Constraints:`**\n\n - `The number of nodes in the list is in the range [1, 100].`  \n- `1 <= Node.val <= 100`",
+    "title": "middle of linked list",
+    "default_testcase": {
+        "id": 2453,
+        "input": "4\n12 13 15 18",
+        "expected_output": "13\n",
+        "code_problem_id": 396,
+        "created_at": "2023-11-19T05:21:00.067Z",
+        "updated_at": "2023-11-19T05:21:00.067Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 955,
+            "code_problem_id": 396,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  class Node{\n\tpublic:\n\t\tint data;\n\t\tNode *next;\n};\n*/\n\nclass NodeOperation{\n    public: \n\tvoid printMiddle(class Node *head){\n      //Write your code here\n   \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 956,
+            "code_problem_id": 396,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Node:\n    def __init__(self, data=None):\n        self.data = data\n        self.next = None\n\"\"\"\nclass NodeOperation:\n    def printMiddle(self, head):\n      #Write your code here\n        ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 957,
+            "code_problem_id": 396,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    public int data;\n    public Node next;\n}*/\n\nclass NodeOperation {\n    void printMiddle(Node head) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2394,
+            "code_problem_id": 396,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass ListNode {\n    constructor(x) {\n        this.val = x;\n        this.next = null;\n    }\n}\n*/\n\n\nclass Solution {\n    middleNode(head) {\n      //Write your code here and print the middle node",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

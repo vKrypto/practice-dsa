@@ -1,0 +1,8 @@
+{
+    "id": 386,
+    "description": "In a village at the foot of the mountains, two friends, Lily and Jake, have embarked on a journey to collect precious gems scattered throughout their land. \nEach gem is associated with a unique value, and both Lily and Jake have sorted lists containing the values of the gems they've discovered.\n To maximize their treasure collection, they decide to merge their sorted lists into a single comprehensive list of gem values.\n\nYour task is to create a function named mergeSortedLists that takes the heads of two sorted linked lists as input and returns a new linked list containing \nall the gem values from both lists, merged and sorted.\n\nEach node of the linked list holds the following attributes:\n\nvalue: The value of the gem (an integer).\nnext: A pointer to the next node in the linked list.\n\nInput:\n\nThe input consists of the following:\n\nTwo integers, n and m, representing the lengths of the two sorted linked lists.\nn integers representing the values of gems in the first sorted linked list.\nm integers representing the values of gems in the second sorted linked list.\n\nOutput:\nPrint the values of the merged and sorted linked list in a space-separated format.\n\nConstraints:\n(1 \u2264 n, m \u2264 1000)\nThe values of the gems are positive integers.",
+    "title": "Merged and Sorted Linked List",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

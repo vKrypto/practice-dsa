@@ -1,0 +1,64 @@
+{
+    "id": 451,
+    "description": "Given an array of integers, write a function to count the number of elements that are greater than a specified threshold.\n\n\n\n**`Input Format:`**\n\n```\nThe first line contains the size of the array (n).\nThe next line contains n space-separated integers i.e. elements of array arr.\nThe third line contains the threshold value x.\n```\n\n**Output Format:**\n\n`Return a single integer equal to the number of elements greater than the threshold value.`\n\n**`Input:`**  \n\n```\n5\n\n1 3 5 7 9\n\n10\n```\n\n**Output:**\n\n`0`\n\n**`Explanation:`**\n\n`Since the threshold value is equal to 10 and there are no values greater than that in the array hence the result is zero.`\n\n**Constraints:**\n\n- `Size of the array (n): 1 \u2264 n \u2264 10^5`\n\n- `Elements of the array: -10^9 \u2264 arr[i] \u2264 10^9`\n\n- `Threshold: -10^9 \u2264 threshold \u2264 10^9`",
+    "title": "Count Inversions",
+    "default_testcase": {
+        "id": 6026,
+        "input": "5\n3 2 1 4 6\n5",
+        "expected_output": "1\n",
+        "code_problem_id": 451,
+        "created_at": "2024-03-04T09:15:42.813Z",
+        "updated_at": "2024-03-04T09:15:42.813Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1287,
+            "code_problem_id": 451,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr, x) {\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1288,
+            "code_problem_id": 451,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr, x):\n      #Write your code here\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1289,
+            "code_problem_id": 451,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(ArrayList<Integer> arr, int x) {\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1290,
+            "code_problem_id": 451,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(vector<int>& arr, int x) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

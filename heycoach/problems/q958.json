@@ -1,0 +1,21 @@
+{
+    "id": 958,
+    "description": "Valeric and Valerko missed the last Euro football game, so they decided to watch the key moments online. However, their internet connection is slow. If they start watching the video immediately, it will buffer because the rate at which the video data is required exceeds their download speed.\n\nTo avoid buffering and ensure a smooth watching experience, they need to wait for some time before starting the video. They need to wait just enough so that the video plays continuously without pauses while it continues to download.\n\n```\nGiven:\n\n\n- The video requires a units of data per second to watch.\n\n- Their internet connection downloads b units of data per second.\n \n- The total length of the video is c seconds.\n \n- The goal is to determine the minimum number of seconds t they need to wait before \n \n- starting the video so that they can watch it without any interruptions.\n \n\n```\n\nInput\n\nThe first line contains three space-separated integers a, b, and c (1 \u2264 a,b,c \u2264 1000,a>b). \n\na: units of data required per second to watch the video.\n\nb: units of data the internet connection can download per second.\n\nc: length of the video in seconds.\n\nOutput\n\nPrint a single integer \u2014 the minimum number of seconds t they must wait before starting to watch the video without pauses.\n",
+    "title": "Smooth Video Watching",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3194,
+            "code_problem_id": 958,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class SmoothVideoWatching {\npublic:\n    static int minWaitTime(int n, int m, int t) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

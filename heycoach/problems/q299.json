@@ -1,0 +1,57 @@
+{
+    "id": 299,
+    "description": "Given an integer array nums, representing the number of chocolates in the bag where 1<=i<=N and N is the length of Array nums, Alice and Bob are best friends who want to share an equal number of chocolates between one another return true if they can partition the array into two subsets such that the sum of the elements in both subsets is equal or false otherwise.\n\nConstraints:\n\n1 <= nums.length <= 200\n\n1 <= nums[i] <= 100\n\nExample:\n\nInput: nums = [1,5,11,5]\n\nOutput: true\n\n",
+    "title": "Equal choclates sharing",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 729,
+            "code_problem_id": 299,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def can_partition(n, arr):\n"
+        },
+        {
+            "id": 730,
+            "code_problem_id": 299,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "function canPartition(n, arr) {\n}"
+        },
+        {
+            "id": 731,
+            "code_problem_id": 299,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "bool canPartition(int n, vector<int> &arr){\n//Write your code here\n}\n\n"
+        },
+        {
+            "id": 732,
+            "code_problem_id": 299,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "public class PartitionEqualSubsetSum {\n\n    public static boolean canPartition(int n, ArrayList<Integer> arr) {\n    }\n}\n"
+        }
+    ]
+}

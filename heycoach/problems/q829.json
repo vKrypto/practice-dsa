@@ -1,0 +1,64 @@
+{
+    "id": 829,
+    "description": "Given an  n\u00d7n integer matrix grid, find the maximum sum of a falling path with non-zero shifts.\n\nA falling path with non-zero shifts is a choice of exactly one element from each row of the grid such that no two elements chosen in adjacent rows are in the same column.\n\n**Example**:\n\n**Input**:\n```\n3\ngrid = [[1,2,3],\n    [4,5,6],\n    [7,8,9]\n]\n```\n**Output**:\n```\n17\n```\n\n**Explanation**:</br>\nThe possible falling paths are:\n```\n[1,5,9], [1,5,7], [1,6,7], [1,6,8],\n[2,4,8], [2,4,9], [2,6,7], [2,6,8],\n[3,4,8], [3,4,9], [3,5,7], [3,5,9]\n```\n\nThe falling path with the largest sum is [3,5,9], so the answer is 17.\n\n**Constraints**:\n```\nn == grid.length == grid[i].length\n1 <= n <= 200\n-99 <= grid[i][j] <= 99\n```",
+    "title": "Maximum Falling Path Sum II",
+    "default_testcase": {
+        "id": 7429,
+        "input": "3\n1 2 3\n4 5 6\n7 8 9 ",
+        "expected_output": "17\n",
+        "code_problem_id": 829,
+        "created_at": "2024-04-27T03:21:56.547Z",
+        "updated_at": "2024-04-27T03:21:56.547Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2717,
+            "code_problem_id": 829,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n    public:\n      int maxFallingPathSum(vector<vector<int>>& grid) {\n       \n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2718,
+            "code_problem_id": 829,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxFallingPathSum(int[][] grid) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2719,
+            "code_problem_id": 829,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def maxFallingPathSum(self, grid: List[List[int]]) -> int:\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2815,
+            "code_problem_id": 829,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxFallingPathSum(grid) {\n        \n   ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 910,
+    "description": "In a Binary Search Tree (BST), some nodes are occupied by thieves. You need to travel from a start node to a target node while minimizing the risk. The risk is defined as the number of thieves encountered on the path. If it's not possible to reach the target node due to obstacles, return -1. Nodes occupied by thieves or obstacles cannot be traversed.\n\n\n#### `Input Format`\n\n1. Enter the number of nodes: `n`\n2. Enter the node values: `n` space-separated integers\n3. Enter the number of thieves: `t`\n4. Enter the node values with thieves: `t` space-separated integers\n5. Enter the number of obstacles: `o`\n6. Enter the node values with obstacles: `o` space-separated integers\n7. Enter the start node value: `s`\n8. Enter the target node value: `t`\n\n#### `Output Format`\n\n- `Print the minimum risk to reach the target node from the start node. If it's not possible, print` `-1`.\n\n#### `Sample Input 1`\n\n```\nEnter the number of nodes: 7\nEnter the node values: 10 5 15 2 7 12 18\nEnter the number of thieves: 2\nEnter the node values with thieves: 5 18\nEnter the number of obstacles: 2\nEnter the node values with obstacles: 7 12\nEnter the start node value: 10\nEnter the target node value: 18\n```\n\n#### `Sample Output 1`\n\n```\n-1\n```\n\n#### `Sample Input 2`\n\n```\nEnter the number of nodes: 7\nEnter the node values: 10 5 15 2 7 12 18\nEnter the number of thieves: 2\nEnter the node values with thieves: 5 18\nEnter the number of obstacles: 1\nEnter the node values with obstacles: 7\nEnter the start node value: 10\nEnter the target node value: 18\n```\n\n#### `Sample Output 2`\n\n```\n1\n```\n#### `Constraints`\n\n- `The number of nodes in the tree is at most 1000.`\n- `Node values are unique integers.`\n- `Some nodes are marked as thieves or obstacles.`",
+    "title": "Minimum Risk Path in a BST",
+    "default_testcase": {
+        "id": 8721,
+        "input": "7\n10 5 15 2 7 12 18\n2\n5 18\n2\n7 12\n10\n18",
+        "expected_output": "1\n",
+        "code_problem_id": 910,
+        "created_at": "2024-07-15T06:52:14.112Z",
+        "updated_at": "2024-07-15T06:52:14.112Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3013,
+            "code_problem_id": 910,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*class TreeNode {\npublic:\n    int val;\n    TreeNode *left, *right;\n    TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n};*/\n\nclass Solution {\npublic:\n    int minimumRiskPath(TreeNode* root, int start, int target, unordered_set<int>& thieves, unordered_set<int>& obstacles) {\n      //Write your code here",
+            "skeleton_class_end": "}\n\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3296,
+            "code_problem_id": 910,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class TreeNode {\n    int val;\n    TreeNode left, right;\n    TreeNode(int x) { val = x; }\n}*/\nclass Solution {\n    public int minimumRiskPath(TreeNode root, int start, int target, Set<Integer> thieves, Set<Integer> obstacles) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3297,
+            "code_problem_id": 910,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''\nclass TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n'''\n\nclass Solution:\n    def minimumRiskPath(self, root, start, target, thieves, obstacles):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3298,
+            "code_problem_id": 910,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class TreeNode {\n    constructor(val) {\n        this.val = val;\n        this.left = this.right = null;\n    }\n}*/\n\nclass Solution {\n    minimumRiskPath(root, start, target, thieves, obstacles) {\n      //Write your code here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": 508,
+    "description": "Most of us know how to count the number of inversions in an array. An inversion in an array is a pair of indices(i,j) such that a[i]>a[j] and i < j. In this problem you are given 2 arrays A and B and you have to return number of such pairs such that a[i]>b[j] and i < j.\n\n### Input Format\n```\nFirst line contains n denoting the total number of elements.The next line contains n space separated integers of array A.This line is again followed by n space separated integers of array B.\n```\n### Output Format\n```\nPrint the total number of pairs satisfying the above condition.\n```\n### Sample Input\n```\n3\n5 6 7\n1 2 3\n```\n### Sample Output\n```\n3\n```\n### Explanation\n```\n3 pairs are (5,2) , (5,3) and (6,3)\n```\n### Constraints\n- 1<=n<=200000\n\n- 1<=A[i]<=10^6\n\n- 1<=B[i]<=10^6",
+    "title": "Rethinking Inversions: A Deeper Dive into Permutations",
+    "default_testcase": {
+        "id": 3406,
+        "input": "3\n5 6 7\n1 2 3",
+        "expected_output": "3\n",
+        "code_problem_id": 508,
+        "created_at": "2024-01-04T11:24:24.051Z",
+        "updated_at": "2024-01-04T11:24:24.051Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1499,
+            "code_problem_id": 508,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  static long solve(int n, int[] ar, int[] br) {\n    // write your code here\n  }\n}"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 849,
+    "description": "\nLet's call a positive number good if it can be written as a sum of different non-negative powers of n. For example, for n = 4 number 17 is good, because it can be written as 4^0 +4^2 = 1 +16= 17, but 9 is not.\n\nFind the k-th good number if they are sorted in increasing order. Since this number may be too large, output it modulo 10^9 +7.\n\n\n#### `Input:`\n- `The first and only line of each test case contains two integers n and k (2 \u2264 n \u2264 10^9; 1 \u2264 k \u2264 10^9).`\n\n#### `Output:`\n- `For each test case, print one integer - the k-th special number in increasing order modulo 10^9 +7.`\n\n#### `Sample Input Ouptu:1`\n\n#### `Input :`\n`3`\n`4`\n\n#### `Output:`\n`9`\n\n\n#### `Sample  Input and Output:2`\n\n#### `Input :`\n`2`  \n`12`\n\n#### `Output :`\n`12`\n\n#### `Sample Input and Output:3`\n\n#### `Input :`\n```\n105\n564\n```\n#### `Output :`\n`3595374`\n",
+    "title": "Kth Good Number",
+    "default_testcase": {
+        "id": 7495,
+        "input": "2\n12",
+        "expected_output": "12\n",
+        "code_problem_id": 849,
+        "created_at": "2024-04-28T07:01:14.924Z",
+        "updated_at": "2024-04-28T07:01:14.924Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2781,
+            "code_problem_id": 849,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n long long int goodnumber(long long int n, long long int k){\n   //Write your code here\n",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2783,
+            "code_problem_id": 849,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.mod = 1000000007;\n    }\n   goodnumber(n, k) {\n     //Write your code here\n\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2785,
+            "code_problem_id": 849,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    mod = 1000000007\n    def goodnumber(self, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2787,
+            "code_problem_id": 849,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   static final int mod = 1000000007;\n   long goodnumber(long n, long k) {\n     //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

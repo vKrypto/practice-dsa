@@ -1,0 +1,64 @@
+{
+    "id": 281,
+    "description": "A learner at heycoach wants to grab a job in a faang companies, so he start following a schedule ( learning DSA, Practising questions and  learning cs fundamentals ), Each day he performs one of these three activities and he can\u2019t perform the same activity on two consecutive days. Each activity has some merit points on each day. These merit points will decide weather he is eligible to get into a faang company or not. Learner wants to improve everything to get a good job as early as possible. Can you help the learner in finding out the maximum merit point he can earn ?\n\nInput Format:\n\nThe first line contains a single integer 'n' denoting the  number of days.\n\nThe next 'n' lines contains three space separated integers denoting the merit values of each of the three activities on that day.\n\nOutput Format:\n\nReturn the maximum amount of merit points achievable.\n\n**Example**\n```\nInput :\n\n3\n\n1 2 5 \n\n3 1 1\n\n3 3 3\n\nOutput : 11\n```\n\n**Contraints:**\n\n`1 <= N <= 10000`\n\n`1 <= Value of PointsArray <= 100`",
+    "title": "Getting in faang companies",
+    "default_testcase": {
+        "id": 5541,
+        "input": "3\n10 40 70\n20 50 80\n30 60 90",
+        "expected_output": "210",
+        "code_problem_id": 281,
+        "created_at": "2024-02-15T12:38:33.806Z",
+        "updated_at": "2024-02-15T12:38:33.806Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 699,
+            "code_problem_id": 281,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxPoints(int n, int[][] points) {\n  ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 700,
+            "code_problem_id": 281,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class NinjaTrainer:\n    @staticmethod\n    def max_points(n, points):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 701,
+            "code_problem_id": 281,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class NinjaTrainer {\n  static maxPoints(n, points) {\n    \n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1074,
+            "code_problem_id": 281,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int maxPoints(int n, std::vector<std::vector<int>>& points) {\n        // Write your code here\n    \n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

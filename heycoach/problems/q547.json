@@ -1,0 +1,64 @@
+{
+    "id": 547,
+    "description": "You are given a string s. Write a function to find Permutations to find all unique permutations of the characters in the string s. Return these permutations in lexicographically sorted order.\n\n### Example 1 \n\n### Input\n```\nabc\n``` \n### Output \n```\n[\"abc\", \"acb\", \"bac\", \"bca\", \"cab\", \"cba\"]\n``` \n\n### Constraints:\n\n```\n\n* 1 <= N <= 8\n```",
+    "title": "String Permutations",
+    "default_testcase": {
+        "id": 3632,
+        "input": "abc",
+        "expected_output": "abc acb bac bca cab cba \n",
+        "code_problem_id": 547,
+        "created_at": "2024-01-07T12:56:04.700Z",
+        "updated_at": "2024-01-07T12:56:04.700Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1636,
+            "code_problem_id": 547,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\nvector<string> getPermutations(string s) {\n}\n};"
+        },
+        {
+            "id": 1637,
+            "code_problem_id": 547,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Permutations {\n      public List<String> getPermutations(String s) {\n      }\n}"
+        },
+        {
+            "id": 1638,
+            "code_problem_id": 547,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Permutations:\n  def get_permutations(self, s):"
+        },
+        {
+            "id": 1639,
+            "code_problem_id": 547,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Permuations{\n  \n    getPermutations(s) {\n    }\n}"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 762,
+    "description": "Write a program that takes a string and inserts a word in the middle of the string. </br>\nThe inserted word should be placed at the middle position of the string, shifting the existing characters to accommodate the new word.\n\n#### `Input Format:`\n```\nThe input consists of two lines:\n1. The first line contains the original string.\n2. The second line contains the word to be inserted.\n```\n#### `Output Format:`\n\n`The program outputs the modified string with the word inserted at the middle position.`\n\n\n\n#### `Sample Input:`\n\n```\nHello World\nProgramming\n```\n\n#### `Sample Output:`\n\n```\nHello Programming World\n```\n#### `Constraints:`\n\n- `The length of the original string is at most 100 characters.`\n- `The length of the word to be inserted is at most 20 characters.`\n\n#### `Explanation:`\n`Word \"Programming\" is inserted in the middle of the string \"Hello World\", resulting in the modified string \"Hello Programming World'`",
+    "title": "Insert Word in Middle of the String ",
+    "default_testcase": {
+        "id": 7372,
+        "input": "Hello World\nProgramming",
+        "expected_output": "Hello Programming World\n",
+        "code_problem_id": 762,
+        "created_at": "2024-04-25T09:29:01.105Z",
+        "updated_at": "2024-04-25T09:29:01.105Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2475,
+            "code_problem_id": 762,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void insertWordMiddle(String original, String toInsert) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2476,
+            "code_problem_id": 762,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def insert_word_middle(original, to_insert):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2477,
+            "code_problem_id": 762,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void insertWordMiddle(const std::string& original, const std::string& toInsert) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2478,
+            "code_problem_id": 762,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static insertWordMiddle(original, toInsert) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 133,
+    "description": "Given an array  **arr** denoting heights of  **N**  towers and a positive integer  **K.**\n\nFor  **each** tower, you must perform  **exactly one**  of the following operations  **exactly once**.\n\n-   **Increase** the height of the tower by  **K**\n-   **Decrease** the height of the tower by  **K**\n\nFind out the  **minimum** possible difference between the height of the shortest and tallest towers after you have modified each tower.\n\n**Note:** It is **compulsory** to increase or decrease the height by K for each tower. **After** the operation, the resultant array should **not** contain any **negative integers**.\n\n\n### Example 1 \n\n### Input\n```CPP\nK = 2, N = 4\narr = {1, 5, 8, 10}\n```\n\n\n### Output \n```CPP\n5\n```\n\n#### Explanation:\nThe array can be modified as  {3, 3, 6, 8}. The difference between the largest and the smallest is 8-3 = 5.\n\n**Example 2:**\n\n**Input:**\n```CPP\nK = 3, N = 5\narr = {3, 9, 12, 16, 20}\n```\n**Output:** \n```CPP\n11\n```\n#### Explanation:\nThe array can be modified as {6, 12, 9, 13, 17}. The difference between  the largest and the smallest is 17-6 = 11.\n\n### Constraints:\n* 1 \u2264 N,K,arr[i] \u2264 10000  \n\n\n\n",
+    "title": "Minimize the height difference",
+    "default_testcase": {
+        "id": 961,
+        "input": "5 3\n3 9 12 16 20",
+        "expected_output": "11",
+        "code_problem_id": 133,
+        "created_at": "2022-10-13T07:13:52.765Z",
+        "updated_at": "2022-10-13T07:13:52.765Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 204,
+            "code_problem_id": 133,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int getMinDiff(int arr[], int n, int k) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 513,
+            "code_problem_id": 133,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int getMinDiff(int arr[], int n, int k) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

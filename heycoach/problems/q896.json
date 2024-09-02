@@ -1,0 +1,64 @@
+{
+    "id": 896,
+    "description": "Given two integer arrays, `arr` and `freq`, each of length n, you are tasked with tracking the most frequent IDs in a dynamic collection that changes over time. Here\u2019s how the arrays work:\n- `arr[i]` represents an ID at step \n- `freq[i]` indicates the change in the count of `arr[i]` at step i.\n\nFor each step i:\n- If `freq[i]` is positive, it means freq[i] instances of `arr[i]` are added to the collection.\n- If `freq[i]` is negative, it means -freq[i] instances of `arr[i]` are removed from the collection.\n\nYour goal is to construct an array ans of length n where each element `ans[i]` contains the count of the most frequent ID in the collection after step i. If the collection is empty at any step, ans[i] should be 0 for that step.\n\n**Example1:**</br>\n**Input:** arr = [5,5,3], freq = [2,-2,1]</br>\n**Output:** [2,0,1]</br>\n**Explanation:**</br>\nAfter step 0, we have 2 IDs with the value of 5. So ans[0] = 2.</br>\nAfter step 1, there are no IDs. So ans[1] = 0.</br>\nAfter step 2, we have 1 ID with the value of 3. So ans[2] = 1.</br>\n\n**Example2:**</br>\n**Input:** arr = [2,3,2,1], freq = [3,2,-3,1]</br>\n**Output:** [3,3,2,2]</br>\n**Explanation:**</br>\nAfter step 0, we have 3 IDs with the value of 2. So ans[0] = 3.</br>\nAfter step 1, we have 3 IDs with value of 2 and 2 IDs with the value of 3. So ans[1] = mode of IDs = 3.</br>\nAfter step 2, we have 2 ID with the value of 3. So ans[2] = 2.</br>\nAfter step 3, we have 2 IDs with value of 2 and 1 ID with the value of 1. So ans[3] = mode of IDs = 2.</br>\n\n\n**Constraints:**\n- 1 <= arr.length == freq.length <= 105\n- 1 <= arr[i] <= 105\n- -105 <= freq[i] <= 105\n- freq[i] != 0\n- The input is generated such that the occurrences of an ID will not be negative in any step.\n",
+    "title": "Mode ID's",
+    "default_testcase": {
+        "id": 7994,
+        "input": "9\n4 3 2 1 5 5 4 2 1\n2 2 3 4 4 -2 2 -2 4\n",
+        "expected_output": "2 2 3 4 4 4 4 4 8 ",
+        "code_problem_id": 896,
+        "created_at": "2024-05-18T08:15:57.030Z",
+        "updated_at": "2024-05-18T08:15:57.030Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2969,
+            "code_problem_id": 896,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n      vector<long long> modeFrequency(vector<int>& arr, vector<int>& freq) {\n",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2970,
+            "code_problem_id": 896,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public List<Long> modeFrequency(int[] arr, int[] freq) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2971,
+            "code_problem_id": 896,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def modeFrequency(self, arr, freq):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2972,
+            "code_problem_id": 896,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n    modeFrequency(nums, freq) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

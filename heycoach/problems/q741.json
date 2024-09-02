@@ -1,0 +1,64 @@
+{
+    "id": 741,
+    "description": "Imagine a magical forest called \"Enchanted Glade,\" and the first spot is a charming stepping stone pathway. The pathway is like a big square grid with two rows and several columns. In each square, there's either nothing or a special glowing stone.\n\nLittle woodland creatures, let's call them critters, are sitting on these stones. Each critter can jump to a nearby stone in one move, either left, right, up, or down. \n\nAfter the move, no critter should be outside the pathway, and no two critters can be on the same stone. Also, critters on neighboring stones can't jump toward each other.\n\nIf a critter successfully jumps to a stone, it stays safe. Otherwise, it falls into the forest and might not make it. Your task is to figure out how to guide the critters to maximize the number of them that stay safe after one move.\n\nInput Format:\n\nThe first line contains an integer 'n' denoting the number of columns of the pathway.\n\nThe next two lines contains a string of size 'n' where each character can be a \"*\" denoting the presence of glowing stone, or a \".\" denoting a void where if you jump you die.\n\nOutput Format:\n\nReturn a single integer denoting the maximum number of critters that can survive after the jump.\n\nSample Input:\n\n5\n\n.*...\n\n.**..\n\nSample Output:\n\n2\n\nExplanation: The critter in the first column can't survive no matter where he jumps. The critter in the second column can jump right and the one in third column can jump up. Similarly the critter in column 4 can jump right and the last critter will have to die. 2 is the maximum achievable number.\n\nConstraints:\n\n1<=n<=10^5",
+    "title": "Critters of Forest",
+    "default_testcase": {
+        "id": 5462,
+        "input": "3\n***\n...",
+        "expected_output": "2\n",
+        "code_problem_id": 741,
+        "created_at": "2024-02-13T15:56:04.783Z",
+        "updated_at": "2024-02-13T15:56:04.783Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2373,
+            "code_problem_id": 741,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int n, vector<string> &s){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2374,
+            "code_problem_id": 741,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, s) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2375,
+            "code_problem_id": 741,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, s):\n      #Write your code here, path is a list containing both strings;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2376,
+            "code_problem_id": 741,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int n, List<String> s) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

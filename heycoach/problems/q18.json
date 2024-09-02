@@ -1,0 +1,64 @@
+{
+    "id": 18,
+    "description": "Bholu don't like words like \"localization\" or \"internationalization\" as they are so long that writing them many times in one text is quite boring.\n\nLet's assume a word too long, if its length is strictly more than 10 characters. All too long words should be replaced with a special abbreviation.\n\nThis abbreviation is made like this: we write down the first and the last letter of a word and between them we write the number of letters between the first and the last letters. That number is in decimal system and doesn't contain any leading zeroes.\n\nThus, \"localization\" will be spelt as \"l10n\", and \"internationalization\u00bb will be spelt as \"i18n\".\n\nYou are suggested to automatize the process of changing the words with abbreviations. At that all too long words should be replaced by the abbreviation and the words that are not too long should not undergo any changes.\n\n### Input\n```\nThe first line contains an integer n (1\u2009\u2264\u2009n\u2009\u2264\u2009100). Each of the following n lines contains one word. All the words consist of lowercase Latin letters and possess the lengths of from 1 to 100 characters.\n```\n### Output\n```\nPrint n lines. The i-th line should contain the result of replacing of the i-th word from the input data.\n```\n### Sample Input\n```\n4\nword\nlocalization\ninternationalization\npneumonoultramicroscopicsilicovolcanoconiosis\n```\n### Sample Output\n```\nword\nl10n\ni18n\np43s\n```\n### Explanation\n```\nFor each word, we need to check if its length is strictly more than 10 characters. If it is, we replace the word with a special abbreviation according to the rule mentioned in the prompt.\n\n- word - The length is less than or equal to 10, so no change. Output: word\n- localization - The length is more than 10. Abbreviation: l10n. Output: l10n\n- internationalization - The length is more than 10. Abbreviation: i18n. Output: i18n\n- pneumonoultramicroscopicsilicovolcanoconiosis - The length is more than 10. \n Abbreviation: p43s (43 is the number of letters between the first and last letters). Output: p43s\n```\n### Constraints\n```\n1 \u2264 n \u2264 100 (number of words)\n1 \u2264 length of each word \u2264 100\n```",
+    "title": "Too long Words",
+    "default_testcase": {
+        "id": 97,
+        "input": "4\nword\nlocalization\ninternationalization\npneumonoultramicroscopicsilicovolcanoconiosis",
+        "expected_output": "word\nl10n\ni18n\np43s\n",
+        "code_problem_id": 18,
+        "created_at": "2022-09-25T14:24:37.514Z",
+        "updated_at": "2022-09-25T14:24:37.514Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 27,
+            "code_problem_id": 18,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class WordAbbreviator {\npublic:\n    static string abbreviateWord(const string& word) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 28,
+            "code_problem_id": 18,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class WordAbbreviator:\n\n    def abbreviate_word(word):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 29,
+            "code_problem_id": 18,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class WordAbbreviator {\n    public static String abbreviateWord(String word) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 608,
+            "code_problem_id": 18,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class WordAbbreviator {\n    static abbreviateWord(word) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

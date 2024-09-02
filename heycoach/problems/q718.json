@@ -1,0 +1,57 @@
+{
+    "id": 718,
+    "description": "**Longest Increasing Subsequence Problem of Dynamic Programming .**\n\nGiven an array arr[] of size N, the task is to find the length of the Longest Increasing Subsequence (LIS) i.e., the longest possible subsequence in which the elements of the subsequence are sorted in increasing order.\n\n**`input:  `**   \n `arr[] = {3, 10, 2, 1, 20}`<br>  \n\n**`Output:`**  \n `3`<br>\n**` Explanation:`** `The longest increasing subsequence is 3, 10, 20`.\n\n**`Input:`**   \n`arr[] = {3, 2}`<br>\n**`Output:`**  \n`1`<br>\n**`Explanation:`** `The longest increasing subsequences are {3} and {2}.`\n\n**`Input:`**  \n` arr[] = {50, 3, 10, 7, 40, 80}`<br>\n\n**`Output:`**  \n` 4`<br>\n**`Explanation:`** \n\n```\nThe longest increasing subsequence is {3, 7, 40, 80}\n\n```\n\n**`Constraints:`**\n\n- `1 <= nums.length <= 2500`<br>\n- `-10^5 <= nums[i] <= 10^5`\n \n\n`TC - O(n log(n)) time complexity`",
+    "title": "LIS",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2296,
+            "code_problem_id": 718,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int lis(int arr[], int n) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2297,
+            "code_problem_id": 718,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int lis(int[] arr, int n) {\n      // write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2298,
+            "code_problem_id": 718,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def lis(self, arr, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2299,
+            "code_problem_id": 718,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    lis(arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

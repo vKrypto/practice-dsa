@@ -1,0 +1,40 @@
+{
+    "id": 39,
+    "description": "There is a popular game in Ram's school where One team consists of 2 players. Ram has figured out some strategy for this game which increases the chances of winning for a team.The strategy is to form the team only with those 2 players such that their **sum** of strength is **exactly k**.\nYou have given an array strengths consisting of **N** non-negative integers which represents the strength of N players and an integer k.you have to count the number of ways we can form teams such that their chance of winning is maximum. \n\n\n\n### Example 1 \n\n### Input\n```CPP\nstrengths = [4,3,1,2,6,3], k = 5\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\n\nwe can form teams with players of indexes: \n* [0,2] => 4 + 1 = 5\n* [1,3] => 3 + 2 = 5\n* [3,5] => 2 + 3 = 5\n                                \n\n\n### Example 2 \n\n### Input\n```CPP\nstrengths = [10,4,3,5,12], k = 15\n``` \n### Output \n```CPP \n2\n``` \n#### Explanation:\n\nwe can form teams with players of indexes: \n* [0,3] => 10 + 5 = 15\n* [2,4] => 3 + 12 = 15\n\n\n### Constraints:\n\n* 1 <= N <= 10000\n* 0 <= strengths[i] <= 100000 \n* 0 <= k <= 100000\n\n\n\n\n",
+    "title": "Number of ways to form perfect teams",
+    "default_testcase": {
+        "id": 238,
+        "input": "5 15\n10 4 3 5 12",
+        "expected_output": "2",
+        "code_problem_id": 39,
+        "created_at": "2022-09-26T15:26:30.261Z",
+        "updated_at": "2022-09-26T15:26:30.261Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 39,
+            "code_problem_id": 39,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution\n{\npublic:\n\tint waysToFormPerfectTeams(vector<int> &strengths, int k) {\n        // write your code here\n\t}\n};"
+        },
+        {
+            "id": 464,
+            "code_problem_id": 39,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int waysToFormPerfectTeams(List<Integer> strengths, int k) {\n        // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

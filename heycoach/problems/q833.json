@@ -1,0 +1,64 @@
+{
+    "id": 833,
+    "description": "You are given an integer `n`. You have to choose **three** positive integers (they don't have to be distinct) which are not greater than `n`. The **LCM**, that is `least common multiple` of two or more integers is the smallest positive integer that is divisible by all the integers.\n\nYour task is to find the maximum possible **LCM** of these **three** integers.\n\n\n**Example**\n```\nInput : n = 7\n\nOutput : 210\n\nExplanation\n\nWe can chose numbers 7, 6, 5 and the LCM of them is 7\u00b76\u00b75\u2009=\u2009210.\nIt is the maximum value we can get.\n````\n**Input Format**\n```\nThe first line contains an integer n\n```\n**Output Format**\n```\nA single integer \u2014 the maximum possible LCM of three not necessarily distinct positive integers that are not greater than n.\n```\n**Constraints**\n\n`1 <= n <= 10^6`",
+    "title": "Maximum LCM of Triplets",
+    "default_testcase": {
+        "id": 7446,
+        "input": "7",
+        "expected_output": "210\n",
+        "code_problem_id": 833,
+        "created_at": "2024-04-27T06:03:14.843Z",
+        "updated_at": "2024-04-27T06:03:14.843Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2729,
+            "code_problem_id": 833,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\n\n\n\nclass Solution{\npublic:\nlong long MaxLCM(long long n)\n{\n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2730,
+            "code_problem_id": 833,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long maxLCM(long n) {\n   \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2731,
+            "code_problem_id": 833,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def max_lcm(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2732,
+            "code_problem_id": 833,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n    maxLCM(n) {\n \n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

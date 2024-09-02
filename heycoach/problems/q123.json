@@ -1,0 +1,33 @@
+{
+    "id": 123,
+    "description": "Given an array of **distinct** integers *candidates* and a **target** integer target, return a list of all **unique combinations** of candidates where the chosen numbers sum to target. You may return the combinations in sorted order.\n\nThe **same** number may be chosen from candidates an **unlimited number of times**. Two combinations are unique if the frequency of at least one of the chosen numbers is different.\n\nThe test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.\n\n#### Input Format: \n- first line contains two integers **n**  (size if the array) and **target**\n- second line contains n integers (element of the array)\n\n#### Output Format:\n- It contains x lines output ( here x is the number of combinations made )\n- each line contains single space separated elements of that combination\n\n#### Constraints:\n\n- 1 <= candidates.length <= 30\n- 2 <= candidates[i] <= 40\n- All elements of candidates are distinct.\n- 1 <= target <= 500",
+    "title": "Combination Sum",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 469,
+            "code_problem_id": 123,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 470,
+            "code_problem_id": 123,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<List<Integer>> combinationSum(List<Integer> arr, int target) {\n        // write your code here\n    }\n}\n"
+        }
+    ]
+}

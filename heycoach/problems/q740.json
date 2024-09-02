@@ -1,0 +1,64 @@
+{
+    "id": 740,
+    "description": "You are a greedy factory owner and it is the month end and you have to distribute salary to your workers. Each worker gets a minimum wage of \u20b91,000 and based on their performance he gets some extra money. All the workers are standing in a line and every worker knows the performance value of the worker just adjacent to him. They will be mad if they get less or equal amount of money compared to the worker adjacent to him if he had less performance value than them (They don't care if they had equal amount of performance). \n\nThat's why if the worker has a higher performance than their adjacent peers then they will have to get at least \u20b91,000 extra. For example: performance value of three workers is  given as [9, 5, 4] then you would distribute salary as [3000, 2000, 1000].\n\nReturn the minimum amount of total wage that you can give to your workers without them getting mad.\n\nInput Format:\n\nFirst Line contains a single integer 'n' denoting the number of workers.\n\nSecond line contains 'n' space separated integers denoting the performance value of the ith worker.\n\nOutput format:\n\nReturn a single integer denoting the minimum amount of total wage that you can give to your workers without them getting mad.\n\nSample Input:\n\n4\n\n5 6 6 4\n\nSample Output:\n\n6000\n\nExplanation: You can distribute salary as follows [1000, 2000, 2000, 1000] which totals to 6000 and is the minimum answer possible.\n\nConstraints:\n\n1<=n<=10^4\n\n1<=ar[i]<=100\n",
+    "title": "Greedy Factory Owner",
+    "default_testcase": {
+        "id": 5454,
+        "input": "3\n9 5 4",
+        "expected_output": "6000\n",
+        "code_problem_id": 740,
+        "created_at": "2024-02-13T14:05:11.718Z",
+        "updated_at": "2024-02-13T14:05:11.718Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2369,
+            "code_problem_id": 740,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int n, int* ar){\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2370,
+            "code_problem_id": 740,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int n, int[] ar) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2371,
+            "code_problem_id": 740,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, ar):\n        #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2372,
+            "code_problem_id": 740,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, ar) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

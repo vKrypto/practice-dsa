@@ -1,0 +1,57 @@
+{
+    "id": 412,
+    "description": "In this problem, a tree is an undirected graph that is connected and has no cycles.\n\nYou are given a graph that started as a tree with n nodes labeled from 1 to n, with one additional edge added. The added edge has two different vertices chosen from 1 to n, and was not an edge that already existed. The graph is represented as an array `edges` of length n where `edges[i] = [ai, bi]` indicates that there is an edge between nodes ai and bi in the graph.\n\nReturn an edge that can be removed so that the resulting graph is a tree of n nodes. If there are multiple answers, return the answer that occurs last in the input.\n\n### Example 1:\n\nInput:\n\n![Input 1](https://assets.leetcode.com/uploads/2021/05/02/reduntant1-1-graph.jpg)\n\n\n```\nedges = [[1,2],[1,3],[2,3]]\n```\nOutput: \n```\n[2,3]\n```\n### Example 2:\n\nInput: \n\n![Input 1](https://assets.leetcode.com/uploads/2021/05/02/reduntant1-2-graph.jpg)\n\n```\nedges = [[1,2],[2,3],[3,4],[1,4],[1,5]]\n```\nOutput:\n``` \n[1,4]\n```\nConstraints:\n```\nn == edges.length\n3 <= n <= 1000\nedges[i].length == 2\n1 <= ai < bi <= edges.length\nai != bi\nThere are no repeated edges.\nThe given graph is connected.\n```",
+    "title": "Redundant Connection",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1058,
+            "code_problem_id": 412,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> findRedundantConnection(vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "id": 1059,
+            "code_problem_id": 412,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int[] findRedundantConnection(int[][] edges) {\n      \n    }\n}"
+        },
+        {
+            "id": 1060,
+            "code_problem_id": 412,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def findRedundantConnection(self, edges):\n        \n"
+        },
+        {
+            "id": 1061,
+            "code_problem_id": 412,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    findRedundantConnection(edges) {\n        \n    }\n}"
+        }
+    ]
+}

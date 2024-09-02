@@ -1,0 +1,64 @@
+{
+    "id": 409,
+    "description": "You are tasked with implementing a function designNode that creates a new node with an integer data type variable 'data' and a pointer 'next' initialized to null. The function should take an initial value as input and set the 'data' member of the newly created node to this value. Return the integer value of the created node.\n\n### Input\nAn integer, initialValue (1 <= initialValue <= 100), representing the initial value to be set for the 'data' member of the node.\n\n### Output\nReturn an integer representing the value of the created node.\n\n### Example 1 \n\n### Input\n```CPP\n42\n``` \n### Output \n```CPP \n42\n``` \n#### Explanation:\nInput:\ninitialValue = 42\n\nOutput:\n42\n\nExplanation:\nA node is created with 'data' set to the provided 'initialValue' (42). The function returns the integer value of the created node, which is 42.\n\n## Note :- \nYou are required to use the provided class structure and function signature.\nEnsure proper memory management to avoid memory leaks.\n\n\n\n### Constraints:\n\n0 <= initialValue < INT_MAX\n\n",
+    "title": "Design Node",
+    "default_testcase": {
+        "id": 2651,
+        "input": "5",
+        "expected_output": "5\n",
+        "code_problem_id": 409,
+        "created_at": "2023-11-25T07:11:26.067Z",
+        "updated_at": "2023-11-25T07:11:26.067Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1040,
+            "code_problem_id": 409,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Node {\npublic:\n    int data;\n    Node* next;\n\n    // Constructor to initialize data and next pointer\n    Node(int val) : data(val), next(nullptr) {}\n\n    // Static function to create a new node with the given initial value\n    static int designNode(int initialValue) {\n      \n ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1041,
+            "code_problem_id": 409,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Node {\n    public int data;\n    public Node next;\n\n    // Constructor to initialize data and next pointer\n    public Node(int val) {\n        data = val;\n        next = null;\n    }\n\n    // Static function to create a new node with the given initial value\n    public static int designNode(int initialValue) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1042,
+            "code_problem_id": 409,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Node:\n    def __init__(self, val):\n        self.data = val\n        self.next = None\n\n    @staticmethod\n    def design_node(initial_value):\n       ",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1043,
+            "code_problem_id": 409,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    designNode(initialValue) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

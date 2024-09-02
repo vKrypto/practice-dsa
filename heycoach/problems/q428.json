@@ -1,0 +1,64 @@
+{
+    "id": 428,
+    "description": "You are given a set of cards, each having either a number or a symbol. Your task is to rearrange the cards in such a way that all the cards with numbers come first, </br>\nfollowed by the cards with symbols, while maintaining the relative order of numbers and symbols.\n\n**Example :**\n```\nInput:\n\n8\n\n3 2 + 4 * - $ 5\n\nOutput:\n\n3  2 4 5 + * - $\n\n```\n\n**Input Format:**\n```\nThe first line of input contains an integer N (1 \u2264 N \u2264 10^5), representing the number of cards.\nThe second line of input contains N space-separated elements, where each element is either a positive integer or a single symbol ('+', '-', '*', '$', etc.).\n````\n\n**Output Format:**\n```\nOutput the rearranged set of cards on a single line, separated by spaces.\n```\n\n**Constraints :**\n\n- `1 \u2264 N \u2264 10^5`\n\n\n\n",
+    "title": "All Zeroes End",
+    "default_testcase": {
+        "id": 2944,
+        "input": "8\n3 2 + 4 * - $ 5",
+        "expected_output": "3 2 4 5 + * - $ ",
+        "code_problem_id": 428,
+        "created_at": "2023-12-13T02:14:34.861Z",
+        "updated_at": "2023-12-13T02:14:34.861Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1158,
+            "code_problem_id": 428,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    sortCards(cards) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1159,
+            "code_problem_id": 428,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def sort_cards(self, cards):\n        #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1160,
+            "code_problem_id": 428,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void sortCards(ArrayList<String> cards, int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1161,
+            "code_problem_id": 428,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void sortCards(vector<string> &cards, int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

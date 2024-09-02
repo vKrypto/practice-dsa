@@ -1,0 +1,28 @@
+{
+    "id": 316,
+    "description": "Given two integers a and b. Find the sum of two numbers without using \u2018+\u2019 operator.\nConstraints:\n1<=a, b<=10^8",
+    "title": "Sum without using '+' operator",
+    "default_testcase": {
+        "id": 2060,
+        "input": "1\n5 3",
+        "expected_output": "8\n",
+        "code_problem_id": 316,
+        "created_at": "2023-09-18T18:35:56.695Z",
+        "updated_at": "2023-09-18T18:35:56.695Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 764,
+            "code_problem_id": 316,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public:\n    int sum_calc(int a , int b)\n    {\n        \n    }\n};"
+        }
+    ]
+}

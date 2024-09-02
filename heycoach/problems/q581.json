@@ -1,0 +1,64 @@
+{
+    "id": 581,
+    "description": "Given a circular linked list, implement a function to split it into two separate circular linked lists. The resulting linked lists should contain alternating nodes from the original circular linked list. If the original list has an odd number of nodes, the first resulting linked list should have one more node than the second.\n#### Input:\n\n- `The input is a circular linked list represented by its head node.`\n\n#### `Output:`\n\n- `Return the heads of the two resulting circular linked lists.`\n#### Example:\n\n**`Input:`**\n\n##### `Original Circular Linked List: `\n```\n1 -> 2 -> 3 -> 4 -> 5 -> (back to 1)\n```\n\n**`Output:`**\n\n##### List 1:\n```\n1 -> 3 -> 5 -> (back to 1)\n```\n\n##### List 2:\n```\n2 -> 4 -> (back to 2)\n```\n#### `Input format example:`\n```\n5\n1 2 3 4 5\n```\n#### `Output format example:`\n```\n1 3 5\n2 4\n```\n\n\n**` Explanation:`**\n\n- `The original circular linked list is split into two lists, with alternating nodes assigned to each list.`",
+    "title": "Alternating Split of a Circular Linked List",
+    "default_testcase": {
+        "id": 6655,
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "1 3 5 \n2 4 \n",
+        "code_problem_id": 581,
+        "created_at": "2024-03-21T10:08:42.314Z",
+        "updated_at": "2024-03-21T10:08:42.314Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1749,
+            "code_problem_id": 581,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\nstruct Node {\n    int data;\n    Node* next;\n    Node(int x) : data(x), next(nullptr) {}\n};\n*/\nclass Solution {\npublic:\n    std::pair<Node*, Node*> splitAlternatingNodes(Node* head) {\n  //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1750,
+            "code_problem_id": 581,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class Node {\n    int value;\n    Node next;\n\n    Node(int val) {\n        value = val;\n        next = null;\n    }\n}\n*/\nclass LinkedListSplitterSolution {\n    public static Node[] splitAlternatingNodes(Node head) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1751,
+            "code_problem_id": 581,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''class Node:\n       def __init__(self, value):\n           self.value = value\n           self.next = None'''\n\nclass Solution:\n    def split_alternating_nodes(head):\n      #Write your code here\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1752,
+            "code_problem_id": 581,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class Node {\n    constructor(val) {\n        this.value = val;\n        this.next = null;\n    }\n}*/\nclass Solution {\n    splitAlternatingNodes(head) {\n      //Write your code here\n    ",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

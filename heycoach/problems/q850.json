@@ -1,0 +1,64 @@
+{
+    "id": 850,
+    "description": "Alice frequently journeys to her grandmother's countryside home. Her grandmother's garden, viewed from above, resembles a rectangular area of size 1\u2009\u00d7\u2009n, divided into n equal square sections. Each square section of the garden possesses a fixed height due to its unique characteristics, and the latest irrigation system allows for the creation of artificial rain above each section.\nHowever, the process of creating artificial rain is costly. Therefore, Alice's actions are limited to creating artificial rain above only one section at a time. When artificial rain is created over a section, water will flow into neighboring sections if their height does not surpass the height of the original section.\nFor instance, imagine a garden represented by a 1\u2009\u00d7\u20095 rectangle, where the section heights are 4, 2, 3, 3, and 2 respectively. If artificial rain is initiated over any section with a height of 3, the water will cascade over all sections except those with a height of 4. Refer to the illustration for a visual representation of this scenario.\n\n\n\nAs Alice is keen on programming, help her to find such a section that if we create artificial rain above it, the number of watered sections will be maximal.\n\n\n\n`Input`:\n\nThe first line contains a positive integer n (1\u2009\u2264\u2009n\u2009\u2264\u20091000). The second line contains n positive integers which are the height of the sections. All the numbers are no less than 1 and not more than 1000.\n\n`Output`:\n\nPrint a single number, the maximal number of watered sections if we create artificial rain above exactly one section.\n\n`Example`\nInput:\n\n\nn=5 (the number of sections in the garden)\nHeights of the sections: \n[1,2,1,2,1]\n\nStarting Artificial Rain above Section 1 (Height = 1):\nWatered Sections: \n[1,2,1,2,1]\n\nTotal Watered Sections: 3 (sections 1, 3, and 5 are watered)\nStarting Artificial Rain above Section 2 (Height = 2):\nWatered Sections: \n[1,2,1,2,1]\n\nTotal Watered Sections: 3 (sections 2 and 4 are watered)\nStarting Artificial Rain above Section 3 (Height = 1):\nWatered Sections: \n[1,2,1,2,1]\n\nTotal Watered Sections: 3 (sections 1, 3, and 5 are watered)\nStarting Artificial Rain above Section 4 (Height = 2):\nWatered Sections: \n][1,2,1,2,1]\n\nTotal Watered Sections: 3 (sections 2 and 4 are watered)\nStarting Artificial Rain above Section 5 (Height = 1):\nWatered Sections: \n[1,2,1,2,1]\n\nTotal Watered Sections: 3 (sections 1, 3, and 5 are watered)\n\nConclusion:\n\nThe maximal number of watered sections achieved is \n3\n3, which happens when artificial rain is created above either section 1, 3, or 5 (since they all have a height of 1).\n\n",
+    "title": "    Alice's Grandmother's Garden",
+    "default_testcase": {
+        "id": 7501,
+        "input": "8\n1 2 1 1 1 3 3 4\n",
+        "expected_output": "6",
+        "code_problem_id": 850,
+        "created_at": "2024-04-28T07:19:49.345Z",
+        "updated_at": "2024-04-28T07:19:49.345Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2789,
+            "code_problem_id": 850,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\n\npublic:\n    int solve(long long arr[], long long &n)\n    {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2793,
+            "code_problem_id": 850,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2794,
+            "code_problem_id": 850,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(long[] arr) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2795,
+            "code_problem_id": 850,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(arr) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

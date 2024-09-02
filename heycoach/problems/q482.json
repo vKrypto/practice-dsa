@@ -1,0 +1,40 @@
+{
+    "id": 482,
+    "description": "An N-element permutation is an N-element sequence of distinct numbers from the set {1, 2 ... n}. For example the sequence 2, 1, 4, 5, 3 is a 5-element permutation. P is an N-element permutation. Your task is to sort P in ascending order. But because it is very simple, I have a new rule for you. You have two sequences P and Q. P is an N-element permutation and Q is initially empty and formed by sorting P (i.e. finally Q = 1, 2, 3 ... N). You have to implement N steps to sort P. In the i-th step, P has N-i+1 remaining elements, Q has i-1 elements and you have to choose some x-th element (from the N-i+1 available elements) of P and put it to the left or to the right of Q. The cost of this step is equal to x * i. The total cost is the sum of costs of individual steps. After N steps, Q must be an ascending sequence. Your task is to minimize the total cost.\n\n### Input Format\n```\nThe first line of the input file is T (T \u2264 10), the number of test cases. Then descriptions of T test cases follow. The description of each test case consists of two lines. The first line contains a single integer N (1 \u2264 N \u2264 1000). The second line contains N distinct integers from the set {1, 2 ... N}, the N-element permutation P.\n```\n\n### Output Format\n```\nFor each test case your program should write one line, containing a single integer - the minimum total cost of sorting.\n```\n\n### Sample Input 1\n```\n1\n4\n4 1 3 2\n```\n### Sample Output 1\n```\n15\n```\n### Explanation\n```\nThe Test case goes in a flow that\n \nIn step 1:  choose 3rd ,  P ={4,1,2} , Q={3} , Cost = 3(x-th element)*1(step number),Cost = 3\nIn step 2:  choose 1-st , P ={1,2} , Q={3,4} , Cost = 1(x-th element) x 2(step number) , Cost = 2\nIn Step 3:  choose 2-nd , P={1} , Q={2,3,4}, Cost = 2 x 3 , Cost =6\nIn Step 4:  choose 1-st , P={} , Q={1,2,3,4} , Cost = 1x4 , Cost = 4\n\nTotal Cost = 3+2+6+4 = 15.\n\nAnother way to sort the problem \n\nIn step 1: choose 4-th, P={4,1,3} , Q={2} ,  Cost = 4x1 , Cost = 4\nIn step 2: choose 2-nd ,P ={4,3} , Q ={1,2} , Cost = 2*2 , Cost =4\nIn Step 3: choose 2-nd , P={4} , Q={1,2,3} , Cost = 2x3 , Cost = 6\nIn Step 4: choose 1-st , P={} , Q={1,2,3,4} , Cost = 1x4 , Cost = 4\n\nTotal Cost = 4+4+6+4 = 18.\n\nTherefore the minimum cost is 15.\n```\n### Constraints\n```\nN (1 \u2264 N \u2264 1000)\n```\n\n#### Note:\nHere in the driver we made it very easy for you by giving functions which gives you the hints to solve the problem \n1. calculateFnx: Calculates the number of elements in the subsequence from mini to maxi such that each element is strictly greater than the last element in the sequence.\n2. calculateFny: Calculates the number of elements in the subsequence from mini to maxi such that each element is strictly smaller than the last element in the sequence.\n3. calculateDp: Computes the dynamic programming values for the given range [mini, maxi]. It uses the results from calculateFnx and calculateFny to minimize the cost for each subproblem.",
+    "title": "Sort the Array (Hard)",
+    "default_testcase": {
+        "id": 3245,
+        "input": "1\n4\n4 1 3 2",
+        "expected_output": "15\n",
+        "code_problem_id": 482,
+        "created_at": "2023-12-29T09:44:58.655Z",
+        "updated_at": "2023-12-29T09:44:58.655Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1466,
+            "code_problem_id": 482,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n     int fnx(int mini, int maxi) {\n       \n     }\n    int fny(int mini, int maxi) {\n    }\n    int dpfn(int mini, int maxi) {\n    }\n};"
+        },
+        {
+            "id": 1467,
+            "code_problem_id": 482,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\nstatic int calculateFnx(int mini, int maxi) {\n  \n  }\nstatic int calculateFny(int mini, int maxi) {\n  \n}\n static int calculateDp(int mini, int maxi) {\n   \n }\n\n  \n}"
+        }
+    ]
+}

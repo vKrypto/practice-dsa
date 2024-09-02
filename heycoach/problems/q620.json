@@ -1,0 +1,28 @@
+{
+    "id": 620,
+    "description": "\nYou are provided with two arrays of integers **(0 based index)**, ``arr`` and ``removalIndices``, both of length ``len``. For each removal operation, the element in ``arr`` at the index specified by ``removalIndices[i]`` is removed, resulting in the segmentation of ``arr`` into different segments.\n\nA segment is defined as a **contiguous** sequence of **positive integers** in ``arr``. The segment sum is the sum of all elements within a segment.\n\nYour task is to create an integer array, ``result``, of length len, where ``result[i]`` represents the maximum segment sum after applying the ith removal.\n\nNote:  Each element in removalIndices corresponds to a **distinct** index in arr \n\n**``Example 1``**\n\n```\nInput: len = 5, arr = [5,3,6,7,9],  removalIndices = [0,3,2,4,1]\n\nOutput: [25,9,9,3,0]\n\nExplanation: Using 0 to indicate a removed element, the answer is as follows:\n\nRemoval 1: Remove the 0th element, arr becomes [0,3,6,7,9] and the maximum segment sum is 25 for segment [3,6,7,9].\n\nRemoval 2: Remove the 3rd element, arr becomes [0,3,6,0,9] and the maximum segment sum is 9 for segment [3,6].\n\nRemoval 3: Remove the 2nd element, arr becomes [0,3,0,0,9] and the maximum segment sum is 9 for segment [9]. \n\nRemoval 4: Remove the 4th element, arr becomes [0,3,0,0,0] and the maximum segment sum is 3 for segment [3]. \n\nRemoval 5: Remove the 1st element, arr becomes [0,0,0,0,0] and the maximum segment sum is 0, since there are no segments.\n\nFinally, we return [25,9,9,3,0].\n```\n\n\n\n\n**``Example 2``**\n\n```\nInput: len = 4, arr = [5,1,12,7], removalIndices = [3,2,1,0]\n\nOutput: [18,6,5,0]\n\nExplanation: Using 0 to indicate a removed element, the answer is as follows:\n\nRemoval 1: Remove the 3rd element, arr becomes [5,1,12,0] and the maximum \n\nRemoval 2: Remove the 2nd element, arr becomes [5,1,0,0] and the maximum \n\nRemoval 3: Remove the 1st element, arr becomes [5,0,0,0] and the maximum segment sum is 5 for segment [5].\n\nRemoval 4: Remove the 0th element, arr becomes [0,0,0,0] and the maximum segment sum is 0, since there are no segments.\n\nFinally, we return [18,6,5,0].\n```\n\n``Constraints:``\n\n\u2022\t``1 <= len <= 10^5``\n\n\u2022\t``1 <= arr[i] <= 10^9``\n\n\u2022\t``0 <= removalIndices[i] < len``\n\n\u2022\t``removalIndices consists of distinct values``\n",
+    "title": "Maximize Sum By Removing Indices",
+    "default_testcase": {
+        "id": 4173,
+        "input": "5\n5 3 6 7 9\n0 3 2 4 1",
+        "expected_output": "25 9 9 3 0 ",
+        "code_problem_id": 620,
+        "created_at": "2024-01-26T10:43:02.451Z",
+        "updated_at": "2024-01-26T10:43:02.451Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1905,
+            "code_problem_id": 620,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    \n",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": 818,
+    "description": "Description\n\nYou are a mentor for a group of wizards at a magical academy. There are n wizards under your guidance, and each wizard possesses a unique level of magical proficiency denoted by a[i]\u200b.\n\nYour objective is to assemble a team of wizards for an upcoming magical tournament. Your aim is to form a team with the maximum number of wizards while ensuring that the team remains harmonious. A harmonious team ensures that the difference in magical proficiency between any pair of wizards in the team is no more than 5.\nYour task is to determine the maximum number of wizards that can be included in a harmonious team.\n \nSample Input:\n\nN = 6\n\nA = {1 10 17 12 15 2}\n \nSample Output:\n\n3\n \nExplanation:\n\nWe can pick the wizards with magical abilities, 10, 15 and 12. None of the wizards have difference in their magical abilities more than 5 and 3 is the maximum number of wizards that you can have on your team.\n \nConstraints\n\n1<=n<=10^5\n\n1<=a[i]<=10^6\n",
+    "title": "Perfect Players",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2673,
+            "code_problem_id": 818,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, arr):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2674,
+            "code_problem_id": 818,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n\tpublic:\n\tint solve(vector<int> &arr, int n){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2676,
+            "code_problem_id": 818,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int[] arr) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

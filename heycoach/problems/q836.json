@@ -1,0 +1,64 @@
+{
+    "id": 836,
+    "description": "\nSuhana needs to find a cell in an n x m matrix that minimizes the maximum Manhattan distance to any black cell. The input will consist of multiple test cases. Each test case will describe a matrix, and the output should identify a cell that optimizes this criterion.\n\n#### Input Format:\n- t: The number of test cases.\n- For each test case:\n  - n and m: Dimensions of the matrix.\n  - n lines each containing m characters ('W' for white or 'B' for black), describing the matrix's rows.\n\n#### Output Format:\nFor each test case, print the coordinates (1-indexed) of the cell that potentially minimizes the maximum Manhattan distance to any black cell in the matrix.\n\n### Example:\n**Input**\n```\n1\n6 6\nW W W W W W\nW W W W W W\nW W B W W W\nW W W W W W\nW W W W W W\nW W W B W W\n\n```\n\n**Output**\n```\n4 3\n```\n\n### Explanation:\nThe matrix has black cells at positions [3,3] and [6,4]. The output suggests a position that is strategically located to minimize the distance to the furthest black cell.",
+    "title": "Suhana\u2018s Matrix Challenge",
+    "default_testcase": {
+        "id": 7917,
+        "input": "1\n6 6\nW W W W W W\nW W W W W W\nW W B W W W\nW W W W W W\nW W W W W W\nW W W B W W",
+        "expected_output": "4 3\n",
+        "code_problem_id": 836,
+        "created_at": "2024-05-14T13:07:03.945Z",
+        "updated_at": "2024-05-14T13:07:03.945Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2896,
+            "code_problem_id": 836,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void findOptimalCell(int t, const vector<vector<vector<char>>>& testCases) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2897,
+            "code_problem_id": 836,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void findOptimalCell(int t, ArrayList<ArrayList<ArrayList<Character>>> testCases) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2936,
+            "code_problem_id": 836,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_optimal_cell(self, t, test_cases):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2937,
+            "code_problem_id": 836,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findOptimalCell(testCases) {\n      //write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

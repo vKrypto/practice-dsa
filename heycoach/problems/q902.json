@@ -1,0 +1,64 @@
+{
+    "id": 902,
+    "description": "You are given an integer array `arr` of length `n` that represents a permutation of the integers in the range `[0, n - 1]`.We split `arr` into some number of  **partitions**, and individually sort each partition. After concatenating them, the result should equal the sorted array.\n\nReturn the *largest number of **partitions** we can make to sort the array.*\n\n\n**Example 1:**\n```\nInput: n = 5, arr = [4,3,2,1,0]\n\nOutput: 1\n\nExplanation:\n\nSplitting into two or more partitions will not return the required result.\nFor example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn't sorted.\n```\n\n**Example 2:**\n```\nInput: n = 5, arr = [1,0,2,3,4]\n\nOutput: 4\n\nExplanation:\n\nWe can split into two partitions, such as [1, 0], [2, 3, 4].\nHowever, splitting into [1, 0], [2], [3], [4] is the highest number of partitions possible.\n ```\n**Input Format**\n```\nFirst line contains the integer n denoting length of the array\nSecond line contains n space separated integers denoting the array arr\n````\n**Output Format**\n```\nA single integer denoting the largest number of partitions\n````\n**Constraints:**\n\n`n == arr.length`\n\n`1 <= n <= 10`\n\n`0 <= arr[i] < n`\n\n`All the elements of arr are unique.`",
+    "title": "Max Partitions To Make Array Sorted",
+    "default_testcase": {
+        "id": 8036,
+        "input": "5\n4 3 2 1 0",
+        "expected_output": "1\n",
+        "code_problem_id": 902,
+        "created_at": "2024-05-18T15:12:31.899Z",
+        "updated_at": "2024-05-18T15:12:31.899Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3001,
+            "code_problem_id": 902,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\n   int maxPartition(int n, vector<int>& arr) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3002,
+            "code_problem_id": 902,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int maxPartition(int n, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3003,
+            "code_problem_id": 902,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maxPartition(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3004,
+            "code_problem_id": 902,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maxPartition(n, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

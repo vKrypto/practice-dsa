@@ -1,0 +1,64 @@
+{
+    "id": 304,
+    "description": "You are given weights and values of N items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. Note that we have only one quantity of each item.\nIn other words, given two integer arrays val[0..N-1] and wt[0..N-1] which represent values and weights associated with N items respectively. Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item or dont pick it (0-1 property).\n\n**Constraints:**\n\n1 \u2264 N \u2264 1000\n\n1 \u2264 W \u2264 1000\n\n1 \u2264 wt[i] \u2264 1000\n\n1 \u2264 v[i] \u2264 1000\n\n**Example:**\n\n**Input:**  \nN = 3  W = 4    values[] = {1,2,3}     weight[] = {4,5,1}   \n**Output:** 3\n",
+    "title": "0/1 kanpsack",
+    "default_testcase": {
+        "id": 2012,
+        "input": "4 5\n1 2 4 5\n5 4 8 6",
+        "expected_output": "13",
+        "code_problem_id": 304,
+        "created_at": "2023-09-17T11:46:15.908Z",
+        "updated_at": "2023-09-17T11:46:15.908Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 749,
+            "code_problem_id": 304,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n    public static int knapsack(int[] wt, int[] val, int n, int W) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 750,
+            "code_problem_id": 304,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def knapsack(self, wt, val, n, W):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 751,
+            "code_problem_id": 304,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    knapsack(wt, val, n, W) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 752,
+            "code_problem_id": 304,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int knapsack(vector<int>& wt, vector<int>& val, int n, int W){\n    //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

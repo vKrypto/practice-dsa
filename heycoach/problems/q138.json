@@ -1,0 +1,57 @@
+{
+    "id": 138,
+    "description": "Tuntun is studying Anagrams and she wish to find all the anagrams in a string. So she needs your help in writing codes.\nGiven two strings s and p, print an array of all the start indices of p's anagrams in s. You may return the answer in sorted order.\n\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.\n\n#### Example:\n**Input**: cbaebabacd\nabc\n**Output**:0 6\n\n#### Input Format:\n- first line contains string s\n- second line contains string p\n\n#### Output Format:\n- Print all the indices of the anagrams present in string s. (single space seperated)\n\n#### Constraints:\n- 1 <= s.length, p.length <= 30000\n- s and p consist of lowercase English letters.",
+    "title": "Find all Anagrams",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 230,
+            "code_problem_id": 138,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(string s,string p) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 231,
+            "code_problem_id": 138,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(String s,String p) {\n    \n  } \n}"
+        },
+        {
+            "id": 232,
+            "code_problem_id": 138,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, s, p):\n    \n"
+        },
+        {
+            "id": 970,
+            "code_problem_id": 138,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    findAnagrams(s, p) {\n    }\n}\n\n"
+        }
+    ]
+}

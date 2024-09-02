@@ -1,0 +1,28 @@
+{
+    "id": 194,
+    "description": "Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return _the area of the largest rectangle in the histogram_.\n### Example 1 \n[![largest-area-in-histogram-tc.png](https://i.postimg.cc/HL4C7ZwM/largest-area-in-histogram-tc.png)](https://postimg.cc/jW51phkq)\n\n### Input\n```CPP\nheights = [2,1,5,6,2,3]\n```\n### Output \n```CPP\n10\n```\n### Explanation\nThe above is a histogram where width of each bar is 1.\nThe largest rectangle is shown in the red area, which has an area = 10 units.\n\n**Example 2:**\n\n**Input:**\n```CPP\nheights = [2,4]\n```\n**Output:** \n```CPP\n4\n```\n\n### Constraints:\n-   `1 <= heights.length <= 10000`\n-   `0 <= heights[i] <= 100000`",
+    "title": "Largest area in histogram",
+    "default_testcase": {
+        "id": 1419,
+        "input": "6\n2 1 5 6 2 3",
+        "expected_output": "10",
+        "code_problem_id": 194,
+        "created_at": "2022-10-29T13:36:15.093Z",
+        "updated_at": "2022-10-29T13:36:15.093Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 314,
+            "code_problem_id": 194,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int largestRectangleArea(vector<int>& heights) {\n      // write your code here\n    }\n};"
+        }
+    ]
+}

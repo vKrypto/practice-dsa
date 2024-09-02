@@ -1,0 +1,45 @@
+{
+    "id": 242,
+    "description": "\nGiven the tow arrays a[], b[] of size N. There are N types of sticks of lengths specified. Each stick of length A[i] of B[i] units. You have to contruct a square and rectangle using these sticks. \nEach unit of stick can be used as length or breadth of a rectangle or side of a square. \nLet S be the sum of all sticks that are used to construct the rectangle ans sqaure. So you have to maximise the S.\n\nNote: Each stick of different length.\n\n\n### Example 1 \n\n### Input\n```CPP\nN = 4\nA[] = {3,4,6,5}\nB[] = {2,3,1,6}\n``` \n### Output \n```CPP \n38\n``` \n#### Explanation:\nThere are 2 sticks of length 3.\nThere are 3 sticks of length 4.\nThere is a 1 stick of length 6.\nThere are 6 sticks of length 5.\nOne square can be made using 4 sticks of\n4th kind (5*4=20)\nA rectangle can be made using 2 sticks of \n4th kind and 2 sticks of 2nd kind (5*2+4*2=18)\nS = 20 + 18 = 38\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\nN = 1\nA[] = {3}\nB[] = {2}\n``` \n### Output \n```CPP \n0\n``` \n#### Explanation:\nThere are only 2 sticks of length 3 which are \nnot enough to make the square or rectangle.\n\n### Constraints \n* 1<= N =>10^5\n* 1<= A[i] =>10^9\n* 1<= B[i] =>10^3\n\n",
+    "title": "Maximum Possible value",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 421,
+            "code_problem_id": 242,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &a, vector<int> &b) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 428,
+            "code_problem_id": 242,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution {\n  public void solve(Vector<Integer> arr,Vector<Integer> brr) {\n\t\n  } \n}"
+        },
+        {
+            "id": 435,
+            "code_problem_id": 242,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr, brr):\n        pass\n"
+        }
+    ]
+}

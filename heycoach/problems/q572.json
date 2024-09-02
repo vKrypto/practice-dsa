@@ -1,0 +1,64 @@
+{
+    "id": 572,
+    "description": "Bunty is stuck in a horror house that consists of a N*N maze with bunty being at room [0][0]. Find the total number paths that bunty can follow to reach the exit i.e. room[N-1][N-1]. He can move in any direc\u00adtion ( left, right, up and down).  \nValue of every room in the maze can either be 0 or 1. Room with value 0 are blocked means they cant be accessed and those with value 1 are open.\n\n**`Input Format:`**\n\n```\nThe first line of input contains an integer 'N' representing the dimension of the maze.\n```\n\n`The next N lines of input contain N space-separated integers representing the type of the cell.`\n\n**`Output Format :`**\n\n`For each test case, print the total number of paths possible from start to exit.`\n\n\n**`Constraints:`**\n\n`0 < N < 11 `\n\n`0 <= Maze[i][j] <=1`\n\n**`Sample Input 1 :`**\n\n \n```\n3\n1 0 1\n\n1 0 1\n\n1 1 1\n```\n\n\n**`Sample Output 1 :`**\n\n`1`\n\n**`Explanation:`** `Only 1 path is possible which is:`\n\n```\n1 0 0 \n\n1 0 0 \n\n1 1 1 \n```\n\n` (1 representing the path he took) Which is printed from left to right and then top to bottom in one line.`",
+    "title": "Bunty in the horror house",
+    "default_testcase": {
+        "id": 3985,
+        "input": "3\n1 1 1\n1 1 1\n1 1 1",
+        "expected_output": "12\n",
+        "code_problem_id": 572,
+        "created_at": "2024-01-22T13:35:15.300Z",
+        "updated_at": "2024-01-22T13:35:15.300Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1710,
+            "code_problem_id": 572,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void Escape(int n, int **arr){\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1773,
+            "code_problem_id": 572,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private int sum = 0;\n    public void escape(int n, int[][] arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1774,
+            "code_problem_id": 572,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):\n        self.sum = 0\n\n    def escape(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1870,
+            "code_problem_id": 572,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n    this.sum = 0;\n    }\n    escape(n, arr) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

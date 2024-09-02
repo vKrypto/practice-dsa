@@ -1,0 +1,64 @@
+{
+    "id": 757,
+    "description": "Write a program that prints numbers within a specified range that are divisible by two given numbers, num1 and num2, and also divisible by both num1 and num2. </br>The program takes four integers as input: the start and end of the range, num1, and num2. It outputs the numbers within the range that satisfy the divisibility criteria.\n\n#### `Input Format:`\n```\nThe input consists of four integers separated by spaces: start (the starting value of the range), end (the ending value of the range), num1, and num2.\n```\n#### `Output Format:`\n```\nThe program outputs a list of numbers separated by spaces that are divisible by both num1 and num2 within the specified range.\n```\n#### `Sample Input:`\n```\n10 50 3 5\n```\n\n#### `Sample Output:`\n```\n15 30 45\n```\n#### `Constraints:`\n- `1 <= start, end, num1, num2 <= 1000`\n- `start <= end`\n\n#### `Explnation:`\n- `The input specifies a range from 10 to 50.`\n- `Numbers divisible by both 3 and 5 within this range are 15, 30, and 45.`\n- `These numbers are printed as the output of the program.`",
+    "title": "Range Divisibility Checker",
+    "default_testcase": {
+        "id": 6755,
+        "input": "10 50 3 5",
+        "expected_output": "15 30 45 \n",
+        "code_problem_id": 757,
+        "created_at": "2024-03-23T02:48:06.098Z",
+        "updated_at": "2024-03-23T02:48:06.098Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2455,
+            "code_problem_id": 757,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void printDivisibleNumbers(int start, int end, int num1, int num2) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2456,
+            "code_problem_id": 757,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void printDivisibleNumbers(int start, int end, int num1, int num2) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2457,
+            "code_problem_id": 757,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def print_divisible_numbers(start, end, num1, num2):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2458,
+            "code_problem_id": 757,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static printDivisibleNumbers(start, end, num1, num2) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

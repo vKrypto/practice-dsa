@@ -1,0 +1,64 @@
+{
+    "id": 15,
+    "description": "You have given a rectangular board of M\u2009\u00d7\u2009N squares. You also have unlimited number of standard block pieces of \u20092 x1 squares. You are allowed to rotate the pieces. You are asked to place as many blocks as possible on the board so as to meet the following conditions:\n\n1. Each block completely covers two squares.\n\n2. No two blocks overlap.\n\n3. Each block lies entirely inside the board. It is allowed to touch the edges of the board.\n\nFind the maximum number of blocks, which can be placed under these restrictions.\n\n### Input\n```\nIn a single line you are given two integers M and N \u2014 board sizes in squares.\n```\n### Output\n```\nOutput one number \u2014 the maximal number of block of wood, which can be placed.\n```\n### Sample Input\n```\n2 4\n```\n### Sample Output\n```\n4\n```\n### Explanation\n```\nWe are given the board of size 2x4 which is given as:\n----\n----\n\nWe can place two blocks which are placed horizontally, in each row making a total of 4 in this way:\n==\n==\n\n```\n### Constraints\n```\n1\u2009\u2264\u2009M\u2009\u2264\u2009N\u2009\u2264\u200916 \n```",
+    "title": "Board Filling",
+    "default_testcase": {
+        "id": 6342,
+        "input": "2 4",
+        "expected_output": "4\n",
+        "code_problem_id": 15,
+        "created_at": "2024-03-12T13:38:48.802Z",
+        "updated_at": "2024-03-12T13:38:48.802Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 21,
+            "code_problem_id": 15,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\nint boardfill(int n,int m) {\n  //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 22,
+            "code_problem_id": 15,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def boardfill(self, n, m):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 23,
+            "code_problem_id": 15,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int boardFill(int n, int m) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 557,
+            "code_problem_id": 15,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    boardfill(n, m) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

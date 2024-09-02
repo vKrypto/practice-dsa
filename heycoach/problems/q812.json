@@ -1,0 +1,64 @@
+{
+    "id": 812,
+    "description": "You are given a string `s`. You can reorder the characters to form a string `t` . Define **maxT** to be the lexicographical maximum of `t` and `t` in reverse order.\n\nGiven `s` determine the lexicographically minimum value of **maxT** over all reorderings `t` of `s`.\n\nA string **a** is lexicographically smaller than a string **b** (of the same length) if in the first position where **a** and **b** differ, string **a** has a letter that appears earlier in the alphabet than the corresponding letter in **b**. For example, `\"abde\"` is lexicographically smaller than `\"abge\"` because the first position they differ is at the third letter, and `'d'` comes before `'g'`.\n\n\n**Example**\n\n```\nInput : s = \"aab\"\n\nOutput : \"aba\"\n\nExplanation\n\nThere are three reorderings of s\n\nt = aab : maxT = max(aab,baa) = baa\nt = aba : maxT = max(aba,aba) = aba\nt = baa : maxT = max(baa,aab) = baa\n\nThe lexicographical minimum of maxT over all cases is \"aba\".\n```\n**Input Format**\n\nThe first and only line contains a string `s`.\n\n**Output Format**\n\n The lexicographically minimum value of **maxT** over all reorderings `t` of `s`.\n\n**Constraints**\n\n`1 <= length of s <= 10^5`\n\n`S consist of only lowercase English letters`\n",
+    "title": "Lexicographically Minimum Among All Reorderings",
+    "default_testcase": {
+        "id": 7379,
+        "input": "aab",
+        "expected_output": "aba\n",
+        "code_problem_id": 812,
+        "created_at": "2024-04-25T14:27:54.004Z",
+        "updated_at": "2024-04-25T14:27:54.004Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2653,
+            "code_problem_id": 812,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nstring LexicographicallyMin(string &s)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2654,
+            "code_problem_id": 812,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n    public String lexicographicallyMin(String s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2655,
+            "code_problem_id": 812,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def LexicographicallyMin(self, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2656,
+            "code_problem_id": 812,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    LexicographicallyMin(s) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

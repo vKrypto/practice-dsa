@@ -1,0 +1,64 @@
+{
+    "id": 630,
+    "description": "A digit string is `special` if the digits (0-indexed) at even indices are even and the digits at odd indices are prime (2, 3, 5, or 7).\n\nFor example, \"2582\" is `special` because the digits (2 and 8) at even positions are even and the digits (5 and 2) at odd positions are prime. However, \"3245\" is not `special` because 3 is at an even index but is not even.\nGiven an integer n, return the total number of `special` digit strings of length n. Since the answer may be large, return it modulo 109 + 7.\n\nA digit string is a string consisting of digits 0 through 9 that may contain leading zeros.\n\nInput Format:\n\nA single integer n.\n\nOutput Format:\n\nReturn a single integer which represents the total number of `special` digit strings of length n.\n\n\n### Example 1 \n\n### Input\n```CPP\nn=1\n``` \n### Output \n```CPP \n5\n``` \n#### Explanation:\nThe good numbers of length 1 are \"0\", \"2\", \"4\", \"6\", \"8\".\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\nn=50\n``` \n### Output \n```CPP \n564908303\n``` \n\n\n### Constraints:\n\n* 1 <= n <= 10^15",
+    "title": "Special Number",
+    "default_testcase": {
+        "id": 4208,
+        "input": "1000000000000000",
+        "expected_output": "711414395",
+        "code_problem_id": 630,
+        "created_at": "2024-01-27T08:48:50.006Z",
+        "updated_at": "2024-01-27T08:48:50.006Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1921,
+            "code_problem_id": 630,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  int mod = 1000000007;\n  int countGoodNumbers(long long n) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1926,
+            "code_problem_id": 630,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private static final int MOD = 1000000007;\n\n    public int countGoodNumbers(long n) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1927,
+            "code_problem_id": 630,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    MOD = 1000000007\n\n    def countGoodNumbers(self, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1928,
+            "code_problem_id": 630,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.mod = 1000000007n;\n    }\n\n    countGoodNumbers(n) {\n      //n is of type BigInt but return the value in type Number.",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

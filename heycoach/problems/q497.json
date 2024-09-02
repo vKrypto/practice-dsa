@@ -1,0 +1,64 @@
+{
+    "id": 497,
+    "description": "Given a positive integer N, find the total count of set bits for all numbers from 1 to N (both inclusive). A set bit is a binary digit that is set to 1.\n\n**Input**:</br>\nN (1 \u2264 N \u2264 10^8): An integer representing the upper bound of the range.\n\n**Output**:</br>\nReturns an integer representing the total count of set bits for all numbers from 1 to N.\n\n**Example 1:**</br>\n**Input**: \n```\nN = 4\n```\n**Output:**\n```\n 5\n```\n**Explanation**:</br>\nFor numbers from 1 to 4.</br>\nFor 1: 0 0 1 = 1 set bit</br>\nFor 2: 0 1 0 = 1 set bit</br>\nFor 3: 0 1 1 = 2 set bits</br>\nFor 4: 1 0 0 = 1 set bit</br>\nFor 4: 1 0 1 = 2 set bit</br>\nTherefore, the total set bits is 7.\n\n**Example 2:**\n**Input**: \n```\nN = 17\n```\n**Output:**\n```\n 35\n```\n**Explanation**:</br> \nFrom numbers 1 to 17 (both inclusive), \nthe total number of set bits is 35.\n\n**Constraints**:</br>\nThe solution should have a time complexity of O(N) or better.",
+    "title": "Total Set Bits",
+    "default_testcase": {
+        "id": 3317,
+        "input": "2\n4\n17",
+        "expected_output": "5\n35\n",
+        "code_problem_id": 497,
+        "created_at": "2024-01-02T13:30:53.315Z",
+        "updated_at": "2024-01-02T13:30:53.315Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1454,
+            "code_problem_id": 497,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int countsetbit(int n){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1455,
+            "code_problem_id": 497,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_set_bit(self, n):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1456,
+            "code_problem_id": 497,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countSetBit(int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1457,
+            "code_problem_id": 497,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countSetBit(n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

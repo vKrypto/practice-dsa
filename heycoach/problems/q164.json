@@ -1,0 +1,57 @@
+{
+    "id": 164,
+    "description": "\nGiven an `m x n matrix`, return all elements of the `matrix` in spiral order.\n\n### Example 1 \n\n### Input\n```CPP\nmatrix = [[1,2,3],[4,5,6],[7,8,9]]\n``` \n### Output \n```CPP \n[1,2,3,6,9,8,7,4,5]\n``` \n#### Explanation -\n![Image](https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg)\n\n\n### Example 2 \n\n### Input\n```CPP\nmatrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]\n``` \n### Output \n```CPP \n[1,2,3,4,8,12,11,10,9,5,6,7]\n``` \n#### Explanation -\n![Image](https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg)\n\n\n### Constraints:\n\n* m == matrix.length\n* n == matrix[i].length\n* 1 <= m, n <= 10\n* -100 <= matrix[i][j] <= 100",
+    "title": "Spiral Matrix",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 352,
+            "code_problem_id": 164,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tvoid solve(vector<vector<int>> arr) {\n\n\t}\n};\n"
+        },
+        {
+            "id": 356,
+            "code_problem_id": 164,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(Vector<Vector<Integer>> arr) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 360,
+            "code_problem_id": 164,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        # your code here\n"
+        },
+        {
+            "id": 1198,
+            "code_problem_id": 164,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  solve(arr) {\n  }\n}"
+        }
+    ]
+}

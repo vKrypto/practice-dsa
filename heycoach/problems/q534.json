@@ -1,0 +1,57 @@
+{
+    "id": 534,
+    "description": "Given an array parent[] of size N that can be used to represent a tree. The array indexes are values in tree nodes and array values give the parent node of that particular index (or node). The value of the root node index would always be -1 as there is no parent for root. Return the largest distance between two nodes in a tree.\n\nDistance between two nodes is the number of edges on a path between the nodes (there will be a unique path between any pair of nodes since it is a tree).\n\n\nInput:\nt, number of testcases.\nIn each test case:\nstring s, input tree in for of string.\nint a,b distance between a and b node is required.\n\nOutput:\nPrint distance between a and b.\n\nSample Input:\n1\n1 2 3 N N N N\n2 3\n\nSample Output:\n2\n\nExplaination:\nNumber of edges between 2 and 3 is 2.\n\n\nConstraints:\n0<=t<=100\n0<N<=1000, number of nodes in each tree\na and b must present in the tree. ",
+    "title": "Distance between nodes",
+    "default_testcase": null,
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1590,
+            "code_problem_id": 534,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nfunction buildTree(str)\n{\n\t// Corner Case\n\tif (str.length === 0 || str[0] == 'N')\n\t\treturn null;\n\n\t// Creating vector of strings from input\n\t// string after spliting by space\n\tlet ip = new Array();\n    \n    let ip_str = str.split(\" \");\n    \n\tfor (let i=0;i<ip_str.length;i++)\n\t\tip.push(ip_str[i]);\n\n\t// Create the root of the tree\n    let root = new Node(parseInt(ip[0]));\n\n\t// Push the root to the queue\n\tlet queue = new Array();\n\tqueue.push(root);\n\n\t// Starting from the second element\n\tlet i = 1;\n\twhile (queue.length!==0 && i < ip.length) {\n\n\t\t// Get and remove the front of the queue\n\t\tlet currNode = queue[0];\n\t\tqueue.shift();\n\n\t\t// Get the current node's value from the string\n\t\tlet currVal = ip[i];\n\n\t\t// If the left child is not null\n\t\tif (currVal != \"N\") {\n\n\t\t\t// Create the left child for the current node\n\t\t\tcurrNode.left = new Node(parseInt(currVal));\n\n\t\t\t// Push it to the queue\n\t\t\tqueue.push(currNode.left);\n\t\t}\n\n\t\t// For the right child\n\t\ti++;\n\t\tif (i >= ip.length)\n\t\t\tbreak;\n\t\tcurrVal = ip[i];\n\n\t\t// If the right child is not null\n\t\tif (currVal != \"N\") {\n\n\t\t\t// Create the right child for the current node\n\t\t\tcurrNode.right = new Node(parseInt(currVal));\n\n\t\t\t// Push it to the queue\n\t\t\tqueue.push(currNode.right);\n\t\t}\n\t\ti++;\n\t}\n\n\treturn root;\n}\n\n\n\nfunction main() {\n    let t = parseInt(readLine());\n    for(let i=0;i<t;i++)\n    {\n        let s_tree = readLine().trim();\n        let [n1,n2] = readLine().split(\" \").map((x) => parseInt(x));\n        let root = buildTree(s_tree);\n        let obj = new Solution();\n        let res = obj.findDist(root,n1,n2);\n\t\tconsole.log(res);\n    }\n}\n// } Driver Code Ends\n\n\n//User function Template for javascript\n\n/*\nclass Node\n{\n    constructor(x){\n        this.data=x;\n        this.left=null;\n        this.right=null;\n    }\n}\n*/\n\n/**\n * @param {Node} root\n * @param {number} a\n * @param {number} b\n * @return {number}\n*/\nclass Solution {\n\n    findDist( root, a,  b) { // Function to find the distance between two nodes in a binary tree\n  }\n\n    \n}"
+        },
+        {
+            "id": 1591,
+            "code_problem_id": 534,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n    public:\nint findDist(Node *root, int n1, int n2) {\n\n}\n};"
+        },
+        {
+            "id": 1592,
+            "code_problem_id": 534,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Main {\n    static Node buildTree(String str) {\n\n        if (str.length() == 0 || str.charAt(0) == 'N') {\n            return null;\n        }\n\n        String ip[] = str.split(\" \");\n        // Create the root of the tree\n        Node root = new Node(Integer.parseInt(ip[0]));\n        // Push the root to the queue\n\n        Queue<Node> queue = new LinkedList<>();\n\n        queue.add(root);\n        // Starting from the second element\n\n        int i = 1;\n        while (queue.size() > 0 && i < ip.length) {\n\n            // Get and remove the front of the queue\n            Node currNode = queue.peek();\n            queue.remove();\n\n            // Get the current node's value from the string\n            String currVal = ip[i];\n\n            // If the left child is not null\n            if (!currVal.equals(\"N\")) {\n\n                // Create the left child for the current node\n                currNode.left = new Node(Integer.parseInt(currVal));\n                // Push it to the queue\n                queue.add(currNode.left);\n            }\n\n            // For the right child\n            i++;\n            if (i >= ip.length) break;\n\n            currVal = ip[i];\n\n            // If the right child is not null\n            if (!currVal.equals(\"N\")) {\n\n                // Create the right child for the current node\n                currNode.right = new Node(Integer.parseInt(currVal));\n\n                // Push it to the queue\n                queue.add(currNode.right);\n            }\n            i++;\n        }\n\n        return root;\n    }\n\n    public static void main(String[] args) throws IOException {\n        BufferedReader br =\n            new BufferedReader(new InputStreamReader(System.in));\n\n        int t = Integer.parseInt(br.readLine().trim());\n\n        while (t-- > 0) {\n            String s = br.readLine().trim();\n            Node root = buildTree(s);\n            String[] ab = br.readLine().trim().split(\" \");\n            int a = Integer.parseInt(ab[0]);\n            int b = Integer.parseInt(ab[1]);\n\n            GfG g = new GfG();\n            System.out.println(g.findDist(root, a, b));\n        }\n    }\n}\n\n\n// } Driver Code Ends\n\n\n// FUNCTION CODE\n/* A Binary Tree node\nclass Node\n{\n    int data;\n    Node left, right;\n   Node(int item)    {\n        data = item;\n        left = right = null;\n    }\n} */\n\n/* Should return minimum distance between a and b\n   in a tree with given root*/\nclass GfG {\n    // Function to find the lowest common ancestor (LCA) of two nodes in a binary tree\n\n\n    // Function to find the distance between two nodes in a binary tree\n    int findDist(Node root, int a, int b) {\n\n    }\n\n    // Function to find the path length from the root to a given node in a binary tree\n\n}"
+        },
+        {
+            "id": 1593,
+            "code_problem_id": 534,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "#Back-end complete function Template for Python 3\n\n\n\nclass Solution:  \n    def findDist(self,root, data1, data2): \n\n\n"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 81,
+    "description": "Given **K sorted arrays** arranged in the form of a matrix of size K*K. The task is to **merge** them into one sorted array.\n\n### Example 1 \n\n### Input\n```CPP\nK = 3\narr = [[1,2,3],[4,5,6],[7,8,9]]\n``` \n### Output \n```CPP \n1 2 3 4 5 6 7 8 9\n``` \n#### Explanation:\nAbove test case has 3 sorted arrays of size 3, 3, 3 arr = [[1, 2, 3],[4, 5, 6], \n[7, 8, 9]]. The merged list will be  [1, 2, 3, 4, 5, 6, 7, 8, 9].\n\n### Example 2 \n\n### Input\n```CPP\nK = 4\narr =[[1,2,3,4],[2,2,3,4],[5,5,6,6],[7,8,9,9]]\n``` \n### Output \n```CPP \n1 2 2 2 3 3 4 4 5 5 6 6 7 8 9 9 \n``` \n#### Explanation:\nAbove test case has 4 sorted arrays of size 4, 4, 4, 4 arr = [[1, 2, 2, 2], [3, 3, 4, 4], [5, 5, 6, 6]  [7, 8, 9, 9 ]]. The merged list will be  [1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9 ].\n### Constraints:\n\n* 1 <= k <= 100\n* 1 <= arr[i][j] <= 100000\n",
+    "title": "Merge K sorted arrays",
+    "default_testcase": {
+        "id": 581,
+        "input": "3\n1 2 3\n6 5 4\n7 8 9",
+        "expected_output": "1 2 3 4 5 6 7 8 9 ",
+        "code_problem_id": 81,
+        "created_at": "2022-10-02T13:55:21.410Z",
+        "updated_at": "2022-10-02T13:55:21.410Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 121,
+            "code_problem_id": 81,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\npublic:\n\tvector<int> mergeKArrays(vector<vector<int>> arr, int k)\n\t{\n      // write your code here\n\t}\n};"
+        },
+        {
+            "id": 490,
+            "code_problem_id": 81,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public List<Integer> mergeKArrays(List<List<Integer>> arr, int k) {\n      // write your code here\n    }\n}"
+        }
+    ]
+}

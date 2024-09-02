@@ -1,0 +1,64 @@
+{
+    "id": 972,
+    "description": "Given the number of training days n for young knights, determine the number of possible training records where a knight qualifies as a \"Diligent Defender.\"\n\nA knight is considered a \"Diligent Defender\" if they meet the following criteria:\n\nLimited Excuses: They have fewer than 2 excused absences (E) in total.\nPunctuality Matters: They never have 3 or more consecutive tardies (T).\n\n**Input:**</br>\n\nAn integer n representing the number of training days (1 <= n <= 10^5).\n\n**Output:**\n\nAn integer representing the number of possible training records where a knight qualifies as a \"Diligent Defender\" modulo 10^9 + 7 (remainder after dividing by 1 billion + 7).\n\n**Example 1:**\n\n**Input:**\n```\nn = 2\n```\n\n**Output:** \n\n```\n8\n```\n\n**Explanation:**\n```\nPossible Diligent Defender Records: \"PP\", \"EP\", \"PE\", \"TE\", \"ET\", \"PT\", \"ET\", \"TP\" (8 total)\n\nRecord \"EE\" disqualifies the knight due to 2 excused absences.\n```\n**Constraints:**\n\n1 <= n <= 996",
+    "title": "Diligent Defenders",
+    "default_testcase": {
+        "id": 8478,
+        "input": "2",
+        "expected_output": "8\n",
+        "code_problem_id": 972,
+        "created_at": "2024-05-31T05:11:38.195Z",
+        "updated_at": "2024-05-31T05:11:38.195Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3241,
+            "code_problem_id": 972,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n int diligentKnights(int n) {\n      ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3242,
+            "code_problem_id": 972,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   public static final int MOD = (int) (1e9 + 7);\n    public int diligentKnights(int n) {\n       \n   ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3243,
+            "code_problem_id": 972,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\ndef diligentKnights(n):\n    \n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3244,
+            "code_problem_id": 972,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "\nclass Solution {\n    constructor() {\n        this.MOD = 1e9 + 7;\n    }\n\n    diligentKnights(n) {\n       ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

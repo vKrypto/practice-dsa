@@ -1,0 +1,64 @@
+{
+    "id": 543,
+    "description": "Leonard was always sickened by how Sheldon considered himself better than him. To decide once and for all who is better among them, they decided to ask each other a puzzle. Sheldon pointed out that according to the Roommate Agreement, Sheldon will ask first. Leonard seeing an opportunity decided that the winner will get to rewrite the Roommate Agreement.\n\nSheldon thought for a moment then agreed to the terms thinking that Leonard would never be able to answer right. For Leonard, Sheldon thought of a puzzle which is as follows. He gave Leonard n numbers, which can be both positive and negative. Leonard had to find the number of continuous sequences of numbers such that their sum is zero.\n\n```\nFor example, if the sequence is- 5, 2, -2, 5, -5, 9\n\nThere are 3 such sequences\n\n2, -2\n\n5, -5\n\n2, -2, 5, -5\n\nSince this is a golden opportunity for Leonard to rewrite the Roommate Agreement and get rid of Sheldon's ridiculous clauses, he can't afford to lose. So he turns to you for help. Don't let him down.\n```\n\n\n----------\n\n\n### `Input Format`\n```\nFirst line contains T - number of test cases\n\nSecond line contains n - the number of elements in a particular test case.\n\nNext line contains n elements, ai (1 <= i <= n) separated by spaces.\n\n```\n### `Output Format`\n```\nThe number of such sequences whose sum if zero.\n```\n### `Sample Input`\n```\n2\n4\n0 1 -1 0\n6\n5 2 -2 5 -5 9\n\n```\n### `Sample Output`\n```\n6\n3\n```\n\n\n----------\n\n\n### `Constraints:`\n\n- `1 <= t <= 5`\n\n- `1 <= n <= 10^6`\n\n- `-10 <= ai <= 10`\n\n\n----------\n\n",
+    "title": "Roommate Agreement",
+    "default_testcase": {
+        "id": 3618,
+        "input": "2\n4\n0 1 -1 0\n6\n5 2 -2 5 -5 9\n",
+        "expected_output": "6\n3\n",
+        "code_problem_id": 543,
+        "created_at": "2024-01-07T07:31:44.086Z",
+        "updated_at": "2024-01-07T07:31:44.086Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1624,
+            "code_problem_id": 543,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static long calculateSumPairsCount(int m, std::vector<long>& a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1625,
+            "code_problem_id": 543,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static long calculateSumPairsCount(int m, long[] a) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1626,
+            "code_problem_id": 543,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def calculate_sum_pairs_count(m, a):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1627,
+            "code_problem_id": 543,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static calculateSumPairsCount(m, a) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

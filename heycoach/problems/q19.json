@@ -1,0 +1,45 @@
+{
+    "id": 19,
+    "description": "Given a sentence text (A sentence is a string of space-separated words) in the following format:\n\n* First letter is in upper case.\n* Each word in text are separated by a single space.\nYour task is to rearrange the words in text such that all words are rearranged in an increasing order of their lengths. If two words have the same length, arrange them in their original order.\n\nReturn the new text following the format shown above.\n\n\n### Example 1 \n\n### Input\n```CPP\ntext = \"Leetcode is cool\"\n``` \n### Output \n```CPP \n \"Is cool leetcode\"\n``` \n### Explanation :\nThere are 3 words, \"Leetcode\" of length 8, \"is\" of length 2 and \"cool\" of length 4.\nOutput is ordered by length and the new first word starts with capital letter.\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\ntext = \"Keep calm and code on\"\n``` \n### Output \n```CPP \n \"On and keep calm code\"\n``` \n### Explanation:\n Output is ordered as follows:\n\"On\" 2 letters.\n\"and\" 3 letters.\n\"keep\" 4 letters in case of tie order by position in original text.\n\"calm\" 4 letters.\n\"code\" 4 letters.\n\n### Constraints:\n\n* text begins with a capital letter and then contains lowercase letters and single space between words.\n* 1 <= text.length <= 10^5\n",
+    "title": "Make Valid Sentence",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 378,
+            "code_problem_id": 19,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(string s) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 381,
+            "code_problem_id": 19,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(String s) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 384,
+            "code_problem_id": 19,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, s):\n        # your code here\n"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": 332,
+    "description": "While walking down the street Vanya saw a label \"Hide&Seek\". Because he is a programmer, he used & as a bitwise AND for these two words represented as a integers in base 64 and got new word. Now Vanya thinks of some string s and wants to know the number of pairs of words of length |s| (length of s), such that their bitwise AND is equal to s. As this number can be large, output it modulo 10^9\u2009+\u20097.\n\nTo represent the string as a number in numeral system with base 64 Vanya uses the following rules:\n\ndigits from '0' to '9' correspond to integers from 0 to 9;\nletters from 'A' to 'Z' correspond to integers from 10 to 35;\nletters from 'a' to 'z' correspond to integers from 36 to 61;\nletter '-' correspond to integer 62;\nletter '_' correspond to integer 63.\n\nInput\nThe only line of the input contains a single word s (1\u2009\u2264\u2009|s|\u2009\u2264\u2009100\u2009000), consisting of digits, lowercase and uppercase English letters, characters '-' and '_'.\n\nOutput\nPrint a single integer \u2014 the number of possible pairs of words, such that their bitwise AND is equal to string s modulo 10^9\u2009+\u20097.\n",
+    "title": "Bits and the Hide & Seek",
+    "default_testcase": {
+        "id": 2140,
+        "input": "z",
+        "expected_output": "3",
+        "code_problem_id": 332,
+        "created_at": "2023-09-19T19:05:49.094Z",
+        "updated_at": "2023-09-19T19:05:49.094Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 792,
+            "code_problem_id": 332,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "#include<bits/stdc++.h>\nusing namespace std;\n\nint main(){\n    // Code Here\n    return 0;\n}"
+        }
+    ]
+}

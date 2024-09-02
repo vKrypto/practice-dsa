@@ -1,0 +1,64 @@
+{
+    "id": 126,
+    "description": "\nThe  **n-queens**  puzzle is the problem of placing  `n`  queens on an  `n x n`  chessboard such that no two queens attack each other.\n\nGiven an integer  `n`, return  all distinct solutions to the  **n-queens puzzle**. You should return the answer in an **order**  such that you start placing queens starting from the 0th row onwards to n-1th row and for each row start placing queen from 0th column onwards to n-1th column.\n\nEach solution contains a distinct board configuration of the n-queens' placement, where  `'Q'`  and  `'.'`  both indicate a queen and an empty space, respectively.\n\n\n### Example 1 \n\n### Input\n```CPP\nn = 4\n```\n\n\n### Output \n[![n-queens-example.png](https://i.postimg.cc/c4GjY1gP/n-queens-example.png)](https://postimg.cc/8swtgSbb)\n```CPP\n[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]\n```\n\n#### Explanation:\nThere exist two distinct solutions to the 4-queens puzzle as shown above\n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 1\n```\n**Output:** \n```CPP\n[[\"Q\"]]\n```\n\n### Constraints:\n-   `1 <= n <= 9`\n\n",
+    "title": "N queens",
+    "default_testcase": {
+        "id": 905,
+        "input": "4",
+        "expected_output": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q..\n\n",
+        "code_problem_id": 126,
+        "created_at": "2022-10-11T09:33:23.557Z",
+        "updated_at": "2022-10-11T09:33:23.557Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 199,
+            "code_problem_id": 126,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<vector<string>> solveNQueens(int n) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 508,
+            "code_problem_id": 126,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public List<List<String>> solveNQueens(int n) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 680,
+            "code_problem_id": 126,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solveNQueens(self, n):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 851,
+            "code_problem_id": 126,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  solveNQueens(n) {\n    //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

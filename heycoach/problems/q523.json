@@ -1,0 +1,64 @@
+{
+    "id": 523,
+    "description": "Given a string 's' and a dictionary of words 'dict' of length 'n', add spaces in s to construct a sentence where each word is a valid dictionary word. Each dictionary word can be used more than once. Return the number of such possible sentences.\n\nFor example:\n\nconsider this\nInput:\n\nn=8, dict = {he hebrew brew bible isa book is a}, s=\"hebrewbibleisabook\" \n\nOutput:\n1.  he brew bible isa book.\n2. hebrew bible isa book.\n3. hebrew bible is a book.\n4. he brew bible is a book.\n\nSince there are 4 possible sentences, return 4.\n\nInput format:\n1. First line contains the number of words in dictionary denoted by integer n.\n2. Second line contains of n space separated strings for dictionary.\n3. Third line contains the string which is to be transformed into a sentence.\n\nConstraints:\n\n1 \u2264 n \u2264 20\n\n1 \u2264 dict[i] \u2264 15\n\n1 \u2264 |s| \u2264 500 ",
+    "title": "Sentence Count",
+    "default_testcase": {
+        "id": 3486,
+        "input": "8\nhebrew he brew bible isa book is a\nhebrewbibleisabook",
+        "expected_output": "4\n",
+        "code_problem_id": 523,
+        "created_at": "2024-01-05T12:29:02.468Z",
+        "updated_at": "2024-01-05T12:29:02.468Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1541,
+            "code_problem_id": 523,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    wordBreak(n, dict, S) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1542,
+            "code_problem_id": 523,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int wordBreak(int n, vector<string>& dict, string S){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1543,
+            "code_problem_id": 523,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int wordBreak(int n, List<String> dict, String S) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1544,
+            "code_problem_id": 523,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def wordBreak(self, n, dict, S):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 427,
+    "description": "Rajesh Yadav is a English teacher at school who deceived the school into giving him 'n' days off from the school. Yadav wanted to go to Kerala with his daughters, \nso he wants to allocate several consecutive days to enjoy the holidays. Since he wants to make the best use of his time thus requiring careful preparation, \nhe will only go for at least 'k' days.\n\nYou are given an array 'Weather' containing the weather forecast (That is temperature on the i-th day) in Kerala. Temperature is in degrees.\nMr. Yadav was born in Himachal, so he can go on vacation only if the temperature does not rise above 't' degrees throughout his trip.\nHe asks you to help him and count the number of ways to choose vacation dates in Kerala.\n\n\n\n**Example:**\n```\nInput: n = 3 , k = 1, t = 15\n\nWeather = [-5,0,-10]\n\nOutput: 6\n\nExplanation : \n\nIn this example Mr. Yadav can go on these suitable dates [1], [2], [3], [1, 2], [2, 3], [1, 2, 3] which is equal to 6.\n\n```\n\n**Constraints:**\n\n`1 \u2264 n \u2264 10^5`\n\n`1 \u2264 k \u2264 n`\n\n`\u2212100 \u2264 t \u2264 100`",
+    "title": "Mr. Yadav's Vacation",
+    "default_testcase": {
+        "id": 5875,
+        "input": "3 1 15\n-5 0 -10",
+        "expected_output": "6\n",
+        "code_problem_id": 427,
+        "created_at": "2024-02-21T06:28:04.244Z",
+        "updated_at": "2024-02-21T06:28:04.244Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1154,
+            "code_problem_id": 427,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {}\n      solve(weather, n, k, t) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1155,
+            "code_problem_id": 427,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, weather, n, k, t):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 1156,
+            "code_problem_id": 427,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n  public static void solve(int weather[], int n, int k, int t){\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1157,
+            "code_problem_id": 427,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n   void solve(int weather[], int n, int k, int t){\n     //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

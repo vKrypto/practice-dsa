@@ -1,0 +1,28 @@
+{
+    "id": 324,
+    "description": "Given a set of string S of length N. Return the length of smallest string which has all the strings in the set as substring.\nConstraints:\n1 <= N <= 18\n1 <= |Si| <= 100\n",
+    "title": "Smallest String that has all strings as substring",
+    "default_testcase": {
+        "id": 2098,
+        "input": "1\n2\nbcdc b",
+        "expected_output": "4\n",
+        "code_problem_id": 324,
+        "created_at": "2023-09-18T19:17:54.238Z",
+        "updated_at": "2023-09-18T19:17:54.238Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 770,
+            "code_problem_id": 324,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    int findlen(vector<string> &S) {\n        \n    }\n};"
+        }
+    ]
+}

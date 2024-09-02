@@ -1,0 +1,8 @@
+{
+    "id": 484,
+    "description": "There is a society in HeyCoach Land which has its structure similar to a Binary Tree. The Society\u2019s first house(i.e. The root Node) faces the Sea . The manager Of the Hey Coach Society is interested to find out sitting in how many buildings of the society can you see the Sea so that the price of houses in those buildings can be set accordingly. Can you help the Manager by providing him the Node values of all the buildings present in society from which Sea is visible.\nNote: Return the Node Values going from left to right.\n",
+    "title": "HeyCoach Land",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

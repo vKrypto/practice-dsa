@@ -1,0 +1,64 @@
+{
+    "id": 460,
+    "description": "You're a botanist infiltrating a secret warehouse teeming with oranges! But these aren't ordinary oranges; they're prone to a contagious rot that spreads like wildfire! Your mission? Determine the minimum time it takes to rot all oranges before which you will have to act.\n\nYou're presented with a grid representing the warehouse (array grid). Each cell holds an integer:\n0: Empty space\n1: Fresh orange (ripe for the picking)\n2: Rotten orange (spreading the contagion)\nEvery minute, any fresh orange adjacent (up, down, left, right) to a rotten one succumbs to the rot itself.\nYour mission is to find the minimum number of minutes it takes for all fresh oranges to rot. If it is impossible for all the oranges to rot then return -1.\n\n\n----------\n\n\n### `Input/Output Format:`\n\n#### `Input:` \n`A nested array grid representing the warehouse layout, where each cell contains an integer (0, 1, or 2).`\n\n#### `Output:` \n`A single integer indicating the minimum time it takes to rot all oranges or -1 if it is impossible to rot all fresh oranges.`\n\n### `Examples:`\n\n#### `Input:` \n`[[2, 1, 1], [1, 1, 0], [0, 1, 1]] (Warehouse filled with both ripe and rotten oranges)`\n\n#### `Output:` \n`4 (It takes 4 minutes for all oranges to rot.)`\n\n#### `Input:` \n`[[2, 1, 1], [0, 1, 1], [1, 0, 1]] (Another warehouse layout)`\n\n#### `Output: `\n`-1 (The left bottom orange will never rot thus the output is -1)`\n\n#### `Input:` \n`[[0, 2]] (A small warehouse with no fresh oranges)`\n\n#### `Output:` \n`0 (Since there are no fresh oranges to begin with, the evacuation time is instantly completed.)`\n\n\n----------\n\n\n#### `Constraints:`\n\n- `1 <= m (number of rows in the warehouse) <= 10`<br>\n- `1 <= n (number of columns in the warehouse) <= 10`<br>\n- `Each cell in grid can only hold 0, 1, or 2.`",
+    "title": "Minimum Evacuation Time",
+    "default_testcase": {
+        "id": 7288,
+        "input": "3 3\n2 1 1\n1 1 0\n0 1 1",
+        "expected_output": "4\n",
+        "code_problem_id": 460,
+        "created_at": "2024-04-15T05:35:15.595Z",
+        "updated_at": "2024-04-15T05:35:15.595Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1297,
+            "code_problem_id": 460,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    // Helper method to check if the next position is within the grid bounds\n    bool issafe(int i, int j, int n, int m) {\n        return i >= 0 && j >= 0 && i < n && j < m;\n    }\n\n    int MinimumEvacuationTime(vector<vector<int>>& grid) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1353,
+            "code_problem_id": 460,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private boolean issafe(int i, int j, int n, int m) {\n        return i >= 0 && j >= 0 && i < n && j < m;\n    }\n    private static final int[][] dir = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};\n    public int MinimumEvacuationTime(int[][] grid) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1354,
+            "code_problem_id": 460,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def MinimumEvacuationTime(self, grid):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1397,
+            "code_problem_id": 460,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution { \n    minimumEvacuationTime(grid) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

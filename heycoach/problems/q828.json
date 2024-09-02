@@ -1,0 +1,64 @@
+{
+    "id": 828,
+    "description": "You are given an array `v`, consisting of `(2n - 1)` integers. In a single operation you can **change the sign** of exactly `n` elements in the array. In other words, in one operation you can select exactly `n` array elements, and multiply each of them by `-1`.\n\nWhat **maximum** sum of array elements can be obtained if it is allowed to perform any number of described operations?\n\n\n**Example**\n```\nInput : n = 3, v = [-1,-100,-1]\n\nOutput : 100\n\nExplanation:\n\nyou need to change the sign of the first two elements. \nThen we get the sum of the elements equal to 100. Which is the maximum possible sum\n```\n**Input Format**\n```\nThe first line contains an integer n\nThe second line contains (2n - 1) integers - the array elements. \n```\n\n**Output Format**\n```\nAn integer the maximum sum that Yaroslav can get.\n```\n**Constraints**\n\n`1 <= s.length <= 5000`\n\n`-1000 <= v[i] <= 1000`\n",
+    "title": "Maximum Sum of Array",
+    "default_testcase": {
+        "id": 7435,
+        "input": "2\n-1 -100 -1",
+        "expected_output": "100\n",
+        "code_problem_id": 828,
+        "created_at": "2024-04-27T03:35:31.349Z",
+        "updated_at": "2024-04-27T03:35:31.349Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2713,
+            "code_problem_id": 828,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nint MaxSum(int n, vector<int>&v)\n{\n   ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2714,
+            "code_problem_id": 828,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int MaxSum(int n, List<Integer> v) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2715,
+            "code_problem_id": 828,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def MaxSum(self, n, v):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2716,
+            "code_problem_id": 828,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    MaxSum(n, v) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "id": 244,
+    "description": "\nYou are given an integer n .You can change the position of the digit of the number.\nReturn `true` if and only if we can do this so that the resulting number is a power of two.\n\n### Example 1 \n\n### Input\n```CPP\n n = 1\n``` \n### Output \n```CPP \ntrue\n``` \n\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\nn=2\n``` \n### Output \n```CPP \nfalse\n``` \n\n\n### Constraints:\n\n* 1 <= n <= 109\n\n\n",
+    "title": "Power of 2",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

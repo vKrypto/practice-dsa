@@ -1,0 +1,28 @@
+{
+    "id": 171,
+    "description": "\nGiven an array `arr` of size `n` and an integer `X`. Find if there's a `triplet` in the array which sums up to the given integer X.\n\n\n### Example 1 \n\n### Input\n```CPP\nn = 6, X = 13\narr = [1,4,45,6,10,8]\n```\n\n\n### Output \n```CPP\n1\n```\n### Explanation\nThe triplet {1, 4, 8} in the array sums up to 13.\n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 5,X = 20\narr = [1,10,20,100,30]\n```\n**Output:** \n```CPP\n0\n```\n### Explanation\nNo triplet present which sums up to X = 20.\n\n\n### Constraints:\n* `1 <= n <= 100`\n\n* `1 <= arr[i],X <= 10000`\n",
+    "title": "Check triplet sum in an array",
+    "default_testcase": {
+        "id": 1218,
+        "input": "6 13\n1 4 45 6 10 8",
+        "expected_output": "1",
+        "code_problem_id": 171,
+        "created_at": "2022-10-24T16:36:59.721Z",
+        "updated_at": "2022-10-24T16:36:59.721Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 243,
+            "code_problem_id": 171,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    bool find3Numbers(int A[], int n, int X)\n    {\n      // write your code here\n    }\n\n};"
+        }
+    ]
+}

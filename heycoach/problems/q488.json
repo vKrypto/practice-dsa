@@ -1,0 +1,64 @@
+{
+    "id": 488,
+    "description": "Disha wants to create a Log Query Interface . While Disha is Working on list , she found that she is spending more time on searching for a word in that list. So, I avoid spending of more time on searching the entire list to get something , she decided to build a log and query interface , where she could find the desired word by finding all the words with that prefix.<br/>\nBut the task of Disha is not to just find the words , she wants to know what is the count of words in the list have a word as prefix.\n\n\n### `Sample Input`\n```\n15 7\napple\napp\napricot\napricots\norange\norangutan\nbanana\nbananas\ngrape\ngrapes\ngrapefruit\ndog\ndogged\ndogs\ndogg\ndo\n```\n### `Sample Output`\n```\n4\n4\n2\n3\n1\n0\n1\n```\n### `Explanation`\n```\nInitialize Trie:\n\nCreate an empty trie with a root node.\n\nInsert Strings into Trie:\n\nInsert \"apple\":\nTrie: a -> ap -> app -> appl -> apple (count: 1)\nInsert \"app\":\nTrie: a -> ap -> app (count: 2) -> appl -> apple (count: 1)\nInsert \"apricot\":\nTrie: a -> ap -> app (count: 2) -> apr -> apric -> aprico -> apricot (count: 1)\nInsert \"apricots\":\nTrie: a -> ap -> app (count: 2) -> apr -> apric -> aprico -> apricot (count: 1), apricots (count: 1)\nInsert \"orange\":\nTrie: o -> or -> ora -> orang -> orange (count: 1)\nInsert \"orangutan\":\nTrie: o -> or -> ora -> orang -> orange (count: 1), orangutan (count: 1)\nInsert \"banana\":\nTrie: b -> ba -> ban -> bana -> banan -> banana (count: 1)\nInsert \"bananas\":\nTrie: b -> ba -> ban -> bana -> banan -> banana (count: 1), bananas (count: 1)\nInsert \"grape\":\nTrie: g -> gr -> gra -> grap -> grape (count: 1)\nInsert \"grapes\":\nTrie: g -> gr -> gra -> grap -> grape (count: 1), grapes (count: 1)\nInsert \"grapefruit\":\nTrie: g -> gr -> gra -> grap -> grape (count: 1), grapes (count: 1), grapefruit (count: 1)\nInsert \"dog\":\nTrie: d -> do -> dog (count: 1)\nInsert \"dogged\":\nTrie: d -> do -> dog (count: 1), dogged (count: 1)\nInsert \"dogs\":\nTrie: d -> do -> dog (count: 1), dogged (count: 1), dogs (count: 1)\nInsert \"dogg\":\nTrie: d -> do -> dog (count: 1), dogged (count: 1), dogs (count: 1), dogg (count: 1)\nInsert \"do\":\nTrie: d -> do (count: 2), dog (count: 1), dogged (count: 1), dogs (count: 1), dogg (count: 1)\n\nProcess Queries:\n\nQuery \"apple\" \u2192 Count: 4 (Trie: a -> ap -> app -> appl -> apple (count: 1))\nQuery \"app\" \u2192 Count: 4 (Trie: a -> ap -> app (count: 2) -> appl -> apple (count: 1))\nQuery \"apricots\" \u2192 Count: 2 (Trie: a -> ap -> app (count: 2) -> apr -> apric -> aprico -> apricot (count: 1), apricots (count: 1))\nQuery \"orange\" \u2192 Count: 3 (Trie: o -> or -> ora -> orang -> orange (count: 1), orangutan (count: 1))\nQuery \"orangutan\" \u2192 Count: 1 (Trie: o -> or -> ora -> orang -> orange (count: 1), orangutan (count: 1))\nQuery \"banana\" \u2192 Count: 0 (Not in the trie)\nQuery \"do\" \u2192 Count: 1 (Trie: d -> do (count: 2), dog (count: 1), dogged (count: 1), dogs (count: 1), dogg (count: 1))\n````\n**Input Format:**\n```\nThe first line contains N, Q: the number words in list and number of queries.\n\nN lines follow, with words (of list) consisting of lowercase letters. The sum of their lengths won't be greater than 10^6\n\nQ lines follow, with words (queries) consisting of lowercase letters. The sum of their lengths won't be greater than 10^6\n```\n**Output Format:**\n```\nFor each query print the number of words in list which have actual word as prefix.\n```\n\n**Constraints**\n\n\n- `1 \u2264 N,Q \u2264 10^5 `\n- `The sum of the lengths of words in the list won't be greater than 10^6.`\n- `The sum of the lengths of words in the queries won't be greater than 10^6.`\n- `All words (both in the list and queries) consist of lowercase letters.`\n \n",
+    "title": "Log Query Interface",
+    "default_testcase": {
+        "id": 3275,
+        "input": "12 6\nbulldog\ndog\ndogged\ndoggedly\ndoggerel\ndogma\ndogmatic\ndogmatism\ndogs\ncatastroph\ncatastroph\ndoctor\ncat\ndog\ndogg\ndo\ndoctrinography\ndogge",
+        "expected_output": "2\n8\n3\n9\n0\n3\n",
+        "code_problem_id": 488,
+        "created_at": "2023-12-31T07:00:34.387Z",
+        "updated_at": "2023-12-31T07:00:34.387Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1426,
+            "code_problem_id": 488,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    TrieNode[] arr;\n    long count;\n\n    TrieNode() {\n        arr = new TrieNode[26];\n        count = 0;\n    }\n}\n*/\nclass Solution {\n    static long find(TrieNode root, String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1428,
+            "code_problem_id": 488,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*struct TrieNode {\n    TrieNode* arr[26];\n    ll count;\n\n    TrieNode() {\n        for (int i = 0; i < 26; i++)\n            arr[i] = NULL;\n        count = 0;\n    }\n};*/\nclass Solution {\npublic:\n    static ll find(TrieNode* root, string s) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1430,
+            "code_problem_id": 488,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n    def find(root, s):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1431,
+            "code_problem_id": 488,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass TrieNode {\n    constructor() {\n        this.arr = new Array(26).fill(null);\n        this.count = 0;\n    }\n}\n\n*/\n\nclass Solution {\n    static find(root, s) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 613,
+    "description": "The set [1, 2, 3, ..., n] contains a total of n! unique permutations.\n\nBy listing and labelling all of the permutations in order, we get the following sequence for n = 3:\n\n```\n\"123\",  \n\"132\",  \n\"213\",  \n\"231\",  \n\"312\",  \n\"321\"\n```\n\n```\nGiven n and k, return the kth permutation sequence.\n\n```\n\n### `Input Format:`\n\n`The first line consists of two integers n (1<=n<=9) and k (1<=k<=n!).`\n\n### `Output Format:`\n\n`Return the kth permutation sequence.`\n\n\n \n#### `Sample Input:1`\n\n```\n3 3\n```\n#### `Sample Output:1`\n```\n213\n```\n#### `Sample Input:2`\n\n```\n4 9\n```\n#### `Sample Output:2`\n```\n2314\n```",
+    "title": "Kth permutation",
+    "default_testcase": {
+        "id": 3998,
+        "input": "8 100",
+        "expected_output": "12384675\n",
+        "code_problem_id": 613,
+        "created_at": "2024-01-22T14:43:44.030Z",
+        "updated_at": "2024-01-22T14:43:44.030Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1846,
+            "code_problem_id": 613,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    string getPermutation(int n, int k)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1847,
+            "code_problem_id": 613,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String getPermutation(int n, int k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1848,
+            "code_problem_id": 613,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def getPermutation(self, n, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1869,
+            "code_problem_id": 613,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    getPermutation(n, k) {",
+            "skeleton_class_end": "       }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

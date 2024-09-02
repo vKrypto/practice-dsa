@@ -1,0 +1,64 @@
+{
+    "id": 467,
+    "description": "You're the architect of Harmony Hills, a peaceful utopia where residents strive for comfortable social interactions. You're tasked with building vibrant communities by grouping residents (represented by numbers) into \"continuous\" neighborhoods where everyone feels at ease.\n\n### Challenge:\n\nThis time, you're given two additional parameters:\nn: the desired number of residents in each community (neighborhood size).\nk: the \"social gap\" residents prefer to avoid (no two residents within a k difference in their desired social interaction level).\nYour goal remains the same: minimize the total difference in social preferences between the two halves of each community.\nRecall, a \"continuous\" neighborhood is one where the difference in desired social interaction between any two residents is at most 2.\n\n\n### Input/Output Format:\n\n#### Input: \nTwo integers, n (neighborhood size) and k (social gap to avoid).\n\n#### Output: \nA single integer representing the minimum total difference in social preferences achievable across all communities in Harmony Hills.\n\n### Examples:\n\n#### Input: \nn = 5, k = 4 (Harmony Hills grows!)\n\n#### Output: \n18 (Similar to the original example, minimizing the difference across all communities leads to a total difference of 18.)\n\n#### Input: \nn = 2, k = 6 (Smaller communities, wider social gap)\n\n#### Output: \n3 (As before, the optimal grouping for two-resident communities with a k of 6 leads to a minimum total difference of 3.)\n\n### Constraints:\n\n1 <= n, k <= 50 (Number of residents and social gap tolerance)\n",
+    "title": " Social Interactions",
+    "default_testcase": {
+        "id": 3162,
+        "input": "5 4",
+        "expected_output": "18\n",
+        "code_problem_id": 467,
+        "created_at": "2023-12-26T08:02:23.646Z",
+        "updated_at": "2023-12-26T08:02:23.646Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1312,
+            "code_problem_id": 467,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\n     class Solution {\npublic:\n    int minimumInteraction(int n, int k) {\n        \n \n    }\n};\n\n\n\n\n"
+        },
+        {
+            "id": 1358,
+            "code_problem_id": 467,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int minimumInteraction(int n, int k) {\n        \n    }\n}\n\n"
+        },
+        {
+            "id": 1359,
+            "code_problem_id": 467,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def minimumInteraction(self, n, k):\n        # Code"
+        },
+        {
+            "id": 1399,
+            "code_problem_id": 467,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    minimumInteraction(n, k) {\n        //Write your code here;\n    }\n}\n\n\n"
+        }
+    ]
+}

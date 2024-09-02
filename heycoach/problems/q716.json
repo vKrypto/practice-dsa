@@ -1,0 +1,64 @@
+{
+    "id": 716,
+    "description": "\nThere are n servers numbered from `0 to n - 1` connected by undirected server-to-server connections forming a network where `connections[i] = [ai, bi]` represents a connection between servers ai and bi. Any server can reach other servers directly or indirectly through the network.\n\nA critical connection is a connection that, if removed, will make some servers unable to reach some other server.\n\nReturn all critical connections in the network in any order.\n\n### Example 1\n\n### Input\n\n```CPP\nn = 4, connections = [[0,1],[1,2],[2,0],[1,3]]\n```\n\n### Output\n\n```CPP\n[[1,3]]\n```\n\n#### Explanation:\n\n[[3,1]] is also accepted.\n\n### Example 2\n\n### Input\n\n```CPP\n n = 2, connections = [[0,1]]\n```\n\n### Output\n\n```CPP\n[[0,1]]\n```\n\n### Constraints:\n\n- 2 <= n <= 105\n- n - 1 <= connections.length <= 10^5\n- 0 <= ai, bi <= n - 1\n- ai != bi\n- There are no repeated connections.\n",
+    "title": "Critical Connection",
+    "default_testcase": {
+        "id": 4843,
+        "input": "7 8\n6 1\n4 2\n2 5\n1 5\n0 1\n1 2\n2 0\n1 3",
+        "expected_output": "1 6\n2 4\n1 3\n",
+        "code_problem_id": 716,
+        "created_at": "2024-02-01T11:55:55.046Z",
+        "updated_at": "2024-02-01T11:55:55.046Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2288,
+            "code_problem_id": 716,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n  vector<vector<int>> criticalConnections(int n, vector<vector<int>>& g) {",
+            "skeleton_class_end": "            }\n        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2289,
+            "code_problem_id": 716,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<Integer>> criticalConnections(int n, List<List<Integer>> g) {",
+            "skeleton_class_end": "            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2290,
+            "code_problem_id": 716,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def criticalConnections(self, n, connections):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2291,
+            "code_problem_id": 716,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.time = 0;\n        this.ans = [];\n        this.disc = [];\n        this.low = [];\n        this.parent = [];\n    }\n\n    criticalConnections(n, connections) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

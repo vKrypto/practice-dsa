@@ -1,0 +1,52 @@
+{
+    "id": 748,
+    "description": "You are given a list of words and a root node of an already implemented Trie. You are given another set of words and your task is to remove these words from the implemented trie.\n\nInput Format:\n\nThe first line contains two space seperated integers denoting the number of words in the trie and the number of words to be removed respectively.\n\nThe second line contains 'n' number of words that are to be implemented in trie.\n\nThe third line contains 'm' number of words which are to be removed from trie.\n\nOutput format:\n\nReturn nothing just write a function to remove the word from the given trie.\n\nSample Input:\n\n4 2\n\nHarsh Subhash Chahal Aakash\n\nHarsh Aakash\n\nSample Output:\n\nRemoved Removed",
+    "title": "Remove word",
+    "default_testcase": {
+        "id": 5574,
+        "input": "4 2\nharsh riya saourabh aakash\nharsh riya",
+        "expected_output": "Removed\nRemoved\n",
+        "code_problem_id": 748,
+        "created_at": "2024-02-15T21:56:52.275Z",
+        "updated_at": "2024-02-15T21:56:52.275Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2387,
+            "code_problem_id": 748,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void removeword(string word, TrieNode* root){\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2388,
+            "code_problem_id": 748,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    void removeWord(String word, TrieNode root) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2389,
+            "code_problem_id": 748,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def remove_word(self, word, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

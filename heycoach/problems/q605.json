@@ -1,0 +1,64 @@
+{
+    "id": 605,
+    "description": "Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].\n\nReturn true if there is a 132 pattern in nums, otherwise, return false.\n\n **`Example 1:`**  \n**Input:** `nums = [1,2,3,4]  `\n\n**`Output:`** false\n\n**`Explanation:`** `There is no 132 pattern in the sequence.`\n\n**`Example 2:  `**  \n**`Input:`**` nums = [3,1,4,2]  `   \n**`Output:`**    \n`    true ` \n\n**` Explanation:`**   \n`There is a 132 pattern in the sequence: [1, 4, 2].  `   \n**`Constraints:`**  \n\n```\n n == nums.length   \n 1 <= n <= 2 * 10^5  \n-10^9 <= nums[i] <= 10^9  \n\n```",
+    "title": "132 Pattern",
+    "default_testcase": {
+        "id": 4138,
+        "input": "4\n3 1 4 2",
+        "expected_output": "true\n",
+        "code_problem_id": 605,
+        "created_at": "2024-01-25T05:16:56.045Z",
+        "updated_at": "2024-01-25T05:16:56.045Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1812,
+            "code_problem_id": 605,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool find132pattern(vector<int>& nums) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1813,
+            "code_problem_id": 605,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "import java.util.HashSet;\nimport java.util.Scanner;\nimport java.util.Set;\nimport java.io.*;\nimport java.util.*;\nclass Solution {\n    public boolean find132pattern(int[] nums) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1814,
+            "code_problem_id": 605,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static fp(temp) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1815,
+            "code_problem_id": 605,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find132pattern(self, nums):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

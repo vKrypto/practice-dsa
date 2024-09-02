@@ -1,0 +1,64 @@
+{
+    "id": 452,
+    "description": "You're a renowned mathematician on a quest to unlock the secrets of the Tribonacci sequence. This ancient sequence, unlike its Fibonacci cousin, involves three past terms instead of two. Your mission is to travel through time, unraveling the mysteries of each Tribonacci number.\n\nGiven an integer n representing a point in time, calculate the nth Tribonacci number. Remember, T0 = 0, T1 = 1, T2 = 1, and for n >= 0, Tn+3 = Tn + Tn+1 + Tn+2.\nConquer larger and larger challenges with n values ranging from 0 to 37. Show off your computational prowess and unveil the hidden patterns within the sequence!\n\n### Input: \nAn integer n representing a point in time (0 <= n <= 37).\n\n### Output: \nThe Tribonacci number Tn corresponding to the chosen point in time. Remember:\nT0 = 0\nT1 = 1\nT2 = 1\nTn+3 = Tn + Tn+1 + Tn+2 for n >= 0\n\n## Example 1:\n\nInput: n = 4\nOutput: 4\nExplanation:\nT_3 = 0 + 1 + 1 = 2\nT_4 = 1 + 1 + 2 = 4\n## Example 2:\n\nInput: n = 25\nOutput: 1389537\n\n### Constraints:\nn must be an integer between 0 and 37 (inclusive).\n#### The output Tn is guaranteed to fit within a 32-bit integer (maximum value: 2^31 - 1).\n",
+    "title": "Alien sequence",
+    "default_testcase": {
+        "id": 3077,
+        "input": "4",
+        "expected_output": "4\n",
+        "code_problem_id": 452,
+        "created_at": "2023-12-23T12:30:14.262Z",
+        "updated_at": "2023-12-23T12:30:14.262Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 1324,
+            "code_problem_id": 452,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    tribonacci(n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1333,
+            "code_problem_id": 452,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int tribonacci(int n) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1334,
+            "code_problem_id": 452,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def tribonacci(self, n):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1368,
+            "code_problem_id": 452,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int tribonacci(int n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

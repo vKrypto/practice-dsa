@@ -1,0 +1,57 @@
+{
+    "id": 859,
+    "description": "Peter has an upcoming Biology exam tomorrow, a subject he isn't too enthusiastic about. However, he found out d days ago that he'd need to take the exam. In response, Peter's strict parents wasted no time in setting up a study plan. They specified the minimum and maximum number of hours, minTimei and maxTimei, Peter should dedicate to Biology each day i. Furthermore, they warned Peter that they would review his progress the day before the exam. Today, Peter needs to present his parents with a study timetable, comprising d numbers, schedulei, indicating the hours he spent studying each day i. The total sum of study hours in the timetable should equal sumTime, and each schedulei must fall within the range specified by minTimei and maxTimei. Peter is now eager to know if he can meet his parents' expectations with the given sumTime.\n\n`Input`:\n\nThe first input line contains two integer numbers d,\u2009sumTime (1\u2009\u2264\u2009d\u2009\u2264\u200930,\u20090\u2009\u2264\u2009sumTime\u2009\u2264\u2009240) \u2014 the amount of days, during which Peter studied, and the total amount of hours, spent on preparation. Each of the following d lines contains two integer numbers minTimei,\u2009maxTimei (0\u2009\u2264\u2009minTimei\u2009\u2264\u2009maxTimei\u2009\u2264\u20098), separated by a space \u2014 minimum and maximum amount of hours that Peter could spent in the i-th day.\n\n\n`Output`:\n\nIn the first line print YES, and in the second line print d numbers (separated by a space), each of the numbers \u2014 amount of hours, spent by Peter on preparation in the corresponding day, if he followed his parents' instructions; or print NO in the unique line. If there are many solutions, print any of them.\n",
+    "title": " Peter's Biology Exam: Meeting Parental Study Expectations",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2831,
+            "code_problem_id": 859,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution {\npublic:\n    void prepareTimetable(int d, int st, vector<int>& l, vector<int>& h) {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2832,
+            "code_problem_id": 859,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void prepareTimetable(int d, int st, int[] l, int[] h) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2833,
+            "code_problem_id": 859,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def prepare_timetable(self, d, st, l, h):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2834,
+            "code_problem_id": 859,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    prepareTimetable(d, st, l, h) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

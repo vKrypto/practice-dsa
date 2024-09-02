@@ -1,0 +1,64 @@
+{
+    "id": 778,
+    "description": "\nYou are given an array of integers. Your task is to find the kth smallest and largest elements in this array.\n\n#### `Input Format:`\n\n- `The first line contains an integer n, representing the size of the array.`\n- `The second line contains n space-separated integers, representing the elements of the array.`\n- `The third line contains an integer k, representing the value of k.`\n\n#### `Output Format:`\n\n- `Print two lines:`\n  - `The first line should contain the kth smallest element of the array.`\n  - `The second line should contain the kth largest element of the array.`\n\n#### `Constraints:`\n\n- `1 <= n <= 10^5`\n- `-10^9 <= Elements of the array <= 10^9`\n- `1 <= k <= n`\n\n### `Example:`\n\n#### `Input:`\n\n```\n7\n1 2 17 7 25 3 100\n3\n```\n\n#### `Output:`\n\n```\n3\n17\n```\n\n#### `Explanation:`\n\n`For the given array [1, 2, 17, 7, 25, 3, 100], the 3rd smallest element is 3, and the 3rd largest element is 17.`",
+    "title": "Kth Smallest and Largest Element",
+    "default_testcase": {
+        "id": 6901,
+        "input": "7\n1 2 17 7 25 3 100\n3",
+        "expected_output": "3\n17\n",
+        "code_problem_id": 778,
+        "created_at": "2024-03-24T02:39:41.936Z",
+        "updated_at": "2024-03-24T02:39:41.936Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2535,
+            "code_problem_id": 778,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void findKthSmallestAndLargest() {\n      //Write your code here",
+            "skeleton_class_end": "            }\n        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2536,
+            "code_problem_id": 778,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void findKthSmallestAndLargest() {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2537,
+            "code_problem_id": 778,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_kth_smallest_and_largest():\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2538,
+            "code_problem_id": 778,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      static findKthSmallestAndLargest(arr, k) {\n        //Write your code here",
+            "skeleton_class_end": "            }\n        }\n    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

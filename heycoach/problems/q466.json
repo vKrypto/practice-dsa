@@ -1,0 +1,64 @@
+{
+    "id": 466,
+    "description": "You are given a tree of n nodes labeled from 0 to n - 1, and an array of n - 1 edges where edges[i] = [ai, bi] indicates that there is an undirected edge between the two nodes ai and bi in the tree. You can choose any node of the tree as the root. When you select a node x as the root, the result tree has height h. Among all possible rooted trees, those with minimum height (i.e., min(h)) are called minimum height trees (MHTs).\n\nReturn a list of all MHTs' root labels. You can return the answer in any order.\n\nThe height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.\n\n**Example 1**:</br>\n**Input**:\n```\nn = 4, edges = [[1,0],[1,2],[1,3]]\n```\n**Output**: \n```\n[1]\n```\n**Example 2:**</br>\n**Input**:\n```\nn = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]\n```\n**Output**:\n```\n [3,4]\n```\n**Constraints**:</br>\n1 <= n <= 2 * 10^4</br>\nedges.length == n - 1</br>\n0 <= ai, bi < n</br>\nai != bi</br>\nAll the pairs (ai, bi) are distinct.</br>\nThe given input is guaranteed to be a tree, and there will be no repeated edges.",
+    "title": " Minimum Height Trees",
+    "default_testcase": {
+        "id": 3255,
+        "input": "4 3\n1 0\n1 2\n1 3",
+        "expected_output": "1 ",
+        "code_problem_id": 466,
+        "created_at": "2023-12-29T13:34:20.565Z",
+        "updated_at": "2023-12-29T13:34:20.565Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1308,
+            "code_problem_id": 466,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "const Solution = class {\n    findMinHeightTrees(n, edges) {\n       \n    }\n};\n\n"
+        },
+        {
+            "id": 1309,
+            "code_problem_id": 466,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution:\n    def findMinHeightTrees(self, n, edges):\n      "
+        },
+        {
+            "id": 1310,
+            "code_problem_id": 466,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public List<Integer> findMinHeightTrees(int n, List<List<Integer>> edges) {\n    }\n}\n"
+        },
+        {
+            "id": 1311,
+            "code_problem_id": 466,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {\n    }\n};\n"
+        }
+    ]
+}

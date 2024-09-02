@@ -1,0 +1,64 @@
+{
+    "id": 912,
+    "description": "You're given an array of integers nums. Your task is to find the length of the longest continuous range of consecutive integers in the array.\n\nWrite an algorithm that operates in linear time complexity O(n).\n\n**Example:**\n\n**Input:**\n```\nnums = [10,4,5,20,1,3,2]\n```\n\n**Output:**\n```\n5\n```\n\n**Explanation:**</br>\nThe longest consecutive sequence of elements is [1, 2, 3, 4,5], which has a length of 5.\n\n**Constraints:**\n\nThe length of nums is at most 10^5.</br>\nEach element in nums is an integer ranging from -10^9 to 10^9.",
+    "title": "Longest Continuous Range",
+    "default_testcase": {
+        "id": 8086,
+        "input": "5\n40 5 2 3 4",
+        "expected_output": "4\n",
+        "code_problem_id": 912,
+        "created_at": "2024-05-19T08:44:42.657Z",
+        "updated_at": "2024-05-19T08:44:42.657Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3025,
+            "code_problem_id": 912,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n class Solution{\n   public:\n   int longestConsecutiveRange(vector<int>& nums) {\n        \n    ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3027,
+            "code_problem_id": 912,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int longestConsecutiveRange(int[] nums) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3028,
+            "code_problem_id": 912,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n     def longestConsecutiveRange(self, nums):\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3029,
+            "code_problem_id": 912,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    longestConsecutiveRange(nums) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

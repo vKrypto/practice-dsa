@@ -1,0 +1,64 @@
+{
+    "id": 327,
+    "description": "Given a rod of N units, The rod can be cut into different sizes and each size has a cost associated with it. Determine the maximum cost obtained by cutting the rod and selling its pieces. The cost of each size is represented by the an array of size N where A[i] , (0<=i<n ) denotes the size of the i+1 size\n\n**Constraints :**\n\n1<=N<=100\n\n1<=A[i]<=100\n\n**Example:**\n\n**Input :**   \n 6\n\n3 5 6 7 10 12\n\n**Output :**  \n18",
+    "title": "Rod cutting problem",
+    "default_testcase": {
+        "id": 2115,
+        "input": "5 \n2 5 7 8 10",
+        "expected_output": "12",
+        "code_problem_id": 327,
+        "created_at": "2023-09-19T11:16:49.606Z",
+        "updated_at": "2023-09-19T11:16:49.606Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 779,
+            "code_problem_id": 327,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class RodCutting {\n    public static int cutRod(List<Integer> price, int N) {\n      //Write your code here;\n    }\n}\n"
+        },
+        {
+            "id": 780,
+            "code_problem_id": 327,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "def cut_rod(price, N):\n    #Write your code here;"
+        },
+        {
+            "id": 781,
+            "code_problem_id": 327,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "function cutRod(price, N) {\n    //Write your code here;\n  }\n\n\n"
+        },
+        {
+            "id": 782,
+            "code_problem_id": 327,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\npublic:\nint cutRod(vector<int>& price,int N) {\n  //Write your code here;\n}\n};"
+        }
+    ]
+}

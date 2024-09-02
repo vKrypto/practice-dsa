@@ -1,0 +1,64 @@
+{
+    "id": 358,
+    "description": "Design a program that determines whether a directed graph is a Directed Acyclic Graph (DAG). A DAG is a directed graph with no directed cycles, meaning there is no way to start at any node and follow a consistently directed path that eventually loops back to the same node.\n\n**Input Format:**\n- The first line contains an integer `N`, representing the number of nodes in the graph.\n- The second line contains an integer `E`, indicating the number of directed edges.\n- The next `E` lines each contain two space-separated integers `u` and `v`, denoting a directed edge from node `u` to node `v`.\n\n**Output Format:**\n- Print `\"Yes, it's a DAG.\"` if the graph is a Directed Acyclic Graph.\n- Otherwise, print `\"No, it's not a DAG.\"`.\n\n**Constraints:**\n- `1 <= N <= 10^5` (number of nodes)\n- `0 <= E <= 10^6` (number of edges)\n- `0 <= u, v < N` (node indices)\n\n**Sample Input:**\n```\n4 4\n0 1\n1 2\n2 3\n3 1\n```\n\n**Sample Output:**\n```\nNo, it's not a DAG.\n```\n\n**Explanation:**</br>\nThe sample input represents a graph with `4` nodes and `4` edges. There's a cycle formed by the edges `(0,1) -> (1,2) -> (2,3) -> (3,1)`, hence it's not a DAG.",
+    "title": "DAG",
+    "default_testcase": {
+        "id": 2222,
+        "input": "5 5\n0 1\n1 2\n2 0\n3 4\n4 3",
+        "expected_output": "No, it's not a DAG.\n",
+        "code_problem_id": 358,
+        "created_at": "2023-09-25T22:34:05.416Z",
+        "updated_at": "2023-09-25T22:34:05.416Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 825,
+            "code_problem_id": 358,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n    static bool isDAG(int N, vector<vector<int>>& edges) {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1101,
+            "code_problem_id": 358,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n   public static boolean isDAG(int N, List<int[]> edges) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1102,
+            "code_problem_id": 358,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def isDAG(N: int, edges: List[List[int]]) -> bool:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1103,
+            "code_problem_id": 358,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n  static isDAG(N, edges) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

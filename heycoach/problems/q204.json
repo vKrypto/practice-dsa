@@ -1,0 +1,8 @@
+{
+    "id": 204,
+    "description": "An special number is a positive integer whose prime factors are limited to 2, 3, and 5.\n\nGiven an integer n, return the nth special number.\n### Example 1 \n\n### Input\n```CPP\n n = 10\n``` \n### Output \n```CPP \n12\n``` \n### Explanation:\n [1, 2, 3, 4, 5, 6, 8, 9, 10, 12] is the sequence of the first 10 ugly numbers.\n\n\n### Example 2 \n\n### Input\n```CPP\n1\n``` \n### Output \n```CPP \n1\n``` \n### Explanation:\n 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.\n\n\n### Constraints:\n\n* 1 <= n <= 1690\n",
+    "title": "Special Number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

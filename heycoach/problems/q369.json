@@ -1,0 +1,64 @@
+{
+    "id": 369,
+    "description": "Given a Binary Tree with all unique values and two nodes value, n1 and n2. The task is to find the lowest common ancestor of the given two nodes. We may assume that either both n1 and n2 are present in the tree or none of them are present.\nLCA: It is the first common ancestor of both the nodes n1 and n2 from bottom of tree.\n\nSample Input:\n\n7\n\n5 3 8 2 4 6 7\n\n7 3\n\nSample Output:\n5\n\nNote that the inputs are taken in level wise order;\n\nConstraints:\n\nNumber of nodes are in range [2, 10^5]\nValue of each node is in range  [1, 10^9]\n",
+    "title": "Lowest Common Ancestor Of the Binary Tree",
+    "default_testcase": {
+        "id": 2545,
+        "input": "2\n1 2\n1 2",
+        "expected_output": "1",
+        "code_problem_id": 369,
+        "created_at": "2023-11-21T18:23:20.485Z",
+        "updated_at": "2023-11-21T18:23:20.485Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 835,
+            "code_problem_id": 369,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\n  Definition of Node class \nstruct TreeNode {\n    int val;\n    TreeNode *left, *right;\n    TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n};\n\n*/\n\nTreeNode * lca(TreeNode * root, int v1,int v2)\n{\n   //Write your code here;\n}"
+        },
+        {
+            "id": 1003,
+            "code_problem_id": 369,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\"\"\"\nDefinition of class node\nclass Node:\n    def __init__(self, info): \n        self.info = info  \n        self.left = None  \n        self.right = None \n        self.level = None \n\n    def __str__(self):\n        return str(self.info) \n\"\"\"\n\ndef lca(root, v1, v2):\n  #Write your code here;"
+        },
+        {
+            "id": 1004,
+            "code_problem_id": 369,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\nDefinition of Node class\nclass Node {\n    public int data;\n    public Node left, right;\n\n    public Node(int d) {\n        data = d;\n        left = right = null;\n    }\n}*/\n\nclass Solution{\n  public Node lca(Node root, int v1, int v2) {\n          //Write your code here;\n      }\n}"
+        },
+        {
+            "id": 1012,
+            "code_problem_id": 369,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\nDefinition of a tree node is as follows:\nclass Node {\n    constructor(d) {\n        this.data = d;\n        this.left = null;\n        this.right = null;\n    }\n}*/\n\nclass Solution {\n    lca(root, v1, v2) {\n        //Write your code here;\n    }\n}"
+        }
+    ]
+}

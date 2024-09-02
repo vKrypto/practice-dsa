@@ -1,0 +1,45 @@
+{
+    "id": 202,
+    "description": "Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.\n\nThe test cases are generated so that the answer will fit in a `32-bit` integer.\n\nA `subarray` is a contiguous subsequence of the array.\n\n### Example 1\n\n### Input\n\n```CPP\nnums = [2,3,-2,4]\n```\n\n### Output\n\n```CPP\n6\n```\n\n### Explanation:\n\n[2,3] has the largest product 6.\n\n### Example 2\n\n### Input\n\n```CPP\nnums = [-2,0,-1]\n```\n\n### Output\n\n```CPP\n0\n```\n\n### Explanation:\n\nThe result cannot be 2, because [-2,-1] is not a subarray.\n\n### Constraints:\n\n- 1 <= nums.length <= 2 \\* 10^4\n- -10 <= nums[i] <= 10\n- The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\n",
+    "title": "Max Product",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 288,
+            "code_problem_id": 202,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 296,
+            "code_problem_id": 202,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 297,
+            "code_problem_id": 202,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

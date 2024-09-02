@@ -1,0 +1,64 @@
+{
+    "id": 968,
+    "description": "A magical string is a string where at most one letter appears an odd number of times.\n\nFor example, \"ccjjc\" and \"abab\" are magical, but \"ab\" is not.\nGiven a string text that consists of the first ten lowercase English letters ('a' through 'j'), return the number of magical non-empty substrings in text. If the same substring appears multiple times in text, then count each occurrence separately.\n\nA substring is a contiguous sequence of characters in a string.\n\nExample:\n\nInput: text = \"aba\"\n\nOutput: 4\n\nExplanation: The four magical substrings are underlined below:\n\n\"aba\" -> \"a\"\n\"aba\" -> \"b\"\n\"aba\" -> \"a\"\n\"aba\" -> \"aba\"\n\nConstraints:\n\n1\u2264text.length\u226410^5\n \ntext consists of lowercase English letters from 'a' to 'j'.",
+    "title": "Count of Magical Substrings",
+    "default_testcase": {
+        "id": 8461,
+        "input": "a",
+        "expected_output": "1\n",
+        "code_problem_id": 968,
+        "created_at": "2024-05-30T07:38:10.256Z",
+        "updated_at": "2024-05-30T07:38:10.256Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3228,
+            "code_problem_id": 968,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    typedef long long ll;\n    long long countMagicalSubstrings(string text) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3229,
+            "code_problem_id": 968,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long countMagicalSubstrings(String text) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3230,
+            "code_problem_id": 968,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def countMagicalSubstrings(self, text: str) -> int:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3231,
+            "code_problem_id": 968,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countMagicalSubstrings(text) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

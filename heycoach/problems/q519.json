@@ -1,0 +1,64 @@
+{
+    "id": 519,
+    "description": "You are given a 0-indexed array nums of length n, consisting of non-negative integers.\n For each index i from 0 to n - 1, you must determine the size of the minimum-sized non-empty subarray of nums starting at i (**inclusive**) that has the maximum possible bitwise OR.\nIn other words, let Bij be the bitwise OR of the subarray **nums[i...j]**.  \nYou need to find the smallest subarray starting at i, such that bitwise OR of this subarray is equal to max(Bik) where i <= k <= n - 1.  \nThe bitwise OR of an array is the bitwise OR of all the numbers in it.\nReturn an integer array answer of size n where answer[i] is the length of the minimum sized subarray starting at i with maximum bitwise OR.\nA subarray is a contiguous non-empty sequence of elements within an array.\n\n```\nSample Input:  \nnums = [1,0,2,1,3]  \n\nSample Output: \n[3,3,2,2,1]  \n\nSample input:                                                 \nnums = [1,2]       \n\nSample Output:     \n[2,1]   \n\nConstraints:\nn == nums.length  \n1 <= n <= 10^5    \n0 <= nums[i] <= 10^9\n```",
+    "title": "Maximum possible Bitwise OR",
+    "default_testcase": {
+        "id": 3724,
+        "input": "5\n1 0 2 1 3",
+        "expected_output": "3 3 2 2 1 \n",
+        "code_problem_id": 519,
+        "created_at": "2024-01-11T13:09:53.158Z",
+        "updated_at": "2024-01-11T13:09:53.158Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1682,
+            "code_problem_id": 519,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int[] smallestSubarrays(int[] nums) {\n      //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1683,
+            "code_problem_id": 519,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n    public:\n    vector<int> smallestSubarrays(std::vector<int>& nums) {\n      //Write your code here;\n    }\n};"
+        },
+        {
+            "id": 1684,
+            "code_problem_id": 519,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def smallestSubarrays(self, nums):"
+        },
+        {
+            "id": 1685,
+            "code_problem_id": 519,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    smallestSubarrays(nums) {\n      //Write your code here;\n    }\n}"
+        }
+    ]
+}

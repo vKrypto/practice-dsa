@@ -1,0 +1,64 @@
+{
+    "id": 502,
+    "description": "You are given an array a of length n, and you can perform a specific operation as follows:\n\nChoose two indices i and j in the array.</br>\nChoose a binary digit position b.</br>\nSwap the b-th binary digit in the binary representation of a[i] and a[j].</br>\nYour goal is to find the maximum possible difference between the maximum and minimum values in the array a after performing these operations.</br>\n\n**Input**:</br>\nn: an integer, the length of array a.</br>\nqueries: a list of tuples, each containing:</br>\nan integer op, where op is either 0 or 1.</br>\nan integer val, the element to be added (if op is 0) or the XOR value (if op is 1).</br>\n\n**Output**:</br>\na list of integers, representing the maximum possible difference between the maximum and minimum values in the array a after performing the specified operations.\n\n**Examples**:</br>\n**Input**:\n```\nN = 5\nQ[] = {{0, 6}, {0, 3}, {0, 2}, {1, 4}, {1, 5}}\n```\n**Output**:\n```\n9\n```\n**Explanation**:</br>\n{0, 6}: Add 6 to all elements in a: {6, 6, 6, 6, 6}</br>\n{0, 3}: Add 3 to all elements in a: {9, 9, 9, 9, 9}</br>\n{0, 2}: Add 2 to all elements in a: {11, 11, 11, 11, 11}</br>\n{1, 4}: XOR each element in a by 4: {15, 15, 15, 15, 15}</br>\n{1, 5}: XOR each element in a by 5: {10, 10, 10, 10, 10}</br>\n\n**Find the maximum and minimum values:**</br>\nMaximum: 15, Minimum: 6</br>\nCalculate difference: 15 -6 = 9\n\n**Input**:</br>\n```\nN = 3\nQ[] = {{0, 2}, {1, 3}, {0, 5}} \n```\n**Output** :</br>\n```\n5\n```\n**Explanation**:</br>\n{0, 2}: Add 2 to all elements in a: {2, 2, 2}</br>\n{1, 3}: Add 3 to all elements in a: {1, 1, 1}</br>\n{0, 5}: Add 5 to all elements in a: {6, 6, 6}</br>\n\n**Find the maximum and minimum values:**</br>\nMaximum: 6, Minimum: 1</br>\nCalculate difference: 6-1= 5",
+    "title": "Maximum Difference After Operations",
+    "default_testcase": {
+        "id": 3346,
+        "input": "5\n0 6\n0 3\n0 2\n1 4\n1 5",
+        "expected_output": "9\n",
+        "code_problem_id": 502,
+        "created_at": "2024-01-03T14:40:54.842Z",
+        "updated_at": "2024-01-03T14:40:54.842Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1477,
+            "code_problem_id": 502,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n  // Function to calculate the maximum difference after operations\nint max_difference_after_operations(int n, vector<pair<int, int>>& queries) {\n   \n}\n};\n\n"
+        },
+        {
+            "id": 1478,
+            "code_problem_id": 502,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Operations:\n    @staticmethod\n    def max_difference_after_operations(n, queries):\n       "
+        },
+        {
+            "id": 1479,
+            "code_problem_id": 502,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Operations {\n    static maxDifferenceAfterOperations(n, queries) {\n       \n    }\n}\n\n"
+        },
+        {
+            "id": 1480,
+            "code_problem_id": 502,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solutions {\n    static int maxDifferenceAfterOperations(int n, int[][] queries) {\n        \n    }\n}\n"
+        }
+    ]
+}

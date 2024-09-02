@@ -1,0 +1,33 @@
+{
+    "id": 589,
+    "description": "Given an array Arr[] of N integers. Find the contiguous sub-array(containing at least one number) that has the maximum sum and return its sum.\n\n\n**`Example:`**\n\n**`Input:`**  \n`N = 5 `  \n`Arr[] = {1,2,3,-2,5}  `  \n**`Output: `**  \n`9`  \n**`Explanation:`**  \n`Max subarray sum is 9 of elements (1, 2, 3, -2, 5) which is a contiguous subarray.`\n\n**Constraints:**  \n- `1 \u2264 N \u2264 10^6`  \n- `-10^7 \u2264 A[i] \u2264 10^7`",
+    "title": "Kadane's Algo",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1768,
+            "code_problem_id": 589,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n    public:\n    // arr: input array\n    // n: size of array\n    //Function to find the sum of contiguous subarray with maximum sum.\n    long long maxSubarraySum(int arr[], int n){\n\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1769,
+            "code_problem_id": 589,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "#User function Template for python3\n\n\nclass Solution:\n    #Function to find the sum of contiguous subarray with maximum sum.\n    def maxSubArraySum(self,a,size): \n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

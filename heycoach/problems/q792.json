@@ -1,0 +1,64 @@
+{
+    "id": 792,
+    "description": "Implement a function or algorithm that calculates the intersection point of two line segments in a 2D plane. This problem is often encountered in competitive programming and relates to data structures and algorithms (DSA).\n\n#### Input Format:\n`The input should consist of coordinates for two line segments in the 2D plane. Each line segment is defined by its endpoints.`\n\n#### `Output Format:`\n```\nThe output should be the coordinates of the intersection point, if the line segments intersect. If they do not intersect or there are other edge cases (e.g., parallel segments, coincident segments), appropriate messages or values should be returned.\n```\n#### `Sample Input and Output:`\n#### `Example 1:`\n#### `Input:`</br>\n`Line segment 1 = (0, 0) to (5, 5), Line segment 2 = (2, 0) to (0, 2)`\n#### Output:</br>\n`Intersection point = (1, 1)`\n\n#### Example 2:\n#### `Input:` </br>\n`Line segment 1 = (0, 0) to (5, 5), Line segment 2 = (0, 1) to (1, 0)`\n#### `Output:</br>\n`Line segments do not intersect\n\n#### `Constraints:`\n- `The coordinates of line segments should be within reasonable ranges to avoid numerical precision issues.`\n- `Handle cases where the line segments are parallel, coincident, or do not intersect appropriately.`\n",
+    "title": "Line Segement Interersection",
+    "default_testcase": {
+        "id": 7163,
+        "input": "0 0\n5 5\n2 0\n0 2",
+        "expected_output": "(1, 1)\n",
+        "code_problem_id": 792,
+        "created_at": "2024-04-04T12:01:54.018Z",
+        "updated_at": "2024-04-04T12:01:54.018Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 2596,
+            "code_problem_id": 792,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    pair<float, float> lineSegmentIntersection(pair<int, int> p1, pair<int, int> p2, pair<int, int> p3, pair<int, int> p4) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2605,
+            "code_problem_id": 792,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public double [] lineSegmentIntersection(int[] p1, int[] p2, int[] p3, int[] p4) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2616,
+            "code_problem_id": 792,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def lineSegmentIntersection(self, p1, p2, p3, p4):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2617,
+            "code_problem_id": 792,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    lineSegmentIntersection(p1, p2, p3, p4) {\n      //Write your code here ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 127,
+    "description": "It's Hritik Birthday and he wants to distribute candies to **n** children. There are **n** children standing in a line. Each child is assigned a rating value given in the integer array **ratings**.\n\nYou are giving candies to these children subjected to the following requirements:\n\n- Each child must have at least one candy.\n- Children with a higher rating get more candies than their neighbors.\n- If two children have same rating, they can have different number of candies.\n\nPrint the *minimum number of candies* Hritik need to have to distribute the candies to the children based on the rules provided.\n\n#### Input Format: \n- first line contains single integer n (the size of the array)\n- second line contains n space separated integers (elements of the array)\n\n#### Output Format: \n- Print the single integer (minimum number of candies required)\n\n#### Constraints:\n- n == ratings.length\n- 1 <= n <= 2 * 104\n- 0 <= ratings[i] <= 20000\n\n#### Example: \n**Input**:  \n 3  \n1 2 2  \n**Output**:     \n4",
+    "title": "Minimum Candy",
+    "default_testcase": {
+        "id": 915,
+        "input": "3\n1 0 2",
+        "expected_output": "5",
+        "code_problem_id": 127,
+        "created_at": "2022-10-11T10:28:29.620Z",
+        "updated_at": "2022-10-11T10:28:29.620Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 169,
+            "code_problem_id": 127,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int candy(vector<int> &ratings)\n  {\n    //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 178,
+            "code_problem_id": 127,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int candy(int[] ratings) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 186,
+            "code_problem_id": 127,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def candy(self, ratings):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 632,
+            "code_problem_id": 127,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    candy(ratings) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

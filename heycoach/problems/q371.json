@@ -1,0 +1,21 @@
+{
+    "id": 371,
+    "description": "In a mystical forest, Sammy, an adventurous squirrel, heard about the Binary Tree of Whimsy, which held secrets in a zigzag pattern. Guided by a wise owl, Sammy traversed the tree, recording values as he alternated between left and right, unveiling its hidden treasures. Sammy's journey added an enchanting tale to the forest's lore.\n\nYour Job is to output the nodes values the way Sammyy traversed the tree guided by the owl.\nInput: It is given in the form of the level order traversal of the tree.\nThe number of nodes in the tree is in the range [0, 2000].\n-100 <= Node.val <= 100",
+    "title": "Sammy and the Pattern",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 837,
+            "code_problem_id": 371,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// struct Node{\n//         int data;\n//         Node* left;\n//         Node* right;\n//         Node(int x){\n//                 data=x;\n//                 left=right=NULL;\n//         }\n// };\nclass Solution{\n    public:\n    vector <int> zigZagTraversal(Node* root)\n    {\n        \n    }\n\n};\n"
+        }
+    ]
+}

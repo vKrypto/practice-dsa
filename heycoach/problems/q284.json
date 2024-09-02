@@ -1,0 +1,64 @@
+{
+    "id": 284,
+    "description": "There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.\nGiven the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.\n\n`The test cases are generated so that the answer will be less than or equal to 2 * 10^9`\n\n\n\n**Example**\n\n```\nInput: m = 3, n = 2\n\nOutput: 3\n\nExplanation\n\nFrom the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -> Down -> Down\n2. Down -> Down -> Right\n3. Down -> Right -> Down\n```\n\n\n**Constraints**\n\n`1 <= m, n <= 100`",
+    "title": "Grid Puzzle-I",
+    "default_testcase": {
+        "id": 1907,
+        "input": "3 7",
+        "expected_output": "28\n",
+        "code_problem_id": 284,
+        "created_at": "2023-09-14T20:08:15.565Z",
+        "updated_at": "2023-09-14T20:08:15.565Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 704,
+            "code_problem_id": 284,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n  int gridpuzzle_I(int m, int n) {\n\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 705,
+            "code_problem_id": 284,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class GridPuzzle {\n  \n    public static int gridpuzzle_I(int m, int n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 706,
+            "code_problem_id": 284,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n     gridpuzzle_I(m, n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 707,
+            "code_problem_id": 284,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def gridpuzzle_I(self,m, n):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

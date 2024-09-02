@@ -1,0 +1,64 @@
+{
+    "id": 832,
+    "description": "**Description**:\n\nYou are tasked with writing a program to generate all possible scrambled versions of a given word. A scrambled version of a word is any permutation of its letters. Your program should remove duplicate permutations and return the unique permutations in lexicographical order.\n\n**Input**:\n\nThe input consists of a single line containing a string word consisting of lowercase English letters. The length of word will not exceed 7 characters.\n\n**Output**:\n\nYour program should print all unique scrambled versions of the input word in lexicographical order. Each permutation should be separated by a comma and a space.\n\n**Example 1**:\n\n**Input**:\n```\ns = \"cat\"\n```\n\n**Output**:\n```\nAll possible scrambled words:\nact, atc, cat, cta, tac, tca\n```\n\n**Example 2**:\n\n**Input**:\n```\ns = \"aab\"\n```\n\n**Output**:\n```\naab, aba, baa\n```\n\n\n**Constraints**:</br>\nThe input string s has a length between 1 and 7.</br>\nThe string s consists of lowercase English letters.",
+    "title": "Scramble String Generator",
+    "default_testcase": {
+        "id": 7443,
+        "input": "great",
+        "expected_output": "aegrt, aegtr, aergt, aertg, aetgr, aetrg, agert, agetr, agret, agrte, agter, agtre, aregt, aretg, arget, argte, arteg, artge, ategr, aterg, atger, atgre, atreg, atrge, eagrt, eagtr, eargt, eartg, eatgr, eatrg, egart, egatr, egrat, egrta, egtar, egtra, eragt, eratg, ergat, ergta, ertag, ertga, etagr, etarg, etgar, etgra, etrag, etrga, gaert, gaetr, garet, garte, gater, gatre, geart, geatr, gerat, gerta, getar, getra, graet, grate, great, greta, grtae, grtea, gtaer, gtare, gtear, gtera, gtrae, gtrea, raegt, raetg, raget, ragte, rateg, ratge, reagt, reatg, regat, regta, retag, retga, rgaet, rgate, rgeat, rgeta, rgtae, rgtea, rtaeg, rtage, rteag, rtega, rtgae, rtgea, taegr, taerg, tager, tagre, tareg, targe, teagr, tearg, tegar, tegra, terag, terga, tgaer, tgare, tgear, tgera, tgrae, tgrea, traeg, trage, treag, trega, trgae, trgea",
+        "code_problem_id": 832,
+        "created_at": "2024-04-27T04:54:22.756Z",
+        "updated_at": "2024-04-27T04:54:22.756Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2726,
+            "code_problem_id": 832,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n  public:\n\nvector<string> generateScrambledWords(const string& word) {\n    \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2727,
+            "code_problem_id": 832,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class ScrambledWordGenerator {\n    public static List<String> generateScrambledWords(String word) {\n        \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2728,
+            "code_problem_id": 832,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def generate_scrambled_words(word):\n    ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2818,
+            "code_problem_id": 832,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    generateScrambledWords(word) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "id": 205,
+    "description": "There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you `must` take course bi first if you want to take course ai.\n\nFor example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.\nReturn true if you can finish all courses. Otherwise, return false.\n\n### Example 1\n\n### Input\n\n```CPP\nnumCourses = 2, prerequisites = [[1,0]]\n```\n\n### Output\n\n```CPP\ntrue\n```\n\n#### Explanation -\n\nThere are a total of 2 courses to take.\nTo take course 1 you should have finished course 0. So it is possible.\n\n### Example 2\n\n### Input\n\n```CPP\n numCourses = 2, prerequisites = [[1,0],[0,1]]\n```\n\n### Output\n\n```CPP\nfalse\n```\n\n#### Explanation -\n\nThere are a total of 2 courses to take.\nTo take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.\n\n### Constraints:\n\n- 1 <= numCourses <= 2000\n- 0 <= prerequisites.length <= 5000\n- prerequisites[i].length == 2\n- 0 <= ai, bi < numCourses\n- All the pairs prerequisites[i] are unique.\n",
+    "title": "Courses",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

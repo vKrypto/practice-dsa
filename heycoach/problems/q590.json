@@ -1,0 +1,64 @@
+{
+    "id": 590,
+    "description": "You are given three strings named as A,B and C. Here, the length of the strings A and B is equal . All the strings A and B is equal. All strings contains lowercase English letters. The string A and B contain the following properties:\nThe characters located at the same indexes in the string A and B are equivalent to each other. \nIf character a is equivalent to character b , then the character b is also equivalent to the character a.\nIf character a is equivalent to character b and character b is equivalent to character a, then character a is also equivalent to character c.\nEvery character is equivalent to itself.\nFor example:\n\nYou are given two strings:  \nA - abc  \nB - xcd\n \nHere, the character a is equivalent to the character x, character b is equivalent to the character c, and character c is equivalent to the character d. According to the third property, the character b is also equivalent to the character d.\nYou can replace any character of string C with its any equivalent character. By replacing any character of the string C  with its equivalent characters, you can construct multiple new strings. Your task is to print the lexicographically smallest string out of all possible new strings that you can construct.\n\nNote: If the first character of s(s1) is smaller than the first character of t(t1) , then the lexicographical order is an order relation where string s is smaller than string t. If they are equivalent, the second character is checked and so on.\n\n### `Input Format`\n```\nFirst line: String A \nSecond line: String B\nThird line: String C\n```\n### `Output Format`\n```\nPrint the lexicographically smallest string\n```\n### `Sample Input`\n```\nabc\nxyz\nyzp\n```\n### `Sample Output`\n```\nbcp\n```\n### `Explanation`\n```\nIn string C, you can replace y with b and z with c to find the lexicographically smallest string.\n\nFrom string A and B,\n\na is equivalent to x\n\nb is equivalent to y\n\nc is equivalent to z\n\n```",
+    "title": "Lexicographically minimal string",
+    "default_testcase": {
+        "id": 3889,
+        "input": "abc\nxyz\nyzp",
+        "expected_output": "bcp\n",
+        "code_problem_id": 590,
+        "created_at": "2024-01-22T06:00:58.052Z",
+        "updated_at": "2024-01-22T06:00:58.052Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1771,
+            "code_problem_id": 590,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n   static int[] parent;\n    static int[] size;\n\n    public static int find(int i) {\n        if (parent[i] != i) {\n            return find(parent[i]);\n        }\n\n        return i;\n    }\n\n    public static void union(int a, int b) {\n        int x = find(a);\n        int y = find(b);\n\n        if (x != y) {\n            if (size[x] > size[y]) {\n                size[x] += size[y];\n                parent[y] = x;\n            } else {\n                size[y] += size[x];\n                parent[x] = y;\n            }\n        }\n    }\n    public static String solution(String a, String c, String b) {\n      ",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1776,
+            "code_problem_id": 590,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "namespace Solution {\n    static vector<int> parent;\n    static vector<int> size;\n\n    int find(int i) {\n        if (parent[i] != i) {\n            return find(parent[i]);\n        }\n        return i;\n    }\n\n    void unionSets(int a, int b) {\n        int x = find(a);\n        int y = find(b);\n\n        if (x != y) {\n            if (size[x] > size[y]) {\n                size[x] += size[y];\n                parent[y] = x;\n            } else {\n                size[y] += size[x];\n                parent[x] = y;\n            }\n        }\n    }\n\n    string solution(const string &a, const string &c, const string &b) {\n       ",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1880,
+            "code_problem_id": 590,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1895,
+            "code_problem_id": 590,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static parent = [];\n    static size = [];\n\n    static find(i) {\n        if (parent[i] !== i) {\n            return this.find(parent[i]);\n        }\n        return i;\n    }\n\n    static union(a, b) {\n        const x = this.find(a);\n        const y = this.find(b);\n\n        if (x !== y) {\n            if (this.size[x] > this.size[y]) {\n                this.size[x] += this.size[y];\n                this.parent[y] = x;\n            } else {\n                this.size[y] += this.size[x];\n                this.parent[x] = y;\n            }\n        }\n    }\n\n    static solution(a, c, b) {\n        \n\n\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

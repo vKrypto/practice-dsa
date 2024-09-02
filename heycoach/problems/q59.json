@@ -1,0 +1,64 @@
+{
+    "id": 59,
+    "description": "You are given an array of n numbers containing n+1 integers where the array forms the permutation of n numbers. But one number is coming twice due to which permutation gets wrong. You have to find the number coming twice.\n\nPermutation of n means the array consists of all the elements in the range [1, n] once.\n\n#### Example\n##### Input\n\n```\n8\n1 2 2 3 4 5 6 7\n```\n\n#### Output\n`2`\n\n##### Input Format:\n\n```\nfirst line contains n the size of the array\nsecond line contains n elements of the array.\n```\n\n##### Output Format:\n`Return the single appeared number`\n\n#### Constraints :\n\n```\n1<=n<=1000  \n1<=arr[i]<=10000  \n0<=i<=n-1\n```\n\n",
+    "title": "Find the duplicate number",
+    "default_testcase": {
+        "id": 403,
+        "input": "5\n1 2 2 3 4 5",
+        "expected_output": "2",
+        "code_problem_id": 59,
+        "created_at": "2022-09-28T18:17:27.711Z",
+        "updated_at": "2022-09-28T18:17:27.711Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 62,
+            "code_problem_id": 59,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n      int findDuplicate(vector<int>& arr) {",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 67,
+            "code_problem_id": 59,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public int findDuplicate(int[] nums) {\n    //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 72,
+            "code_problem_id": 59,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findDuplicate(self, nums: List[int]) -> int:",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 844,
+            "code_problem_id": 59,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  findDuplicate (nums) {\n    //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

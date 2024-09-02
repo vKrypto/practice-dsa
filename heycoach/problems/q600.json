@@ -1,0 +1,40 @@
+{
+    "id": 600,
+    "description": "You are the captain of a ship and unfortunately, your crew has been sailing the sea for days now. You are running out of resources but luckily you see a land and decide to land there. When you meet the people of the land, you realize they speak very differently and you need a way to communicate with them.                               \n\nYou read the things on the island and realize that the people there also use the same English alphabet but in a different order. You ask for a book to understand the order but can only find a dictionary. There are 'n' words in the dictionary and 'k' number of alphabets.\n\nYou are given an array containing the words from those pages of the dictionary (just like a standard dictionary) and your task is to find the order of characters (like in English it's a,b,c,...z.)\n\n**`Sample Input:`**\n\n`n=2 , k=3`\n\n`baa, aac`\n\n**`Sample Output:`**\n\n`b,a,c`\n\n**` Explanation:`** `Since the first word that appears is 'baa' meaning b is the first character followed by a and then the second word indicates that the third letter is 'c'.`\n\n**`Constraints:`**\n\n- `1<=k<=26 `  \n- `1<=n<=100`\n- `1 \u2264 Length of words \u2264 50`\n",
+    "title": "Language of the distant land",
+    "default_testcase": {
+        "id": 3991,
+        "input": "3 3\ncaa aaa aab",
+        "expected_output": "1\n",
+        "code_problem_id": 600,
+        "created_at": "2024-01-22T13:41:23.936Z",
+        "updated_at": "2024-01-22T13:41:23.936Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1796,
+            "code_problem_id": 600,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    string solve(string dic[], int N, int K) {\n        ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1873,
+            "code_problem_id": 600,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    static class Node {\n        char ch;\n        int indegree;\n        Node(char ch) {\n            this.ch = ch;\n            this.indegree = 0;\n        }\n    }\n\n    public String findOrder(String[] dic, int N, int K) {",
+            "skeleton_class_end": "         }\n    }\n }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

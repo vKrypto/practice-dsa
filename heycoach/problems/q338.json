@@ -1,0 +1,64 @@
+{
+    "id": 338,
+    "description": "You are tasked with developing a program that reconstructs a travel itinerary from a given list of airline tickets. Each ticket is represented by a pair of strings indicating the departure (\"from\") and the arrival (\"to\") airports of a flight. The itinerary must start from the airport code \"MUM\" and must be constructed such that if multiple valid itineraries exist, the one with the smallest lexical order (when read as a single string) is chosen.\n\n#### `Input Format:`\n\n- `The first line of input will contain a single integer, n, indicating the total number of strings to follow. This number will always be even, as each pair of strings represents a single flight ticket.`\n- `The next n strings represent the departure and arrival airports for n/2 tickets. Each pair of strings is a ticket with the first string being the departure airport and the second string being the arrival airport.`\n\n\n#### `Output Format:`\n\n- `The output should be a single line containing the reconstructed itinerary, with each airport code separated by a space. The itinerary must begin with \"MUM\" and follow the rules described above.`\n#### `Sample Input:`\n\n```\n8\nMUC LHR MUM MUC SFO SJC LHR SFO\n```\n#### `Sample Output:`\n`MUM MUC LHR SFO SJC`\n\n\n----------\n\n\n#### `Explanation:`\n\n```\nThe sample input represents four tickets: [\"MUC\", \"LHR\"], [\"MUM\", \"MUC\"], [\"SFO\", \"SJC\"], and [\"LHR\", \"SFO\"].\nStarting from \"MUM\", the itinerary follows to \"MUC\". From \"MUC\", the next destination with the smallest lexical order is \"LHR\". From \"LHR\", the itinerary proceeds to \"SFO\", and finally, from \"SFO\" to \"SJC\".\nThe reconstructed itinerary is \"MUM MUC LHR SFO SJC\", satisfying the requirement to start from \"MUM\" and to choose the itinerary with the smallest lexical order in case of multiple possibilities.\n```\n\n\n----------\n\n\n#### `Constraints:`\n\n- `1 <= Number of tickets <= 2 * 10^4`",
+    "title": "Reconstruct Itinerary",
+    "default_testcase": {
+        "id": 7329,
+        "input": "3\nMUM LHR MUC SFO SJC LHR",
+        "expected_output": "MUM LHR \n",
+        "code_problem_id": 338,
+        "created_at": "2024-04-19T07:14:04.236Z",
+        "updated_at": "2024-04-19T07:14:04.236Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 797,
+            "code_problem_id": 338,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    vector<string> findItinerary(vector<vector<string>>& tickets) {\n    //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1091,
+            "code_problem_id": 338,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findItinerary(tickets) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1092,
+            "code_problem_id": 338,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findItinerary(self, tickets: List[List[str]]) -> List[str]:\n        #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1093,
+            "code_problem_id": 338,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n      public List<String> findItinerary(List<List<String>> tickets) {\n        //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

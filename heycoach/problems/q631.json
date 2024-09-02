@@ -1,0 +1,64 @@
+{
+    "id": 631,
+    "description": "You have given an array arr consisting of N integers which may contain duplicates. You have to return all possible subsets. The solution must not contain any repeating subsets. Return the solution is lexographically increasing order. Also,Each subset should be sorted in non-decreasing order. For e.g. [1,1,2] and [2,1,1] are different permutation of the same subset so here you have to choose [1,1,2] as a subset in the result as it is in non-decreasing order.\n#### Example 1:\n##### Input : \n`arr = [1,1,2,2]`\n##### `Output\n`[[],[1],[1,1],[1,1,2],[1,1,2,2],[1,2],[1,2,2],[2],[2,2]]`\n####  Explanation \nAbove are all the unique subsets for the given array [1,1,2,2] in lexographically increasing order.\nNote:\n\nYou have to consider empty subset as well.\nIn the above test case,there are 2 occurences present of subset [1,1,2] but in the solution you must include only one occurence of every subset.\n\n#### Constraints:\n\n```\n1 <= N <= 10  \n1 <= arr[i] <= 30\n```\n#### Input format\n\n```\nfirst line contains two integers n(size of array ) and target\nnext line represents the elements of array separted by space.\n```\n#### Output format  \n`k lines where each line reprsents an array` ",
+    "title": "Generate subsets 2",
+    "default_testcase": {
+        "id": 4217,
+        "input": "4\n1 21 2 2",
+        "expected_output": "\n1 \n1 2 \n1 2 2 \n1 2 2 21 \n1 2 21 \n1 21 \n2 \n2 2 \n2 2 21 \n2 21 \n21 \n",
+        "code_problem_id": 631,
+        "created_at": "2024-01-27T08:52:13.257Z",
+        "updated_at": "2024-01-27T08:52:13.257Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1922,
+            "code_problem_id": 631,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution\n{\npublic:\nvoid rec(int idx, vector<int> &subset, vector<vector<int>> &subsets, vector<int> &nums) {\n",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1923,
+            "code_problem_id": 631,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public List<List<Integer>> generateSubsets(int[] nums) {",
+            "skeleton_class_end": "     }\n  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1924,
+            "code_problem_id": 631,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def generateSubsets(self, nums):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1925,
+            "code_problem_id": 631,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    generateSubsets(arr) {\n       ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 937,
+    "description": "In a chat application, certain words need to be filtered out to maintain decorum.\n\nWrite a function to replace blacklisted words in a string with asterisks.\n\nSample Input: Message: \"This is a bad word.\", Blacklist: [\"bad\"]\nSample Output: \"This is a *** word.\"\n\nExplanation:\n\nThe word \"bad\" is replaced with \"*\".\n\nConstraints:\n\nsentence.length <= 1000\n\nblacklist.size <= 100\n\nEach word in blacklist has length <= 50\n\nWords in blacklist are case-sensitive\nsentence and blacklist consist of printable ASCII characters and spaces",
+    "title": "Chat Application Filter",
+    "default_testcase": {
+        "id": 8216,
+        "input": "[]\nanything",
+        "expected_output": "[]\n",
+        "code_problem_id": 937,
+        "created_at": "2024-05-23T08:07:07.922Z",
+        "updated_at": "2024-05-23T08:07:07.922Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3113,
+            "code_problem_id": 937,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class WordReplacer {\npublic:\n    static string replaceWordsWithAsterisks(const string& sentence, const vector<string>& blacklist) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3114,
+            "code_problem_id": 937,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class WordReplacer {\n    public static String replaceWordsWithAsterisks(String sentence, List<String> blacklist) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3115,
+            "code_problem_id": 937,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class WordReplacer:\n    @staticmethod\n    def replace_words_with_asterisks(sentence, blacklist):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3116,
+            "code_problem_id": 937,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class WordReplacer {\n    static replaceWordsWithAsterisks(sentence, blacklist) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

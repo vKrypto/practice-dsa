@@ -1,0 +1,64 @@
+{
+    "id": 249,
+    "description": "\nYou are given a string s containing lowercase letters and an integer k. </br>You need to :\n\n   - First, change some characters of s to other lowercase English letters.\n   -  Then divide s into k non-empty disjoint substrings such that each substring is a palindrome.\n\n*Return the minimal number of characters that you need to change to divide the string.*\n### `Example 1`\n\n### `Input`\n\n```CPP\n s = \"abc\", k = 2\n```\n\n#### `Output`\n\n```CPP\n1\n```\n\n#### `Explanation:`\n\n`You can split the string into \"ab\" and \"c\", and change 1 character in \"ab\" to make it palindrome.`\n\n### Example 2\n\n### `Input`\n\n```CPP\ns = \"aabbc\", k = 3\n```\n\n### `Output`\n\n```CPP\n0\n```\n\n#### Explanation:\n\n```\nYou can split the string into \"aa\", \"bb\" and \"c\", all of them are palindrome.\n\n```\n\n#### `Constraints:`\n\n- `1 <= k <= s.length <= 100.`\n- `s only contains lowercase English letters.`\n",
+    "title": "Palindrome Op2",
+    "default_testcase": {
+        "id": 6498,
+        "input": "rosiloagrstckjdysurvcaodehorsgdpyshagstbfkcnhydefedysurvcaodehorsgdpyshagstbfkcnhydefedysurvcaodeho\n10",
+        "expected_output": "30",
+        "code_problem_id": 249,
+        "created_at": "2024-03-14T06:25:59.099Z",
+        "updated_at": "2024-03-14T06:25:59.099Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 414,
+            "code_problem_id": 249,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n\n    int dp[101][101][101];\n    int palindromePartition(string s, int k) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 594,
+            "code_problem_id": 249,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n   constructor() {\n        this.dp = [];\n    }\n    palindromePartition(s, k) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 595,
+            "code_problem_id": 249,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:   \n    def __init__(self):\n        self.dp = []\n    def palindromePartition(self, s, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 596,
+            "code_problem_id": 249,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n\n    int[][][] dp;\n\n    public int palindromePartition(String s, int k) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

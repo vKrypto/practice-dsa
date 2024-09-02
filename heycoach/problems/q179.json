@@ -1,0 +1,45 @@
+{
+    "id": 179,
+    "description": "The **count-and-say** sequence is a sequence of digit strings defined by the recursive formula:\n***countAndSay(1) = '1'***\n***countAndSay(n)= is the way you would \"say\" the digit string from countAndSay(n-1), which is then converted into a different digit string.***\n\nTo determine how you \"say\" a digit string, split it into the minimal number of substrings such that each substring contains exactly one unique digit. Then for each substring, say the number of digits, then say the digit. Finally, concatenate every said digit.\n\n**Given a positive integer n, print the nth term of the count-and-say sequence.**\n\n####Example:\n**Input** : 4\n**Output**: 1211\n\n####Input Format:\n*single integer input *n*\n\n####Output Format:\n*single line output in form of string\n\n####Constraints:\n *1<=n<=30\n",
+    "title": "Count and Say",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 166,
+            "code_problem_id": 179,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(int n) {\n    \n  } \n};"
+        },
+        {
+            "id": 167,
+            "code_problem_id": 179,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(int n) {\n    \n  } \n}\n\n"
+        },
+        {
+            "id": 168,
+            "code_problem_id": 179,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n  def solve(self, n):"
+        }
+    ]
+}

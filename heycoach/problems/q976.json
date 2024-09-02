@@ -1,0 +1,64 @@
+{
+    "id": 976,
+    "description": "Given an array of integers, return the largest value obtained by performing the XOR operation on any two elements in the array.\n\nExample 1:\n\nInput:\n\n[3, 10, 5, 25, 2, 8]\n\nOutput:\n\n28\n\nExplanation: The maximum result is obtained by performing 5 XOR 25 = 28.\n\nExample 2:\n\nInput:\n\n[14, 70, 53, 83, 49, 91, 36, 80, 92, 51, 66, 70]\n\nOutput:\n\n127\n\nConstraints:\n\nThe length of the array is between 1 and 2 * 10^5.\n\nEach element in the array is between 0 and 2^31 - 1.",
+    "title": "Largest XOR Value in an Array",
+    "default_testcase": {
+        "id": 8522,
+        "input": "1\n1",
+        "expected_output": "0\n",
+        "code_problem_id": 976,
+        "created_at": "2024-06-01T05:46:19.865Z",
+        "updated_at": "2024-06-01T05:46:19.865Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3260,
+            "code_problem_id": 976,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    struct trieNode {\n        trieNode* left;\n        trieNode* right;\n    };\n    \n    void insert(trieNode* head, int& num) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3261,
+            "code_problem_id": 976,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    static class TrieNode {\n        TrieNode left;\n        TrieNode right;\n    }\n\n    public void insert(TrieNode head, int num) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3262,
+            "code_problem_id": 976,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    class TrieNode:\n        def __init__(self):\n            self.left = None\n            self.right = None\n\n    def insert(self, head, num):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3263,
+            "code_problem_id": 976,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.TrieNode = class {\n            constructor() {\n                this.left = null;\n                this.right = null;\n            }\n        };\n    }\n\n    insert(head, num) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

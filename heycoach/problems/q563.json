@@ -1,0 +1,21 @@
+{
+    "id": 563,
+    "description": "Given a NxM matrix containing Uppercase English Alphabets only. Your task is to tell if there is a path in the given matrix which spells out the word \"HEYCOACH\".\n\nThere is a path from any cell to all its neighboring cells. For a particular cell, neighboring cells are those cells that share an edge or a corner with the cell.\n\n```\nInput Format:\n\nThe first line of input contains two space-separated integers N and M, where N is the number of rows and M is the number of columns in the matrix. Each of the following N lines contains M characters. Please note that characters are not space-separated.\n\nOutput Format:\n\nPrint 1 if there is a path that makes the word \"HEYCOACH\", else print 0.\n```\n\n```\n\n```\nConstraints:\n\n1 <= N <= 1000   \n1 <= M <= 1000  \nTime Limit: 1 s\n\n```\n\nSample Input 1:  \n3 7  \nHXCXOXA  \nIACXCHC  \nXOACHCC  \nSample Output 1:                                                                                                                            \n\n1   \nSample Input 2:  \n4 5   \nHEYYC   \nOCAAC  \nACHAC  \nHHCHH  \nSample Output 2:  \n0\n\n```",
+    "title": "Word Path in Matrix",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1696,
+            "code_problem_id": 563,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    static const int a[8][2];\n    static std::string pattern;\n    static std::vector<std::vector<int>> used;\n\npublic:\n    static int solve(const std::vector<std::string>& graph, int N, int M) {\n    }\n}"
+        }
+    ]
+}

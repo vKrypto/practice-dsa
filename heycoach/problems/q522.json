@@ -1,0 +1,64 @@
+{
+    "id": 522,
+    "description": "Given the head of a singly linked list, reverse the list, and return the reversed list. The number of nodes in the list is in the range [0, 5000].   \n\n**Sample Input:**                                                                                                                                 \n      ` head =`\n\n`5 `   <br/>                                      \n`1 2 3 4 5` \n\n**Sample Output:**                                                                                                         \n   `5 4 3 2 1`\n\n                                                                               \n\n**Constraints:**                                                                                                                                     \n\n- `-5000 <= Node.val <= 5000`",
+    "title": "Reverse the linked list",
+    "default_testcase": {
+        "id": 6628,
+        "input": "4\n2 5 6 3",
+        "expected_output": "3 6 5 2\n",
+        "code_problem_id": 522,
+        "created_at": "2024-03-20T06:07:48.533Z",
+        "updated_at": "2024-03-20T06:07:48.533Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1563,
+            "code_problem_id": 522,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  struct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int x) : val(x), next(nullptr) {}\n};\n*/\n\nclass Solution{\n   public:\n   ListNode* reverseList(ListNode* head) {\n     //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1564,
+            "code_problem_id": 522,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass ReverseLinkedList {\n    public ListNode reverseList(ListNode head) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1565,
+            "code_problem_id": 522,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\"\"\"\nclass Solution:\n    def reverseList(self, head):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1567,
+            "code_problem_id": 522,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\n  class ListNode {\n    constructor(x) {\n        this.val = x;\n        this.next = null;\n    }\n}\n*/\n\nclass ReverseLinkedList {\n    reverseList(head) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

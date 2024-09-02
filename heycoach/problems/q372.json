@@ -1,0 +1,57 @@
+{
+    "id": 372,
+    "description": "Once upon a time, in a land filled with integers, there was an array called \"arr.\" Its elements held a secret pattern that intrigued the wise mathematicians of the realm. They embarked on a quest to find the most mesmerizing subarray within \"arr.\"\n\nThis subarray was no ordinary one. It was deemed \"turbulent\" because it possessed a magical quality. As they journeyed through the array, they found that with each step, the sign of comparison would perform a mesmerizing dance, flipping between each adjacent pair of elements.\n\nIn the heart of their adventure, they uncovered the enchanting rules that governed this subarray's turbulent nature:\n\nMore formally, a subarray [arr[i], arr[i + 1], ..., arr[j]] of arr is said to be turbulent if and only if:\n\nFor i <= k < j:\narr[k] > arr[k + 1] when k is odd, and\narr[k] < arr[k + 1] when k is even.\n\nOr, for i <= k < j:\narr[k] > arr[k + 1] when k is even, and\narr[k] < arr[k + 1] when k is odd.\n\n\n\n\n### Example 1\n### Input\n```CPP\n arr = [9, 4, 2, 10, 7, 8, 8, 1, 9]\n``` \n### Output \n```CPP \n5\n``` \n#### Explanation -\nExplanation: arr[1] > arr[2] < arr[3] > arr[4] < arr[5]\n\n\n### Constraints:\n* 1 <= arr.length <= 4 * 10^4\n* 0 <= arr[i] <= 10^9",
+    "title": "Land of Turbulance",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 868,
+            "code_problem_id": 372,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n    int maxTurbulenceSize(vector<int>& arr) {\n       \n    }\n};\n"
+        },
+        {
+            "id": 869,
+            "code_problem_id": 372,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public int maxTurbulenceSize(int[] arr) {\n        \n    }\n}\n"
+        },
+        {
+            "id": 870,
+            "code_problem_id": 372,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def maxTurbulenceSize(self, arr):\n        "
+        },
+        {
+            "id": 871,
+            "code_problem_id": 372,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    maxTurbulenceSize(arr) {\n        \n    }\n}\n"
+        }
+    ]
+}

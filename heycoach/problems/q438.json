@@ -1,0 +1,64 @@
+{
+    "id": 438,
+    "description": "Given an array of integers nums and an integer threshold, we will choose a positive integer divisor, divide all the array by it, and sum the division's result. Find the smallest divisor such that the result mentioned above is less than or equal to threshold.\n\nEach result of the division is rounded to the nearest integer greater than or equal to that element. (For example: 7/3 = 3 and 10/2 = 5).\n\nThe test cases are generated so that there will be an answer.\n### Sample Input\n```\nnums = [1,2,5,9], threshold = 6  \n```\n### Sample Output\n```\n5 \n``` \n### Explanation\n```\nWe can get a sum to 17 (1+2+5+9) if the divisor is 1. \nIf the divisor is 4 we can get a sum of 7 (1+1+2+3) and if the divisor is 5 the sum will be 5 (1+1+1+2).  \n```\n### Sample Input 2\n```\nnums = [44,22,33,11,1], threshold = 5  \n```\n### Sample Output 2\n```\n44\n```\n### Constraints\n```\n1 <= nums.length <= 5 * 10^4                \n1 <= nums[i] <= 10^6      \nnums.length <= threshold <= 10^6\n```",
+    "title": "Smallest divisor ",
+    "default_testcase": {
+        "id": 3043,
+        "input": "4\n1 2 5 9\n6",
+        "expected_output": "5",
+        "code_problem_id": 438,
+        "created_at": "2023-12-21T14:37:07.712Z",
+        "updated_at": "2023-12-21T14:37:07.712Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1239,
+            "code_problem_id": 438,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass SmallestDivisor:\n    def smallest_divisor(nums, th):\n"
+        },
+        {
+            "id": 1240,
+            "code_problem_id": 438,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass SmallestDivisor {\n    static int smallestDivisor(List<Integer> nums, int th) {\n    }\n}\n\n"
+        },
+        {
+            "id": 1241,
+            "code_problem_id": 438,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n    int smallestDivisor(vector<int>& nums, int th) {\n    }\n"
+        },
+        {
+            "id": 1414,
+            "code_problem_id": 438,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    smallestDivisor(nums, th) {\n      \n    }\n}\n\n\n"
+        }
+    ]
+}

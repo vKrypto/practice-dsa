@@ -1,0 +1,45 @@
+{
+    "id": 109,
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.\n\nA subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].\n### Example 1 \n\n### Input\n```CPP\n nums = [10,9,2,5,3,7,101,18]\n``` \n### Output \n```CPP \n4\n``` \n\n\n\n### Example 2 \n\n### Input\n```CPP\nnums = [0,1,0,3,2,3]\n``` \n### Output \n```CPP \n4\n``` \n\n\n\n### Constraints:\n\n* 1 <= nums.length <= 2500\n* -10^4 <= nums[i] <= 10^4",
+    "title": "LIS",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 260,
+            "code_problem_id": 109,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 275,
+            "code_problem_id": 109,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 280,
+            "code_problem_id": 109,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

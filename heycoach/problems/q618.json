@@ -1,0 +1,64 @@
+{
+    "id": 618,
+    "description": " **Description**:</br>\nYou are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0]. Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where:\n\n\u2022\t`0 <= j <= nums[i]`</br>\n\u2022\t`i + j < n`</br>\n`Return the minimum number of jumps to reach nums[n - 1]. The test cases are generated such that you can reach nums[n - 1].`\n\n**`Input`**:</br>\n\u2022`A list of integers nums (1 <= len(nums) <= 10^4), where each element 0 <= nums[i] <= 1000.`\n\n**Output**:</br>\n\u2022 `Return an integer representing the minimum number of jumps to reach the last index.`\n\n\n**`Example:`**</br>\n**`Input`**:  \n `nums = [2,3,1,1,4]`\n\n**`Output:`**:  \n `2`\n\n**`Explanation:`**</br>\n`The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.`\n\n**`Constraints`**:</br>\n\u2022\t`1 <= nums.length <= 10^4`</br>\n\u2022\t`0 <= nums[i] <= 1000`</br>\n\u2022\t`It's guaranteed that you can reach nums[n - 1].`\n",
+    "title": "Minimum Jumps to reach end",
+    "default_testcase": {
+        "id": 4020,
+        "input": "5\n2 3 1 1 4",
+        "expected_output": "2\n",
+        "code_problem_id": 618,
+        "created_at": "2024-01-23T03:11:22.557Z",
+        "updated_at": "2024-01-23T03:11:22.557Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1864,
+            "code_problem_id": 618,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\n  public:\n  int minJumps(std::vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1865,
+            "code_problem_id": 618,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class Solution {\n    public int minJumps(int[] nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1866,
+            "code_problem_id": 618,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minJumps(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1867,
+            "code_problem_id": 618,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minJumps(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

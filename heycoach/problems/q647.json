@@ -1,0 +1,64 @@
+{
+    "id": 647,
+    "description": "Given a string s, return  _the number of  **distinct non-empty subsequences**  of_  `s`. Since the answer may be very large, return it  **modulo**  `1000000000  + 7`.\n\nA **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n### Sample Input 1\n\n```\ns = \"abc\"\n```\n### Sample Output 1\n\n```\n7\n```\n### Explanation\n\n```\nThe 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n\n```\n### Sample Input 2\n\n```\ns = \"aba\"\n```\n### Sample Output 2\n\n```\n6\n```\n### Explanation\n\n```\nThe 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n\n```\n### Input Format\n```\nA single line contains a string 's'\n```\n### Output Format\n```\nAn integer denoting the number of distinct subsequences\n```\n### Constraints\n```\n1 <= s.length <= 2000\ns consists of lowercase English letters.\n```\n",
+    "title": "Count Unique Subsequences",
+    "default_testcase": {
+        "id": 4312,
+        "input": "aba",
+        "expected_output": "6",
+        "code_problem_id": 647,
+        "created_at": "2024-01-27T10:28:29.514Z",
+        "updated_at": "2024-01-27T10:28:29.514Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1986,
+            "code_problem_id": 647,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1989,
+            "code_problem_id": 647,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1995,
+            "code_problem_id": 647,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1997,
+            "code_problem_id": 647,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

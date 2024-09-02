@@ -1,0 +1,64 @@
+{
+    "id": 810,
+    "description": "Description:\n\nYou are given a numeric string n representing a positive integer. Your task is to find the nearest pair of numerical palindromes to n, excluding n itself.\nA numerical palindrome is defined as a number that reads the same backward as forward.\nWrite a function to calculate the nearest pair of numerical palindromes to n. If there is no previous or next palindrome, return -1 for that value.\n\nInput Format:\n\nThe input consists of a single line containing a numeric string n.\n\nOutput Format:\n\nReturn vector which contain previous paindrome and next palindrome in string format.\n\nSample Inputs:\n\nn = \"123\"\n\nSample Outputs:\n\n[\u201c121\u201d,  \u201c131\u201d]\n\nExplanation:\n\nThe nearest palindromes to \"123\" are \"121\" and \"131\"\n\nConstraint:\n\n1 <= n.length <= 18\n\nn consists of only digits.\n\nn does not have leading zeros.\n\nn represents a positive integer in the range [1, 10^18 - 1].\n",
+    "title": "Next Palindromic Pair",
+    "default_testcase": {
+        "id": 7420,
+        "input": "10098",
+        "expected_output": "10001 10101\n",
+        "code_problem_id": 810,
+        "created_at": "2024-04-26T21:48:30.362Z",
+        "updated_at": "2024-04-26T21:48:30.362Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2705,
+            "code_problem_id": 810,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    vector<string> findNearestPalindromePair(string n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2706,
+            "code_problem_id": 810,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String[] findNearestPalindromePair(String n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2707,
+            "code_problem_id": 810,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def find_nearest_palindrome_pair(n):\n  #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2708,
+            "code_problem_id": 810,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function findNearestPalindromePair(n) {\n  //Write your code here",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

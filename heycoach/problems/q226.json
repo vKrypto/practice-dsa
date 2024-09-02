@@ -1,0 +1,28 @@
+{
+    "id": 226,
+    "description": "You are given a  **0-indexed**  array of non-negative integers  `nums`. For each integer in  `nums`, you must find its respective  **second greater**  integer.\n\nThe  **second greater**  integer of  `nums[i]`  is  `nums[j]`  such that:\n\n-   `j > i`\n-   `nums[j] > nums[i]`\n-   There exists  **exactly one**  index  `k`  such that  `nums[k] > nums[i]`  and  `i < k < j`.\n\nIf there is no such  `nums[j]`, the second greater integer is considered to be  `-1`.\n\n-   For example, in the array  `[1, 2, 4, 3]`, the second greater integer of  `1`  is  `4`,  `2`  is  `3`, and that of  `3`  and  `4`  is  `-1`.\n\nReturn _an integer array_ `answer`_, where_ `answer[i]` _is the second greater integer of_ `nums[i]`_._\n### Example 1 \n\n### Input\n```CPP\nnums = [2,4,0,9,6]\n```\n### Output \n```CPP\n[9,6,6,-1,-1]\n```\n### Explanation\n\n0th index: 4 is the first integer greater than 2, and 9 is the second integer greater than 2, to the right of 2.\n1st index: 9 is the first, and 6 is the second integer greater than 4, to the right of 4.\n2nd index: 9 is the first, and 6 is the second integer greater than 0, to the right of 0.\n3rd index: There is no integer greater than 9 to its right, so the second greater integer is considered to be -1.\n4th index: There is no integer greater than 6 to its right, so the second greater integer is considered to be -1.\nThus, we return [9,6,6,-1,-1].\n\n**Example 2:**\n\n**Input:**\n```CPP\nnums = [3,3]\n```\n**Output:** \n```CPP\n[-1,-1]\n```\n\n\n### Constraints:\n-   `1 <= nums.length <= 10000`\n-   `0 <= nums[i] <= 1000000`",
+    "title": "Next second greater element",
+    "default_testcase": {
+        "id": 1606,
+        "input": "5\n2 4 0 9 6 ",
+        "expected_output": "9 6 6 -1 -1 ",
+        "code_problem_id": 226,
+        "created_at": "2022-11-01T11:16:31.002Z",
+        "updated_at": "2022-11-01T11:16:31.002Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 325,
+            "code_problem_id": 226,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<int> secondGreaterElement(vector<int>& nums) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

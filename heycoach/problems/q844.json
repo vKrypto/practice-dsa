@@ -1,0 +1,64 @@
+{
+    "id": 844,
+    "description": "The College council is preparing for the relay race at the sports festival. The council consists of n members. They will run one after the other in the race, the speed of member i is s1. The discrepancy d2 of the i- th stage is the difference between the maximum and the minimum running speed among the first & members who ran. \n\nFormally, if a denotes the speed of the i-th member who participated in the race, then d2 = max(a1, a2,..., ai) \u2014 min(a1, a2,..., ai). You want to minimise the sum of the discrepancies d1 + d2+...+d. To do this, you are allowed to change the order in which the members run. What is the minimum possible sum that can be achieved?\n\n\n#### `Input:`\n\n- `The first line contains a single integer n (1 \u2264 n \u2264 2000) the number of members of the student council. `\n\n- `The second line contains n integers s1,s2,s3\u2026sn (1 \u2264 s[i] \u2264 109) - the running speeds of the members. `\n\n\n#### `Output :`\n\n- `Print a single integer - the minimum possible value of d1 + d2 + +d, after choosing the order of the members.`\n\n#### `Sample Input:1`\n#### `Input:1`\n ```\n3\n3 1 2\n```\n#### `Output:1`\n```\n3\n```\n\n#### `Sample Input: 2`\n\n#### `Input:`\n ```\n6\n1 6 3 3 6 3\n```\n####  `Output:`\n```\n11\n```",
+    "title": "Relay Race",
+    "default_testcase": {
+        "id": 7479,
+        "input": "6\n1 6 3 3 6 3",
+        "expected_output": "11\n",
+        "code_problem_id": 844,
+        "created_at": "2024-04-28T00:08:39.184Z",
+        "updated_at": "2024-04-28T00:08:39.184Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2760,
+            "code_problem_id": 844,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\nlong long int Relayrace(ll n, vector<ll> &a){\n  //Write your code here\n              ",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2761,
+            "code_problem_id": 844,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    long Relayrace(int n, ArrayList<Long> a) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2762,
+            "code_problem_id": 844,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def Relayrace(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2763,
+            "code_problem_id": 844,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    Relayrace(n, a) {\n      //Write your code here\n      ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

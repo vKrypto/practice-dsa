@@ -1,0 +1,64 @@
+{
+    "id": 475,
+    "description": "Given HeyCoach land\u2019s Binary Tree Society,  we have to place watchmen to keep an eye on the whole Society, each watchman can keep an eye on itself, parent node and immediate children. Calculate minimum number of Watchmen required to keep an eye on all houses of the HeyCoach Land.\n\nFor example:\nGiven the Binary Tree\n\n           1\n         /   \\\n       2       3\n      /    \n     6\n\nThe minimum number of watchmen would be two which can be placed at node value '2' and '3'.\n\n```\nInput Format:\n\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n```\n\n```\nOutput Format:\n\nReturn a single integer representing the minimum number of watchmen required to keep an eye on the society.\n```\n\n```\nSample Input:\n\n1 2 3 6 -1 -1 -1 -1 -1\n\nSample Output:\n\n2\n```\n\n`Constraints:`\n\n`0 <= N <= 10^4`\n\n`0 <= data <= 10^3   ` \n\n```\nWhere 'N' denotes the total number of nodes and 'data' denotes the value of the node\n```\n\n",
+    "title": "Watchmen of Binary Tree",
+    "default_testcase": {
+        "id": 3205,
+        "input": "1 2 3 6 -1 -1 -1 -1 -1",
+        "expected_output": "2\n",
+        "code_problem_id": 475,
+        "created_at": "2023-12-28T01:46:44.543Z",
+        "updated_at": "2023-12-28T01:46:44.543Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1347,
+            "code_problem_id": 475,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*\n  class Node\n{\n    public:\n      int data;\n      Node *left;\n      Node *right;\n    \n      Node (int data)\n      {\n        this->data = data;\n        this->left = NULL;\n        this->right = NULL;\n      }\n    \n      ~Node ()\n      {\n        delete right;\n        delete left;\n      }\n};\n*/\n\nclass Solution{\n    private:\n        int cnt=0;\n    \n    public:\n    int solve(Node* root){\n      //Write your code ere",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1348,
+            "code_problem_id": 475,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    public int data;\n    public Node left;\n    public Node right;\n\n    public Node(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    int cnt = 0;\n    int solve(Node root) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1349,
+            "code_problem_id": 475,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\"\"\"\n\nclass Solution:\n  \n    def __init__(self):\n        self.cnt = 0\n    \n    def solve(self, root):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1350,
+            "code_problem_id": 475,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass TreeNode {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\n\nclass Solution {\n  \n    constructor() {\n        this.cnt = 0;\n    }\n    \n    solve(root) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

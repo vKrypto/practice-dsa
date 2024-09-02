@@ -1,0 +1,64 @@
+{
+    "id": 726,
+    "description": "panda loves to eat apples. There are n piles of apples, the ith pile has piles[i] apples. The guards have gone and will come back in h hours.\n\npanda can decide her apples-per-hour eating speed of k. Each hour, she chooses some pile of apples and eats k apples from that pile. If the pile has less than k apples, she eats all of them instead and will not eat any more apples during this hour.\n\npanda likes to eat slowly but still wants to finish eating all the bananas before the guards return.\n\nReturn the minimum integer k such that panda can eat all the apples within h hours.\n\n#### Example 1\n##### Input\n`piles = [3,6,7,11], h = 8`\n#### Output\n`4`\n##### Explanation\n`By eating 4 apples per hour panda can finish eating all apples in 8hrs which is <= h so 4 is the minimum k we can obtain.`\n\n#### Inpiut Format:\n\n```\nfirst line n denotes size of array h denotes hours \nsecond line contains elements of array denoted separated by space  \n```\n\n#### Constraints:\n\n```\n1 <= n <= 10000\nn <= h <= 100000000\n1 <= piles[i] <= 100000000\n```",
+    "title": "Panda eating apples",
+    "default_testcase": {
+        "id": 4889,
+        "input": "5 5\n30 11 23 4 20",
+        "expected_output": "30\n",
+        "code_problem_id": 726,
+        "created_at": "2024-02-01T20:08:21.281Z",
+        "updated_at": "2024-02-01T20:08:21.281Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2313,
+            "code_problem_id": 726,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\n  public:\n  int minEatingSpeed(vector<int>& piles, int h) {\n ",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2314,
+            "code_problem_id": 726,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int minEatingSpeed(int[] piles, int h) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2315,
+            "code_problem_id": 726,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minEatingSpeed(self, piles, h):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2316,
+            "code_problem_id": 726,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minEatingSpeed(piles, h) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 552,
+    "description": "Petya learned a new programming language CALPAS. A program in this language always takes one non-negative integer.\nPetya has discovered a new programming language called CALPAS. In CALPAS, a program consists of bitwise operations (AND, OR, XOR) applied to a given constant. The program can contain an arbitrary sequence of these operations with constants ranging from 0 to 1023. Petya wrote a program in CALPAS, but it is too long. Your task is to write a CALPAS program with a maximum of 5 lines that achieves the same result as Petya's program for all integers from 0 to 1023.\n\n**Input**</br>\n`The first line contains an integer n and q \u2014 the number of lines, number of queries.`</br></br>\n`Next q lines contain commands. A command consists of a character that represents the operation (\"\"&\"\", \"\"|\"\" or \"\"^\"\" for AND, OR or XOR respectively), and the constant xi 0\u2009\u2264\u2009xi\u2009\u2264\u20091023.`\n\n**Output**</br>\n`Return result after performing given queries in a series.`</br>\n**Examples**:</br>\n**Example** 1:</br>\n**input**\n```\n3 3\n| 3\n^ 2\n| 1\n```\n**output**\n```\n| 3\n^ 1\n| 1\nExplanation:\n\nThe program starts with the initial value of 3.\nThe first command is | 3, which performs a bitwise OR with the constant 3 (previous result), resulting in 3.\nThe second command is ^ 2, which performs a bitwise XOR with the constant 3 (previous result), resulting in 1.\nThe third command is | 1, which performs a bitwise OR with the constant 1 (previous result), resulting in 1.\n```\n**Example** 1:</br>\n**input**\n```\n3 3\n& 1\n& 3\n& 5\n```\n**output**\n```\n& 1\n& 1\n& 1\n```\n**Example** 1:</br>\n**input**\n```\n3 2\n^ 1\n^ 2\n```\n**output**\n```\n^ 2\n^ 0\n```",
+    "title": "Simplify CALPAS Program",
+    "default_testcase": {
+        "id": 3666,
+        "input": "3 3\n| 3\n^ 2\n| 1",
+        "expected_output": "| 3\n^ 1\n| 1\n",
+        "code_problem_id": 552,
+        "created_at": "2024-01-10T10:04:27.496Z",
+        "updated_at": "2024-01-10T10:04:27.496Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1653,
+            "code_problem_id": 552,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution{\n  public:\n  vector<pair<char, int>>simplifyCalpas(int n, vector<pair<char, int>>&arr){\n\n  }\n};\n "
+        },
+        {
+            "id": 1654,
+            "code_problem_id": 552,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public List<Map.Entry<Character, Integer>> simplifyCalpas(int n, List<Map.Entry<Character, Integer>> arr) {\n       \n    }\n}\n"
+        },
+        {
+            "id": 1655,
+            "code_problem_id": 552,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    simplifyCalpas(n, arr) {\n       \n    }\n}\n\n\n"
+        },
+        {
+            "id": 1656,
+            "code_problem_id": 552,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def simplify_calpas(self, n, arr):\n        "
+        }
+    ]
+}

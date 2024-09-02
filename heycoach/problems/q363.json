@@ -1,0 +1,64 @@
+{
+    "id": 363,
+    "description": "You have N books, each with A[i] number of pages. M students need to be allocated contiguous books, with each student getting at least one book.\nOut of all the permutations, the goal is to find the permutation where the student with the most books allocated to him gets the minimum number of pages, out of all possible permutations.\n\n```\nNote: Return -1 if a valid assignment is not possible, and allotment should be in contiguous order (see the explanation for better understanding).\n\n```\n \n\n**Example 1**:\n\n**Input**:\n\n```\n- N = 4\n- A[] = {12,34,67,90}\n- M = 2\n```\n\n**Output**:   \n\n```\n113\n```\n#### `Explanation: \n`Allocation can be done in the following ways:`\n\n- `{12} and {34, 67, 90} Maximum Pages = 191`\n- `{12, 34} and {67, 90} Maximum Pages = 157`\n- `{12, 34, 67} and {90} Maximum Pages =113.`\n\n`Therefore, the minimum of these cases is 113`,<br>\n`which is selected as the output.`\n\n#### `Expected Time Complexity:` \n`O(NlogN)`\n\n#### `Expected Auxilliary Space:`\n` O(1)`\n\n\n#### `Constraints:`   \n\n- `1 <= N <= 10^5`\n\n- `1 <= A [ i ] <= 10^6`\n\n- `1 <= M <= 10^5`\n\n\n\n ",
+    "title": "Book Allocation Problem",
+    "default_testcase": {
+        "id": 3923,
+        "input": "4\n12 34 67 90\n2",
+        "expected_output": "113\n",
+        "code_problem_id": 363,
+        "created_at": "2024-01-22T07:56:32.355Z",
+        "updated_at": "2024-01-22T07:56:32.355Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 830,
+            "code_problem_id": 363,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static int findPages(std::vector<int>& A, int N, int M) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 947,
+            "code_problem_id": 363,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    \n    int findPages(int[] A, int N, int M) {\n        \n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 948,
+            "code_problem_id": 363,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def findPages(A, N, M):\n      #Write your code here ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": "\n       "
+        },
+        {
+            "id": 1008,
+            "code_problem_id": 363,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findPages(A, N, M) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

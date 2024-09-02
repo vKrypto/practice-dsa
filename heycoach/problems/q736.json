@@ -1,0 +1,64 @@
+{
+    "id": 736,
+    "description": "You and your friend have decided to exchange messages in the form of secret codes.  You will be communicating in numbers where number '1' represents 'a' number '2' represents 'b' and so on until the number '26' that represents 'z'. Every message has a difficulty which is represented as the total number of ways your message can be interpreted. For example: 23 can be interpreted as 'ab' as well as 'w' so it has a difficulty of 2.\nGiven an array 'ar' containing n number of integers, calculate its difficulty.\n\nInput Format:\n\nThe first line contains a single integer 'n' denoting the size of array.\n\nSecond line contains 'n' number of space separated integers.\n\nOutput:\n\nReturn the difficulty of the secret code which would be an integer.\n\nSample Input:\n\n3\n\n1 2 3\n\nSample Output:\n\n3\n\nExplanation: Since there are total 3 ways the message can be interpreted which are abc, lc, aw. Thus, the difficulty would be 3.\n\nConstraints:\n\n1<=n<=10^4\n\n0<=a[i]<=9",
+    "title": "Secret Codes",
+    "default_testcase": {
+        "id": 5421,
+        "input": "3\n1 2 3",
+        "expected_output": "3\n",
+        "code_problem_id": 736,
+        "created_at": "2024-02-12T14:41:17.445Z",
+        "updated_at": "2024-02-12T14:41:17.445Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2353,
+            "code_problem_id": 736,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int n, int*ar){\n        //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2354,
+            "code_problem_id": 736,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int n, int[] ar) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2355,
+            "code_problem_id": 736,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, ar):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2356,
+            "code_problem_id": 736,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, ar) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

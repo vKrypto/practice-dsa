@@ -1,0 +1,64 @@
+{
+    "id": 437,
+    "description": "\nYou are given an integer array nums sorted in ascending order with distinct values. Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].\n\nGiven the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.\n\nYou must write an algorithm with O(log n) runtime complexity.\n\n**Example**:\n\n**Sample Input:**\n```\nnums = [4,5,6,7,0,1,2]\ntarget = 0\n```\n**Sample Output:**\n```\n4\n```\n**Explanation**:</br>\nThe target 0 is found at index 4 in the rotated array.\n\n**Input Format:**</br>\n\n- The input consists of two lines:</br>\n- The first line contains an integer array nums (1 <= nums.length <= 5000), representing the rotated and sorted array.\n- The second line contains an integer target (-10^4 <= target <= 10^4), representing the target element to be searched in the array.\n\n**Output Format:**\n\nThe output consists of a single integer, representing the index of the target in the array. If the target is not found, output -1.\n\n**Constraints**:\n\n- The array nums is of length N (1 <= N <= 5000).\n- All values of nums are unique.\n- The values in nums are in the range -10^4 <= nums[i] <= 10^4.\n- The array nums is ascending and possibly rotated.\n- The target value is in the range -10^4 <= target <= 10^4.",
+    "title": "Search in Rotated Sorted Array",
+    "default_testcase": {
+        "id": 3039,
+        "input": "7\n4 5 6 7 0 1 2\n0",
+        "expected_output": "4",
+        "code_problem_id": 437,
+        "created_at": "2023-12-21T14:29:01.568Z",
+        "updated_at": "2023-12-21T14:29:01.568Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1235,
+            "code_problem_id": 437,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    search(nums, target) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1236,
+            "code_problem_id": 437,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int search(int[] nums, int target) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1237,
+            "code_problem_id": 437,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n  def search(nums, target):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1238,
+            "code_problem_id": 437,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int search(vector<int>& nums, int target) {\n    //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

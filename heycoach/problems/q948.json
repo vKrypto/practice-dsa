@@ -1,0 +1,57 @@
+{
+    "id": 948,
+    "description": "Kunal is a big fan of many kinds of music. But Kunal loves not only listening to music but also writing it. He likes electronic music most of all, so he has created his own system of music notes, which, in his opinion, is best for it.\n\nSince Kunal also likes informatics, in his system notes are denoted by integers of 2^k , where k\u22651\u2014 a positive integer. But, as you know, you can't use just notes to write music, so Kunal uses combinations of two notes. The combination of two notes (a,b), where a=2^k and b=2^l, he denotes by the integer a^b.\n\nFor example, if a=8=2^3, b=4=2^2, then the combination (a,b) is denoted by the integer a^b=8^4=4096. \nNote that different combinations can have the same notation, e.g., the combination (64,2) is also denoted by the integer 4096=64^2.\n\nKunal has already chosen n notes that he wants to use in his new melody. However, since their integers can be very large, he has written them down as an array a of length , then the note i is b[i]=2^ai \nThe integers in array a can be repeated.\n\nThe melody will consist of several combinations of two notes. Yarik was wondering how many pairs of notes bi,bj (i<j) exist such that the combination (bi,bj) is equal to the combination (bj,bi). \nIn other words, he wants to count the number of pairs (i,j) (i<j)such that b[i]^b[j]=b[j]^b[i].\n\nInput\n\nThe first line of each test case contains one integer n the length of the arrays.\n\nThe next line contains n integers a1,a2,\u2026,an\u2014 array a.\n\nOutput\n\nReturn the number of pairs that satisfy the given condition.\n\n```\nSample Input 1 : \n\n4\n\n3 1 3 2\n\nOutput \n\n2\n```\n\n```\nSample Input 2 : \n\n6\n\n6 9 2 1 9 3\n\nOutput \n\n2\n```\n\nConstraints :\n\n`1\u2264n\u22642\u22c51e5`\n\n`1\u2264a[i]\u22641e9`",
+    "title": "Count Combinations",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3160,
+            "code_problem_id": 948,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n    long long int countdivision(int n, vector<int> &a)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3161,
+            "code_problem_id": 948,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public long countDivision(int n, int[] a) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3162,
+            "code_problem_id": 948,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_division(self, n, a):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3163,
+            "code_problem_id": 948,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countDivision(n, a) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

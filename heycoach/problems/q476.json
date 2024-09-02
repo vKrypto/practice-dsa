@@ -1,0 +1,64 @@
+{
+    "id": 476,
+    "description": "Harry has been given a string s consisting of lowercase English letters. He is also given an integer d. Harry needs to find a non-empty substring with at most \nd distinct characters and compute the maximum score for that substring. The score of a string is defined as the sum of hash values of all characters in the string.\n\n**Input**:</br>\nA string s consisting of lowercase English letters (1\u2264\u2223s\u2223\u226410^5).\nAn integer d (1\u2264d\u226426).</br>\n\n**Output:**</br>\nAn integer representing the maximum score of a substring with at most d distinct characters.\n\n**Input**:</br>\n```\ns = \"slkawhbahsqsah\"\nd = 5\n```\n**Output**:</br>\n```\n83\n```\n\n**Explanation**:</br>\nIn the given example, a possible substring with the maximum score is \"hbahsqsah\".\nThe score is calculated as follows:\nh (8) + b (2) + a (1) + h (8) + s (19) + q (17) + s (19) + a (1) + h (8) = 83.\n\n**Input**:</br>\n```\ns = \"ddbbaacc\"\nd = 5\n```\n**Output**:</br>\n```\n20\n```\n\n**Explanation**:</br>\nIn this example, a possible substring with the maximum score is \"bbaacc\".\nThe score is calculated as follows:\nb (2) + b (2) + a (1) + a (1) + a (1) + c (3) = 20.\n",
+    "title": "Maximum Score Substring",
+    "default_testcase": {
+        "id": 3214,
+        "input": "2\nslkawhbahsqsah\n5\nddbbaacc\n5",
+        "expected_output": "83\n20\n",
+        "code_problem_id": 476,
+        "created_at": "2023-12-28T13:48:04.662Z",
+        "updated_at": "2023-12-28T13:48:04.662Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1375,
+            "code_problem_id": 476,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution{\n  public:\n  int maxSubstringScore(string &s, int d){\n    \n  }\n};\n\n"
+        },
+        {
+            "id": 1376,
+            "code_problem_id": 476,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int maxSubstringScore(String s, int d) {\n     \n    }\n}"
+        },
+        {
+            "id": 1377,
+            "code_problem_id": 476,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def maxSubstringScore(self, s, d):\n      \n\n"
+        },
+        {
+            "id": 1378,
+            "code_problem_id": 476,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    maxSubstringScore(s, d) {\n\n    }\n}"
+        }
+    ]
+}

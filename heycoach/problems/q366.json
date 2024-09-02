@@ -1,0 +1,64 @@
+{
+    "id": 366,
+    "description": "You have been given an array of elements. There exists a maximum element in this array such that elements to both sides decrease monotonically.\n\n***Find the index of this maximum element.***\n\n#### Input Format:\n\n- `The first line contains an integer n ( 1 <=n <=10^5), denoting the size of the array.`\n- `The second line contains n  space-separated integers (1 <=arr[i] <=10^9), denoting the elements of the array.`\n\n#### Output Format:\n\n- `Print an integer representing the index of the maximum element that meets the criteria.`\n- `If no maximum element meeting the criteria is found, print 0.`\n\n#### Sample Input:\n```\n7\n1 2 3 4 5 2 1\n```\n\n#### Sample Output:\n```\n4\n```\n\n####  Constraints:\n- `1 <=arr.size <=10^5`\n- `1 <=arr[i] <=10^9` ",
+    "title": "Max Element in array",
+    "default_testcase": {
+        "id": 2250,
+        "input": "7\n1 2 3 4 5 2 1",
+        "expected_output": "4",
+        "code_problem_id": 366,
+        "created_at": "2023-09-26T00:07:20.985Z",
+        "updated_at": "2023-09-26T00:07:20.985Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 832,
+            "code_problem_id": 366,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n      int indexMaxElement(std::vector<int>& nums) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1081,
+            "code_problem_id": 366,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int indexMaxElement(Vector<Integer> nums) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1082,
+            "code_problem_id": 366,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n     def index_max_element(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1083,
+            "code_problem_id": 366,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n   indexMaxElement(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

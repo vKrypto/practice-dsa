@@ -1,0 +1,64 @@
+{
+    "id": 349,
+    "description": "You are given an undirected graph represented as a list of nodes, each with an integer identifier and a list of its adjacent nodes. </br>Your task is to create a deep copy of this graph. A deep copy means that none of the nodes in the copied graph should reference any of the nodes in the original graph, but the graph's structure should be exactly the same.\n\n##### Graph Structure  \n###### The graphNode class structure is defined as:\n\n**`data:`** `an integer representing the node's identifier.`  \n**`neighbours:`** `a vector/list of pointers to adjacent nodes.`\n##### Input/Output Format\n##### Input:\n\n**`T:`** `Number of test cases.`  \n###### For each test case:\n**`N:`** `Number of nodes in the graph.`  \n**`M:`** `Number of edges in the graph.`                                                                          \n**`E`** `An M x 2 matrix where each row represents an edge connecting two nodes.`  \n##### `Output:`\n\n`For each test case, print true if the cloned graph retains the same structure as the original graph with new node references, else false.`\n##### `Sample Input:`\n```\n2\n5\n6\n1 2\n4 1\n2 4\n3 4\n5 2\n1 3\n3\n2\n1 2\n1 3\n```\n#### `Sample Output:`\n```\ntrue\ntrue\n\n```\n##### `Constraints`\n- `1 <= T <= 5`  \n- `2 <= N <= 100,000`  \n- `1 <= M <= min(N*(N-1)/2, 100,000) `\n- `Node indices are 1-based, i.e., 1 <= E[i][0], E[i][1] <= N`",
+    "title": "Clone Graph",
+    "default_testcase": {
+        "id": 7959,
+        "input": "2\n5 6\n1 2\n4 1\n2 4\n3 4\n5 2\n1 3\n3 2\n1 2\n1 3",
+        "expected_output": "true\ntrue\n",
+        "code_problem_id": 349,
+        "created_at": "2024-05-15T10:12:58.701Z",
+        "updated_at": "2024-05-15T10:12:58.701Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 2583,
+            "code_problem_id": 349,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*class Node {\npublic:\n    int val;\n    vector<Node*> neighbors;\n\n    Node(int _val) {\n        val = _val;\n    }\n};*/\nclass Solution {\npublic:\n    bool isSameStructure(Node* node1) {\n       \n    ",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2624,
+            "code_problem_id": 349,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class Node {\n    int val;\n    List<Node> neighbors;\n\n    Node(int _val) {\n        val = _val;\n        neighbors = new ArrayList<>();\n    }\n}*/\nclass Solution {\n    public boolean isSameStructure(Node node1) {\n      //Write your code here\n      ",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2625,
+            "code_problem_id": 349,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''class Node:\n    def __init__(self, _val):\n        self.val = _val\n        self.neighbors = []'''\nclass Solution:\n    def isSameStructure(self, node1):\n      ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2953,
+            "code_problem_id": 349,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class Node {\n    constructor(_val) {\n        this.val = _val;\n        this.neighbors = [];\n    }\n}\n*/\nclass Solution {\n    isSameStructure(node1) {\n      //Write your code here\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

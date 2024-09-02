@@ -1,0 +1,64 @@
+{
+    "id": 861,
+    "description": "You've been given an array `a` consisting of `n` distinct integers as a birthday present. However, the array might be too small for your liking, and to get a bigger array, you need to answer a question: Is it possible to sort the array in increasing order by reversing exactly one segment of the array?\n\n**Definitions:**\n- `A ` **segment** `of an array is a contiguous subsequence of the array.`\n- **Reversing** `a segment means that the elements of the segment are read in reverse order`.\n\n**Input Format:**\n- `The first line contains an integer `n` (1 \u2264 n \u2264 10^5) \u2014 the size of the array `a`.`\n- `The second line contains `n` distinct space-separated integers` `a[1], a[2], ..., a[n]` `(1 \u2264 a[i] \u2264 10^9), representing the elements of the array.`\n\n**Output Format:**\n- `Print \"yes\" or \"no\" (without quotes), depending on whether it is possible to sort the array by reversing one segment.`\n- `If the answer is \"yes\", also print two space-separated integers denoting the start and end indices of the segment to be reversed. The start index should not be greater than the end index. If there are multiple correct answers, you may print any of them.`\n\n**Examples:**\n\n**Example 1:**\n\n- #### Input:\n  ```\n  3\n  3 2 1\n  ```\n\n- #### Output:\n  ```\n  yes\n  1 3\n  ```\n\n**Example 2:**\n\n- #### Input:\n  ```\n  4\n  2 1 3 4\n  ```\n\n- #### Output:\n  ```\n  yes\n  1 2\n  ```\n\n**`Explanation of Examples:`**\n- **Example 1:** `The array can be sorted in ascending order by reversing the entire array.`\n- **Example 2:** `The array can be sorted by reversing the first two elements. The rest of the array is already in order.`",
+    "title": " Sort the Array",
+    "default_testcase": {
+        "id": 7836,
+        "input": "3\n3 2 1",
+        "expected_output": "yes\n1 3\n",
+        "code_problem_id": 861,
+        "created_at": "2024-05-13T11:51:17.853Z",
+        "updated_at": "2024-05-13T11:51:17.853Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2840,
+            "code_problem_id": 861,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int copysort(int n, vector<int>& a) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2841,
+            "code_problem_id": 861,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void copysort(int n, int[] a) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2842,
+            "code_problem_id": 861,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def copysort(self, n, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2843,
+            "code_problem_id": 861,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    copysort(n, a) {\n      //Write your code here",
+            "skeleton_class_end": "        }\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

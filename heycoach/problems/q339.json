@@ -1,0 +1,64 @@
+{
+    "id": 339,
+    "description": "Given a square binary matrix, find the length of the shortest path from the top-left cell to the destination  cell given as (x, y) moving only in up, down, left, right directions.\nconsider matrix as 0 indexed.\nYou must return -1 in case of no path.\n\n### Input Format\n```\nN : Number of rows\nM : Number of columns\nA : (N x M) Square Binary Matrix\nX : Destination row \nY : Destination column\n```\n\n### Example 1 \n\n### Input\n```CPP\n3 4\n1 0 0 0 \n1 1 0 1 \n0 1 1 1\n2 3\n``` \n\n### Output \n```CPP \n5\n``` \n#### Explanation:\nwe have to go from A[0][0] to A[2][3]. Minimun steps will be 5.\n\n\n\n### Constraints:\n```CPP\n1 <= n,m <= 100\n0 <= x < n\n0 <= y < m\n\n",
+    "title": "Shortest Path in Binary Matrix",
+    "default_testcase": {
+        "id": 2176,
+        "input": "3 4\n1 0 0 0 \n1 1 0 1 \n0 1 1 1\n2 3",
+        "expected_output": "5\n",
+        "code_problem_id": 339,
+        "created_at": "2023-09-20T21:14:29.815Z",
+        "updated_at": "2023-09-20T21:14:29.815Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 798,
+            "code_problem_id": 339,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n      int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y) {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1023,
+            "code_problem_id": 339,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def shortestDistance(self, N, M, A, X, Y):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1024,
+            "code_problem_id": 339,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n      public int shortestDistance(int N, int M, int[][] A, int X, int Y) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1025,
+            "code_problem_id": 339,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n      shortestDistance(N, M, A, X, Y) {\n",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

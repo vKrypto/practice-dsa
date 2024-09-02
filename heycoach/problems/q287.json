@@ -1,0 +1,21 @@
+{
+    "id": 287,
+    "description": "Coach is travelling on a path in the form of an array, A of size n. Where A[i] denotes the obstacles on the ith distance. There are N queries and the coach is curious to determine the answer to each  query.  For each query, there will be an integer k, such that k >= 0 and k< n determine the absolute difference of total obstacles the coach has crossed till kth index  and all the future obstacles he needs to cross. \n\nConstraints:\n\n1 <= n,N <= 10^5\n0<= k < n\n1 <= A[i] <= 10^9",
+    "title": "Obstacle Accumulation Difference Query",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 713,
+            "code_problem_id": 287,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass ObstacleAccumulationDifferenceQuery {\n    ObstacleAccumulationDifferenceQuery(vector<int>& obstacles) {\n    }\n};\n\n"
+        }
+    ]
+}

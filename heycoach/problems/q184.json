@@ -1,0 +1,8 @@
+{
+    "id": 184,
+    "description": "Brijesh is given an unsorted array *nums* , he has to print the smallest missing positive number.\nHe is not good in coding so he need your help  to do so.\n\n**You must implement an algorithm that runs in O(n) time and uses constant extra space.**\n\n####Input Format:\n*First line contains single integer *n* (size of the element)\n*second line contains n single space separated integers (element of the array)\n\n####Output Format:\n*Print the single integer i.e. the smallest missing positive integer\n\n####Example:\n**Input**:3\n1 2 0\n**Output**: 3 \n\n####Constraints:\n*1 <= n <= 10^5\n*-(2^31) <= nums[i] <= (2^31) - 1",
+    "title": "First Missing Positive",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

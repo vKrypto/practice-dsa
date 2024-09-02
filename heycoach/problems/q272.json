@@ -1,0 +1,64 @@
+{
+    "id": 272,
+    "description": "Given an integer array a[ ] of length n, you want to create an array res of length 2n \nwhere x res[i] == a[i] and res[i + n] == a[n-i-1] for 0 <= i < n (0-indexed).<br/>\n#### Hint: <br/> \n```res[ ] array is the concatenation of a[ ] and reverse of a[ ]. ```\n   \n**`Constraints`:**\n\n- `1 <= n <= 1000`\n\n- `-1000 <= nums[i] <= 1000`",
+    "title": "Reverse Array",
+    "default_testcase": {
+        "id": 1852,
+        "input": "3\n1 2 3",
+        "expected_output": "1 2 3 3 2 1 ",
+        "code_problem_id": 272,
+        "created_at": "2023-09-12T14:34:56.852Z",
+        "updated_at": "2023-09-12T14:34:56.852Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 681,
+            "code_problem_id": 272,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> reversearray(int n, vector<int>& a) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 682,
+            "code_problem_id": 272,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int[] reverseArray(int n, int[] a) {\n      //Write your code here",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 683,
+            "code_problem_id": 272,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def reverse_array(self, n, a):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 684,
+            "code_problem_id": 272,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    reverseArray(n, a) {",
+            "skeleton_class_end": " }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

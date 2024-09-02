@@ -1,0 +1,64 @@
+{
+    "id": 423,
+    "description": "You are given an array of integers of length N. Your task is to rearrange the numbers in such a way that the resulting array follows an alternate odd-even pattern. </br>***In other words, the first number in the rearranged array should be odd if the smallest element is odd, and the first number should be even if the smallest element is even. Subsequently, the second number should be even if the first number is odd, and the second number should be odd if the first number is even. This pattern continues alternately throughout the array.***\n\nAdditionally, the groups of odd and even numbers should be individually sorted in the resulting array. For example, if the given array is [2,9,5,13,8,12], and the smallest element is 2 (which is even), then the output should be [2,5,8,9,12,13], following the even-odd pattern and sorting the even and odd numbers separately.\n\n\n#### Input Format:\n\n- `The first line of input contains an integer N (1 \u2264 N \u2264 10^5), representing the length of the array.`\n- `The second line of input contains N space-separated integers A1, A2, ..., AN (-10^9 \u2264 Ai \u2264 10^9), representing the elements of the array.`\n#### Output Format:\n\n- `If it is possible to rearrange the array to achieve the alternate odd-even pattern while sorting the odd and even numbers individually, output the rearranged array on a single line, separated by spaces.`\n\n- `If it is not possible, output \"Not Possible\".`\n\n#### Sample Input:\n```\n6\n\n2 9 5 13 8 12\n```\n#### Sample Output:\n```\n2 5 8 9 12 13\n```\n#### Sample Input:\n\n```\n6\n\n1 11 7 2 8 16\n```\n\n#### Sample Output:\n\n```\n1 2 7 8 11 16\n```\n#### Sample Input:\n```\n2\n2 4\n```\n#### Sample Output:\n```\nNot Possible\n```\n\n#### Constraints:\n\n- `The input array will always contain at least one odd and one even number.`\n- `The length of the array will not exceed 10^5.`\n- `The elements of the array can range from -10^9 to 10^9.`",
+    "title": "Odd Even Alternative",
+    "default_testcase": {
+        "id": 8577,
+        "input": "10\n56 15 39 16 32 72 65 59 2 3",
+        "expected_output": "2 3 16 15 32 39 56 59 72 65 \n",
+        "code_problem_id": 423,
+        "created_at": "2024-06-10T10:00:42.674Z",
+        "updated_at": "2024-06-10T10:00:42.674Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1134,
+            "code_problem_id": 423,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    alternateOandE(ar) {\n      //Write your code here and print\n\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1135,
+            "code_problem_id": 423,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def alternateOandE(self, ar):\n        #Write your code here\n\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1136,
+            "code_problem_id": 423,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void alternateOandE(int[] ar) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1137,
+            "code_problem_id": 423,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    void AlternateOandE(int ar[], int n){\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

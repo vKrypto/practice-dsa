@@ -1,0 +1,40 @@
+{
+    "id": 143,
+    "description": "Given a `m * n` matrix of ones and zeros, return how many **square** submatrices have all ones.\n\n\n### Example 1 \n\n### Input\n```CPP\nmatrix =\n[\n  [0,1,1,1],\n  [1,1,1,1],\n  [0,1,1,1]\n]\n```\n\n\n### Output \n```CPP\n15\n```\n\n#### Explanation:\nThere are **10** squares of side 1.\nThere are **4** squares of side 2.\nThere is  **1** square of side 3.\nTotal number of squares = 10 + 4 + 1 = **15**.\n\n**Example 2:**\n\n**Input:**\n```CPP\nmatrix = \n[\n  [1,0,1],\n  [1,1,0],\n  [1,1,0]\n]\n```\n**Output:** \n```CPP\n7\n```\n#### Explanation:\nThere are **6** squares of side 1.  \nThere is **1** square of side 2. \nTotal number of squares = 6 + 1 = **7**.\n\n### Constraints:\n* 1 \u2264 n,m \u2264 100 \n*  0 \u2264 mat[i][j] <= 1 \n\n\n\n",
+    "title": "Count squares with all ones",
+    "default_testcase": {
+        "id": 1050,
+        "input": "3 4\n0 1 1 1\n1 1 1 1\n0 1 1 1",
+        "expected_output": "15",
+        "code_problem_id": 143,
+        "created_at": "2022-10-18T19:15:15.360Z",
+        "updated_at": "2022-10-18T19:15:15.360Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 206,
+            "code_problem_id": 143,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int countSquares(vector<vector<int>>& matrix) {\n        // write your code here\n    }\n};"
+        },
+        {
+            "id": 515,
+            "code_problem_id": 143,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int countSquares(int[][] matrix) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

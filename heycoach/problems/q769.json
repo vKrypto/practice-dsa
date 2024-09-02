@@ -1,0 +1,64 @@
+{
+    "id": 769,
+    "description": "Write a program that takes an integer N as input and prints all the prime numbers that lie in the range from 2 to N (inclusive). Each prime number should be printed on a separate line.\n\n#### `Input Format:`\n\n`The input consists of a single integer N.`\n\n#### `Output Format:`\n\n`The program outputs the prime numbers in the range from 2 to N (inclusive), with each prime number printed on a separate line.`\n\n#### `Sample Input:`\n\n```\n10\n```\n\n#### `Sample Output:`\n\n```\n2\n3\n5\n7\n```\n\n#### `Constraints:`\n\n- `1 <= N <= 1000`",
+    "title": "Prime Number in the Range",
+    "default_testcase": {
+        "id": 6840,
+        "input": "10",
+        "expected_output": "2\n3\n5\n7\n",
+        "code_problem_id": 769,
+        "created_at": "2024-03-23T12:42:59.199Z",
+        "updated_at": "2024-03-23T12:42:59.199Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2499,
+            "code_problem_id": 769,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void printPrimes(int N) {\n      //write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2500,
+            "code_problem_id": 769,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void printPrimes(int N) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2501,
+            "code_problem_id": 769,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def print_primes(self, N):\n      #Write your code here and print result",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2502,
+            "code_problem_id": 769,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static isPrime(num) {\n      //Write your code here and print result",
+            "skeleton_class_end": "\n    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

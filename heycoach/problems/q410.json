@@ -1,0 +1,57 @@
+{
+    "id": 410,
+    "description": "You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\n### Input:\n\nTwo linked lists, l1 and l2, representing two non-negative integers.\nEach linked list is represented by its head.\nThe number of nodes in each linked list is in the range [1, 100].\nThe value of each node is in the range [0, 9].\n\n### Output:\n\nReturn a linked list representing the sum of the two numbers.\n\n## Example:\n\nInput:\nl1 = [7,2,4,3]\nl2 = [5,6,4]\n\nOutput:\n[7,8,0,7]\n\n### Constraints:\n\n```\nThe number of nodes in each linked list is in the range [1, 100].\n0 <= Node.val <= 9\nIt is guaranteed that the list represents a number that does not have leading zeros.\n```\n\n",
+    "title": "Add Lists",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1044,
+            "code_problem_id": 410,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// class ListNode {\n//     constructor(val, next) {\n//         this.val = (val === undefined ? 0 : val);\n//         this.next = (next === undefined ? null : next);\n//     }\n// }\n\nconst addTwoNumbers = function(l1, l2) {\n    \n};\n"
+        },
+        {
+            "id": 1045,
+            "code_problem_id": 410,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "// class ListNode {\n// public:\n//     int val;\n//     ListNode* next;\n\n//     ListNode(int val) {\n//         this->val = val;\n//         next = nullptr;\n//     }\n\n//     ListNode() {\n//         val = 0;\n//         next = nullptr;\n//     }\n// };\n\nclass Solution {\npublic:\n    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n       \n    }\n};\n"
+        },
+        {
+            "id": 1046,
+            "code_problem_id": 410,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n// class ListNode {\n//     int val;\n//     ListNode next;\n\n//     ListNode(int val) {\n//         this.val = val;\n//         next = null;\n//     }\n\n//     ListNode() {\n//         val = 0;\n//         next = null;\n//     }\n// }\n\nclass Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        \n    }\n}\n"
+        },
+        {
+            "id": 1047,
+            "code_problem_id": 410,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "# Definition for singly-linked list.\nclass ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n\nclass Solution:\n    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n        # your code\n"
+        }
+    ]
+}

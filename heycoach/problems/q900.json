@@ -1,0 +1,64 @@
+{
+    "id": 900,
+    "description": "You are given a 0-indexed integer array `arr` of even length, and there is also an initially empty array `ans`. Alice and Bob are playing a game with the following rules:\n\n- In each round, Alice and Bob each make one move.\n- First, Alice removes the minimum element from `arr`.\n- Then, Bob removes the minimum element from the remaining `arr`.\n- Next, Bob appends the element he removed to `ans`.\n- After that, Alice appends the element she removed to `ans`.\n\nThe game continues in this manner until `arr` is empty. Return the resulting array `ans` after the game ends.\n\n**Example 1:** nums = [6,1,9,2,8,3]\nOutput: [2,1,6,3,9,8]\n\nExplanation:\n- In the first round, Alice removes 1 and then Bob removes 2. Bob appends 2 to ans, followed by Alice appending 1. So, ans = [2,1].\n- At the beginning of the second round, arr = [6,9,8,3]. Alice removes 3 and then Bob removes 6. Bob appends 6 to ans, followed by Alice appending 3. So, ans = [2,1,6,3].\n- In the final round, arr = [9,8]. Alice removes 8 and then Bob removes 9. Bob appends 9 to ans, followed by Alice appending 8. So, ans = [2,1,6,3,9,8].\n\nThus, the resulting array ans is [2,1,6,3,9,8].\n\n**Example 2:** arr = [8, 6, 2, 4]\nOutput: [4,2,8,6]\n\nExplanation:\n- Round 1, Alice removes 2 and then Bob removes 4. Bob appends 4 to ans followed by Alice appending 2. So, ans = [4,2].\n- Round 2, Alice removes 6 and then Bob removes 8. Bob appends 8 to ans followed by Alice appending 6. So, ans = [4,2,8,6].\nThus, the resulting array ans is [4,2,8,6].\n\n**Constraints:**\n\n- 2 <= arr.length <= 100\n- 1 <= arr[i] <= 100\n- arr.length % 2 == 0",
+    "title": "Lowest Value Challenge",
+    "default_testcase": {
+        "id": 8027,
+        "input": "4\n8 6 2 4",
+        "expected_output": "4 2 8 6 ",
+        "code_problem_id": 900,
+        "created_at": "2024-05-18T13:58:27.352Z",
+        "updated_at": "2024-05-18T13:58:27.352Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2993,
+            "code_problem_id": 900,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    vector<int> lowestValueChallenge(vector<int>& arr) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2994,
+            "code_problem_id": 900,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int[] lowestValueChallenge(int[] arr) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2995,
+            "code_problem_id": 900,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def lowestValueChallenge(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2996,
+            "code_problem_id": 900,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    lowestValueChallenge(arr) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

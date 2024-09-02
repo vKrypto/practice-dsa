@@ -1,0 +1,64 @@
+{
+    "id": 359,
+    "description": "Given a weighted directed graph with N nodes and E edges, you need to find the shortest path from a given source node to all other nodes in the graph using Dijkstra's algorithm. The nodes are indexed from 0 to N\u22121, and the graph's edges have non-negative weights.\n\n#### `Sample Input-1:`\n\n`The number of nodes (N). : 5`</br>\n`The number of edges (E). : 7`</br>\n`E triples of integers representing edges and their weights.`</br>\n`Source node (S). : 0 `</br>\n\n`\n\n`(0 1 2)`</br>\n`(0 2 4)`</br>\n`(1 2 1)`</br>\n`(1 3 7)`</br>\n`(2 3 3)`</br>\n`(2 4 5)`</br>\n`(3 4 2)`</br>\n\n`\n\n#### `Sample Output-1:`\n `Shortest distance from the source node to all other nodes.`</br>\n`(0 0)`</br>\n`(1 2)`</br>\n`(2 3)`</br>\n`(3 6)`</br>\n`(4 8)`\n`\n#### `Sample input-2:`\n```\n4 5\n0 1 1\n1 2 2\n2 3 3\n0 2 4\n1 3 5\n0\n```\n#### `Sample Output-2`\n```\n0 0\n1 1\n2 3\n3 6\n```\n#### `Constraints:`\n\n\n- `1 <= N <= 10^4 (number of nodes)`\n\n- `0 <= E <= 10^5 (number of edges)`\n\n- `0 <= u, v < N (node indices)`\n\n- `-10^9 <= weight <= 10^9 (edge weights)`\n\n- `The graph is guaranteed to be connected.`",
+    "title": "Dijkstras Algorithm",
+    "default_testcase": {
+        "id": 2226,
+        "input": "4 5\n0 1 1\n1 2 2\n2 3 3\n0 2 4\n1 3 5\n0",
+        "expected_output": "0 0\n1 1\n2 3\n3 6\n",
+        "code_problem_id": 359,
+        "created_at": "2023-09-25T22:40:03.231Z",
+        "updated_at": "2023-09-25T22:40:03.231Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 826,
+            "code_problem_id": 359,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    static vector<pair<int, int>> dijkstra(int n, const vector<vector<pair<int, int>>> &graph, int start) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 860,
+            "code_problem_id": 359,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class PriorityQueue {\n    constructor() {\n        this.queue = [];\n    }\n\n    enqueue(element) {\n        this.queue.push(element);\n        this.queue.sort((a, b) => a[0] - b[0]);\n    }\n\n    dequeue() {\n        return this.queue.shift();\n    }\n\n    isEmpty() {\n        return this.queue.length === 0;\n    }\n}\nDon't change this code\n*/\nclass Solution {\n    static dijkstra(n, edges, start) {\n        //Write your code here\n",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1099,
+            "code_problem_id": 359,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n      public static List<Map.Entry<Integer, Integer>> dijkstra(int n, List<int[]> edges, int start) {\n        //Write your code here\n",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1100,
+            "code_problem_id": 359,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def dijkstra(n, graph, start):\n       #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

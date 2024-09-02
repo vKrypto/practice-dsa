@@ -1,0 +1,8 @@
+{
+    "id": 72,
+    "description": "Given a characters array *letters* that is sorted in **non-decreasing** order and a character target, return the smallest character in the array that is larger than **target**.\n\n**Note that the letters wrap around*8.\n\n- For example, if target == 'z' and letters == ['a', 'b'], the answer is 'a'.\n\n#### Constraints:\n\n- 2 <= letters.length <= 10^4\n- letters[i] is a lowercase English letter.\n- letters is sorted in non-decreasing order.\n- letters contains at least two different characters.\n- target is a lowercase English letter.\n\n#### Input Format:\n- first line contains n (size of the character array)\n- second line contains n characters of the character array\n- third line contains the target character\n\n#### output Format:\n- print the output character ",
+    "title": "Find smallest character",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

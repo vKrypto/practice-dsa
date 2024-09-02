@@ -1,0 +1,64 @@
+{
+    "id": 167,
+    "description": "Given an 1D integer array **A** containing **N** distinct integers.\n\nFind the number of unique pairs of integers in the array whose XOR is equal to **B**.\n\n**NOTE:**\n\n-   Pair (a, b) and (b, a) is considered to be same and should be counted once.\n\n### Example 1 \n\n### Input\n```CPP\nA = [5, 4, 10, 15, 7, 6]\nB = 5\n```\n\n\n### Output \n```CPP\n1\n```\n### Explanation\n(10 ^ 15) = 5\n\n**Example 2:**\n\n**Input:**\n```CPP\nA = [3, 6, 8, 10, 15, 50]\nB = 5\n```\n**Output:** \n```CPP\n2\n```\n### Explanation\n(3 ^ 6) = 5 and (10 ^ 15) = 5\n\n\n### Constraints:\n* `1 <= N <= 10000`\n\n* `1 <= A[i], B <= 10000`\n",
+    "title": "Count pairs with given xor",
+    "default_testcase": {
+        "id": 1188,
+        "input": "6 5\n5 4 10 15 7 6",
+        "expected_output": "1",
+        "code_problem_id": 167,
+        "created_at": "2022-10-23T17:33:29.099Z",
+        "updated_at": "2022-10-23T17:33:29.099Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 239,
+            "code_problem_id": 167,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int solve(vector<int> &A, int B) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 1204,
+            "code_problem_id": 167,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    transformString(str, m, arr) {\n    }\n}\n"
+        },
+        {
+            "id": 1205,
+            "code_problem_id": 167,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, A, B):"
+        },
+        {
+            "id": 1206,
+            "code_problem_id": 167,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int solve(int[] A, int B) {\n    }\n}\n"
+        }
+    ]
+}

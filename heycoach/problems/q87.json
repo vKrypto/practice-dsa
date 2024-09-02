@@ -1,0 +1,64 @@
+{
+    "id": 87,
+    "description": "Given an **undirected graph** with n vertices and m edges, check whether it contains any cycle or not.\n**NOTE:** The adjacency list denotes the edges of the graph where adj[i] stores all other vertices to which ith vertex is connected.\n\n### Example 1 \n\n### Input\nn = 5, m = 5\nadj = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}}\n\n[![cycle-in-graph-tc1.png](https://i.postimg.cc/L8t3d7TH/cycle-in-graph-tc1.png)](https://postimg.cc/YvSWYdZV)\n### Output \n```CPP \n1\n``` \n#### Explanation:\n1->2->3->4->1 is a cycle.\n### Example 2 \n\n### Input\nn = 6, m = 4\nadj = {{1},{0,2},{1},{4,5},{3},{3}} \n[![cycle-in-graph-tc2.png](https://i.postimg.cc/CKQ66X7c/cycle-in-graph-tc2.png)](https://postimg.cc/DW1gSCtG)\n### Output \n```CPP \n0\n``` \n#### Explanation:\nNo cycle in the graph.\n### Constraints:\n\n* 1 <= n,m <= 1000",
+    "title": "Detect a cycle in an undirected graph",
+    "default_testcase": {
+        "id": 627,
+        "input": "5 5\n0 1\n1 2\n2 3\n3 4\n4 1",
+        "expected_output": "1\n",
+        "code_problem_id": 87,
+        "created_at": "2022-10-03T10:58:49.576Z",
+        "updated_at": "2022-10-03T10:58:49.576Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 125,
+            "code_problem_id": 87,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    bool containsCycle(int n, int m, vector<vector<int>>& adj) {\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 494,
+            "code_problem_id": 87,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": " class Solution {\n    public boolean containsCycle(int n, int m, List<List<Integer>> adj) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 613,
+            "code_problem_id": 87,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def containsCycle(self, n, m, adj):\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 615,
+            "code_problem_id": 87,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    containsCycle(n, m, adj) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

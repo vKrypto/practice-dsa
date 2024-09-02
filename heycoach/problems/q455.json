@@ -1,0 +1,64 @@
+{
+    "id": 455,
+    "description": "You're an adventurous spelunker exploring a treasure-filled cavern. Each chamber holds a precious gem marked with an integer value. Your goal? Maximize your haul by strategically collecting these gems!\n\nExplore the cave, represented by an integer array nums. Each element nums[i] represents the value of a gem in the chamber i.\nYou can claim a gem (delete nums[i]) and earn points equal to its value. But there's a catch! When you claim a gem:\nAll gems in other chambers with values one less than your chosen gem (i.e., nums[j] = nums[i] - 1) crumble instantly and disappear.\nAll gems in other chambers with values one more than your chosen gem (i.e., nums[j] = nums[i] + 1) also crumble and vanish.\nYour mission is to maximize the total points you earn by strategically claiming gems. You can claim any gem any number of times (until it's gone!).\n\n#### `Input/Output Format Examples:`\n\n#### `Input:` \n`[3, 4, 2] (Cave chambers with gem values)`\n\n#### `Output:` \n`6 (Maximum points earned by strategically claiming gems)`\n\n### `Explanation:` \n`You can claim:`\n\n```\nGem 4 from chamber 1, earning 4 points and causing chambers 2 and 3 (containing gems 3 and 5) to crumble.\nGem 2 from the remaining chamber, earning 2 points.\n\n```\n\n#### `Input:1`\n\nA single line containing an integer array nums separated by spaces or commas.\nEach element in nums is an integer between 1 and 10^4 (inclusive).\nThe length of nums (n) must be between 1 and 2 * 10^4 (inclusive).\n#### `Output:`\n\nreturn a single integer representing the maximum number of points you can earn by claiming gems in the cave according to the described rules.\n   ####    `Constraints:` \n\n\n----------\n\n\n\n- `1 <= n <= 2 * 10^4`\n\n- `1 <= nums[i] <= 10^4 for all i in [0, n-1]`\n",
+    "title": "Maximize Points",
+    "default_testcase": {
+        "id": 5668,
+        "input": "10\n969 845 279 806 906 679 34 651 767 971",
+        "expected_output": "6907\n",
+        "code_problem_id": 455,
+        "created_at": "2024-02-17T06:03:26.320Z",
+        "updated_at": "2024-02-17T06:03:26.320Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1292,
+            "code_problem_id": 455,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int deletePoints(vector<int>& nums) {\n      //Write your code here\n        \n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": "\n\n"
+        },
+        {
+            "id": 1335,
+            "code_problem_id": 455,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int deletePoints(int[] nums) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1336,
+            "code_problem_id": 455,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def deletePoints(self, nums):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1370,
+            "code_problem_id": 455,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/**\n * @param {number[]} nums\n * @return {number}\n */\nclass Solution {\n    deletePoints(nums) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

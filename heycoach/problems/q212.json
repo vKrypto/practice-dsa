@@ -1,0 +1,64 @@
+{
+    "id": 212,
+    "description": "Given an array **arr** of size **n** containing **non-negative** integers, the task is to divide it into two sets **S1** and **S2** such that the absolute difference between their sums is minimum and find the **minimum** difference\n### Example 1 \n\n### Input\n```CPP\nn = 4, arr = [1, 6, 11, 5]\n```\n### Output \n```CPP\n1\n```\n### Explanation\nSubset1 = {1, 5, 6}, sum of Subset1 = 12 \nSubset2 = {11}, sum of Subset2 = 11\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 2, arr = [1, 4]\n```\n**Output:** \n```CPP\n3\n```\n\n### Input Format\n```\n\nThe first line of input contains integer 'n' denoting the size of the array.\n\nThe second line of the input contains 'n' space-separated integers denoting the elements of the array 'arr'.\n```\n### Output Format\n```\nReturn the minimum possible absolute difference. \n```\n\n\n### Constraints:\n-   `1 <= arr.length <= 200`\n-   `1 <=arr[i] <= 100`",
+    "title": "Minimum subset difference partition",
+    "default_testcase": {
+        "id": 1507,
+        "input": "4\n1 6 11 5",
+        "expected_output": "1",
+        "code_problem_id": 212,
+        "created_at": "2022-10-30T14:52:27.450Z",
+        "updated_at": "2022-10-30T14:52:27.450Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 317,
+            "code_problem_id": 212,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  int minDifference(int arr[], int n)  {\n    //Write your code here;",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 590,
+            "code_problem_id": 212,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  minDifference(arr, n) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 591,
+            "code_problem_id": 212,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minDifference(self, arr, n):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 592,
+            "code_problem_id": 212,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public int minDifference(int[] arr, int n) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

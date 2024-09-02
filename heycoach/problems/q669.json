@@ -1,0 +1,64 @@
+{
+    "id": 669,
+    "description": "You have given an array **arr** consisting of **N distinct** integers. You have to generate all the **unique** subsets of this array and return the list of list of subsets in **lexographically increasing order**. \n\n### Example 1 \n\n### Input\n```CPP\narr = [1,2,3]\n``` \n### Output \n```CPP \n[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]\n``` \n#### Explanation:\n\nAbove are all the unique subsets for the given array [1,2,3] in lexographically increasing order.\n**Note**: You have to consider empty subset as well.\n\n### Example 2 \n\n### Input\n```CPP\narr = [1,2]\n``` \n### Output \n```CPP \n[[],[1],[1,2],[2]]\n``` \n#### Explanation:\n\nAbove are all the unique subsets for the array [1,2]\n\n\n### Constraints:\n\n* 1 <= N <= 12\n* 1 <= arr[i] <= 100\n\n\n\n\n\n",
+    "title": "Generate subsets",
+    "default_testcase": {
+        "id": 4447,
+        "input": "8\n49 45 38 24 1 41 39 43 ",
+        "expected_output": "\n1 \n1 39 \n1 39 43 \n1 41 \n1 41 39 \n1 41 39 43 \n1 41 43 \n1 43 \n24 \n24 1 \n24 1 39 \n24 1 39 43 \n24 1 41 \n24 1 41 39 \n24 1 41 39 43 \n24 1 41 43 \n24 1 43 \n24 39 \n24 39 43 \n24 41 \n24 41 39 \n24 41 39 43 \n24 41 43 \n24 43 \n38 \n38 1 \n38 1 39 \n38 1 39 43 \n38 1 41 \n38 1 41 39 \n38 1 41 39 43 \n38 1 41 43 \n38 1 43 \n38 24 \n38 24 1 \n38 24 1 39 \n38 24 1 39 43 \n38 24 1 41 \n38 24 1 41 39 \n38 24 1 41 39 43 \n38 24 1 41 43 \n38 24 1 43 \n38 24 39 \n38 24 39 43 \n38 24 41 \n38 24 41 39 \n38 24 41 39 43 \n38 24 41 43 \n38 24 43 \n38 39 \n38 39 43 \n38 41 \n38 41 39 \n38 41 39 43 \n38 41 43 \n38 43 \n39 \n39 43 \n41 \n41 39 \n41 39 43 \n41 43 \n43 \n45 \n45 1 \n45 1 39 \n45 1 39 43 \n45 1 41 \n45 1 41 39 \n45 1 41 39 43 \n45 1 41 43 \n45 1 43 \n45 24 \n45 24 1 \n45 24 1 39 \n45 24 1 39 43 \n45 24 1 41 \n45 24 1 41 39 \n45 24 1 41 39 43 \n45 24 1 41 43 \n45 24 1 43 \n45 24 39 \n45 24 39 43 \n45 24 41 \n45 24 41 39 \n45 24 41 39 43 \n45 24 41 43 \n45 24 43 \n45 38 \n45 38 1 \n45 38 1 39 \n45 38 1 39 43 \n45 38 1 41 \n45 38 1 41 39 \n45 38 1 41 39 43 \n45 38 1 41 43 \n45 38 1 43 \n45 38 24 \n45 38 24 1 \n45 38 24 1 39 \n45 38 24 1 39 43 \n45 38 24 1 41 \n45 38 24 1 41 39 \n45 38 24 1 41 39 43 \n45 38 24 1 41 43 \n45 38 24 1 43 \n45 38 24 39 \n45 38 24 39 43 \n45 38 24 41 \n45 38 24 41 39 \n45 38 24 41 39 43 \n45 38 24 41 43 \n45 38 24 43 \n45 38 39 \n45 38 39 43 \n45 38 41 \n45 38 41 39 \n45 38 41 39 43 \n45 38 41 43 \n45 38 43 \n45 39 \n45 39 43 \n45 41 \n45 41 39 \n45 41 39 43 \n45 41 43 \n45 43 \n49 \n49 1 \n49 1 39 \n49 1 39 43 \n49 1 41 \n49 1 41 39 \n49 1 41 39 43 \n49 1 41 43 \n49 1 43 \n49 24 \n49 24 1 \n49 24 1 39 \n49 24 1 39 43 \n49 24 1 41 \n49 24 1 41 39 \n49 24 1 41 39 43 \n49 24 1 41 43 \n49 24 1 43 \n49 24 39 \n49 24 39 43 \n49 24 41 \n49 24 41 39 \n49 24 41 39 43 \n49 24 41 43 \n49 24 43 \n49 38 \n49 38 1 \n49 38 1 39 \n49 38 1 39 43 \n49 38 1 41 \n49 38 1 41 39 \n49 38 1 41 39 43 \n49 38 1 41 43 \n49 38 1 43 \n49 38 24 \n49 38 24 1 \n49 38 24 1 39 \n49 38 24 1 39 43 \n49 38 24 1 41 \n49 38 24 1 41 39 \n49 38 24 1 41 39 43 \n49 38 24 1 41 43 \n49 38 24 1 43 \n49 38 24 39 \n49 38 24 39 43 \n49 38 24 41 \n49 38 24 41 39 \n49 38 24 41 39 43 \n49 38 24 41 43 \n49 38 24 43 \n49 38 39 \n49 38 39 43 \n49 38 41 \n49 38 41 39 \n49 38 41 39 43 \n49 38 41 43 \n49 38 43 \n49 39 \n49 39 43 \n49 41 \n49 41 39 \n49 41 39 43 \n49 41 43 \n49 43 \n49 45 \n49 45 1 \n49 45 1 39 \n49 45 1 39 43 \n49 45 1 41 \n49 45 1 41 39 \n49 45 1 41 39 43 \n49 45 1 41 43 \n49 45 1 43 \n49 45 24 \n49 45 24 1 \n49 45 24 1 39 \n49 45 24 1 39 43 \n49 45 24 1 41 \n49 45 24 1 41 39 \n49 45 24 1 41 39 43 \n49 45 24 1 41 43 \n49 45 24 1 43 \n49 45 24 39 \n49 45 24 39 43 \n49 45 24 41 \n49 45 24 41 39 \n49 45 24 41 39 43 \n49 45 24 41 43 \n49 45 24 43 \n49 45 38 \n49 45 38 1 \n49 45 38 1 39 \n49 45 38 1 39 43 \n49 45 38 1 41 \n49 45 38 1 41 39 \n49 45 38 1 41 39 43 \n49 45 38 1 41 43 \n49 45 38 1 43 \n49 45 38 24 \n49 45 38 24 1 \n49 45 38 24 1 39 \n49 45 38 24 1 39 43 \n49 45 38 24 1 41 \n49 45 38 24 1 41 39 \n49 45 38 24 1 41 39 43 \n49 45 38 24 1 41 43 \n49 45 38 24 1 43 \n49 45 38 24 39 \n49 45 38 24 39 43 \n49 45 38 24 41 \n49 45 38 24 41 39 \n49 45 38 24 41 39 43 \n49 45 38 24 41 43 \n49 45 38 24 43 \n49 45 38 39 \n49 45 38 39 43 \n49 45 38 41 \n49 45 38 41 39 \n49 45 38 41 39 43 \n49 45 38 41 43 \n49 45 38 43 \n49 45 39 \n49 45 39 43 \n49 45 41 \n49 45 41 39 \n49 45 41 39 43 \n49 45 41 43 \n49 45 43 \n",
+        "code_problem_id": 669,
+        "created_at": "2024-01-27T16:15:42.209Z",
+        "updated_at": "2024-01-27T16:15:42.209Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2096,
+            "code_problem_id": 669,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\tvoid rec(int idx, vector<int> &subset, vector<vector<int>> &subsets, vector<int> &nums) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2097,
+            "code_problem_id": 669,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<Integer>> generateSubsets(int[] nums) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2098,
+            "code_problem_id": 669,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, inp, out, res) :",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2099,
+            "code_problem_id": 669,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    generateSubsets(arr) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

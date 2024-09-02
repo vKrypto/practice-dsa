@@ -1,0 +1,64 @@
+{
+    "id": 414,
+    "description": "Given a binary tree, find the maximum sum of a subarray in its top view. The top view of a binary tree is the set of nodes visible when the tree is viewed from the top.\n\nA subarray in the top view is defined as the sum of values of nodes visible from the top at any specific horizontal distance.\n\n**`Input`**:\n\n`The function takes a pointer to the root of the binary tree root (1 <= nodes <= 10^4).`</br>\n**`Output`**:\n\n`Return an integer representing the maximum sum of a subarray in the top view.`</br>\n\n**`Example`**:\n\n\n#### `Input:`\n```\n      1\n     /\\\n    2   3\n   / \\  / \\\n  4   5 6   7\n[1 2 3 4 5 6 7 -1 -1 -1 -1 -1 -1 -1 -1]\n\n```\n\n#### `Output:`</br> \n`17`\n\n#### `Explanation`: </br>\n`The top view is [4, 2, 1, 3, 7], and the maximum sum subarray is [4, 2, 1, 3, 7] with a sum of 17.`\n\n**`Note`**:\n\n- `Nodes of the binary tree have values in the range [-1000, 1000].`</br>\n- `The binary tree will not be empty.`</br>\n- `Ensure that your solution has a time complexity of O(N), where N is the number of nodes in the binary tree.`",
+    "title": "Maximum Sum of a Subarray in Topview of Binary Tree",
+    "default_testcase": {
+        "id": 2949,
+        "input": "1 2 3 4 -1 -1 5 -1 -1 6 7 -1 -1 -1 -1",
+        "expected_output": "22\n",
+        "code_problem_id": 414,
+        "created_at": "2023-12-13T14:11:29.835Z",
+        "updated_at": "2023-12-13T14:11:29.835Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1166,
+            "code_problem_id": 414,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n    int maxSumTopView(TreeNode* root) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1167,
+            "code_problem_id": 414,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n  public int maxSumTopView(TreeNode root) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1168,
+            "code_problem_id": 414,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n  def maxSumTopView(self, root):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1169,
+            "code_problem_id": 414,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution{\n   maxSumTopView(root) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

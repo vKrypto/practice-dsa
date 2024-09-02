@@ -1,0 +1,64 @@
+{
+    "id": 974,
+    "description": "In a project, you have a list of required skills req_skills, and a list of people. The i-th person people[i] contains a list of skills that the person has.\n\nConsider a sufficient team: a set of people such that for every required skill in req_skills, there is at least one person in the team who has that skill. We can represent these teams by the index of each person.\n\nFor example, team = [0, 1, 3] represents the people with skills people[0], people[1], and people[3].\nReturn any sufficient team of the smallest possible size, represented by each person's index. You may return the answer in any order.\n\nIt is guaranteed that an answer exists.\n\nExample 1:\n\nInput: \n\nEnter the number of required skills: 3\nEnter the required skills: java nodejs reactjs\nEnter the number of people: 3\nEnter the number of skills for person 0: 1\nEnter the skills for person 0: java\nEnter the number of skills for person 1: 1\nEnter the skills for person 1: nodejs\nEnter the number of skills for person 2: 2\nEnter the skills for person 2: nodejs reactjs\n\nOutput: \n\n[0,2]\n\nExample 2:\n\nInput: req_skills = [\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"], people = [[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]\n\nEnter the number of required skills: 6\nEnter the required skills: algorithms math java reactjs csharp aws\nEnter the number of people: 6\nEnter the number of skills for person 0: 3\nEnter the skills for person 0: algorithms math java\nEnter the number of skills for person 1: 3\nEnter the skills for person 1: algorithms math reactjs\nEnter the number of skills for person 2: 3\nEnter the skills for person 2: java csharp was\nEnter the number of skills for person 3: 2\nEnter the skills for person 3: reactjs csharp\nEnter the number of skills for person 4: 2\nEnter the skills for person 4: csharp math\nEnter the number of skills for person 5: 2\nEnter the skills for person 5: aws java\n\nOutput: [1,2]\n\nConstraints:\n\n1 <= req_skills.length <= 16\n\n1 <= req_skills[i].length <= 16\n\nreq_skills[i] consists of lowercase English letters.\n\nAll the strings of req_skills are unique.\n\n1 <= people.length <= 60\n\n0 <= people[i].length <= 16\n\n1 <= people[i][j].length <= 16\n\npeople[i][j] consists of lowercase English letters.\n\nAll the strings of people[i] are unique.\n\nEvery skill in people[i] is a skill in req_skills.\n\nIt is guaranteed that a sufficient team exists.",
+    "title": "Minimum Skill Coverage Team",
+    "default_testcase": {
+        "id": 8498,
+        "input": "3\nskill1\nskill2\nskill3\n3\n1\nskill1\n1\nskill2\n1\nskill3",
+        "expected_output": "0 1 2 \n",
+        "code_problem_id": 974,
+        "created_at": "2024-05-31T12:01:21.021Z",
+        "updated_at": "2024-05-31T12:01:21.021Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3249,
+            "code_problem_id": 974,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int m, n;\n    int target_mask;\n    vector<int> result;\n    vector<vector<int>> t;\n    \n    void solve(vector<int> &people, int idx, vector<int> &temp, int mask) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3250,
+            "code_problem_id": 974,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int m, n;\n    int target_mask;\n    List<Integer> result = new ArrayList<>();\n    int[][] t;\n    \n    void solve(List<Integer> people, int idx, List<Integer> temp, int mask) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3251,
+            "code_problem_id": 974,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def __init__(self):\n        self.target_mask = 0\n        self.result = []\n        self.t = []\n\n    def solve(self, people, idx, temp, mask):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3252,
+            "code_problem_id": 974,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.target_mask = 0;\n        this.result = [];\n        this.t = [];\n    }\n\n    solve(people, idx, temp, mask) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

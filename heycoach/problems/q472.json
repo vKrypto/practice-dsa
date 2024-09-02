@@ -1,0 +1,64 @@
+{
+    "id": 472,
+    "description": "You are given the head of a linked list. Determine whether the linked list contains a cycle.\n\nA cycle in a linked list occurs when a node is visited more than once while traversing the list by continuously following the next pointer. The linked list is guaranteed to be a valid, connected structure, and the tail's next pointer may point to either null or a valid node in the list.\n\nReturn true if there is a cycle in the linked list; otherwise, return false.\n\nThe number of nodes in the list is within the range **[0, 10^4**], and the value of each node is within the range** [-10^5, 10^5]**. The variable pos is either -1, indicating no cycle (tail's next pointer is null), or a valid index in the linked list where the tail's next pointer connects to.\n\n**Example**:</br>\n**Input**: head = [1, 2], pos = 0</br>\n**Output**: true</br>\n**Explanation**:\nThe linked list contains a cycle, where the node with value 2 points back to the node with value 1, forming a cycle.\n\n**Input**: head = [1], pos = -1</br>\n**Output**: false\n\n\n",
+    "title": "Linked list cycle",
+    "default_testcase": {
+        "id": 3185,
+        "input": "5\n1 2 5 6 3\n2",
+        "expected_output": "true\n",
+        "code_problem_id": 472,
+        "created_at": "2023-12-26T16:42:00.046Z",
+        "updated_at": "2023-12-26T16:42:00.046Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1319,
+            "code_problem_id": 472,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    bool isCyclePresent(ListNode* head) {\n       \n    }\n};\n"
+        },
+        {
+            "id": 1320,
+            "code_problem_id": 472,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution:\n    def isCyclePresent(self, head):\n       "
+        },
+        {
+            "id": 1321,
+            "code_problem_id": 472,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": " class Solution {\n    public boolean isCyclePresent(ListNode head) {\n       \n    }\n}\n"
+        },
+        {
+            "id": 1322,
+            "code_problem_id": 472,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    isCyclePresent(head) {\n       \n    }\n}"
+        }
+    ]
+}

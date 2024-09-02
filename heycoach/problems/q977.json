@@ -1,0 +1,64 @@
+{
+    "id": 977,
+    "description": "Given a string text and a list of words wordList, add spaces in text to construct sentences where each word is a valid word from wordList. Return all such possible sentences in any order.\n\nNote that the same word in the list may be used multiple times in the segmentation.\n\n**Examples:**</br>\n**Example 1:**\n\n**Input**\n```\ntext = bookstorelover\nwordList = book  store lover bookstore love storelover\n```\n**Output:**\n```\n[\"book store lover\", \"bookstore lover\"]\n```\n**Example 2:**\n\n**Input:**\n```\ntext = hellotherefriend\nwordList = hello there friend hellothere \n```\n**Output:**\n```\n[\"hello there friend\", \"hellothere friend\"]\nExplanation: Note that you are allowed to reuse a word from the list.\n```\n\n**Constraints:**</br>\n1 <= text.length <= 20</br>\n1 <= wordList.length <= 1000</br>\n1 <= wordList[i].length <= 10</br>\ntext and wordList[i] consist of only lowercase English letters.</br>\nAll the words in wordList are unique.</br>\nThe input is generated such that the length of the answer doesn't exceed 10^5.\n",
+    "title": "Sentence Construction from Dictionary Words",
+    "default_testcase": {
+        "id": 8535,
+        "input": "hellotherefriend\nhello there friend hellothere ",
+        "expected_output": "hello there friend\nhellothere friend\n",
+        "code_problem_id": 977,
+        "created_at": "2024-06-04T14:09:59.835Z",
+        "updated_at": "2024-06-04T14:09:59.835Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3264,
+            "code_problem_id": 977,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n vector<string> wordBreak(string s, vector<string>& wordDict) {\n       ",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3265,
+            "code_problem_id": 977,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public List<String> wordBreak(String s, List<String> wordDict) {\n        ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3266,
+            "code_problem_id": 977,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def wordBreak(self, s, wordDict):\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3267,
+            "code_problem_id": 977,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    wordBreak(s, wordDict) {\n        ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

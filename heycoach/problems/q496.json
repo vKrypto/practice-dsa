@@ -1,0 +1,64 @@
+{
+    "id": 496,
+    "description": "Given an array of N positive integers, return the sum of k largest elements from the array using Heap.\n\n**Example 1**\n```\nSample Input:\n\n5 3\n\n3 11 2 4 6\n\nSample Output:\n\n21\n\nExplanation : \n\nSince we have to find the sum of k largest which in this case is 3 and the elements are 11,6,4 whose sum is equal to 21, thus the output is 21.\n```\n\n**Input Format:**\n\n```\nFirst line contains two space separated integers representing the size of array and the number of largest elements from array whose sum needs to be figured out.\n```\n\n**Output Format:**\n\n```\nReturn a single integer representing the sum of k largest elements.\n```\n\n\n\n**Constraints:**\n\n`1 \u2264 N \u2264 10^4`\n\n`K  \u2264  N`\n\n`1 \u2264 array[i] \u2264 10^5`",
+    "title": "K largest using Heap",
+    "default_testcase": {
+        "id": 3312,
+        "input": "7 4\n9 20 2 18 17 10 1",
+        "expected_output": "65\n",
+        "code_problem_id": 496,
+        "created_at": "2024-01-02T03:43:14.156Z",
+        "updated_at": "2024-01-02T03:43:14.156Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1450,
+            "code_problem_id": 496,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      kSum(v, N, K) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1451,
+            "code_problem_id": 496,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\n\nclass Solution{\n    public:\n      \n    int ksum(int v[], int N, int K)\n    {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1452,
+            "code_problem_id": 496,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    int kSum(int[] v, int N, int K) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1453,
+            "code_problem_id": 496,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\n\nclass Solution:\n    def k_sum(self, v, N, K):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

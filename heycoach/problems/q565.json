@@ -1,0 +1,64 @@
+{
+    "id": 565,
+    "description": "Given an array of length N, you need to find and return the sum of all elements of the array recursively.\n\n\n#### `Sample Input `:\n```\n3  \n3 5 6\n```\n#### `Sample Output :`\n```\n14\n```\n#### `Constraints :`\n- `1 <= N <= 10^3`",
+    "title": "Sum of Array",
+    "default_testcase": {
+        "id": 6595,
+        "input": "5\n10 20 30 40 50",
+        "expected_output": "150\n",
+        "code_problem_id": 565,
+        "created_at": "2024-03-16T11:30:38.230Z",
+        "updated_at": "2024-03-16T11:30:38.230Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2418,
+            "code_problem_id": 565,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int sumOfArray(vector<int>& nums, int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2419,
+            "code_problem_id": 565,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static int sumOfArray(int[] arr, int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2420,
+            "code_problem_id": 565,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def sum_of_array(self, arr):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2421,
+            "code_problem_id": 565,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static sumOfArray(arr, n) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

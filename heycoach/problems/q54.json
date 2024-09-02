@@ -1,0 +1,64 @@
+{
+    "id": 54,
+    "description": "Given two strings s and t , return the **minimum window substring** of s such that every character in t **(including duplicates)** is included in the window. If there is no such substring, return the empty string \"\".\n In case there are multiple such windows of same length, return the one with the least starting index. \nA substring is a contiguous sequence of characters within the string.\n### Example 1 \n\n### Input\n```CPP\ns = \"adobecodebanc\", t = \"abc\"\n``` \n### Output \n```CPP \nbanc\n``` \n#### Explanation:\n\nThe minimum window substring \"banc\" includes 'a', 'b', and 'c' from string t.\n\n### Example 2 \n\n### Input\n```CPP\ns = abcadba, t = adca\n``` \n### Output \n```CPP \nabcad\n``` \n#### Explanation:\n\nThe minimum window substring \"abcad\" includes 'a', 'a','c' and 'd' from string t.\n**Note**: Here string t contains 2 occurences of character 'a' so the minimum window substring should also contain **atleast** 2 occurences of character 'a'\n\n\n### Constraints:\n\n* 1 <= s.length,t.length <= 100\n* s and t contains only lowercase English letters.\n",
+    "title": "Smallest window substring ",
+    "default_testcase": {
+        "id": 361,
+        "input": "abcadba\nadca",
+        "expected_output": "abcad\n",
+        "code_problem_id": 54,
+        "created_at": "2022-09-28T05:36:22.231Z",
+        "updated_at": "2022-09-28T05:36:22.231Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 81,
+            "code_problem_id": 54,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n\tstring minWindow(string s, string t) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 472,
+            "code_problem_id": 54,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String minWindow(String s, String t) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2381,
+            "code_problem_id": 54,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minWindow(self, s, t):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2382,
+            "code_problem_id": 54,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minWindow(s, t) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

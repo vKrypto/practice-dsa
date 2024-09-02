@@ -1,0 +1,64 @@
+{
+    "id": 934,
+    "description": "Given a binary tree. Find the size of its largest subtree that is a Binary Search Tree.\nNote: Here Size is equal to the number of nodes in the subtree.\n\nExample 1:\n\nInput:\n\n        1\n       /  \\\n      4    4\n     /      \\\n    6         8\nOutput: 1\nExplanation: There's no sub-tree with size\ngreater than 1 which forms a BST. All the\nleaf Nodes are the BSTs with size equal\nto 1.\nExample 2:\n\nInput: 6 6 3 N 2 9 3 N 8 8 2\n\n            6\n        /       \\\n       6         3\n        \\      /   \\\n         2    9     3\n          \\  /  \\\n          8 8    2 \nOutput: 2\nExplanation: The following sub-tree is a\nBST of size 2: \n\n       2\n    /    \\ \n    N      8\nYour Task:\nYou don't need to read input or print anything. Your task is to complete the function largestBst() that takes the root node of the Binary Tree as its input and returns the size of the largest subtree which is also the BST. If the complete Binary Tree is a BST, return the size of the complete Binary Tree. \n\nExpected Time Complexity: O(N).\nExpected Auxiliary Space: O(Height of the BST).\n\nConstraints:\n1 \u2264 Number of nodes \u2264 10^5\n1 \u2264 Data of a node \u2264 10^6\n\n",
+    "title": "Finding the Size of the Largest Binary Search Tree (BST)",
+    "default_testcase": {
+        "id": 8224,
+        "input": "6\n3 4 2 1 3 4",
+        "expected_output": "2",
+        "code_problem_id": 934,
+        "created_at": "2024-05-23T09:53:40.335Z",
+        "updated_at": "2024-05-23T09:53:40.335Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3101,
+            "code_problem_id": 934,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n      int largestBst(Node *root){",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3102,
+            "code_problem_id": 934,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def largest_bst(self, root):\n      #Write your code here\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3103,
+            "code_problem_id": 934,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int largestBst(Node root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3104,
+            "code_problem_id": 934,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    largestBst(root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

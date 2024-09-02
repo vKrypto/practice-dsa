@@ -1,0 +1,64 @@
+{
+    "id": 227,
+    "description": "You are given two  **0-indexed**  arrays  `nums`  and  `cost`  consisting each of  `n`  **positive**  integers.\n\nYou can do the following operation  **any**  number of times:\n\n-   Increase or decrease  **any**  element of the array  `nums`  by  `1`.\n\nThe cost of doing one operation on the  `ith`  element is  `cost[i]`.\n\nReturn  _the  **minimum**  total cost such that all the elements of the array_ `nums` _become  **equal**_.\n\n### Explanation\n\n\n`We can make all the elements equal to 2 in the following way:`\n-  `Increase the 0th element one time. The cost is 2.`\n-  `Decrease the 1st element one time. The cost is 3.`\n-  `Decrease the 2nd element three times. The cost is 1 + 1 + 1 = 3.`\n`The total cost is 2 + 3 + 3 = 8.`\n`It can be shown that we cannot make the array equal with a smaller cost.`\n\n### Input Format\n\n- `1st Line contains n integers for the array nums`\n- `2nd Line contains n integers for the arrat cost`\n\n### Output Format\n\n-  `A single integer denoting the minimum total cost`\n\n\n**Sample Input 1:**\n```\n4\n1 3 5 2\n2 3 1 14\n```\n\n**Sample Output 1:**\n```\n8\n```\n\n\n\n\n\n\n### Constraints:\n-   `n == nums.length == cost.length`\n-   `1 <= n <= 10000`\n-   `1 <= nums[i], cost[i] <= 1000000`",
+    "title": "Minimize the cost to make all elements in array equal",
+    "default_testcase": {
+        "id": 1614,
+        "input": "4\n1 3 5 2\n2 3 1 14",
+        "expected_output": "8",
+        "code_problem_id": 227,
+        "created_at": "2022-11-01T11:44:10.154Z",
+        "updated_at": "2022-11-01T11:44:10.154Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 326,
+            "code_problem_id": 227,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n    int minCost(vector<int>& nums, vector<int>& cost) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 587,
+            "code_problem_id": 227,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:  \n    def minCost(self, nums: List[int], costs: List[int]) -> int:\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 588,
+            "code_problem_id": 227,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minCost(nums, cost) {\n      //Write your code here;",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 589,
+            "code_problem_id": 227,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public int minCost(List<Integer> nums, List<Integer> cost) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

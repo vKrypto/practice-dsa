@@ -1,0 +1,64 @@
+{
+    "id": 391,
+    "description": "Given two strings, find out the longest common substring. A substring is a contiguous segment within a string.\n\n\n\n#### `Input:`\n```\nstr1 : First String\n\nstr2 : Second string\n```\n\n#### `Output:`\n```\nReturn a string which is a longest common substring in both str1 and str2. If there are multiple substring with longest length return which has the smallest starting index.\n```\n\n#### `Examples:`\n\n**Example 1**:\n\n#### `Input:`\n```\nstr1 = \"abcdefgabcdegh\"\n\nstr2 = \"abcdeghabfvsnm\"\n```\nOutput: \n```\n\"abcdegh\"\n```\n\n#### `Explanation:`\n\n`For the strings \"abcdefgabcdegh\" and \"abcdeghabfvsnm\":`\n- `The longest common substring is \"abcdegh\", appearing in the same order in both strings.`\n\n\n**`Example 2:`**\n\n#### `Input:`\n```\nstr1 = \"abc\"\n\nstr2 = \"def\"\n```\n#### `Output: `\n```\n\"\"\n```\n#### `Constraints:`\n\n\n- `1 <= str1.length <= 1000`\n\n- `1 <= str2.length <= 1000`\n\n- `str1 & str2 consist only of lowercase English letters.`\n#### `Explanation:`\n\n`For the strings \"abc\" and \"def\":`\n- `No common substring is present.`\n\n",
+    "title": "Longest Common Substring",
+    "default_testcase": {
+        "id": 2413,
+        "input": "abcde\nbcdef",
+        "expected_output": "bcde\n",
+        "code_problem_id": 391,
+        "created_at": "2023-11-16T03:03:29.400Z",
+        "updated_at": "2023-11-16T03:03:29.400Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 928,
+            "code_problem_id": 391,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    longestCommonSubstring(str1, str2) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 929,
+            "code_problem_id": 391,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    String longestCommonSubstring(String str1, String str2) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 930,
+            "code_problem_id": 391,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def longestCommonSubstring(self, str1, str2):\n        # Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 931,
+            "code_problem_id": 391,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string longestCommonSubstring(string str1, string str2) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

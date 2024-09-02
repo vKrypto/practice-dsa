@@ -1,0 +1,64 @@
+{
+    "id": 898,
+    "description": "Given a positive number 'n', find the square root of n rounded to the nearest number. For example square root of 4 is 2 so return true, otherwise let's say the number is 7 whose square root is somewhere around = 2.645 so you must return 2.\n\n```\nSample Input 1:\n4\n\nSample Output 1:\n2\n\nSample Input 2:\n7\n\nSample Output 2:\n2\n```\nConstraints:\n\n0<=n<=2^31 - 1",
+    "title": "Square Root of x",
+    "default_testcase": {
+        "id": 8015,
+        "input": "158",
+        "expected_output": "12\n",
+        "code_problem_id": 898,
+        "created_at": "2024-05-18T11:01:15.830Z",
+        "updated_at": "2024-05-18T11:01:15.830Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2985,
+            "code_problem_id": 898,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int solve(int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2986,
+            "code_problem_id": 898,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2987,
+            "code_problem_id": 898,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2988,
+            "code_problem_id": 898,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

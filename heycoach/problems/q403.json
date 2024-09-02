@@ -1,0 +1,64 @@
+{
+    "id": 403,
+    "description": "In the town of Kanpur, where technology intertwined with everyday life, lived a young programmer named Nitin. One sunny afternoon, while strolling through the local park, she stumbled upon an antique book filled with intricate coding riddles.<br> Determined to crack the enigma, Nitin found  a puzzling task: to locate the first negative integer within every subarray of window size k in a given sequence(say arr) of size N . Help Nitin in solving this task.  \n\n\n**`Example:`**  \n\n**`Input:`**\n\n```\nk= 3\narr={12, -1, -7, 8, -15, 30, 16, 28}  \n```\n\n**`Output:`**  \n\n```\n-1 -1 -7 -15 -15 0 \n```\n\n**`Constraints:`**  \n- `1 <= N <= 10^5`  \n- `10^5 <= A[i] <= 10^5 `  \n- `1 <= K <= N` ",
+    "title": "First Negative element in evry window size k",
+    "default_testcase": {
+        "id": 2496,
+        "input": "8 3\n12 -1 -7 8 -15 30 16 28",
+        "expected_output": "-1 -1 -7 -15 -15 0 ",
+        "code_problem_id": 403,
+        "created_at": "2023-11-20T14:19:00.770Z",
+        "updated_at": "2023-11-20T14:19:00.770Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 977,
+            "code_problem_id": 403,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    void printFirstNegativeInteger(ArrayList<Integer> arr, int k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 978,
+            "code_problem_id": 403,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n  def print_first_negative_integer(self, arr, k):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 979,
+            "code_problem_id": 403,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  printFirstNegativeInteger(arr, k) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 980,
+            "code_problem_id": 403,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n   void printFirstNegativeInteger(vector<int> arr, int k)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

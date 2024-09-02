@@ -1,0 +1,64 @@
+{
+    "id": 490,
+    "description": "Your task is to sum up the number using the prime number (2,3,5,7...) , and return the last number of the cummulative sum as an answer.\n\n### Input Format\n```\nThe lonely line of input contains an integer S.\n```\n### Output Format\n```\nYou have to print the last prime P such that sum(prime from 2 to P) = S.\n```\n### Sample Input \n```\n77\n```\n### Sample Output \n```\n19\n```\n### Explanation\n```\n2 + 3 + 5 + 7 + 11 + 13 + 17 + \"19\" = 77 , The answer is 19.\n```\n### Constraints.\n```\n0 < P <= 10^12\n```",
+    "title": "Prime Sum",
+    "default_testcase": {
+        "id": 3336,
+        "input": "77",
+        "expected_output": "19\n",
+        "code_problem_id": 490,
+        "created_at": "2024-01-03T10:26:42.666Z",
+        "updated_at": "2024-01-03T10:26:42.666Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1437,
+            "code_problem_id": 490,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public static long lastPrimeInSum(long S) {\n    // write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1468,
+            "code_problem_id": 490,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    long lastPrimeInSum(long S) {\n      // write your code here\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1469,
+            "code_problem_id": 490,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def last_prime_in_sum(S):\n      #write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2409,
+            "code_problem_id": 490,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  lastPrimeInSum(s) {\n    // write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

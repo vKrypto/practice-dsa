@@ -1,0 +1,57 @@
+{
+    "id": 856,
+    "description": "In spreadsheet systems like Excel, columns are labeled from A to Z, then AA to AZ, and so forth, while rows are numbered starting from 1. Each cell is identified by its column and row numbers, like BC23. However, an alternative system, RXCY, uses integer numbers for both column and row positions, where R denotes the row number and C denotes the column number. For example, R23C55 represents the same cell as BC23 in the Excel system. Your task is to create a program that converts coordinates from the Excel system to the RXCY system\n\n\n`Input`:\n\nThe first line of the input contains integer number n (1\u2009\u2264\u2009n\u2009\u2264\u2009105), the number of coordinates in the test. Then there follow n lines, each of them contains coordinates. All the coordinates are correct, there are no cells with the column and/or the row numbers larger than 106 .\n\n\n`Output`:\n\nWrite n lines, each line should contain a cell coordinates in the other numeration system.\n",
+    "title": "Excel to RXCY",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2819,
+            "code_problem_id": 856,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    void convertToRXCY() {\n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2820,
+            "code_problem_id": 856,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void convertToRXCY() {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2821,
+            "code_problem_id": 856,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def convert_to_rxcy(self):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2822,
+            "code_problem_id": 856,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    convertToRXCY() {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

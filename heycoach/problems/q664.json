@@ -1,0 +1,64 @@
+{
+    "id": 664,
+    "description": "Given an n x n binary matrix image, flip the image horizontally, then invert it, and return the resulting image.\n\nTo flip an image horizontally means that each row of the image is reversed.\n\n#### Example:\n##### Input:\n#####  `[1,1,0]`\nOutput:\n\n` [1,0,0].  `\n#### Explanation:\ninverting [0,1,1] results in [1,0,0].  \nTo invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0.\n\n\n#### Input Format:\n\n```\nFirst line contains the n (size of the matrix)\nnext n line contains n elements each\n```\n\n#### Output Format:\n\n`print the nxn matrix`\n\n#### Constraints:\nn == image.length  \nn == image[i].length  \n1 <= n <= 20  \nimages[i][j] is either 0 or 1.",
+    "title": "Image Flipping",
+    "default_testcase": {
+        "id": 4413,
+        "input": "3\n1 1 0\n1 0 1\n0 0 0",
+        "expected_output": "1 0 0 \n0 1 0 \n1 1 1 \n",
+        "code_problem_id": 664,
+        "created_at": "2024-01-27T14:15:22.533Z",
+        "updated_at": "2024-01-27T14:15:22.533Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2061,
+            "code_problem_id": 664,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    flipAndInvertImage (image) {\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2062,
+            "code_problem_id": 664,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\nclass Solution:\n    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2064,
+            "code_problem_id": 664,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n     public int[][] flipAndInvertImage(int[][] image) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2065,
+            "code_problem_id": 664,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "#include<bits/stdc++.h>\n\nclass Solution {\n    public:\nvoid solve(vector<vector<int>> image)\n{\n",
+            "skeleton_class_end": "}};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

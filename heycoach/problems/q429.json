@@ -1,0 +1,64 @@
+{
+    "id": 429,
+    "description": "You are given an array of colourful balls represented by integers, where each integer can have one of three distinct values: 0 (red), 1 (white), or 2 (blue). \nYour task is to sort the array in such a way that all the red balls come first, followed by all the white balls, and then all the blue balls, effectively solving the Dutch National Flag problem.\n\n**Input Format:**  \n\n```\nThe first line of input contains an integer N (1 \u2264 N \u2264 10^5), representing the number of colourful balls in the array.\nThe second line of input contains N space-separated integers, where each integer is either 0 (red), 1 (white), or 2 (blue).\n```\n\n**Output Format:**\n\n`Output the sorted array of colourful balls on a single line, separated by spaces.`\n\n**Input:**\n\n```\n8\n\n1 0 2 1 0 2 1 0\n```\n\n**Output:**                   \n`0 0 0 1 1 1 2 2`\n",
+    "title": "Dutch Flag Problem",
+    "default_testcase": {
+        "id": 6009,
+        "input": "5\n2 0 2 1 1",
+        "expected_output": "0 1 1 2 2 \n",
+        "code_problem_id": 429,
+        "created_at": "2024-03-04T06:40:40.282Z",
+        "updated_at": "2024-03-04T06:40:40.282Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1162,
+            "code_problem_id": 429,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    dutchFlagSort(nums) {\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1163,
+            "code_problem_id": 429,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def dutchFlagSort(self, nums):\n      #Write your code here\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1164,
+            "code_problem_id": 429,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void dutchFlagSort(int[] nums, int n) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1165,
+            "code_problem_id": 429,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:    \n    void dutchFlagSort(vector<int>& nums, int n) {\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

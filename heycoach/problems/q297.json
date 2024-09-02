@@ -1,0 +1,64 @@
+{
+    "id": 297,
+    "description": "**Problem Statement**:\n\nDevelop an algorithm to identify the shortest contiguous substring in string s that encompasses all the characters present in string t, considering duplicates as well. If no such substring can be found, the solution should return an empty string.\n\nNote that the provided test cases will guarantee the presence of a single, unique solution.\n \n**`Input`** :\n\n```\ns (String): The input string where the algorithm searches for the shortest contiguous substring.\nt (String): The target string containing characters to be present in the substring.\n```\n\n**`Output`** :\nReturn the shortest contiguous substring of **s** that encompasses all the characters present in **t**, considering duplicates.\n\n**`Example`** :\n\n```\ns = \"ADOBECODEBANC\"\nt = \"ABC\"\n```\n**`Output`**:   \n\n```\n\"BANC\"\n```\n\n**`Constraints`**:\n\n`m == s.length`\n\n`n == t.length`\n\n`1 <= m, n <= 10^5`\n\ns and t consist of uppercase and lowercase English letters.\n\n",
+    "title": "Minimum window substring",
+    "default_testcase": {
+        "id": 3788,
+        "input": "ADOBECODEBANC\nABC",
+        "expected_output": "BANC\n",
+        "code_problem_id": 297,
+        "created_at": "2024-01-20T06:51:46.966Z",
+        "updated_at": "2024-01-20T06:51:46.966Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 727,
+            "code_problem_id": 297,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string minWindow(string s, string t) {",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 940,
+            "code_problem_id": 297,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String minWindow(String s, String t) {\n        Map<Character, Integer> charCountMap = new HashMap<>();",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 941,
+            "code_problem_id": 297,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minWindow(self, s, t):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n       "
+        },
+        {
+            "id": 942,
+            "code_problem_id": 297,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minWindow(s, t) {\n        ",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 783,
+    "description": "\n\nYou are given a n-digit number using digits 1 to 9. What is the maximum k-digit number that we can make by removing one digit from the given integer?\n\n#### `Input Format:`\n\n- `The first line contains an integer n, representing the number of digits in the input number.`\n\n- `The second line contains an integer k, representing the number of digits in the maximum number after removal.`\n\n- `The third line contains an n-digit integer composed of digits 1 to 9.`\n\n#### `Output Format:`\n\n`Print the maximum k-digit number that can be formed after removing one digit.`\n\n#### `Sample Input:`\n\n```\n4\n3\n9782\n```\n\n#### `Sample Output:`\n\n```\n982\n```\n\n#### `Explanation:`\n````\n1. If we remove 9, the new number is 782.\n2. If we remove 7, the new number is 982.\n3. If we remove 8, the new number is 972.\n4. If we remove 2, the new number is 978.\n\nOut of the 4 cases, removing 7 gives us the maximum 3-digit number, which is 982.\n```",
+    "title": "Maximum Number",
+    "default_testcase": {
+        "id": 6934,
+        "input": "4\n3\n9782",
+        "expected_output": "982\n",
+        "code_problem_id": 783,
+        "created_at": "2024-03-24T05:57:23.103Z",
+        "updated_at": "2024-03-24T05:57:23.103Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2555,
+            "code_problem_id": 783,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static String findMaxKDigitNumber(String num) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2556,
+            "code_problem_id": 783,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string findMaxKDigitNumber(const string& num) {\n        //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2557,
+            "code_problem_id": 783,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def find_max_k_digit_number(n, k, number):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2558,
+            "code_problem_id": 783,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static findMaxKDigitNumber(n, k, number) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

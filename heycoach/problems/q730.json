@@ -1,0 +1,64 @@
+{
+    "id": 730,
+    "description": "You are an astronaut on your way to mars. There have been reports that extra terrestrial life form has been found there and they speak a language similar to English. They use syllables to form sentences and use two types of syllables which are formed:\n###### `1. (Consonant)(vowel) and 2. (Consonant)(vowel)(consonant).`\n\n***You are given a string consisting of English letters, you have to convert this string into a sentence that the aliens can understand.***\n\n**Note:** *`The inputs are given in such a way that there exists an answer.`*\n\n#### `Input Format:`\n\n- `First line contains a single integer 'n' denoting the length of the string.`\n\n- `Second line contains a single string which has to be converted to a sentence.`\n\nFor example:\n\n#### `Sample Input:`\n```\n5\n\nbadef\n```\n#### `Sample Output:`\n```\nba def\n```\n#### `Constraints:`\n\n- `2 \u2264 length of word \u226410^5`",
+    "title": "Mars Mission",
+    "default_testcase": {
+        "id": 4941,
+        "input": "5\nbadef",
+        "expected_output": "ba def\n",
+        "code_problem_id": 730,
+        "created_at": "2024-02-02T10:43:50.098Z",
+        "updated_at": "2024-02-02T10:43:50.098Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2326,
+            "code_problem_id": 730,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    void solve(int n, string word){",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2327,
+            "code_problem_id": 730,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void solve(int n, String word) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2328,
+            "code_problem_id": 730,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, word):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2329,
+            "code_problem_id": 730,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, word) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 400,
+    "description": "Raman is a keen observer, he can easily see the jumbled words so one day one of his friend challenged him to count the occurrences of all the anagrams of string C in a given string S. Raman accepted the challenge but he is facing some problems in it . Can you help them ?\n\n**`Input:`**  \n\n```\nS=fororfrdofr  \nC=for   \n```\n\n**`Output:`**  `3`  \n\n**`Input` :**  \n   \n```\n S=aabaabaa  \n C=aaba  \n```\n\n **`Output:`**   ` 4`\n\n`1<=s.length,   c.length<=10^3`",
+    "title": "Count Occurences of Anagrams",
+    "default_testcase": {
+        "id": 2470,
+        "input": "aabaabaa\naaba",
+        "expected_output": "4",
+        "code_problem_id": 400,
+        "created_at": "2023-11-19T16:04:00.035Z",
+        "updated_at": "2023-11-19T16:04:00.035Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 967,
+            "code_problem_id": 400,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n    int countAnagrams(string s, string c) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 968,
+            "code_problem_id": 400,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int countAnagrams(String s, String c) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 969,
+            "code_problem_id": 400,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def count_anagrams(self, s, c):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 971,
+            "code_problem_id": 400,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countAnagrams(s, c) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": "\n"
+        }
+    ]
+}

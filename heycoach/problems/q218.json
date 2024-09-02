@@ -1,0 +1,64 @@
+{
+    "id": 218,
+    "description": "Rearrange the characters of string `s` so that any two adjacent characters are not the same.\n Print any possible rearrangement of s or print \"\" if not possible.\n\n### Example 1 \n\n### Input\n```CPP\ns = \"aab\"\n``` \n### Output \n```CPP \n\"aba\"\n``` \n\n```\naba is the only possibility so it is the answer\n```\n\n### Example 2 \n\n### Input\n```CPP\ns = \"aaab\"\n``` \n### Output \n```CPP \n\"\"\n``` \n```\nSo no string can be formed with different adjacent character so answer is \"\"\n```\n### Input Format\n```\nThe first line of the input contain the string s\n```\n### Output Format\n```\nOutput the String in rearranging it\n```\n\n\n### Constraints:\n\n* 1 <= s.length <= 500\n* s consists of lowercase English letters.\n",
+    "title": "Rearrange the String",
+    "default_testcase": {
+        "id": 1554,
+        "input": "wueirigggggdfwugfjfjfgjf",
+        "expected_output": "gfgfgjgfgwujigfwurjigfed",
+        "code_problem_id": 218,
+        "created_at": "2022-10-30T19:11:14.503Z",
+        "updated_at": "2022-10-30T19:11:14.503Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 436,
+            "code_problem_id": 218,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n  string reorganizeString(string s) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 438,
+            "code_problem_id": 218,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n  public String reorganizeString(String s) {\n    //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 440,
+            "code_problem_id": 218,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def reorganizeString(self, s: str) -> str:\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 641,
+            "code_problem_id": 218,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    reorganizeString(s) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

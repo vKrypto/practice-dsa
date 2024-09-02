@@ -1,0 +1,45 @@
+{
+    "id": 8,
+    "description": "\nYou are given an integer array arr. You can choose a set of integers and remove all the occurrences of these integers in the array.\n\nReturn the minimum size of the set so that at least half of the integers of the array are removed.\n\n### Example 1 \n\n### Input\n```CPP\n arr = [3,3,3,3,5,5,5,2,2,7]\n``` \n### Output \n```CPP \n2\n``` \n#### Explanation:\n Choosing {3,7} will make the new array [5,5,5,2,2] which has size 5 (i.e equal to half of the size of the old array).\nPossible sets of size 2 are {3,5},{3,2},{5,2}.\nChoosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5] which has a size greater than half of the size of the old array.\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\narr = [7,7,7,7,7,7]\n``` \n### Output \n```CPP \n1\n``` \n#### Explanation:\nThe only possible set you can choose is {7}. This will make the new array empty.\n\n### Constraints:\n\n* 2 <= arr.length <= 105\n* arr.length is even.\n* 1 <= arr[i] <= 105\n",
+    "title": "Divide the Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 266,
+            "code_problem_id": 8,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 269,
+            "code_problem_id": 8,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n    \n  } \n}\n"
+        },
+        {
+            "id": 286,
+            "code_problem_id": 8,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

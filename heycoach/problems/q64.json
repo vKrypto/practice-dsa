@@ -1,0 +1,64 @@
+{
+    "id": 64,
+    "description": "You are given a binary string s, consisting only of only '0', and another binary string t, consisting of both '0' and '1'.\n\nIn one move, you can replace any '0' in the string s with string t. Note that after the replacement string s might contain elements which are not '0'.\n\nYou can perform an arbitrary number of moves (including zero). How many different binary strings can you obtain(leading zeroes are also allowed)? Print the number, or report that it is infinitely large.\n\nTwo strings are considered different if they have different length, or they differ at some index.\n\n#### Example \n##### Input 1 :\n\n```\n000\n0\n```\n##### Output 1 \n`1`\n\n#### Explanation:\n`In the first example, you can replace any 0 with the zero in another string and it won't make any difference.\n\n#### Example \n##### Input 2 :\n\n```\n00\n1\n```\n##### Output 2 \n`4`\n\n#### Explanation:\n`The 4 outputs would be 01, 00, 10 and 11.\n\n#### Example \n##### Input 3 :\n\n```\n00\n10\n```\n##### Output 3 \n`-1`\n\n#### Explanation:\nlet us look at one of the operation, when we replace the first 0 by string t it will lead to the string 100 and this process can be going for infinite amount of time and thus the output is -1.\n\n#### Input format: \n\n```\n\nThe first line of each testcase contains a non-empty binary string s, consisting only of zeroes. The length of s doesn't exceed 50.\n\nThe second line contains a binary string t. The length of t doesn't exceed 50.\n\n```\n\n#### Output format\n`For each testcase, print the number of different strings s that can be obtained after an arbitrary amount of moves (including zero). If the number is infinitely large, return -1. Otherwise, return the number.`\n\n#### Constraints :\n\n```\n1<=s.length<=50\n1<=t.length<=50\n```",
+    "title": "String Replacement",
+    "default_testcase": {
+        "id": 6213,
+        "input": "0\n0",
+        "expected_output": "1",
+        "code_problem_id": 64,
+        "created_at": "2024-03-10T10:46:57.282Z",
+        "updated_at": "2024-03-10T10:46:57.282Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 89,
+            "code_problem_id": 64,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n  public:\n  int solve(string s, string t){",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 90,
+            "code_problem_id": 64,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(String s, String t) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 91,
+            "code_problem_id": 64,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, s, t):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 858,
+            "code_problem_id": 64,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(s, t) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

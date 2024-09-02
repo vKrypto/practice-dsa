@@ -1,0 +1,64 @@
+{
+    "id": 612,
+    "description": "Given an integer array nums, return true if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or false otherwise.\n\n### `Input Format:`\n\n\n- `First line of input contains a single integer n (3<=n<=100000)`\n-  `Second Line of input contains n integers A1, A2,...., An (1<=A[i]<=100000)`\n\n### `Output Format:`\n\n- `Return true if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or false otherwise.`\n \n#### `Sample Input:`\n\n```\n4\n1 5 11 5\n```\n#### `Sample Output:`\n```\ntrue\n```",
+    "title": "Subset Sum",
+    "default_testcase": {
+        "id": 4080,
+        "input": "10\n5 5 5 5 5 5 5 5 5 5",
+        "expected_output": "true\n",
+        "code_problem_id": 612,
+        "created_at": "2024-01-24T07:54:01.891Z",
+        "updated_at": "2024-01-24T07:54:01.891Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1843,
+            "code_problem_id": 612,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool subsetSumToK(int n, int k, vector<int>& arr) {",
+            "skeleton_class_end": " }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1844,
+            "code_problem_id": 612,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n\n    public boolean subsetSumToK(int n, int k, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1845,
+            "code_problem_id": 612,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def subsetSumToK(self, n, k, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1875,
+            "code_problem_id": 612,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    subsetSumToK(n, k, arr) {",
+            "skeleton_class_end": "       }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

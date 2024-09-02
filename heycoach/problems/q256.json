@@ -1,0 +1,64 @@
+{
+    "id": 256,
+    "description": "\nYou are given the **`root`** of a binary tree with **`n nodes`** where each node in the tree has  **`node.val `** coins. There are n coins in total throughout the whole tree.\n\nIn one move, we may choose two adjacent nodes and move one coin from one node to another. A move may be from parent to child, or from child to parent.\n\nReturn the `minimum` number of moves required to make every node have `exactly` one coin.\n\n#### `Example 1`\n\n![Image](https://assets.leetcode.com/uploads/2019/01/18/tree1.png)\n\n#### `Input`\n\n```CPP\nroot = [3,0,0]\n```\n\n#### `Output`\n\n```CPP\n2\n```\n\n#### `Explanation:`\n```\nFrom the root of the tree, we move one coin to its left child, and one coin to its right child.\n```\n\n#### `Example 2`\n\n![Image](https://assets.leetcode.com/uploads/2019/01/18/tree2.png)\n\n#### `Input`\n\n```CPP\nroot = [0,3,0]\n```\n\n### `Output`\n\n```CPP\n3\n```\n\n#### `Explanation:`\n```\nFrom the left child of the root, we move two coins to the root [taking two moves]. Then, we move one coin from the root of the tree to the right child.\n```\n#### `Input Format`\n\n```\nA TreeNode, Contains all nodes in the tree.\n```\n\n#### `Output Format`\n\n```\nAn Integer, denoting the minimum number of moves\n```\n\n#### `Constraints:`\n\n- ` The number of nodes in the tree is n`\n\n- `1 <= n <= 100`\n\n- `0 <= Node.val <= n`\n\n- `The sum of all Node.val is n`",
+    "title": "Coin Problem",
+    "default_testcase": {
+        "id": 6494,
+        "input": "[1,0,0,null,3]",
+        "expected_output": "4\n",
+        "code_problem_id": 256,
+        "created_at": "2024-03-13T14:11:00.048Z",
+        "updated_at": "2024-03-13T14:11:00.048Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 455,
+            "code_problem_id": 256,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/*struct TreeNode {\n    int val;\n    TreeNode *left;\n    TreeNode *right;\n    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n};*/\nclass Solution {\npublic:\n    int distributeCoins(TreeNode* root) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 535,
+            "code_problem_id": 256,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*class TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int x) { val = x; }\n}*/\nclass Solution {\n    public int distributeCoins(TreeNode root) {\n      //Write your code here;",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 618,
+            "code_problem_id": 256,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''class TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right'''\n\nclass Solution:\n    def distributeCoins(self, root: TreeNode) -> int:\n      #Write your code here;",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 619,
+            "code_problem_id": 256,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class TreeNode {\n  constructor(val = 0, left = null, right = null) {\n    this.val = val;\n    this.left = left;\n    this.right = right;\n  }\n}\n*/\nclass Solution {\n  distributeCoins(root) {\n    //Write your code here",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

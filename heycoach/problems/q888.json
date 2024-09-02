@@ -1,0 +1,64 @@
+{
+    "id": 888,
+    "description": "Aman has an array of 'n' non negative integers. According to Aman an array is considered good if the array from some i (i<n) to n-1 can fulfil the following condition:\n\nar[0]&ar[1]&ar[2]&ar[3]....&ar[i] = ar[i+1]&ar[i+2]....&ar[n-1]\n\nwhere & is the bitwise AND operation.\n\nYou have to determine the number of ways Aman can rearrange the positions of the array such that the array is good for all i from 0 to n - 1. Answer may be large so return it with modulo 10^9 + 7.\n\nNote: We are considering the position and not the elements themselves, see the sample input.\n\n```\nSample Input - 1:\n\n3\n1 1 1\n\nSample Output - 1:\n\n6\n```\n\nExplanation: Since all the elements are equal no matter how we rearrange the the position, the array will always be good. There are three positions and they can be permutated in 6 ways.\n\n```\nSample Input - 2:\n\n5\n1 2 3 4 5\n\nSample Output - 2:\n\n0\n```\n\nExplanation: There are no permutations possible for the position of elements for which the array sequence comes out to be good for all i from 0 to n-1.\n\n```\nConstraints:\n\n1<=n<=10^5\n1<=ar[i]<=10^8\n```\n\n\n  \n\n\n\n",
+    "title": "AND of Aman's sequence",
+    "default_testcase": {
+        "id": 7967,
+        "input": "4\n1 3 5 1",
+        "expected_output": "4\n",
+        "code_problem_id": 888,
+        "created_at": "2024-05-16T11:41:44.216Z",
+        "updated_at": "2024-05-16T11:41:44.216Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2944,
+            "code_problem_id": 888,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    const int mod = 1e9 + 7;\n    int solve(int n, int ar[]){\n      //Write your code here;",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2954,
+            "code_problem_id": 888,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    private static final int MOD = 1000000007;\n\n    public int solve(int n, int[] ar) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2955,
+            "code_problem_id": 888,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, ar):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2956,
+            "code_problem_id": 888,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    constructor() {\n        this.MOD = 1000000007;\n    }\n\n    solve(n, ar) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

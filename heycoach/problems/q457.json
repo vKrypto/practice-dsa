@@ -1,0 +1,64 @@
+{
+    "id": 457,
+    "description": "You're a seasoned prospector during the height of the Gold Rush, striking it rich in a hidden valley overflowing with gold nuggets! But these nuggets aren't your typical ore; they possess a curious property: you can split them in half (reduce their value exactly) and still mine additional nuggets from the smaller pieces. Your goal? Maximize your profit by strategically splitting nuggets to reach the richest vein of gold as quickly as possible.\n\n\n`Scenario: You're a seasoned prospector during the height of the Gold Rush, striking it rich in a hidden valley overflowing with gold nuggets! But these nuggets aren't your typical ore; they possess a curious property: you can split them in half (reduce their value exactly) and still mine additional nuggets from the smaller pieces. Your goal? Maximize your profit by strategically splitting nuggets to reach the richest vein of gold as quickly as possible.`\n\n**`Challenge:`**\n\n```\nYou're presented with an array nums representing the values of your found nuggets (positive integers between 1 and 10^7).\nYou can halve any nugget in your pile (reduce its value to exactly half) in a single operation. This halved nugget still counts as part of your gold stash.\nYour mission is to minimize the number of splitting operations you need to perform to reduce the total value of your gold by at least half. Remember, the faster you reach this threshold, the more profitable your expedition!\n```\n\n**`Bonus Objective:`**\n\n`Efficiency is Gold: Develop a cunning mining algorithm that identifies the optimal splitting strategy, even for vast goldfields (large nums arrays). Can you strike the balance between maximizing profit and minimizing effort?`\n####\n**`Input/Output Format:`**\n\n#### `Input:` \n`An array nums containing the values of your gold nuggets.`\n\n#### `Output:` \n`Return a single integer representing the minimum number of splitting operations needed to reach the profit target (reduce the total gold value by at least half).`\n\n### `Examples:`\n\n#### `Input:` \n`5 19 8 1 (Nuggets in your prospector's pan)`\n\n#### `Output:` \n`3  (Following a specific splitting strategy, you can reach the target in 3 operations)`\n\n#### `Input:` \n`3 8 20 (Another gold-filled vein)`\n\n#### `Output:` \n`3 (Similarly, with the right approach, you can achieve the profit goal in 3 operations)`\n\n### `Constraints:`\n\n- `1 <= n <= 10^5 (Number of gold nuggets in your pile)` <br>\n- `1 <= nums[i] <= 10^7 (Individual nugget value)`",
+    "title": "Gold Nuggets",
+    "default_testcase": {
+        "id": 3122,
+        "input": "6\n3 1 6 6 3 6",
+        "expected_output": "6\n",
+        "code_problem_id": 457,
+        "created_at": "2023-12-23T13:16:48.221Z",
+        "updated_at": "2023-12-23T13:16:48.221Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1294,
+            "code_problem_id": 457,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int GoldNuggets(vector<int>& nums) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1339,
+            "code_problem_id": 457,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int goldNuggets(Vector<Integer> nums) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1340,
+            "code_problem_id": 457,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def GoldNuggets(self, nums):",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1417,
+            "code_problem_id": 457,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    GoldNuggets(nums) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

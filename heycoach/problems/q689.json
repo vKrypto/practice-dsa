@@ -1,0 +1,64 @@
+{
+    "id": 689,
+    "description": "Raju has a sequence  `a`, consisting of  _n_  integers.\n\nWe'll call a sequence  ai_,\u2009_ai_+\u20091,\u2009...,\u2009_aj_  (1\u2009\u2264\u2009_i_\u2009\u2264\u2009_j_\u2009\u2264\u2009_n_)  a subsegment of the sequence  `a`. The value  (_j_\u2009-\u2009_i_\u2009+\u20091)  denotes the length of the subsegment.\n\nYour task is to find the `longest` subsegment of  _a_, such that it is possible to `change at most one number` (change one number to any integer you want) from the subsegment to make the subsegment `strictly increasing`.\n\nYou only need to output the length of the subsegment you find.\n\n\n\n### Example 1 \n\n### Input\n```CPP\nn = 6  \na = [7,2,3,1,5,6]\n```\n\n\n### Output \n```CPP\n5\n```\n### Explanation\nYou can choose subsegment a2,a3,a4,\u2009a5,\u2009a6 and change its 3rd element (that is a4) to 4.\n\n**Example 2:**\n\n**Input:**\n```CPP\nn = 3\na = [1,2,3]\n```\n**Output:** \n```CPP\n3\n```\n### Explanation\nyou can select the entire array a and change nothing because it is already in increasing order.\n\n\n### Constraints:\n* `1 <= n <= 10000`\n\n* `1 <= a[i] <= 10000`\n",
+    "title": "Segment length",
+    "default_testcase": {
+        "id": 4523,
+        "input": "15\n13 14 5 5 19 3 14 16 21 5 21 19 21 11 18",
+        "expected_output": "5",
+        "code_problem_id": 689,
+        "created_at": "2024-01-28T01:36:00.022Z",
+        "updated_at": "2024-01-28T01:36:00.022Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2156,
+            "code_problem_id": 689,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\npublic:\n\n\n    int maximumLength(vector<int> &arr, int n) {\n",
+            "skeleton_class_end": "    }\n\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2157,
+            "code_problem_id": 689,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int maximumLength(int[] arr, int n) {\n\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2158,
+            "code_problem_id": 689,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def maximumLength(self, arr, n):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2159,
+            "code_problem_id": 689,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    maximumLength(arr, n) {\n\n",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

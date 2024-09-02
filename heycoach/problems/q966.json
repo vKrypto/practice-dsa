@@ -1,0 +1,64 @@
+{
+    "id": 966,
+    "description": "You are given the binary representation of a number as a string s. Your task is to determine the number of steps required to transform the binary number to 1 using the following operations:\n\nIf the current binary number is even, you have to divide it by 2.\nIf the current binary number is odd, you have to add 1 to it.\nIt is guaranteed that the binary number can always be reduced to 1 for all test cases.\n\nInput Format:\n\nA single line containing a binary string s.\n\nOutput Format:\n\nAn integer representing the number of steps required to transform the binary number to 1.\n\nConstraints:\n\n1 \u2264 s.length \u2264 500\n\ns consists of characters '0' or '1'.\n\ns[0] == '1'\n\nExample :\n\nInput:\n\n1101\n\nOutput:\n\n6\n\nExplanation:\n\n\"1101\" corresponds to the number 13 in decimal representation.\n\nStep 1) 13 is odd, add 1 and obtain 14.\n\nStep 2) 14 is even, divide by 2 and obtain 7.\n\nStep 3) 7 is odd, add 1 and obtain 8.\n\nStep 4) 8 is even, divide by 2 and obtain 4.\n\nStep 5) 4 is even, divide by 2 and obtain 2.\n\nStep 6) 2 is even, divide by 2 and obtain 1.",
+    "title": "Binary Transformation Steps To 1",
+    "default_testcase": {
+        "id": 8450,
+        "input": "1\n",
+        "expected_output": "0\n",
+        "code_problem_id": 966,
+        "created_at": "2024-05-30T06:22:05.322Z",
+        "updated_at": "2024-05-30T06:22:05.322Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3220,
+            "code_problem_id": 966,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int numSteps(string s) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3221,
+            "code_problem_id": 966,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public int numSteps(String s) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3222,
+            "code_problem_id": 966,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def numSteps(self, s: str) -> int:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3223,
+            "code_problem_id": 966,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    numSteps(s) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

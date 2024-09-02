@@ -1,0 +1,28 @@
+{
+    "id": 252,
+    "description": "\nYou are given a `0-indexed` integer array nums and an integer k.\n\nYou are initially standing at index 0. In one move, you can jump at most k steps forward without going outside the boundaries of the array. That is, you can jump from index i to any index in the range [i + 1, min(n - 1, i + k)] `inclusive`.\n\nYou want to reach the last index of the array (index n - 1). Your score is the sum of all nums[j] for each index j you visited in the array.\n\nReturn the `maximum` score you can get.\n### Example 1 \n\n### Input\n```CPP\nnums = [1,-1,-2,4,-7,3], k = 2\n``` \n### Output \n```CPP \n7\n``` \n### Explanation:\n You can choose your jumps forming the subsequence [1,-1,4,3] (underlined above). The sum is 7.\n### Example 2 \n\n### Input\n```CPP\n nums = [10,-5,-2,4,0,3], k = 3\n``` \n### Output \n```CPP \n17\n``` \n### Explanation:\n You can choose your jumps forming the subsequence [10,4,3] (underlined above). The sum is 17.\n\n### Constraints:\n\n* 1 <= nums.length, k <= 10^5\n* -10^4 <= nums[i] <= 10^4\n\n",
+    "title": "Jump Game",
+    "default_testcase": {
+        "id": 1763,
+        "input": "8 2\n  1\n -5\n-20\n  4\n -1\n  3\n -6\n -3\n",
+        "expected_output": "0",
+        "code_problem_id": 252,
+        "created_at": "2022-11-05T17:43:46.461Z",
+        "updated_at": "2022-11-05T17:43:46.461Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 450,
+            "code_problem_id": 252,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int maxResult(vector < int > & nums, int k) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

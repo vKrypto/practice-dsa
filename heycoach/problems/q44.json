@@ -1,0 +1,45 @@
+{
+    "id": 44,
+    "description": "You are given row x col grid representing a map where 1 represents land and 0 represents water.\n\nGrid cells are connected **horizontally/vertically** (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).\n\nThe island doesn't have \"lakes\", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.\n\n### Constraints:\n\n- 1 <= row, col <= 100\n- input of the matrix will be is 0 or 1.\n- There is exactly one island in grid.",
+    "title": "Island Perimeter",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 40,
+            "code_problem_id": 44,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n\tvoid solve(vector<vector<int>>grid) {\n\t\t\n\t}\n};\n"
+        },
+        {
+            "id": 41,
+            "code_problem_id": 44,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public void solve(Vector<Vector<Integer>> grid) {\n\n    }\n}"
+        },
+        {
+            "id": 42,
+            "code_problem_id": 44,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, grid):\n        pass\n"
+        }
+    ]
+}

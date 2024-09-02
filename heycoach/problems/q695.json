@@ -1,0 +1,57 @@
+{
+    "id": 695,
+    "description": "You are given a `0-indexed` integer array piles, where piles[i] represents the number of stones in the ith pile, and an integer k. You should apply the following operation `exactly` k times:\n\nChoose any piles[i] and `remove` floor(piles[i] / 2) stones from it.\nNotice that you can apply the operation on the same pile more than once.\n\nReturn the minimum possible total number of stones remaining after applying the k operations.\n\nfloor(x) is the greatest integer that is `smaller` than or `equal` to x (i.e., rounds x down).\n\n### Example 1\n\n### Input\n\n```CPP\npiles = [5,4,9], k = 2\n```\n\n### Output\n\n```CPP\n12\n```\n\n#### Explanation:\n\n```\nSteps of a possible scenario are:\n\n- Apply the operation on pile 2. The resulting piles are [5,4,5].\n- Apply the operation on pile 0. The resulting piles are [3,4,5].\n  The total number of stones in [3,4,5] is 12.\n\n```\n\n### Example 2\n\n### Input\n\n```CPP\n piles = [4,3,6,7], k = 3\n```\n\n### Output\n\n```CPP\n12\n```\n\n#### Explanation:\n\n```\nSteps of a possible scenario are:\n\n- Apply the operation on pile 2. The resulting piles are [4,3,3,7].\n- Apply the operation on pile 3. The resulting piles are [4,3,3,4].\n- Apply the operation on pile 0. The resulting piles are [2,3,3,4].\n  The total number of stones in [2,3,3,4] is 12.\n```\n\n### Input Format\n```\nThe first line of input contains an array of size n and a integer k which denotes the number of operation to be applied in.\n```\n### Output Format\n```\nOutput the minimum possible total number of stones remaining after applying the k operations.\n```\n### Constraints:\n\n- 1 <= piles.length <= 10^5\n- 1 <= piles[i] <= 10^4\n- 1 <= k <= 10^5\n",
+    "title": "Stone Game",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2179,
+            "code_problem_id": 695,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:",
+            "skeleton_class_end": "};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2180,
+            "code_problem_id": 695,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2181,
+            "code_problem_id": 695,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2182,
+            "code_problem_id": 695,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 139,
+    "description": "You are given an array `arr` of N integers consisting only digits from `0 to 9`. A subarray is call uniform if the **sum** of the elements of this subarray is **equal to the length** of this subarray. For example if arr = [1,2,0] then there are 3 uniform subarrays: \n\n*  [1]\n*  [2,0]\n*  [1,2,0]\n\nCalculate **number of uniform subarrays** in the given array. \n\n### Example 1 \n\n### Input\n```CPP\nN = 3\narr = [1,2,0]\n```\n\n\n### Output \n```CPP\n3\n```\n\n#### Explanation:\nThere are total three uniform subarrays as explained in the problem statement.\n\n**Example 2:**\n\n**Input:**\n```CPP\nN = 6\narr = [6,0,0,0,0,5]\n```\n**Output:** \n```CPP\n1\n```\n#### Explanation:\nThere is only one uniform subarray i.e. [0,0,0,0,5]\n\n### Constraints:\n* 1 \u2264 N \u2264 10000 \n*  0 \u2264 arr[i] <= 9\n\n\n\n",
+    "title": "Count uniform subarrays",
+    "default_testcase": {
+        "id": 1017,
+        "input": "3\n1 2 0",
+        "expected_output": "3",
+        "code_problem_id": 139,
+        "created_at": "2022-10-17T20:10:43.905Z",
+        "updated_at": "2022-10-17T20:10:43.905Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 205,
+            "code_problem_id": 139,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int uniformSubarrays(vector<int> &arr, int n) {\n      // write your code here\n    }\n};"
+        },
+        {
+            "id": 514,
+            "code_problem_id": 139,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int uniformSubarrays(List<Integer> arr, int n) {\n      // write your code here\n    }\n}\n\n"
+        }
+    ]
+}

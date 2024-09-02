@@ -1,0 +1,64 @@
+{
+    "id": 422,
+    "description": "In a town, residents have a unique way of arranging numbers in arrays. They prefer to maintain an alternating pattern of Negative and positive numbers to create a harmonious sequence.  However, sometimes they need a little help rearranging their arrays to achieve this pattern.\n\n**Task** \n\n\nAs an assistant to the townspeople of Alternville, your task is to write a function that takes an array of integers as input and rearranges it to create an alternating pattern of negative and positive numbers. If there are more of\none kind than other (meaning if there are more positive numbers or more negative numbers) you should move all the remaining to the end of the array and if there is a zero do not include it in the array.  \nAlso make sure that positive and negative numbers are sorted in their own individual group, for example, if the given array is  [-1, 3,4,-6,2,5,9,-2] then the output should be: [-6,2,-2,3,-1,4,5,9].\nThe resulting array should start with the lowest number of the given array.\n\n\n\n**Input**\n\n```\nAn integer n (1 \u2264 n \u2264 100), represents the number of elements in the array.\nA list of n integers, where each integer is in the range of -1000 to 1000 (inclusive).\n```\n\n**Output:**\n\nA list of n integers, representing the rearranged array with an alternating begative-positive pattern.\n\n**Sample Input:**\n\n```\n5\n-9 11 4 6 -2\n```\n\n**Sample Output:**\n```\n-9 4 -2 6 11\n```\n**Sample Input:**\n\n```\n7\n0 -3 5 9 -4 10 -6\n```\n\n**Sample Output:**\n```\n-6 5 -4 9 -3 10 \n```\nNote you don't have to include zeroes in result",
+    "title": "Positive Negative Alternate",
+    "default_testcase": {
+        "id": 6019,
+        "input": "7\n0 -3 5 9 -4 10 -6",
+        "expected_output": "-6 5 -4 9 -3 10 \n",
+        "code_problem_id": 422,
+        "created_at": "2024-03-04T09:05:16.537Z",
+        "updated_at": "2024-03-04T09:05:16.537Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1130,
+            "code_problem_id": 422,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    alternatePandE(ar) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1131,
+            "code_problem_id": 422,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    void AlternatePandE(int ar[], int n){\n      //Write your code here\n\n\n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1132,
+            "code_problem_id": 422,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public void alternatePandE(int[] ar) {\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1133,
+            "code_problem_id": 422,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def alternatePandE(self, ar):\n      #Write your code here\n",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": 222,
+    "description": "\nSummer is coming! During this season, your first job is to design a standard Air conditioner with a fixed cold radius to chill all the houses.\n\nEvery house can be chilled, as long as the house is within the air conditioner's cold radius range.\n\nGiven the positions of  `houses`  and  `airConditioners`  on a horizontal line, return  _the minimum radius standard of air conditioners so that those air conditioners could cover all houses._\n\n**Notice**  that all the  `airConditioner`  follow your radius standard, and the chill radius will be the same.\n### Example 1 \n\n### Input\n```CPP\nhouses = [1,2,3], airConditioner = [2]\n```\n### Output \n```CPP\n1\n```\n### Explanation\nThe only Air Conditioner was placed in the position 2, and if we use the radius 1 standard, then all the houses can be chilled.\n\n**Example 2:**\n\n**Input:**\n```CPP\nhouses = [1,2,3,4], airConditioner = [1,4]\n```\n**Output:** \n```CPP\n1\n```\n### Explanation\nThe two Air Conditioner was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be chilled.\n\n### Constraints:\n-   `1 <= houses.length, airConditioners.length <= 10000`\n-   `1 <= houses[i], airConditioners[i] <= 100000000`\n",
+    "title": "Air conditioners",
+    "default_testcase": {
+        "id": 1571,
+        "input": "3 1\n1 2 3\n2 ",
+        "expected_output": "1",
+        "code_problem_id": 222,
+        "created_at": "2022-10-31T13:40:33.068Z",
+        "updated_at": "2022-10-31T13:40:33.068Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 322,
+            "code_problem_id": 222,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int findRadius(vector<int>& houses, vector<int>& airConditioners) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

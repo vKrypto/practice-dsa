@@ -1,0 +1,64 @@
+{
+    "id": 660,
+    "description": "RBI wants to introduce currency of new denominations,so for this, the Governor conducts a poll about the among **N** banks. Governor imposed a restriction on the denomination of the currency that is the denomination can be in the range of ==[1,N]==.Votes of all the banks have been stored in the votes array and the RBI will release currency of only those denominations which have got more than 1 vote. So you have been provided with the votes array and you need to return the array which will contain the denominations of the currency which is going to be released by the RBI sorted in increasing order.\nIf no denominations got more than 1 vote then simply return an empty array.\n\n**Note**: Can you wirte an algorithm that runs in **O(N)** Time complexity and **O(1)** space complexity if we exclude the space used by answer array. \n\n### Example 1 \n\n### Input\n```CPP\nvotes = [4,3,2,1,2,1]\n``` \n### Output \n```CPP \n[1,2]\n``` \n#### Explanation:\n\ncurrency of denominations 1 and 2 got more than 1 votes so they are going to be released by the RBI\n\n\n### Example 2 \n\n### Input\n```CPP\n arr = [3,4,3,1]\n``` \n### Output \n```CPP \n[3]\n``` \n#### Explanation:\n\nonly currency of denomination 3 got more than 1 votes. \n\n### Constraints:\n\n* 1 <= n= 10000\n* 1 <= arr[i] <= N \n\n\n\n\n",
+    "title": "Help the Governor",
+    "default_testcase": {
+        "id": 4373,
+        "input": "6\n4 3 2 1 2 1",
+        "expected_output": "1 2 ",
+        "code_problem_id": 660,
+        "created_at": "2024-01-27T13:14:33.608Z",
+        "updated_at": "2024-01-27T13:14:33.608Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2039,
+            "code_problem_id": 660,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution\n{\npublic:\n\tvector<int> findCurrency(vector<int> &votes) {",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2041,
+            "code_problem_id": 660,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<Integer> findCurrency(List<Integer> votes) {",
+            "skeleton_class_end": "     }    \n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2042,
+            "code_problem_id": 660,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def findCurrency(self, votes):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2044,
+            "code_problem_id": 660,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    findCurrency(votes) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

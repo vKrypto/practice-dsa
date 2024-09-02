@@ -1,0 +1,526 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="169">
+            <item index="0" class="java.lang.String" itemvalue="Babel" />
+            <item index="1" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="2" class="java.lang.String" itemvalue="setuptools" />
+            <item index="3" class="java.lang.String" itemvalue="google-measurement-protocol" />
+            <item index="4" class="java.lang.String" itemvalue="django-payments" />
+            <item index="5" class="java.lang.String" itemvalue="django-bootstrap4" />
+            <item index="6" class="java.lang.String" itemvalue="django-countries" />
+            <item index="7" class="java.lang.String" itemvalue="django-cache-url" />
+            <item index="8" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+            <item index="9" class="java.lang.String" itemvalue="django-impersonate" />
+            <item index="10" class="java.lang.String" itemvalue="pip" />
+            <item index="11" class="java.lang.String" itemvalue="bleach" />
+            <item index="12" class="java.lang.String" itemvalue="razorpay" />
+            <item index="13" class="java.lang.String" itemvalue="Markdown" />
+            <item index="14" class="java.lang.String" itemvalue="WeasyPrint" />
+            <item index="15" class="java.lang.String" itemvalue="django-versatileimagefield" />
+            <item index="16" class="java.lang.String" itemvalue="django-apscheduler" />
+            <item index="17" class="java.lang.String" itemvalue="dj-database-url" />
+            <item index="18" class="java.lang.String" itemvalue="APScheduler" />
+            <item index="19" class="java.lang.String" itemvalue="psutil" />
+            <item index="20" class="java.lang.String" itemvalue="boto3" />
+            <item index="21" class="java.lang.String" itemvalue="django-mptt" />
+            <item index="22" class="java.lang.String" itemvalue="IPy" />
+            <item index="23" class="java.lang.String" itemvalue="django-filter" />
+            <item index="24" class="java.lang.String" itemvalue="typing" />
+            <item index="25" class="java.lang.String" itemvalue="geopy" />
+            <item index="26" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="27" class="java.lang.String" itemvalue="django-storages" />
+            <item index="28" class="java.lang.String" itemvalue="django-prices" />
+            <item index="29" class="java.lang.String" itemvalue="celery" />
+            <item index="30" class="java.lang.String" itemvalue="google-auth-httplib2" />
+            <item index="31" class="java.lang.String" itemvalue="django-prices-vatlayer" />
+            <item index="32" class="java.lang.String" itemvalue="django-phonenumber-field" />
+            <item index="33" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="34" class="java.lang.String" itemvalue="django-cors-headers" />
+            <item index="35" class="java.lang.String" itemvalue="google-i18n-address" />
+            <item index="36" class="java.lang.String" itemvalue="django-babel" />
+            <item index="37" class="java.lang.String" itemvalue="django-celery-results" />
+            <item index="38" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="39" class="java.lang.String" itemvalue="text-unidecode" />
+            <item index="40" class="java.lang.String" itemvalue="dj-email-url" />
+            <item index="41" class="java.lang.String" itemvalue="django-templated-email" />
+            <item index="42" class="java.lang.String" itemvalue="pandas" />
+            <item index="43" class="java.lang.String" itemvalue="social-auth-app-django" />
+            <item index="44" class="java.lang.String" itemvalue="Django" />
+            <item index="45" class="java.lang.String" itemvalue="django-redis" />
+            <item index="46" class="java.lang.String" itemvalue="django-elasticsearch-dsl" />
+            <item index="47" class="java.lang.String" itemvalue="google-auth" />
+            <item index="48" class="java.lang.String" itemvalue="django-prometheus" />
+            <item index="49" class="java.lang.String" itemvalue="httpx" />
+            <item index="50" class="java.lang.String" itemvalue="tzlocal" />
+            <item index="51" class="java.lang.String" itemvalue="greenlet" />
+            <item index="52" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="53" class="java.lang.String" itemvalue="rocketry" />
+            <item index="54" class="java.lang.String" itemvalue="markdown-it-py" />
+            <item index="55" class="java.lang.String" itemvalue="redis" />
+            <item index="56" class="java.lang.String" itemvalue="pyasn1-modules" />
+            <item index="57" class="java.lang.String" itemvalue="Pygments" />
+            <item index="58" class="java.lang.String" itemvalue="pycryptodomex" />
+            <item index="59" class="java.lang.String" itemvalue="starlette" />
+            <item index="60" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="61" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="62" class="java.lang.String" itemvalue="libcst" />
+            <item index="63" class="java.lang.String" itemvalue="passlib" />
+            <item index="64" class="java.lang.String" itemvalue="pydantic" />
+            <item index="65" class="java.lang.String" itemvalue="asyncpg" />
+            <item index="66" class="java.lang.String" itemvalue="graphql-core" />
+            <item index="67" class="java.lang.String" itemvalue="click" />
+            <item index="68" class="java.lang.String" itemvalue="pydantic_core" />
+            <item index="69" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="70" class="java.lang.String" itemvalue="install" />
+            <item index="71" class="java.lang.String" itemvalue="Mako" />
+            <item index="72" class="java.lang.String" itemvalue="atpublic" />
+            <item index="73" class="java.lang.String" itemvalue="httpcore" />
+            <item index="74" class="java.lang.String" itemvalue="idna" />
+            <item index="75" class="java.lang.String" itemvalue="google-cloud-bigquery" />
+            <item index="76" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="77" class="java.lang.String" itemvalue="rsa" />
+            <item index="78" class="java.lang.String" itemvalue="redbird" />
+            <item index="79" class="java.lang.String" itemvalue="cffi" />
+            <item index="80" class="java.lang.String" itemvalue="numpy" />
+            <item index="81" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="82" class="java.lang.String" itemvalue="requests" />
+            <item index="83" class="java.lang.String" itemvalue="snowflake-connector-python" />
+            <item index="84" class="java.lang.String" itemvalue="sniffio" />
+            <item index="85" class="java.lang.String" itemvalue="exceptiongroup" />
+            <item index="86" class="java.lang.String" itemvalue="pyOpenSSL" />
+            <item index="87" class="java.lang.String" itemvalue="mdurl" />
+            <item index="88" class="java.lang.String" itemvalue="tenacity" />
+            <item index="89" class="java.lang.String" itemvalue="grpcio-status" />
+            <item index="90" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="91" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="92" class="java.lang.String" itemvalue="websockets" />
+            <item index="93" class="java.lang.String" itemvalue="pyarrow" />
+            <item index="94" class="java.lang.String" itemvalue="annotated-types" />
+            <item index="95" class="java.lang.String" itemvalue="CD" />
+            <item index="96" class="java.lang.String" itemvalue="snowflake" />
+            <item index="97" class="java.lang.String" itemvalue="watchfiles" />
+            <item index="98" class="java.lang.String" itemvalue="db-dtypes" />
+            <item index="99" class="java.lang.String" itemvalue="tornado" />
+            <item index="100" class="java.lang.String" itemvalue="botocore" />
+            <item index="101" class="java.lang.String" itemvalue="google-auth-oauthlib" />
+            <item index="102" class="java.lang.String" itemvalue="amqp" />
+            <item index="103" class="java.lang.String" itemvalue="f" />
+            <item index="104" class="java.lang.String" itemvalue="python-multipart" />
+            <item index="105" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="106" class="java.lang.String" itemvalue="watchdog" />
+            <item index="107" class="java.lang.String" itemvalue="strawberry-graphql" />
+            <item index="108" class="java.lang.String" itemvalue="google-cloud-pubsub" />
+            <item index="109" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="110" class="java.lang.String" itemvalue="cachetools" />
+            <item index="111" class="java.lang.String" itemvalue="click-repl" />
+            <item index="112" class="java.lang.String" itemvalue="pytz" />
+            <item index="113" class="java.lang.String" itemvalue="ujson" />
+            <item index="114" class="java.lang.String" itemvalue="protobuf" />
+            <item index="115" class="java.lang.String" itemvalue="googleapis-common-protos" />
+            <item index="116" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="117" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="118" class="java.lang.String" itemvalue="h11" />
+            <item index="119" class="java.lang.String" itemvalue="kombu" />
+            <item index="120" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="121" class="java.lang.String" itemvalue="httptools" />
+            <item index="122" class="java.lang.String" itemvalue="pysnowflake" />
+            <item index="123" class="java.lang.String" itemvalue="filelock" />
+            <item index="124" class="java.lang.String" itemvalue="certifi" />
+            <item index="125" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="126" class="java.lang.String" itemvalue="anyio" />
+            <item index="127" class="java.lang.String" itemvalue="vine" />
+            <item index="128" class="java.lang.String" itemvalue="google-api-core" />
+            <item index="129" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="130" class="java.lang.String" itemvalue="email-validator" />
+            <item index="131" class="java.lang.String" itemvalue="dnspython" />
+            <item index="132" class="java.lang.String" itemvalue="google-crc32c" />
+            <item index="133" class="java.lang.String" itemvalue="cryptography" />
+            <item index="134" class="java.lang.String" itemvalue="orjson" />
+            <item index="135" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="136" class="java.lang.String" itemvalue="pandas-gbq" />
+            <item index="137" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="138" class="java.lang.String" itemvalue="google-cloud-core" />
+            <item index="139" class="java.lang.String" itemvalue="async-timeout" />
+            <item index="140" class="java.lang.String" itemvalue="mypy-extensions" />
+            <item index="141" class="java.lang.String" itemvalue="cloudpickle" />
+            <item index="142" class="java.lang.String" itemvalue="wcwidth" />
+            <item index="143" class="java.lang.String" itemvalue="click-didyoumean" />
+            <item index="144" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="145" class="java.lang.String" itemvalue="grpc-google-iam-v1" />
+            <item index="146" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="147" class="java.lang.String" itemvalue="google-resumable-media" />
+            <item index="148" class="java.lang.String" itemvalue="tomlkit" />
+            <item index="149" class="java.lang.String" itemvalue="oscrypto" />
+            <item index="150" class="java.lang.String" itemvalue="urllib3" />
+            <item index="151" class="java.lang.String" itemvalue="python-jose" />
+            <item index="152" class="java.lang.String" itemvalue="billiard" />
+            <item index="153" class="java.lang.String" itemvalue="asn1crypto" />
+            <item index="154" class="java.lang.String" itemvalue="tzdata" />
+            <item index="155" class="java.lang.String" itemvalue="ecdsa" />
+            <item index="156" class="java.lang.String" itemvalue="rich" />
+            <item index="157" class="java.lang.String" itemvalue="packaging" />
+            <item index="158" class="java.lang.String" itemvalue="jmespath" />
+            <item index="159" class="java.lang.String" itemvalue="fastapi" />
+            <item index="160" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="161" class="java.lang.String" itemvalue="typing-inspect" />
+            <item index="162" class="java.lang.String" itemvalue="colorama" />
+            <item index="163" class="java.lang.String" itemvalue="proto-plus" />
+            <item index="164" class="java.lang.String" itemvalue="grpcio" />
+            <item index="165" class="java.lang.String" itemvalue="google-cloud-bigquery-storage" />
+            <item index="166" class="java.lang.String" itemvalue="click-plugins" />
+            <item index="167" class="java.lang.String" itemvalue="pydata-google-auth" />
+            <item index="168" class="java.lang.String" itemvalue="pytest-mock" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="saleor.metal.models.JewellerySizeFactor.*" />
+          <option value="saleor.metal.models.PriceInfo.*" />
+          <option value="saleor.order.models.FulfillmentLine.*" />
+          <option value="saleor.order.models.OldFulfillmentLine.*" />
+          <option value="saleor.core.models.PostalData.*" />
+          <option value="saleor.wishlist.models.WishListLine.*" />
+          <option value="saleor.product.models.AttributeChoiceValue.*" />
+          <option value="saleor.product.models.ProductAttribute.*" />
+          <option value="saleor.core.models.Booking.*" />
+          <option value="saleor.cart.models.CartLine.*" />
+          <option value="saleor.dashboard.cad_request.models.FourViewImage.*" />
+          <option value="django.db.models.fields.related.OneToOneField.*" />
+          <option value="saleor.dashboard.cad_request.models.CadRequest.*" />
+          <option value="saleor.dashboard.order.productionflow.models.ProcessOrder.*" />
+          <option value="django.contrib.postgres.fields.hstore.HStoreField.*" />
+          <option value="saleor.product.models.Product.*" />
+          <option value="django.db.models.fields.related.ForeignKey.*" />
+          <option value="saleor.order.models.Order.*" />
+          <option value="saleor.order.models.Fulfillment.*" />
+          <option value="saleor.chat.models.ExpertChat.*" />
+          <option value="saleor.dashboard.issuetracker.models.Issue.*" />
+          <option value="django.db.models.fields.DateField.*" />
+          <option value="saleor.core.models.TryAtHome1.*" />
+          <option value="saleor.core.models.Refers.*" />
+          <option value="saleor.site.models.Banners.*" />
+          <option value="saleor.core.models.NewsletterUsers.*" />
+          <option value="saleor.discount.models.Voucher.*" />
+          <option value="saleor.account.models.Address.*" />
+          <option value="saleor.core.models.Feedback.*" />
+          <option value="saleor.order.models.Payment.*" />
+          <option value="saleor.dashboard.incentive.models.TeamMember.*" />
+          <option value="saleor.dashboard.order.credit.models.Credit.*" />
+          <option value="saleor.dashboard.order.productionflow.models.JobCard.*" />
+          <option value="saleor.order.models.Interaction.*" />
+          <option value="saleor.dashboard.estimation.models.EstimationHistory.*" />
+          <option value="saleor.wallet.models.QuickCilverAPI.*" />
+          <option value="saleor.metal.models.DiamondCaratFactor.*" />
+          <option value="saleor.core.models.IpAddresses.*" />
+          <option value="saleor.dashboard.shipment.models.Shipment.*" />
+          <option value="saleor.dashboard.p_n_l.models.LotLine.*" />
+          <option value="saleor.dashboard.p_n_l.models.Vendor.*" />
+          <option value="saleor.dashboard.p_n_l.models.MetalRequirement.*" />
+          <option value="saleor.dashboard.p_n_l.models.DiamondRequirement.*" />
+          <option value="saleor.dashboard.order.productionflow.models.ProductionFlow.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

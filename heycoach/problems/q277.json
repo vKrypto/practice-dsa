@@ -1,0 +1,64 @@
+{
+    "id": 277,
+    "description": "Ramesh loves diamonds, One day he found out that there is a circular linked list-like structure present in this neighbourhood, and each node of that linked list contains the number of diamonds in the form of node value, Ramesh wants to collect the maximum amount of diamonds but he can only take away the diamonds of only one of the node. How many diamonds can Ramesh get?</br>\nA linked list is said to be circular when the last node of a linked list is connected with the first node.\n#### `Example 1:`\n\n#### `Input:` \n```\nlist = [1,2,3,6,8]\n```\n#### `Output:` \n```\n8\n```\n#### `Example 2:`\n\n#### `Input:` \n```\nlist = [9,3,6,9,25]\n```\n#### `Output:` \n```\n25\n```\n#### `Constraints:` \n\n- `The number of the nodes in the list is in the range [0., 10^4]`\n\n- `0 <= Node.val <= 10^4`\n",
+    "title": "MAX ELEMENT IN CIRCULAR QUEUE",
+    "default_testcase": {
+        "id": 1872,
+        "input": "5\n1 2 3 6 8",
+        "expected_output": "8 ",
+        "code_problem_id": 277,
+        "created_at": "2023-09-13T17:49:28.983Z",
+        "updated_at": "2023-09-13T17:49:28.983Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 689,
+            "code_problem_id": 277,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\nvoid  printList(Node *head){\n  //Write your code here\n\n",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1068,
+            "code_problem_id": 277,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    int data;\n    Node next;\n\n    Node(int x) {\n        data = x;\n        next = null;\n    }\n}\n*/\n\nclass Solution {\n    public void printList(Node head) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1069,
+            "code_problem_id": 277,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "'''\nclass Node:\n    def __init__(self, x):\n        self.data = x\n        self.next = None'''\n\n\n\nclass Solution:\n    def printList(self, head):\n        #Write your code here\n\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1070,
+            "code_problem_id": 277,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*class Node {\n    constructor(x) {\n        this.data = x;\n        this.next = null;\n    }\n}*/\nclass Solution {\n    printList(head) {\n      //Write your code here\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

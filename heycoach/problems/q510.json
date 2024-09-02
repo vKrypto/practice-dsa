@@ -1,0 +1,64 @@
+{
+    "id": 510,
+    "description": "You are given a sorted array `arr` containing distinct integers. Your task is to implement a function search_position that, given a target value, returns the index where the target is found in the array. If the target is not present, return the index where it would be if inserted in order.\n\n### Note:-\n`Implement an algorithm with O(log n) runtime complexity.`\n\n### `Input format:-` \n```\narr (1 <= len(nums) <= 10^4) is a sorted array of distinct integers.<br>\ntarget (1 <= target <= 10^5) is the value to search for or insert.\n```\n\n### Output format1 :-\n`Return an integer representing the index where the target is found or the index where it would be inserted.`\n\n\n### `Examples`\n\n#### `Example` `1`\n```\nInput: arr = [1,3,5,6], target = 5 \nOutput: 2\n```\n\n#### `Example 2`\n```\nInput: arr = [1,3,5,6], target = 2\nOutput: 1\n```\n\n\n\n",
+    "title": "Sorted Array Search",
+    "default_testcase": {
+        "id": 5507,
+        "input": "4 5\n1 3 5 6",
+        "expected_output": "2\n",
+        "code_problem_id": 510,
+        "created_at": "2024-02-15T07:24:23.877Z",
+        "updated_at": "2024-02-15T07:24:23.877Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1503,
+            "code_problem_id": 510,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int search_position(vector<int>& arr, int target) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1504,
+            "code_problem_id": 510,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int searchPosition(ArrayList<Integer> arr, int target) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1505,
+            "code_problem_id": 510,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def search_position(self, arr, target):\n            # write code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1506,
+            "code_problem_id": 510,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    searchPosition(arr, target) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

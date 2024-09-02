@@ -1,0 +1,45 @@
+{
+    "id": 23,
+    "description": "Given two integers a and b, return any string s such that:\n\n* s has length a + b and contains exactly a 'a' letters, and exactly b 'b' letters,\n* The substring 'aaa' does not occur in s, and\n* The substring 'bbb' does not occur in s.\n\n### Example 1 \n\n### Input\n```CPP\na = 1, b = 2\n``` \n### Output \n```CPP \n \"abb\"\n``` \n#### Explanation:\n\"abb\", \"bab\" and \"bba\" are all correct answers.\n\n\n\n\n\n\n\n### Example 2 \n\n### Input\n```CPP\n a = 4, b = 1\n``` \n### Output \n```CPP \n\"aabaa\"\n``` \n\n### Constraints:\n\n* 0 <= a, b <= 100\n* It is guaranteed such an s exists for the given a and b.\n",
+    "title": "Special String",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 339,
+            "code_problem_id": 23,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(int a,int b) {\n    \n  } \n};\n\n"
+        },
+        {
+            "id": 345,
+            "code_problem_id": 23,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(int a,int b) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 351,
+            "code_problem_id": 23,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, a, b):\n        # your code here\n"
+        }
+    ]
+}

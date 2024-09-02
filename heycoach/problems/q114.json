@@ -1,0 +1,64 @@
+{
+    "id": 114,
+    "description": "A  `flip` of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.\n\nGiven two integers start and goal, return the `minimum` number of `flips` to convert start to goal.\n\nInput Format:\n\nFirst and only contains two space seperated integers representing the start number and the end number.\n\nOutput Format:\n\nReturn a single integer representing the minimum number of flips required to convert start number to end number.\n\n### Example 1 \n\n### Input\n```CPP\nstart = 10, goal = 7\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\nThe binary representation of 10 and 7 are 1010 and 0111 respectively. We can convert 10 to 7 in 3 steps:\n- Flip the first bit from the right: 1010 -> 1011.\n- Flip the third bit from the right: 1011 -> 1111.\n- Flip the fourth bit from the right: 1111 -> 0111.\nIt can be shown we cannot convert 10 to 7 in less than 3 steps. Hence, we return 3.\n\n\n### Example 2 \n\n### Input\n```CPP\n start = 3, goal = 4\n``` \n### Output \n```CPP \n3\n``` \n#### Explanation:\n The binary representation of 3 and 4 are 011 and 100 respectively. We can convert 3 to 4 in 3 steps:\n- Flip the first bit from the right: 011 -> 010.\n- Flip the second bit from the right: 010 -> 000.\n- Flip the third bit from the right: 000 -> 100.\nIt can be shown we cannot convert 3 to 4 in less than 3 steps. Hence, we return 3.\n\nConstraints:\n\n1<=start,end<=10^9\n",
+    "title": "Bit Conversion",
+    "default_testcase": {
+        "id": 814,
+        "input": "9641533 146558",
+        "expected_output": "8",
+        "code_problem_id": 114,
+        "created_at": "2022-10-06T17:47:19.414Z",
+        "updated_at": "2022-10-06T17:47:19.414Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 337,
+            "code_problem_id": 114,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n  public:\n    int minBitFlips(int start, int goal) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 343,
+            "code_problem_id": 114,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int minBitFlips(int start, int goal) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 349,
+            "code_problem_id": 114,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minBitFlips(self, start, goal):\n      #Write your code here;",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 660,
+            "code_problem_id": 114,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    minBitFlips(start, goal) {\n      //Write your code here;",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

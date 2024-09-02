@@ -1,0 +1,45 @@
+{
+    "id": 153,
+    "description": "Given a `m x n` matrix mat and an integer k, return a matrix answer where each `answer[i][j]` is the sum of all elements mat[r][c] for:\n\n* i - k <= r <= i + k,\n* j - k <= c <= j + k, and\n* (r, c) is a valid position in the matrix.\n### Example 1 \n\n### Input\n```CPP\nmat = [[1,2,3],[4,5,6],[7,8,9]], k = 1\n``` \n### Output \n```CPP \n [[12,21,16],[27,45,33],[24,39,28]]\n``` \n\n\n\n### Example 2 \n\n### Input\n```CPP\nmat = [[1,2,3],[4,5,6],[7,8,9]], k = 2\n``` \n### Output \n```CPP \n [[45,45,45],[45,45,45],[45,45,45]]\n``` \n\n\n\n### Constraints:\n\n* m == mat.length\n* n == mat[i].length\n* 1 <= m, n, k <= 100\n* 1 <= mat[i][j] <= 100\n\n",
+    "title": "Matrix Sum",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 355,
+            "code_problem_id": 153,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tvoid solve(vector<vector<int>> arr,int k) {\n\n\t}\n};\n"
+        },
+        {
+            "id": 359,
+            "code_problem_id": 153,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\npublic class Solution {\n    public void solve(Vector<Vector<Integer>> arr,int k) {\n        // your code here\n    }\n}\n"
+        },
+        {
+            "id": 363,
+            "code_problem_id": 153,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr, k):\n        # your code here\n"
+        }
+    ]
+}

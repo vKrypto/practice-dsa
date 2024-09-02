@@ -1,0 +1,64 @@
+{
+    "id": 517,
+    "description": "Imagine a mystical forest where a special tree, known as the \"Expression Tree,\" holds mathematical secrets. This tree is made up of numbers and basic operators like +, -, *, and /.\n\nYour task is to venture into this enchanted forest and decipher the hidden message within the Expression Tree. As you follow the branches from the root to the leaves, combine the numbers and operators to find the final result of the mathematical expression concealed within the tree.\n\nCan you use the powers of addition, subtraction, multiplication, and division to unveil the secret and reveal the answer hidden in the Expression Tree?\n\nSample input:\n1 \n7 \n+*- 5 4 100 20\n\nSample output:\n100\n\nExplaination:\nHere a binary tree created with + as root node. * and - as its child nodes. Left subtree gives 5*4=20 and right subtree gives 100-20=80 and finally 20+80 gives 100 as final output.\n\nConstraints:\n0<t<=1000\n0<=n<=100\n\n\n\n",
+    "title": "Mystical Forest",
+    "default_testcase": {
+        "id": 3469,
+        "input": "1 \n7 \n+ * - 5 4 100 20\n\n",
+        "expected_output": "100\n",
+        "code_problem_id": 517,
+        "created_at": "2024-01-05T10:07:18.033Z",
+        "updated_at": "2024-01-05T10:07:18.033Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1530,
+            "code_problem_id": 517,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\nclass Node {\n    constructor(x) {\n        this.data = x;\n        this.left = null;\n        this.right = null;\n    }\n}*/\n\nclass Solution {\n    evalTree(root) {\n    }\n}"
+        },
+        {
+            "id": 1531,
+            "code_problem_id": 517,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\nstruct node{\n    string data;\n    struct node*left;\n    struct node*right;\n\n    node(string x){\n        data=x;\n        left=NULL;\n        right=NULL;\n    }\n};\n*/\n\nclass Solution{\n  public:\n    /*You are required to complete below method */\n    int evalTree(node* root) {\n\n    }\n};"
+        },
+        {
+            "id": 1532,
+            "code_problem_id": 517,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "/*\nclass Node {\n    String data;\n    Node left, right;\n\n    public Node(String x) {\n        data = x;\n        left = null;\n        right = null;\n    }\n}*/\n\nclass Solution {\n    int evalTree(Node root) {\n\n    }\n}\n\n"
+        },
+        {
+            "id": 1533,
+            "code_problem_id": 517,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\"\"\"\nclass Node:\n    def __init__(self, x):\n        self.data = x\n        self.left = None\n        self.right = None\n\"\"\"\n\nclass Solution:\n    def eval_tree(self, root):\n       \n\n"
+        }
+    ]
+}

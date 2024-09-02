@@ -1,0 +1,64 @@
+{
+    "id": 654,
+    "description": "Om has a string S of length N. But Om being perfectionist, doesn't likes the string. He decides to do perform M operations on the string to see if final string generated is perfect or not. For ith operation on string, Om selects a number Ai and reverses substring covered by Ai to N - Ai + 1 position. Om then proceeds to apply (i+1)th operation on string obtained after applying ith operation. It is guaranteed that 2 * Ai \u2264 N. Strings consist of latin letters in lower case and are numbered from left to right starting from position 1.\n\nYou need to report to Om the final string that he is going to obtain.\n\n### Input\n```\nThe first line will contain the string S Second line contains integer M, which number of operations Om plans to apply to string Third line contains M space separated integers Ai which represents position in string where Om is going to transform string in ith operation.\n```\n### Output\n```\n Output a single string, final string obtained after applying all operations one after one\n```\n### Sample Input\n```\nabcdef\n1\n2\n```\n### Sample Output\n```\naedcbf\n```\n### Explanation\n```\nThe initial string is \"abcdef\". Now, let's apply the operations one by one:\n\nThe first operation specifies Ai = 2, which means we need to reverse the substring from position 2 to (N - Ai + 1), i.e., from position 2 to 5.\nAfter applying the first operation, the string becomes aedcbf. This is because the substring from position 2 to 5 (edcb) is reversed.\n```\n### Constraints\n```\n1 <= N <= 10^5 (length of the string)\n1 <= M <= 100 (number of operations)\n1 <= Ai <= N / 2 (position in string for the ith operation)\n2 * Ai <= N (guaranteed condition for the operation)\nThe string S consists of Latin letters in lowercase.\n```",
+    "title": "String Ops",
+    "default_testcase": {
+        "id": 4371,
+        "input": "abcdef\n1\n2",
+        "expected_output": "aedcbf",
+        "code_problem_id": 654,
+        "created_at": "2024-01-27T13:01:32.782Z",
+        "updated_at": "2024-01-27T13:01:32.782Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2034,
+            "code_problem_id": 654,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string performOperations(string str, int m, vector<int>& arr) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2038,
+            "code_problem_id": 654,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    String performOperations(String str, int m, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2040,
+            "code_problem_id": 654,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def perform_operations(self, s, m, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2043,
+            "code_problem_id": 654,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    performOperations(str, m, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

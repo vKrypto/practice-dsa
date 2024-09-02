@@ -1,0 +1,57 @@
+{
+    "id": 662,
+    "description": "You have given a rectangular board of M\u2009\u00d7\u2009N squares. You also have unlimited number of standard block pieces of \u20092 x1 squares. You are allowed to rotate the pieces. You are asked to place as many blocks as possible on the board so as to meet the following conditions:\n\n1. Each block completely covers two squares.\n\n2. No two blocks overlap.\n\n3. Each block lies entirely inside the board. It is allowed to touch the edges of the board.\n\nFind the maximum number of blocks, which can be placed under these restrictions.\n\n### Input\n```\nIn a single line you are given two integers M and N \u2014 board sizes in squares.\n```\n### Output\n```\nOutput one number \u2014 the maximal number of dominoes, which can be placed.\n```\n### Sample Input\n```\n2 4\n```\n### Sample Output\n```\n4\n```\n### Explanation\n```\nIn the given problem, we have a rectangular board of size M\u2009\u00d7\u2009N squares, and we want to place domino pieces (each consisting of 2 squares) on the board following certain conditions. The goal is to maximize the number of dominoes placed.\n\nThe conditions are as follows:\n\nEach domino completely covers two squares.\nNo two dominoes overlap.\nEach domino lies entirely inside the board. It is allowed to touch the edges of the board.\nNow, let's consider an example for better understanding:\n\nSuppose we have a board of size 3\u2009\u00d7\u20094:\n| | | |\n| | | |\n| | | |\n\nTo maximize the number of dominoes, we can place them in the following way:\n| | | |\n| | | |\n\nWe placed two dominoes horizontally, covering the top two rows.\n\nNow, we have the remaining board:\n| | | |\n\nWe can place two more dominoes vertically, covering the remaining row.\n\nIn total, we placed 4 dominoes on the board, and this is the maximum number of dominoes we can place following the given conditions.\n\nThe key observation is that, regardless of the initial size of the board, we can always place 4 dominoes by covering two rows (either horizontally or vertically). If there are more rows, we can continue placing dominoes until all rows are covered, but the maximum number remains 4.\n\n```\n### Constraints\n```\n1\u2009\u2264\u2009M\u2009\u2264\u2009N\u2009\u2264\u200916 \n```",
+    "title": "Board Filling",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2049,
+            "code_problem_id": 662,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\nint boardfill(int n,int m) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2051,
+            "code_problem_id": 662,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int boardFill(int n, int m) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2052,
+            "code_problem_id": 662,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def boardfill(self, n, m):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2054,
+            "code_problem_id": 662,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    boardfill(n, m) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

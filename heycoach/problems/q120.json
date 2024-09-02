@@ -1,0 +1,64 @@
+{
+    "id": 120,
+    "description": "Given a non-negative integer represented as a string `num` and an integer `k`, remove `k` digits from the number so that the new number is the smallest possible. The remaining digits should maintain their original order in the string. Return the result as a string.\n\n**Input Format:**\n\n- `The first line contains the string `num`, representing the non-negative integer.`\n- `The second line contains the integer `k`.`\n\n**Output Format:**\n\n- `Print the smallest possible integer as a string after removing `k` digits.`\n\n\n**Sample Input 1:**\n\n```\n1432219\n3\n```\n\n**Sample Output 1:**\n\n```\n1219\n```\n\n**Explanation:**\n\n`Removing the digits 4, 3, and 2 from \"1432219\" leads to the new number \"1219\", which is the smallest possible result.`\n\n**Sample Input 2:**\n\n```\n10200\n1\n```\n\n**Sample Output 2:**\n\n```\n200\n```\n\n**Explanation:**\n\n`Removing one digit (the leading 1) from \"10200\" results in \"0200\", and removing the leading zeroes gives \"200\" as the smallest possible result.`\n#### `Constraints:`\n- `1<=k<= num.length<= 100000`\n- `num contains of only digits`\n",
+    "title": "Remove K digits",
+    "default_testcase": {
+        "id": 3654,
+        "input": "1432219\n3",
+        "expected_output": "1219\n",
+        "code_problem_id": 120,
+        "created_at": "2024-01-08T10:48:09.290Z",
+        "updated_at": "2024-01-08T10:48:09.290Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 157,
+            "code_problem_id": 120,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    string removeKdigits(string num, int k) {\n      //Write your code here\n       \n",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 158,
+            "code_problem_id": 120,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String removeKdigits(String num, int k) {\n      //Write your code here\n   \n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 159,
+            "code_problem_id": 120,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def removeKdigits(self, s, k):\n        #Write your code here;\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 563,
+            "code_problem_id": 120,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    removeKdigits(num, k) {\n        //Write your code here;\n",
+            "skeleton_class_end": "      }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

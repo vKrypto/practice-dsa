@@ -1,0 +1,64 @@
+{
+    "id": 826,
+    "description": "Kunal has an matrix of size n*m. The cell in the ith row and jth column contain the value equals to i*j.\nHelp him to find the Kth smallest in the matrix.\n\n#### `Example:`\n\n```\nSuppose n=3 , m=3 and k=5 then if we arrange all elements in the matrix in the sorted order then they are 1 2 2 3 3 4 6 6 9 and the 5th smallest here is 3 so our answer is 3.\n```\n\n#### `Input`\n- `The input contains three integers n , m and k (1\u2264n,m\u22645e5 , 1\u2264k\u2264n*m).`\n\n#### `Output:`\n- `Print one integer, kth number in ascending order in the Matrix.`\n\n#### `Sample Input 1`\n```\n3 4 4\n```\n#### `Sample Output 1`\n```\n3\n\n```\n#### `Sample Input 2`\n```\n5 6 16\n```\n#### `Sample Output 2`\n```\n9\n```",
+    "title": "Kth Smallest in the Matrix",
+    "default_testcase": {
+        "id": 7606,
+        "input": "5 6 16",
+        "expected_output": "9\n",
+        "code_problem_id": 826,
+        "created_at": "2024-04-28T18:19:36.957Z",
+        "updated_at": "2024-04-28T18:19:36.957Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2694,
+            "code_problem_id": 826,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    long long int KthSmallest(long long int n, long long int m, long long int k){\n      //Write your code here\n",
+            "skeleton_class_end": "    }\n};\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2695,
+            "code_problem_id": 826,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def kth_smallest(self, n, m, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2696,
+            "code_problem_id": 826,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution{\n      long kthSmallest(long n, long m, long k) {\n        //Write your code here\n",
+            "skeleton_class_end": "  }  \n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2835,
+            "code_problem_id": 826,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    KthSmallest(n, m, k) {\n      //Write your code here",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

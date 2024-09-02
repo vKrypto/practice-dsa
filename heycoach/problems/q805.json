@@ -1,0 +1,64 @@
+{
+    "id": 805,
+    "description": "Description\n\nAakash needs your help. He is building a road for a city. There are metro stations in these cities along these roads. It consists of n stations connected with the minimum possible number of roads into one network (a wire road connects two stations). Exactly k number of stations should be present at the end of the road (exit-stations), that means that each of them should be connected to exactly one other metro station of the city, while all other stations should be connected to at least two other stations in order to increase the system stability.\n\nAakash wants to make the system as fast as possible, so he wants to minimize the maximum distance between two exit-stations. The distance between two stations is the number of roads a person needs to go through between those two stations.\nHelp Aakash to find such a way to build the network that the distance between the two most distant exit-stations is as small as possible.\n\n\nSample Input\n\n3 2\n\nSample Output\n\n2\n\n1 2\n\n2 3\n\nConstraints\n\n3<=n<=10^5\n\n1<=k<=n-1",
+    "title": "End Stations",
+    "default_testcase": {
+        "id": 7669,
+        "input": "6 3",
+        "expected_output": "4\nAnswer is valid\n",
+        "code_problem_id": 805,
+        "created_at": "2024-05-03T11:43:54.360Z",
+        "updated_at": "2024-05-03T11:43:54.360Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2739,
+            "code_problem_id": 805,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    vector<vector<int>> solve(int n, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2874,
+            "code_problem_id": 805,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public List<List<Integer>> solve(int n, int k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2875,
+            "code_problem_id": 805,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2876,
+            "code_problem_id": 805,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(n, k) {\n      //Write your code here",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

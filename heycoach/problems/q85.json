@@ -1,0 +1,45 @@
+{
+    "id": 85,
+    "description": "Given an array of size n, print the majority element.\n\nThe majority element is the element that appears more than \u230an / 2\u230b times. You may assume that the majority element always exists in the array.\n\n#### Constriant:\n- 1 <= n <= 5 * 104\n- (-10^9) <= nums[i] <= 10^9\n\n#### Input Format: \n- first line contains n ( the size of the array)\n- second line contains the n elements of the array\n\n#### Output Format: \n- Print the single element",
+    "title": "Majority Element II",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 64,
+            "code_problem_id": 85,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};"
+        },
+        {
+            "id": 69,
+            "code_problem_id": 85,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n  public void solve(Vector<Integer> arr) {\n  } \n}"
+        },
+        {
+            "id": 74,
+            "code_problem_id": 85,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass"
+        }
+    ]
+}

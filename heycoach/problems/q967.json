@@ -1,0 +1,64 @@
+{
+    "id": 967,
+    "description": "Given an array of integers nums, we want to select three indices i, j, and k where \n\n0\u2264i<j\u2264k<nums.length.\n\nLet's define a and b as follows:\n\na=nums[i]\u2295nums[i+1]\u2295...\u2295nums[j\u22121]\n\nb=nums[j]\u2295nums[j+1]\u2295...\u2295nums[k]\n\nNote that \u2295\n\n\u2295 denotes the bitwise XOR operation.\n\nReturn the number of triplets (i,j,k) where a==b.\n\nExample 1:\n\nInput: nums = [2, 3, 1, 6, 7]\n\nOutput: 4\n\nExplanation: The triplets are (0, 1, 2), (0, 2, 2), (2, 3, 4), and (2, 4, 4).\n\nExample 2:\n\nInput: nums = [1, 1, 1, 1, 1]\n\nOutput: 10\n\nConstraints:\n\n1\u2264nums.length\u2264300\n\n1\u2264nums[i]\u226410^8",
+    "title": "Count Triplets with Equal XOR Segments",
+    "default_testcase": {
+        "id": 8458,
+        "input": "1\n5",
+        "expected_output": "0\n",
+        "code_problem_id": 967,
+        "created_at": "2024-05-30T07:02:08.448Z",
+        "updated_at": "2024-05-30T07:02:08.448Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3224,
+            "code_problem_id": 967,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int countTriplets(vector<int>& nums) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3225,
+            "code_problem_id": 967,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int countTriplets(int[] nums) {",
+            "skeleton_class_end": "    }\n}\n",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3226,
+            "code_problem_id": 967,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def countTriplets(self, nums):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3227,
+            "code_problem_id": 967,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    countTriplets(nums) {",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

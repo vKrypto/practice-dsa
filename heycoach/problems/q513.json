@@ -1,0 +1,64 @@
+{
+    "id": 513,
+    "description": "Given a non-empty list of elements, return the sequentially first element which occurred only once in the array.\n\n#### `Input:`\n`The first line contains N, N is the number of input elements. The second line contains N space-separated input integers.`\n\n#### `Output:`\n`Return the first Non-Repeating Element in the array. If there is no element with a frequency 1 print -1.`\n\n#### `Constraints:`\n- `1 <= N <= 100000`<br>\n- `0 <= A[i] <= 10^9`\n\n\n#### `Example 1`\n\n\n**`Input:`**\n```\n4 \n9 6 7 6 \n```\n\n**`Output:`**\n```\n9\n```\n\n#### Explanation:\n`In the given input, 9 and 7 have a frequency of 1 but since 9 came first so output is 9.`\n \n\n#### **`Example 2`**\n\n\n**`Input:`**\n```\n5 \n7 6 1 6 1 \n```\n\n**`Output`**\n```\n7\n```\n\n#### **`Explanation:`**\n`In the given input, only 7 has a frequency of 1 .`\n",
+    "title": "First Unique Number",
+    "default_testcase": {
+        "id": 3432,
+        "input": "4 \n9 6 7 6 ",
+        "expected_output": "9\n",
+        "code_problem_id": 513,
+        "created_at": "2024-01-05T07:19:58.874Z",
+        "updated_at": "2024-01-05T07:19:58.874Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1518,
+            "code_problem_id": 513,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n    int firstUniqueInteger(vector<int> &v) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1519,
+            "code_problem_id": 513,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int firstUniqueInteger(int[] v) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1520,
+            "code_problem_id": 513,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def firstUniqueInteger(self, v):\n      #Write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1521,
+            "code_problem_id": 513,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    firstUnique(ar) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

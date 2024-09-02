@@ -1,0 +1,21 @@
+{
+    "id": 594,
+    "description": "You are given an array nums representing a set of integers. Originally, this set contained all the numbers from 1 to n, but due to an error, one of the numbers in s got duplicated, and another number is missing.   \nYour task is to find and return the duplicated number and the missing number in the form of an array.\n\n```\nExample:  \nInput:\n\n- For nums = [3, 1, 3], there is a duplicate of 3, and 2 is missing.  \n- For nums = [1, 2, 2, 4], there is a duplicate of 2, and 3 is missing.  \n\nOutput:\n\n- For nums = [3, 1, 3], the output is [3, 2].\n- For nums = [1, 2, 2, 4], the output is [2, 3].  \n\nConstraints:  \n\n- 2 <= nums.length <= 10^4  \n- 1 <= nums[i] <= 10^4\n\n```",
+    "title": "Find Duplicate and Missing Number",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1777,
+            "code_problem_id": 594,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "vector<int> findErrorNums(vector<int>& nums) {",
+            "skeleton_class_end": "   };",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

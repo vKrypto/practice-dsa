@@ -1,0 +1,28 @@
+{
+    "id": 248,
+    "description": "\n![Image](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)\n\nYou have a keyboard layout as shown above in the X-Y plane, where each English uppercase letter is located at some coordinate.\n\n- For example, the letter 'A' is located at coordinate (0, 0), the letter 'B' is located at coordinate (0, 1), the letter 'P' is located at coordinate (2, 3) and the letter 'Z' is located at coordinate (4, 1).\n  Given the string word, return the minimum total `distance` to type such string using only two fingers.\n\nThe distance between coordinates (x1, y1) and (x2, y2) is |x1 - x2| + |y1 - y2|.\n\nNote that the initial positions of your two fingers are considered free so do not count towards your total `distance`, also your two fingers do not have to start at the first letter or the first two letters.\n\n### Example 1\n\n### Input\n\n```CPP\nword = \"CAKE\"\n```\n\n### Output\n\n```CPP\n3\n```\n\n#### Explanation:\n\nUsing two fingers, one optimal way to type \"CAKE\" is:\n\nFinger 1 on letter 'C' -> cost = 0\n\nFinger 1 on letter 'A' -> cost = Distance from letter 'C' to letter 'A' = 2\n\nFinger 2 on letter 'K' -> cost = 0\n\nFinger 2 on letter 'E' -> cost = Distance from letter 'K' to letter 'E' = 1\n\nTotal distance = 3\n\n### Example 2\n\n### Input\n\n```CPP\nword = \"HAPPY\"\n```\n\n### Output\n\n```CPP\n6\n```\n\n#### Explanation:\n\nUsing two fingers, one optimal way to type \"HAPPY\" is:\n\nFinger 1 on letter 'H' -> cost = 0\n\nFinger 1 on letter 'A' -> cost = Distance from letter 'H' to letter 'A' = 2\n\nFinger 2 on letter 'P' -> cost = 0\n\nFinger 2 on letter 'P' -> cost = Distance from letter 'P' to letter 'P' = 0\n\nFinger 1 on letter 'Y' -> cost = Distance from letter 'A' to letter 'Y' = 4\n\nTotal distance = 6\n\n### Constraints:\n\n- 2 <= word.length <= 300\n- word consists of uppercase English letters.\n",
+    "title": "Min Different",
+    "default_testcase": {
+        "id": 1746,
+        "input": "EIUHFBBFFDBWDKHFKBNILEWRIOREUUCYBITRWCIQRQWENYROIQRUQOQNRXQYETCNGYXFGWM",
+        "expected_output": "122",
+        "code_problem_id": 248,
+        "created_at": "2022-11-03T14:25:13.937Z",
+        "updated_at": "2022-11-03T14:25:13.937Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 413,
+            "code_problem_id": 248,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int minimumDistance(string word) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

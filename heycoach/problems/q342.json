@@ -1,0 +1,21 @@
+{
+    "id": 342,
+    "description": "Given equations in the form of a/b = k, where a and b are variables and k is a constant, evaluate queries of the form c/d and determine if they can be evaluated using the given equations.\nReturn the answers to all queries. If a single answer cannot be determined, return -1.0.\n\nNote: The input is always valid. You may assume that evaluating the queries will not result in division by zero and that there is no contradiction.\n\nNote: The variables that do not occur in the list of equations are undefined, so the answer cannot be determined for them.\nConstraints:\n\n1 <= Number of equations <= 20\nEach equation is of the form \"a/b = k\" where 1 <= |a|, |b| <= 5\n1 <= Number of queries <= 100\nEach query is of the form \"c/d\" where 1 <= |c|, |d| <= 5",
+    "title": "Evaluate Equation",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 801,
+            "code_problem_id": 342,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {\n        // Your implementation of calcEquation here\n    }\n};\n"
+        }
+    ]
+}

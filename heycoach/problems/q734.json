@@ -1,0 +1,64 @@
+{
+    "id": 734,
+    "description": "You are the commander of an army but unfortunately you were captured by the enemies. By using your skills you have managed to escape them and now need to fight them off along the way to get to  your comrades. You are in a n x m grid and at the cell i,j there are arr [i][j] enemies, you have to reach the cell at nth row and mth column. On the grid you can travel along diagonally, vertically and horizontally  Calculate a path on which you will fight off the minimum amount of enemies and return that amount.\n\nInput Format:\n\nFirst line contains two space separated integers denoting the number of rows and columns of the grid.\n\nThe next 'n' line contains 'm' space separated integers denoting the number of enemies at each individual cell.\n\nOutput Format:\n\nReturn a single integer denoting the minimum number of enemies that you will have to  fight along the way.\n\nSample Input:\n\n3 3\n\n1 1 1\n\n15 98 99\n\n15 15 15\n\nSample Output:\n\n61\n\nConstraints:\n\n1<= n <= 100\n\n1<= ar[i][j] <= 100\n",
+    "title": "Field Commander",
+    "default_testcase": {
+        "id": 4971,
+        "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+        "expected_output": "15\n",
+        "code_problem_id": 734,
+        "created_at": "2024-02-04T06:55:28.790Z",
+        "updated_at": "2024-02-04T06:55:28.790Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2345,
+            "code_problem_id": 734,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int** ar, int m, int n) {\n      //Write your code here\n      ",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2346,
+            "code_problem_id": 734,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int[][] ar, int m, int n) {\n      //Write your code here\n      ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2347,
+            "code_problem_id": 734,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, ar, m, n):\n      #Write your code here\n      ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2348,
+            "code_problem_id": 734,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(ar, m, n) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

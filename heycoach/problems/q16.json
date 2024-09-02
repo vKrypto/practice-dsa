@@ -1,0 +1,64 @@
+{
+    "id": 16,
+    "description": "Tuntun is very upset that many people on the Net mix uppercase and lowercase letters in one word. That's why he decided to invent an extension for his browser that would change the letter's register in every word so that it either only consisted of lowercase letters or, vice versa, only of uppercase ones. At that as little as possible letters should be changed in the word. For example, the word HoUse must be replaced with house, and the word ViP \u2014 with VIP. If a word contains an equal number of uppercase and lowercase letters, you should replace all the letters with lowercase ones. For example, maTRIx should be replaced by matrix. Your task is to use the given method on one given word.\n\n### Input Format\n```\nThe first line contains a word s \u2014 it consists of uppercase and lowercase Latin letters and possesses the length from 1 to 100.\n```\n### Ouput Format\n```\nPrint the corrected word s. If the given word s has strictly more uppercase letters, make the word written in the uppercase register, otherwise - in the lowercase one.\n```\n### Sample Input\n```\nHoUse\n```\n### Sample Output\n```\nhouse\n```\n### Explanation\n```\nIn this example, the word \"HoUse\" contains 2 uppercase letters ('H', 'U') and 3 lowercase letters ('o', 's', 'e'). Therefore, the output is \"house\".\n```\n### Constraints\n```\n- The length of the word 's' is between 1 and 100 (1 \u2264 |s| \u2264 100).\n- The word 's' consists of uppercase and lowercase Latin letters.\n```",
+    "title": "Word Correction",
+    "default_testcase": {
+        "id": 6347,
+        "input": "HoUse",
+        "expected_output": "house\n",
+        "code_problem_id": 16,
+        "created_at": "2024-03-12T14:04:53.547Z",
+        "updated_at": "2024-03-12T14:04:53.547Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 24,
+            "code_problem_id": 16,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\nstring  wordcorrection(string str){\n   //Write your code here",
+            "skeleton_class_end": "     }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 25,
+            "code_problem_id": 16,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def word_correction(self, s):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 26,
+            "code_problem_id": 16,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public String wordCorrection(String str) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 555,
+            "code_problem_id": 16,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    wordCorrection(s) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

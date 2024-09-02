@@ -1,0 +1,64 @@
+{
+    "id": 925,
+    "description": "You are in charge for securing a system which contains confidential data which must not get into the hands of the enemies. You are tasked with designing a password and according to the agency a good password has the following properties:\n\n1. It has at least 6 characters and at most 20 characters.\n2. It contains at least one lowercase letter, at least one uppercase letter, and at least one digit.\n3. It does not contain three repeating characters in a row, for example \"aaa\" will be a bad password.\n\nYou are given a string 's' on which you can perform several operation:\n\n1. Insert one character to string 's',\n2. Delete one character from string, or\n3. Replace one character of string with another character.\n\nDetermine the minimum number of operation required to convert the string 's' into a good password.\n\n```\nSample Input - 1:\n\n\"BrEEEHiM\"\n\nSample Output - 1:\n\n1\n```\n\nExplanation: You can just delete one \"E\" to make the password good from the given s.\n\n```\nSample Input- 2:\n\n\"JaP\"\n\nSample Output - 2:\n\n3\n```\n\nExplanation: You have to insert three new characters to make the password length at least 6, so that the given string 's' can turn into a good password.\n\nConstraints:\n\n1<=length of string 's'<=50",
+    "title": "Hack Prevention",
+    "default_testcase": {
+        "id": 8152,
+        "input": "BrEEEHiM",
+        "expected_output": "1\n",
+        "code_problem_id": 925,
+        "created_at": "2024-05-19T11:31:02.016Z",
+        "updated_at": "2024-05-19T11:31:02.016Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3073,
+            "code_problem_id": 925,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int solve(string s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3074,
+            "code_problem_id": 925,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, s):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3075,
+            "code_problem_id": 925,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(String s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3077,
+            "code_problem_id": 925,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(s) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

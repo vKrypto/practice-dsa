@@ -1,0 +1,64 @@
+{
+    "id": 842,
+    "description": "You are given an array `a` that consists of `n` integers.  Let's denote `f(l,r,x)` the number of **indices** `k` such that: `l <= k <=  r` and `a[k] = x`. Your task is to calculate the number of pairs of **indices** `i, j` `(1 <= i <= j <= n)` such that `f(l,i,a[i]) >  f(j,n,a[j])` holds true. \n\n**Example**\n\n```\nInput : n = 7 , a = [1, 2, 1, 1, 2, 2, 1]\n\nOutput : 8\n```\n\n**Input Format**\n```\nThe first line of the input contains an integer n.\nThe second line contains n space-separated integers denoting a\n```\n**Output Format**\n```\nA single integer \u2014 the answer to the problem.\n```\n**Constraints**\n\n`1 <= n <= 10^6`\n\n`1 <= a[i] <= 10^9`",
+    "title": " Find the Number of Index Pairs",
+    "default_testcase": {
+        "id": 7557,
+        "input": "7\n1 2 1 1 2 2 1\n",
+        "expected_output": "8\n",
+        "code_problem_id": 842,
+        "created_at": "2024-04-28T10:42:30.548Z",
+        "updated_at": "2024-04-28T10:42:30.548Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2752,
+            "code_problem_id": 842,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution{\npublic:\n\nint IndexPairs(int n,vector<int>&arr)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2753,
+            "code_problem_id": 842,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n\nclass Solution {\n    public int IndexPairs(int n, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2754,
+            "code_problem_id": 842,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n\n    \n    def IndexPairs(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2755,
+            "code_problem_id": 842,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    IndexPairs(n, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

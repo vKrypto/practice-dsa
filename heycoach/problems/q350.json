@@ -1,0 +1,21 @@
+{
+    "id": 350,
+    "description": "Given a 2D grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.\n\nConstraints:\n\nConstraints:\n\nm == grid.length\n\nn == grid[i].length\n\n1 <= m, n <= 300\n\ngrid[i][j] is '0' or '1'.",
+    "title": "Count Of Islands",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 817,
+            "code_problem_id": 350,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    int numIslands(vector<vector<char>>& grid) {\n        \n    }\n};"
+        }
+    ]
+}

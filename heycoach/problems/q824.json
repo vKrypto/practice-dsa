@@ -1,0 +1,57 @@
+{
+    "id": 824,
+    "description": "You just became the Lord of the Universe and created two galaxies - A and B. Each galaxy has n solar systems, lined up in a sequence. The solar systems of Galaxy A are represented by: sequence (a1,1),(a2,2),\u22ef,(an,n), where ai represents the size of solar system i and similarly, the solar systems of Galaxy B are represented by: sequence (b1,1),(b2,2),\u22ef,(bn,n), where bi represents the size of solar system i. The second value of any pair represents the temperature of that solar system. So, a solar system is represented by the pair (size,temp).\n\nNow you are DED, LOL. Oh, you didn't see that coming? Unfortunately, your children (don't how many you left) are alive. The two galaxies are soon going to collide and merge into a single galaxy.\n\nThe collision is so random that any solar system can go anywhere and can line up anywhere in the merged sequence of 2\u22c5n solar systems. The size and temperature of a solar system do not change when galaxies collide.\nYour children are interested in counting the number of distinct sequences of solar systems of length 2\u22c5n that can be formed, such that the sizes of solar systems in the merged galaxy are in non decreasing order. Yeah, I know they are stupid but what can I do after all they are your children.Your children consider two sequences (p1,q1),(p2,q2),(p2\u22c5n,q2\u22c5n) and (x1,y1),(x2,y2),\u22ef,(x2\u22c5n,y2\u22c5n) distinct, if there is such i (1\u2264i\u22642\u22c5n), that (pi,qi)\u2260(xi,yi). Two solar systems are considered identical if both their size and temperature are the same.\n\nAs this answer can be rather large, print the remainder from dividing the answer by number mod.\n\nInput\n\nThe first line contains integer n (1\u2264n\u2264105). The second line contains n integers a1,a2,\u22ef,an (1\u2264ai\u2264109). The third line contains n integers b1,b2,\u22ef,bn (1\u2264bi\u2264109). The numbers in the lines are separated by spaces.\n\nThe last line contains integer mod (2\u2264mod\u2264109+7).\n\nOutput\n\nIn the single line print the remainder after dividing the answer to the problem by number mod.\n\nExamples\n\ninput\n\n1\n\n1\n\n2\n\n7\n\noutput\n\n1\n\ninput\n\n2\n\n1 2\n\n2 3\n\n11\n\noutput\n\n2\n\nNote\nIn the first test case, you can get only one sequence of merged solar systems: (1,1),(2,1).\n\nIn the second test case, you can get two such sequences of merged solar systems: (1,1),(2,2),(2,1),(3,2); (1,1),(2,1),(2,2),(3,2). Thus, the answer is 2.",
+    "title": "Collision of galaxies",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2685,
+            "code_problem_id": 824,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nint calculateResult(vector<pair<int, int>>& a, int n, int m) {\n\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2686,
+            "code_problem_id": 824,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "def calculate_result(a, n, m):\n\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2687,
+            "code_problem_id": 824,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "function calculateResult(a, n, m) {\n",
+            "skeleton_class_end": "}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2688,
+            "code_problem_id": 824,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\npublic class Main {\n    public static void main(String[] args) {\n\n\n",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": 75,
+    "description": "Given an array arr of size n and an integer X. Find if there's a triplet in the array which sums up to the given integer X. \n\n### Example 1 \n\n### Input\n```CPP\nn = 6, X = 13\nA = [1,4,45,6,10,8]\n``` \n### Output \n```CPP \n1\n``` \n#### Explanation:\nThe triplet [1, 4, 8] in the array sums up to 13.\n\n### Example 2 \n\n### Input\n```CPP\nn = 5, X = 10\nA = [1,2,4,3,6]\n``` \n### Output \n```CPP \n1\n``` \n#### Explanation:\nThe triplet {1, 3, 6} in the array sums up to 10.\n### Constraints:\n\n* 1 <= n <= 1000\n* 1 <= A[i] , X <= 100000 \n",
+    "title": "Check for a triplet",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 115,
+            "code_problem_id": 75,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tbool findThreeSum(int A[], int n, int X)\n\t{\n      // write your code here\n\t}\n\n};"
+        },
+        {
+            "id": 484,
+            "code_problem_id": 75,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public boolean findThreeSum(int A[], int n, int X) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": 286,
+    "description": "You have been given two arrays A,B of sizes  n, m respectively. You need to return the total connects in the arrays. A connect is defined as XOR of two elements from different arrays which results in 0.\n\nConstraints:\n\n1 <= n,m <= 10^5\n1 <= A[i],B[i] <= 10^9",
+    "title": "Array Connect",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 712,
+            "code_problem_id": 286,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "int solve(vector<int>&a, vector<int>&b){\n\n}"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "id": 150,
+    "description": "You have to sort the string `s` in `decreasing order` based on the `frequency` of the characters. \nReturn the sorted string. If there are multiple answers, return any of them.\n### Example 1 \n\n### Input\n```CPP\ns = \"tree\"\n``` \n### Output \n```CPP \n\"eert\"\n``` \n#### Explanation:\n 'e' appears twice while 'r' and 't' both appear once.\nSo 'e' must appear before both 'r' and 't'. Therefore \"eetr\" is also a valid answer.\n\n### Example 2 \n\n### Input\n```CPP\n s = \"cccaaa\"\n``` \n### Output \n```CPP \n\"aaaccc\"\n``` \n#### Explanation:\nBoth 'c' and 'a' appear three times, so both \"cccaaa\" and \"aaaccc\" are valid answers.\nNote that \"cacaca\" is incorrect, as the same characters must be together.\n\n\n### Constraints:\n\n* 1 <= s.length <= 5 * 105\n* s consists of uppercase and lowercase English letters and digits.\n",
+    "title": "Sort The Array",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

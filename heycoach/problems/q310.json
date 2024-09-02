@@ -1,0 +1,28 @@
+{
+    "id": 310,
+    "description": "Given K sorted lists of integers, KSortedArray[] of size N each. The task is to find the smallest range that includes at least one element from each of the K lists. If more than one such range's are found, return the first such range found.\nConstraints:\n1 <= K,N <= 500\n0 <= a[ i ] <= 10^5",
+    "title": "Smallest range among K lists",
+    "default_testcase": {
+        "id": 2038,
+        "input": "1\n5 3\n1 3 5 7 9\n0 2 4 6 8\n2 3 5 7 11",
+        "expected_output": "1 2\n",
+        "code_problem_id": 310,
+        "created_at": "2023-09-17T16:33:58.512Z",
+        "updated_at": "2023-09-17T16:33:58.512Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 758,
+            "code_problem_id": 310,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution\n{\n    public:\n    pair<int,int> findSmallestRange(int a[][N], int n, int k)\n    {\n         \n    }\n};"
+        }
+    ]
+}

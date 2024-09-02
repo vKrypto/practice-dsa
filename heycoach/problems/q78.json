@@ -1,0 +1,40 @@
+{
+    "id": 78,
+    "description": "Given an array containing N integers and a positive integer K, find the length of the **longest subarray** with **sum** of the elements **divisible** by the given value **K**.\n**Note**: A subarray is a **contiguous** part of an array.\n\n### Example 1 \n\n### Input\n```CPP\narr = [2, 7, 6, 1, 4, 5]\nk = 3\n``` \n### Output \n```CPP \n4\n``` \n#### Explanation:\nThe subarray is {7, 6, 1, 4} with sum 18, which is divisible by 3.\n\n### Example 2 \n\n### Input\n```CPP\narr = [-2, 2, -5, 12, -11, -1, 7]\nk = 3\n``` \n### Output \n```CPP \n5\n``` \n#### Explanation:\nThe subarray is {2,-5,12,-11,-1} with sum -3, which is divisible by 3.\n### Constraints:\n\n* 1 <= N <= 10000\n* -100000 <= arr[i],k <= 100000\n",
+    "title": "Longest subarray with sum divisble by K",
+    "default_testcase": {
+        "id": 556,
+        "input": "6 3\n2 7 6 1 4 5",
+        "expected_output": "4\n",
+        "code_problem_id": 78,
+        "created_at": "2022-10-02T11:48:31.394Z",
+        "updated_at": "2022-10-02T11:48:31.394Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 118,
+            "code_problem_id": 78,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n\tint longSubarrWthSumDivByK(int arr[], int n, int k)\n\t{\n    \t// write your code here\n\t}\n};\n"
+        },
+        {
+            "id": 487,
+            "code_problem_id": 78,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public int longSubarrWthSumDivByK(int arr[], int n, int k) {\n      // write your code here\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 874,
+    "description": "Devu is a dumb guy, his learning curve is very slow. You are supposed to teach him n subjects, the ith subject has ci chapters. When you teach him, you are supposed to teach all the chapters of a subject continuously.<br/>\nLet us say that his initial per chapter learning power of a subject is x hours. In other words he can learn a chapter of a particular subject in x hours.<br/>\nWell Devu is not complete dumb, there is a good thing about him too. If you teach him a subject, then time required to teach any chapter of the next subject will require exactly 1 hour less than previously required (see the examples to understand it more clearly). Note that his per chapter learning power can not be less than 1 hour.<br/>\nYou can teach him the n subjects in any possible order. Find out minimum amount of time (in hours) Devu will take to understand all the subjects and you will be free to do some enjoying task rather than teaching a dumb guy. <br/>\n**Note:** *Please be careful that answer might not fit in 32 bit data type.*   \n**Input**  \n- `The first line will contain two space separated integers n, x (1\u2009\u2264\u2009n,\u2009x\u2009\u2264\u2009105). The next line will contain n space separated integers: c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009ci\u2009\u2264\u2009105). `\n**Output**  \n- `Output a single integer representing the answer to the problem.`\n\n**Examples**  \n**Input**  \n\n```\n2 3  \n4 1  \n```\n\n**Output**  \n\n```\n11\n```\n\n**Input**  \n\n```\n4 2  \n5 1 2 1  \n```\n\n**Output**  \n\n```\n10\n```\n**Note**  \n- `Look at the first example. Consider the order of subjects: 1, 2. When you teach Devu the first subject, it will take him 3 hours per chapter, so it will take 12 hours to teach first subject. After teaching first subject, his per chapter learning time will be 2 hours. Now teaching him second subject will take 2\u2009\u00d7\u20091\u2009=\u20092 hours. Hence you will need to spend 12\u2009+\u20092\u2009=\u200914 hours.   `\n\n- `Consider the order of subjects: 2, 1. When you teach Devu the second subject, then it will take him 3 hours per chapter, so it will take 3\u2009\u00d7\u20091\u2009=\u20093 hours to teach the second subject. After teaching the second subject, his per chapter learning time will be 2 hours. Now teaching him the first subject will take 2\u2009\u00d7\u20094\u2009=\u20098 hours. Hence you will need to spend 11 hours.`\n\n`So overall, minimum of both the cases is 11 hours.`\n\n- `Look at the third example. The order in this example doesn't matter. When you teach Devu the first subject, it will take him 3 hours per chapter. When you teach Devu the second subject, it will take him 2 hours per chapter. When you teach Devu the third subject, it will take him 1 hours per chapter. In total it takes 6 hours.`\n",
+    "title": "Devu, the Dumb Guy",
+    "default_testcase": {
+        "id": 7863,
+        "input": "2 3\n4 1",
+        "expected_output": "11\n",
+        "code_problem_id": 874,
+        "created_at": "2024-05-13T17:43:59.870Z",
+        "updated_at": "2024-05-13T17:43:59.870Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2866,
+            "code_problem_id": 874,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\n    public:\n    int devu(int n,int x,vector<int>&a){\n      //Write your code here",
+            "skeleton_class_end": "  }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2867,
+            "code_problem_id": 874,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int devu(int n, int x, int [] a) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2868,
+            "code_problem_id": 874,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def devu(self, n, x, a):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2869,
+            "code_problem_id": 874,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n     devu(n, x, a) {\n       //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

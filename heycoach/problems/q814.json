@@ -1,0 +1,64 @@
+{
+    "id": 814,
+    "description": "You are given an array `a` of `n` integers denoting the blocks of wall, where each integer is either `0`, `1`, or `2`. **Initially**, each block of the wall is painted blue.\n\nYour **goal** is to paint each block of the wall red. In order to do so, you can perform operations of two types: **1)** pay one coin to choose a blue block and paint it red, **2)** choose a red block which is not equal to 0 and a blue block adjacent to it, decrease the chosen red block by 1, and paint the chosen blue element red.\n\nWhat is the **minimum** number of coins you have to spend to achieve your **goal**?\n\n**Example**\n\n```\nInput : n = 3, a = [0,2,0]\n\nOutput : 1\n\nExplanation\n\nyou can paint all elements red with having to spend only one coin as follows:\n\npaint the 2nd block red by spending one coin;\ndecrease the 2nd block by 1 and paint the 1st block red;\ndecrease the 2nd block by 1 and paint the 3rd block red.\n```\n\n**Input Format**\n```\nThe first line contains one integer n \nThe second line contains n integers denoting the array a.\n```\n**Output Format**\n```\nAn integer \u2014 the minimum number of coins you have to spend in order to paint all blocks red.\n````\n\n**Contraints**\n\n`1 <= n <= 2 * 10^5`\n\n`0 <= a[i] <= 2`\n",
+    "title": "Minimum Cost of Painting Walls",
+    "default_testcase": {
+        "id": 7380,
+        "input": "3\n0 2 0\n",
+        "expected_output": "1\n",
+        "code_problem_id": 814,
+        "created_at": "2024-04-25T17:14:19.805Z",
+        "updated_at": "2024-04-25T17:14:19.805Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2657,
+            "code_problem_id": 814,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\npublic:\n\nint WallPainting(int n, vector<int>&arr)\n{",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2658,
+            "code_problem_id": 814,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int WallPainting(int n, int[] arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2659,
+            "code_problem_id": 814,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def wall_painting(self, n, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2660,
+            "code_problem_id": 814,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    wallPainting(n, arr) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

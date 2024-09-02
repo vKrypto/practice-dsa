@@ -1,0 +1,8 @@
+{
+    "id": 261,
+    "description": "\nGiven an integer n, return all the numbers in the range [1, n] sorted in lexicographical order.\n\n### Example 1\n\n### Input\n\n```CPP\nn=13\n```\n\n### Output\n\n```CPP\n[1,10,11,12,13,2,3,4,5,6,7,8,9]\n```\n\n### Example 2\n\n### Input\n\n```CPP\nn=2\n```\n\n### Output\n\n```CPP\n[1,2]\n```\n\n### Constraints:\n\n- 1 <= n <= 5 \\* 10^4\n",
+    "title": "Arrengement",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

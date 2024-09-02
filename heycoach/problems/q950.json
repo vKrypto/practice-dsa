@@ -1,0 +1,64 @@
+{
+    "id": 950,
+    "description": "Tasks in a system are represented as a linked list. Each task has a priority level. Your task is to write a function to insert a new task in the correct position based on its priority.\n\nWrite a function to insert a new task in the correct position based on its priority.\n\nExample :\n\nInput:\n\nTasks: [T1 (3), T2 (5)], New Task: T3 (6)\n\nOutput:\n\n[T3 (6), T1 (3), T2 (5)]\n\nExplanation:\n\nThe new task T3 with priority 6 is inserted before the tasks with priority 3 and 5.\n\nInput Format:\n\nThe first line contains an integer n \u2014 the number of tasks.\nThe next n lines each contain a task name and its priority.\nThe last line contains a new task name and its priority.\n\nOutput Format:\n\nPrint the tasks in the correct order after inserting the new task, with each task's name followed by its priority in parentheses.\n\nConstraints:\n\n1 <= n <= 10^5\n\n1 <= priority <= 10^6\n\nTask names are strings of length 1 to 100.",
+    "title": "Real-Time Task Scheduling",
+    "default_testcase": {
+        "id": 8334,
+        "input": "0\nT1 1\n",
+        "expected_output": "T1 (1) \n",
+        "code_problem_id": 950,
+        "created_at": "2024-05-25T13:06:53.277Z",
+        "updated_at": "2024-05-25T13:06:53.277Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3168,
+            "code_problem_id": 950,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "struct Task {\n    string name;\n    int priority;\n    Task* next;\n    \n    Task(string name, int priority) : name(name), priority(priority), next(nullptr) {}\n};\n\nclass Solution {\npublic:\n    Task* insertTask(Task* head, string newName, int newPriority) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3169,
+            "code_problem_id": 950,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Task {\n    String name;\n    int priority;\n    Task next;\n\n    Task(String name, int priority) {\n        this.name = name;\n        this.priority = priority;\n        this.next = null;\n    }\n}\n\nclass Solution {\n    public Task insertTask(Task head, String newName, int newPriority) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3170,
+            "code_problem_id": 950,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Task {\n    constructor(name, priority) {\n        this.name = name;\n        this.priority = priority;\n        this.next = null;\n    }\n}\n\nclass Solution {\n    insertTask(head, newName, newPriority) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3171,
+            "code_problem_id": 950,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Task:\n    def __init__(self, name, priority):\n        self.name = name\n        self.priority = priority\n        self.next = None\n\nclass Solution:\n    @staticmethod\n    def insert_task(head, new_name, new_priority):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

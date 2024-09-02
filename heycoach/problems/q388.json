@@ -1,0 +1,57 @@
+{
+    "id": 388,
+    "description": "Given two integers `dividend` and `divisor`. Find the quotient after dividing `dividend` by `divisor` without using multiplication, division, and mod operator.\n\n### Example 1:\n\n**Input:**\n```python\na = 10, b = 3\n```\n\n**Output:**\n```python\n3\n```\n\n**Explanation:**\n```\n10/3 gives quotient as 3 \nand remainder as 1.\n```\n\n### Example 2:\n\n**Input:**\n```python\na = 43, b = -8\n```\n\n**Output:**\n```python\n-5\n```\n\n**Explanation:**\n```\n43/-8 gives quotient as -5 and \nremainder as 3.\n```\n\n### Your Task:\n\ncomplete the function `divide()` which takes two integers `a` and `b` as input and returns the quotient after dividing `a` by `b`.\n\n### Constraints:\n( -10^9 <= a, b <= 10^9 )\n",
+    "title": "Find the quotient",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 919,
+            "code_problem_id": 388,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\nclass Solution\n{\n    public:\n    long long divide(long long x, long long y) \n    {\n    \n    }\n};\n"
+        },
+        {
+            "id": 920,
+            "code_problem_id": 388,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n    public long divide(long x, long y) {\n       \n    }\n}\n"
+        },
+        {
+            "id": 921,
+            "code_problem_id": 388,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def divide(self, x: int, y: int) -> int:\n       \n"
+        },
+        {
+            "id": 922,
+            "code_problem_id": 388,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    divide(a, b) {\n   \n    }\n}\n"
+        }
+    ]
+}

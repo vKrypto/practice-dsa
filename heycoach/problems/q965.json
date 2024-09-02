@@ -1,0 +1,64 @@
+{
+    "id": 965,
+    "description": "A movie rating website has been hacked, affecting the total rating of a particular show. The hacker decides to flip (negative becomes positive and vice versa) the sign of exactly K ratings out of N ratings stored in the database. The flips may or may not be optimal, and the hacker can also flip the sign of the same rating more than once. Write a program to calculate the highest possible total rating of the show after performing exactly K flips.\n\nExample:\n\nInput:\n\n4 2\n-1 1 -1 1\n\nOutput:\n\n4\n\nExplanation:\n\nWe have 2 flips available and 2 negative ratings. We flip both negative ratings to positive, resulting in a total rating of 1 + 1 + 1 + 1 = 4.\n\nInput Format:\nThe first line contains two space-separated integers, N and K.\nThe second line contains N space-separated integers denoting the ratings.\n\nOutput Format:\nPrint the highest possible total rating after exactly K flips.\n\nConstraints:\n\n1 \u2264 N \u2264 1000\n0 \u2264 K \u2264 1000\nEach rating is an integer between -10 and 10, inclusive.",
+    "title": "Movie Rating Hack",
+    "default_testcase": {
+        "id": 8442,
+        "input": "3 1\n0 0 0\n",
+        "expected_output": "0\n",
+        "code_problem_id": 965,
+        "created_at": "2024-05-29T07:49:36.809Z",
+        "updated_at": "2024-05-29T07:49:36.809Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3216,
+            "code_problem_id": 965,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class MovieRatingSystem {\npublic:\n    int highestPossibleRating(int n, int k, vector<int>& ratings) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3217,
+            "code_problem_id": 965,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class MovieRatingSystem:\n    def highest_possible_rating(self, n, k, ratings):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3218,
+            "code_problem_id": 965,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class MovieRatingSystem {\n    public int highestPossibleRating(int n, int k, int[] ratings) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3219,
+            "code_problem_id": 965,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class MovieRatingSystem {\n    highestPossibleRating(n, k, ratings) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

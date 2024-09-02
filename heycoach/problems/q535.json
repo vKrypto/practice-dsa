@@ -1,0 +1,64 @@
+{
+    "id": 535,
+    "description": "Given a Binary Search Tree with the values of all the nodes pairwise distinct. Return the sorted array of all the Nodes present in the Binary Search Tree.\n\nBinary Search Tree is a node-based binary tree data structure which has the following properties:\nThe left subtree of a node contains only nodes with keys lesser than the node\u2019s key.\nThe right subtree of a node contains only nodes with keys greater than the node\u2019s key.\nThe left and right subtree each must also be a binary search tree.\n\n\n\n#### `Input:`  \n\n- `t, number of test cases.`  \n- ` string s, input tree in the form of binary search tree`\n\n#### `Output:`  \n\n- `print sorted array for nodes in BST.`\n\n#### `Sample Input:`  \n\n```\n1  \n2 1 3\n```\n\n#### `Sample Output:`  \n`1 2 3`\n\n#### `Explanation:` \n`Sorted array for nodes in BST (2,1,3) --> (1,2,3)`\n\n#### `Constraints:`\n\n- `0<=t<=100`  \n- `0<=N<=100000, number of nodes in BST.`\n \n\n",
+    "title": "Sort the Nodes in BST",
+    "default_testcase": {
+        "id": 3575,
+        "input": "1\n2 1 3\n",
+        "expected_output": "1 2 3 \n",
+        "code_problem_id": 535,
+        "created_at": "2024-01-06T07:20:31.662Z",
+        "updated_at": "2024-01-06T07:20:31.662Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1594,
+            "code_problem_id": 535,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "/* A binary tree node has data, pointer to left child\n   and a pointer to right child\nstruct Node {\n    int data;\n    Node *left;\n    Node *right;\n\n    Node(int val) {\n        data = val;\n        left = right = NULL;\n    }\n}; */\n\nclass Solution {\n    public:\n    vector<int> bstToSort(struct Node *root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1595,
+            "code_problem_id": 535,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    int data;\n    Node left, right;\n\n    Node(int val) {\n        data = val;\n        left = right = null;\n    }\n}\n*/\n\nclass Solution {\n    ArrayList<Integer> bstToSort(Node root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1596,
+            "code_problem_id": 535,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "\"\"\"\nclass Node:\n    def __init__(self, val):\n        self.right = None\n        self.data = val\n        self.left = None\n\"\"\"\n\nclass Solution:\n    def InOrder(self,root):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1597,
+            "code_problem_id": 535,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "/*\nclass Node {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    inOrder(root) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

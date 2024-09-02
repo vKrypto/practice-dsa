@@ -1,0 +1,64 @@
+{
+    "id": 813,
+    "description": "Ajay has 'N' candies of varying taste. He has arranged the candies in increasing order of their tastiness, where the ith candy has i amounnt of tastiness. Every candy that he has also has a \npopularity associated with it which is represented in an array. Candies with similar a[i] values are similar in nature. On each day, he will choose a subset of the candies that he has to eat. \nHe has also decided that each subsequent day he will choose candies with increasing order of tastiness. Also, he wants variety in his life and thus will choose candies whose popularity differ\nby atleast 'k'. \n\nHow many minimum days will it take for Ajay to finish all his candies?\n\nInput Format:\n\nThe first line contains an integer n and k which denotes the number of candies and the value of k is used to compare popularity (explained above)\n\nThe second line contains n space separated integers which denote the popularity of ith candy.\n\nOutput Format:\n\nReturn a single integer denoting the minimum number of days to finish all candies.\n\nConstraints\n\n1 <= N <= 300\n\n1 <= a[i] <= 1000\n\n1 <= K <= 1000\n\nOutput Format:\n\nReturn a single integer denoting the minimum number of days to finish all candies.\n\nSample Input:\n\n3 2\n\n5 4 7\n\nSample Output:\n\n2\n\nExplanation:\n\nWe have to pick candies in increasing amount of difficulty, so let's say if we pick the candy at index 0 then we can only pick candies from index 1 and 2 on that particular day. But each day\nthe difference between the popularity should be atleast k=2 thus we can only pick candy at index 2 (since, 7-5>=2). On the second day we can just pick the candy at index 1. Thus, it takes\nus two days to finish all candies.\n\n",
+    "title": "Finishing the candies",
+    "default_testcase": {
+        "id": 7641,
+        "input": "5 1\n5 3 4 5 6",
+        "expected_output": "1\n",
+        "code_problem_id": 813,
+        "created_at": "2024-05-02T09:31:13.244Z",
+        "updated_at": "2024-05-02T09:31:13.244Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2854,
+            "code_problem_id": 813,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    int solve(int v[], int n, int k){\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2855,
+            "code_problem_id": 813,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    solve(v, n, k) {\n      //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2856,
+            "code_problem_id": 813,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int solve(int[] v, int n, int k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2857,
+            "code_problem_id": 813,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, v, n, k):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

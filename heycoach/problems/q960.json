@@ -1,0 +1,64 @@
+{
+    "id": 960,
+    "description": "Implement an undo feature for a text editor, where operations are stored in a stack.\n\nWrite a function to perform undo operations based on a sequence of edits.\n\nExample:\n\nInput:\n\n3\nEdits: [\"Type A\", \"Type B\", \"Undo\"]\n\nOutput:\n\nCurrent Text: \"A\"\n\nExplanation:\n\nThe last operation \"Type B\" is undone, leaving the text as \"A\".\n\nEdge Case:\n\nInput:\n1\nEdits: [\"Undo\"]\n\nOutput:\nCurrent Text: \"\"\n\nInput Format:\n\nThe first line contains an integer n \u2014 the number of edit operations.\nThe next n lines contain the edit operations as strings.\n\nOutput Format:\n\nPrint the final text after performing all the edit and undo operations.\n\nConstraints:\n\n1 <= n <= 10^5\n\nEach operation is a string of length at most 10.",
+    "title": "Undo Feature in Text Editor",
+    "default_testcase": {
+        "id": 8381,
+        "input": "0\n",
+        "expected_output": "Current Text: \"\"\n",
+        "code_problem_id": 960,
+        "created_at": "2024-05-27T06:12:31.740Z",
+        "updated_at": "2024-05-27T06:12:31.740Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3196,
+            "code_problem_id": 960,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class TextEditor {\npublic:\n    string performOperations(const vector<string>& edits) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3197,
+            "code_problem_id": 960,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class TextEditor:\n    def perform_operations(self, edits):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3198,
+            "code_problem_id": 960,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class TextEditor {\n    public String performOperations(List<String> edits) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3199,
+            "code_problem_id": 960,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class TextEditor {\n    performOperations(edits) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

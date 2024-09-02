@@ -1,0 +1,28 @@
+{
+    "id": 333,
+    "description": "A New Year party is not a New Year party without lemonade! As usual, you are expecting a lot of guests, and buying lemonade has already become a pleasant necessity.\n\nYour favorite store sells lemonade in bottles of n different volumes at different costs. A single bottle of type i has volume 2^(i-1) liters and costs ci roubles. The number of bottles of each type in the store can be considered infinite.\n\nYou want to buy at least L liters of lemonade. How many roubles do you have to spend?\n\nInput\nThe first line contains two integers n and L (1\u2009\u2264\u2009n\u2009\u2264\u200930; 1\u2009\u2264\u2009L\u2009\u2264\u200910^9) \u2014 the number of types of bottles in the store and the required amount of lemonade in liters, respectively.\n\nThe second line contains n integers c1,\u2009c2,\u2009...,\u2009cn (1\u2009\u2264\u2009ci\u2009\u2264\u200910^9) \u2014 the costs of bottles of different types.\n\nOutput\nOutput a single integer \u2014 the smallest number of roubles you have to pay in order to buy at least L liters of lemonade.",
+    "title": "Lemonade and New Year Party",
+    "default_testcase": {
+        "id": 2146,
+        "input": "4 12\n20 30 70 90",
+        "expected_output": "150",
+        "code_problem_id": 333,
+        "created_at": "2023-09-19T19:09:54.048Z",
+        "updated_at": "2023-09-19T19:09:54.048Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 793,
+            "code_problem_id": 333,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "#include<bits/stdc++.h>\nusing namespace std;\n\n\nint main(){\n    // Code here\n    return 0;\n}"
+        }
+    ]
+}

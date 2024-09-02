@@ -1,0 +1,64 @@
+{
+    "id": 489,
+    "description": "Calculate the minimum time required for a signal to reach all nodes in a directed network, starting from a specified node. Each connection in the network has an associated signal delay.\n\n**`Input Format`**:\n- `nodes`: `An integer representing the number of nodes in the network (1 <= nodes <= 100).`\n- `edges`: `A list of directed edges where each edge is represented as [source, destination, delay]. It denotes a directed connection from source to destination with a signal delay of delay units of time.`\n- `startNode`: `An integer representing the starting node for the signal broadcast (1 <= startNode <= nodes).`\n\n**`Output Format`**:\n- `An integer representing the minimum time required for the signal to reach all nodes. If it's not possible to reach all nodes from the start node, return -1.`\n\n**`Examples`**:\n\n1. **`Input`**:\n   - `nodes = 4`\n   - `edges = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]`\n   - `startNode = 2`\n   \n   **Output**:   \n `2`\n\n   **Explanation:**</br>\n             `The signal travels from Node 2 to Nodes 1 and 3 with a delay of 1 unit each. Then, from Node 3 to Node 4 with another 1 unit of delay. Thus, the total time taken is 2 units.`\n\n2. **Input**:\n   - `nodes = 5`\n   - `edges = [[1, 2, 1], [2, 3, 2], [3, 4, 3], [4, 5, 4], [5, 1, 5]]`\n   - `startNode = 1`\n   \n   **Output**:</br> `10`\n   \n   **Explanation**: \n\n```\nThe signal sequentially travels through all nodes, taking a total of 10 units of time.\n\n```\n\n3. **Input**:\n   - `nodes = 3`\n   - `edges = [[1, 2, 2], [2, 3, 1]]`\n   - `startNode = 1`\n   \n   **Output**:</br> `3`\n\n**`Constraints`**:\n- `1 <= nodes <= 100`\n- `0 <= len(edges) <= 5,000`\n- `1 <= delay on each edge <= 100`\n",
+    "title": "Minimum Broadcast Time",
+    "default_testcase": {
+        "id": 3278,
+        "input": "4 3\n2 1 1\n2 3 1\n3 4 1\n2",
+        "expected_output": "2",
+        "code_problem_id": 489,
+        "created_at": "2023-12-31T07:04:06.734Z",
+        "updated_at": "2023-12-31T07:04:06.734Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1425,
+            "code_problem_id": 489,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n  int minBroadcastTime(vector<vector<int>> &nodes, int n, int k){\n    //Write your code here\n",
+            "skeleton_class_end": "   }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1427,
+            "code_problem_id": 489,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {  \n    public int minBroadcastTime(List<List<Integer>> nodes, int n, int k) {\n\n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1429,
+            "code_problem_id": 489,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def minBroadcastTime(self, nodes, n, k):\n        #Write your code here\n     \n    ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1432,
+            "code_problem_id": 489,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n      minBroadcastTime(nodes, n, k) {\n        //Write your code here\n\n    ",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 588,
+    "description": "You are given N identical eggs and you have access to a K-floored building from 1 to K.\n\nThere exists a floor f where 0 <= f <= K such that any egg dropped from a floor higher than f will break, and any egg dropped from or below floor f will not break.\nThere are few rules given below. \n\n```\nAn egg that survives a fall can be used again.  \nA broken egg must be discarded.  \nThe effect of a fall is the same for all eggs.  \nIf the egg doesn't break at a certain floor, it will not break at any floor below.  \nIf the eggs breaks at a certain floor, it will break at any floor above.  \nReturn the minimum number of moves that you need to determine with certainty what the value of f is.\n```\n\n`For more description on this problem see the wiki page`\n\n**`Example 1:`**\n\n**`Input:`**  \n`N = 1, K = 2`  \n`Output: 2`\n\n**`Explanation: `**  \n`1.Drop the egg from floor 1. If it breaks, we know that f = 0.`\n\n`2.Otherwise, drop the egg from floor 2.If it breaks,we know that f = 1.`\n\n`3.If it does not break, then we know f = 2.`\n\n\n`4. Hence, we need at minimum 2 moves to determine with certainty what the value of f is.`",
+    "title": "Egg dropping ",
+    "default_testcase": {
+        "id": 3882,
+        "input": "1\n2 10",
+        "expected_output": "4\n",
+        "code_problem_id": 588,
+        "created_at": "2024-01-22T05:39:14.744Z",
+        "updated_at": "2024-01-22T05:39:14.744Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 1762,
+            "code_problem_id": 588,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution{\n    public:\n    //Function to find minimum number of attempts needed in \n    //order to find the critical floor.\n    int eggDrop(int n, int k) {\n\n",
+            "skeleton_class_end": "    }    \n    \n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1765,
+            "code_problem_id": 588,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n        #Function to find minimum number of attempts needed in \n    #order to find the critical floor.\n    def eggDrop(self,n, k):\n      ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1883,
+            "code_problem_id": 588,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int eggDrop(int n, int k) {",
+            "skeleton_class_end": "   }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2398,
+            "code_problem_id": 588,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    eggDrop(n, k) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 174,
+    "description": "\nGiven a positive integer **A**, the task is to count the total number of set bits in the binary representation of all the numbers from **1** to **A**.\n\nReturn the count modulo **1000000007**.\n\n### Example 1 \n\n### Input\n```CPP\nA = 3\n```\n\n\n### Output \n```CPP\n4\n```\n### Explanation\n \n   1 =>  0001 => 1(set bit count)\n   2  => 0010 => 1\n   3 =>  0011 => 2\n    \n   1 + 1 + 2 = 4 \n Answer = 4 % 1000000007 = 4\n\n**Example 2:**\n\n**Input:**\n```CPP\n1\n```\n**Output:** \n```CPP\n1\n```\n### Explanation\n\n1 => 0001 => 1\n1%1000000007 = 1\n\n\n### Constraints:\n* `1 <= A <= 1000000000`\n",
+    "title": "Count total set bits",
+    "default_testcase": {
+        "id": 1240,
+        "input": "3",
+        "expected_output": "4",
+        "code_problem_id": 174,
+        "created_at": "2022-10-25T11:39:12.995Z",
+        "updated_at": "2022-10-25T11:39:12.995Z"
+    },
+    "problem_type": "level_test",
+    "code_skeletons": [
+        {
+            "id": 246,
+            "code_problem_id": 174,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    int solve(int A) {\n      //Write your code here",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 637,
+            "code_problem_id": 174,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public long solve(int A) {\n      //Write your code here;",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 638,
+            "code_problem_id": 174,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def solve(self, A):\n      #write your code here",
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n"
+        },
+        {
+            "id": 639,
+            "code_problem_id": 174,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n  solve(A) {\n    //Write your code here",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

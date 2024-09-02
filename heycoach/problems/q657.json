@@ -1,0 +1,64 @@
+{
+    "id": 657,
+    "description": "Given an unsorted array arr of n non-negative integers, you have to find the range of an array. The range of an array is the difference between the maximum and minimum value of the array.\n\n### Example 1 \n\n### Input\n```CPP\narr = [3,2,10,4,7,8]\n``` \n### Output \n```CPP \n8\n``` \n#### Explanation:\nThe Maximum value in the array is 10 and the minimum value is 2 so the range is 10 - 2 = 8\n\n### Example 2 \n\n### Input\n```CPP\narr = [30,15,6,10,12,22]\n``` \n### Output \n```CPP \n24\n``` \n#### Explanation:\n\nThe Maximum value in the array is 30 and the minimum value is 6 so the range is 30 - 6 = 24\n\n### Constraints:\n\n * 0 < n <= 100000\n * 0 <= arr[i] <= 100000\n\n\n\n",
+    "title": "Range of an array",
+    "default_testcase": {
+        "id": 4352,
+        "input": "5\n15 36 3 12 2",
+        "expected_output": "34\n",
+        "code_problem_id": 657,
+        "created_at": "2024-01-27T12:39:57.934Z",
+        "updated_at": "2024-01-27T12:39:57.934Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2024,
+            "code_problem_id": 657,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution\n{\npublic:\n\tint rangeOfAnArray(vector<int> &arr) {",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2025,
+            "code_problem_id": 657,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public int rangeOfAnArray(int[] arr) {",
+            "skeleton_class_end": "  }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2026,
+            "code_problem_id": 657,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def rangeOfAnArray(self, arr):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2027,
+            "code_problem_id": 657,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    rangeOfAnArray(arr) {",
+            "skeleton_class_end": "     }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

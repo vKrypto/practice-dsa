@@ -1,0 +1,45 @@
+{
+    "id": 217,
+    "description": "\nYou are given an array nums of positive integers. In one operation, you can choose `any` number from nums and reduce it to `exactly` half the number. (Note that you may choose this reduced number in future operations.)\n\nReturn the `minimum` number of operations to reduce the sum of nums by at least half.\n\n### Example 1\n\n### Input\n\n```CPP\n nums = [5,19,8,1]\n```\n\n### Output\n\n```CPP\n3\n```\n\n#### Explanation -\n\nThe initial sum of nums is equal to 5 + 19 + 8 + 1 = 33.\nThe following is one of the ways to reduce the sum by at least half:\n\nPick the number 19 and reduce it to 9.5.\n\nPick the number 9.5 and reduce it to 4.75.\n\nPick the number 8 and reduce it to 4.\n\nThe final array is [5, 4.75, 4, 1] with a total sum of 5 + 4.75 + 4 + 1 = 14.75.\n\nThe sum of nums has been reduced by 33 - 14.75 = 18.25, which is at least half of the initial sum, 18.25 >= 33/2 = 16.5.\n\nOverall, 3 operations were used so we return 3.\n\nIt can be shown that we cannot reduce the sum by at least half in less than 3 operations.\n\n### Example 2\n\n### Input\n\n```CPP\n nums = [3,8,20]\n```\n\n### Output\n\n```CPP\n3\n```\n\n### Explanation:\n\nThe initial sum of nums is equal to 3 + 8 + 20 = 31.\nThe following is one of the ways to reduce the sum by at least half:\n\nPick the number 20 and reduce it to 10.\n\nPick the number 10 and reduce it to 5.\n\nPick the number 3 and reduce it to 1.5.\n\nThe final array is [1.5, 8, 5] with a total sum of 1.5 + 8 + 5 = 14.5.\n\nThe sum of nums has been reduced by 31 - 14.5 = 16.5, which is at least half of the initial sum, 16.5 >= 31/2 = 16.5.\n\nOverall, 3 operations were used so we return 3.\n\nIt can be shown that we cannot reduce the sum by at least half in less than 3 operations.\n\n### Constraints:\n\n- 1 <= nums.length <= 10^5\n- 1 <= nums[i] <= 10^7\n",
+    "title": "Minimum Operation",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 419,
+            "code_problem_id": 217,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\npublic:\n  void solve(vector<int> &arr) {\n    \n  } \n};\n"
+        },
+        {
+            "id": 426,
+            "code_problem_id": 217,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\nclass Solution {\n  public void solve(Vector<Integer> arr) {\n\t\n  } \n}\n"
+        },
+        {
+            "id": 433,
+            "code_problem_id": 217,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution:\n    def solve(self, arr):\n        pass\n"
+        }
+    ]
+}

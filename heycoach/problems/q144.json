@@ -1,0 +1,8 @@
+{
+    "id": 144,
+    "description": "Given an array of integers, its totalCost is calculated as follows, where *n* = the number of elements in the array and the array itself is named element.\n\n'''\ncurrentMaximumElement = element[0]\ntotalCost =0\nfor(i=1; i<n; i++){\n      if(element[i] > currentMaximumElement){\n           currentMaximumElement = element[i]\n\n          totalCost += 1;\n      }\n}\n'''\n\nGiven three values n, m, and totalCost, find the number of distinct arrays that meet the following criteria:\n* Each array consists of n integers\n* 1<=value at index i in each array <= m, where 0<=i<=n\n* The cost to find the maximum element of each element of each array is equal to totalCost.\n\nTwo arrays are said to be distinct if there exists at least one index i (where 0<=i<n) such that the elements at index i,\nare not equal.\n\n#### Input Format:\n* first line contains 3 non-negative integers n, m , and totalCost respectively\n* second line consists n integers (elements of the array n)\n* third line consists m integers (elements of the array m)\n* fourth line consists totalCost integers (elements of the array totalCost)\n\n#### Constraints: \n* 1<= q <= 50\n* 1<= n[i] <= 50, where 0<= i < q\n* 1<= m[i] <= 50, where 0<= i < q\n* 0 <= totalCost[i] < n[i], where 0 <= i < q\n",
+    "title": "Reconstructing Arrays",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": []
+}

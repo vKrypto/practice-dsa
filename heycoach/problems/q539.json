@@ -1,0 +1,64 @@
+{
+    "id": 539,
+    "description": "Given a binary tree, check if the tree is height balanced or not.\n\nFor example: Given the Binary Tree\n\n         1\n       /   \\\n      2      3\n     /    \n    6\nThe tree is balanced since the difference of height between the left sub tree and right subtree is not more than 1.\n\nAnother example: Given the Binary Tree\n\n           1\n         /   \\\n        2     3\n       /      \n      6\n     /\n    8 \n\nThe difference between the left and right subtree is more than 1 hence it is unbalanced.\n\nInput Format:\n\nA single line that represents the value of the nodes and the value of '- 1' denotes NULL node.\n\nOutput Format:\n\nReturn true if balanced else return false.\n\nConstraints:\n\n0 <= N <= 10^4\n\n0 <= data <= 10^3\n\nWhere 'N' denotes the total number of nodes and 'data' denotes the value of the node\n",
+    "title": "Balanced or not",
+    "default_testcase": {
+        "id": 3601,
+        "input": "1 2 3 6 -1 -1 -1 -1 -1",
+        "expected_output": "Yes",
+        "code_problem_id": 539,
+        "created_at": "2024-01-06T12:03:27.045Z",
+        "updated_at": "2024-01-06T12:03:27.045Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1610,
+            "code_problem_id": 539,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class\n/*\nclass TreeNode {\n    constructor(data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    isBalanced(root) {\n      //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1611,
+            "code_problem_id": 539,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class;\n/*\nclass Node {\n    public int data;\n    public Node left;\n    public Node right;\n\n    public Node(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n*/\n\nclass Solution {\n    boolean isBalanced(Node root) {\n        //Write your code here;\n    }\n}"
+        },
+        {
+            "id": 1612,
+            "code_problem_id": 539,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "//Definition of node class;\n/*\nclass Node\n{\n    public:\n      int data;\n      Node *left;\n      Node *right;\n    \n      Node (int data)\n      {\n        this->data = data;\n        this->left = NULL;\n        this->right = NULL;\n      }\n    \n      ~Node ()\n      {\n        delete right;\n        delete left;\n      }\n};*/\n\nclass Solution{\n    public:\n    bool isBalanced(Node* root){\n        //Write your code here;\n    }\n};"
+        },
+        {
+            "id": 1613,
+            "code_problem_id": 539,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\"\"\"\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\"\"\"\nclass Solution:\n    def isBalanced(self, root):\n      #Write your code here"
+        }
+    ]
+}

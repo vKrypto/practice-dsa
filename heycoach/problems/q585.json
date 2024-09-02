@@ -1,0 +1,64 @@
+{
+    "id": 585,
+    "description": "Given an array nums with n objects coloured red, white, or blue, sort them in place so that objects of the same colour are adjacent, with the colours in the order red, white, and blue.\n\nWe will use the integers 0, 1, and 2 to represent the colours red, white, and blue, respectively.\n\nYou must solve this problem without using the library's sort function.\n\n**`Example 1:`**\n\n**`Input:`**   \n`nums = [2,0,2,1,1,0]  `  \n**`Output: `**` [0,0,1,1,2,2]  `\n\n**`Example 2:`**  \n**`Input:`**  \n`nums = [2,0,1]`  \n**`Output:`** \n\n```\n[0,1,2]\n\n```\n\n**` Constraints:  `**  \n- `n == nums.length  `\n- `1 <= n <= 300  `\n- `nums[i] is either 0, 1, or 2.`",
+    "title": "Sort Colors",
+    "default_testcase": {
+        "id": 3855,
+        "input": "5\n0 0 1 2 0",
+        "expected_output": "0 0 0 1 2 ",
+        "code_problem_id": 585,
+        "created_at": "2024-01-21T16:06:51.635Z",
+        "updated_at": "2024-01-21T16:06:51.635Z"
+    },
+    "problem_type": "session_assignment",
+    "code_skeletons": [
+        {
+            "id": 1741,
+            "code_problem_id": 585,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static sortcolors(nums) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1742,
+            "code_problem_id": 585,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def sortColors(self, nums):\n",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1743,
+            "code_problem_id": 585,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "\n class Solution {\n    public void sortcolors(int[] nums) {\n",
+            "skeleton_class_end": "}}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 1744,
+            "code_problem_id": 585,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "\nclass Solution {\n    public:\n void sortcolors(vector<int>& nums) { \n",
+            "skeleton_class_end": "}};",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

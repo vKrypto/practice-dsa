@@ -1,0 +1,64 @@
+{
+    "id": 963,
+    "description": "Vehicles at a traffic light are queued, and the light turns green at regular intervals.\n\nWrite a function to simulate the traffic light, dequeuing vehicles when the light is green.\n\n### Example\n\n#### Input:\n\n`3 Vehicles: [V1, V2, V3], Green Interval: 2`\n\n#### Output:\n\n`Processed: [V1, V2], Remaining Queue: [V3]`\n\n#### Explanation:\n\n`Two vehicles are dequeued each green interval.`\n\n#### Edge Case\n\n#### Input:\n\n`1 Vehicles: [V1], Green Interval: 2`\n\n#### Output:\n\n`Processed: [V1], Remaining Queue: []`\n\n#### Input Format\n\n`The first line contains an integer n \u2014 the number of vehicles.`\n\n`The second line contains n lines, each with a string \u2014 the names of the vehicles.`\n\n`The third line contains an integer k \u2014 the green light interval.`\n\n#### Output Format\n\n`Print the processed vehicles in one line.`\n\n`Print the remaining vehicles in another line.`\n\n#### Constraints:\n\n- `1 \u2264 n \u2264 1000`\n\n- `1 \u2264 k \u2264 1000`",
+    "title": "Traffic Light Simulation",
+    "default_testcase": {
+        "id": 8413,
+        "input": "1\nV1\n2",
+        "expected_output": "Processed: V1\nRemaining Queue: \n",
+        "code_problem_id": 963,
+        "created_at": "2024-05-27T10:12:48.417Z",
+        "updated_at": "2024-05-27T10:12:48.417Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3208,
+            "code_problem_id": 963,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class TrafficLight {\npublic:\n    void simulateTrafficLight(queue<string>& vehicles, int greenInterval) {",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3209,
+            "code_problem_id": 963,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class TrafficLight {\n    public void simulateTrafficLight(Queue<String> vehicles, int greenInterval) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3210,
+            "code_problem_id": 963,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class TrafficLight:\n    def simulate_traffic_light(self, vehicles, green_interval):",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3211,
+            "code_problem_id": 963,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class TrafficLight {\n    simulateTrafficLight(vehicles, greenInterval) {",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

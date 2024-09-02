@@ -1,0 +1,64 @@
+{
+    "id": 979,
+    "description": "Given a non-negative integer c, determine if there exist two integers \na and b such that a<sup>2</sup> + b<sup>2</sup> = c.\n\n**Examples**:\n\n**Input:**\n```\nc=5\n```\n\n**Output:** \n```\ntrue\n```\n**Explanation:** \n\n1<sup>2</sup> + 2<sup>2</sup> = 5\n\n**Input:** \n```\nc=3\n```\n**Output**: \n```\nfalse\n```\n**Explanation**: </br>\nNo combination of squares of integers sums to 3.\n\n**Constraints:**\n\n0<=c<=2<sup>31</sup>-1\n\n",
+    "title": "Check if a Number is the Sum of Two Squares",
+    "default_testcase": {
+        "id": 8602,
+        "input": "5",
+        "expected_output": "true\n",
+        "code_problem_id": 979,
+        "created_at": "2024-06-17T08:16:59.078Z",
+        "updated_at": "2024-06-17T08:16:59.078Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 3272,
+            "code_problem_id": 979,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    bool checkSquareSum(int c) {\n        \n   \n",
+            "skeleton_class_end": "}\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3273,
+            "code_problem_id": 979,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public boolean checkSquareSum(int c) {\n    \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3274,
+            "code_problem_id": 979,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    def checkSquareSum(self, c: int) -> bool:\n       ",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 3275,
+            "code_problem_id": 979,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    checkSquareSum(c) {\n       \n    ",
+            "skeleton_class_end": "}\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}

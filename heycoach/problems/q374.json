@@ -1,0 +1,45 @@
+{
+    "id": 374,
+    "description": "**Problem Description:**\n\nHarry has been given a string, denoted as 's,' and an integer, denoted as 'd.' He is tasked with finding a non-empty substring from the given string 's' that contains at most 'd' distinct characters. The goal is to find such a substring that maximizes its score, where the score of a substring is defined as the sum of hash values of all characters in that substring.\n\nAdditionally, each character in the string 's' is assigned a hash value, which is represented as follows:\n- 'a' \u2192 1\n- 'b' \u2192 2\n- ...\n- 'z' \u2192 26\n\nAll character in string are lower case alphabate only<br>\nYou need to assist Harry in solving this problem by finding the maximum score of a non-empty substring with at most 'd' distinct characters.\n\n**Input:**\n- A string 's' (1 \u2264 |s| \u2264 10^5), where |s| represents the length of the string.\n- An integer 'd' (1 \u2264 d \u2264 26), representing the maximum number of distinct characters allowed in the substring.\n\n**Output:**\n- An integer representing the maximum score of a non-empty substring with at most 'd' distinct characters.\n\n**Sample Input 1:**\n```\ns = \"abcde\"\nd = 2\n```\n\n**Sample Output 1:**\n```\n9\n```\n\n**Explanation 1:**\n- Harry can select the substring \"bc\" with 'd' distinct characters ('b' and 'c'), and the score of this substring is the sum of the hash values of its characters: score(\"bc\") = 2 + 3 = 5.\n- Alternatively, he can select the substring \"de\" with 'd' distinct characters ('d' and 'e'), and the score of this substring is the sum of the hash values of its characters: score(\"de\") = 4+ 5 = 9.\n- In this case, the maximum score is 9, achieved by selecting the substring \"de.\"\n\n**Sample Input 2:**\n```\ns = \"xyzzy\"\nd = 3\n```\n\n**Sample Output 2:**\n```\n126\n```\n\n**Explanation 2:**\n- Harry can select the substring \"xyzzy\" with 'd' distinct characters ('x,' 'y,' and 'z'), and the score of this substring is the sum of the hash values of its characters: score(\"xyzzy\") = 24 + 25 + 26 + 26 + 25 = 126.\n- In this case, the maximum score is 126, achieved by selecting the entire string \"xyzzy.\"",
+    "title": "Score of a string",
+    "default_testcase": null,
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 876,
+            "code_problem_id": 374,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\n    public static int maxScoreSubstring(String s, int d) {\n        int n = s.length();\n        int[] charCount = new int[26]; // To store the count of each character\n        int distinctCount = 0; // To keep track of distinct characters\n        int left = 0, right = 0; // Pointers for the sliding window\n        int maxScore = 0;\n\n        while (right < n) {\n            if (charCount[s.charAt(right) - 'a'] == 0) {\n                distinctCount++;\n            }\n            charCount[s.charAt(right) - 'a']++;\n\n            while (distinctCount > d) {\n                charCount[s.charAt(left) - 'a']--;\n                if (charCount[s.charAt(left) - 'a'] == 0) {\n                    distinctCount--;\n                }\n                left++;\n            }\n\n            // Calculate the score for the current substring\n            int score = 0;\n            for (int i = 0; i < 26; i++) {\n                score += (i + 1) * charCount[i];\n            }\n\n            maxScore = Math.max(maxScore, score);\n\n            right++;\n        }\n\n        return maxScore;\n    }\n}\n"
+        },
+        {
+            "id": 877,
+            "code_problem_id": 374,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "\n\ndef max_score_substring(s, d):\n  "
+        },
+        {
+            "id": 878,
+            "code_problem_id": 374,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": ""
+        }
+    ]
+}

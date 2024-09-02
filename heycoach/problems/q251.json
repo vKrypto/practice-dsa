@@ -1,0 +1,28 @@
+{
+    "id": 251,
+    "description": "\nYou are given an integer array deck. There is a deck of cards where every card has a unique integer. The integer on the ith card is deck[i].\n\nYou can order the deck in any order you want. Initially, all the cards start face down (unrevealed) in one deck.\n\nYou will do the following steps repeatedly until all cards are revealed:\n\nTake the top card of the deck, reveal it, and take it out of the deck.\nIf there are still cards in the deck then put the next top card of the deck at the bottom of the deck.\nIf there are still unrevealed cards, go back to step 1. Otherwise, stop.\nReturn an ordering of the deck that would reveal the cards in increasing order.\n\n* Note that the first entry in the answer is considered to be the top of the deck.\n### Example 1 \n\n### Input\n```CPP\ndeck = [17,13,11,2,3,5,7]\n``` \n### Output \n```CPP \n[2,13,3,11,5,17,7]\n``` \n### Explanation:\nWe get the deck in the order [17,13,11,2,3,5,7] (this order does not matter), and reorder it.\n\nAfter reordering, the deck starts as [2,13,3,11,5,17,7], where 2 is the top of the deck.\n\nWe reveal 2, and move 13 to the bottom.  The deck is now [3,11,5,17,7,13].\n\nWe reveal 3, and move 11 to the bottom.  The deck is now [5,17,7,13,11].\n\nWe reveal 5, and move 17 to the bottom.  The deck is now [7,13,11,17].\n\nWe reveal 7, and move 13 to the bottom.  The deck is now [11,17,13].\n\nWe reveal 11, and move 17 to the bottom.  The deck is now [13,17].\n\nWe reveal 13, and move 17 to the bottom.  The deck is now [17].\n\nWe reveal 17.\n\nSince all the cards revealed are in increasing order, the answer is correct.\n\n### Example 2\n### Input\n```CPP\ndeck = [1,1000]\n ```\n### Output \n```CPP \n [1,1000]\n``` \n\n\n### Constraints:\n\n* 1 <= deck.length <= 1000\n* 1 <= deck[i] <= 106\n* All the values of deck are unique.\n",
+    "title": "Card",
+    "default_testcase": {
+        "id": 1759,
+        "input": "29\n22\n33\n66\n55\n44\n99\n88\n 3\n 4\n 5\n 6\n16\n17\n18\n19\n20\n21\n 7\n 8\n 9\n10\n 1\n 2\n11\n12\n13\n14\n15\n77\n",
+        "expected_output": "1 66 2 16 3 33 4 17 5 88 6 18 7 44 8 19 9 77 10 20 11 55 12 21 13 99 14 22 15 ",
+        "code_problem_id": 251,
+        "created_at": "2022-11-05T17:38:58.308Z",
+        "updated_at": "2022-11-05T17:38:58.308Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 449,
+            "code_problem_id": 251,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": null,
+            "skeleton_class_end": null,
+            "skeleton_solution_class": "class Solution {\npublic:\n    vector < int > deckRevealedIncreasing(vector < int > & deck) {\n      // write your code here\n    }\n};\n"
+        }
+    ]
+}

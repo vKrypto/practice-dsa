@@ -1,0 +1,64 @@
+{
+    "id": 749,
+    "description": "You are given the marks obtained by a student in five different subjects: **Mathematics (M)** , **Science (S)**, **English (E)**, **History (H)**, and **Computer Science (C)**.</br> The marks for each subject are integers in the range from 0 to 100 (both inclusive).\n\nWrite a program that takes the student's name (as a single character) and the marks for each subject as input. </br>Calculate the average of the given marks (rounded down to the nearest integer) and print it along with the student's name.\n\n#### Input:\n- The first line contains a single character representing the student's name (e.g., 'A', 'B', 'C', etc.).\n- The next line contains five integers separated by spaces, representing the marks obtained in Mathematics, Science, English, History, and Computer Science, respectively.\n\n#### Output:\n- Print the student's name (single character) on the first line.\n- Print the integer part of the average marks (rounded down) on the second line.\n\n#### Example:\n\n#### Input:\n```\nA\n81 81 81 33 63\n```\n\n#### Output:\n```\nA\n68\n```\n\n#### Constraints:\n- `Marks for each subject lie in the range 0 to 100 (both inclusive).`\n",
+    "title": "Average Marks",
+    "default_testcase": {
+        "id": 7971,
+        "input": "A\n81 81 81 33 63",
+        "expected_output": "A\n68\n",
+        "code_problem_id": 749,
+        "created_at": "2024-05-17T08:12:50.374Z",
+        "updated_at": "2024-05-17T08:12:50.374Z"
+    },
+    "problem_type": "practice",
+    "code_skeletons": [
+        {
+            "id": 2423,
+            "code_problem_id": 749,
+            "language": {
+                "id": 11,
+                "name": "C++ (GCC 9.2.0)",
+                "judge0_language_id": 54
+            },
+            "skeleton_define_class": "class Solution {\npublic:\n    static void calculateAverage(char name, int M, int S, int E, int H, int C) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n};",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2424,
+            "code_problem_id": 749,
+            "language": {
+                "id": 25,
+                "name": "Java (OpenJDK 13.0.1)",
+                "judge0_language_id": 62
+            },
+            "skeleton_define_class": "class Solution {\n    public static void calculateAverage(char name, int M, int S, int E, int H, int C) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2425,
+            "code_problem_id": 749,
+            "language": {
+                "id": 39,
+                "name": "Python (3.8.1)",
+                "judge0_language_id": 71
+            },
+            "skeleton_define_class": "class Solution:\n    @staticmethod\n    def calculate_average(name, M, S, E, H, C):\n      #Write your code here",
+            "skeleton_class_end": "",
+            "skeleton_solution_class": ""
+        },
+        {
+            "id": 2426,
+            "code_problem_id": 749,
+            "language": {
+                "id": 26,
+                "name": "JavaScript (Node.js 12.14.0)",
+                "judge0_language_id": 63
+            },
+            "skeleton_define_class": "class Solution {\n    static calculateAverage(name, M, S, E, H, C) {\n      //Write your code here",
+            "skeleton_class_end": "    }\n}",
+            "skeleton_solution_class": ""
+        }
+    ]
+}
