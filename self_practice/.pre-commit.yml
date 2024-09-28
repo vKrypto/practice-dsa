@@ -1,0 +1,81 @@
+repos:
+  # Python code formatter
+  - repo: https://github.com/psf/black
+    rev: 23.1.0  # or any version
+    hooks:
+      - id: black
+
+  # Sorts imports in Python files
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+
+  # Linting Python code to follow PEP8 standards
+  - repo: https://github.com/pre-commit/mirrors-flake8
+    rev: v4.0.1
+    hooks:
+      - id: flake8
+
+  # Python linter to catch syntax errors and warnings
+  - repo: https://github.com/ambv/pyflakes
+    rev: 2.3.1
+    hooks:
+      - id: pyflakes
+
+  # Security analysis tool for Python code
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.0
+    hooks:
+      - id: bandit
+
+  # Linter for Dockerfiles to ensure best practices
+  - repo: https://github.com/moby/hadolint
+    rev: v2.5.0
+    hooks:
+      - id: hadolint
+
+  # Dependency management - compiles and ensures consistency in requirements files
+  - repo: https://github.com/jazzband/pip-tools
+    rev: 6.5.1
+    hooks:
+      - id: pip-compile
+        args: ["--generate-hashes"]
+
+  # Dependency security audit for Python projects
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.5.2
+    hooks:
+      - id: pip-audit
+
+  # Detects unused code in Python
+  - repo: https://github.com/PyCQA/vulture
+    rev: 2.6
+    hooks:
+      - id: vulture
+
+  # Type checking for Python code
+  - repo: https://github.com/microsoft/pyright
+    rev: v1.1.289
+    hooks:
+      - id: pyright
+
+  # Automates testing across multiple Python environments
+  - repo: https://github.com/tox-dev/tox
+    rev: 3.24.0
+    hooks:
+      - id: tox
+
+  # Go code formatter to ensure consistent formatting
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.2.0
+    hooks:
+      - id: go-fmt
+        name: Gofmt
+
+  # Go linter to catch common issues and ensure code quality
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.2.0
+    hooks:
+      - id: go-lint
+        name: Golint
