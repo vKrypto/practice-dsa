@@ -22,11 +22,11 @@ class Graph:
                 self._DFSUtil(i,visited)
 
 
-    def _fillOrder(self,v,visited, stack):
+    def dfs(self,v,visited, stack):
         visited[v]= True
         for i in self.graph[v]:
             if not visited[i]:
-                self._fillOrder(i, visited, stack)
+                self.dfs(i, visited, stack)
         stack = stack.append(v)
         
 
@@ -45,7 +45,7 @@ class Graph:
         # step 1:  Fill vertices in stack according to their finishing times
         for i in range(self.V):
             if not visited[i]:
-                self._fillOrder(i, visited, stack)
+                self.dfs(i, visited, stack)
 
         #step 2: Create a graph with reversed edges
         gr = self._getTranspose()

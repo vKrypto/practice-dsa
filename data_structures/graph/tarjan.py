@@ -26,7 +26,7 @@ class TarzanGraph:
         ap = set()
             
         def dfs(node, root_node=False):
-            disc[node] = self.timer
+            disc[node] = self.timerm ,
             low[node] = self.timer
             self.timer += 1
             

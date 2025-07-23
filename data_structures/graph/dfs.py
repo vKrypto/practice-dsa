@@ -10,14 +10,13 @@ class Graph:
         path = []
         stack = [source]
         while stack:
-            cur_node = stack.pop()
+            node = stack.pop()
             
-            if cur_node in visited:
+            if node in visited:
                 continue
-            
-            path.append(cur_node)
-            visited.add(cur_node)
-            for neighbor_node, neighbor_node_dist  in enumerate(self.graph[cur_node]):
+            path.append(node)
+            visited.add(node)
+            for neighbor_node, neighbor_node_dist  in enumerate(self.graph[node]):
                 if neighbor_node_dist != 0 and neighbor_node not in visited:
                     stack.append(neighbor_node)
         print(path)
@@ -29,11 +28,10 @@ class Graph:
         def dfs(node=source):
             if node in visited:
                 return
-            
+            path.append(node)
             visited.add(node)
-            path.append(node)    
-            for neighbor_node, neighbor_node_weight in enumerate(self.graph[node]):
-                if neighbor_node_weight !=0 and neighbor_node not in visited:
+            for neighbor_node, neighbor_node_dist  in enumerate(self.graph[node]):
+                if neighbor_node_dist != 0 and neighbor_node not in visited:
                     dfs(neighbor_node)
         dfs()
         print(path)
@@ -66,8 +64,29 @@ class Graph2:
         
 
 # Driver's code
+
+""""
+
+Graph (Undirected Weighted):
+
+     (0)--<4>--(1)--<8>-----(2)
+      |               |      |
+     <8>            <2>     <7>
+      |               |      |
+     (7)--<11>--(1)--<8>----(8)
+      |               |      |
+     <1>            <6>     <7>
+      |               |      |
+     (6)--<2>--(5)--<10>----(4)
+           \    |    /
+           <4> <14> <9>
+            \   |   /
+             \  |  /
+               (3)
+
+"""
 if __name__ == '__main__':
-    g = Graph2(9)
+    g = Graph(9)
     g.graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
                [4, 0, 8, 0, 0, 0, 0, 11, 0],
                [0, 8, 0, 7, 0, 4, 0, 0, 2],
@@ -79,5 +98,5 @@ if __name__ == '__main__':
                [0, 0, 2, 0, 0, 0, 6, 7, 0]
                ]
 
-    # g.dfs_iterative()
+    g.dfs_iterative()
     g.dfs_recursive()
