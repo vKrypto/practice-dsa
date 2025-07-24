@@ -53,3 +53,76 @@
 - *Sliding Window*: Interviewer ka favourite for anything “longest/shortest/maximum sum/unique”.
 
 Stay sharp, stay OP.   
+
+
+
+
+# cache stategy:
+
+1) cache aside read
+    Application: (cache miss rule handling, and write mechanism is here)
+    Client server/library: connects to Cache node
+    Node: stores data
+
+    pros:
+        data schema is not rigid
+        if cache  is down it will server form db, application will still work
+    cons:
+        stale data 
+        any new data is already cache miss
+        thunderhurd problem, limitation like cache size (LRU policy CAN not bbe implemeneted.)
+
+
+2) read through cache: 
+    Application: ask to client
+    Client server/library: conect to node if miss fetch from dbb and update to node and then return to applicaiton layer.
+    Mode: stores data.
+
+    pros:
+        simplified
+        less number of conenction to db. 
+        not [thunderhurd problem, limitation like cache size (LRU policy CAN not bbe implemeneted. etc.)
+    cons:
+        stale data 
+        any new data is already cache miss
+        data format is strict, as applicaiton layer does not have control on this.
+        single point of faiilure can happen
+        if cache is down application is also down
+
+
+# Write cache stategy:
+
+3) write arround cache:
+    Application: 
+        write into db once any change,
+        mark cache data as invalid.(invalidation) can be parallel requests.
+     
+    pros: 
+        resolves stale data problem 
+    cons:
+        if db is down, write will get failed 
+
+4) write through cache:
+    
+    1) write to cache first
+    2) write to db then
+
+
+    pros: 
+        solved problem: cahhe miss for new entries
+    cons:
+        not fault tolerant
+        complexity added (2PC required.)
+
+5) write behind/back strategy
+
+    Application: 
+        1) write into cache first
+        2) write into db in async manner(in background, we can use messaging queue to push make changes as durable)
+
+    pros:
+        latency decreases
+        no cahe miss for new entries.
+        fault tolertant (down if all cache node down)
+    cons:
+        total down time for db < TTL (other wise cache will fail at it will remove cache after ttl, AND DB is still down.)
