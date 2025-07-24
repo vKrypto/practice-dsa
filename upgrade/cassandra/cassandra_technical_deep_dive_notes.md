@@ -59,9 +59,6 @@
 
 ---
 
-$1
----
-
 ## 7. **Handling Conflict Resolution (Inconsistent Data)**
 
 - **Last Write Wins (LWW)**: Conflicts are resolved using timestamps; latest timestamp wins.
