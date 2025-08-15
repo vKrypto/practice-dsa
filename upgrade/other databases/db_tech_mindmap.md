@@ -1,5 +1,6 @@
 # 🧠 In-Depth DB Tech Mind Map (with Key Subtopics)
 
+<pre>`
 DB Universe
 |
 ├── Neo4j (Native Graph DB)
@@ -101,6 +102,9 @@ DB Universe
 |    ├─ **Edge Cases**: Suitable for shallow/medium graph; falls short for deep graph ops.
 |    ├─ **Scaling**: As per Mongo sharding/replication.
 |    └─ **Limitations**: Inefficient for deep/complex traversals; not a true graph DB.
+
+`
+</pre>
 
 ---
 
