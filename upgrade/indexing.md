@@ -1,3 +1,4 @@
+```
 SQL Index Types
 ├── By Structure
 │   ├── Clustered Index
@@ -88,3 +89,4 @@ PostgreSQL Indexes
 └── VII. Concurrent Indexes
     └── Concurrent Index
         └─ Allows index creation without locking writes on the table.
+```
