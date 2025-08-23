@@ -11,5 +11,6 @@
         "postorder",
         "preorder",
         "rebalance"
-    ]
+    ],
+    "markdown-pdf.convertOnSave": true
 }
