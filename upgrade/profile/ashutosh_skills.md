@@ -1,6 +1,5 @@
 
-# Comprehensive Skills & Experience (Category-wise)
-
+# Category Wise skills
 
 ### Core Languages & Frameworks
 - **Python** – 7+ years (Advanced: OOP, async, decorators, multiprocessing, profiling, performance tuning)  
