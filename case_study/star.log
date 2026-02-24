@@ -1,0 +1,130 @@
+# LEVEL1: async --> sync
+S: we were using requests library to send request in async manner.
+T: as my role is to find bottleneck and optimize each systems.
+A: I analayzed request life cycle:
+    1) implemented proper aiohttp with grouping requests along with proper ratelimit controls.
+R: avg job exec time got reduced from 92 sec --> 30 sec, overall hitting arround 500K concurrent requests
+
+
+# LEVEL 2: redis-compression:
+S: we are storing market data into redis, most of the time it was quite large and with 20k concurrent requests that was becoming bottleneck.
+T: as my role is to find bottleneck and optimize each systems.
+A: I analayzed market data and balance jobs:
+    1) some jobs did not required market data while fetching balance jobs(critical jobs.), removed fetchning for them.
+    2) size of market data was upto 150MB in some cases, used gzip compression while storing data in redis, I/O load got decreased by 90% (150MB --> 13 MB)
+    3) added a file based secondory cache layer with proper invalidation logic on container level.
+R: we saved arround 11 sec per jobs on avg, eventually faster execution, reduced from 30 sec--> 18 sec
+
+# LEVEL 3: accountsapi:
+S: api/proxy load balancer service was being bottleneck, p95: 2 sec, but p99: 30-40sec with only 5K concurrent requests.
+T: as my role is to find bottleneck and optimize each systems.
+A: I analyzed 
+    since concurrency was high, so every operation does matters:
+    1) optimize mutex strategy to have less conflict.
+    2) used dragonfly distributed lock, and overcome horizontal scaling limit.
+    3) for logging: we used in memory buffer and periodic syncing much like google analytics event.
+R: p95: reduced to 8-9 ms even with 20K concurrent requests., reduced from 18 sec --> 12 sec and improved p99 execution.
+
+# LEVEL 4: improve system reliability:
+S: there were lot of jobs which were being unexpectdly.
+T: improving process is also part of my role 
+A:
+    1) added automate test pipelines to test code, resulting smooth deployments.
+    2) using sandbox (provided + custom) we created exception and based on that tested application behaviour.
+    3) i have add setup for 2 excahnges then handover to team to replciate for further exchanges.
+    4) added (sonar-qube + pytest results) for PR review and enforces proper PR review process.
+R:
+    smooth deployments, emergency releases reduced by 90% 
+
+# LEVEL 5: improve system observability:
+S: no proper logging on production side, it was kinda blackbox.
+T: improving process is also part of my role 
+A: 
+    1) improved graylog logging with extra parameters which required for debugging and created a proper graylog dashboard which can pin-point any specific requests by multipel parameter.
+    2) added grafan stack to monitor server nodes, along with node-level, container-level, console level logs and metrics.
+    3) added kibana stack for heartbeat/healty management for each component and services.
+R:
+    complete logging: we are able to check exactly what's going there, which job, what exception, at what time, on which node, which container etc, eventually found multiple exception/edge cases which were not handled in code and we have fixed one by one, grafana stack helped for further optimization.
+
+# LAYER 6: kafka: publisher
+S: kafka publusher was taking 1 sec to publish 20k messages.
+T: as my role is to find bottleneck and optimize each systems.
+A: analyzed producer code:
+    1) using batch/bulk publish with partition_id, rather than round robin.
+    2) increase partition and consumer to 60 per service stack. 
+    3) moved db fetch query to SP, and added a job to cache the sp result in peak hours prior. [p99 query time: 600 ms --> 50 ms]
+    4) multiple producer setup to horizontally scale it.
+    5) moved producer's container closest to nodes subnet for faster packet routing.
+R: jobs are being published under 150-200 ms, eventually saves arround 1 sec more in job execution. ( 12 --> 11 sec)
+
+# LAYER 7: kafka: Consumer
+S: kafka consumer was taking more than 2 sec to publish 20k messages.
+T: as my role is to find bottleneck and optimize each systems.
+A: analyzed consumer code:
+    1) used kaliko with ebpf mode to optimize dns resolution
+    2) scaled 60 consumers to distribute laod.
+R: jobs are being consumed under 200-250 ms, eventually saves arround 2 sec more in job execution, finally job exec itme reduced to: (11 --> 9-10 sec)
+
+# layer 8: increased recWindow:
+S: with 500k concurrent requests exchanges was being bottleneck, due to bad system design
+T: as my role is to find bottleneck and optimize each systems.
+A: with enhaced grafana, graylog:
+    monitored connection timing, TTFB, etc. and found that we have to increase recvwindow
+R: no expired recvwindow so most of them were being finished withing 9 sec, improved p99 metrics.
+
+# layer 9: migrate datacenter:
+S: 80% of the jobs was for binance, our us datacenter needed asia-proxy since it's banned in USA.
+T: as my role is to find bottleneck and optimize each systems.
+A: we discussed this NSD team, and showed metrics with proof moving to india-data center will improve performance. [250MS per request]
+R: very few RTO/ProxyError, eventually improving jobs execution from 10 sec --> ~7 sec. 
+
+# layer 10: upgrade python 3.9.5 --> PYTHON 3.13.2:
+S: there was some of processing need fast execution to save over all time.
+T: as my role is to find bottleneck and optimize each systems.
+A: migrated python 3.9.5 --> python 3.13.2
+R: 40% faster cpu processing overall improving job execution to 5-6 sec. 
+
+
+
+
+# layer 11: forcefully terminated on long runnign jobs:
+S: using middleware if total exec time: > 3 hrs we return as timeout, but actual fucntion exec doesn't stop as default python behaviour.
+T: optimizing system is part of my job
+A: 
+    1) modified code to properly thro exception if timeout in common places.
+    2) added middleware which is using ctype module to directly inject exception in thread call stack, eventually stopping execution.
+
+
+# layer 12: RAM leak:
+S: service was using ram from 400 --> 1.5 TB ram in just 4 -5 days and was not releasing it.
+T: optimizing system is part of my job
+A: :
+    analyzed code locally:
+    1) de-refrencing objects manually.
+    2) analyzed core-dumpusing diffrent profiler tool like gcore etc., and found out sslcontext is not being properly when too many objects are being created, SO added sleep to ake sure they are being deleted properly.
+    3) running c-based, python-based gc periodically.
+R: memory leak decreased till 400GB --> 450GB only.
+
+# layer 13: overcoming bottleneck for long running jobs.
+S: jobs like trads, orders, txns fetch takes too much time because of GIL, cpu usage was limited to 10-12% only
+T: optimizing system is part of my job
+A:
+    1) tried moving to multi threaded, multi-processing didn't work, so using subprocess to run them on seprate process.
+R: utilizing cpu at 1200-1400% and 2x faster exec time. 
+
+# layer 14: optiming nodes.
+S: nodes resource usage was too high with subprocess solution(forking 20k python process) eventually making k8 nodes NotReady, eventually cascade failure.
+T: optimizing system is part of my job
+A:
+    1) adding diffrent strategies like affinity to make sure only 80% of cores are being used, leave 20% for k8 and other management tasks.
+    2) added jitter to make sure process fork get's distributed properly. [contextSwitch: 2500 ms --> 200 ms]
+    3) increased node level params like ulimit, tcp_max_syn_backlog, net.ipv4 etc. (tweaked for high resource usage)
+R: lower context switch, and cpu usage comes arround 500-600% and Nodes were also stable. 
+
+# layer 15: move accounts API TO seperate node:
+S: accountapi was sharing same node as datafetch service, [io latency was more than cpu-scheudling time]
+T: optimizing system is part of my job
+A: added 1 cluster with 2 nodes and moved accountapi to there.
+R: improved performance by 30%, (no bottleneck by cpu scheduling)
+
+# layer 16:
