@@ -1,0 +1,98 @@
+You must follow the steps EXACTLY and in the SAME ORDER.
+Time is tight → keep every section crisp, point-to-point, and structured.
+If it's data flow try to use mermaid.
+
+IMPORTANT RULE:
+    After STEP 1, STOP and ask me:
+        “Do you want to add or modify any requirement?”
+    - step 1: KEEP it tight and point to point, and priotize things
+    - If I give additional inputs → merge them into your STEP 1.
+    - If I say “no” or give no change → continue with your original STEP 1 output, and share all steps onwards
+
+------------------------------------------------------------
+
+STEP 1 — Requirements (2 mins total)
+    KEEP IT MAX CRISP — only the essentials.
+
+    Functional Requirements (1 min):
+        - Bullet list of core user actions.
+        - Prioritize: must-have → should-have.
+        - No workflows, no DB, no components.
+
+    Non-Functional Requirements (1 min):
+        - Latency target (SLA).
+        - Scale (QPS, traffic pattern).
+        - Availability target.
+        - Consistency expectation.
+        - Cost awareness.
+        - Extensibility/future modules.
+
+------------------------------------------------------------
+
+STEP 2 — API Design (5 mins)
+    - List all endpoints grouped service-wise, ordered by user-flow.
+    - Add short description in hinglish.
+    - MUST include API versioning in all routes (e.g., /v1/...).
+    - For request and response:
+        * for request Input always Mention actual input alongside.
+        * Avoid full deserialized schema for response unless required.
+        * Prefer referring to entity names directly in response.
+          Example:
+              CreateProduct → request: <ProductInput>
+              response: <Product>
+    - For each: method, path, request schema, response schema.
+
+------------------------------------------------------------
+
+STEP 3 — Core Entities (2 mins)
+    - List all core entities.
+    - For each entity:
+        • Provide Python @dataclass (schema reflection).
+        • One-liner responsibility.
+        • DB Design Notes (Mention only if required):
+            - Clustered index key  (and why)
+            - Secondary indexes    (query accelerators)
+            - Unique constraints   (fields requiring uniqueness)
+            - TTL fields           (expiry-based retention)
+            - Partition/shard key  (if system is distributed)
+
+------------------------------------------------------------
+
+STEP 4 — Back-of-Envelope Estimation (2 mins)
+    - Approx storage required (with formulas).
+    - Approx bandwidth.
+    - Approx number of nodes.
+    - Pick AWS instance category (General / Compute / Memory / Storage / Network optimized).
+    - Give short justification.
+
+------------------------------------------------------------
+STEP 5.1 — High-Level Workflow:
+    - create a high level design/boxes in ascii version and mermaid version.
+
+STEP 5.2 — High-Level Workflow (10 mins)
+    - Pick endpoints in order of priority.
+    - For each:
+        - Draw A → B → C flow.
+        - Describe data flow across components in bullets.
+        - Mention DB type when used (RDBMS / NoSQL / Columnar / Search; include 2-3 examples + best choice).
+
+------------------------------------------------------------
+
+STEP 6 — Scaling Strategy
+    - Cover all NFRs: scale, availability, consistency, partitions, caching, load balancing, async patterns.
+
+------------------------------------------------------------
+
+STEP 7 — Problem Identification
+    - Endpoint-wise bottlenecks.
+    - Fixes / alternatives / optimizations.
+
+------------------------------------------------------------
+
+STEP 8 — Security + Failover + Backup (1 min)
+    - Auth, authz, encryption, rate limiting, isolation, backups, DR strategy.
+
+------------------------------------------------------------
+
+STEP 9 — Monitoring + Observability (1 min)
+    - Metrics, logs, traces, alerts, dashboards.

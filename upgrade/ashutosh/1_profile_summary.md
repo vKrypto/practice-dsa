@@ -1,0 +1,24 @@
+---- summary
+
+I started my professional journey at **ORNAZ**, a startup where I spent more than **5 years**, and that phase shaped most of my engineering fundamentals. Since it was a startup, I was not limited to one narrow role — I got exposed to backend, frontend, mobile apps, AR, infra, observability, payments, CRM, e-commerce, and team leadership. Over time, I started leading the tech side, handled a **6–8 member engineering team**, and led development for more than **4 years**. I worked on the Next.js PWA, React Native apps, AR Try-On, CRM workflows, and the monolith-to-microservices migration. I eventually moved on because the company’s growth pace and technical scale had started to plateau, and I wanted to work on larger systems with heavier traffic and deeper engineering problems. 
+
+After ORNAZ, I joined **ShyftLabs**, where my exposure shifted toward **large-scale data systems and marketplace analytics**. I worked on multi-tenant ETL/data pipelines using Python, Cassandra, Airflow, Kestra, and related orchestration systems, processing very high-volume event data. I also worked on API migration with TDD, achieved high test coverage, and contributed to integrations around pricing and POS systems for large retail operations. This phase helped me move from startup-style full-stack ownership into more structured, high-scale backend and data engineering work. 
+
+Then I moved to **NAV Backoffice**, where my core focus was **performance optimization, reliability, and architecture-level problem solving**. I worked on multiple backend and infra-heavy projects, including the **Accounts API Optimization**, where latency was brought down from seconds-level response times to millisecond-level performance, and exchange data-fetch optimization, where jobs were reduced from around **200 seconds to 5–9 seconds** with high-concurrency async processing. I also worked on a serious FastAPI memory-leak issue involving roughly **1.5 TB impact over 5 days**, along with observability, L3 RCA, chatbot/RAG work, and distributed service reliability. Due to a family emergency at home, I had to take a short pause of around **25 days**, and after that I joined **Fluxon**. 
+
+At **Fluxon**, my work became more AI-production focused. I mainly worked on two areas: an **AI cost analytics / governance platform** for tracking AI usage, token consumption, anomaly detection, RBAC, forecasting, and spend governance across AI tools; and an **AI report maker for financial data**, focused on turning structured financial information into usable reports. Overall, my journey has been progressive: at ORNAZ I got deep multi-stack startup exposure and leadership ownership; at ShyftLabs I moved into heavy-traffic data systems; at NAV I worked deeply on performance, microservices, architecture, DevOps, and reliability; and at Fluxon I got strong production AI exposure. Alongside this, I also built **Job-Seeker**, an agentic AI-based platform that automates job discovery, resume generation, ATS optimization, recruiter communication, and interview coordination. 
+
+
+
+---- shorter summary
+I started my career at **ORNAZ**, where I worked for more than **5 years**. Since it was a startup, I got the chance to work on many things like backend, frontend, mobile apps, AR, payments, CRM, infrastructure, and monitoring. Later, I started leading the tech side and handled a **6–8 member team** for more than **4 years**. I learned a lot there, but after some time the company was not growing fast enough, so I decided to move on for better technical challenges.
+
+After ORNAZ, I joined **ShyftLabs**, where I worked mostly on **data pipeline projects**. I got good exposure to high-volume data systems, ETL workflows, Python, Cassandra, Airflow, and Kestra. This helped me understand how large-scale backend and data systems work in a more structured environment.
+
+Then I joined **NAV Backoffice**, where my main work was around **performance optimization and system reliability**. I worked on multiple optimization projects, including fixing a major memory issue of around **1.5 TB impact over 5 days**, optimizing the Accounts API from seconds to milliseconds, and improving data-fetching jobs from around **200 seconds to 5–9 seconds**. After NAV, I had to take a short **25-day pause because of a family emergency**, and then I joined **Fluxon**, where I worked on **AI cost analytics** and an **AI report maker for financial data**.
+
+Overall, my journey has been very hands-on. At ORNAZ, I learned ownership and team leadership. At ShyftLabs, I worked on large data systems. At NAV, I worked deeply on performance, microservices, DevOps, and reliability. At Fluxon, I worked on AI in production. Along with this, I also built **Job-Seeker**, an agentic AI platform that helps with job search, resume generation, ATS optimization, recruiter communication, and interview scheduling.
+
+
+
+
